@@ -1,0 +1,1242 @@
+﻿
+<!DOCTYPE html>
+<html>
+    <head>
+      <link href="http//1251008728.cdn.myqcloud.com/1251008728/assets/images/wanhuir-icon.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+      <title> 爆准测试：你的容貌和实际年龄相差几岁？</title>
+      <meta charset="utf-8">
+      <script src="1.js"></script>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width,minimum-scale=0.5,maximum-scale=1,initial-scale=0.8" />
+ <!--<meta name="viewport" content="target-densitydpi=320,width=640,user-scalable=no">-->
+      <script type="text/javascript">
+        $(document).ready(function(){
+          var result=0;
+          var result_message;
+          var a = 0;
+          var b = 0;
+          var c = 0;
+          var d = 0;
+          var res_arr = [];          
+
+          $(".options ul li").click(function(){
+              var  node = $(this).parent().parent().parent();
+              var next_node = $(node).next();
+
+                          var dataScore = $(this).attr("data-score");
+
+            $(node).hide();
+
+            if(parseInt(dataScore) > 100){
+                $(".result-"+dataScore).show();
+            }else{
+                $(".question-"+dataScore).show();
+            }
+          });
+
+          $(".prev a").click(function(){
+              var node = $(this).parent().parent();
+              var prev_node = $(node).prev();
+
+              if(prev_node.hasClass("question")){
+                  $(node).hide();
+                  $(prev_node).show();
+              }
+          });
+      });
+      </script>
+      <script type="text/javascript">
+        
+        var is_weixin = function () {
+                var ua = navigator.userAgent.toLowerCase();
+                if(ua.match(/MicroMessenger/i) == "micromessenger") {
+                    if(ua.match(/iphone/i) == "iphone") {
+                        return 'ios';
+                    }
+                    return 'android';
+                }
+                return false;
+            }
+
+            var foo = function (o) {
+                if (o.value == o.defaultValue) {
+                    o.value = '';
+                    o.style.color = '#000';
+                }
+            }
+
+            var bar = function (o) {
+                if (o.value == '') {
+                    o.value = o.defaultValue;
+                    o.style.color = '#9a9a9a';
+                } else {
+                    o.style.color = '#000';
+                }
+            }
+
+            var mask = function () {
+                if (document.getElementById('mask').style.display == 'inline') {
+                    document.getElementById('mask').style.display = 'none';
+                    document.getElementById('tip').style.display = 'none';
+                } else {
+                    document.getElementById('mask').style.display = 'inline';
+                    document.getElementById('tip').style.display = 'inline';
+                }
+            }
+
+            var share = function () {
+                mask();
+            }
+
+
+
+        var share_callback_hy = function () {
+            ajax = new XMLHttpRequest();
+            ajax.open('GET', '/materials/wx_share?f=wx_hy&ref=' + window.location.href, true);
+            ajax.send(null);
+        }
+
+        var share_callback_pyq = function () {
+            ajax = new XMLHttpRequest();
+            ajax.open('GET', '/materials/wx_share?f=wx_pyq&ref=' + window.location.href, true);
+            ajax.send(null);
+        }
+
+
+        var dataForWeixin = {
+              appId: "wx78f81724e6590b1d",
+              TLImg: "http//1251008728.cdn.myqcloud.com/1251008728/rongmao/rm.jpg",
+              url: "http//www.lanrenmb.com/wcs/7",
+              title: " 爆准测试：你的容貌和实际年龄相差几岁？",
+              desc: "爆准测试：你的容貌和实际年龄相差几岁？ 试试就知道了（根据选择跳转题目）"
+        };
+
+
+
+        var onBridgeReady = function(){
+            WeixinJSBridge.on('menu:share:appmessage', function(argv){
+                WeixinJSBridge.invoke('sendAppMessage', {
+                    "appid": dataForWeixin.appId,
+                    "img_url": dataForWeixin.TLImg,
+                    "img_width": "120",
+                    "img_height": "120",
+                    "link": dataForWeixin.url + '?f=wx_hy_bb',
+                    "title":  dataForWeixin.title,
+                    "desc": dataForWeixin.desc 
+                });
+                share_callback_hy();
+                setTimeout(function () {location.href = "http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd";}, 1500); 
+            });
+            WeixinJSBridge.on('menu:share:timeline', function(argv){              
+                WeixinJSBridge.invoke('shareTimeline', {
+                    "appid": dataForWeixin.appId,
+                    "img_url":dataForWeixin.TLImg,
+                    "img_width": "120",
+                    "img_height": "120",
+                    "link": dataForWeixin.url + '?f=wx_pyq_bb',
+                    "title": dataForWeixin.title,
+                    "desc": dataForWeixin.desc
+                });
+                share_callback_pyq();
+		setTimeout(function () {location.href = "http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd";}, 1500);  
+            });
+        };
+        if(document.addEventListener){
+            document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+        }else if(document.attachEvent){
+            document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+            document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+        }  
+      </script>
+      <style type="text/css">
+        body{
+
+          background: #000;
+
+          background: url("http//1251008728.cdn.myqcloud.com/1251008728/2014/manyanswers/bg.png") no-repeat;
+          background-size: cover;
+          margin: 0 auto;
+          padding: 20px 10px;
+          height: 100%;
+          min-height: 500px;
+      }
+
+      .title{
+          margin: 0 auto;
+          width: 80%;
+      }
+
+      .title h2{
+        background: #90ab8b;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 20px;
+        font-weight: normal;
+          margin-bottom: 0;
+      }
+
+      .title-sub{
+          padding: 10px 20px;
+          color: #fff;
+          text-align: center;
+          /*border: 1px solid #b374b1;*/
+          border-top: 0;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          margin: 0 auto;
+          background: rgba(231, 231, 231, 0.2) none repeat scroll 0 0 !important;
+          background: #e7e7e7;
+          filter:Alpha(opacity=20);
+      }
+
+      .question{
+          width: 80%;
+          margin: 0 auto;
+          margin-top: 50px;
+          display: none;
+      }
+
+      .question-title{
+          text-align: center;
+          color: #fff;
+      }
+
+      .question:first-child, .question.current{
+          display: block;
+      }
+      .result{
+          display:none;
+      }
+
+      .options ul{
+          padding: 0;
+      }
+      .options li{
+          margin: 20px 0;
+          padding: 5px 15px;
+          list-style-type: none;
+      }
+
+      .options li div{
+          padding-left: 20px;
+      }
+      .options.button li{
+          border: 1px solid #8760a3;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          width: 100%;
+          color: white;
+          background:rgba(142, 99, 167, 0.6) none repeat scroll 0 0 !important;
+
+          background:#8e63a7;
+          filter:Alpha(opacity=60);
+      }
+
+      .options.button li{
+          padding: 5px 0;
+      }
+
+      .options li.selected{
+          background: #cf6271 !important;
+      }
+      .prev{
+          margin-top: 30px;
+          font-weight: 300;
+          font-size: 12px;
+          float: right;
+          padding-bottom: 50px;
+      }
+      .prev a:link{
+          color: #fff;
+      }
+
+      .tools-button{
+          padding: 10px 0;
+          color: #fff;
+          text-align: center;
+          margin: 0 auto;
+          width: 80%;
+          background:rgba(159, 66, 61, 0.3) none repeat scroll 0 0;
+          background: #9f423d;
+          filter:Alpha(opacity=30);
+
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+
+          margin-top: 30px;
+
+      }
+
+      .share{
+          background:rgba(49, 126, 172, 0.6) none repeat scroll 0 0;
+          background: #317eac;
+          filter:Alpha(opacity=60);
+      }
+            #tip {
+                display: none;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+   #mask {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: none;
+                background-color: #333;
+                filter: alpha(Opacity=90);
+                -moz-opacity: 0.9;
+                opacity: 0.9;
+            }
+      </style>
+    </head>
+    <body>
+
+
+
+ <link rel="stylesheet" href="http//1251008728.cdn.myqcloud.com/1251008728/assets/css/flexslider.css" type="text/css" media="screen" />
+  <!-- FlexSlider -->
+   <script src="http//1251008728.cdn.myqcloud.com/1251008728/assets/javascripts/jquery.flexslider.js"></script>
+
+
+
+<div class="title header-title">
+  <h2>
+     爆准测试：你的容貌和实际年龄相差几岁？
+  </h2>
+  <div class="title-sub">
+爆准测试：你的容貌和实际年龄相差几岁？ 试试就知道了（根据选择跳转题目）
+  </div>
+</div>
+
+
+
+
+
+ 
+    <div class="question question-1 current">
+      <div class="question-title">
+          1、你总觉得自己的努力得不到别人的认可吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="2">
+                  <div>
+                  是的
+                  </div>
+               </li>
+            
+            
+              <li data-score="6">
+                  <div>
+                  不觉得
+                  </div>
+               </li>
+            
+            
+              <li data-score="4">
+                  <div>
+                  还好
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-2 ">
+      <div class="question-title">
+          2、你做了值得被夸奖的事，却得不到夸奖，你心情就会很失落吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="7">
+                  <div>
+                  是的
+                  </div>
+               </li>
+            
+            
+              <li data-score="3">
+                  <div>
+                  不是
+                  </div>
+               </li>
+            
+            
+              <li data-score="5">
+                  <div>
+                  还好
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-3 ">
+      <div class="question-title">
+          3、有时候你会觉得自己似乎特别走霉运吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="8">
+                  <div>
+                  是的
+                  </div>
+               </li>
+            
+            
+              <li data-score="9">
+                  <div>
+                  不是
+                  </div>
+               </li>
+            
+            
+              <li data-score="12">
+                  <div>
+                  还好
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-4 ">
+      <div class="question-title">
+          4、每天上班前总要花很长时间选择合适的衣服吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="7">
+                  <div>
+                  是的
+                  </div>
+               </li>
+            
+            
+              <li data-score="3">
+                  <div>
+                  不是
+                  </div>
+               </li>
+            
+            
+              <li data-score="11">
+                  <div>
+                  还好
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-5 ">
+      <div class="question-title">
+           5、对于自己的感情状况很处之泰然吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="8">
+                  <div>
+                  是的
+                  </div>
+               </li>
+            
+            
+              <li data-score="13">
+                  <div>
+                  不是
+                  </div>
+               </li>
+            
+            
+              <li data-score="12">
+                  <div>
+                  还好
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-6 ">
+      <div class="question-title">
+           6、你会主动和有好感的异性搭讪吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="10">
+                  <div>
+                  是的
+                  </div>
+               </li>
+            
+            
+              <li data-score="3">
+                  <div>
+                   不会
+                  </div>
+               </li>
+            
+            
+              <li data-score="5">
+                  <div>
+                  偶尔
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-7 ">
+      <div class="question-title">
+          7、你不介意和别人撞衫吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="9">
+                  <div>
+                  完全不介意
+                  </div>
+               </li>
+            
+            
+              <li data-score="14">
+                  <div>
+                  有一点介意
+                  </div>
+               </li>
+            
+            
+              <li data-score="12">
+                  <div>
+                  无所谓，但希望最好不要
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-8 ">
+      <div class="question-title">
+          8、长久不见的朋友再见时总会夸你漂亮了，你的感受是？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="16">
+                  <div>
+                  很开心
+                  </div>
+               </li>
+            
+            
+              <li data-score="15">
+                  <div>
+                  暗想“难道以前自己很丑吗？
+                  </div>
+               </li>
+            
+            
+              <li data-score="19">
+                  <div>
+                  没什么感觉，觉得对方只是说客套话罢了
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-9 ">
+      <div class="question-title">
+          9、和朋友发生误会自己不会主动和解吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="15">
+                  <div>
+                  是的
+                  </div>
+               </li>
+            
+            
+              <li data-score="18">
+                  <div>
+                  不是
+                  </div>
+               </li>
+            
+            
+              <li data-score="20">
+                  <div>
+                  不一定
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-10 ">
+      <div class="question-title">
+          10、身边的朋友大多都还在单身吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="8">
+                  <div>
+                  是的
+                  </div>
+               </li>
+            
+            
+              <li data-score="5">
+                  <div>
+                  不是
+                  </div>
+               </li>
+            
+            
+              <li data-score="13">
+                  <div>
+                  不知道
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-11 ">
+      <div class="question-title">
+          11、你觉得自己是一个算是感性的女人吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="14">
+                  <div>
+                   是的
+                  </div>
+               </li>
+            
+            
+              <li data-score="9">
+                  <div>
+                  不是
+                  </div>
+               </li>
+            
+            
+              <li data-score="7">
+                  <div>
+                  不知道
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-12 ">
+      <div class="question-title">
+           12、如果你是一只鹿，被猎人追赶，你最怕的是？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="20">
+                  <div>
+                  被杀死
+                  </div>
+               </li>
+            
+            
+              <li data-score="16">
+                  <div>
+                  被折磨死
+                  </div>
+               </li>
+            
+            
+              <li data-score="15">
+                  <div>
+                  受伤
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-13 ">
+      <div class="question-title">
+          13、假如你现在是蜜蜂社团的一名公民，你最理想的角色是？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="17">
+                  <div>
+                   勤劳工作者
+                  </div>
+               </li>
+            
+            
+              <li data-score="16">
+                  <div>
+                   管理者
+                  </div>
+               </li>
+            
+            
+              <li data-score="19">
+                  <div>
+                  什么角色也谈不上
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-14 ">
+      <div class="question-title">
+           14、有时候，你总觉得长辈们很不讲道理吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="9">
+                  <div>
+                  是的
+                  </div>
+               </li>
+            
+            
+              <li data-score="20">
+                  <div>
+                  不是
+                  </div>
+               </li>
+            
+            
+              <li data-score="18">
+                  <div>
+                  还好
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-15 ">
+      <div class="question-title">
+          15、你的恋人，最初吸引的你是哪方面？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="400">
+                  <div>
+                   谈吐
+                  </div>
+               </li>
+            
+            
+              <li data-score="300">
+                  <div>
+                  外表
+                  </div>
+               </li>
+            
+            
+              <li data-score="600">
+                  <div>
+                  品味
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-16 ">
+      <div class="question-title">
+           16、有时候，你喜欢花天酒地的生活吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="400">
+                  <div>
+                  是的
+                  </div>
+               </li>
+            
+            
+              <li data-score="300">
+                  <div>
+                  不是
+                  </div>
+               </li>
+            
+            
+              <li data-score="500">
+                  <div>
+                  还好
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-17 ">
+      <div class="question-title">
+           17、你是一个喜欢离开家独居并独立生活的人吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="600">
+                  <div>
+                  是的
+                  </div>
+               </li>
+            
+            
+              <li data-score="500">
+                  <div>
+                  不是
+                  </div>
+               </li>
+            
+            
+              <li data-score="19">
+                  <div>
+                  还好
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-18 ">
+      <div class="question-title">
+          18、恋爱上的愉快比学业重要吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="110">
+                  <div>
+                   是的
+                  </div>
+               </li>
+            
+            
+              <li data-score="20">
+                  <div>
+                  不是
+                  </div>
+               </li>
+            
+            
+              <li data-score="200">
+                  <div>
+                  二者差不多
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-19 ">
+      <div class="question-title">
+          19、你能接受一辈子不富裕，但保证幸福平安吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="600">
+                  <div>
+                    最好是那样
+                  </div>
+               </li>
+            
+            
+              <li data-score="400">
+                  <div>
+                   不接受
+                  </div>
+               </li>
+            
+            
+              <li data-score="500">
+                  <div>
+                  不知道
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-20 ">
+      <div class="question-title">
+          20、即使上司临时要你加班，你也会接受吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="300">
+                  <div>
+                  是的
+                  </div>
+               </li>
+            
+            
+              <li data-score="600">
+                  <div>
+                  不接受
+                  </div>
+               </li>
+            
+            
+              <li data-score="110">
+                  <div>
+                  不知道
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+
+
+
+<div class="result result-110">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                <b style="color:red"> A、你的容貌和实际年龄相差不大。</b>基本上，不认识你的人看到你也能猜出你的实际年龄来。你保养得还算不错。可是还是没有看上去比实际年龄小很多，主要原因是你穿衣服的风格太保守了，你始终认为什么样的年龄阶段就应该穿什么样的衣服，要是服装和自己的实际年龄不搭配就太二了，如果你想看起来更年轻一点，你可以尝试更青春的衣服，你绝对能驾驭得了。
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button">
+              <a href="http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+            </div>
+			<CENTER>
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a><a href="#" class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http//bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</center>
+          </div>
+
+<div class="result result-200">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                 <b style="color:red"> B、你的容貌和实际年龄完全符合。</b>你是哪种中规中矩的人，你的打扮和实际年龄基本上差别不是很大。你不是很擅长保养皮肤，本身肌肤的底子也还好，不会超前衰老。如果你想要继续保持自己的好皮肤，你应该戒除那些不健康的零食，不良的生活习惯对外表也有不少影响，如果你不熬夜又坚持运动的话，应该看上去还蛮年轻的。
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button">
+              <a href="http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+            </div>
+			<CENTER>
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a><a href="#" class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http//bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</center>
+          </div>
+
+<div class="result result-300">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                 <b style="color:red">  C、你的容貌比实际年龄看起来更加年轻。</b>事实上，很多人猜测你的年龄都会猜的比实际年龄小一些。你看上去就是显得很青春。如果你穿学生装，说不准还会被误认为是学生。加上你天生的模样也不太显老。所以，你永远比同龄人看上去要充满活力。你比较会打扮自己，整体给人的感觉就是很好看又大方得体。
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button">
+              <a href="http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+            </div>
+			<CENTER>
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a><a href="#" class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http//bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</center>
+          </div>
+
+<div class="result result-400">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                <b style="color:red">D、你的容貌比实际年龄看起来要成熟一些。</b>也许你并不喜欢把自己装得很嫩，所以你选择服装的时候习惯性选择一些看上去比较干练的服装。你受不了蕾丝蝴蝶结，那种满身骷髅头的衣服更是要了你的命。在选择服装的时候，你趋向于总是选择色调比较深的正装。如果你想要比现在看起来年轻一些，你可以大胆地尝试色彩鲜艳，款式复杂一点的衣服。
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button">
+              <a href="http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+            </div>
+			<CENTER>
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a><a href="#" class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http//bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</center>
+          </div>
+
+<div class="result result-500">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                <b style="color:red">E、你的容貌让人无法猜测出你的实际年龄。</b>你真是个多变的人，不管是什么样的衣服套在你身上，你都能将它们穿出感觉来。服装本身需要的是一个适合它的人，衣服是让人穿的，而非是衣服穿人，你可以做到的就是驾驭一些别人没有气势驾驭的衣服。很多人都羡慕你，正是因为你想让自己成熟你就能表现得很妩媚，而你想让自己看起来更年轻，你又能活力而青春。
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button">
+              <a href="http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+            </div>
+			<CENTER>
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a><a href="#" class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http//bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</center>
+          </div>
+
+<div class="result result-600">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                <b style="color:red"> F、你的容貌与实际年龄比起来显得太过度年轻了。</b>如果你某天厌倦了自己的生活，你大可以背上书包回学校，没有人会怀疑你的学生身份，因为你看起来真的像一颗刚刚成熟的水蜜桃一样，既可口美味又魅惑动人。即便你想要改变自己身份证的年龄也不是一件难事，只要你去户籍登记处说你想要修改的年龄，他们一定会以为是身份证上的年龄写错了，而不是你在撒谎。
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button">
+              <a href="http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+            </div>
+			<CENTER>
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a><a href="#" class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http//bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</center>
+          </div>
+
+
+       <div id="mask" onclick="mask();"></div>
+       <div id="tip"  onclick="mask();"><img  style="width:320px;" src="http//www.lanrenmb.com/wap/126/img/guide.png"/>
+       </div>
+<br/>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 手机网站适应性广告代码 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1449491313257558"
+     data-ad-slot="1246518959"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</html>

@@ -1,0 +1,256 @@
+/* created by Pam Atkins, based on a template from http//freehtml5templates.com/ */
+
+/* reset */
+* {
+margin: 0;
+padding: 0;
+}
+
+/* render html5 elements as block */
+footer, section, aside, nav, article {
+display: block;
+}
+
+body {
+line-height: 1;
+background-image: url(images/bg2.jpg);
+background-repeat: repeat;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+color: #555;
+font-size: 14px;
+line-height: 18px;
+background-color: #596929;
+}
+	
+/* layout */
+
+#wrapper {
+width: 940px;
+margin: 0 auto;
+margin-bottom: 20px;
+border: 3px solid #888;
+background: #555 url(images/bg.png) repeat;
+}
+
+nav {
+width: 940px;
+height: 50px;
+margin: 0 auto;
+background: #666;
+margin-top: -6px;
+}
+
+#main {
+width: 940px;
+margin: 0 auto;
+padding-top: 0;
+overflow: hidden;
+}
+
+#content {
+float: left;
+width: 450px;
+margin-left: 40px;
+}
+
+#sidebar1 {
+float: left;
+width: 186px;
+background-color: #596929;
+}
+
+#sidebar1 p {
+  padding-left: 7px;
+  padding-right: 3px;
+  color: white;
+}
+
+#sidebar2 {
+float: right;
+padding-right: 30px;
+width: 180px;
+}
+
+footer {
+width: 940px;
+margin: 0 auto;
+clear: both;
+}
+
+/* basics */
+
+h1,h2,h3,h4,h5,h6 {
+/*font-weight: bold;*/
+clear: both;
+color: #555;
+text-decoration: none;
+}
+
+a:link, a:visited {
+color:#000;
+text-decoration: none;
+}
+
+a:hover, a:active {
+color: #C3A26B;
+}
+
+p {
+margin-bottom: 18px;
+}
+
+li {
+padding-left: 5px;
+}
+
+/* nav */
+
+nav .menu {
+font-size: 16px;
+font-family: Trebuchet MS;
+}
+
+nav .menu ul {
+margin: 0;
+padding: 17px 0 0 10px;
+list-style: none;
+line-height: normal;
+}
+
+nav .menu li {
+display: block;
+float: left;
+}
+
+nav .menu a {
+display: block;
+float: left;
+margin-right: 5px;
+padding: 0px 15px;
+text-decoration: none;
+color: #FFF;
+}
+
+nav .menu a:hover {
+text-decoration: underline;
+color:#C3A26B;
+}
+
+
+/** ARTICLES **/
+article img {
+border: none;
+}
+
+#content p, ul, ol, hr {
+margin-bottom: 24px;
+}
+
+#content ul ul, ol ol, ul ol, ol ul {
+margin-bottom: 0;
+}
+
+#content h2, h3, h4, h5, h6 {
+color: #555;
+margin: 0 0 20px 0;
+line-height: 1.5em;
+font-family: Trebuchet MS;
+}
+
+#content h2{
+  margin-top: 10px;
+}
+
+.alignleft, img.alignleft {
+display: inline;
+float: left;
+margin-right: 10px;
+}
+
+.alignright, img.alignright {
+display: inline;
+float: right;
+margin-left: 10px;
+}
+
+.aligncenter, img.aligncenter {
+clear: both;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+img {
+margin-bottom: 2px;
+}
+
+/* sidebar and footer widget blocks */
+#sidebar2 h1 {
+  text-align: center;
+  font-size: 20px;
+  color: #596929;
+  font-weight: bold;
+  font-family: Trebuchet MS;
+  margin-bottom: 10px;
+}
+
+#sidebar2 .details {
+  font-weight: bold;
+  border: solid #596929 1px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 5px;
+}
+
+
+aside h3 {
+font-size: 18px;
+text-shadow: 0px 2px 3px #ddd;
+}
+
+aside ul {
+list-style: square;
+color: #bbb;
+margin: -15px 0 15px 25px;
+}
+
+#footer-area {
+background: #666;
+color: #FFF;
+font-size: 90%;
+padding: 18px 0;
+overflow: hidden;
+}
+
+.footer-segment {
+float: left;
+margin-right: 20px;
+margin-left: 20px;
+width: 190px;
+}
+
+footer aside h4 {
+color: #faf0e6;
+font-size: 16px;
+line-height: 1.5em;
+}
+
+footer ul {
+list-style: none;
+margin: -15px 0;
+}
+
+footer a:link, footer a:visited {
+color: #fff;
+}
+
+footer a:hover { 
+text-decoration: underline;
+color:#C3A26B;
+}
+
+footer p {
+margin-top: -15px;
+color: #faf0e6;
+}

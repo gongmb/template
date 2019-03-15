@@ -1,0 +1,15 @@
+﻿<DynamicWeb>
+
+<Sections>
+
+		<name namex="GRAPHIC DEISGN" f="cat"></name>	
+		<name namex="3D DESIGNS" f="cat2"></name>	
+		<name namex="PRINT MEDIA" f="cat"></name>
+		<name namex="IDENTITY" f="cat2"></name>		
+		<name namex="PHOTOGRAPHY" f="cat"></name>
+		<name namex="MULTIMEDIA" f="cat2"></name>
+		<name namex="VIDEO EFFECTS" f="cat"></name>
+</Sections>
+
+
+</DynamicWeb>

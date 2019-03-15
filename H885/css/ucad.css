@@ -1,0 +1,54 @@
+    .ucad_div{
+        position:absolute;
+       display:none;
+        overflow: hidden;        
+        z-index: 10000;
+        right:0px;
+        margin:0;
+        padding:0;
+        text-align:center;
+    }
+ 
+    .ucad_banner{
+        background: none repeat scroll 0 0 rgba(250, 250, 250, 0.7);
+        width:100%;
+    }
+    .ucad_banner_nobg{
+        width:100%;
+    }
+    .ucad_slider{         
+        margin:0px;
+         margin-right:2px;
+         outline:none;border-color:rgba(0,0,0,.2);
+         padding:0px;
+    }
+    .ucad_close_on_middle{
+        cursor: pointer;
+        position: absolute;  
+        padding:5px;
+        right:2px; 
+    }
+    .ucad_close_on_top{
+        /**关闭按钮在图片之上方，即不层叠*/
+        cursor:pointer;
+        position:relative;
+        padding:1px;
+        text-align:right;
+    }
+    .ucad_close_on_right{
+         text-align:right;
+        right:2px;
+         cursor: pointer;
+         position: absolute;  
+         padding:10px;
+    }
+    .ucad_close_on_right img,.ucad_close_on_top img,.ucad_close_on_middle img{
+        width:26px;
+        height:26px;
+    }
+ 
+    .ucad_slider_img,.ucad_banner_img{
+        cursor: pointer;
+        margin:0px;
+    }
+    

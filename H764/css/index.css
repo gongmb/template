@@ -1,0 +1,56 @@
+@charset "gb2312";
+/* CSS Document */
+*{padding:0;margin:0}
+body {font-size:12px; background:url(../images/bg.gif);}
+a:link, a:visited { color:#666;text-decoration: none; } 
+a:active, a:hover { color:#000;text-decoration: none }
+ul{ list-style-type:none}
+img{ border:0}
+.blank{ height:5px; overflow:hidden; width:100%; margin:auto; clear:both}
+/* nav */
+#nav {background:url(../images/nav_bg.jpg); height:70px; width:740px;border-bottom:#b5ae84 5px solid}
+#nav ul{ margin:0 0 0 80px}
+#nav li {display:inline; line-height:70px;font-weight:bold; padding:0 0 0 30px;}
+#nav li a{color:#EFD76d; }
+#nav li a:hover{ color:#CCC}
+/* 主体部分 */
+article{ margin:auto; width:1000px; background-color:#781c1c; }
+/* 左边栏 */
+aside{ width:250px; float:left; background:url(../images/left_bg.jpg); height:800px; }  
+.address{color: #CCC; margin:450px 0 0 30px}
+.address p{ line-height:1.9}
+/* 右边栏 */
+#conright{ width:740px; float:right;background-color:#e1dbc1;height:800px; margin-left:5px;}
+.banner img{ display:block}
+.banner{ border-bottom:#7f3238 5px solid}
+.rl{ width:370px; float:left;margin-top:10px;}
+.rl li{ color: #F00; margin-left:20px; height:22px; border-bottom: #999 1px dashed; margin-bottom:7px; list-style:none}
+.rl li a{ color: #333}
+.rl li a:hover{ color: #000;}
+.rl li span{float:right; }
+.rl P{ text-indent:2em; padding:0px 0 0 30px; line-height:25px; text-align:justify; color:#333} 
+.js{ background-image:url(../images/jdjs.png);height:60px;}
+.news{ margin:30px 0 0 0}
+.news li span{ color:#666}
+.rr{ width:370px; float:right;margin-top:10px; }
+.imgs{ margin-left:30px; }
+.imgs ul { overflow:hidden}
+.imgs ul li { width:120px; float:left; margin:15px 0 0 18px; display:inline; text-align:center;}
+.imgs ul li a{ display:block;}
+.imgs ul li img { margin-bottom:3px; width:120px; height:87px; border:#ccc 3px solid; }
+/* footer */
+#footer{ width:100%; margin:auto;background-color:#781c1c;}
+.footnav{ background-image:url(../images/foot_bg.jpg); height:43px; position:relative} 
+.footnav li{ display:inline; width:60px; float:left; padding-left:10px; line-height:43px}
+.footnav li a{ color:#C60; font-weight:bold;}
+.footnav li a:hover{color:#fff}
+.footnav span {
+	float:right;
+	margin-top:10px;
+	padding-right:10px;
+	color:#FFF;
+	position:absolute;
+	left: 760px;
+	top: 0px;
+	width:250px;
+}

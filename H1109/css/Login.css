@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+@import url(reset.css);
+@import url(base.css);
+
+#Login{width:595px; height:355px; margin:0 auto;font-size: 1.2em;line-height:1.8; margin-top:170px;}
+.box{ background: url(../images/login_bg.png) left top no-repeat; position:relative; height:353px;width:595px; overflow: hidden;zoom:1;}
+.box p.a01{ position:absolute; left:17px; top:19px;}
+.box dl{ position:absolute; left:30px; top:127px; width:195px; color:#505050;}
+.box dl dt{ font-size:14px; font-weight:bold; margin-bottom:10px;}
+.box table.a02{ position:absolute; left:257px; top:127px;}
+.box table.a02 th{ text-align:right; margin-right:10px; font-weight:normal; padding: 5px 0 5px 0;}
+.box table.a02 .a03{ width:168px; height:24px; border:none;line-height:24px;font-size:12px; padding-left:22px;background:url(../images/login02.jpg) left center no-repeat; margin-left:10px;}
+.box table.a02 .a04{ width:168px; height:24px; border:none;line-height:24px;font-size:12px; padding-left:22px;background:url(../images/login03.jpg) left center no-repeat; margin-left:10px;}
+.box table.a02 .a05{ width:66px; height:22px; border:none; line-height:22px;font-size:12px; padding-left:5px;background:url(../images/login04.jpg) left center no-repeat; margin-left:10px;}
+body {
+	background-color:#f0f0f0;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-attachment:fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

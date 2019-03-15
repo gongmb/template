@@ -1,0 +1,1 @@
+var __stockinfo = {"stock":[{"code":"000001","name":"上证指数","price":"2087.94","riserate":-1.83,"image":"http//minimg.hexun.com/ucwap.hexun.com/stockimage/000001_320x150.png?t=1384336538712"},{"code":"399001","name":"深证成指","price":"8111.00","riserate":-2.03,"image":"http//minimg.hexun.com/ucwap.hexun.com/stockimage/399001_320x150.png?t=1384336538712"}]}

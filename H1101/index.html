@@ -1,0 +1,428 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<title>Round - Under Constraction Template</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/media-queries.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+
+
+		<style type="text/css">
+			#top {
+				background-image: url("images/pattern-a.png");
+				}
+				
+			#content .page header {
+				background-image: url("images/pattern-a.png");
+				}
+		</style>
+<script type="text/javascript">
+	//--- Setup vars for JavaScript
+	var $day = 634;	
+	var $hour = 20;	
+	var $minute = 8;	
+	var $seconds = 20;
+	var $site = '../round-under-construction-template';
+	var $tweetCount = 10;
+	var $tweetUserName = 'envato';
+	var $sliderDelay = 4000;
+</script>
+<link rel="stylesheet" type="text/css" href="css/_green.css" />
+
+<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/portfolio.js"></script>
+<script type="text/javascript" src="js/fullscreen-slider.js"></script>
+<script type="text/javascript" src="js/jquery.tweet.js"></script>
+<script type="text/javascript" src="js/count-down.js"></script>
+<script type="text/javascript" src="js/subscribe.js"></script>
+<script type="text/javascript" src="js/contact-form.js"></script>
+
+<script type="text/javascript" src="js/start.js"></script>
+
+<!--[if lt IE 9]>
+ <script>
+ 	document.createElement('article');
+ 	document.createElement('aside');
+  document.createElement('figcaption');
+  document.createElement('figure');
+  document.createElement('footer');
+  document.createElement('header');
+  document.createElement('hgroup');
+  document.createElement('nav');
+  document.createElement('section');
+  document.createElement('time'); 
+ </script> 
+ 
+ <style type="text/css">
+ 	#countdown h1 {
+  	padding: 0 25px 0 15px;
+  	}
+    
+  #countdown p {
+  	padding: 0 20px 0 15px;
+  	}
+    
+ 	#countdown ul li b {
+  	left: -5px;
+  	}
+    
+  .wrap-input	input {
+    top: 4px;
+    height: 23px;
+    line-height: 23px;
+    background-color: #FFF;
+    }	
+    
+  .wrap-textarea textarea {
+  	top: 4px;
+    height: 130px;
+		background-color: #FFF;
+    }	
+ </style>
+<![endif]-->
+</head>
+<body>  
+
+	<!--- BEGIN #fullscreen-slider --->
+	<section id="fullscreen-slider">
+    <a href="pictures/1.jpg"></a>
+    <a href="pictures/2.jpg"></a>
+    <a href="pictures/3.jpg"></a>
+    <a href="pictures/4.jpg"></a>   
+  </section>
+ 	<!--- END #fullscreen-slider --->
+   
+  <!--- BEGIN #top ---> 
+	<section id="top">
+  
+  	<!--- BEGIN #twitter-top for mobile version --->
+  	<section id="twitter-top">
+    	<article>
+    		<div class="tweet"></div>
+      </article>
+      <a href="default.htm" class="button-twitter"></a>
+    </section>
+    <!--- END #twitter-top for mobile version --->
+    
+    <!--- BEGIN #logo --->
+    <header id="logo"><img src="images/logo.png" title="" /></header>
+    <!--- END #logo --->
+    
+    <!--- BEGIN #countdown --->
+    <section id="countdown">
+      <h1>Under Construction</h1>
+      <div>
+      	<p>We'll be back on line in:</p>
+      </div>
+      <ul>
+        <li><img src="images/count-down-bg.png" /><b id="days">634</b><span class="long">days</span><span class="short">D</span></li>
+        <li><img src="images/count-down-bg.png" /><b id="hours">20</b><span class="long">hours</span><span class="short">H</span></li>
+        <li><img src="images/count-down-bg.png" /><b id="minutes">8</b><span class="long">minutes</span><span class="short">M</span></li>
+        <li><img src="images/count-down-bg.png" /><b id="seconds">20</b><span class="long">seconds</span><span class="short">S</span></li>
+      </ul>
+    </section>
+    <!--- END #countdown --->
+    
+    <!--- BEGIN #subscribe --->
+    <section id="subscribe">
+      <form name="subscribe-form" id="subscribe-form">
+        <div class="subscribe-wrap-input"><input type="text" id="subscribe-email" name="email" value="Enter your email adress" onFocus="if(this.value == 'Enter your email adress') {this.value = '';}" onBlur="if(this.value == '') {this.value = 'Enter your email adress';}" alt="Enter your email adress"  /></div>
+        <span class="message">Error text</span>
+        <a href="default.htm" class="button-submit">Subscribe</a>
+      </form>
+    </section>
+    <!--- END #subscribe --->
+    
+    <!--- BEGIN #player for slider --->
+    <section id="player">
+      <div class="btn-1" class="prev"><a href="default.htm" class="prev"></a></div>
+      <div class="btn-2" class="play-pause"><a href="default.htm" class="play-and-pause pause"></a></div>
+      <div class="btn-3" class="next"><a href="default.htm" class="next"></a></div>
+    </section>
+    <!--- END #player for slider --->
+    
+    <!--- BEGIN menu Bubbles --->
+    <nav id="menu-style-a">
+      <ul>
+      	<li><a href="#about-us-block">About Us</a></li>
+        <li><a href="#portfolio-block">Portfolio</a></li>
+        <li><a href="#contact-us-block">Contact Us</a></li>
+      </ul>
+    </nav>
+    <!--- END menu Bubbles --->
+    
+    <!--- BEGIN wrap mobile menu --->
+    <div id="wrap-menu-style-b">
+    	<div class="buttons"><a href="#menu-style-b" class="menu-tab">Menu</a><a href="#subscribe-bottom" class="subscribe-tab">Subscribe</a></div>
+      <!--- BEGIN menu for mobile version --->
+      <nav id="menu-style-b">
+        <ul class="menu">
+          <li><a href="#about-us-block">About Us</a></li>
+          <li><a href="#portfolio-block">Portfolio</a></li>
+          <li><a href="#contact-us-block">Contact Us</a></li>
+          <!--- BEGIN #social-icons for mobile version --->
+          <li class="wrap-social-icons">
+            <ul class="social-icons">
+              <li><a href="default.htm" class="twitter" title="twitter"></a></li>
+              <li><a href="default.htm" class="facebook" title="facebook"></a></li>
+              <li><a href="default.htm" class="digg" title="Digg"></a></li>
+              <li><a href="default.htm" class="rss" title="rss"></a></li>
+              <li><a href="default.htm" class="skype" title="skype"></a></li>
+              <!--    
+              <li><a href="" class="twitter" title="twitter"></a></li>
+              <li><a href="" class="facebook" title="facebook"></a></li>
+              <li><a href="" class="dribbble" title="dribbble"></a></li>
+              <li><a href="" class="rss" title="rss"></a></li>
+              <li><a href="" class="skype" title="skype"></a></li>
+              <li><a href="" class="digg" title="Digg"></a></li>
+              <li><a href="" class="googlebuzz" title="Google Buzz"></a></li>
+              <li><a href="" class="delicious" title="Delicious"></a></li>
+              <li><a href="" class="tumbler" title="Tumbler"></a></li>
+              <li><a href="" class="plixi" title="Plixi"></a></li>
+              <li><a href="" class="stubleupon" title="StubleUpon"></a></li>
+              <li><a href="" class="lastfm" title="LastFM"></a></li>
+              <li><a href="" class="mobypicture" title="MobyPicture"></a></li>
+              <li><a href="" class="youtube" title="YouTube"></a></li>
+              <li><a href="" class="vimeo" title="Vimeo"></a></li>
+              <li><a href="" class="myspace" title="MySpace"></a></li>
+              <li><a href="" class="dropbox" title="Dropbox"></a></li>
+              <li><a href="" class="foursquare" title="Four Square"></a></li>
+              <li><a href="" class="gowalla" title="Gowalla"></a></li>
+              <li><a href="" class="ichat" title="iChat"></a></li>
+              <li><a href="" class="googleplus" title="Google +"></a></li>
+              <li><a href="" class="linkedin" title="LinkedIn"></a></li>
+              -->
+            </ul>
+            <div class="clear"></div>
+          </li>
+          <!--- END #social-icons for mobile version --->
+        </ul>
+      </nav>
+      <!--- END menu for mobile version --->
+      
+      <!--- BEGIN #subscribe-bottom for mobile version--->
+      <section id="subscribe-bottom">
+      	<form name="subscribe-2">
+        	<div class="wrap-input"><span><input name="email" value="Enter your email adress" onFocus="if(this.value == 'Enter your email adress') {this.value = '';}" onBlur="if(this.value == '') {this.value = 'Enter your email adress';}" alt="Enter your email adress" /></span></div>
+          <span class="message"></span>
+          <div class="subscribe-buttons"><a href="default.htm" class="button-submit">Submit</a><a href="default.htm" class="cancel">Cancel</a></div>
+        </form>
+      </section>
+      <!--- END #subscribe-bottom for mobile version--->
+    </div>
+    <!--- END wrap mobile menu --->
+    
+    <section id="preloader">
+      <div></div>
+    </section>    
+  </section>
+  <!--- END #top --->
+  
+  <div class="clear"></div>
+  
+  <!--- BEGIN #content --->
+  <section id="content">
+  
+  	<!--- BEGIN Block #about-us-block --->
+    <section class="page" id="about-us-block">
+    	<header>
+      	<h1>Abouts Us</h1>
+      </header>
+      <article>  
+      	<div class="inner">
+        	<a href="#" class="button-close"></a>
+        	<a href="#top" class="button-top"></a>
+          
+          <!--BEGIN – Enter your html -->
+          <h2>Who we are?</h2>
+          <p>Lorem ipsum dolor sit amet, <strong>consec</strong> tetuer adipiscing <a href="default.htm">elit</a>. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit. Fusce susvarius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna.</p>
+          <ul>
+          	<li>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit. Fusce susvarius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio</li>
+            <li>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit. Fusce susvarius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio</li>
+            <li>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit. Fusce susvarius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio</li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit. Fusce susvarius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna.</p>
+          <h2>What we do?</h2>
+          <p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit. Fusce susvarius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit. Fusce susvarius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem.</p>
+          <!--END – Enter your html -->
+          
+        </div>
+      </article>
+    </section>
+    <!--- END Block #about-us-block --->
+		
+    <!--- BEGIN Block #portfolio-block --->
+    <section class="page" id="portfolio-block">
+    	<header>
+    		<h1>Portfolio</h1>
+      </header>
+      <article>
+      	<div class="inner">
+        	<a href="#" class="button-close"></a>
+        	<a href="#top" class="button-top"></a>
+          
+          <!--BEGIN – Enter your html -->         
+        	<h2>Our best works.</h2>
+					
+          <!--- BEGIN Portfolio --->
+					<div class="wrap-portfolio">        
+            <section class="portfolio">
+              <figure>
+                <a href="pictures/portfolio/1.jpg" title="preview" rel="prettyPhoto[pp_one]"><img src="pictures/portfolio/1-small.jpg" /></a>
+                <figcaption>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Lorem ipsum dolor sit amet, consec Lorem ipsum dolor sit amet, consec consec Lorem ipsum dolor sit amet, consec consec Lorem ipsum dolor sit amet, consec </figcaption>
+              </figure>
+              <figure>
+                <a href="pictures/portfolio/2.jpg" title="preview" rel="prettyPhoto[pp_one]"><img src="pictures/portfolio/2-small.jpg" /></a>
+              </figure>
+              <figure>
+                <img src="pictures/portfolio/3-small.jpg" />
+                <figcaption>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.</figcaption>
+              </figure>
+              <figure>
+                <a href="pictures/portfolio/4.jpg" title="preview" rel="prettyPhoto[pp_one]"><img src="pictures/portfolio/4-small.jpg" /></a>
+                <figcaption>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.</figcaption>
+              </figure>
+              <figure>
+                <a href="pictures/portfolio/5.jpg" title="preview" rel="prettyPhoto[pp_one]"><img src="pictures/portfolio/5-small.jpg" /></a>
+              </figure>
+              <figure>
+                <img src="pictures/portfolio/6-small.jpg" />
+                <figcaption>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.</figcaption>
+              </figure>              
+            </section>         
+            <div class="clear-float"></div>
+					</div>  
+          <!--- END Portfolio --->
+          
+          <h2>What we do?</h2>
+          <p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit. Fusce susvarius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit. Fusce susvarius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem.</p>
+          <!--END – Enter your html -->
+          
+	      </div>      
+      </article>            
+    </section>
+    <!--- END Block #portfolio-block --->
+    
+    <!--- BEGIN Block #contact-us-block --->
+    <section class="page" id="contact-us-block">
+    	<header>
+    		<h1>Contact Us</h1>
+      </header>
+      <article>
+      	<div class="inner">
+        	<a href="#" class="button-close"></a>
+        	<a href="#top" class="button-top"></a>
+          
+          <!--BEGIN – Enter your html -->
+        	<h2>Our Location</h2>
+          
+         <!--BEGIN Our location -->          <section id="location">          	<div class="wrap">              <!--BEGIN google map -->              <iframe width="200" height="210" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https//maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Toronto,+ON,+Canada&amp;aq=0&amp;oq=toront&amp;sll=48.275882,-87.703857&amp;sspn=5.506002,9.876709&amp;ie=UTF8&amp;split=0&amp;hq=&amp;hnear=Toronto,+Toronto+Division,+Ontario,+Canada&amp;t=m&amp;ll=43.653218,-79.383259&amp;spn=0.024592,0.089092&amp;z=13&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https//maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Toronto,+ON,+Canada&amp;aq=0&amp;oq=toront&amp;sll=48.275882,-87.703857&amp;sspn=5.506002,9.876709&amp;ie=UTF8&amp;split=0&amp;hq=&amp;hnear=Toronto,+Toronto+Division,+Ontario,+Canada&amp;t=m&amp;ll=43.653218,-79.383259&amp;spn=0.024592,0.089092&amp;z=13&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>              <!--END google map -->            </div>          </section>          <!--END Our location -->          
+          <!--END – Enter your html -->
+          
+          <div id="box-address-contact-from">
+          
+          	<!--BEGIN Our Address -->
+            <section id="address">
+              <h2>Our Addsress</h2>
+              
+              <!--BEGIN – Enter your html -->
+              <p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Lorem ipsum dolor sit amet, consec Lorem ipsum dolor sit amet, consec consec Lorem ipsum dolor sit amet, consec consec Lorem ipsum dolor sit amet, consec</p>
+              <ul>
+                <li>Tel: +8(777)111-222-333</li>
+                <li>Fax: +8(777)444-555-777</li>
+                <li>E-Mail: <a href="mailto:">info-box@mysite.com</a></li>
+              </ul>
+              <!--END – Enter your html -->
+              
+            </section>
+            <!--END Our Address -->
+						
+            <!--BEGIN Contact Form -->
+            <section id="contact-from">
+              <h2>Contact Form</h2>
+                                          
+              <form name="jf_cf" id="jf_cf">
+                <label for="jf_cf_name" class="red-star">Name:</label>
+                <div class="wrap-input"><span><input class="required" type="text" value="" id="jf_cf_name" name="jf_cf_name" /></span></div>
+                <span class="message jf_cf_name "></span>
+                
+                <label for="jf_cf_email" class="red-star">Email:</label>
+                <div class="wrap-input"><span><input class="required" type="text" value="" id="jf_cf_email" name="jf_cf_email" /></span></div>
+                <span class="message jf_cf_email "></span>
+                
+                <label for="jf_cf_message" class="red-star">Message:</label>
+                <div class="wrap-textarea"><span><textarea class="required" name="jf_cf_message" id="jf_cf_message"></textarea></span></div>
+                <span class="message jf_cf_message "></span>
+                
+                <a href="default.htm" id="jf_cf_submit" ><span>Send</span></a>
+                <input type="submit" value="SEND" />
+                                                     
+                <input type="hidden" name="jf_countdown_action" value="send" />  
+                <input type="hidden" id="jf_cf_success" name="jf_cf_success" value="" />                                                    
+              </form>
+              <div class="clear"></div>
+              <a href="default.htm" style="display: none;" id="jf_cf_button_show" >Send another message</a>
+            </section>
+            <!--END Contact Form -->
+            
+            <div class="clear"></div>
+          </div>
+
+        </div>      
+      </article>            
+    </section>
+    <!--- END Block #contact-us-block --->
+      
+  </section>
+  <!--- END #content --->
+  
+  <footer id="footer">
+  	<div class="footer-inner">
+    	<!--BEGIN #social-icons -->
+    	<ul class="social-icons">  
+      	<li><a href="default.htm" class="twitter" title="twitter"></a></li>
+    		<li><a href="default.htm" class="facebook" title="facebook"></a></li>
+        <li><a href="default.htm" class="digg" title="Digg"></a></li>        
+        <li><a href="default.htm" class="rss" title="rss"></a></li>
+        <li><a href="default.htm" class="skype" title="skype"></a></li>
+      	<!--    
+      	<li><a href="" class="twitter" title="twitter"></a></li>
+    		<li><a href="" class="facebook" title="facebook"></a></li>
+        <li><a href="" class="dribbble" title="dribbble"></a></li>
+        <li><a href="" class="rss" title="rss"></a></li>
+        <li><a href="" class="skype" title="skype"></a></li>
+        <li><a href="" class="digg" title="Digg"></a></li>
+        <li><a href="" class="googlebuzz" title="Google Buzz"></a></li>
+        <li><a href="" class="delicious" title="Delicious"></a></li>
+        <li><a href="" class="tumbler" title="Tumbler"></a></li>
+        <li><a href="" class="plixi" title="Plixi"></a></li>
+        <li><a href="" class="stubleupon" title="StubleUpon"></a></li>
+        <li><a href="" class="lastfm" title="LastFM"></a></li>
+        <li><a href="" class="mobypicture" title="MobyPicture"></a></li>
+        <li><a href="" class="youtube" title="YouTube"></a></li>
+        <li><a href="" class="vimeo" title="Vimeo"></a></li>
+        <li><a href="" class="myspace" title="MySpace"></a></li>
+        <li><a href="" class="dropbox" title="Dropbox"></a></li>
+        <li><a href="" class="foursquare" title="Four Square"></a></li>
+        <li><a href="" class="gowalla" title="Gowalla"></a></li>
+        <li><a href="" class="ichat" title="iChat"></a></li>
+        <li><a href="" class="googleplus" title="Google +"></a></li>
+        <li><a href="" class="linkedin" title="LinkedIn"></a></li>
+        -->
+      </ul>
+      <!--END #social-icons -->
+      
+      <!--BEGIN #twitter-bottom -->  
+      <section id="twitter-bottom">
+      	<div class="tweet"></div>
+      </section>
+      <!--END #twitter-bottom -->
+    </div>
+  </footer>
+<div style="display:none"><script src='http//v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

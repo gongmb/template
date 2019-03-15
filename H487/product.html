@@ -1,0 +1,740 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+        <meta name="apple-mobile-web-app-capable" content="no"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <meta name="application-name" content="当当网触屏版">
+                    <link rel="apple-touch-icon-precomposed" href="../images/touch-icon-iphone.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/touch-icon-ipad.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/touch-icon-iphone4.png" />
+                                    <title>仿当当网移动触屏版手机wap购物网站模板产品正文页-小模板【http//www.xiaomoban.com/】</title>
+            <meta name="description" content="" />
+            <meta name="keywords" content="" />
+                <meta name="author" content="m.dangdang.com" />
+        <meta name="version" content="ddtouch v1.2 20120319" />
+        <meta http-equiv="Cache-Control" content="must-revalidate,no-cache" />
+        <link rel="stylesheet" href="css/mobile_hd_v1.0.min.css" />
+        <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+                            <link rel="stylesheet" href="css/product.min.css" />
+                            <!-- show client dl, only dd index-->
+                    <script type="text/javascript">
+			                var search = {
+                    init : function(){
+                        var h = $(".hd_comm"),
+                        s = $(".search_area"),
+                        icon = $(".top_nav li").first();
+                        icon.click(function(){
+                            h.hide();
+                            s.show();
+                            $("#top_search input").css({height : '31px'})
+                            $("#top_search input[type=submit]").css({
+                                height : '33px',
+                                backgroundPosition : '0 -76px',
+                                marginLeft : 0
+                            })
+                            $(".dd_hd").css({
+															padding : '5px 0',
+															zIndex : '9999',
+															position:'absolute',
+															height : 'auto',
+															width : '100%'
+														});
+                            $("#keyword").focus();
+                            search.windownbg();
+                            var html = document.documentElement;
+                            var size = window.innerHeight;
+                            html.style.height = (size + size) + "px";
+                            window.setTimeout(function() {
+                                if (window.pageYOffset == 0) {
+                                    window.scrollTo(0, 0);
+                                }
+                                html.style.height = (window.innerHeight) + "px";
+                            }, 0);
+                        })
+                    },
+                    windownbg : function(){
+                        var htmlStr = "<div id=\"windownbg\" style=\"height:"+$(document).height()+"px;filter:alpha(opacity=70);opacity:0.7;z-index: 999;background:#000;position:absolute;top:0;left:0;width:100%;display:none\"></div>";
+                        $("body").append(htmlStr);
+                        $("#windownbg").fadeIn();
+                        $("#windownbg").click(function(){
+                            $(".search_area").hide();
+                            $(".hd_comm").show();
+                            $("#top_search input,.dd_hd").attr('style','');
+                            $(this).remove();
+                        })
+                    }
+                }
+                $(function(){
+                    search.init();
+                })
+								var html = document.documentElement;
+				var size = window.innerHeight;
+				html.style.height = (size + size) + "px";
+				window.setTimeout(function() {
+					if (window.pageYOffset == 0) {
+						window.scrollTo(0, 0);
+					}
+					html.style.height = (window.innerHeight) + "px";
+				}, 0);
+            </script>
+    </head>
+    <body>
+                <div class="downloadbar hidden">
+            <ul>
+                <li><a href="topics.php@page_id=21&sid=f0ffa4124eb66c0c" class="btn1">当当购物</a></li>
+                <li><a href="topics.php@page_id=717&sid=f0ffa4124eb66c0c" class="btn2">当当读书</a></li>
+            </ul>
+            <a href="#" class="closebtn"></a>
+        </div>
+        <header class="dd_hd"  id="hometop">
+            <div class="hd_comm">
+                <div class="fl">
+                    <a href="index.php@sid=f0ffa4124eb66c0c"><span class="dd_logo"></span></a>
+                </div>
+                <div class="fr">
+                    <ul class="top_nav">
+                        <li><a href="#"><span class="dd_search">搜索</span></a></li>                         <li><a href="ddcategory.php@sid=f0ffa4124eb66c0c"><span class="dd_category">分类</span></a></li>
+                        <li><a href="cart.php@action=list_cart&sid=f0ffa4124eb66c0c"><span class="dd_cart">购物车</span></a></li>
+                        <li><a href="my.php@sid=f0ffa4124eb66c0c"><span class="dd_my">我的当当</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="search_area hidden">
+                <div class="search_field" id="top_search">
+                    <form method="get" action='search.php' target="_parent" id="search_form">
+                        <input type="text" name="keyword"  id="keyword" class="keyword2"/>
+                        <input type="hidden" value="all_search" name="action">
+                        <input type="hidden" value="0" name="cid">
+                        <input type="hidden" value="f0ffa4124eb66c0c" name="sid">
+                        <input type="submit" value="" />
+                    </form>
+					<div class="suggest"></div>
+                </div>
+            </div>
+        </header>
+<style type="text/css">
+.breadcrumb img{ margin-top:0}
+.breadcrumb span{ margin-top:0}
+</style>
+<!--导航-->
+<!-- 搜索 -->
+
+<!-- 分类 -->
+
+<!-- 单品 -->
+    <div class="breadcrumb">
+        <p><a href="index.php@sid=f0ffa4124eb66c0c">首页</a>
+            <img src="images/jiantou.png" /><a class="lnk_1st_cat" href="category.php@action=list_category&cid=01.00.00.00.00.00&sid=f0ffa4124eb66c0c">图书 </a><img src="images/jiantou.png" /><a class="lnk_1st_cat" href="category.php@action=list_category&cid=01.03.00.00.00.00&sid=f0ffa4124eb66c0c">小说 </a><a id="btn_show_all_path" class="item_bc_right"></a>            <!--img src="images/jiantou.png" /-->
+
+                    <!--<span id="current_cat"">追风筝的人（快乐大本营高圆圆感动推荐，奥巴马送给女儿的新年礼物。全球两千万读者口耳相传，最想与友人分享的终身五星小说。为你，千千万万遍！）</span>-->
+        </p>
+    </div>
+    <!-- 路径导航 -->
+<article  class="layout_nav_path" style="display: block;">
+    <!--header>
+        <div class="title"><a class="lnk_path_back"><img alt="返回" src="images/btn_esc1.png"></a><span>导航</span></div>
+    </header-->
+    <section class="filter_nav">
+        <div class="top">
+            <a href="#" class="lnk_path_esc"></a><span>导航</span>
+        </div> 
+        <!--ul>
+                <li><a href="#"><span class="icon"></span>1.首页</a></li>
+                <li><a href="#"><span class="icon"></span>2.3C数码配件市场</a></li>
+                <li><a href="#"><span class="icon"></span>3.首页</a></li>
+                <li><a href="#"><span class="icon"></span>4.首页</a></li>
+        </ul-->
+
+        <ul>
+                            <li><a href="index.php@sid=f0ffa4124eb66c0c"><span class="icon"></span> 首页</a></li><li><a href="category.php@action=list_category&cid=01.00.00.00.00.00&sid=f0ffa4124eb66c0c"><span class="icon"></span> 图书</a></li><li><a href="category.php@action=list_category&cid=01.03.00.00.00.00&sid=f0ffa4124eb66c0c"><span class="icon"></span> 小说</a></li><li><a href="category.php@action=list_category&cid=01.03.44.00.00.00&sid=f0ffa4124eb66c0c"><span class="icon"></span> 情感 </a></li><li><a href="category.php@action=list_category&cid=01.03.44.05.00.00&sid=f0ffa4124eb66c0c"><span class="icon"></span> 其他  </a></li>                    </ul>
+    </section>
+
+</article>
+
+<script type="text/javascript">
+    $('.layout_nav_path').hide();
+    $(function(){
+        $('#btn_show_all_path').click(function(){
+            showLayoutNavPath();
+        });
+        $('.lnk_path_esc').click(function(){
+            hideLayoutNavPath();
+        });
+    });
+
+    function showLayoutNavPath(){
+                    $('.breadcrumb').hide();
+                    $('.cat_item').hide();
+                    $('footer.all').hide();
+                    $('footer.footer').hide();
+                    $('header').hide();
+                $('.layout_nav_path').show();
+            }
+
+            function hideLayoutNavPath(){
+                    $('.breadcrumb').show();
+                    $('.cat_item').show();
+                    // $('footer.all').show();
+                    $('footer.footer').show();
+                    $('header').show();
+                $('.layout_nav_path').hide();
+            }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- article begin -->
+
+    <article class="cat_item"> 
+    <div class="pic_detail">
+        <p class="name"><a href="#">追风筝的人（快乐大本营高圆圆感动推荐，奥巴马送给女儿的新年礼物。全球两千万读者口耳相传，最想与友人分享的终身五星小说。为你，千千万万遍！）</a></p>
+        <div class="picture">
+            <ul>
+                <style type="text/css">
+                    #slides1 {
+                        height: 350px;
+                        margin: 10px auto;
+                        position: relative;
+                        text-align: center;
+                        width: 300px;
+                        z-index: 100;
+                    }
+                </style> 
+                                    <style type="text/css">
+                        #slides {
+                            height: 240px;
+                            margin: 0px auto;
+                            position: relative;
+                            text-align: center;
+                            width: 200px;
+                            z-index: 100;
+                        }
+                        .common-slide{
+                            width: 200px;
+                            height:200px;
+                            margin:5px auto;
+                            position:relative;
+                        }
+                        .common-slide .list{
+                            position:relative;
+                            width: 800px;
+                            height:200px;
+                            overflow:hidden
+                        }
+                        .common-slide .list ul{
+                            position:absolute
+                        }
+                        .common-slide .list li{
+                            width: 200px;
+                            height:200px;
+                            line-height:100px;
+                            float:left;
+                            position:relative;
+                            left:0;
+                            -webkit-touch-callout:none
+                        }
+                        .common-slide .list li a img{
+                            vertical-align:top
+                        }
+                        .common-slide .list li.three-img a img{
+                            margin-top:2px
+                        }
+                        .common-slide .list li.one-img a{
+                            width: 200px;
+                            height:200px;
+                        }
+                        .common-slide .list li a{
+                            margin-left:15px;
+                            float:left;
+                            width:90px;
+                            height:95px
+                        }
+                        .common-slide .list li a:first-child{
+                            margin-left:0
+                        }
+                        .common-slide .mtbslide-pagination{
+                            /*position:absolute;*/
+                            bottom:0;
+                            height:25px;
+                            clear:both
+                        }
+                        .common-slide .mtbslide-pagination ul{
+                            margin-top:8px
+                        }
+                        .common-slide .mtbslide-pagination .trigs{
+                            float:left;
+                            width: 290px;
+                            text-align:center;
+                        }
+                        .common-slide .mtbslide-pagination .trigs li{
+                            display:inline-block;
+                            text-indent:-9999px;
+                            margin-right:10px;
+                            width:10px;
+                            height:10px;
+                            -webkit-border-radius:5px;
+                            background:#a9a9a9;
+                            text-align:center;
+                        }
+                        .common-slide .mtbslide-pagination .trigs li.cur{
+                            background:#f5481d;
+                        }
+
+                        .slide_prev {
+                            background:url(images/bg_item2.png) no-repeat; display:block; font-size:40px; height:18px; position:absolute; top:80px; width:12px;  background-position:0 0; left:0; 
+                        }
+                        .slide_next {
+                            background:url(images/bg_item2.png) no-repeat; display:block; font-size:40px; height:18px; position:absolute; top:80px; width:12px; background-position:-15px 0; right:0;
+                        }
+                        .common-slide1{
+                            width: 300px;
+                            height:350px;
+                            margin:5px auto;
+                            position:relative;
+                        }
+                        .common-slide1 .list1{
+                            position:relative;
+                            width: 1200px;
+                            height:300px;
+                            overflow:hidden
+                        }
+                        .common-slide1 .list1 ul{
+                            position:absolute
+                        }
+                        .common-slide1 .list1 li{
+                            width: 300px;
+                            height:300px;
+                            line-height:100px;
+                            float:left;
+                            position:relative;
+                            left:0;
+                            -webkit-touch-callout:none
+                        }
+                        .common-slide1 .list1 li a img{
+                            vertical-align:top
+                        }
+                        .common-slide1 .list1 li.three-img a img{
+                            margin-top:2px
+                        }
+                        .common-slide1 .list1 li.one-img1 a{
+                            width: 300px;
+                            height:300px;
+                        }
+                        .common-slide1 .list1 li a{
+                            margin-left:15px;
+                            float:left;
+                            width:90px;
+                            height:95px
+                        }
+
+                        .common-slide1 .mtbslide-pagination{
+                            /*position:absolute;*/
+                            bottom:0;
+                            height:25px;
+                            clear:both
+                        }
+                        .common-slide1 .mtbslide-pagination ul{
+                            margin-top:8px
+                        }
+                        .common-slide1 .mtbslide-pagination .trigs1{
+                            float:left;
+                            width: 300px;
+                            text-align:center;
+                        }
+                        .common-slide1 .mtbslide-pagination .trigs1 li{
+                            display:inline-block;
+                            text-indent:-9999px;
+                            margin-right:10px;
+                            width:10px;
+                            height:10px;
+                            -webkit-border-radius:5px;
+                            background:#a9a9a9;
+                            text-align:center;
+                        }
+                        .common-slide1 .mtbslide-pagination .trigs1 li.cur{
+                            background:#f5481d;
+                        }
+                    </style>
+                    <script type="text/javascript" src="js/iscroll.js"></script>
+                    <script type="text/javascript">
+                        var myScroll;
+                        var BicPicScroll;
+                        var showBig = false;
+                        function loaded() {
+                            myScroll = new iScroll('wrapper', {
+                                snap: true,
+                                momentum: false,
+                                hScrollbar: false,
+                                onScrollEnd: function () {
+                                    num = this.currPageX+1;
+                                    if(num>4){
+                                        num = num%4;
+                                    }
+                                    $('#indicator').html(num);
+                                }
+                            });
+
+                        }
+                        function loadedBig(){
+                            BicPicScroll = new iScroll('wrapper1', {
+                                snap: true,
+                                momentum: false,
+                                hScrollbar: false,
+                                onScrollEnd: function () {
+                                    num = this.currPageX+1;
+                                    if(num>4){
+                                        num = num%4;
+                                    }
+                                    $('#indicatorBig').html(num);
+                                    if(this.currPageX==0){
+                                        $('#prev_big').hide();
+                                        $('#next_big').show();
+                                    }else if(this.currPageX==3){
+                                        $('#next_big').hide();
+                                        $('#prev_big').show();
+                                    }else{
+                                        $('#next_big').show();
+                                        $('#prev_big').show();
+                                    }
+                                }
+                            });
+                        }
+                        document.addEventListener('DOMContentLoaded', loaded, false);
+
+                        setInterval(function(){  
+                            if(myScroll.currPageX==3){
+                                myScroll.scrollToPage(0, 0);
+                            }else{
+                                myScroll.scrollToPage('next', 0);}
+                        },5000);
+                        function next_pic(){
+                            if(myScroll.currPageX==3){
+                                myScroll.scrollToPage(0, 0);
+                            }else{
+                                myScroll.scrollToPage('next', 0);}
+                        }
+                        function prev_pic(){
+                            if(myScroll.currPageX==0){
+                                myScroll.scrollToPage(3, 0);
+                            }else{
+                                myScroll.scrollToPage('prev', 0);}
+                        }
+                    </script>
+                    <div id="slides">
+                        <div class="common-slide" id="wrapper">
+                            <div class="list" id="scroller">
+                                <ul class="wrap" id="thelist">
+                                    <li class="one-img"><a href="javascript:viewBigPicOn()"><img src="http//img38.ddimg.cn/35/10/23274638-1_b.jpg" alt="追风筝的人（快乐大本营高圆圆感动推荐，奥巴马送给女儿的新年礼物。全球两千万读者口耳相传，最想与友人分享的终身五星小说。为你，千千万万遍！）"></a></li><li class="one-img"><a href="javascript:viewBigPicOn()"><img src="http//img38.ddimg.cn/35/10/23274638-2_b.jpg" alt="追风筝的人（快乐大本营高圆圆感动推荐，奥巴马送给女儿的新年礼物。全球两千万读者口耳相传，最想与友人分享的终身五星小说。为你，千千万万遍！）"></a></li><li class="one-img"><a href="javascript:viewBigPicOn()"><img src="http//img38.ddimg.cn/35/10/23274638-3_b.jpg" alt="追风筝的人（快乐大本营高圆圆感动推荐，奥巴马送给女儿的新年礼物。全球两千万读者口耳相传，最想与友人分享的终身五星小说。为你，千千万万遍！）"></a></li><li class="one-img"><a href="javascript:viewBigPicOn()"><img src="http//img38.ddimg.cn/35/10/23274638-4_b.jpg" alt="追风筝的人（快乐大本营高圆圆感动推荐，奥巴马送给女儿的新年礼物。全球两千万读者口耳相传，最想与友人分享的终身五星小说。为你，千千万万遍！）"></a></li>                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="mtbslide-pagination">
+                        <div class="trigs">
+                            <span class="pic_num" style="bottom: -10px;"><span  id="indicator">1</span>/4</span>
+                        </div>
+                        <a class="slide_next" href="javascript:next_pic();"></a>
+                        <a class="slide_prev" href="javascript:prev_pic();"></a>
+                    </div>
+                    <script type="text/javascript">
+                            </script>
+
+                
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- item_pic begin -->
+
+<!-- infor beigin -->
+<section class="infor book_infor">
+
+    
+
+                <p class="shop"><span class="bg_shop">商家</span>当当网</p>
+                </div>
+        <p>
+
+        <span class="label">当&nbsp;当&nbsp;价:</span>
+        <span class="d_price">&yen;22.80</span>
+        购买送积分:<span class="jifen">0</span></p>   
+        <p><span class="label">定&nbsp;&nbsp;&nbsp;&nbsp;价:</span><span class="m_price">29.00</span><span class="discount">7.9折</span></p>
+                        <p><span class="label">顾客评分:</span><span class="starlevel star_5"></span>(共有<a href="#" class="all">50505</a>次评分)</p>
+            <span style="display:none;" id="product_id">23274638</span>
+                            <p class="btn">
+            <input type="button" id="btn_buy" class="buy" value="立即购买" /><input type="button" id="Button2" class="tocart"  value="加入购物车" />
+        </p>
+    
+        <p><a href="javascript:addToWishlist('23274638')" class="favorites">加入收藏</a>（已被收藏<span id="fav_num">35593</span>次）</p>
+        <div class="popup hidden" id="favoritesadd" >成功加入收藏夹</div>
+</section>	
+<script type="text/javascript">
+        var hasAttr=0;
+    $("#btn_buy").click(function(){
+        add_cart(0);
+    });
+    $("#Button2").click(function(){
+        add_cart(1);
+    });
+		
+    function add_cart(type){
+        if(hasAttr&&23274638==$("#product_id").text()){
+            showPopup("请选择您要的商品信息");
+        }else{
+            $.ajax({
+                url: "cart.php@sid=f0ffa4124eb66c0c",
+                type:'GET',
+                data: {
+                    action: 'add_cart',
+                    product_id :$("#product_id").text(),
+                    shopid : 0,
+                    promotype : 0,
+                    result_format : 1,
+                },
+                success: function(data){
+                    data=jQuery.parseJSON(data);
+                    if(data.errorCode==0){
+                        if(type==1)
+                            showPopup("加入购物车成功");
+                        else
+                            window.location = "cart.php@action=list_cart&sid=f0ffa4124eb66c0c";
+                    }else{
+                        showPopup(data.errorMsg);
+                    } 
+                }
+            });
+        }
+    }	
+
+
+    function viewBigPicOn(){
+        $('article').hide();
+        $('footer').hide();
+        $('header').hide();
+        $('.breadcrumb').hide();
+        $('.detail_nav').hide();
+        $('.viewbig').show();
+        $('img').each(function (){
+            img=$(this).attr('data-src');
+            $(this).attr('src',img);
+        });
+        loadedBig();
+        showBig=true;
+    }
+    function viewBigPicOff(){
+        $('article').show();
+        $('footer').show();
+        $('header').show();
+        $('.breadcrumb').show();
+        $('.detail_nav').show();
+        $('.viewbig').hide();
+        $('.layout_nav_path').hide();
+        loaded();
+        showBig=false;
+    }
+    $(document).ready(function() {
+        var arr,arru,reg=new RegExp("(^| )pdAdw=([^;]*)(;|$)"),uid=new RegExp("(^| )MDD_uid=([^;]*)(;|$)");
+        arru=document.cookie.match(uid);
+        if(arr=document.cookie.match(reg)) 
+            if(unescape(arr[2])==1&&unescape(arru[2])){
+                var exp = new Date();
+                exp.setTime(exp.getTime() - 1);
+                document.cookie= "pdAdw=1;domain=.dangdang.com;expires="+exp.toGMTString();
+                addToWishlist(23274638,0);
+            } 
+    });
+    function showPopup(msg){
+        $('#favoritesadd').html(msg);
+        $('#favoritesadd').fadeIn();
+        setTimeout("$('#favoritesadd').fadeOut();",2500);
+    }
+
+    function addToWishlist(pid){
+        $.ajax({
+            url: 'wishlist.php@sid=f0ffa4124eb66c0c',
+            type:'POST',
+            data:{
+                action : 'add_wishlist',
+                product_id : pid,
+                type: 'product',
+                result_format : 1
+            },
+            success: function(data){ 
+                if(data.indexOf('DOCTYPE')>0){ 
+                    var exp = new Date(); 
+                    exp.setTime(exp.getTime() + 5*60*1000);
+                    document.cookie = "pdAdw="+ escape (1) + ";domain=.dangdang.com;expires=" + exp.toGMTString(); 
+                    window.location = "login.php@sid=f0ffa4124eb66c0c&burl=product.php@pid=23274638";
+                }
+                data=jQuery.parseJSON(data);  
+                showPopup(data.errorMsg);
+                if(data.errorCode==0)
+                    $('#fav_num').text(parseInt($('#fav_num').text())+1);
+            },
+        });
+    }
+</script>
+
+
+<!-- infor end -->
+<!-- 出版物 -->
+<section class="detail book_detail">
+<a href="product_detail.php@pid=23274638&sid=f0ffa4124eb66c0c"><div class="title"><div class="right">查看详情&nbsp;<span class="icon"></span></div>商品简介</div></a>
+
+
+
+
+	<p><span>作者：</span>［美］卡勒德·胡赛尼 （Khaled Hosseini） 著,李继宏　译</p>
+	<p><span>出版社：</span>上海人民出版社</p>
+	<p><span>出版时间：</span>2013-06-18</p>
+	<p><span>ISBN：</span></p>
+	<p><span>包装：</span>平装</p>
+	<p><span>页数：</span>362</p>
+
+
+
+
+
+
+
+
+</section><!-- comment begin -->
+<section class="detail comment">
+
+    <a href="review.php@pid=23274638&action=get_review_info&sid=f0ffa4124eb66c0c&is_pub=1"><div class="title"><div class="right">查看所有评论<span class="icon"></span></div>精彩评论</div></a>
+
+                            <div class="comment_list">
+                <ul>
+                                    </ul>
+            </div>
+    </section>
+
+<!-- comment end -->
+
+<!-- recommend begin -->
+    <section class="detail recommend">
+        <div class="title">购买该商品的人还喜欢</div>
+        <div class="reco_list">
+            <ul>
+                                                                <!--li><a href="product.php?pid=&amp;sid=f0ffa4124eb66c0c "></a></li-->
+                    <a href="product.php@pid=22750031&sid=f0ffa4124eb66c0c&recoref=alsobuy_product_1"> <li>重口味心理学：谢娜追捧的案头书，</li></a>
+
+                                                                    <!--li><a href="product.php?pid=&amp;sid=f0ffa4124eb66c0c "></a></li-->
+                    <a href="product.php@pid=21127163&sid=f0ffa4124eb66c0c&recoref=alsobuy_product_2"> <li>妹妹--2010年全英最畅销长篇小说，</li></a>
+
+                                                                    <!--li><a href="product.php?pid=&amp;sid=f0ffa4124eb66c0c "></a></li-->
+                    <a href="product.php@pid=21127786&sid=f0ffa4124eb66c0c&recoref=alsobuy_product_3"> <li>三毛：撒哈拉的故事</li></a>
+
+                                                                    <!--li><a href="product.php?pid=&amp;sid=f0ffa4124eb66c0c "></a></li-->
+                    <a href="product.php@pid=20854345&sid=f0ffa4124eb66c0c&recoref=alsobuy_product_4"> <li>男人都是智障（史上最囧最真最华丽</li></a>
+
+                                                                    <!--li><a href="product.php?pid=&amp;sid=f0ffa4124eb66c0c "></a></li-->
+                    <a href="product.php@pid=20904983&sid=f0ffa4124eb66c0c&recoref=alsobuy_product_5"> <li>不能承受的生命之轻（百万纪念版）</li></a>
+
+                                </ul>
+        </div>
+    </section>
+</article>
+<!-- recommend end -->
+<div class="viewbig hidden">
+    <div class="btn">
+        <a href="javascript:viewBigPicOff()">返回</a>
+    </div>
+    <div id="slides1" class="slides1">
+        <div class="common-slide1" id="wrapper1">
+            <div class="list1" id="scroller1">
+                <ul class="wrap">
+                    <li id="bigpic" class="one-img1"><img height="300" width="300" data-src="img38.ddimg.cn/35/10/23274638-1_e.jpg" alt="追风筝的人（快乐大本营高圆圆感动推荐，奥巴马送给女儿的新年礼物。全球两千万读者口耳相传，最想与友人分享的终身五星小说。为你，千千万万遍！）"></li><li id="bigpic" class="one-img1"><img height="300" width="300" data-src="img38.ddimg.cn/35/10/23274638-2_e.jpg" alt="追风筝的人（快乐大本营高圆圆感动推荐，奥巴马送给女儿的新年礼物。全球两千万读者口耳相传，最想与友人分享的终身五星小说。为你，千千万万遍！）"></li><li id="bigpic" class="one-img1"><img height="300" width="300" data-src="img38.ddimg.cn/35/10/23274638-3_e.jpg" alt="追风筝的人（快乐大本营高圆圆感动推荐，奥巴马送给女儿的新年礼物。全球两千万读者口耳相传，最想与友人分享的终身五星小说。为你，千千万万遍！）"></li><li id="bigpic" class="one-img1"><img height="300" width="300" data-src="img38.ddimg.cn/35/10/23274638-4_e.jpg" alt="追风筝的人（快乐大本营高圆圆感动推荐，奥巴马送给女儿的新年礼物。全球两千万读者口耳相传，最想与友人分享的终身五星小说。为你，千千万万遍！）"></li>                </ul>
+            </div>
+            <div class="mtbslide-pagination">
+                <div id="picnum" class="picnum">
+                    <span class="pic_num" style ="bottom: 13px;"><span  id="indicatorBig">1</span>/4</span>
+                </div>
+                <a class="slide_next" style="top:130px" href="javascript:BicPicScroll.scrollToPage('next', 0);" id="next_big"></a>
+                <a class="slide_prev" style="top:130px" href="javascript:BicPicScroll.scrollToPage('prev', 0);"  id="prev_big"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+
+</script>
+
+
+
+<!-- article end -->
+        
+<footer class="ft">
+    <div class="search_ft">
+        <form id="search_form" method="get" action='search.php' target="_parent" onsubmit="return submit_search();" >
+                        <input name="keyword" id="keyword" type="text" value="请输入商品名称" onkeydown="this.style.color='#404040'" onblur="if(this.value==''){this.value='请输入商品名称';this.style.color='#b6b7b9';}" onfocus="if(this.value!='请输入商品名称'){this.style.color='#404040';}else{this.value='';this.style.color='#404040'}"/>
+            <input type="submit" value="" />
+            <input type="hidden" value="all_search" name="action">
+            <input type="hidden" value="0" name="cid">
+            <input type="hidden" value="f0ffa4124eb66c0c" name="sid">
+                                       </form>
+    </div>
+<script type="text/javascript" >
+function submit_search(){
+    if($('#keyword').val()=="请输入商品名称"){
+    $('#keyword').val(null);
+    }
+    return true;
+}
+</script>
+<script type="text/javascript" src="js/suggest.js"></script>
+<script type="text/javascript">
+new Suggest({
+	operator : ".keyword2",
+	defaultVal : "",
+	hasFocus : false,
+	formEl : "#search_form"
+});
+</script>
+    <div class="ft_nav">
+        <p>
+            <span><a href="@sid=f0ffa4124eb66c0c&source=touch">精简版</a></span>
+            <span class="site_now"><a href="index.php@sid=f0ffa4124eb66c0c">触屏版</a></span>
+            <span><a href="mdd_redirect.php@url=http_253A_252F_252Fwww.dangdang.com_252F_253Fsource_253Dmobile">电脑版</a></span>
+        </p>
+        <p>
+            <span><a href="leavemsg.php@sid=f0ffa4124eb66c0c">提建议</a></span>
+            <span><a href="topics.php@page_id=14740&sid=f0ffa4124eb66c0c">客&nbsp;&nbsp;&nbsp;&nbsp;服</a></span>
+            <span><a href="topics.php@page_id=76&sid=f0ffa4124eb66c0c">帮&nbsp;&nbsp;&nbsp;&nbsp;助</a></span>
+        </p>
+    </div>
+    <div class="status_bar">
+                    <div class="fl"><a href="login.php@sid=f0ffa4124eb66c0c">登陆</a><a href="register.php@action=reg&registertype=1&sid=f0ffa4124eb66c0c" class="quit" style="margin-left: 20px;">注册</a></div>
+        <div class="fr"><a href="#hometop"><span class="goto_top">TOP</span></a></div>
+    </div> 
+</footer>
+
+<script type="text/javascript" src="js/global.min.js"></script>
+<script type="text/javascript" src="js/common.min.js@v=20121026"></script>
+<div class="suggest" id="footer_suggest"></div>
+</body>
+</html>

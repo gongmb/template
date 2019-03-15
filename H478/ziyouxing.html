@@ -1,0 +1,231 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>仿驴妈妈手机wap旅游网站模板自由行-懒人模板【www.lanrenmb.com】</title>
+<meta charset="UTF-8">
+<meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+<meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="Cache-Control" content="no-transform " />
+<link rel="alternate" type="application/vnd.wap.xhtml+xml" media="handheld" href="target"/>
+<link rel="apple-touch-icon" href="http//pic.lvmama.com/img/mobile/touch/img/lvmama_v1_png.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="http//pic.lvmama.com/img/mobile/touch/img/lvmama_v1_png.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="http//pic.lvmama.com/img/mobile/touch/img/lvmama_v1_png.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="http//pic.lvmama.com/img/mobile/touch/img/lvmama_v1_png.png" />
+<link type="text/css" rel="stylesheet" href="css/common.css">
+<link rel="shortcut icon" href="http//www.lvmama.com/favicon.ico" type="image/x-icon" > 
+
+
+</head>
+
+<body>
+<div class="lv-header lv-media-width lv-header-mheight">
+  <div class="lv-operate-icon lv-pull-left"> <a href="javascript:void(0);" onclick="union_skip('#');"> <img src="img/return.png"> </a> </div>
+  <div class="lv-operate-sep lv-pull-left"><img src="img/operate_sep.png"></div>
+  <div class="lv-title">自由行</div>
+  <div class="lv-position lv-position-e"><a href="javascript:void(0);" onclick="union_skip('#');">首页</a></div>
+</div>
+<div class="lv-search search">
+   <div class="lv-div-search">
+    <form method="get" action="/clutter/route/list"  id="freetrip_search" >
+    <span class="lv-clear-icon01" onclick="union_clear_context('keyword');"  style="display:none" id="clear_password">
+               <img src="img/clear.png"></span>
+	  <input class="lv-input-search" id="keyword" type="text" value="" placeholder="请输入自由行目的地/关键词" autocomplete="off">
+      <input type="hidden" name="toDest" id="toDest" value="" >
+      <input type="hidden" name="subject" id="subject" value="" >
+      <input type="button" class="btn_sub" value="" onclick="freeTripSearch()" />
+    </form>
+  </div>
+  <div class="lv-auto-complete lv-spot-autocomplete" id="search_autocomplete" style="display:none;">
+    	<ul class="lv-search-ul" id="search_success">
+        </ul>
+    </div>
+</div>
+<div class="lv-wrapper lv-min-height lv-media-width">
+  <div class="lv-biz-title">长三角 </div>
+  <div class="lv-seprator-super"><img src="img/seprator-line-super.png"></div>
+  <ul class="lv-biz-list">
+    	      <li>
+				     <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('天目湖');">
+				       <img class="lv-radius-10"  src="img/1369727498626.jpg">
+				       <span>天目湖</span>
+				     </a>
+				    
+				     <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('常州');">
+				       <img class="lv-radius-10"  src="img/1369727470576.jpg">
+				       <span>常州</span>
+				     </a>
+				    
+				     <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('苏州');">
+				       <img class="lv-radius-10"  src="img/1369727428168.jpg">
+				       <span>苏州</span>
+				     </a>
+				    
+				     <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('杭州');">
+				       <img class="lv-radius-10"  src="img/1369727391428.jpg">
+				       <span>杭州</span>
+				     </a>
+				    
+				     <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('千岛湖');">
+				       <img class="lv-radius-10"  src="img/1369727223634.jpg">
+				       <span>千岛湖</span>
+				     </a>
+				    
+				     <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('无锡');">
+				       <img class="lv-radius-10"  src="img/1369726704195.jpg">
+				       <span>无锡</span>
+				     </a>
+				    
+				     <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('崇明');">
+				       <img class="lv-radius-10"  src="img/1369726674277.jpg">
+				       <span>崇明</span>
+				     </a>
+				    
+				     <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('安吉');">
+				       <img class="lv-radius-10"  src="img/1369726635679.jpg">
+				       <span>安吉</span>
+				     </a>
+				    
+				     <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('横店');">
+				       <img class="lv-radius-10"  src="img/1369726614577.jpg">
+				       <span>横店</span>
+				     </a>
+				    
+				    
+				    
+	     	 </li>
+  </ul>
+  <div class="lv-seprator-line"></div>
+<div class="lv-biz-title"> 珠三角 </div>
+  <div class="lv-seprator-super"><img src="img/seprator-line-super.png"></div>
+  <ul class="lv-biz-list">
+       <li>
+		    <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('广州');">
+		       <img class="lv-radius-10"  src="img/1369729661653.jpg">
+		       <span>广州</span></a>
+		    <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('深圳');">
+		       <img class="lv-radius-10"  src="img/1369729583003.jpg">
+		       <span>深圳</span></a>
+		    <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('珠海');">
+		       <img class="lv-radius-10"  src="img/1369729560309.jpg">
+		       <span>珠海</span></a>
+		    <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('肇庆');">
+		       <img class="lv-radius-10"  src="img/1369729538277.jpg">
+		       <span>肇庆</span></a>
+		    <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('清远');">
+		       <img class="lv-radius-10"  src="img/1369729514170.jpg">
+		       <span>清远</span></a>
+		    <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('江门');">
+		       <img class="lv-radius-10"  src="img/1369729473081.jpg">
+		       <span>江门</span></a>
+		    <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('阳江');">
+		       <img class="lv-radius-10"  src="img/1369729441485.jpg">
+		       <span>阳江</span></a>
+		    <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('惠州');">
+		       <img class="lv-radius-10"  src="img/1369729409155.jpg">
+		       <span>惠州</span></a>
+		    <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('茂名');">
+		       <img class="lv-radius-10"  src="img/1369729366926.jpg">
+		       <span>茂名</span></a>
+		    <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('佛山');">
+		       <img class="lv-radius-10"  src="img/1369729225916.jpg">
+		       <span>佛山</span></a>
+	   </li>
+  </ul>
+  <div class="lv-seprator-line"></div>
+<div class="lv-biz-title"> 环渤海  </div>
+  <div class="lv-seprator-super"><img src="http//pic.lvmama.com/img/mobile/touch/img/seprator-line-super.png"></div>
+  <ul class="lv-biz-list">
+       <li>
+		      <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('北京');">
+		      <img class="lv-radius-10"  src="img/1369727999817.jpg">
+		      <span>北京</span></a>
+		      <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('天津');">
+		      <img class="lv-radius-10"  src="img/1369727982355.jpg">
+		      <span>天津</span></a>
+		      <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('秦皇岛');">
+		      <img class="lv-radius-10"  src="img/1369727947187.jpg">
+		      <span>秦皇岛</span></a>
+		      <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('保定');">
+		      <img class="lv-radius-10"  src="img/1369727906502.jpg">
+		      <span>保定</span></a>
+		      <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('唐山');">
+		      <img class="lv-radius-10"  src="img/1369727880924.jpg">
+		      <span>唐山</span></a>
+		     
+     </li>
+  </ul>
+  <div class="lv-seprator-line"></div>
+  <div class="lv-biz-title"> 其他地区  </div>
+  <div class="lv-seprator-super"><img src="img/seprator-line-super.png"></div>
+  <ul class="lv-biz-list">
+     <li>
+		      <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('九寨沟');">
+		       <img class="lv-radius-10"  src="img/1369731966407.jpg">
+		      <span>九寨沟</span></a>
+		      <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('峨眉山');">
+		       <img class="lv-radius-10"  src="img/1369731705917.jpg">
+		      <span>峨眉山</span></a>
+		      <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('成都天台山');">
+		       <img class="lv-radius-10"  src="img/1369731682440.jpg">
+		      <span>成都天台山</span></a>
+		      <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('都江堰');">
+		       <img class="lv-radius-10"  src="img/1369731343715.jpg">
+		      <span>都江堰</span></a>
+		      <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('海螺沟');">
+		       <img class="lv-radius-10"  src="img/1369731253530.jpg">
+		      <span>海螺沟</span></a>
+		      <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('万盛黑山谷生态旅游区');">
+		       <img class="lv-radius-10"  src="img/1369731228655.jpg">
+		      <span>万盛黑山谷生态旅游区</span></a>
+		      <a class="lv-ticket" href="javascript:void(0);" onclick="keySearch('武隆');">
+		       <img class="lv-radius-10"  src="img/1369731162202.jpg">
+		      <span>武隆</span></a>
+		     
+      </li>
+  </ul>
+  <div class="lv-seprator-line"></div>
+</div>
+ <script src="/clutter/js/freetrip.js"></script>
+ <!-- footer -->
+<div class="lv-toast lv-toast-success" style="display:none;">
+	<div class="lv-toast-div"><img src="img/smile-grey.png"></div>
+    <p></p>
+</div>
+<div class="lv-toast lv-toast-fail" style="display:none;">
+	<div class="lv-toast-div"><img src="img/sad-big.png"></div>
+    <p></p>
+</div>
+<div class="lv-toast-loading" style="display:none;"><img style="width:32px;" src="img/3.gif"></div>
+<div class="lv-footer lv-media-width">
+		<div class="lv-footer-banner">
+				<span><a href="#">免费注册</a></span>
+				<span><a href="#">登录</a></span> 
+				<span class="lv-back-top lv-pull-right">
+				<a href="javascript:void(0);" class="backtrack">TOP</a>
+		      </span> 
+		</div>
+		
+		<div class="lv-footer-link">
+			<a href="#">电脑版</a><span>|</span><a
+				href="#" target="_blank">iPhone版下载</a> <span>|</span><a
+				href="#" target="_blank">Android版本下载</a>
+		
+		
+			<a href="#">关于我们</a><span>|</span><a
+				href="#">联系我们</a> <span>|</span><a
+				href="#">意见反馈</a> <span>|</span><a
+				href="#">首页</a>
+		</div>
+		<div class="lv-footer-link lv-footer-copyright">Copyright &copy;2013 lvmama.com </br>
+		  <a href="#" target="_blank" rel="nofollow" hidefocus="false">沪ICP备13011172号-3</a>
+        </div>
+	</div>
+	<!--电话弹出层 end-->
+	<div class='model'></div>
+</body>
+</html>
+温馨提示：本信息仅供提供演示方便链接，与原网站无关！ <a href="index.html">首页</a>  <a href="menpiao.html">门票页演示图</a>  <a href="ziyouxing.html">自由行演示图</a>  <a href="jingdianyuding.html">景点预定</a>

@@ -1,0 +1,407 @@
+html{padding:0px;margin:0px auto;-webkit-text-size-adjust:none;}
+body{background:#FFF;padding:0px;margin:0px auto;font-size:15px;color:#333;font-family:Helvetica,Microsoft YaHei,Microsoft JhengHei;}
+a{color:#333;text-decoration:none;}
+a:visited{color:#333;}
+ol,ul,li,dl,dd,dt{padding:0;margin:0;list-style:none;}
+form,p{padding:0;margin:0;}
+i,em{font-style:normal;}
+textarea {resize:none}
+img{border:none;}
+.spanclass{display:none;}
+.body{max-width:640px;margin:0 auto;overflow:hidden;background:#f2f2f2;}
+
+/*����ͷ��*/
+.header {height: 45px;position:relative;overflow:hidden;background:#144392;}
+.header-home{float:left;width:45px;height:45px;margin-right:5px;background:url(http//www1.pconline.com.cn/wap/2013/product/img/bg-xA.png) no-repeat right 0;background-size:1px ;}
+.header-home::before{content:'';position:absolute;width:24px;height:24px;background:url(http//www1.pconline.com.cn/wap/2013/product/img/bgA.png) no-repeat -64px -10px;background-size: 200px;margin:9px 0 0 12px;}
+.header-back{float:left;width:45px;height:45px;margin-right:5px;background:url(http//www1.pconline.com.cn/wap/2013/product/img/bg-xA.png) no-repeat right 0;background-size:1px ;}
+.header-back::before{content:'';position:absolute;width:24px;height:24px;background:url(http//www1.pconline.com.cn/wap/2013/product/img/bgA.png) no-repeat -114px -10px;background-size: 200px;margin:9px 0 0 12px;}
+.header-title{line-height:45px;font-size:15px;color:#fff;font-weight:bold;position:relative;overflow:hidden;margin-right:5px;}
+.header-title a {color:#fff;}
+.header-title a:visited{color:#fff;}
+.header-title-home {display:block;text-align:center;padding:0 45px 0 0;}
+.header-title-nav {display:block;white-space:nowrap;-webkit-transform: translate(00px, 0px) translateZ(0px);overflow-x:auto;overflow-y:hidden;}
+
+/*������*/
+.search {border:1px solid #d5d5d5;background:#fff;-webkit-border-radius: 4px;border-radius: 4px;margin:10px 7px;position:relative;overflow:hidden;}
+.search span {display:block;}
+.search .txt {height: 32px;line-height:32px;}
+.search .txt .sortSelect{float:left;width:70px;height:32px;position:relative;}
+.search .txt .sortSelect::before{content:"";
+display:block;
+width:0;
+height:0;
+border-width:6px;
+overflow:hidden;
+border-color:#aaa transparent transparent;
+border-style:solid;
+position:absolute;left:52px;top:12px;
+}
+.search .txt select{width:70px;height:32px;-webkit-appearance:none;border:none;overflow:hidden;color:#aaa;font-size:15px;outline:none;background:transparent;position:absolute;}
+.search .txt .text {-webkit-appearance:none;float:left;width:60%;vertical-align:top;border:none;height:24px;line-height:24px;margin-top:4px;padding:0px;outline:none;font-size:15px;}
+.search .btn {position:absolute;right:0;top:0;}
+.search .sub {display:block;padding:0px;background:#f7f7f7 url(http//www1.pconline.com.cn/wap/2013/product/img/bgA.png) no-repeat 0 -8px;background-size:200px;border:none;text-indent:-999px;overflow:hidden;width: 50px;height: 32px;border-left:1px solid #d5d5d5;-webkit-border-radius: 0 4px 4px 0;border-radius: 0 4px 4px 0;cursor:pointer;}
+
+/*��������*/
+.section {height: 44px;line-height:44px;background:#fff;overflow:hidden;}
+.section .mark {float:left;font-size:16px;color:#038;border-left:4px solid #1954ab;padding:0 0 0 10px;}
+.section .mark a {color:#038;}
+.section .subMark {float:right;color:#777;}
+.section .subMark a {color:#777;margin:0 15px 0 0;}
+
+/*�����б�*/
+.extA {overflow:hidden;text-align:center;margin:15px auto;width: 300px;}
+.extA li {float:left;}
+.extA a{display:block;width:69px;height:35px;line-height:35px;margin:2px;background:#fff;border:1px solid #d3d3d3;font-size:14px;overflow:hidden;}
+
+.extB {overflow:hidden;text-align:center;margin:15px auto;width: 300px;}
+.extB li {float:left;}
+.extB a {display:block;width:94px;height: 35px;line-height:35px;margin:2px;background:#fff;border:1px solid #d3d3d3;font-size:14px;}
+
+
+.extC {overflow:hidden;margin:20px auto 15px;width: 312px;}
+.extC li {float:left;margin:2px;}
+.extC a {display:block;width: 33px;height: 30px;background:#fff;border:1px solid #d3d3d3;line-height:30px;font-size:14px;text-align:center;}
+.extC .current a {background:#1954ab;border:1px solid #1f89e3;color:#fff;}
+.extC .bg {margin-left:20px;}
+.extC .bg a{width:65px;height:30px;color:#f60;text-align:left;padding-left:28px;-webkit-border-radius: 5px;border-radius: 5px;position:relative;}
+.extC .bg a::before {content:'';position:absolute;display:block;width: 14px;height: 14px;background:url(http//www1.pconline.com.cn/wap/2013/product/img/bgA.png) no-repeat -3px -83px;background-size: 200px ;top:8px;left:10px;}
+
+/*ͼƬ�б�*/
+.picA {overflow:hidden;text-align:center;margin:20px auto 15px;width: 304px;}
+.picA li {display:inline-block;margin:0 8px 10px;vertical-align:top;}
+.picA a {display:block;width: 60px;}
+.picA img {display:block;width: 59px;border:1px solid #d3d3d3;margin:0 0 5px;}
+
+.picC {overflow:hidden;text-align:center;margin:20px auto 15px;}
+.picC li {display:inline-block;margin:0 6px 15px;}
+.picC a {display:block;width: 140px;height: 150px;background:#fff;text-align:center;}
+.picC img {display:block;width: 140px;height: 105px;}
+.picC span {display:block;line-height:19px;font-size:13px;padding:5px 0 0;}
+.picC em {display:block;}
+.picC em:last-child {color:#c00;}
+
+/*�鿴����*/
+.btn-more{border:1px solid #d9d6d6;border-radius:3px;background:#f8f8f8;line-height:36px;margin:10px;text-align:center;cursor:pointer;}
+.btn-more a{display:block;height:36px;line-height:36px;color:#777;font-size: 14px;}
+.btn-more a:visited{color:#777;}
+
+/*��Ʒ�� 2013-03-28*/
+/*ȫ������*/
+.group {overflow:hidden;}
+.group-th {height: 44px;line-height:44px;padding:0 0 0 15px;font-size:17px;color:#333;background:#f2f2f2;border-top:1px solid #d9d6d6;position:relative;}
+.group-th::before {content:'';display:block;position:absolute;width: 8px;height: 8px;border-top:4px solid #ccc;border-right:4px solid #ccc;right:20px;top:16px;-webkit-transform:rotate(135deg);}
+.group-tb {overflow:hidden;display:none;border-top:1px solid #d9d6d6;}
+.group-tb .pTit {color:#038;padding:15px 15px 0;}
+.group-open .group-th {background:#fff;}
+.group-open .group-th::before {-webkit-transform:rotate(-45deg);}
+.group-open .group-tb {display:block;}
+
+/*�������а�*/
+.rankTable {overflow:hidden;}
+.rankTable th{padding:13px 0;color:#777;font-weight:normal;}
+.rankTable tr th:nth-of-type(2){text-align:left;}
+.rankTable td {padding:13px 0;}
+.rankTable td a{display:block;}
+.rankTable tr td:nth-of-type(1) {text-align:center;font-family:Arial;font-style:italic;color:#aaa;}
+.rankTable tr td:nth-of-type(2) {text-align:left;color:#333;max-width:150px;}
+.rankTable tr td:nth-of-type(3) {text-align:center;color:#c00;}
+.rankTable tr td:nth-of-type(4) {text-align:center;}
+.rankTable tr td:nth-of-type(4) span {display:inline-block;width: 40px;height: 4px;background:#d1d1d1;vertical-align:middle;}
+.rankTable tr td:nth-of-type(4) span em {display:block;height: 4px;background:#ff6b09;}
+.rankTable tr:nth-of-type(2) td:nth-of-type(1) {color:#f60;}
+.rankTable tr:nth-of-type(3) td:nth-of-type(1) {color:#f60;}
+.rankTable tr:nth-of-type(4) td:nth-of-type(1) {color:#f60;}
+
+/*��������*/
+.sort{width:100%;overflow:hidden;height:40px;line-height:40px;background:#dcdcdc;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:flexbox;}
+.sort a {display:block;-moz-box-flex:1;-webkit-box-flex:1;-ms-flex:1;flex:1;text-align:center;color:#333;}
+.sort .current {background:#f2f2f2;color:#038;}
+
+/*����ͼ��*/
+.extPicA {overflow:hidden;}
+.extPicA a {display:block;padding:15px;min-height:60px;border-bottom:1px solid #d9d6d6;}
+.extPicA li {border-bottom:1px solid #fff;}
+.extPicA li.noResult{padding:40px 0;border:none;text-align:center;color:#777;}
+.extPicA li:nth-of-type(1) em {color:#f60;}
+.extPicA li:nth-of-type(2) em {color:#f60;}
+.extPicA li:nth-of-type(3) em {color:#f60;}
+.extPicA em {float:left;width:20px;color:#aaa;padding:23px 18px 0 0;font-style:italic;}
+.extPicA img {float:left;width: 80px;height: 60px;}
+.extPicA .dDes {overflow:hidden;padding:0 0 0 12px;}
+.extPicA .dDes .pTit {color:#333;height: 40px;line-height:20px;overflow:hidden;}
+.extPicA .dDes .pDes {color:#c00;}
+.extPicA span {float:right;padding:40px 0 0;position:relative;}
+.extPicA span::before {content:'';position:absolute;display:block;width: 9px;height: 12px;background:url(http//www1.pconline.com.cn/wap/2013/product/img/bgA.png) no-repeat;background-size: 200px ;left:-15px;bottom:3px;}
+.extPicA .sDown {color:#390;}
+.extPicA .sDown::before {background-position: -158px -57px ;}
+.extPicA .sUp {color:#c00;}
+.extPicA .sUp::before {background-position: -158px -57px ;}
+
+/*extD*/
+.extD {overflow:hidden;}
+.extD a {display:block;padding:13px 15px;border-top:1px solid #fff;font-size:17px;color:#333;}
+.extD li {border-top:1px solid #d9d6d6;}
+
+
+/* +++++++++++++++������ʽ+++++++++++++ */
+.b-section{height:38px;line-height:38px;background:#fff;overflow:hidden;padding:0 10px;}
+.b-section .mark{float:left;color:#A9A9A9;}
+.b-section .subMark{float:right;}
+.b-select{position:relative;}
+.b-select select{
+-webkit-appearance: none;
+outline: none;
+height: 25px;
+background: #fff;
+border-radius: 4px;
+border: 1px solid #D5D5D5;
+padding:0 15px 0 5px;
+color:#777777;
+}
+.b-select::after{
+content:"";
+display:block;
+width:0;
+height:0;
+border-width:6px;
+overflow:hidden;
+border-color:#777777 transparent transparent;
+border-style:solid;
+position:absolute;
+right:7px;top:15px;
+}
+
+/*������ť��ʽA*/
+.b-btn-submit-wrap{text-align:center;margin:15px 0;}
+.b-btn-submit{display: inline-block;width: 100px;height:28px;line-height:28px;margin:0 auto;cursor:pointer;
+color: #fff;
+background-color: #1854ac;
+-webkit-border-radius: 5px;
+border-radius:5px;
+text-align: center;
+font-size: 15px;
+border: none;
+font-family: Helvetica,Microsoft YaHei,Microsoft JhengHei;
+min-width: 85px;
+}
+
+/*ѡ������ʽ*/
+.b-selectB {overflow:hidden;}
+.b-selectB li {height: 43px;line-height:43px;position:relative;border-bottom:1px solid #DAD6D7;border-top:1px solid #fff;}
+.b-selectB li:first-child{border-top:none;}
+.b-selectB select {opacity:0;position:absolute;width: 100%;height: 100%;z-index:100}
+.b-selectB .mark {
+display:block;
+height: 43px;
+line-height:43px;
+padding-left:15px;
+color:#333;
+position:relative;
+}
+.b-selectB .mark::before {content:'';
+display:block;
+width:0;
+height:0;
+border-width:6px;
+overflow:hidden;
+border-color:#777777 transparent transparent transparent;
+border-style:solid;
+position:absolute;right:15px;top:18px;
+}
+.b-selectB .subMark{
+display: block;
+height: 43px;
+line-height: 43px;
+color: #777777;
+position:absolute;
+right:35px;
+top:0px;
+}
+/*����*/
+.b-score{padding-right:10px;}
+.b-score>em{color:#c00;font-size:20px;font-weight:bold;margin-right:5px;}
+.b-score .starA{display:inline-block;width:80px;height:15px;background:url(http//www1.pconline.com.cn/wap/2013/product/img/bgA.png) no-repeat -120px -75px;background-size:200px;}
+.b-score .starA em{display:block;height:15px;background:url(http//www1.pconline.com.cn/wap/2013/product/img/bgA.png) no-repeat -120px -90px;background-size:200px;}
+.b-score .starB{display:inline-block;width:80px;height:15px;background:url(http//www1.pconline.com.cn/wap/2013/product/img/bgA.png) no-repeat -120px -75px;background-size:200px;}
+.b-score .starB em{display:block;height:15px;background:url(http//www1.pconline.com.cn/wap/2013/product/img/bgA.png) no-repeat -120px -105px;background-size:200px;}
+
+/*�����б�*/
+.c-list {overflow:hidden;}
+.c-wrap {border-bottom:1px solid #DDDADA;padding:15px;}
+.c-wrap .c-thT{color:#f60;font-size:18px;margin-bottom:5px;}
+.c-wrap .c-th {font-size:12px;overflow:hidden;margin-bottom:5px;}
+.c-wrap .c-th .user {float:left;max-width:240px;color:#AAAAAA;}
+.c-wrap .c-th .time {float:right;color:#AAAAAA;}
+.c-wrap .c-tb {clear:both;color:#333;line-height:23px;}
+.c-wrap .c-tb p{overflow:hidden;}
+.c-wrap .c-tb p em{color:#808080;float:left;}
+.c-wrap .c-tb p span{display:block;overflow:hidden;word-wrap:break-word;word-break:normal;word-break:break-all;}
+
+/* +++++++++++++++ͼƬ�ն�+++++++++++++ */
+/* ͼƬ���� */
+.ui-picCon-nav{text-align:center;margin:15px 0;font-size:0px;}
+.ui-picCon-nav a,.ui-picCon-nav span{display:inline-block;height:30px;line-height:30px;margin:3px;padding:0 15px;color:#fff;background:#fff;color:#8B8B8B;border-radius:4px;font-size:15px;border:1px solid #D5D5D5;}
+.ui-picCon-nav a.cur{background:#1F89E3;color:#fff;border:1px solid #1F89E3;}
+/* ͼƬ���ҷ�ҳ */
+.ui-doc{height:34px;line-height:34px;width:160px;margin:0 auto 10px;text-align:center;color:#8B8B8B;position:relative;}
+.ui-doc .ui-prev,.ui-doc .ui-next{width:34px;height:34px;background:#144391;border-radius:17px;overflow:hidden;position:absolute;top:0px;cursor:pointer;}
+.ui-doc .ui-prev{left:0px;}
+.ui-doc .ui-next{right:0px;}
+.ui-doc .ui-prev::after{display:block;content:"";width:0px;height:0px;
+margin-top:6px;
+border-width:10px 14px 10px 8px;
+overflow:hidden;
+border-color:transparent #fff transparent transparent;
+border-style:solid;_border-style:dotted solid dotted dotted;
+}
+.ui-doc .ui-next::after{display:block;content:"";width:0px;height:0px;
+margin-top:6px;margin-left:12px;
+border-width:10px 8px 10px 14px;
+overflow:hidden;
+border-color:transparent transparent transparent #fff;
+border-style:solid;_border-style:dotted solid dotted dotted;
+}
+/* ͼƬ���� */
+#wrapper {
+	width:100%;
+	min-width:320px;
+	height:240px;
+	margin-bottom:15px;
+}
+#swipeview-slider > div {
+	position:relative;
+	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-box;
+	display:-o-box;
+	display:box;
+	display:-ms-flexbox;
+	display:flexbox;
+	-webkit-box-orient:vertical;
+	-moz-box-orient:vertical;
+	-ms-box-orient:vertical;
+	-o-box-orient:vertical;
+	box-orient:vertical;
+	-webkit-box-pack:center;
+	-moz-box-pack:center;
+	-ms-box-pack:center;
+	-o-box-pack:center;
+	box-pack:center;
+	-webkit-box-align:center;
+	-mox-box-align:center;
+	-ms-box-align:center;
+	-o-box-align:center;
+	box-align:center;
+	overflow:hidden;
+}
+#swipeview-slider img {
+	display:block;
+	max-width: 100%;
+	height: 240px;
+	margin: 0 auto;
+	display: block;
+	-webkit-transition-duration:.4s;
+	-moz-transition-duration:.4s;
+	-ms-transition-duration:.4s;
+	-o-transition-duration:.4s;
+	transition-duration:.4s;
+	-webkit-transition-property:opacity;
+	-moz-transition-property:opacity;
+	-ms-transition-property:opacity;
+	-o-transition-property:opacity;
+	transition-property:opacity;
+	opacity:1;
+	pointer-events:none;
+}
+#wrapper > div > .swipeview-loading {
+	background:url(http//www1.pcauto.com.cn/wap/2013/touch/img/loading.gif) no-repeat center;
+}
+#wrapper > div > .swipeview-loading img,
+#swipeview-slider img.loading {
+	-webkit-transition-duration:0s;
+	opacity:0;
+}
+
+
+/*+++++++�շ��ڶ�����ʽ+++++++*/
+/**/
+.pro_gailan{padding:0 0 10px 10px;min-height:115px;}
+.pro_gailan img{ float:left; width:120px;margin-top:10px;}
+.pro_gailan .dDes{ margin-left:130px;}
+.pro_gailan .dDes dt{ color:#181818;padding-top:5px;line-height:24px; font-size:16px;}
+.pro_gailan .dDes dd{ line-height:20px; color:#aaa; font-size:12px;}
+.pro_gailan .dDes .price{ color:#c00;}
+.pro_gailan .btnArea{ padding-top:5px;}
+
+.btn_blue,.btn_gray,.btn_none{height:22px; font-size:13px; line-height:22px; display:inline-block; padding:0px 8px; border-radius:3px;}
+.btn_blue{color:#fff; background:#1854ac; border:1px solid #2f65b4; box-shadow:1px 1px 1px #0e4390; min-width:48px; text-align:center;}
+.btn_gray{color:#666; background:#fff; border:1px solid #fff; box-shadow:1px 1px 1px #c6c6c6;}
+.btn_none{color:#cfcfcf; background:#fff; border:1px solid #fff; box-shadow:1px 1px 1px #c6c6c6;}
+
+.section .mark .btn_gray{ border:1px solid #e4e4e4;box-shadow:0px 0px 1px #c6c6c6;}
+
+.extE{ overflow:hidden;}
+.extE li{border-bottom:1px solid #d9d6d6;line-height:42px;padding-left:15px;}
+.extE li a{display:block;}
+.extE li em{ color:#808080;}
+
+.extF{ overflow:hidden;}
+.extF li{ border-bottom:1px solid #d9d6d6;height:60px; line-height:22px; overflow:hidden;padding:0 15px;}
+.extF li a{ display:block; height:55px; padding:0px 16px 0px 10px;}
+.extF li em{ color:#343434; display:inline-block; margin-top:8px;}
+.extF li .phone{ display:inline-block; background:url(http//www1.pconline.com.cn/wap/2013/product/img/s-product.png) 0px 2px no-repeat; background-size:320px; color:#7f7f7f; padding-left:21px;}
+.extF li .price{ color:#c00; float:right; line-height:60px;}
+
+.extPicB{ overflow:hidden;}
+.extPicB li{ border-bottom:1px solid #d9d6d6; box-shadow:0px 1px 1px #fff; clear:both; padding:15px 14px 15px 10px; min-height:54px;}
+.extPicB li img{ float:left; margin-top:4px;}
+.extPicB .dDes{ margin-left:90px;}
+.extPicB .dDes dt{ color:#333; padding:0px 0px 3px; line-height:20px; font-size:16px;}
+.extPicB .dDes dt a{ color:#333;}
+.extPicB .dDes dd{ line-height:20px; color:#7f7f7f;}
+.extPicB .price{ color:#c00;}
+.extPicB .btnArea{ text-align:right;}
+
+/*���ӶԱ�*/
+.vsTop {overflow:hidden;width: 320px;margin:0 auto 15px;text-align:center;position:relative;}
+.vsTop::before {content:'';display:block;position:relative;width: 31px;height: 26px;background:url(http//www1.pconline.com.cn/wap/2013/product/img/s-product.png) no-repeat 2px -33px;background-size: 320px;top:62px;left:50%;margin:0 0 0 -15px;}
+.vsTop li {display:inline-block;width: 115px;vertical-align:top;}
+.vsTop li:first-child {margin:0 25px 0 0;}
+.vsTop li:last-child {margin:0 0 0 25px;}
+.vsTop .added {margin:0 25px 0 0;position:relative;}
+.vsTop .added img {width: 115px;height: 90px;display:block;}
+.vsTop .added .sTit {display:block;width: 115px;line-height:24px;font-size:13px; padding-top:3px; color:#181818;}
+.vsTop .added .delet {position:absolute;display:block;width: 17px;height: 17px;background:url(http//www1.pconline.com.cn/wap/2013/product/img/s-product.png) no-repeat -38px -38px;background-size: 320px;right:-10px;top:-10px;}
+.vsTop .blank {width: 120px;height: 90px;background:#fff; vertical-align:top;}
+.vsTop .blank .ico {display:block;width: 36px;height: 36px;background:url(http//www1.pconline.com.cn/wap/2013/product/img/s-product.png) no-repeat 9px -67px;background-size: 320px;margin:27px auto 25px;}
+.vsTop .blank .sTit {display:block;width: 113px;height: 24px; padding-top:5px;line-height:24px;overflow:hidden;text-align:center;color:#181818;}
+/*selArea*/
+.selArea{ width:320px; margin:0px auto; background:url(http//www1.pconline.com.cn/wap/2013/product/img/s-product.png) 15px -118px no-repeat; background-size:320px; padding-top:7px;}
+.selArea ul li{ padding:12px 10px 0px;}
+.selArea .mark{ display:inline-block; width:216px; height:22px;}
+.selArea .mark::after{content:"";width:0;height:0;border-width:6px;overflow:hidden;border-color:#777 transparent transparent transparent;border-style:solid;margin:-13px 10px 0px 0px; content:""; position:relative; float:right;}
+.selArea select{-webkit-appearance: none; border:1px solid #dcdcdc; width:100%; color:#878787; border-radius:4px; height:22px; background-color:#fff;}
+.selArea .btnArea{ height:43px; text-align:center; padding-top:15px; text-align:center;}
+/*s-TitA*/
+.s-TitA{ height:42px; border-bottom:2px solid #1954ab;box-shadow:1px 1px 1px #CCC; font-size:16px; color:#043689; line-height:42px; text-align:center; background-color:#fff;}
+.s-tableA{table-layout: fixed;border-collapse: collapse; color:#333;}
+.s-tableA td,.s-tableA th{ border-bottom:1px solid #d9d6d6;box-shadow:0px 1px 1px #fff; line-height:20px; text-align:center; word-wrap: break-word; padding:10px;}
+.s-tableA th{ width:84px; color:#777; font-weight:normal;}
+.rankList li{border-bottom:1px solid #d9d6d6;clear:both;overflow:hidden; text-align:center;}
+.rankList .th{ padding:13px 0px; color:#777;}
+.rankList li a{ display:block; padding:12px 0px; min-height:20px;overflow:hidden;}
+.rankList li .colA,.rankList li .colB,.rankList li .colC,.rankList li .colD{ float:left; display:inline-block; overflow:hidden; word-wrap:break-word;}
+.rankList li .colA{ width:13%;}
+.rankList li .colB{ width:67%;text-align:left;}
+.rankList li .colC{ width:20%;}
+.rankList li .colD{ width:15%;display:none;}
+.rankList .price{ color:#c00;}
+
+.s-BoxA .section .nolbg{ border-left:none;}
+.s-BoxA .num{ width:14px; height:14px; display:inline-block; font-size:10px; background-color:#ff6600; text-align:center; line-height:14px; color:#fff;}
+.hotBar{ display:inline-block; height:3px; width:40px; overflow:hidden; background:url(http//www1.pconline.com.cn/wap/2013/product/img/s-product.png) -73px -81px no-repeat; background-size:320px; vertical-align:middle;}
+.hotBar i{ display:inline-block; height:3px; float:left; background:url(http//www1.pconline.com.cn/wap/2013/product/img/s-product.png) -73px -85px no-repeat; background-size:320px;}
+
+/*���ض���*/
+.btn-top {display:none;}

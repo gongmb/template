@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+/*背景颜色*/
+
+.bgQ{background:#ffff33 !important;}
+.bgG{ background:#33ccff !important;}
+.bgW{ background:#ffffff !important;}
+
+/*边框颜色*/
+.borderG{ border-color:#33ccff;}
+.borderQ{ border-color:#ffff33;}
+
+/*文字颜色*/
+.fontG{ color:#33ccff;}
+.fontG a{ color:#33ccff;}

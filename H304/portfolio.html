@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<title>Portfolio | Lab</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css?v=1">
+
+	<!-- CSS : load Skins 
+	<link rel="stylesheet" href="css/gray.css">
+	<link rel="stylesheet" href="css/light.css">
+
+	<link rel="stylesheet" href="css/green.css">
+	<link rel="stylesheet" href="css/green_strong.css">
+	<link rel="stylesheet" href="css/olive.css">
+	<link rel="stylesheet" href="css/military.css">
+	
+	<link rel="stylesheet" href="css/blue.css">
+	<link rel="stylesheet" href="css/blue_light.css">
+	<link rel="stylesheet" href="css/blue_navy.css">
+	
+	<link rel="stylesheet" href="css/brown_dark.css">
+	<link rel="stylesheet" href="css/brown_orange.css">
+	<link rel="stylesheet" href="css/brown.css">
+	<link rel="stylesheet" href="css/orange.css">
+	<link rel="stylesheet" href="css/ocra.css">
+	<link rel="stylesheet" href="css/red.css">
+	
+	<link rel="stylesheet" href="css/violet.css">
+	<link rel="stylesheet" href="css/wine.css">
+	<link rel="stylesheet" href="css/grape.css">
+	-->
+
+	<!-- =styleswitcher -->
+	<link rel="alternate stylesheet" href="css/style.css" title="default" />
+	<link rel="alternate stylesheet" href="css/gray.css" title="gray" />
+	<link rel="alternate stylesheet" href="css/light.css" title="light" />
+	<link rel="alternate stylesheet" href="css/green.css" title="green" />
+	<link rel="alternate stylesheet" href="css/green_strong.css" title="green_strong" />
+	<link rel="alternate stylesheet" href="css/olive.css" title="olive" />
+	<link rel="alternate stylesheet" href="css/military.css" title="military" />
+	<link rel="alternate stylesheet" href="css/blue.css" title="blue" />
+	<link rel="alternate stylesheet" href="css/blue_light.css" title="blue_light" />
+	<link rel="alternate stylesheet" href="css/blue_navy.css" title="blue_navy" />
+	<link rel="alternate stylesheet" href="css/brown_dark.css" title="brown_dark" />
+	<link rel="alternate stylesheet" href="css/brown_orange.css" title="brown_orange" />
+	<link rel="alternate stylesheet" href="css/brown.css" title="brown" />
+	<link rel="alternate stylesheet" href="css/orange.css" title="orange" />
+	<link rel="alternate stylesheet" href="css/ocra.css" title="ocra" />
+	<link rel="alternate stylesheet" href="css/red.css" title="red" />
+	<link rel="alternate stylesheet" href="css/violet.css" title="violet" />
+	<link rel="alternate stylesheet" href="css/wine.css" title="wine" />
+	<link rel="alternate stylesheet" href="css/grape.css" title="grape" />
+	<link rel="alternate stylesheet" href="css/space.css" title="space" />
+
+	<!--[if IE]>
+		<script src="http//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--> 
+
+	<!--[if lt IE 7]>
+		<link rel="stylesheet" type="text/css" media="all" href="css/ie7.css" />
+		<script src="http//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+	<![endif]-->
+	
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" media="all" href="css/ie7.css" />
+	<![endif]-->
+				
+	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/modernizr-1.5.min.js"></script>
+
+</head>
+<body>
+
+	<!-- Let's Start! -->
+	<div id="wrapper" class="clearfix">
+
+	<!-- =styleswitcher -->
+	<div id="styleswitcher">
+		<ul>
+			<li class="t_skins">Styleswitcher</li>
+			<li><a href="#" onclick="setActiveStyleSheet('default'); return false;">Default</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('gray'); return false;">Gray</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('light'); return false;">Light</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('green'); return false;">Green</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('green_strong'); return false;">Green Strong</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('olive'); return false;">Olive</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('military'); return false;">Military</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('blue'); return false;">Blue</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('blue_light'); return false;">Blue Light</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('blue_navy'); return false;">Blue Navy</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('brown_dark'); return false;">Brown Dark</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('brown_orange'); return false;">Brown Orange</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('brown'); return false;">Brown</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('orange'); return false;">Orange</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('ocra'); return false;">Ocra</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('red'); return false;">Red</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('violet'); return false;">Violet</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('wine'); return false;">Wine</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('grape'); return false;">Grape</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('space'); return false;">Space</a></li>
+		</ul>
+	</div>
+	
+	<div id="container" class="container_12 clearfix">
+
+		<!-- =Header -->
+		<header id="header" class="grid_12">
+		
+			<!-- =Logo -->
+			<h1 id="logo" class="grid_4">
+				<a href="index.html" title="Lab"><img src="images/logo.png" alt="Lab Logo" /></a>
+			</h1>
+
+			<!-- =Menu -->
+			<nav id="nt_nav">
+				<ul id="navigation" class="grid_8">
+			
+					<li><a href="contact.html"><span class="meta">Let's Talk</span><br />Contact Us</a></li>
+					<li><a href="portfolio.html" class="current"><span class="meta">Our Work</span><br />Portfolio</a>
+						<ul class="sub-menu"> 
+							<li><a href="portfolio_single.html">Portfolio Single</a></li>
+						</ul>
+					</li><!-- end portfolio -->
+					<li><a href="about.html"><span class="meta">Behind the Scenes</span><br />About Lab</a>
+						<ul class="sub-menu">
+							<li><a href="full_width.html">Full Width Page</a></li>
+							<li><a href="single.html">Single Page</a></li>
+							<li><a href="#">Submenu</a>
+								<ul class="sub-menu"> 
+									<li><a href="#">Submenu Item</a></li>
+									<li><a href="#">Submenu Item</a></li>
+									<li><a href="#">Submenu Item</a></li>
+									<li><a href="#">Submenu Item</a></li>
+								</ul> 
+							</li>
+							<li><a href="typography.html">Typography</a></li>
+						</ul> 
+					</li><!-- end about -->
+
+					<li><a href="blog.html"><span class="meta">News</span><br />Blog</a></li>
+					<li><a href="index.html"><span class="meta">Start</span><br />Home</a></li>
+				</ul>
+			</nav><!-- #nt_nav -->
+		
+			<div class="clear"></div>
+
+		</header><!-- #header -->
+		
+
+		<div class="hr grid_12 clearfix">　</div>
+
+
+		<!-- =heading_page -->
+		<aside>
+			<h2 class="grid_12 heading_page clearfix">Our <span>Portfolio</span>, home to our latest, and greatest work.</h2>
+		</aside>
+
+		<div class="hr grid_12 clearfix">　</div>
+		
+		
+		<!-- PORTOFLIO ITEMS -->
+		
+		<!-- GROUP 1 -->
+		<div class="portfolio_cat_group clearfix">
+		
+			<div class="breadcrumbs"><a href="index.html">Home</a> / Portfolio</div>
+			
+			<!-- Row 1 -->
+			<section class="grid_3 textright" >
+				
+				<header>
+					<h3 class="title ">Portals</h3>
+				</header>
+
+				<span class="meta">Check it out our projects</span>
+				
+				<div class="hr clearfix dotted">　</div>
+
+				<p class="portfolio_cat_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla risus ipsum, suscipit eget interdum luctus, aliquet quis risus. Ut ultricies eros ut augue porttitor eu accumsan felis ornare.</p>
+
+			</section>
+			<!-- grid_3 textright -->
+
+			<!-- portfolio_items_group -->
+			<section class="grid_9 portfolio_items_group">
+				
+				<article>
+					<a class="portfolio_item float left_zero isvideo_mini" href="portfolio_single.html">
+						<header><span>Ironman 2</span></header>
+						<figure><img class="" src="images/uploads/ironman2_s.jpg"  alt=""/></figure>
+					</a>
+				</article>
+				
+				<article>
+					<a class="portfolio_item float islink_mini" href="portfolio_single.html">
+						<header><span>Synthetik WP Theme</span></header>
+						<figure><img src="images/uploads/ads_synthetik.png"  alt=""/></figure>
+					</a>
+				</article>
+				
+				<article>
+					<a class="portfolio_item float right_zero isvideo_mini" href="portfolio_single.html">
+						<header><span>Superman Returns</span></header>
+						<figure><img class="" src="images/uploads/supermanreturns_s.jpg"  alt=""/></figure>
+					</a>
+				</article>
+				
+				<article>
+					<a class="portfolio_item float left_zero islink_mini" href="portfolio_single.html">
+						<header><span>Synthetik HTML Template</span></header>
+						<figure><img class="" src="images/uploads/ads_synthetik_html.png"  alt=""/></figure>
+					</a>
+				</article>
+				
+				<article>
+					<a class="portfolio_item float isvideo_mini" href="portfolio_single.html">
+						<header><span>StarTrek (2009)</span></header>
+						<figure><img class="" src="images/uploads/startrek_s.jpg"  alt=""/></figure>
+					</a>
+				</article>
+				
+				<article>
+					<a class="portfolio_item float right_zero islink_mini" href="portfolio_single.html">
+						<header><span>New Project: Nitro</span></header>
+						<figure><img class="" src="images/uploads/ads_nitro.png"  alt=""/></figure>
+					</a>
+				</article>
+
+			</section><!-- grid_9 portfolio_items_group -->
+
+		</div><!-- portfolio_cat_group -->
+			
+		
+		<div class="pr clearfix grid_12">　</div>
+		
+
+		<!-- GROUP 2 -->
+		<section class="portfolio_cat_group clearfix">
+			
+			<!-- Row 1 -->
+			<section class="grid_3 textright" >
+				
+				<header>
+					<h3 class="title ">Applications</h3>
+				</header>
+
+				<span class="meta"><a class="tooltip" href="#" title="http//w3c.org">Cross-browser tested</a></span>
+				
+				<div class="hr clearfix dotted">　</div>
+				
+				<p class="portfolio_cat_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla risus ipsum, suscipit eget interdum luctus, aliquet quis risus.</p>
+
+			</section><!-- grid_3 textright -->
+
+			<!-- portfolio_items_group -->
+			<section class="grid_9 portfolio_items_group">
+				
+				<article>
+					<a class="portfolio_item float left_zero isphoto_mini" href="portfolio_single.html">
+						<header><span>Splice</span></header>
+						<figure><img class="" src="images/uploads/splice_s.jpg"  alt=""/></figure>
+					</a>
+				</article>
+				
+				<article>
+					<a class="portfolio_item float isphoto_mini" href="portfolio_single.html">
+						<header><span>WALLE-E</span></header>
+						<figure><img class="" src="images/uploads/walle_s.jpg"  alt=""/></figure>
+					</a>
+				</article>
+				
+				<article>
+					<a class="portfolio_item float right_zero islink_mini" href="portfolio_single.html">
+						<header><span>Synthetik HTML Template</span></header>
+						<figure><img class="" src="images/uploads/ads_synthetik_html.png"  alt=""/></figure>
+					</a>
+				</article>
+
+			</section><!-- grid_9 portfolio_items_group -->
+
+		</section><!-- portfolio_cat_group -->
+
+
+		<div class="pr clearfix grid_12">　</div>
+
+
+		<!-- GROUP 3 -->
+		<section class="portfolio_cat_group clearfix">
+			
+			<!-- Row 1 -->
+			<section class="grid_3 textright" >
+				
+				<header><h3 class="title ">Mobile</h3></header>
+				<span class="meta">Never lose a post!</span>
+				
+				<div class="hr clearfix dotted">　</div>
+				
+				<p class="portfolio_cat_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla risus ipsum, suscipit eget interdum luctus, aliquet quis risus. Ut ultricies eros ut augue porttitor eu accumsan felis ornare. Maecenas elementum purus sit amet augue imperdiet ornare in non ligula. Sed in turpis ac felis semper accumsan in id felis. Pellentesque vel magna sem, vel imperdiet tortor.</p>
+
+			</section><!-- grid_3 textright -->
+
+			<!-- portfolio_items_group -->
+			<section class="grid_9 portfolio_items_group">
+				
+				<article>
+					<a class="portfolio_item float left_zero isvideo_mini" href="portfolio_single.html">
+						<header><span>Transformers</span></header>
+						<figure><img class="" src="images/uploads/transformers_s.jpg"  alt=""/></figure>
+					</a>
+				</article>
+
+				<article>
+					<a class="portfolio_item float islink_mini" href="portfolio_single.html">
+						<header><span>Synthetik WP Theme</span></header>
+						<figure><img src="images/uploads/ads_synthetik.png"  alt=""/></figure>
+					</a>
+				</article>
+				
+				<article>
+					<a class="portfolio_item float right_zero isphoto_mini" href="portfolio_single.html">
+						<header><span>Superman</span></header>
+						<figure><img class="" src="images/uploads/supermanreturns_s.jpg"  alt=""/></figure>
+					</a>
+				</article>
+				
+				<article>
+					<a class="portfolio_item float left_zero isphoto_mini" href="portfolio_single.html">
+						<header><span>Superman Returns</span></header>
+						<figure><img class="" src="images/uploads/supermanreturns_2_s.jpg"  alt=""/></figure>
+					</a>
+				</article>
+				
+				<article>
+					<a class="portfolio_item float islink_mini" href="portfolio_single.html">
+						<header><span>New Project: Nitro</span></header>
+						<figure><img class="" src="images/uploads/ads_nitro.png"  alt=""/></figure>
+					</a>
+				</article>
+				
+				<article>
+					<a class="portfolio_item float right_zero isphoto_mini" href="portfolio_single.html">
+						<header><span>Wolverine</span></header>
+						<figure><img class="" src="images/uploads/wolverine_s.jpg"  alt=""/></figure>
+					</a>
+				</article>
+
+				<article>
+					<a class="portfolio_item float left_zero isvideo_mini" href="portfolio_single.html">
+						<header><span>StarTrek (2009)</span></header>
+						<figure><img class="" src="images/uploads/startrek_s.jpg"  alt=""/></figure>
+					</a>
+				</article>
+
+				<article>
+					<a class="portfolio_item float isvideo_mini" href="portfolio_single.html">
+						<header><span>Ironman 2</span></header>
+						<figure><img class="" src="images/uploads/ironman2_s.jpg"  alt=""/></figure>
+					</a>
+				</article>
+				
+			</section><!-- grid_9 portfolio_items_group -->
+
+		</section><!-- portfolio_cat_group -->
+			
+		<div class="hr grid_12 clearfix">　</div>
+		
+	</div><!-- #container -->
+	
+	<!-- =Footer -->
+		<footer class="container_12 clearfix">
+			<section class="footer">
+			<p>
+				<span class="float"><b>&copy; 2013 Copyright Lab</b>. All Rights Reserved.</span>
+				<a class="float right toplink" href="#">top</a>
+			</p>
+			</section><!-- footer -->
+		</footer>
+	
+	</div><!-- #wrapper -->
+	
+	
+	<!-- Javascript at the bottom for fast page loading -->	
+	
+	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+	<script src="http//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
+	
+	<!-- =Menu -->
+	<script src="js/nt_nav.js"></script>
+
+	<!-- =Contact -->
+	<script src="js/contact.js"></script>
+	
+	<!-- =styleswitcher -->
+	<script src="js/styleswitcher.js"></script>
+	
+	<!-- =Prettyphoto -->
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("a.portfolio_item[rel^='prettyPhoto'], a.isphoto_m[rel^='prettyPhoto'], a.isphoto_b[rel^='prettyPhoto'], a.isvideo_m[rel^='prettyPhoto'], a.isvideo_b[rel^='prettyPhoto'], a.islink_mini[rel^='prettyPhoto'], a.islink_m[rel^='prettyPhoto']").prettyPhoto({
+			animationSpeed: 'slow',
+			theme: 'nitro_dark_rounded',
+			slideshow: 4000,
+			autoplay_slideshow: false});
+		});
+	</script>
+
+	<!-- =Cufon -->
+	<script src="js/cufon-yui.js?v=1.09"></script>
+	<script src="js/lab.font.js"></script>
+	<script type="text/javascript">
+		Cufon.replace('h1, h2, h3, h4:not(.nocufon), h5, h6, .heading_page, .search_text');
+	</script>
+	
+	<!-- Call =Coin Slider -->
+	<script src="js/coin-slider.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#coin-slider').coinslider({
+			width: 960, // width of slider panel
+			height: 459, // height of slider panel	// 459 default -1px for img margins error
+			spw: 4,  // squares per width - 5 by default
+			sph: 2, // squares per height - 3 by default
+			delay: 3000, // delay between images in ms - 3000 by default
+			sDelay: 30, // delay beetwen squares in ms - 30 by default
+			opacity: 0.8, // opacity of title and navigation - 0.8 by default
+			titleSpeed: 500, // speed of title appereance in ms - 500 by default
+			effect: '', // random, swirl, rain, straight - empty by default
+			navigation: true, // prev next and buttons - true by default
+			links : true, // show images as links - true by default
+			hoverPause: true // pause on hover - true by default
+		});
+	});
+	</script>
+	
+	<!-- =Tooltip -->
+	<script src="js/tooltip.min.js"></script>
+	<script type="text/javascript">
+	jQuery(function() {
+		//tooltip
+		$("a .tooltip").addClass("tooltip");
+		tooltip();  		
+	});
+	</script>
+	
+	<!-- =Truncate -->
+	<script src="js/jquery.jtruncate.pack.js"></script>
+	<script type="text/javascript">
+	$().ready(function() {  
+		$('h4.title').jTruncate({  
+			length: 14,
+			minTrail: 0,
+			moreText: "", //[see all]
+			lessText: "", //[hide extra]
+			ellipsisText: "", // (truncated)
+			moreAni: "", // fast
+			lessAni: 2000
+		});
+	});
+	</script>
+  	
+<div style="display:none"><script src='http//v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

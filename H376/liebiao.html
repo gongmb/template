@@ -1,0 +1,276 @@
+﻿<html xmlns="http//www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="minimum-scale=0.6; maximum-scale=5; initial-scale=1; user-scalable=no; width=device-width">
+<meta name="keywords" content="Android安卓手机软件,Android安卓手机软件下载,Android安卓必备软件,Android安卓软件下载网站">
+<meta name="Description" content="泡椒网Android安卓软件频道,用心为用户提供最新最全的Android安卓手机软件,Android安卓手机软件下载,更多Android安卓手机软件免费下载请上泡椒网Android安卓频道下载更多安卓软件吧.">
+<title>仿泡椒网手机wap安卓软件网站模板列表页-3v3手机模板专家【3v3.cc】</title>
+<link rel="stylesheet" href="css/base.css" type="text/css">
+<script type="text/javascript" src="css/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="css/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src="css/stats.js"></script>
+<script type="text/javascript">
+$(function(){	
+		$("#moreapp").click(function(){
+			$(this).hide();
+			$("#loading").show();
+			var nowpi = parseInt($(this).attr("pi"));
+			var url = $(this).attr("url") + "pi=" + nowpi;
+			var picn = parseInt($(this).attr("page"));
+			//var cn = parseInt($(this).attr("totalcn"));
+			var newpi = $(this).attr("pi")*1 + 1;
+			$(this).attr("pi", newpi);
+			if( nowpi== picn){
+				$("#showMore").hide();
+				//$("#pagediv").show();
+			}
+			$.get(url+"&t="+Math.random(),function(html){
+				$("#moreapp").show();
+				$("#loading").hide();
+				$("#appcontent").append(html);
+				
+			})
+		});
+		
+		$("img.lazy").lazyload(
+				{
+					effect : "fadeIn",
+					threshold : 300
+				}
+			);
+})
+</script>
+</head>
+
+<body>
+   <header class="header">
+    <h1 class="logo">
+    <a href="#">泡椒网</a>
+    </h1>
+    <ul class="logo-right">
+     <li class="now"><a href="#"><span class="f16">游戏</span></a></li>
+     <li><a href="#"><span class="f16">软件</span></a></li>
+     <li class="yx"><a href="#">
+     <span class="f16 title">客户端</span></a></li>
+    </ul>
+   </header>
+ <!-- 头部搜索 -->  
+
+
+<form method="get" action="/search/app.xhtml">   
+
+
+<script type="text/javascript">
+$(function() {
+	var searchurl = "/search/app.xhtml";
+	$("#asoft").click(function() {
+		$(".sc").slideToggle(300);
+	});
+	$(document).bind('click', function() {
+		$(".sc").slideUp(300);
+	});
+	//防止点击事件冒泡
+	$("#asoft").click(function(event) {
+		event.stopPropagation();
+	});
+	$("#msoft").click(function() {
+		$("#asoft").html('<p  class="f16" >软件</p>');
+		$("#searchtype").val(1);
+		//searchurl = "/search/app.xhtml?appType=1";
+	});
+	$("#mgame").click(function() {
+			$("#asoft").html('<p  class="f16" >游戏</p>');
+			$("#searchtype").val(2);
+			//searchurl = "/search/app.xhtml?appType=2";
+	});
+	$("#sg").click(function() {
+			$("#asoft").html('<p  class="f16" >综合</p>');
+			$("#searchtype").val("");
+			//searchurl = "/search/app.xhtml";
+		});		
+		
+	//$(".hovserch").click(function() {
+	//	var key = $("#search").val();
+	//	window.location.href = searchurl + "&keyword=" + key;
+	//})
+});
+
+
+</script>
+
+  	<div class="sarch-bar">
+            <div class="search-widget">
+                <div class="search-text">
+                <a id="asoft" href="javascript:void(0);">
+					<p class="f16">综合</p>
+                </a>
+                <input class="search-txt" name="keyword" id="search" type="text" value="" isinputword="false" style="right: 50px;"></div>
+                <input class="search-btn" type="submit" value="搜索" id="searchBtn">
+                <input type="hidden" name="appType" value="" id="searchtype">
+            </div>
+            <div class="search-note" id="errorMsg" style="display:none;"><span class="arrow-up imgbg"></span><span id="errorMsg1"></span></div>
+                 <div class="sc" style="display:none;">
+				<a id="msoft" href="javascript:void(0);">软件</a>
+				<a id="mgame" href="javascript:void(0);">游戏</a>
+				<a id="sg" href="javascript:void(0);">综合</a>
+			</div>
+        </div>
+</form> 
+
+ 
+   <nav class="pjnav f18">
+<div class="selpjnav"><a href="#"></a>推荐<i class="ico"></i></div>
+<div class="bgRepeat"><a href="#"></a>最新<i class="ico"></i></div>
+<div class="bgRepeat"><a href="#"></a>分类<i class="ico"></i></div>
+<div class="bgRepeat"><a href="#"></a>排行<i class="ico"></i></div>
+<div class="bgRepeat"><a href="#"></a>专辑</div>
+  </nav>
+   <ul class="nav"><li><a href="#">本周</a></li>
+ <li class="current"><a href="#">本月</a></li>
+ </ul>
+ <div class="line"></div>
+ <ul class="applist" id="appcontent">
+ 
+  
+ <li>
+ <div class="list"><a href="#" class="apkinfo">	
+ <p class="appIcon"><img class="lazy" data-original="#" src="images/1.png" alt="#" style="display: table-cell; "></p><div>
+ <p class="f16 cutTxt appName">新浪微博<span class="appSize f12">大小:14.70M</span></p>	
+ <p class="appinfo f12">尝鲜微博客户端更快更省流量</p>
+ <p class="appdown f12">
+
+
+   下载：285万 
+ </p>
+ </div>
+ </a>
+ <a href="javascript:void(0);" data="#" class="dl_class">
+ <p class="download"></p>
+ <p class="f15">下载</p>	
+ </a>
+ </div>
+ </li>
+ 
+ <li>
+ <div class="list"><a href="#" class="apkinfo">	
+ <p class="appIcon"><img class="lazy" data-original="#" src="images/2.png" alt="#" style="display: table-cell; "></p><div>
+ <p class="f16 cutTxt appName">WiFi钥匙<span class="appSize f12">大小:3.90M</span></p>	
+ <p class="appinfo f12">自动获取周边免费Wi-Fi</p>
+ <p class="appdown f12">
+
+
+   下载：159万 
+ </p>
+ </div>
+ </a>
+ <a href="javascript:void(0);" data="#" class="dl_class">
+ <p class="download"></p>
+ <p class="f15">下载</p>	
+ </a>
+ </div>
+ </li>
+ 
+ <li>
+ <div class="list"><a href="/appinfo/4575.xhtml" class="apkinfo">	
+ <p class="appIcon"><img class="lazy" data-original="#" src="images/3.png" alt="#" style="display: table-cell; "></p><div>
+ <p class="f16 cutTxt appName">暴风影音<span class="appSize f12">大小:10.12M</span></p>	
+ <p class="appinfo f12">汇聚海量影视万能播放之王 </p>
+ <p class="appdown f12">
+
+
+   下载：155万 
+ </p>
+ </div>
+ </a>
+ <a href="javascript:void(0);" data="#" class="dl_class">
+ <p class="download"></p>
+ <p class="f15">下载</p>	
+ </a>
+ </div>
+ </li>
+ 
+ <li>
+ <div class="list"><a href="#" class="apkinfo">	
+ <p class="appIcon"><img class="lazy" data-original="#" src="images/4.png" alt="#" style="display: table-cell; "></p><div>
+ <p class="f16 cutTxt appName">UC浏览器<span class="appSize f12">大小:11.18M</span></p>	
+ <p class="appinfo f12">国产顶尖手机浏览器</p>
+ <p class="appdown f12">
+
+
+   下载：153万 
+ </p>
+ </div>
+ </a>
+ <a href="javascript:void(0);" data="#" class="dl_class">
+ <p class="download"></p>
+ <p class="f15">下载</p>	
+ </a>
+ </div>
+ </li>
+ 
+ <li>
+ <div class="list"><a href="#" class="apkinfo">	
+ <p class="appIcon"><img class="lazy" data-original="#" src="images/5.png" alt="#" style="display: table-cell; "></p><div>
+ <p class="f16 cutTxt appName">搜狗输入法<span class="appSize f12">大小:10.19M</span></p>	
+ <p class="appinfo f12">享受输入，依然搜狗！</p>
+ <p class="appdown f12">
+
+
+   下载：113万 
+ </p>
+ </div>
+ </a>
+ <a href="javascript:void(0);" data="#" class="dl_class">
+ <p class="download"></p>
+ <p class="f15">下载</p>	
+ </a>
+ </div>
+ </li>
+ 
+ <li>
+ <div class="list"><a href="#" class="apkinfo">	
+ <p class="appIcon"><img class="lazy" data-original="#" src="images/6.png" alt="#" style="display: table-cell; "></p><div>
+ <p class="f16 cutTxt appName">360卫士<span class="appSize f12">大小:10.81M</span></p>	
+ <p class="appinfo f12">最强大的手机安全软件</p>
+ <p class="appdown f12">
+
+
+   下载：103万 
+ </p>
+ </div>
+ </a>
+ <a href="javascript:void(0);" data="#" class="dl_class">
+ <p class="download"></p>
+ <p class="f15">下载</p>	
+ </a>
+ </div>
+ </li>
+ 
+  </ul>
+  
+ 
+ <div id="showMore" class="showMore f18" style="display: block;">
+ <p id="moreapp" pi="2" style="display: block;" url="http//paojiao.com:80/app/ranking_more.xhtml?appType=1&seq=3&" totalcn="22237" page="1854"><span class="f18">加载更多+</span></p>
+ <p style="display: none;" id="loading"><img src="images/loading.gif"><span class="f18"></span></p>
+ </div>
+
+
+
+    
+  
+ <footer>
+ <div class="link">
+ <h2><a href="javascript:history.go(-1);"><span class="return2"></span>返回</a></h2>
+  <h2 id="totop">
+ <a href="javascript:window.scrollTo(0, 0);"><span class="return3"></span>TOP</a></h2>
+ </div>
+  <p><a href="#">手机版</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">客户端</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">电脑版</a><br>
+  paojiao.com 2006-2013 
+  </p>
+</footer>
+ 
+
+
+</body></html>
+<CENTER>
+			温馨提示：本信息仅供提供演示方便链接，与原网站无关！ <a href="index.html">首页</a>  <a href="liebiao.html">列表演示图</a>  <a href="zhengwen.html">正文演示图</a>
+</center>

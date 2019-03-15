@@ -1,0 +1,219 @@
+
+function change_spec_id_1()
+{
+	var nPid		= $('#product_id').val();
+	var nProduct_Spec	= $('#product_spec').val();
+	var nSpec1_Id		= $('#spec_id_1').val();
+	var nSpec1_Name		= $('#spec_id_1 option:selected').text();
+
+	$('input#item_id').attr('value', '');
+
+	if ( nSpec1_Id == 0 )
+	{
+		$('#spec_name').html('');
+	}
+	else
+	{
+		$('#spec_name').html(' ( ' + nSpec1_Name + ' )');
+	}
+
+	$.getJSON('ajax/ajax_product_spec_1.php', {spec1:nSpec1_Id}, function(json){
+		if ( json.spec_image != '' )
+		{
+			$("#product_image").attr("src", json.spec_image)
+		}
+	});
+
+	if ( nProduct_Spec == 2 )
+	{
+		get_spec_select_2();
+	}
+
+	get_item_data(nSpec1_Id, 0);
+}
+
+function get_spec_select_2()
+{
+	var nPid	= $('#product_id').val();
+	var nSpec1_Id	= $('#spec_id_1').val();
+	var nShow_Item	= (nSpec1_Id == 0) ? 0 : 1;
+
+	$('#spec_id_2').jselect({
+		loadUrl: 'ajax/ajax_product_spec_select.php',
+		loadData: 'pid=' + parseInt(nPid) + '&show=' + parseInt(nShow_Item) + '&spec=2',
+		loadDataType: 'json',
+		onComplete: function() { }
+	});
+
+	auto_product_item_num(nSpec1_Id, 0);
+}
+
+function change_spec_id_2()
+{
+	var nSpec1_Id	= $('#spec_id_1').val();
+	var nSpec2_Id	= $('#spec_id_2').val();
+	var nSpec1_Name	= $('#spec_id_1 option:selected').text();
+	var nSpec2_Name	= $('#spec_id_2 option:selected').text();
+
+	$('input#item_id').attr('value', '');
+
+	if ( nSpec2_Id == 0 )
+	{
+		$('#spec_name').html(' ( ' + nSpec1_Name + ' )');
+	}
+	else
+	{
+		$('#spec_name').html(' ( ' + nSpec1_Name + ' - ' + nSpec2_Name + ' )');
+	}
+
+	get_item_data(nSpec1_Id, nSpec2_Id);
+}
+
+function change_buy_money()
+{
+	var nItem_Num = $('#item_num').val();
+	if ( !$.isNumeric(nItem_Num) )
+	{
+		nItem_Num = 0;
+	}
+
+	var nItem_Money	= $('#item_money').val();
+	if ( !$.isNumeric(nItem_Money) )
+	{
+		nItem_Money = 0;
+	}
+
+	var nTemp_Total = nItem_Num * nItem_Money;
+	nTemp_Total = (nTemp_Total <= 0) ? nDefalut_Item_Money : nTemp_Total;
+
+	$('#show_item_money_total').html(nTemp_Total);
+}
+
+function get_item_data(nSpec1_Id, nSpec2_Id)
+{
+	var nPid = $('#product_id').val();
+	var nProduct_Price_List = $('#product_price_list').val();
+
+	$.getJSON('ajax/ajax_product_item_data.php', {pid:nPid, spec1:nSpec1_Id, spec2:nSpec2_Id}, function(json){
+		var sShow_Item_Id = (json.item_id == '') ? '尚未選擇規格' : json.item_id;
+		var sShow_Item_Money = (json.item_money == '') ? '選擇規格' : json.item_money;
+		$('#show_item_id').html(sShow_Item_Id);
+		$('#show_item_money_1').html(sShow_Item_Money);
+		$('#show_item_money_2').html(sShow_Item_Money);
+		$('#item_money').attr('value', sShow_Item_Money);
+		$('input#item_id').attr('value', json.item_id);
+		auto_product_item_num(nSpec1_Id, nSpec2_Id);
+	});
+}
+
+function auto_product_item_num(nSpec1_Id, nSpec2_Id)
+{
+	var nPid = $('#product_id').val();
+
+	$('#item_num').jselect({
+		loadUrl: 'ajax/ajax_product_item_num.php',
+		loadData: 'pid=' + parseInt(nPid) + '&spec1=' + parseInt(nSpec1_Id) + '&spec2=' + parseInt(nSpec2_Id),
+		loadDataType: 'json',
+		onComplete: function() {
+			var nTemp_Item_Num = $('#item_num').val();
+			if ( nTemp_Item_Num == -1 )
+			{
+				$('#cart_add').css('display', 'none');
+				$('#cart_add_2').css('display', 'none');
+				$('#cart_stop').css('display', 'block');
+				$('#cart_stop_2').css('display', 'block');
+			}
+			else
+			{
+				$('#cart_add').css('display', 'block');
+				$('#cart_add_2').css('display', 'block');
+				$('#cart_stop').css('display', 'none');
+				$('#cart_stop_2').css('display', 'none');
+			}
+
+			change_buy_money();
+		}
+	});
+
+}
+
+function add_cart_submit()
+{
+	var nTemp_Item_Id	= $('input#item_id').val();
+	var nTemp_Item_Num	= $('#item_num').val();
+
+	if ( nTemp_Item_Id == '' )
+	{
+		alert('請先選擇規格');
+	}
+	else if ( nTemp_Item_Num <= 0 )
+	{
+		alert('請先選擇數量');
+	}
+	else
+	{
+		/*
+		var sGet_Value = '';
+		sGet_Value += 'cart=' + $('#cart').val();
+		sGet_Value += '&item_id=' + $('#item_id').val();
+		sGet_Value += '&buy_num=' + $('#item_num').val();
+		sGet_Value += '&ajax=1';
+
+		$.ajax({
+			type: 'POST',
+			url: 'cart_1.php',
+			dataType: 'html',
+			data: sGet_Value,
+			success: function (sMsg){
+				if ( sMsg == 'success' )
+				{
+					alert('已放入購物車');
+				}
+				else
+				{
+					alert('系統錯誤，請重新操作。');
+				}
+			},
+			error: function (sMsg1, sMsg2){
+				alert('系統錯誤！');
+			},
+			complete: function (sMsg1, sMsg2){
+				//ajax_cart_content();
+				ajax_cart_num();
+			}
+		});
+
+		$.unblockUI();
+		*/
+
+		$('input#buy_num').attr('value', nTemp_Item_Num);
+		document.form1.submit();
+	}
+}
+
+function add_cart_submit_mobile()
+{
+	var nTemp_Item_Id	= $('input#item_id').val();
+	var nTemp_Item_Num	= $('#item_num').val();
+
+	if ( nTemp_Item_Id == '' )
+	{
+		alert('請先選擇規格');
+	}
+	else if ( nTemp_Item_Num <= 0 )
+	{
+		alert('請先選擇數量');
+	}
+	else
+	{
+		document.form1.submit();
+	}
+}
+
+$(document).ready(function(){
+	$('#spec_id_1').change(function() { change_spec_id_1(); });
+	$('#spec_id_2').change(function() { change_spec_id_2(); });
+	$('#item_num').change(function() { change_buy_money(); });
+
+	get_item_data(0, 0);
+});

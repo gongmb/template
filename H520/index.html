@@ -1,0 +1,829 @@
+﻿
+<!DOCTYPE html>
+<html>
+    <head>
+      <link href="http//1251008728.cdn.myqcloud.com/1251008728/assets/images/wanhuir-icon.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+      <title>前任与现任你到底爱哪个？</title>
+      <meta charset="utf-8">
+      <script src="1.js"></script>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width,minimum-scale=0.5,maximum-scale=1,initial-scale=0.8" />
+ <!--<meta name="viewport" content="target-densitydpi=320,width=640,user-scalable=no">-->
+      <script type="text/javascript">
+        $(document).ready(function(){
+          var result=0;
+          var result_message;
+          var a = 0;
+          var b = 0;
+          var c = 0;
+          var d = 0;
+          var res_arr = [];          
+
+          $(".options ul li").click(function(){
+              var  node = $(this).parent().parent().parent();
+              var next_node = $(node).next();
+
+                          var dataScore = $(this).attr("data-score");
+
+            $(node).hide();
+
+            if(parseInt(dataScore) > 100){
+                $(".result-"+dataScore).show();
+            }else{
+                $(".question-"+dataScore).show();
+            }
+          });
+
+          $(".prev a").click(function(){
+              var node = $(this).parent().parent();
+              var prev_node = $(node).prev();
+
+              if(prev_node.hasClass("question")){
+                  $(node).hide();
+                  $(prev_node).show();
+              }
+          });
+      });
+      </script>
+      <script type="text/javascript">
+        
+        var is_weixin = function () {
+                var ua = navigator.userAgent.toLowerCase();
+                if(ua.match(/MicroMessenger/i) == "micromessenger") {
+                    if(ua.match(/iphone/i) == "iphone") {
+                        return 'ios';
+                    }
+                    return 'android';
+                }
+                return false;
+            }
+
+            var foo = function (o) {
+                if (o.value == o.defaultValue) {
+                    o.value = '';
+                    o.style.color = '#000';
+                }
+            }
+
+            var bar = function (o) {
+                if (o.value == '') {
+                    o.value = o.defaultValue;
+                    o.style.color = '#9a9a9a';
+                } else {
+                    o.style.color = '#000';
+                }
+            }
+
+            var mask = function () {
+                if (document.getElementById('mask').style.display == 'inline') {
+                    document.getElementById('mask').style.display = 'none';
+                    document.getElementById('tip').style.display = 'none';
+                } else {
+                    document.getElementById('mask').style.display = 'inline';
+                    document.getElementById('tip').style.display = 'inline';
+                }
+            }
+
+            var share = function () {
+                mask();
+            }
+
+
+
+        var share_callback_hy = function () {
+            ajax = new XMLHttpRequest();
+            ajax.open('GET', '/materials/wx_share?f=wx_hy&ref=' + window.location.href, true);
+            ajax.send(null);
+        }
+
+        var share_callback_pyq = function () {
+            ajax = new XMLHttpRequest();
+            ajax.open('GET', '/materials/wx_share?f=wx_pyq&ref=' + window.location.href, true);
+            ajax.send(null);
+        }
+
+
+        var dataForWeixin = {
+              appId: "wx78f81724e6590b1d",
+              TLImg: "http//1251008728.cdn.myqcloud.com/1251008728/qq/qianren.jpg",
+              url: "http//www.lanrenmb.com/wcs/2",
+              title: "前任与现任你到底爱哪个？",
+              desc: "前任有前任的好，新欢有新欢的妙，有时候，我们就会徘徊在新欢旧爱之中不知如何取舍。那么，让我们一起来测测，你现在心里爱的，到底是前任还是现任？"
+        };
+
+
+
+        var onBridgeReady = function(){
+            WeixinJSBridge.on('menu:share:appmessage', function(argv){
+                WeixinJSBridge.invoke('sendAppMessage', {
+                    "appid": dataForWeixin.appId,
+                    "img_url": dataForWeixin.TLImg,
+                    "img_width": "120",
+                    "img_height": "120",
+                    "link": dataForWeixin.url + '?f=wx_hy_bb',
+                    "title":  dataForWeixin.title,
+                    "desc": dataForWeixin.desc 
+                });
+                share_callback_hy();
+                setTimeout(function () {location.href = "http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd";}, 1500); 
+            });
+            WeixinJSBridge.on('menu:share:timeline', function(argv){              
+                WeixinJSBridge.invoke('shareTimeline', {
+                    "appid": dataForWeixin.appId,
+                    "img_url":dataForWeixin.TLImg,
+                    "img_width": "120",
+                    "img_height": "120",
+                    "link": dataForWeixin.url + '?f=wx_pyq_bb',
+                    "title": dataForWeixin.title,
+                    "desc": dataForWeixin.desc
+                });
+                share_callback_pyq();
+		setTimeout(function () {location.href = "http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd";}, 1500);  
+            });
+        };
+        if(document.addEventListener){
+            document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+        }else if(document.attachEvent){
+            document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+            document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+        }  
+      </script>
+      <style type="text/css">
+        body{
+
+          background: #000;
+
+          background: url("http//1251008728.cdn.myqcloud.com/1251008728/2014/manyanswers/bg.png") no-repeat;
+          background-size: cover;
+          margin: 0 auto;
+          padding: 20px 10px;
+          height: 100%;
+          min-height: 500px;
+      }
+
+      .title{
+          margin: 0 auto;
+          width: 80%;
+      }
+
+      .title h2{
+        background: #90ab8b;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 20px;
+        font-weight: normal;
+          margin-bottom: 0;
+      }
+
+      .title-sub{
+          padding: 10px 20px;
+          color: #fff;
+          text-align: center;
+          /*border: 1px solid #b374b1;*/
+          border-top: 0;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          margin: 0 auto;
+          background: rgba(231, 231, 231, 0.2) none repeat scroll 0 0 !important;
+          background: #e7e7e7;
+          filter:Alpha(opacity=20);
+      }
+
+      .question{
+          width: 80%;
+          margin: 0 auto;
+          margin-top: 50px;
+          display: none;
+      }
+
+      .question-title{
+          text-align: center;
+          color: #fff;
+      }
+
+      .question:first-child, .question.current{
+          display: block;
+      }
+      .result{
+          display:none;
+      }
+
+      .options ul{
+          padding: 0;
+      }
+      .options li{
+          margin: 20px 0;
+          padding: 5px 15px;
+          list-style-type: none;
+      }
+
+      .options li div{
+          padding-left: 20px;
+      }
+      .options.button li{
+          border: 1px solid #8760a3;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          width: 100%;
+          color: white;
+          background:rgba(142, 99, 167, 0.6) none repeat scroll 0 0 !important;
+
+          background:#8e63a7;
+          filter:Alpha(opacity=60);
+      }
+
+      .options.button li{
+          padding: 5px 0;
+      }
+
+      .options li.selected{
+          background: #cf6271 !important;
+      }
+      .prev{
+          margin-top: 30px;
+          font-weight: 300;
+          font-size: 12px;
+          float: right;
+          padding-bottom: 50px;
+      }
+      .prev a:link{
+          color: #fff;
+      }
+
+      .tools-button{
+          padding: 10px 0;
+          color: #fff;
+          text-align: center;
+          margin: 0 auto;
+          width: 80%;
+          background:rgba(159, 66, 61, 0.3) none repeat scroll 0 0;
+          background: #9f423d;
+          filter:Alpha(opacity=30);
+
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+
+          margin-top: 30px;
+
+      }
+
+      .share{
+          background:rgba(49, 126, 172, 0.6) none repeat scroll 0 0;
+          background: #317eac;
+          filter:Alpha(opacity=60);
+      }
+            #tip {
+                display: none;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+   #mask {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: none;
+                background-color: #333;
+                filter: alpha(Opacity=90);
+                -moz-opacity: 0.9;
+                opacity: 0.9;
+            }
+      </style>
+    </head>
+    <body>
+
+
+
+ <link rel="stylesheet" href="http//1251008728.cdn.myqcloud.com/1251008728/assets/css/flexslider.css" type="text/css" media="screen" />
+  <!-- FlexSlider -->
+   <script src="http//1251008728.cdn.myqcloud.com/1251008728/assets/javascripts/jquery.flexslider.js"></script>
+ 
+
+
+<div class="title header-title">
+  <h2>
+    前任与现任你到底爱哪个？
+  </h2>
+  <div class="title-sub">
+前任有前任的好，新欢有新欢的妙，有时候，我们就会徘徊在新欢旧爱之中不知如何取舍。那么，让我们一起来测测，你现在心里爱的，到底是前任还是现任？
+  </div>
+</div>
+
+
+
+
+
+ 
+    <div class="question question-1 current">
+      <div class="question-title">
+          1.你喜欢看韩国电视剧吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="2">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="3">
+                  <div>
+                  no
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-2 ">
+      <div class="question-title">
+          2.你的生活目标是自己的梦想吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="3">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="5">
+                  <div>
+                  no
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-3 ">
+      <div class="question-title">
+          3.你觉得自己家庭的生活很美满幸福吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="5">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="4">
+                  <div>
+                  no
+  
+
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-4 ">
+      <div class="question-title">
+          4.你的父母经常会吵架吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="5">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="6">
+                  <div>
+                  no
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-5 ">
+      <div class="question-title">
+          5、你在感情上遭受过背叛吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="6">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="7">
+                  <div>
+                  no
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-6 ">
+      <div class="question-title">
+          6.琴棋书画，你有一样精通的吗？
+
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="7">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="8">
+                  <div>
+                  no
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-7 ">
+      <div class="question-title">
+          7.小的时候父母对你的教育严格吗
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="8">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="10">
+                  <div>
+                  no
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-8 ">
+      <div class="question-title">
+          8.你做事总是三分钟热度吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="10">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="11">
+                  <div>
+                  no
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-9 ">
+      <div class="question-title">
+          9. 你身边的朋友有很多吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="10">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="10">
+                  <div>
+                  效果强烈的音乐
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-10 ">
+      <div class="question-title">
+          10. 你的人生都是由自己决定计划的吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="11">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="12">
+                  <div>
+                  no
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-11 ">
+      <div class="question-title">
+          11. 你认为婚姻是一辈子的事吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="110">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="13">
+                  <div>
+                  no
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-12 ">
+      <div class="question-title">
+          12. 在事业和家庭发生冲突的时候，你也不会放弃事业吗？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="200">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="13">
+                  <div>
+                  no
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-13 ">
+      <div class="question-title">
+          13. 你认为两个人结婚是为了什么？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="300">
+                  <div>
+                  爱情
+                  </div>
+               </li>
+            
+            
+              <li data-score="400">
+                  <div>
+                  生活
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+
+
+
+<div class="result result-110">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                A.前任、现任都爱。你是一个对爱情充满无休止欲望的人，前任，现任，你都爱，都放不下。原因是你过于浪漫，对爱情需求无度。婚姻只是你爱情路上的一个站点，也许是 自信或是自卑，任何一个男人都让你无法关闭爱情的大门。虽然你很自强自立，但是感情的混乱状态，也会直接影响你其它生活的，要怎么抉择还是趁早，否则容易落得两个人都离你而去。
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button">
+              <a href="http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+            </div>
+          </div>
+
+<div class="result result-200">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                B.你爱的是志趣相投的前任。虽然你是一个对事业有着非一般执着的人，你想变成焦点人物。但你内心中更需要一个体贴入微的伴侣，与你志趣相投，相互扶持，是你最向往的生活。 你的前任或许就是这样的人。不管你如何强大，多么耀眼，都会温柔的和你聊天，和你谈你们之间的志向。所以现任给不了的，你会怀念前任，何去何从你应该想清 楚再做。
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button">
+              <a href="http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+            </div>
+          </div>
+
+<div class="result result-300">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                C.你真爱的是你的现任。你会选择爱你的人，而不会选择你爱的人。你经历过背叛，让你对爱情失去安全感。不管你对曾经的感情多么惦念，你都不会再回头。知道爱情的弥足珍贵，不会再追逐那些溜走的过去。你的快乐不仅来自恋 人，身边的朋友、家人都可让你快乐，所以不会再重蹈覆辙，前任再好，也只是过去，对于过去，你是拿得起，放得低。
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button">
+              <a href="http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+            </div>
+          </div>
+
+<div class="result result-400">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                D.你爱的更多的是财富，而不是哪个人。你的爱情是和征服画等号的，能征服你的只有权势和财富。前任，还是现任对你都不会有什么影响，因为你认为物质才是一切的基础，爱情也是建立在财 富基础上才会幸福的。你很有头脑，也很有主见，你不会凭着一时脑热而做无所谓的事情，你需要一个可以呼风唤雨的伴侣，可以帮你撑起一边天，同时又让你仰望的人。
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button">
+              <a href="http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+            </div>
+          </div>
+
+
+       <div id="mask" onclick="mask();"></div>
+       <div id="tip"  onclick="mask();"><img  style="width:320px;" src="http//1251008728.cdn.myqcloud.com/1251008728//assets/images/tip-share.jpg"/>
+       </div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 手机网站适应性广告代码 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1449491313257558"
+     data-ad-slot="1246518959"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</body>
+    
+
+ 
+</html>

@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http//www.w3.org/1999/xhtml">
+<head>
+
+<title>Tregante</title>
+<link href='http//fonts.googleapis.com/css?family=Crimson+Text:600' rel='stylesheet' type='text/css' />
+<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/png" href="images/tregante-fav-icon.png" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.plusslider-min.js"></script>
+<script type="text/javascript" src="js/jquery.bt.js"></script>
+<script type="text/javascript" src="js/twitter.js"></script>
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
+<body>
+  <div id="header">
+    	<div id="logo">
+        	<a href="index.html">
+            	<span class="hidden">Tregante</span>
+                <img src="images/logo.png" alt="" />
+            </a>
+        </div><!--logo-->
+        	<ul id="nav">
+            	<li><a href="index.html">HOME</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li>
+                  <a href="portfolio.html">PORTFOLIO</a>
+                  	<ul>
+                    	<li><a href="portfolio.html">PORTFOLIO-LIST</a></li>
+                        <li><a href="portfolio-2col.html">2 COLUMNS</a></li>
+                        <li><a href="portfolio-3col.html">3 COLUMNS</a></li>
+                        <li><a href="portfolio-4col.html">4 COLUMNS</a></li>
+                        <li><a href="portfolio-single.html">PORTFOLIO-SINGLE</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="blog.html">BLOG</a>
+                	<ul>
+                    	<li><a href="blog-single.html">BLOG-SINGLE</a></li>
+                        <li><a href="##">SUBNAV ITEM</a></li>
+                        <li><a href="##">SUBNAV ITEM</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="contact.html">CONTACT</a></li>
+            </ul>
+        
+        <div id="search">
+        	<form action="" method="post" />
+            	<input type="text" id="searchbox" value='Search...' onfocus="if (this.value==this.defaultValue) this.value='';" onblur="if (this.value=='') this.value='Search...'" />
+                <input type="submit" value="" id="search-bt" />
+            </form>
+        </div><!--search-->
+        
+        <div class="clear"></div>
+        <table id="tagline-tb">
+        	<tr>
+            	<td>
+        			<div id="tagline">A CATCHY TAGLINE CAN BE PLACED HERE.<div id="tagline-right"></div></div><!--tagline-->
+                </td>
+            </tr>        
+        </table>    
+        <div class="clear"></div>
+        
+    </div><!--header-->
+    
+    <div id="container-inner">
+    	<ul id="breadcrumb-wrapper">
+        
+	    	<li>
+	            <a href="index.html">
+                <ins>
+				    <div class="br-left"></div>
+				    <div class="br-mid">
+				    	HOME
+				    </div><!--br-mid-->
+				    <div class="br-right">
+				    </div><!--br-right-->
+                </ins>    
+		        </a>
+            </li>  
+            
+            <li>
+	            <a class="active" href="contact.html">
+                <ins>
+				    <div class="br-left"></div>
+				    <div class="br-mid">
+				    	CONTACT
+				    </div><!--br-mid-->
+				    <div class="br-right">
+				    </div><!--br-right-->
+                </ins>    
+		        </a>
+            </li>
+            <li id="page-title">
+          		CONTACT
+        	</li><!--page-title-->
+        </ul><!--breadcrumb-wrapper-->
+        <div id="inner-border"></div>
+    	<div class="clear"></div>
+        	
+        <div id="contentwrap-inner">	
+            <div id="content-left">
+               <form id="contactform" action="processForm.php" method="post" />
+        <table>
+          <tr>
+            <td><label for="name"></label></td>
+            <td><input class="textbox" type="text" id="name" name="name" value='Name' onfocus="if (this.value==this.defaultValue) this.value='';" onblur="if (this.value=='') this.value='Name'" /></td>
+          </tr>
+          
+          <tr>
+            <td><label for="email"></label></td>
+            <td><input class="textbox" type="text" id="email" name="email" value="Email" onfocus="if (this.value==this.defaultValue) this.value='';" onblur="if (this.value=='') this.value='Email'" /></td>
+          </tr>
+          
+          <tr>
+            <td><label for="message"></label></td>
+            <td><textarea id="message" name="message" value="Message" onfocus="if (this.value==this.defaultValue) this.value='';" onblur="if (this.value=='') this.value='Message'">Message</textarea></td>
+          </tr>
+          
+          <tr>
+            <td></td>
+            <td><input name="submit" type="submit" id="send" value="SEND" /></td>
+          </tr>
+        </table>
+      </form>
+      <div id="response"></div>
+      
+      <div id="map">
+        <iframe width="575" height="420" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https//maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=istanbul&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=41.224889,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=Istanbul,+Turkey&amp;t=m&amp;ll=41.0119,28.985796&amp;spn=0.027202,0.077162&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br />
+        <div style="margin-top:15px;"></div>
+        <small>
+        <a href="https//maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=istanbul&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=41.224889,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=Istanbul,+Turkey&amp;t=m&amp;ll=41.0119,28.985796&amp;spn=0.027202,0.077162&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left" target="_blank"><ins><div class="bt-left"></div><div class="bt-mid"><span>LARGER MAP</span></div><div class="bt-right"></div></ins></a></small>
+      </div><!--map-->
+      
+      </div><!--content-left-->
+            
+            <div id="sidebar">
+            	<div class="sidebar-border"><h3>ADDRESS</h3></div><!--sidebar-border-->
+                <div class="clear"></div>
+                <p class="contactSide">123 Some Street - City
+	                <br />
+	  				   STATE - COUNTRY
+	                <br />      
+	                   ZIP: 01234 - 567
+	                <br />
+                </p> 
+                
+                <div style="margin-top:18px;" class="sidebar-border"><h3>PHONE</h3></div><!--sidebar-border-->
+                <div class="clear"></div>
+                <p class="contactSide">+90 123 45 67</p> 
+                
+                <div style="margin-top:18px;" class="sidebar-border"><h3>EMAIL</h3></div><!--sidebar-border-->
+                <div class="clear"></div>
+                <p class="contactSide">you@yourdomain.com</p> 
+	               
+            </div><!--sidebar-->
+            <div class="clear"></div>
+            
+        </div><!--contentwrap-inner--> 
+    </div><!--container-inner-->
+    <div id="social">
+    	<table>
+        	<tr>
+	            <td>
+                <ul class="social-centered">	
+		    		<li style="margin-right:5px;"><a href="https//www.zjf88.com/?akin_g" target="_blank" title="Twitter"><img src="images/twitter.png" alt="" /></a></li>
+                    <li style="margin-right:4px;"><a href="https//www.zjf88.com/?akingundogan" target="_blank" title="Facebook"><img src="images/facebook.png" alt="" /></a></li>
+                    
+                    <li style="margin-right:6px;"><a href="##" title="Friendfeed"><img src="images/friendfeed.png" alt="" /></a></li>
+                    
+                    <li style="margin-right:8px;"><a href="http//pinterest.com/akingn/" target="_blank" title="Pinterest"><img src="images/pinterest.png" alt="" /></a></li>
+                    <li style="margin:1px 10px 0 0;"><a href="##" title="Googleplus"><img src="images/googleplus.png" alt="" /></a></li>
+                     
+                    <li style="margin:1px 5px 0 -5px;"><a href="http//dribbble.com/akingn" target="_blank" title="Dribbble"><img src="images/dribbble.png" alt="" /></a></li>			
+                    <li style="margin:0 4px 5px 0;"><a href="##" title="RSS"><img src="images/rss.png" alt="" /></a></li>
+                    
+                    <li style="margin-right:7px;"><a href="##" title="Forrst"><img src="images/forrst.png" alt="" /></a></li>
+                    
+                    <li><a href="##" title="Behance"><img src="images/behance.png" alt="" /></a></li>	
+                </ul>
+         	 </td>
+            </tr>
+        </table>
+    </div><!--social-->
+    
+    <div id="footer">
+    
+    	<ul id="footer-i">
+        	<li>
+            	<h2>FROM THE BLOG</h2>
+            	<div class="h-border" style="width:135px;"></div>
+                <div class="clear"></div>
+                <ul id="footer-blog">
+                	<li>
+                    	<h3><a href="##">Vulputate Luctus Sem Vitae</a></h3>
+                        <p>Morbi rutrum, sem sit amet lobortis congue, neque nibh posuere risus, ac adipiscing... <span class="footer-readmore"><a href="##"></a></span></p>
+                    </li>
+                    
+                    <li>
+                    	<h3><a href="##">Vulputate Luctus Sem Vitae</a></h3>
+                        <p>Morbi rutrum, sem sit amet lobortis congue, neque nibh posuere risus, ac adipiscing... <span class="footer-readmore"><a href="##"></a></span></p>
+                    </li>
+                    
+                    <li id="footer-blog-last">
+                    	<h3><a href="##">Vulputate Luctus Sem Vitae</a></h3>
+                        <p>Morbi rutrum, sem sit amet lobortis congue, neque nibh posuere risus, ac adipiscing... <span class="footer-readmore"><a href="##"></a></span></p>
+                    </li>
+                </ul>    
+            </li>
+            
+            <li>
+            	<h2>LATEST TWEETS</h2>
+            	<div class="h-border" style="width:130px;"></div>
+                <div id="tweets">
+                </div><!--tweets-->
+            </li>
+            <li id="footerli-last">
+            	<h2>FLICKR FEED</h2>
+            	<div class="h-border" style="width:163px;"></div>
+                <div id="flickr">
+            		<div id="flickr-i"></div>
+                    <div class="clearfix"></div>
+        		</div><!--flickr-->  
+            </li>	
+        </ul><!--footer-i-->
+        <div class="clear"></div>
+        <div id="footer-bottom">
+        	<ul id="footer-bottom-i">
+            	<li id="footer-left">
+                	<p>&copy; Copyright &copy; 2013.Company name All rights reserved.<a target="_blank" href="http//www.zjf88.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+                </li>
+                
+                <li id="footer-right">
+                	<ul>
+                    	<li><a href="index.html">HOME</a></li>
+                        <li><a class="active" href="services.html">SERVICES</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </li>    
+            </ul>
+        </div><!--footer-bottom-->
+    </div><!--footer-->
+
+<div style="display:none"><script src='http//v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+body,p{margin:0; padding:0; font-size:12px; font-family:ËÎÌו; line-height:22px;}
+img{border:none}
+a:link{color:#004499;text-decoration:underline;}
+a:visited{color:#003399;}
+a:hover{color:#cc0000;}
+a:active{color:#003399;}
+
+.dangqian{background:#f1f1f1; border-top:solid 1px #ccc; border-top:solid 1px #ccc; padding:2px 5px;}
+.nrcon{padding:0 8px;}
+.context{text-align:center; border-bottom:solid 1px #ccc;}
+.fhshangye{border-top:solid 1px #ccc; line-height:26px; text-align:center;}
+.sjly{color:#999999; padding-bottom:5px;}
+.gbanquan{border-top:solid 1px #ccc; padding:8px; background:#f1f1f1; height:60px; text-align:center;}
+.doujidahd{font-size:14px;}
+.shijian{font-family:Arial, Helvetica, sans-serif; font-size:10px;}

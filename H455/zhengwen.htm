@@ -1,0 +1,165 @@
+﻿<!DOCTYPE HTML><html><head><meta charset="UTF-8"><meta content="width=device-width,user-scalable=no,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" name="viewport"><meta name="apple-mobile-web-app-capable" content="yes"><title>仿南都网3G触屏版手机wap新闻网站模板正文页-懒人模板【http//www.lanrenmb.com/shenghuofuwu/xinwen/】</title><link rel="apple-touch-icon-precomposed" href="../../img2.cache.oeeee.com/Public/Images/channel/mobile/weblogo.png"/><link href="Public/Css/channel/mobile.css" rel="stylesheet" type="text/css"><script type="text/javascript">//适配跳转
+(function(){
+	var data_time="1392790531";
+	var data_id="800010";
+	var data_channel="politics";
+	
+	var res = GetRequest();
+	var par = res['index'];
+	if(data_channel=="nis")
+	{
+		data_channel='nisgz';	
+	}
+	if(par!='gfan'){
+		var ua=navigator.userAgent.toLowerCase();
+		var contains=function (a, b){
+			if(a.indexOf(b)!=-1){return true;}
+		};
+		var toIpadVertion = function(){
+			window.location.href = '../../ipad.nandu.com/'+data_channel+'/'+data_time+'/'+data_id+'.html';  //ipad.nandu.com/society/1387244942/606435.html
+		}
+		
+	    if(contains(ua,"ipad"))
+		{
+			 toIpadVertion();
+		}
+		if((contains(ua,"linux") || contains(ua,"android")) && !contains(ua,"mobile") )
+		{
+		    toIpadVertion(); 	
+		}
+	    
+	}
+})();
+function GetRequest() {
+   var url = location.search; //获取url中"?"符后的字串
+   var theRequest = new Object();
+   if (url.indexOf("?") != -1) {
+      var str = url.substr(1);
+      strs = str.split("&");
+      for(var i = 0; i < strs.length; i ++) {
+         theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+      }
+   }
+   return theRequest;
+}
+</script><script src="Public/dwz/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="Public/Js/Commin_url.js" type="text/javascript"></script><script type="text/javascript" src="Public/Js/channel/mobile_login.js"></script></head><body><header id="header"><div class="top-home"><div class="logo"><a id="return" href="../../www.nandu.com/@from=index">&nbsp;</a></div><div class="nav-btn"><span href="javascript:void(0)" class="more"></span></div><a href="m.php@s=_2Fm_2Fmshow_2Fctime_2F1392790531_2Ftype_2Fhtml_2Fid_2F800010_2Fmtype_2F1_2Fchannel_2Fpolitics_2Fspeed_2F1" class="sel-btn">精简版</a><img class="login-stuts" src="../../pics.oeeee.com/nd_avatar/noavatar_small.gif" /><a href="javascript:;" class="sel-btn login-pop">登录</a></div><div id="nav" class="nd-nav"><ul class="first"><li class="menu1"><a href="index.htm">首页</a></li><li class="menu2"><a href="m.php@m=m&a=index&app=2&channel=news&xml=1&speed=">新闻</a></li><li class="menu3"><a href="m.php@m=m&a=mweibo&channel=weibo&speed=">热评</a></li><li class="menu4"><a href="m.php@m=m&a=mlike&channel=like&speed=">热顶</a></li><li class="menu5"><a style="color:#D00000;" target="_blank" href="../../3g.weicai.com/nandu/default.htm">彩票</a></li><li class="menu6"><a href="m.php@m=m&channel=roll&a=mroll&speed=">滚动</a></li></ul><ul><li class="menu1"><a href="m.php@m=m&a=index&app=2&channel=politics&xml=1&speed=">时局</a></li><li class="menu2"><a href="m.php@m=m&a=index&app=2&channel=world&xml=1&speed=">国际</a></li><li class="menu3"><a href="m.php@m=m&a=index&app=2&channel=society&xml=1&speed=">社会</a></li><li class="menu4"><a href="m.php@m=m&a=index&app=2&channel=opinion&xml=1&speed=">评论</a></li><li class="menu5"><a href="m.php@m=m&a=index&app=2&channel=depth&xml=1&speed=">深度</a></li><li class="menu6"><a href="m.php@m=m&a=index&app=2&channel=media&xml=1&speed=">传媒</a></li></ul><ul><li class="menu1"><a href="m.php@m=m&a=index&app=2&channel=gd&xml=1&speed=">广东</a></li><li class="menu2"><a href="m.php@m=m&a=index&app=2&channel=ent&xml=1&speed=">娱乐</a></li><li class="menu3"><a href="m.php@m=m&a=index&app=2&channel=sports&xml=1&speed=">体育</a></li><li class="menu4"><a href="m.php@m=m&a=index&app=2&channel=ndgongyi&xml=1&speed=">公益</a></li><li class="menu5"><a href="m.php@m=m&a=index&app=2&channel=culture&xml=1&speed=">文化</a></li><li class="menu6"><a href="m.php@m=m&a=index&app=2&channel=tech&xml=1&speed=">科技</a></li></ul><ul><li class="menu1"><a href="m.php@m=m&a=index&app=2&channel=finance&xml=1&speed=">财经</a></li><li class="menu2"><a href="m.php@m=m&a=index&app=2&channel=auto&xml=1&speed=">汽车</a></li><li class="menu3"><a href="m.php@m=m&a=index&app=2&channel=travel&xml=1&speed=">旅游</a></li><li class="menu4"><a href="m.php@m=m&a=index&app=2&channel=house&xml=1&speed=">房产</a></li><li class="menu5"><a href="m.php@m=m&a=index&app=2&channel=life&xml=1&speed=">消费</a></li><li class="menu6"><a href="m.php@m=m&a=index&app=2&channel=photo&xml=1&speed=">图片</a></li></ul></div></header><div class="topbg"><div class="top-home"><div class="logo"><a id="return" href="../../www.nandu.com/@from=index"></a></div><a href="m.php@s=_2Fm_2Fmshow_2Fctime_2F1392790531_2Ftype_2Fhtml_2Fid_2F800010_2Fmtype_2F1_2Fchannel_2Fpolitics_2Fspeed_2F1" class="sel-btn">精简版</a><img class="login-stuts" src="../../pics.oeeee.com/nd_avatar/noavatar_small.gif" /><a href="javascript:;" class="sel-btn login-pop">登录</a></div></div><nav id="menu" class="nd-nav"><ul class="n-politics"><li class="menu1"><a href="index.htm">首页</a></li><li class="menu2"><a href="m.php@m=m&a=index&app=2&channel=news&xml=1&speed=">新闻</a></li><li class="menu3"><a href="m.php@m=m&a=mweibo&channel=weibo&speed=">热评</a></li><li class="menu4"><a href="m.php@m=m&a=mlike&channel=like&speed=">热顶</a></li><li class="menu5"><a style="color:#D00000;" target="_blank" href="../../3g.weicai.com/nandu/default.htm">彩票</a></li><li class="menu6"><a href="m.php@m=m&a=mroll&channel=roll&speed=">滚动</a></li></ul></nav><nav id="menu2" class="nd-nav"><ul class="first"><li class="menu1"><a href="index.htm">首页</a></li><li class="menu2"><a href="m.php@m=m&a=index&app=2&channel=news&xml=1&speed=">新闻</a></li><li class="menu3"><a href="m.php@m=m&a=mweibo&channel=weibo&speed=">热评</a></li><li class="menu4"><a href="m.php@m=m&a=mlike&channel=like&speed=">热顶</a></li><li class="menu5"><a style="color:#D00000;" target="_blank" href="../../3g.weicai.com/nandu/default.htm">彩票</a></li><li class="menu6"><a href="m.php@m=m&channel=roll&a=mroll&speed=">滚动</a></li></ul><ul><li class="menu1"><a href="m.php@m=m&a=index&app=2&channel=politics&xml=1&speed=">时局</a></li><li class="menu2"><a href="m.php@m=m&a=index&app=2&channel=world&xml=1&speed=">国际</a></li><li class="menu3"><a href="m.php@m=m&a=index&app=2&channel=society&xml=1&speed=">社会</a></li><li class="menu4"><a href="m.php@m=m&a=index&app=2&channel=opinion&xml=1&speed=">评论</a></li><li class="menu5"><a href="m.php@m=m&a=index&app=2&channel=depth&xml=1&speed=">深度</a></li><li class="menu6"><a href="m.php@m=m&a=index&app=2&channel=media&xml=1&speed=">传媒</a></li></ul><ul><li class="menu1"><a href="m.php@m=m&a=index&app=2&channel=gd&xml=1&speed=">广东</a></li><li class="menu2"><a href="m.php@m=m&a=index&app=2&channel=ent&xml=1&speed=">娱乐</a></li><li class="menu3"><a href="m.php@m=m&a=index&app=2&channel=sports&xml=1&speed=">体育</a></li><li class="menu4"><a href="m.php@m=m&a=index&app=2&channel=ndgongyi&xml=1&speed=">公益</a></li><li class="menu5"><a href="m.php@m=m&a=index&app=2&channel=culture&xml=1&speed=">文化</a></li><li class="menu6"><a href="m.php@m=m&a=index&app=2&channel=tech&xml=1&speed=">科技</a></li></ul><ul><li class="menu1"><a href="m.php@m=m&a=index&app=2&channel=finance&xml=1&speed=">财经</a></li><li class="menu2"><a href="m.php@m=m&a=index&app=2&channel=auto&xml=1&speed=">汽车</a></li><li class="menu3"><a href="m.php@m=m&a=index&app=2&channel=travel&xml=1&speed=">旅游</a></li><li class="menu4"><a href="m.php@m=m&a=index&app=2&channel=house&xml=1&speed=">房产</a></li><li class="menu5"><a href="m.php@m=m&a=index&app=2&channel=life&xml=1&speed=">消费</a></li><li class="menu6"><a href="m.php@m=m&a=index&app=2&channel=photo&xml=1&speed=">图片</a></li></ul></nav><!--弹出层--><div id="lognlayer" style="display:none"><a class="pop-close" style="default.htm">X</a><div class="content"><div class="login-msg" style="display: none; "><p class="error">请输入您的账户名和密码</p></div><div class="r"><div class="iput dl"><input id="email" name="email" type="text" value=""><span class="ph-label" style="">邮箱</span></div><div class="iput pass"><input id="password" name="password" type="password" value=""><span class="ph-label" style="">密码</span></div><div class="subbut"><a class="but" href="javascript:void(0);" id="post_login">登录</a><a class="but" href="javascript:void(0);" id="sina_login">新浪微博登录</a><a class="but" href="javascript:void(0);" id="qq_login">QQ账号登录</a></div></div><div class="clear"></div></div></div><!--弹出层 END--><!--笼罩层--><div id="shade"></div><div class="ad-bot"><!-- AdSame ShowCode: 南都网 / 手机南都网 / 手机南都网内容页顶部通栏 Begin --><script type="text/javascript" src="../../oeeee.adsame.com/s@z=oeeee&c=1190" ></script><!-- AdSame ShowCode: 南都网 / 手机南都网 / 手机南都网内容页顶部通栏 End --></div><article class="page-loading"><div class="page-loading-logo"><div class="page-loading-anim"></div></div><div class="page-loading-txt">正在为您加载...</div></article><article class="article hidden"><div class="head clearfix"><h1 class="title" likeid="800010">官媒首次公布习近平漫画形象 图表阐释时间去哪儿了</h1><h2><span class="time">2014-02-19 14:15</span> 来源:<span class="source">千龙网</span> 作者:<span class="source"></span></h2></div><div class="text clearfix"><div class="text1"><p style="text-align:center;"><img src="http//img2.cache.oeeee.com/201402/19/53044c033ec84.jpg" /><br /><img src="http//img2.cache.oeeee.com/201402/19/53044c034da0f.jpg" /><br /></p><p>　　习主席的时间都去哪儿了？</p><p>　　“我个人的时间都去哪儿了？当然是都被工作占去了。”今年2月初，习近平在俄罗斯索契接受俄罗斯媒体专访时说。根据官方媒体公开报道所不完全统计，自中共十八大至今的近15个月里，习近平国内考察调研、出访、参加各类会议共80余次，足迹遍及国内三分之一的省份和世界五大洲。</p></div></div><div class="foot clearfix"><div class="btn-page" id="nextPage">展开全文</div></div><script>				var bshare_mobile_config = {
+					global: {
+						uuid: '8a6d31a6-4eff-4da0-9a6f-2c3a0e257453'
+					}
+				};
+		</script><div class="btn-share clearfix"><a class="bsh-mobile-btn bmstyle-button" href="javascript:void(0);">分享</a><a href="javascript:void(0);" title="顶一个" class="ding bg1"></a></div><script language="javascript" type="text/javascript" src="../../static.bshare.cn/m/bshare-mobile.js"></script></article><article class="article-list"><div class="hd"><span>相关推荐</span></div><ul class="rel-list" id="relateList"><li><a href="m.php@s=_2Fm_2Fmshow_2Fctime_2F1392801756_2Ftype_2Fhtml_2Fid_2F800821_2Fmtype_2F1_2Fchannel_2Fsociety">我国宽带平均下载速率3.53Mb/s 上海网速最快</a></li><li><a href="m.php@s=_2Fm_2Fmshow_2Fctime_2F1392800555_2Ftype_2Fhtml_2Fid_2F800751_2Fmtype_2F1_2Fchannel_2Fsociety">外交部：中方坚决反对日议员制定“台湾关系法”</a></li><li><a href="m.php@s=_2Fm_2Fmshow_2Fctime_2F1392794554_2Ftype_2Fhtml_2Fid_2F800359_2Fmtype_2F1_2Fchannel_2Fsociety">中国2013年黄金需求破千吨 超印度跃居全球首位</a></li><li><a href="m.php@s=_2Fm_2Fmshow_2Fctime_2F1392794126_2Ftype_2Fhtml_2Fid_2F800352_2Fmtype_2F1_2Fchannel_2Fsociety">男子冒充领导秘书 富商为女儿上军校被骗5千万</a></li><li><a href="m.php@s=_2Fm_2Fmshow_2Fctime_2F1392791661_2Ftype_2Fhtml_2Fid_2F800128_2Fmtype_2F1_2Fchannel_2Fsociety">中国东风收购法国标致雪铁龙股份</a></li><li><a href="m.php@s=_2Fm_2Fmshow_2Fctime_2F1392790531_2Ftype_2Fhtml_2Fid_2F800010_2Fmtype_2F1_2Fchannel_2Fsociety">官媒首次公布习近平漫画形象 图表阐释时间去哪儿了</a></li></ul></article></ul></article>﻿<div class="ad-bot-txt" id="botWordAd"><a class="txt-left" href="../../mtthome.3g.qq.com/sd/d@action=index&channel_id=20149" target="_blank" >手机QQ浏览器</a><a class="txt-right" href="../help/help.html" >南都网手机版帮助</a></div><div class="ad-bot"><!-- AdSame ShowCode: 南都网 / 手机南都网 / 手机南都网底部通栏 Begin --><script type="text/javascript" src="../../oeeee.adsame.com/s@z=oeeee&c=1263" ></script><!-- AdSame ShowCode: 南都网 / 手机南都网 / 手机南都网底部通栏 End --></div><footer id="footer"><span class="fot_box"><a href="javascript:history.back(-1);" class="goback"></a></span><div class="copyright">© 2007-2014 南都网手机版</div><span class="fot_box1"><a href="javascript:void(0);" class="gotop"></a></span><span class="fot_box1" style=" display:none"><a href="../help/help.html" class="question"></a></span></footer><!--全站GA统计代码--><!--ipt type="text/javascript">var _gaq = _gaq || [];
+var aurl=window.document.domain;
+if(aurl.indexOf('nandu.com')>0)
+{        
+	_gaq.push(['_setAccount', 'UA-33962305-2']);
+	_gaq.push(['_setDomainName', 'nandu.com']);
+	_gaq.push(['_trackPageview']);
+}
+if(aurl.indexOf('oeeee.com')>0)
+{
+	_gaq.push(['_setAccount', 'UA-33962305-2']);
+	_gaq.push(['_setDomainName', 'oeeee.com']);
+	_gaq.push(['_trackPageview']);
+}
+
+(function() {   
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https//ssl' : 'http//www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</scri--><!--全站GA统计代码 END--><!--全站百度统计代码--><script type="text/javascript">var _bdhmProtocol = (("https:" == document.location.protocol) ? " https//" : " http//");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ffee250fd2920e8bdd3dfa23ab4f8c67f' type='text/javascript'%3E%3C/script%3E"));
+</script><!--全站百度统计代码 END--><script src="Public/Js/channel/mobile.js" type="text/javascript"></script><script>$(function(){
+	var iniH = 1100;
+	var txtH = $('.text1').height();
+	if(txtH>iniH){
+		$('.text1').css({'height':iniH+'px'});
+		$('#nextPage').click(function(){
+			$('.text1').css({'height':'auto'});
+			$(this).parents('.foot').remove();
+		});
+	}else{
+		$('.foot').remove();
+	}
+	var likeid = $(".article .head h1").attr("likeid");
+	Ajaxme('component.php@s=_2Flikenum_2Fgetlike_2Ftype_2Fhtml_2Fid_2F'+likeid,'get',null,10000,function(data){ $(".ding,.ding1").html(data);});
+	//点击顶按钮
+	$(".btn-share .ding").click(function() {
+		$("#likeRecTips").length == 0 && $("body").append("<div id='likeRecTips'><p>\u611F\u8C22\u60A8\u5BF9\u5357\u90FD\u7F51\u7684\u652F\u6301!</p></div>");
+		var c_top = parseInt(document.documentElement.clientHeight-50)/2,
+			c_left = parseInt($("body").width()-230)/2;
+			$("#likeRecTips").css({'left':c_left+'px','top':c_top+'px','display':'block'});
+		Ajaxme('component.php@s=_2Flikenum_2Fsetlike_2Ftype_2Fhtml_2Fid_2F'+likeid,'get',null,10000,function(data){ $(".ding").html(data);});
+		var b;
+		b = setTimeout(function() {
+			$("#likeRecTips").fadeOut("normal");
+			clearTimeout(b);
+		},
+		1200);
+	});
+});
+</script><script type="text/javascript">window.onload=function()
+{
+  var oImg=document.getElementsByTagName('img');
+  for(var i=0;i<oImg.length;i++)
+  {
+	  
+	  oImg[i].onclick=function()
+	  {
+		  if(this.getAttribute('type')=='speed')
+		  {
+			 this.src=this.getAttribute('data-src'); 
+		  }
+		  else
+		  {
+			 return false;  
+		  }
+	  }
+  }	
+}
+</script><script type="text/javascript">function   formatDate(now)
+{     
+    var year=now.getFullYear();     
+	var month=now.getMonth()+1;     
+	var date=now.getDate();     
+	var hour=now.getHours();     
+	var minute=now.getMinutes();     		   
+	return year+"-"+month+"-"+date+"   "+hour+":"+minute;    
+}     
+//微博评论加载更多
+$(function(){
+	  var page=2; //从第二条开始加载评论
+	
+	  $(".column-loading").click(function(){
+		     var plHtml='';
+			 $(".column-loading").addClass('addloading').text('加载中...');
+		     Ajaxme('m.php@s=_2Fm_2Fmwblist_2Fid_2F800010_2Fctime_2F1392790531_2Ftype_2Fhtml_2Fpage_2F'+page,'post',null,10000,function(data){
+				   if(data.length!=0)
+				   {
+					   
+					   $.each(data, function(i,item){
+							
+							plHtml+='<li><div class="tit"><h3><img src="'+item.userAvatar+'/20">'+item.userNick+'</h3><span>'+formatDate(new Date(item.pubTime*1000))+'</span></div><div class="con">'+item.content+'</div></li>';
+							 
+					   });
+					   $(".column-loading").removeClass('addloading').text('点击加载更多');
+				   }else
+				   {
+					 $(".column-loading").removeClass('addloading').text('木有评论了噢!').unbind('click');
+					 
+				   }
+				   page++;
+                   $('.pl-list').append($(plHtml));
+				   
+				 });
+				 
+		  })
+		  
+	})
+	
+</script><script type="text/javascript">$(document).ready(function(){
+  	 //处理加载等待效果
+	 $(".page-loading").remove();
+	 $(".article").show();
+})
+</script><script type="text/javascript" src="Public/Js/unity.js"></script></body></html>

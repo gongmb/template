@@ -1,0 +1,51 @@
+﻿/*slide*/
+.slide-player{ position:relative; margin-top: 10px; margin-bottom: 40px; width: 94%; padding:3% 3% 0 3%; }
+.slide-list{overflow:hidden; position:relative;    }
+ .slide-list ul{ width: 20000px;}
+.slide-list ul li{float:left;text-align:center;overflow:hidden; }
+.slide-list ul li a{color: #333;}
+.slide-item{position: relative; width:94%}
+.slide-item img { display:block; width:50%;  }
+.slide-item p{position: absolute; padding-left:8px;text-align:left; left:0px; bottom:-29px;width:100%;height:25px;line-height:25px; font-size:1em; color:#333;}
+ 
+.slide-controler .prev-btn{width:13px; height:43px; position:absolute;left:7px; top:70px;}
+.slide-controler .next-btn{width:13px; height:43px; position:absolute;right:7px; top:70px;}
+.index-slider .slide-controler .prev-btn img ,.index-slider .slide-controler .next-btn img{ width:13px; height:43px;}
+
+.slide-controler ul{
+	width: 100%; 
+	
+	display:box;
+	display:-webkit-box;
+	display:-moz-box;
+}
+.slide-controler li{
+	-moz-box-flex:1.0; /* Firefox */
+	-webkit-box-flex:1.0; /* Safari 和 Chrome */
+	box-flex:1.0;
+	opacity: 0.5;
+}
+.slide-controler li.current{background: #fff;}
+
+.slide-controler  {
+	position: absolute;
+	
+	/*top: 3%;
+	left: 3%;
+	width: 620px;*/
+	z-index:10;
+	height: 100%;
+}
+#slideDesc {
+	height:25px;
+	line-height: 25px;
+	position: absolute;
+	width: 100%;
+	left:0;
+	z-index: 10;
+	overflow: hidden;text-overflow: ellipsis;white-space: nowrap !important;
+}
+#slideDesc span {
+	padding-left: 20px;
+}
+.bottom-line{  height: 4px; background: #333; width: 100%; position: absolute; bottom:0px; left: 0; } 

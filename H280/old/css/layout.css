@@ -1,0 +1,173 @@
+#myphoto {
+	height: 400px;
+	width: 400px;
+	margin-top: 5px;
+	margin-left: 0px;
+}
+#jianli #zhengwen2 {
+	font-size: 14px;
+	color: #999;
+	margin-top: 20px;
+	margin-left: 60px;
+	list-style-type: none;
+}
+
+
+
+.content {
+	height: 500px;
+	width: 1000px;
+	margin: auto;
+}
+
+.content #wenzi {
+	height: 100px;
+	width: 200px;
+	margin-left: 450px;
+	margin-top: -300px;
+}
+.content .note p {
+	color: #0066ff;
+	font-size: 14px;
+	height: 50px;
+	width: 450px;
+}
+.content .note #name {
+	text-align: right;
+}
+.content .note {
+	height: 150px;
+	width: 500px;
+	margin-left: 450px;
+}
+#copyright {
+	margin: auto;
+	height: auto;
+	width: 1000px;
+	border: 1px solid #999;
+}
+#lianxi #lianxi2 {
+	color: #999;
+	list-style-type: none;
+	margin-left: 250px;
+}
+#lianxi {
+	height: auto;
+	width: 1000px;
+	margin: auto;
+}
+
+.biaoti {
+	font-size: 24px;
+	color: #666;
+	text-align: center;
+}
+#copyright p {
+	color: #666;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+#download {
+	font-size: 14px;
+	margin: auto;
+	height: auto;
+	width: 1000px;
+}
+#download #download2 {
+	color: #999;
+	list-style-type: none;
+}
+#download .biaoti2 {
+	font-size: 16px;
+	color: #333;
+	margin-left: 50px;
+}
+#jianli {
+	margin: auto;
+	height: auto;
+	width: 1000px;
+}
+#jianli #myphoto2 {
+	margin-left: 100px;
+	margin-top: 20px;
+	height: 192px;
+	width: 144px;
+}
+#jianli #zhengwen {
+	font-size: 14px;
+	color: #999;
+	margin-top: -180px;
+	margin-left: 250px;
+	list-style-type: none;
+}
+#youlian {
+	height: auto;
+	width: 1000px;
+	color: #999;
+	margin: auto;
+}
+#youlian #youlian1 {
+	text-decoration: none;
+	list-style-type: none;
+}
+#youlian .biaoti2 {
+	margin-left: 420px;
+}
+#zhs {
+	color: #999;
+	margin: auto;
+	height: auto;
+	width: 1000px;
+}
+#bg02 {
+	margin: auto;
+	height: 100px;
+	width: 1000px;
+}
+#download #adobect {
+	height: 200px;
+	width: 200px;
+	margin-top: -550px;
+	margin-left: 600px;
+	float: left;
+}
+#youlian table tr td a {
+	color: #666;
+	text-decoration: none;
+}
+
+#liyan {
+	margin: auto;
+	height: auto;
+	width: 1000px;
+}
+#liyan #lybct {
+	height: 200px;
+	width: 232px;
+	margin-top: 5px;
+	margin-left: 700px;
+}
+.content #swf {
+	float: left;
+	margin-left: 650px;
+	margin-top: -280px;
+}
+#guangyu {
+	margin: auto;
+	height: auto;
+	width: 1000px;
+	border: 1px solid #CCC;
+	list-style-type: none;
+}
+#guangyu #guangyu1 {
+	margin-right: 50px;
+	margin-left: 50px;
+	list-style-type: none;
+	font-size: 14px;
+	color: #666;
+}
+#uyan_frame {
+	margin: auto;
+	height: auto;
+	width: 500px;
+}

@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+@import url(reset.css);
+@import url(base.css);
+
+
+#container{font-size: 1.2em;line-height:1.8; width:1440px;}
+#main{overflow: hidden;zoom:1;}
+#header{ height:108px;}
+.header01 p.logo{ position:absolute; left:70px; top:16px;}
+.header01{ background:url(../images/header_bg1.jpg) left top repeat-x; position:relative; height:66px; width:1440px;}
+.header01 p.info{ position:absolute; right:35px; top:15px;}
+.header01 p.info span{ color:#A02D59; font-weight:bold;}
+.header01 ul{ width:110px; position:absolute; right:35px; top:35px; _top:43px; overflow: hidden;zoom:1;}
+.header01 ul li{ float:left; margin-right:20px;}
+.header01 ul li.rt{ margin-right:0;}
+.header02{background:url(../images/header_bg2.jpg) left top repeat-x; position:relative; height:42px; width:1440px;}
+.header02 ul{ overflow: hidden;zoom:1;margin-left:150px; padding:0px 0px 0px 0px;/*padding-left:230px; width:1210px;*/}
+.header02 ul li{ float:left; /*width:122px; margin-right:10px; padding-top:6px;*/}
+#side{ width:187px; float:left;}
+#side table.a05 .a07{ background:#E7E0E6;}
+#side table.a05 .a06{ background: url(../images/side06.jpg) left top repeat-y; width:10px;}
+#side table.a05 .a07 a{background: url(../images/side02.jpg) 31px center no-repeat; display:block; padding: 7px 0 7px 47px;}
+#side table.a05 .a07 a:hover,#side table.a05 .one a{ background: url(../images/side1_bg.jpg) left center no-repeat; padding: 7px 0 7px 47px; color:#fff; font-weight:bold;}
+
+#content{ /*width:1253px;*/float:right; width:100%;}
+
+
+#topics{
+ width:1253px;
+	overflow-x: scroll;
+}
+
+#content table .sousuo{ width:160px;  height:19px; border:1px solid #D7D7D7; line-height:19px;}
+#content table.a18{ background:url(../images/index01_bg.jpg) left top repeat-x; border:1px solid #D7D7D7;}
+#content table.a09{ background: url(../images/h3bg.jpg) left top repeat-x;}
+#content table.a09 td{ padding: 5px 0 2px 0; color:#626262;}
+#content table.a10{ background:#EFEFEE; border-top: 1px solid #D7D7D7;}
+#content table.a10 td{ padding:13px 0;}
+#content table.a10 td .sousuo{ width:132px; height:19px; border:1px solid #D7D7D7; line-height:19px;}
+#content table.a11{ background:url(../images/index01_bg.jpg) left top repeat-x; border:1px solid #D1D1D1; margin-top:-1px;}
+#content table.a11 th{ font-weight:normal; border-right:1px solid #D1D1D1; text-align:center; padding:3px 0 1px 0;}
+#content table.a11 td{ text-align:center; padding:3px 0 1px 0;}
+#content table.a12 td{ text-align:center; padding:7px 0 6px 0;}
+#content table.a12 th{ font-weight:normal; border-right:1px solid #D1D1D1; text-align:center; padding:7px 0 6px 0;}
+#content table.a12 th.a13,#content table.a12 td.a13{ background:#F2F2F2;}
+#content table.a12 td.a15{ background:#EBEBEB;}
+#content table.a12{ border:1px solid #D1D1D1; margin-top:-1px;}
+#content table.page td{ padding: 7px 0 10px 0; _padding-bottom:19px;}
+#content table.a17 .a16{  width:157px; height:19px; border:1px solid #D7D7D7; line-height:19px;}
+#content table.a17 th{ text-align:right; font-weight:normal; padding: 8px 0 8px 10px;}
+#content table.a17 td{ padding: 8px 0 8px 10px;}
+.shdlr{ margin-bottom:15px;}
+.shdlr table td.a20{ background:#F2F2F2;}
+.shdlr table td{ padding:5px 0 5px 15px;}
+.shdlr table td .a21{ width:160px;  height:19px; border:1px solid #D7D7D7; line-height:19px;}
+#content table.a22 td{padding: 8px 0 8px 10px;}
+#content table.a22 td.a13{background:#F2F2F2;}
+#content table.a22{ border:1px solid #D7D7D7;}
+#content table td .a23{ width:500px;  height:19px; border:1px solid #D7D7D7; line-height:19px;}
+#content table.a26 .a25{background:url(../images/index01_bg.jpg) left top repeat-x;border-bottom:1px solid #D1D1D1;}
+#content table.a26{  border:1px solid #D1D1D1;}
+#content table.a26 th{ font-weight:normal; border-right:1px solid #D1D1D1; text-align:center; padding:3px 0 1px 0;}
+#content table.a26 td{ text-align:center; padding:3px 0 1px 0;}
+#content table.a26 .a13{ background:#F2F2F2; padding: 3px 0 3px 0;}
+#content table.a26 .a15{ background:#EBEBEB; padding: 3px 0 3px 0;}
+#content table.a12 .a16{  width:120px; height:19px; border:1px solid #D7D7D7; line-height:19px;}
+
+.select{ height:24px; line-height:24px; width:100px;border: 1px solid #D7D7D7; margin:0px 0px 0px 0px;padding: 3px 0px;}
+.button{border: 1px solid #D7D7D7;cursor:pointer;text-align:center;
+
+    display:inline-block;/*FF2.0*/-moz-display:inline-block;
+
+    font-family:Verdana;*font-family:Georgia;_font-family:Tahoma;
+
+    padding:0 10px 1px;*padding:3px 3px 1px;_padding:0 4px 1px;
+
+    line-height:18px;*line-height:14px;_line-height:16px;
+
+    height:23px;font-size:12px; margin-left:5px;}
+    
+.common_text_157px{width:157px; height:19px; border:1px solid #D7D7D7; line-height:19px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

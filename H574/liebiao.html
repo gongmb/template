@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="target-densitydpi=320,width=640,user-scalable=no">
+<meta name="apple-touch-fullscreen" content="no" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="no" />
+
+<meta name="keywords" content="新生儿,新生儿黄疸正常值,新生儿打嗝,新生儿睡觉不踏实" />
+<meta name="description" content="新生儿可爱却娇嫩，容易发生不适，妈妈网提醒，父母们应该多了解一些新生儿护理知识，如新生儿黄疸、新生儿打嗝、新生儿睡觉，等等，从而让宝宝健康成长。" />
+<title>仿妈妈网手机wap女性网站模板列表页-小模板【http//www.xiaomoban.com】</title>
+
+<link rel="stylesheet" type="text/css" href="mama/css/wap.css" />
+<!--<script src="http//static.mama.cn/mama/js/jquery.min.js"></script>-->
+<script src="tpl/xhr.js"></script>
+</head>
+<script type="text/javascript">
+var page = 1;
+</script>
+<body><img src="../../../hm.baidu.com/hm.gif@si=f2babe867b10ece0ff53079ad6c04981&et=0&nv=0&st=4&lt=1386430023&v=wap-0-0.2&rnd=1571875041" width="0" height="0" />
+	<div class="m-nav2">
+		<a href="../../1421/default.htm" class="bc-l"><span>亲子</span></a>
+		<span class="category_title">新生儿</span>
+    </div>
+	<menu class="m-n-list" id="m-n-list">
+			<li><a href="../../art/1183/766483.html">冬天剃胎毛长出靓头发？真相大剖析 ...</a></li>
+			<li><a href="../../art/1183/766527.html">10个月宝宝容易发生意外切勿疏忽大意 ...</a></li>
+			<li><a href="../../art/1183/766535.html">全面防护不可少 新生儿吹空调莫得空调 ...</a></li>
+			<li><a href="../../art/1183/765717.html">新生儿具有惊人的学习潜力</a></li>
+			<li><a href="../../art/1183/766163.html">给新生儿做个髋关节筛查吧</a></li>
+			<li><a href="../../art/1183/766231.html">母乳喂养免走五大误区</a></li>
+			<li><a href="../../art/1183/766479.html">母乳中的雌激素会影响宝宝？ ...</a></li>
+			<li><a href="../../art/1183/766481.html">专家支招 让母乳喂养不再举步维艰 ...</a></li>
+			<li><a href="../../art/1183/766165.html">孕期控制体重 宝宝出生6斤左右最聪明 ...</a></li>
+			<li><a href="../../art/1183/766478.html">做好七个细节 新生儿和产妇顺利度过住 ...</a></li>
+			<li><a href="../../art/1183/766377.html">合格妈妈 关键看你懂不懂这些知识 ...</a></li>
+			<li><a href="../../art/1183/766375.html">宝宝太柔软 冬天洗澡步步惊心 ...</a></li>
+			
+	</menu>
+	<div class="opBtn">
+		<div class="view_more"  id="view_more"   onclick="view_more()" >查看更多<input type="hidden" id="h_num" value="16" /></div>
+		<div class="return_top view_more"><a href="../../default.htm">返回首页</a></div>
+	</div>
+	<footer class="ft">
+		<p>妈妈网 版权所有</p>
+	</footer>
+ 
+	
+<script>
+
+//function view_more(){
+//	var cid = 1183;
+//	page++;
+//	//alert(page);
+//	var url = "../../ajax.php@cid="+cid+"&page="+page;
+//	jQuery.getJSON(url, function(data){ 
+//		var str="";
+//		var len = data.length;
+//		for(var i=0;i<len;i++){
+//			str+='<li><a href="'+data[i].url+'">'+data[i].title+'</a></li>';
+//		}
+//		jQuery(".m-n-list").append(str);
+//		if(data.length < 1){
+//			jQuery("#view_more").html('没有更多文章了');
+//		}
+//	});			
+//
+//}
+
+	
+function view_more(){
+	var cid = 1183;
+	page++;
+	var xcode = new XHR("call_back_append");
+	var url = "../../ajax.php@cid="+cid+"&page="+page;
+	xcode.get(url);
+}
+
+function call_back_append(rs){
+	
+	var root_dot = document.getElementById("m-n-list");
+	var data = eval('(' + rs + ')');
+	if(data.length < 1){
+		document.getElementById("view_more").innerHTML = '没有更多文章了';
+		return false;
+	}
+	for(var i=0;i<data.length;i++){
+		var new_dot = document.createElement("li");
+		new_dot.innerHTML = '<a href="'+data[i].url+'">'+data[i].title+'</a>';
+		root_dot.appendChild(new_dot);
+	}
+}
+
+</script>
+
+
+
+</body>
+</html>

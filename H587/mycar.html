@@ -1,0 +1,70 @@
+﻿
+    	 <!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>悠享家</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="css/yotime.webapp.css">
+	<script src="js/iscroll.js"></script>
+</head>
+<script>
+    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+    	WeixinJSBridge.call('hideToolbar');
+    });
+</script>
+<body>
+	<input type="hidden" id="curr_page" value="shopcar"/>
+	<div id="menu">
+				<header id="nheader" >
+	<h1 class="logo yt" style="margin:0px;"><a href="/yotime/wxapp/index.vm"><img src="images/head_yt.png" alt=""/></a></h1>
+		<div class="nr">
+		<ul class="navbar clearfix" id="nbl">
+			<li class="nnavitems">
+				<a href="/yotime/wxapp/my.vm"><i class="nicon_my"></i>我的悠享家</a>
+			</li>
+			<li class="nnavitems">
+				<a href="/yotime/wxapp/shopcar.vm"><i class="nicon_car"></i>购物车</a>
+				<span class="nnavbar_procount" id="carnum"> 1 </span>			</li>
+			<li class="nnavitems">
+				<a href="/yotime/wxapp/index.vm"><i class="nicon_shop"></i>商城</a>
+			</li>
+		</ul>
+	</div>
+</header><!-- /header -->
+		<div id="content">
+			<div id="scroller">
+				<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/yotime.webapp.js"></script>
+<script src="js/cart.js"></script>
+
+<ul style="margin-top:15px;">
+        	    	                        <li class="car_prolist clearfix">
+    	<aside class="car_proimg"><img src="http//product.b0.upaiyun.com/uploads/Product/2014/3/4/1393925977171.jpg!list" alt=""/></aside>
+    	<article class="car_prointro">
+    		<h1 class="car_title">
+    			<span class="fl">马卡龙礼盒</span>
+    			    			<span class="fr car_price">&yen;118.0</span>
+    		</h1>
+    		    		<span class="pro_buybox_sizeprice fl">马卡龙礼盒</span>
+    	</article>
+    	<a href="javascript:void(0);" class="car_delbtn" pid="37401">删除</a>
+    	<section class="carbtngroup clearfix">
+    		<a href="javascript:void(0);" class="fl carbtn minus">-</a>
+    		<div class="fl car_input"><input pid="37401" class="text-amount" autocomplete="off" maxlength="4" type="text" readonly="readonly" value="1"/></div>
+    		<a href="javascript:void(0);" class="fl carbtn plus">+</a>
+    	</section>
+    </li>
+    </ul>	
+
+<div class="car_jz">
+	<span class="jz_helptxt">合计&yen;118.0</span>
+	<a href="product_address.vm?webFrom=weixing" class="ui_btn">下一步去结账 </a>
+</div>
+				</div><!-- end scroller -->
+		</div><!-- /content -->
+	</div><!-- /page -->
+</body>
+</html>

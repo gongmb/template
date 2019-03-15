@@ -1,0 +1,149 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>微商管家</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<!-- FlexSlider pieces -->
+<link rel="stylesheet" href="css/lanmu.css" type="text/css" media="screen">
+<script type="text/javascript" src="js/2.js"></script>
+<script src="js/1.js"></script>
+
+<!-- Includes for this demo -->
+<link rel="stylesheet" href="css/index.css" type="text/css" media="screen">
+
+<!-- Hook up the FlexSlider -->
+<script type="text/javascript">
+	$(window).load(function() {
+		$('.flexslider').flexslider(
+			{
+				animation: "slide",
+				start: function(slider){
+					$('body').removeClass('loading');
+				}
+			}
+
+		);
+	});
+	
+	var page=1;
+	function morenews(){
+		if(page*10>=563) {$(".more_1").hide();return;}
+		//alert(page*10);
+		$(".more_1").hide();
+		$(".show_more_loading").show();
+		page++;
+		$.ajax({
+			url:	"/touch/news.do?method=moreNews&city=sh&title=&p="+page,
+			dataType: "json",
+			success: function(data) {
+				data=data.newsList;
+				var o;
+				for(var i=0;i<data.length;i++){
+					o=data[i];
+					var tmp="<li onclick='goto("+o.newsid+")'><div class='t'>"+o.title.substr(0,15)+"</div><div class='con'><div class='txt'>"+o.summary+"</div></div></li>";
+					$(".newsList").append(tmp);
+				};
+				$(".show_more_loading").hide();
+				$(".more_1").show();
+			}
+			
+		});
+	}
+	
+	function check(){
+		if($(".fl").val()=="" ||$(".fl").val()=="请输入关键词") {alert("请输入关键词！");return false;}
+		return true;
+	}
+	
+	function goto(newsid){
+		window.location.href='/sh/news/t/'+newsid+'.html';
+	}
+</script>
+</head>
+
+<body>
+<div class="header">
+	<div class="houseName">资讯</div>
+	<div class="logo"><a href=""></a></div>
+	<div class="btn home"><a href="#"></a></div>
+	<div class="btn back"><a href="javascript:history.back()"></a></div>
+</div>
+<!-- 搜索输入区域 -->
+<div class="searchInputArea">
+	<form name="search" id="search" action="/touch/news.do" method="get">
+	<input type="hidden" name="method" value="index">
+	<input type="hidden" name="city" value="sh">
+	<table class="searchInput">
+		<tbody><tr>
+			<td class="icon"></td>
+			<td class="input">
+					<input class="fl" type="input" value="请输入关键词" name="title" onfocus="if(value.indexOf('请输入关键词')&gt;-1){value=value.replace('请输入关键词','');this.style.color='#000'}" onblur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999999">
+			</td>
+			<td class="clear">
+				<b onclick="{$('.fl').val('')}"></b>
+			</td>
+			<td class="btn"><input class="fl" id="searchInputBtn" type="submit" value="" onclick=" return check();"></td>
+		</tr>
+	</tbody></table>
+	</form>
+</div>
+
+<!-- 楼盘图库 -->
+
+
+<!-- 搜索结果 -->
+<div class="houseIntro">
+	<ul class="newsList">
+		<li onclick="#">
+			<div class="t">地板知识大放送</div>
+			<div class="con">
+				<div class="txt">地板铺装效果清新自然，且脚感舒适，受到许</div>
+			</div>
+		</li>
+		<li onclick="#">
+			<div class="t">沪质监抽查100批次市售地板</div>
+			<div class="con">
+				<div class="txt">实木地板、实木复合地板、浸渍纸层压木质地</div>
+			</div>
+		</li>
+		<li onclick="#">
+			<div class="t">单身女老板月入2万</div>
+			<div class="con">
+				<div class="txt">【案例】
+网友汪小姐今年23岁，未婚，</div>
+			</div>
+		</li>
+		<li onclick="#">
+			<div class="t">温州房价缩水达五成</div>
+			<div class="con">
+				<div class="txt">记者日前在温州采访发现，当地房价已现30</div>
+			</div>
+		</li>
+		<li onclick="#">
+			<div class="t">南京明城墙现涂鸦</div>
+			<div class="con">
+				<div class="txt">“24岁一定在南京有房子”明城墙上涂鸦让</div>
+			</div>
+		</li>
+
+	</ul>
+	<div class="show_more_loading">正在加载请稍后</div>
+	<div class="more_1" onclick="morenews();">显示更多资讯</div>
+</div>
+
+<div class="footer1">
+	<div class="nav1"><a href="/">首页</a> &gt; <a href="#">资讯</a></div>
+<div class="nav2">
+		<div class="model">
+			<ul>
+				<li><a href="#">标准版</a></li>
+				<li><a href="#">触屏版</a></li>
+				<li><a href="#">高清版</a></li>
+			</ul>
+		</div>
+		<div class="top"><a href="#"></a></div>
+	</div>
+	<div class="tip">买房 卖房 就上房产超市网<br>2013浙B2-20100070</div></div>
+<CENTER><a href="index.html">首页</a>  <a href="liebiao.html">房产列表演示图</a>  <a href="zhengwen.html">房产正文演示图</a>  <a href="zixun.html">资讯列表演示图</a>  <a href="zixunleirong.html">资讯正文演示图</a>
+</center>
+
+</body></html>

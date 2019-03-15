@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* --- #logo --- */	
+#logo {
+	left: 40px;
+	}	
+	
+/* --- #subscribe --- */		
+#subscribe {
+	left: 30px;
+	}
+	
+/* --- #countdown --- */		
+#countdown {
+	right: 30px;
+	}	
+	
+/* --- #menu-style-a --- */
+#menu-style-a {
+	right: 30px;
+	}	
+	
+/* --- #footer --- */	
+.footer-inner	{
+	margin: 0 30px 0 50px;
+	}
+		
+/* --- #player --- */		
+#player {
+	margin-left: -90px;
+	}

@@ -1,0 +1,253 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>微商管家</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+
+<!-- FlexSlider pieces -->
+<link rel="stylesheet" href="css/zhengwen.css" type="text/css" media="screen">
+<script type="text/javascript" src="js/2.js"></script>
+<!-- Includes for this demo -->
+<link rel="stylesheet" href="css/index.css" type="text/css" media="screen">
+
+<script src="js/1.js"></script>
+<!-- Hook up the FlexSlider -->
+<script type="text/javascript">
+	$(window).load(function() {
+		$('.flexslider').flexslider(
+			
+		);
+		
+	});
+	var x=0;
+	var n=2;
+	function tt(event){
+		var obj =  document.getElementById("big");
+		var contain = document.getElementById("contain");
+	    var touch = event.touches[0];
+		//alert(contain.scrollLeft+":"+x);
+		event.preventDefault();
+	
+		 if(x!=0) {if(!(x-touch.pageX>0&&contain.scrollLeft>=n*64+70-contain.offsetWidth)){contain.scrollLeft += (x-touch.pageX);}}
+		 $("#tip").html(contain.scrollLeft+":"+(500-contain.offsetWidth)+":"+x);
+		 x=touch.pageX;
+	}
+	function dd(event){
+		x=0;
+	}
+</script>
+<script type="text/javascript" src="js/jq.js"></script>
+<style>
+#contain{position:relative; overflow:hidden;}
+#big{width:1800px;position:absolute;}
+</style>
+</head>
+
+<body>
+<!-- http//m.fccs.com/sh/floor/ -->
+<script type="text/javascript">
+<!--
+$(function(){
+	if(getCookie("tv") == null || getCookie("tv") == '')
+		$("#select_version").show();
+});
+
+function getCookie(c_name) {
+	var i, x, y, ARRcookies = document.cookie.split(";");
+	for (i = 0; i < ARRcookies.length; i++) {
+		x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+		y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+		x = x.replace(/^\s+|\s+$/g, "");
+		if (x == c_name) {
+			return decodeURI(y);
+		}
+	}
+}
+
+//-->
+</script>
+
+
+<div class="header ">
+	<div class="houseName">上域(逸庭苑)</div>
+	<div class="logo"><a href="#"></a></div>
+	<div class="btn home"><a href="#"></a></div>
+	<div class="btn back"><a href="javascript:history.back()"></a></div>
+</div>
+<ul id="nav" class="nav">
+	<li class="cur" title="index.html">楼盘详情</li>
+	<li title="photo.html">楼盘图库</li>
+	<li title="model.html">楼盘户型</li>
+</ul>
+<!-- 楼盘图库 -->
+<style>
+.flexslider img{ z-index:1;}
+</style>
+<div class="per100" align="center" style="position:relative;z-index:98;">
+	<div class="flexslider per100">
+		<ul class="slides">
+			<li style="display: list-item; ">
+				<img src="images/aHR0cDovL2ltZzIwMTIuZmNjcy5jb20uY24vbmV3aG91c2UvSXNzdWVQaG90by9hcmNoaXZlL2JpZy8yMDEwLTA4LTA1LzEyODA5OTUwOTEzNTkuanBn.jpg">
+			</li>
+			<li style="display: none; ">
+				<img src="images/aHR0cDovL2ltZzIwMTIuZmNjcy5jb20uY24vbmV3aG91c2UvSXNzdWVQaG90by9hcmNoaXZlL2JpZy8yMDEwLTA4LTA1LzEyODA5OTUwOTExMDkuanBn.jpg">
+			</li>
+			<li style="display: none; ">
+				<img src="images/aHR0cDovL2ltZzIwMDkuZmNjcy5jb20uY24vL2NvbnRlbnQvY29udGVudFBob3RvLzIwMDktMTAtMjMvMTI1NjI2Nzg1ODMwMy5qcGc=.jpg">
+			</li>
+			<!-- 
+			-->
+		</ul>
+</div>
+	<div class="cb0"></div>
+</div>
+<div class="houseIntro">
+	<span class="fb">开盘时间：</span>2013-8-8<br>
+	<span class="fb">参考售价：</span>小高层/普通住宅售价待定<br> <span class="fb">　　　　　</span>独立别墅售价待定<br> 
+	<span class="fb">楼盘地址：</span>松江区文涵路737弄<br>
+	<span class="fb">建筑类型：</span>低层 小高层 <br>
+	<span class="fb">物业类型：</span>住宅 别墅 <br>
+	<span class="fb">开&nbsp;&nbsp;发&nbsp;&nbsp;商：</span>上海松投房地产有限公司
+</div>
+<!-- 楼盘参数 -->
+<div class="colTab">
+	<h3>楼盘参数</h3>
+	<div class="more f14"></div>
+</div>
+<div class="houseIntro f14">
+	<span class="fb">区域所属：</span>松江<br>
+	<span class="fb">售楼地址：</span>文涵路737弄<br>
+	<span class="fb">装　　修：</span>毛坯 <br>
+	<span class="fb">开盘日期：</span>2013-8-8<br>
+	<span class="fb">工程进度：</span>小区配套 交付使用 <br>
+	<span class="fb">交房日期：</span>2014-1-31<br>
+	<span class="fb">建筑面积：</span>6万平米<br>
+	<span class="fb">占地面积：</span>暂无资料<br>
+	<span class="fb">绿 化 率：</span>43.5%<br>
+	<span class="fb">容 积 率：</span>0.98 <br>
+	<span class="fb">物业公司：</span>园外物业 <br>
+	<span class="fb">交通线路：</span> 松江19路，松江14路、松江15路，轨道交通9号线<br>
+	<span class="fb">物 业 费：</span>暂无资料<br>
+	<span class="fb">车库车位：</span>上域有停车位305个
+</div>
+<!-- 户型图库 -->
+<div class="colTab" id="contain" ontouchmove="tt(event);" ontouchend="dd(event);">
+	<table width="100%">
+		<tbody><tr>
+			<td width="85">
+				<h3>户型图库</h3>
+			</td>
+			<td>
+				<ul class="touch" id="big">
+					<li class="modelSelectBtn"><a href="/sh/floor/t/2007632/model1.html"><span class="fb">1</span>室</a></li>
+					<li class="modelSelectBtn"><a href="/sh/floor/t/2007632/model2.html"><span class="fb">2</span>室</a></li>
+				</ul>
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+<div class="modelList" style="position:relative;z-index:5;background:#F9F9F9">
+	<ul>
+		<li title="model_2015369.html">
+			<div class="pic fl"><img src="images/1256268408881.jpg" width="95px" height="100px" alt=""></div>
+			<div class="info fl pl10">
+				<p class="name">
+					<label for="">A3</label>
+					<img src="images/zs.gif" alt="" class="vm">
+				</p>
+				<p class="info1">
+					户型：2室1厅1卫<br>
+					面积：71.61平米<br>
+					价格：
+				</p>
+			</div>
+			<div class="arrow"></div>
+			<div class="cb0"></div>
+		</li>
+		<li title="model_2015368.html">
+			<div class="pic fl"><img src="images/1256268339028.jpg" width="95px" height="100px" alt=""></div>
+			<div class="info fl pl10">
+				<p class="name">
+					<label for="">E1</label>
+					<img src="images/zs.gif" alt="" class="vm">
+				</p>
+				<p class="info1">
+					户型：2室1厅1卫<br>
+					面积：87.13平米<br>
+					价格：
+				</p>
+			</div>
+			<div class="arrow"></div>
+			<div class="cb0"></div>
+		</li>
+		<li title="model_2015367.html">
+			<div class="pic fl"><img src="images/1256268279938.jpg" width="95px" height="100px" alt=""></div>
+			<div class="info fl pl10">
+				<p class="name">
+					<label for="">E2</label>
+					<img src="images/zs.gif" alt="" class="vm">
+				</p>
+				<p class="info1">
+					户型：1室2厅1卫<br>
+					面积：66.35平米<br>
+					价格：
+				</p>
+			</div>
+			<div class="arrow"></div>
+			<div class="cb0"></div>
+		</li>
+	</ul>
+</div>
+<!-- 详细信息 -->
+<div class="colTab" style="position:relative;z-index:5;"><h3>周边配套</h3></div>
+
+<div class="tc bmapc" style="height:200px;overflow:hidden;">
+<img src="http//api.map.baidu.com/staticimage?center=121.195713000000000,31.034746000000000&amp;height=200&amp;zoom=15&amp;markers=121.195713000000000,31.034746000000000" height="200">
+</div>
+
+<div class="houseIntro f14" style="position:relative;z-index:5;background:#F9F9F9">
+	<span class="fb">楼盘地址：</span>松江区文涵路737弄<br>
+	<span class="fb">综合商场：</span><br>
+	<span class="fb">娱乐餐饮：</span><br>
+	<span class="fb">公　　园：</span><br>
+	<span class="fb">学　　校：</span><br>
+	<span class="fb">宾馆酒店：</span><br>
+	
+	<span class="fb">银　　行：</span><br>
+	<span class="fb">医　　院：</span>
+
+</div>
+
+<div class="footer" id="footer">
+	<div class="footerTel" id="footerTel">
+		<div class="txt">
+			<a href="tel:67658888" class="warnLink1">
+				售楼电话:67658888 <span class="warnColor1">[</span>拨打<span class="warnColor1">]</span>
+			</a>
+		</div>
+		<div class="top"><a href="#top"></a></div>
+	</div>
+	<div class="footerNav f14 tc">
+		<a href="#">首页</a>　
+		<a href="#">资讯</a>　
+		<a href="#">新房</a>　
+		<a href="#">商铺</a>　
+		<a href="#">写字楼</a>　
+		<a href="#">二手房</a>　
+		<a href="#">租房</a>
+	</div>
+	<div class="footerInfo ">
+		<div class="footerLogo logo fl"><a href="#"></a></div>
+		<div class="curCity fl">
+			[上海]
+		</div>
+		<div class="turn fl">
+			<a href="#" class="warnLink1">其他城市</a> 
+			<a href="#" class="warnLink1">触屏版</a> 
+			<a href="#" class="warnLink1">高清版</a> 
+		</div>
+		<div class="icp fr"><a href="#" class="warnLink2">ICP证：浙B2-20100070</a></div>
+	</div>
+</div>
+<CENTER><a href="index.html">首页</a>  <a href="liebiao.html">房产列表演示图</a>  <a href="zhengwen.html">房产正文演示图</a>  <a href="zixun.html">资讯列表演示图</a>  <a href="zixunleirong.html">资讯正文演示图</a>
+</center>
+</body></html>

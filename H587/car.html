@@ -1,0 +1,52 @@
+﻿
+    	 <!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>悠享家</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="css/yotime.webapp.css">
+	<script src="js/iscroll.js"></script>
+</head>
+<script>
+    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+    	WeixinJSBridge.call('hideToolbar');
+    });
+</script>
+<body>
+	<input type="hidden" id="curr_page" value="shopcar"/>
+	<div id="menu">
+				<header id="nheader" >
+	<h1 class="logo yt" style="margin:0px;"><a href="/yotime/wxapp/index.vm"><img src="images/head_yt.png" alt=""/></a></h1>
+		<div class="nr">
+		<ul class="navbar clearfix" id="nbl">
+			<li class="nnavitems">
+				<a href="/yotime/wxapp/my.vm"><i class="nicon_my"></i>我的悠享家</a>
+			</li>
+			<li class="nnavitems">
+				<a href="/yotime/wxapp/shopcar.vm"><i class="nicon_car"></i>购物车</a>
+				<span class="nnavbar_procount" id="carnum"> 0 </span>			</li>
+			<li class="nnavitems">
+				<a href="/yotime/wxapp/index.vm"><i class="nicon_shop"></i>商城</a>
+			</li>
+		</ul>
+	</div>
+</header><!-- /header -->
+		<div id="content">
+			<div id="scroller">
+				<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/yotime.webapp.js"></script>
+<script src="js/cart.js"></script>
+
+<div style="margin-top:15px;">
+	<div class="car_ept">
+		<img src="images/car_ept.png" alt="">
+	</div>
+					</div><!-- end scroller -->
+		</div><!-- /content -->
+	</div><!-- /page -->
+    </div>
+</body>
+</html>

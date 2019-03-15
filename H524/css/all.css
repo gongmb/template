@@ -1,0 +1,246 @@
+html, body {
+	color:#222;
+	font-family:Microsoft YaHei,Helvitica,Verdana,Tohoma,Arial,san-serif;
+	margin:0;
+	padding: 0;
+	text-decoration: none;
+	background:url(../images/mask.png) repeat 0 0 #222233;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+	margin:0;
+	padding:0;
+}
+img {
+	border:0;
+}
+ol, ul {
+	list-style: none outside none;
+	margin:0;
+	padding: 0; }
+a { color:#000000; text-decoration: none; }
+.clr { 	display:block; clear:both; height:0; overflow:hidden; }
+.copyright{padding:8px;text-align:center;font-size:14px;color:#666;}
+.copyright a{color:#666;}
+
+/*cate18*/
+#cate18{ overflow-x: hidden; margin: 0 auto;}
+
+.home_logo{ position: absolute;
+top: 50%;
+left:50%;
+margin:-210px 0 0 -160px;
+z-index:5;
+width:320px; height:220px;
+background:url(../images/logo.png) center no-repeat;
+}
+.mask{ position:fixed; z-index:2; top:0; left:0; width:100%; height:100%; overflow:hidden; background:url(../images/mask.png) repeat 0 0;}
+
+#nav {
+	float:none;
+	width:100%;
+}
+#scroller li p {
+display: none;
+}
+#wrapper {
+position: fixed;
+}
+#indicator {
+position: fixed;
+left: 0;
+text-align: center;
+bottom: 200px;
+margin: 0;
+width: 100%;
+}
+#indicator > li {
+display: inline-block;
+float:none;
+}
+#indicator > li.active {
+background: #cccccc;
+}
+#cate18 .mainbg{ 
+	width:100%;
+	position:fixed;
+	z-index:1
+}
+#cate18 .mainbg img{ width:100%; }
+.device {
+width: 100%;
+height:170px;
+margin: 0 auto;
+position: fixed;
+left: 0;
+right: 0;
+bottom:0px;
+z-index: 99;
+}
+
+
+.device a {
+width:33%;
+float: left;
+text-align: center;
+color: #fff;
+overflow: hidden;
+margin-bottom:16px;
+}
+
+
+
+.title {
+  font-size: 13px;
+  margin-top:2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ico img{ width:70px; height:70px; border-radius: 0;}
+.pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom:7px;
+  width: 100%;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #999;
+  box-shadow: 0px 1px 2px #555 inset;
+  margin: 0 4px;
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: #fff;
+}
+
+
+
+
+
+
+
+
+/*popmenu*/
+#popmenu{cursor:pointer; display:block; position:relative;  text-align: center; width: 200px; margin:0 auto}
+#popmenu:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    margin-top: -2px;
+    border-width: 5px 5px 0 5px;
+    border-style: solid;
+    border-color: #ffffff transparent;
+}
+
+#overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:#fff;opacity:0;filter:alpha(opacity=0);display:none;z-index: 4;}
+
+#win{position: fixed;top:55px;left:50%; width: 200px;margin:0 0 0 -100px;display:none;z-index: 5;}
+
+
+.dropdown {
+    /* Size and position */
+    position: relative;
+	display:block;
+    margin: 0 auto;
+    padding: 5px;
+
+    /* Styles */
+    background-color:#bc417f;
+    border-radius: 7px;
+    border: 1px solid rgba(0,0,0,0.15);
+	box-shadow:0 0 10px 2px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow:0 0 10px 2px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow:0 0 10px 2px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    outline: none;
+	list-style: none outside none;
+
+}
+
+.dropdown:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    right: 90px;
+    border-width: 0 6px 6px 6px;
+    border-style: solid;
+    border-color: #bc417f transparent;    
+}
+
+.dropdown:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    right: 88px;
+    border-width: 0 8px 8px 8px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.1) transparent;    
+}
+.dropdown li {
+    background-color: rgba(58, 58, 58,0.5);
+    display: block;
+    float: left;height: 37px;
+    width: 50%;
+}
+.dropdown li span{
+    /*border-color: #443344 #2e222e #2e222e #443344;*/
+  
+    border-style: solid;
+    border-width: 0px;
+    color: #FFFFFF;
+	line-height: 37px;
+    display: block;
+    font-size: 15px;
+    height: 37px;
+    text-align: center;
+    text-shadow: 0 2px 2px #2e222e;
+    width: 100%;
+}
+.dropdown li:hover {
+    background-color: rgba(22, 22, 33, 0.6);
+}
+
+
+.fixed { /*position: fixed;*/ }
+.top46{height:46px; padding:0; margin:0}
+#ui-header{
+  width: 100%;
+  height: 46px;
+  line-height:46px;
+  z-index: 3;
+  position: fixed;
+left: 0;
+top: 0;
+right:0;
+	}
+#ui-header .fixed {
+	display: block;
+	margin: 0 auto;
+    min-width: 320px;
+	height: 45px;
+	top: 0;
+	background:#bc417f;
+	border-bottom:#231125 solid 1px;
+}
+.ui-title{min-height: 46px; text-align: center; font-size: 16px; font-weight:normal; display: block; margin: 10px 70px 0; padding: 0; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; outline: 0 !important; display:none;text-indent: -10px; color:#FFF;text-shadow:0 1px #845634}
+.ui-btn-left { position:absolute; top:0px; left:0px; background:url(../images/themes/menu.png) no-repeat center center; display:block; width:50px; height:44px;text-indent: -9999px; margin:0; padding:0; background-size:24px auto;}
+.ui-btn-left_pre { position:absolute; top:0px; left:0px; background:url(../images/themes/pre2.png) no-repeat center center; display:block; width:50px; height:44px;text-indent: -9999px; margin:0; padding:0; background-size:24px auto;}
+.ui-btn-right { position:absolute; top:0px; right:0px; background:url(../images/themes/Refresh2.png) no-repeat center center; display:block; width:50px; height:44px;text-indent: -9999px;margin:0; padding:0; background-size:28px auto;}
+.ui-btn-right_menu { position:absolute; top:0px; right:0px; background:url(../images/themes/menu.png) no-repeat center center; display:block; width:50px; height:44px;text-indent: -9999px; margin:0; padding:0; background-size:24px auto;}
+.ui-btn-right_home { position:absolute; top:0px; right:0px; background:url(../images/themes/home2.png) no-repeat center center; display:block; width:50px; height:44px;text-indent: -9999px; margin:0; padding:0; background-size:24px auto;}
+
+
+
+

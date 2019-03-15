@@ -1,0 +1,288 @@
+﻿<html xmlns="http//www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
+<meta name="keywords" content="Android安卓手机软件,Android安卓手机软件下载,Android安卓必备软件,Android安卓软件下载网站">
+<meta name="Description" content="泡椒网Android安卓软件频道,用心为用户提供最新最全的Android安卓手机软件,Android安卓手机软件下载,更多Android安卓手机软件免费下载请上泡椒网Android安卓频道下载更多安卓软件吧.">
+<title>仿泡椒网手机wap安卓软件网站模板首页-3v3手机模板专家【3v3.cc】</title>
+<link rel="stylesheet" href="css/base.css" type="text/css">
+<script type="text/javascript" src="css/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="css/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+$(function(){
+		$("#moreapp").click(function(){
+			$(this).hide();
+			$("#loading").show();
+			var nowpi = parseInt($(this).attr("pi"));
+			var url = $(this).attr("url") + "pi=" + nowpi;
+			var picn = parseInt($(this).attr("page"));
+			//var cn = parseInt($(this).attr("totalcn"));
+			var newpi = $(this).attr("pi")*1 + 1;
+			$(this).attr("pi", newpi);
+			if(nowpi== picn){
+				$("#showMore").hide();
+			//	$("#pagediv").show();
+			}
+			$.get(url,function(html){
+				$("#moreapp").show();
+				$("#loading").hide();
+				$("#appcontent").append(html);
+
+			})
+		});
+
+})
+</script>
+</head>
+
+<body>
+   <header class="header">
+    <h1 class="logo">
+    <a href="#">泡椒网</a>
+    </h1>
+    <ul class="logo-right">
+     <li class="now"><a href="#"><span class="f16">游戏</span></a></li>
+     <li><a href="#"><span class="f16">软件</span></a></li>
+     <li class="yx"><a href="#">
+     <span class="f16 title">客户端</span></a></li>
+    </ul>
+   </header>
+ 
+
+<form method="get" action="/search/app.xhtml">   
+
+
+<script type="text/javascript">
+$(function() {
+	var searchurl = "/search/app.xhtml";
+	$("#asoft").click(function() {
+		$(".sc").slideToggle(300);
+	});
+	$(document).bind('click', function() {
+		$(".sc").slideUp(300);
+	});
+	//防止点击事件冒泡
+	$("#asoft").click(function(event) {
+		event.stopPropagation();
+	});
+	$("#msoft").click(function() {
+		$("#asoft").html('<p  class="f16" >软件</p>');
+		$("#searchtype").val(1);
+		//searchurl = "/search/app.xhtml?appType=1";
+	});
+	$("#mgame").click(function() {
+			$("#asoft").html('<p  class="f16" >游戏</p>');
+			$("#searchtype").val(2);
+			//searchurl = "/search/app.xhtml?appType=2";
+	});
+	$("#sg").click(function() {
+			$("#asoft").html('<p  class="f16" >综合</p>');
+			$("#searchtype").val("");
+			//searchurl = "/search/app.xhtml";
+		});		
+		
+	//$(".hovserch").click(function() {
+	//	var key = $("#search").val();
+	//	window.location.href = searchurl + "&keyword=" + key;
+	//})
+});
+
+
+</script>
+
+  	<div class="sarch-bar">
+            <div class="search-widget">
+                <div class="search-text">
+                <a id="asoft" href="javascript:void(0);">
+					<p class="f16">综合</p>
+                </a>
+                <input class="search-txt" name="keyword" id="search" type="text" value="" isinputword="false" style="right: 50px;"></div>
+                <input class="search-btn" type="submit" value="搜索" id="searchBtn">
+                <input type="hidden" name="appType" value="" id="searchtype">
+            </div>
+            <div class="search-note" id="errorMsg" style="display:none;"><span class="arrow-up imgbg"></span><span id="errorMsg1"></span></div>
+                 <div class="sc" style="display:none;">
+				<a id="msoft" href="javascript:void(0);">软件</a>
+				<a id="mgame" href="javascript:void(0);">游戏</a>
+				<a id="sg" href="javascript:void(0);">综合</a>
+			</div>
+        </div>
+</form> 
+
+
+
+  <nav class="pjnav f18">
+<div class="selpjnav"><a href="#"></a>推荐<i class="ico"></i></div>
+<div class="bgRepeat"><a href="#"></a>最新<i class="ico"></i></div>
+<div class="bgRepeat"><a href="#"></a>分类<i class="ico"></i></div>
+<div class="bgRepeat"><a href="#"></a>排行<i class="ico"></i></div>
+<div class="bgRepeat"><a href="#"></a>专辑</div>
+  </nav>
+  <div style="width:100%">
+ <ul class="clearfix index_main" id="appcontent">
+ 
+
+		<li class="game scroll">
+			<a href="#"></a>
+			<a href="#">
+			<img src="images/xianmojian600x300.jpg">
+            <p class="f16 appstyle">仙魔剑</p>
+            <p class="f12 appstyle2">角色扮演&nbsp;&nbsp;&nbsp;4.42M</p>
+            </a>
+		</li>
+
+ 
+
+		<li class="game scroll">
+			<a href="#"></a>
+			<a href="#">
+			<img src="images/yinhe.jpg">
+            <p class="f16 appstyle">小小银河</p>
+            <p class="f12 appstyle2">益智休闲&nbsp;&nbsp;&nbsp;27.73M</p>
+            </a>
+		</li>
+
+ 
+
+		<li class="game scroll">
+			<a href="#"></a>
+			<a href="#">
+			<img src="images/kongjian.jpg">
+            <p class="f16 appstyle">极速枢纽</p>
+            <p class="f12 appstyle2">赛车竞速&nbsp;&nbsp;&nbsp;23.21M</p>
+            </a>
+		</li>
+
+ 
+
+		<li class="game scroll">
+			<a href="#"></a>
+			<a href="#">
+			<img src="images/f636afc379310a55b7c61e75b64543a983261054.jpg">
+            <p class="f16 appstyle">植物VS僵尸2</p>
+            <p class="f12 appstyle2">策略塔防&nbsp;&nbsp;&nbsp;58.65M</p>
+            </a>
+		</li>
+
+ 
+
+		<li class="game scroll">
+			<a href="#"></a>
+			<a href="#">
+			<img src="images/kuailezhajinhua_20130909.jpg">
+            <p class="f16 appstyle">快乐炸金花</p>
+            <p class="f12 appstyle2">棋牌天地&nbsp;&nbsp;&nbsp;11.83M</p>
+            </a>
+		</li>
+
+ 
+
+		<li class="game scroll">
+			<a href="#"></a>
+			<a href="#">
+			<img src="images/duota-600x360_paojiao.jpg">
+            <p class="f16 appstyle">刀塔女神</p>
+            <p class="f12 appstyle2">角色扮演&nbsp;&nbsp;&nbsp;94.69M</p>
+            </a>
+		</li>
+
+ 
+
+		<li class="game scroll">
+			<a href="#"></a>
+			<a href="#">
+			<img src="images/2_meitu_1.jpg">
+            <p class="f16 appstyle">魔龙与勇者</p>
+            <p class="f12 appstyle2">角色扮演&nbsp;&nbsp;&nbsp;35.97M</p>
+            </a>
+		</li>
+
+ 
+
+		<li class="game scroll">
+			<a href="#"></a>
+			<a href="#">
+			<img src="images/rongyao.jpg">
+            <p class="f16 appstyle">荣誉之山3D</p>
+            <p class="f12 appstyle2">策略塔防&nbsp;&nbsp;&nbsp;49.99M</p>
+            </a>
+		</li>
+
+ 
+
+		<li class="game scroll">
+			<a href="#"></a>
+			<a href="#">
+			<img src="images/1.jpg">
+            <p class="f16 appstyle">独眼队长</p>
+            <p class="f12 appstyle2">益智休闲&nbsp;&nbsp;&nbsp;22.84M</p>
+            </a>
+		</li>
+
+ 
+
+		<li class="game scroll">
+			<a href="#"></a>
+			<a href="#">
+			<img src="images/yahoo.jpg">
+            <p class="f16 appstyle">冰冻时间</p>
+            <p class="f12 appstyle2">益智休闲&nbsp;&nbsp;&nbsp;44.08M</p>
+            </a>
+		</li>
+
+ 
+
+		<li class="game scroll">
+			<a href="#"></a>
+			<a href="#">
+			<img src="images/15025.jpg">
+            <p class="f16 appstyle">球场塔防</p>
+            <p class="f12 appstyle2">策略塔防&nbsp;&nbsp;&nbsp;47.95M</p>
+            </a>
+		</li>
+
+ 
+
+		<li class="game scroll">
+			<a href="#"></a>
+			<a href="#">
+			<img src="images/2_meitu_1.jpg">
+            <p class="f16 appstyle">无尽忍者</p>
+            <p class="f12 appstyle2">射击游戏&nbsp;&nbsp;&nbsp;13.85M</p>
+            </a>
+		</li>
+
+ 
+
+	</ul>
+
+    <div class="clear"></div>
+    </div>
+
+
+ <div id="showMore" class="showMore f18" style="display: block;">
+ <p id="moreapp" pi="2" style="display: block;" url="#" totalcn="245" page="21"><span class="f18">加载更多+</span></p>
+ <p style="display:none;" id="loading"><img src="images/loading.gif"></p>
+ </div>
+
+
+
+ 
+ <footer>
+ <div class="link">
+ <h2><a href="javascript:history.go(-1);"><span class="return2"></span>返回</a></h2>
+  <h2 id="totop">
+ <a href="javascript:window.scrollTo(0, 0);"><span class="return3"></span>TOP</a></h2>
+ </div>
+  <p><a href="#">手机版</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">客户端</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">电脑版</a><br>
+  paojiao.com 2006-2013 
+  </p>
+</footer>
+
+
+
+
+</body></html>
+
+<CENTER>
+			温馨提示：本信息仅供提供演示方便链接，与原网站无关！ <a href="index.html">首页</a>  <a href="liebiao.html">列表演示图</a>  <a href="zhengwen.html">正文演示图</a>
+</center>

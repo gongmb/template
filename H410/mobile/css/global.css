@@ -1,0 +1,153 @@
+﻿/* vogue global */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video { margin:0;  padding:0; border:0; outline:0; vertical-align:baseline; background:transparent;}
+
+body{ font-family: Helvetica,STHeiti,Droid Sans Fallback; font-size:100%; background:url(../images/bg.jpg) repeat; color: #333333;-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+/* 清理浮动 */
+.clearfix:after {
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0;
+}
+.clearfix {
+	zoom:1; /* for IE6 IE7 */
+}
+*{ margin: 0; padding:0;}
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { display:block;}
+
+li { list-style:none;}
+
+blockquote, q {quotes:none;}
+
+blockquote:before, blockquote:after,q:before, q:after {  content:''; content:none;}
+
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline;  background:transparent; text-decoration:none;}
+ins {  background-color:#ff9; color:#000; text-decoration:none;}
+
+mark {  background-color:#ff9; color:#000;   font-style:italic; font-weight:bold;}
+
+del { text-decoration: line-through;}
+
+abbr[title], dfn[title] {  border-bottom:1px dotted #000;  cursor:help;}
+
+table { border-collapse:collapse; border-spacing:0;}
+
+hr { display:block; height:1px; border:0;  border-top:1px solid #cccccc; margin:1em 0; padding:0;}
+
+input, select { vertical-align:middle;}
+
+
+
+
+/*头部*/
+header{ padding-top:4px; position: relative; width: 100%; z-index: 20; left: 0; top:0;}
+header .navList{ height: 0; overflow:hidden; -webkit-transition:all 0.5s 0 ease;}
+.wrapper{ position:absolute; width: 100%;top:62px; }
+.header{ position:relative; height: 58px;}
+.header .logo{ padding:5px 0 0 10px;}
+.header .return{ display: block;  position:absolute; right:66px; bottom:0; width:60px; height:33px; line-height:33px; color:#fff; text-align:center; -webkit-tap-highlight-color:transparent; }
+.header .next{ display: block;  position:absolute; right:127px; bottom:0; width:60px; height:33px; line-height:33px; color:#fff; text-align:center;-webkit-tap-highlight-color:transparent; }
+.header .channelTT{ font-size: 2.25em; margin-left: 10px; line-height: 58px; font-weight: bold; color: #333; }
+.header .navMenu{ display:block; position:absolute; right:0; bottom:0; width:60px; height:33px; line-height:33px; color:#fff; text-align:center; -webkit-tap-highlight-color:transparent;}
+.navList ul li{ width:64px; text-align:center; float:left; height:35px; line-height:35px; border-bottom:1px solid #99e6ff;}
+.navList ul li a{ color:#fff; font-size:1.375em; display: inline-block; width: 64px; height: 35px}
+.navList ul li.special a{font-size:0.875em;}
+
+@-webkit-keyframes fadeInDown
+{
+	0%{opacity:0.8;-webkit-transform:translateY(-20px)}
+	100%{opacity:1;-webkit-transform:translateY(0)}
+}
+
+
+/*尾部*/
+footer{ margin-top: 24px;}
+.direct ul{ margin:0 auto; padding: 0 3%;}
+.direct ul li{ width: 30%; float: left; height:71px; padding-top:15px; margin-right:5%; border-top-style:solid; border-top-width:2px; background: #fff; }
+.direct ul li.on{color: #fff;}
+.direct ul li span{background:url(../images/icon.png) no-repeat; display:block; width:39px; height:30px; background-size:39px 228px; margin:0 auto}
+.direct ul li p{ text-align:center; margin-top:10px;font-size:0.875em;}
+.direct ul li:nth-child(1) span{ background-position:0 0;}
+.direct ul li:nth-child(2) span{ background-position:0 -38px;}
+.direct ul li:nth-child(3) span{ background-position:0 -75px;}
+.direct ul li.on:nth-child(1) span{ background-position:0 -112px;}
+.direct ul li.on:nth-child(2) span{ background-position:0 -153px;}
+.direct ul li.on:nth-child(3) span{ background-position:0 -194px;}
+.direct ul li:nth-child(3){margin-right:0;}
+
+.links a{ display:inline-block;font-size:0.875em; float:left; width:33%;  border-left:1px solid #fff;border-bottom:1px solid #fff; text-align:center; height:25px; color:#333333;-webkit-box-shadow:-1px 1px 0 #cccccc; margin-top:20px;}
+.copyRight{ line-height:26px; font-size:0.875em; text-align:center; margin:20px auto;}
+
+
+
+/*公共模块*/
+.pubBox { margin-top: 15px;}
+.pubBox h2{ text-align: right; height:20px; line-height: 20px; color: #333; font-size: 1.125em; margin-bottom: 5px; }
+.pubBox h2 span{ display: inline-block; background: #333333; font-family: 'georgia'; font-style: italic; color: #fff; padding: 0 15px; margin-left:3px;}
+.pubBox .on{background: #333; color: #fff;}
+.pubBox .on h3{color: #000000;}
+
+
+.picItemA{ background: #fff; margin-bottom:15px;}
+.picItemA h3{ height:30px; line-height: 30px; font-size: 1.125em;text-align: left; color: #fff; overflow: hidden;text-overflow: ellipsis;white-space: nowrap !important; padding-left: 10px;  }
+.picItemA .pic{ padding:10px;}
+.picItemA .pic img{ display: block; float:left;}
+.picItemA p{ font-size: 1em;line-height:1.5em; padding:0 10px 10px 10px;}
+
+
+.picItemB{ background: #fff; margin-bottom:15px;}
+.picItemB h3{ height:30px; line-height: 30px; font-size: 1.125em; text-align: left; color: #fff;overflow: hidden;text-overflow: ellipsis;white-space: nowrap !important;padding-left: 10px;   }
+.picItemB .pic{padding:10px; float:left;}
+.picItemB p{ font-size:1em; line-height:1.5em;padding:10px;}
+
+.picItemC{  padding:0 0 0 10px;}
+.picItemC li{ width:145px; background: #fff; float:left;font-size: 1em;  height:156px; margin-right:10px; margin-bottom:15px;}
+.picItemC .pic{ padding:7px 10px;}
+.picItemC p{ font-size: 1em; line-height:1.5em;padding:10px;}
+
+.pubList{ background: #fff; margin-bottom:30px; margin-top: 15px; }
+.pubList li{ height:40px; line-height: 40px;font-size: 1em;  max-width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap !important;    text-align: center; cursor: pointer;border-bottom-style: solid; border-bottom-width:2px; }
+.pubList li.first{ border-top-width:2px; border-top-style: solid;}
+.pubList li.on{ -webkit-box-shadow: inset 0px 0 7px #d3d3d3; }
+
+
+.artList{border-top:2px solid #ccc;}
+.artList li{height:40px; font-size: 1em; line-height: 40px; max-width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap !important;    text-align: center; cursor: pointer;border-bottom:2px solid #ccc;}
+.artList li.on{ color: #fff;}
+
+.gochannel{ height: 40px; line-height: 40px;font-size: 1em; max-width: 100%;border-bottom:2px solid #cccccc;  text-align: center; cursor: pointer;}
+.gochannel span{ background:url(../images/goicon.png) no-repeat right center; font-size: 1em; display:inline-block;  background-size:14px 13px; padding-right: 20px}
+.view-more { padding-top: 2px; cursor:pointer; margin-bottom:15px; }
+.view-more span { display:block; height: 42px; line-height: 42px; font-size: 1.25em; background-color: #fff;text-align: center; font-weight: bold; }
+.view-more em{ display: inline-block; background: url(../images/loading.gif) no-repeat; background-size: 16px 16px; width: 16px; height: 16px;}
+
+
+.indexList{ background: #fff;}
+.indexList li{ height:40px; font-size: 1em; line-height: 40px; max-width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap !important;    text-align: center; cursor: pointer;border-bottom:2px solid #ccc;}
+.indexList li.first{ border-top-width:2px; border-top-style: solid;}
+.indexList li.on{ -webkit-box-shadow: inset 0px 0 7px #d3d3d3; }
+
+
+.fix-box{display:none;position:fixed; bottom:0; width:100%; z-index: 20;}
+.fix-bookmark{ background:url(../images/Bookmark-icon.png) no-repeat;-webkit-background-size: contain;z-index:100;width:241px;height:85px;position:relative; margin:0 auto}
+
+.fix-bookmark-close{ position:absolute; right:4px; top:4px;width:16px;height:16px; background:url(../images/close.png) no-repeat; background-size:contain;-webkit-background-size: contain; cursor:pointer; display:block;}
+.fix-bookmark .icon-logo{width:52px;height:53px; background:url(../images/iphone-icon.png) no-repeat;background-size: contain;-webkit-background-size: contain;float:left; margin-left:10px; margin-top:10px; margin-right:8px;}
+.fix-bookmark p{ padding-top:10px; padding-right:10px; font-size: 0.875em; line-height:18px;}
+.icon-add{width:18px;height:14px; background:url(../images/add.png) no-repeat;background-size: contain; -webkit-background-size: contain; margin:0 10px; vertical-align:middle; display:inline-block;}
+
+.ad img{ width: 100%; display: block; margin-top:25px; } 

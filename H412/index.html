@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html> 
+<html lang="zh-CN">
+<head> 
+<title>仿新赣州房产网移动版手机wap房产网站模板-3v3手机微信模板【http//www.zjf88.com/】</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=no,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="CSS/jquery.mobile-1.1.0.min.css" />
+<link rel="stylesheet" href="CSS/My.jquery.mobile.css" />
+<script src="JS/jquery-1.7.1.min.js"></script>
+<script src="JS/jquery.mobile-1.1.0.min.js"></script>
+
+<script language=JavaScript>
+function chkif_weixin()  
+{  
+if(typeof(WeixinJSBridge) =="undefined"){
+my_header.style.display='block';
+}
+}
+</script>
+
+</head>
+<body onload="chkif_weixin()"> 
+
+<!-- ALLPAGE -->
+<div data-role="page" class="type-home" id="index">
+
+<!-- header -->
+<div data-role="header" data-position="inline" data-theme="x" id="my_header" style="display:none">
+<h1 style="font-size:20px;margin:9px 0px 8px 0px !important;">新赣州房产网</h1>
+</div> 
+<!-- /header -->
+
+
+<!-- SEARCH -->
+<div style="background-color:#cbcac8;text-align:center;">
+<div style="width:97%;padding-left:5px;padding-top:7px;height:44px;">
+<form name="sjsearch" id="sjsearch" action="/SEARCH_NEWSLIST.asp" method=post data-ajax="false"> 
+<input style="color:#999999;" type="search" name="keyword" id="searc-basic" value="请输入资讯标题关键字" onMouseOver="this.focus()" onBlur="if (value ==''){value='请输入资讯标题关键字'}"  onClick="if(this.value=='请输入资讯标题关键字') this.value=''" />
+</form>
+</div>
+</div>
+<!-- /SEARCH -->
+
+<!-- content -->
+<div data-role="content">
+<div class="content-primary">
+
+<ul data-role="listview" data-inset="false" data-theme="d" data-dividertheme="c">
+
+<!--icon list start-->
+<div class="wap-index-table0">
+
+<table border='0' cellpadding='0' cellspacing='0' align=center class="table_iconlist">
+<tr>
+<td width=25%><a rel="external" href="show_newslist.asp@classid=100"><img src="BAOZI/icon_gzsh.png" width=74%></a></td>
+<td width=25%><a rel="external" href="show_newslist.asp@classid=13"><img src="BAOZI/icon_gznews.png" width=74%></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=38"><img src="BAOZI/icon_lpkx.png" width=74%></a></td>
+<td width=25%><a rel="external" href="show_newslist.asp@classid=39"><img src="BAOZI/icon_kaipan.png" width=74%></a></td>
+</tr>
+
+<tr>
+<td height=18><a rel="external" href="show_newslist.asp@classid=100"><font color=#545454>赣州生活</font></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=13"><font color=#545454>赣州房产</font></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=38"><font color=#545454>楼盘快讯</font></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=39"><font color=#545454>开盘预告</font></a></td>
+</tr>
+<tr><td height=10 colspan=4></td></tr>
+<tr>
+<td><a rel="external" href="show_newslist.asp@classid=46"><img src="BAOZI/icon_lssj.png" width=74%></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=37"><img src="BAOZI/icon_tudi.png" width=74%></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=34"><img src="BAOZI/icon_dcrw.png" width=74%></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=30"><img src="BAOZI/icon_riji.png" width=74%></a></td>
+</tr>
+<tr>
+<td height=18><a rel="external" href="show_newslist.asp@classid=46"><font color=#545454>楼市数据</font></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=37"><font color=#545454>土地市场</font></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=34"><font color=#545454>地产人物</font></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=30"><font color=#545454>看房日记</font></a></td>
+</tr>
+<tr><td height=10 colspan=4></td></tr>
+<tr>
+<td><a rel="external" href="show_newslist.asp@classid=1"><img src="BAOZI/icon_gnnews.png" width=74%></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=4"><img src="BAOZI/icon_zhinan.png" width=74%></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=6"><img src="BAOZI/icon_bagua.png" width=74%></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=5"><img src="BAOZI/icon_yzwq.png" width=74%></a></td>
+</tr>
+<tr>
+<td height=18><a rel="external" href="show_newslist.asp@classid=1"><font color=#545454>国内房产</font></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=4"><font color=#545454>购房指南</font></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=6"><font color=#545454>八卦地产</font></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=5"><font color=#545454>业主维权</font></a></td>
+</tr>
+<tr><td height=10 colspan=4></td></tr>
+<tr>
+<td><a rel="external" href="show_newslist.asp@classid=47"><img src="BAOZI/icon_jzbd.png" width=74%></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=57"><img src="BAOZI/icon_jjxg.png" width=74%></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=7"><img src="BAOZI/icon_fengshui.png" width=74%></a></td>
+<td><a rel="external" href="show_newslist.asp"><img src="BAOZI/icon_more.png" width=74%></a></td>
+</tr>
+<tr>
+<td height=18><a rel="external" href="show_newslist.asp@classid=47"><font color=#545454>家装宝典</font></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=57"><font color=#545454>家装选购</font></a></td>
+<td><a rel="external" href="show_newslist.asp@classid=7"><font color=#545454>居家风水</font></a></td>
+<td><a rel="external" href="show_newslist.asp"><font color=#545454>更多资讯</font></a></td>
+</tr>
+</table>
+
+</div>
+<!--icon list --end-->
+
+<div style="width:100%;padding-left:5px;line-height:30px;height:30px;background-color:#cbcac8;text-align:left;">
+<h1>赣州楼盘分片区检索</h1>
+</div>
+
+<!-- SEARCH -->
+<div style="background-color:#efefef;text-align:center;">
+<div style="width:97%;padding-left:5px;padding-top:7px;height:44px;">
+<form name="sjsearch" id="sjsearch" action="/LoupanList.asp?act=search" method=post data-ajax="false"> 
+<input style="color:#999999;" type="search" name="keyword" id="searc-basic" value="请输入楼盘名称关键字" onMouseOver="this.focus()" onBlur="if (value ==''){value='请输入楼盘名称关键字'}"  onClick="if(this.value=='请输入楼盘名称关键字') this.value=''" />
+</form>
+</div>
+</div>
+<!-- /SEARCH -->
+
+<table border='0' cellpadding='0' cellspacing='0' align=center class="table_iconlist">
+<tr>
+<td width=25%><a rel="external" href="LoupanList.asp@act=search&quyu=_25E8_2580_2581_25E5_259F_258E_25E5_258C_25BA"><img src="BAOZI/icon_lcq.png" width=74%></a></td>
+<td width=25%><a rel="external" href="LoupanList.asp@act=search&quyu=_25E7_25AB_25A0_25E6_25B1_259F_25E6_2596_25B0_25E5_258C_25BA"><img src="BAOZI/icon_zjxq.png" width=74%></a></td>
+<td width=25%><a rel="external" href="LoupanList.asp@act=search&quyu=_25E5_25BC_2580_25E5_258F_2591_25E5_258C_25BA"><img src="BAOZI/icon_kfq.png" width=74%></a></td>
+<td width=25%><a rel="external" href="LoupanList.asp@act=search&quyu=_25E7_25AB_2599_25E5_258C_2597_25E5_258C_25BA"><img src="BAOZI/icon_zbq.png" width=74%></a></td>
+</tr>
+<tr>
+<td height=18><a rel="external" href="LoupanList.asp@act=search&quyu=_25E8_2580_2581_25E5_259F_258E_25E5_258C_25BA"><font color=#545454>老城区</font></a></td>
+<td><a rel="external" href="LoupanList.asp@act=search&quyu=_25E7_25AB_25A0_25E6_25B1_259F_25E6_2596_25B0_25E5_258C_25BA"><font color=#545454>章江新区</font></a></td>
+<td><a rel="external" href="LoupanList.asp@act=search&quyu=_25E5_25BC_2580_25E5_258F_2591_25E5_258C_25BA"><font color=#545454>开发区</font></a></td>
+<td><a rel="external" href="LoupanList.asp@act=search&quyu=_25E7_25AB_2599_25E5_258C_2597_25E5_258C_25BA"><font color=#545454>站北区</font></a></td>
+</tr>
+<tr><td height=10 colspan=4></td></tr>
+<tr>
+<td><a rel="external" href="LoupanList.asp@act=search&quyu=_25E6_25B0_25B4_25E8_25A5_25BF_25E5_258C_25BA"><img src="BAOZI/icon_sxq.png" width=74%></a></td>
+<td><a rel="external" href="LoupanList.asp@act=search&quyu=_25E6_25B0_25B4_25E4_25B8_259C_25E5_258C_25BA"><img src="BAOZI/icon_sdq.png" width=74%></a></td>
+<td><a rel="external" href="LoupanList.asp@act=search&quyu=_25E8_25B5_25A3_25E5_258E_25BF"><img src="BAOZI/icon_ganxian.png" width=74%></a></td>
+<td><a rel="external" href="LoupanList.asp@act=search&quyu=_25E5_258D_2597_25E5_25BA_25B7_25E5_25B8_2582"><img src="BAOZI/icon_nankang.png" width=74%></a></td>
+</tr>
+<tr>
+<td height=18><a rel="external" href="LoupanList.asp@act=search&quyu=_25E6_25B0_25B4_25E8_25A5_25BF_25E5_258C_25BA"><font color=#545454>水西区</font></a></td>
+<td><a rel="external" href="LoupanList.asp@act=search&quyu=_25E6_25B0_25B4_25E4_25B8_259C_25E5_258C_25BA"><font color=#545454>水东区</font></a></td>
+<td><a rel="external" href="LoupanList.asp@act=search&quyu=_25E8_25B5_25A3_25E5_258E_25BF"><font color=#545454>赣县楼盘</font></a></td>
+<td><a rel="external" href="LoupanList.asp@act=search&quyu=_25E5_258D_2597_25E5_25BA_25B7_25E5_25B8_2582"><font color=#545454>南康楼盘</font></a></td>
+</tr>
+<tr><td height=10 colspan=4></td></tr>
+<tr>
+<td><a rel="external" href="LoupanList.asp@act=search&quyu=_25E7_2591_259E_25E9_2587_2591_25E5_25B8_2582"><img src="BAOZI/icon_ruijin.png" width=74%></a></td>
+<td><a rel="external" href="LoupanList.asp@act=search&quyu=_25E4_25BC_259A_25E6_2598_258C_25E5_258E_25BF"><img src="BAOZI/icon_huichan.png" width=74%></a></td>
+<td><a rel="external" href="LoupanList.asp@act=search&quyu=_25E7_259F_25B3_25E5_259F_258E_25E5_258E_25BF"><img src="BAOZI/icon_shicheng.png" width=74%></a></td>
+<td><a rel="external" href="LoupanList.asp"><img src="BAOZI/icon_loupan.png" width=74%></a></td>
+</tr>
+<tr>
+<td height=18><a rel="external" href="LoupanList.asp@act=search&quyu=_25E7_2591_259E_25E9_2587_2591_25E5_25B8_2582"><font color=#545454>瑞金楼盘</font></a></td>
+<td><a rel="external" href="LoupanList.asp@act=search&quyu=_25E4_25BA_258E_25E9_2583_25BD_25E5_258E_25BF"><font color=#545454>于都楼盘</font></a></td>
+<td><a rel="external" href="LoupanList.asp@act=search&quyu=_25E5_25AE_2581_25E9_2583_25BD_25E5_258E_25BF"><font color=#545454>宁都楼盘</font></a></td>
+<td><a rel="external" href="LoupanList.asp"><font color=#545454>所有楼盘</font></a></td>
+</tr>
+</table>
+
+
+<div style="width:100%;padding-left:5px;line-height:30px;height:30px;background-color:#cbcac8;text-align:left;">
+<h1>房源信息分类检索</h1>
+</div>
+
+<table border='0' cellpadding='0' cellspacing='0' align=center class="table_iconlist">
+<tr>
+<td width=25%><a rel="external" href="fangyuanlist.asp@MaxPerPage=50&keyword=&S_fw_leixing=&S_fw_jiegou=&S_fw_mianji=&S_fw_quyu=&S_mytype=1"><img src="BAOZI/icon_sou1.png" width=74%></a></td>
+<td width=25%><a rel="external" href="fangyuanlist.asp@MaxPerPage=50&keyword=&S_fw_leixing=&S_fw_jiegou=&S_fw_mianji=&S_fw_quyu=&S_mytype=2"><img src="BAOZI/icon_sou2.png" width=74%></a></td>
+<td width=25%><a rel="external" href="fangyuanlist.asp@MaxPerPage=50&keyword=&S_fw_leixing=&S_fw_jiegou=&S_fw_mianji=&S_fw_quyu=&S_mytype=4"><img src="BAOZI/icon_zu.png" width=74%></a></td>
+<td width=25%><a rel="external" href="fangyuanlist.asp"><img src="BAOZI/icon_fy.png" width=74%></a></td>
+</tr>
+<tr>
+<td height=18><a rel="external" href="fangyuanlist.asp@MaxPerPage=50&keyword=&S_fw_leixing=&S_fw_jiegou=&S_fw_mianji=&S_fw_quyu=&S_mytype=1"><font color=#545454>新房出售</font></a></td>
+<td><a rel="external" href="fangyuanlist.asp@MaxPerPage=50&keyword=&S_fw_leixing=&S_fw_jiegou=&S_fw_mianji=&S_fw_quyu=&S_mytype=2"><font color=#545454>售二手房</font></a></td>
+<td><a rel="external" href="fangyuanlist.asp@MaxPerPage=50&keyword=&S_fw_leixing=&S_fw_jiegou=&S_fw_mianji=&S_fw_quyu=&S_mytype=4"><font color=#545454>房产出租</font></a></td>
+<td><a rel="external" href="fangyuanlist.asp"><font color=#545454>最新房源</font></a></td>
+</tr>
+</table>
+
+<!-- SEARCH -->
+<div style="background-color:#efefef;text-align:center;">
+<div style="width:97%;padding-left:5px;padding-top:7px;height:44px;">
+<form name="sjsearch" id="sjsearch" action="/FangYuanList.asp" method=post data-ajax="false"> 
+<input style="color:#999999;" type="search" name="keyword" id="searc-basic" value="请输入关键字(楼盘名称或地段)" onMouseOver="this.focus()" onBlur="if (value ==''){value='请输入关键字(楼盘名称或地段)'}"  onClick="if(this.value=='请输入关键字(楼盘名称或地段)') this.value=''" />
+</form>
+</div>
+</div>
+<!-- /SEARCH -->
+
+
+</ul>
+</div>
+
+
+		
+
+
+
+
+</div>
+<!-- /content -->
+
+
+
+
+
+
+<!-- footer -->
+<div data-role="footer" data-theme="a">
+<h4> <a href="index.html">首页</a>  <a href="liebiao.html">列表演示图</a>  <a href="zixunzhengwen.html">资讯正文页</a>  <a href="loupanlist.html">楼盘列表页</a>  <a href="loupanzhengwen.html">楼盘正文页</a></h4>
+</div>
+
+<div style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https//" : " http//");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F07a6f745f5dfff546adfee3e08df29de' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+<!-- /footer -->
+
+</div>
+<!-- /ALLPAGE -->
+ 
+<div style="display:none;">
+<IMG border=0 hspace=0 alt="" src="images/logo300x300.jpg">
+</div>
+
+</body>
+</html>

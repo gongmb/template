@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+.webwidget_scroller_tab{width:320px; margin:0 auto;}
+.tabContainer{width:100%;background:url(../images/titlebg.gif) repeat-x;overflow:hidden; height:49px; line-height:49px;}
+.tabContainer li{float:left;margin-right:1px;}
+.tabContainer li a{display:block!important;display:inline-block;height:50px;line-height:50px; width:105px; text-align:center}
+.webwidget_scroller_tab .tabHead{
+    list-style-type: none;
+    margin:0px;
+    padding:0px;
+}
+.webwidget_scroller_tab .tabBody{
+    width:498px;
+	overflow:hidden;
+    position: relative;
+	height:100%;
+
+}
+.webwidget_scroller_tab .tabBody ul,li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.webwidget_scroller_tab .tabBody ul{
+    width: 1500px;
+    position: absolute;
+	margin-bottom:5px;
+}
+.webwidget_scroller_tab .tabBody ul li{
+    float: left;
+    width: 318px;
+}
+.webwidget_scroller_tab .tabHead li a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #0099FF;
+}
+
+.anli{
+width:320px; height:105px; background:url(../images/title2bg.gif) repeat-x; overflow:hidden; margin:0 auto; padding:0; border:none}
+
+.anli .left{ width:90px; float:left; display:block; text-align:center}
+.anli .right{ width:230px; float:left; display:block}
+
+.xinwen{ list-style:none; line-height:180%; border-bottom:1px inset #dedede; background:url(../images/libg.gif) left center no-repeat; text-indent:0.5em;}
+
+
+.webwidget_scroller_tab .tabCot p{
+    margin: 0px;
+}
+.webwidget_scroller_tab .tabContainer li.currentBtn a{height:50px; line-height:50px;background:url(../images/stitle.gif) no-repeat center bottom;}

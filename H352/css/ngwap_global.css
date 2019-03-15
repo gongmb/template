@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;-webkit-text-size-adjust:none}
+body{background-color:#fcfcfc;color:#1D1D1D;font:normal 14px/30px Arial,Helvetica,sans-serif}
+div{word-break:break-all;word-wrap:break-word}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+ul,li{list-style:none}
+img{border:0}
+img,label,input{vertical-align:middle}
+select{font-size:14px}
+a{color:#2D57B6;outline:medium none;text-decoration:none}
+a:link,a:visited,a:hover,a:active{color:#2D57B6;text-decoration:none}
+em,i{font-style:normal}
+.clear{display:block;height:0;line-height:0;font-size:0;clear:both}
+.clearfix:after{display:block;content:'';clear:both;visibility:hidden}
+.highlight{color:#FF6600}
+.fRed{color:#BE0000}
+.fBlue{color:#0066CC}
+small{font-size:12px}
+.fr{float:right}
+/*布局*/
+#wrap{width:100%}
+.top{height:28px;padding:0 4px;background-color:#2C2C2C;color:#FFF;line-height:28px;text-align:right}
+.top a{margin:0 3px;color:#F0F0F0;padding:0 4px}
+.top span{float:left}
+.top span em{font-style:normal;color:#FF7531}
+a.showUser{background:url(../images/common/user.png) center center no-repeat; background-size:24px}
+a.closeUser{background:url(../images/common/user_back.png) center center no-repeat; background-size:24px}
+#userInfo{height:80px;background-color:#2C2C2C;padding:10px;line-height:28px;font-size:13px;color:#FFFFFF;border-top:1px solid #616161}
+#userInfo a{color:#FFFFFF;margin-right:8px}
+#userInfo a.btn{line-height:30px;padding:0 10px; display:inline-block; background-color:#FF8400;text-align:center; border-radius:6px}
+#userInfo .userFace{float:left;width:60px;height:60px;border:2px solid #cfcfcf; margin-top:6px}
+#userInfo .userFace img{width:60px;height:60px}
+#userInfo p{padding-left:75px}
+.site{background:url(http//3g.d.cn/djnetgame/images/common/bg.png) 0 -373px repeat-x;line-height:35px;padding:0 6px;height:35px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:#FFF}
+.site span{background:url(http//3g.d.cn/djnetgame/images/common/bg.png) 0 -337px no-repeat;display:inline-block;padding-left:25px;height:35px;}
+.site *{float:left;font-size:14px}
+.site a{color:#FFF}
+.channel{margin:0 auto}
+.channelTit{border-top:1px solid #9fc9d6;background-color:#f3fcff;height:40px;line-height:37px}
+.channelTit ul li{width:33.3%;color:#5777A4;border-bottom:3px solid #bddbf4;font-size:15px}
+.channelTit ul li a{display:block}
+.channelTit ul.two li{width:50%}
+.channelTit ul.four li{width:25%}
+.channelTit ul.five li{width:20%}
+.channelTit li.hover{border-bottom:3px solid #278be1;color:#001E4A;font-size:16px;background:url(http//3g.d.cn/djnetgame/images/common/bg.png) center -296px no-repeat}
+.channelTit p{border-bottom:3px solid #278be1;padding-left:10px;font-size:16px;height:37px}
+.channelTit p strong{color:#278be1;float:left}
+.channelTit p a{float:right;padding:0 4px}
+/*底部*/
+footer{color:#333;background-color:#e1ebf3;padding-top:6px;text-align:center}
+footer nav a{display:inline-block;width:20%;background:url(http//3g.d.cn/djnetgame/images/common/bg.png) right -218px no-repeat;color:#333333}
+footer nav a:hover,footer nav a:visited{color:#333333}
+footer nav a:nth-child(5n){background:none}
+.fLogin{background-color:#c0d4e3}
+.fLogin span,.fLogin a{color:#0f366e;padding:2px 6px}
+.fLogin span{color:#FFF;background-color:#96a9b7;border-radius:4px}
+a.toTop{bottom:10px;width:44px;height:44px;position:fixed;right:10px;background:url(../images/common/totop.png) no-repeat;z-index:999;display:block}
+/*共用*/
+.newsList ul li,.appList ul li{border-top:1px solid #FFF}
+.mainNav a,.headline,.btnArea,a.dlBtn,a.enter,.scrollTit,.channelTit ul li,.choiceList ul li,.push ul li a,.letter a,.loading,a.inGame,a.install{text-align:center}
+.logo a,.mainNav,.newsList ul li a,.newsList ul.mall li a,.newsList ul.mall li a strong,.newsList ul.mall li a span,.choiceList ul,.appInfo a,.appInfo a span,.appInfo a strong,a.dlBtn,.channelTit h3,.channelTit h3 span,.channelTit ul li,.fLine,.sLine,.push ul li a,a.enter,.loading,a.inGame{display:block}
+.top,header,.appList ul li,.choiceList ul li,#scrollImg,#scrollImg ul,.sImgitem .imgCon,.bar,.channelTit ul,.channelTit,.scrollDiv{overflow:hidden}
+.appInfo a strong,.appInfo a span,.newsList ul li a,.choiceList ul li a span,a.dlBtn,.wordList li a,a.inGame,a.install{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.mainNav li,.appInfo,.sImgItem,.channelTit h3 span,.channelTit ul li,.w33p,.w50p,.choiceList ul,#scroller{float:left}
+.headerSearch,.newHot,.push ul li a,.msInput,.letter a,a.dlBtn,a.inGame,a.install,.wrong h2{border-radius:4px}
+header,.mainNav,.newsList ul.mall li a,.appInfo a,#scrollImg,#scroller ul,.sImgItem,.sImgitem .imgCon,.scrollDiv,.mainSearch,.headerSearch,.msInput{position:relative}
+.mainNav a,.fLine,.scrollTit,.push ul li a,.newHot em,.letter a{color:#FFF}
+a.enter,.loading{line-height:40px;background:url(http//3g.d.cn/djnetgame/images/common/bg.png) 0 -160px repeat-x #f4f4f4;clear:both;color:#335788}
+.loading{color:#999999}
+/*列表*/
+.newsList ul li{border-bottom:1px solid #DEDEDE;height:36px;background:url(http//3g.d.cn/djnetgame/images/common/bg.png) 100% -89px no-repeat}
+.newsList ul li a{line-height:36px;padding:0 10px 0 18px;color:#1D1D1D;background:url(http//3g.d.cn/djnetgame/images/common/bg.png) 0 -124px no-repeat;font-size:16px}
+.newsList ul li a.normal{padding:0 10px 0 8px;background:none; color:#2D57B6}
+.newsList ul li.first{border-top:none}
+.newsList ul li.last{border-bottom:none}
+.newsList ul li.inline{padding-left:8px;}
+.newsList ul li.inline a{display:inline;padding:0 6px;background:none}
+.newsList ul li.inline span{background:url(http//3g.d.cn/djnetgame/images/common/bg.png) 0 -124px no-repeat; padding-left:10px;}
+/*搜索*/
+.mainSearch{border-top:1px solid #dadada;background-color:#eef7ff;z-index:2;box-shadow:0 2px 3px #a1a5aa;clear:both;padding-bottom:10px}
+.headerSearch,.msInput{border:1px solid #92b7d7;background-color:#FFF;box-shadow:inset 0 1px 3px #a1a5aa;margin:0 10px;padding-left:6px}
+.headerSearch{padding-right:40px;margin-top:15px}
+.msInput{margin-top:10px;padding-right:70px}
+.headerSearch input[type="text"],.msInput input[type="text"]{width:100%;height:30px;border:none;background:none;font-size:14px}
+.headerSearch input[type="submit"],.msInput input[type="submit"]{height:31px;position:absolute;top:0;right:0;border:none;background: url(http//3g.d.cn/djnetgame/images/common/bg.png) center -258px no-repeat;}
+.headerSearch input[type="submit"]{width:40px}
+.msInput input[type="submit"]{width:70px;background-color:#f4f4f4;border-radius:0px 4px 4px 0;border-left:1px solid #92b7d7}
+.letter{padding:0 9px;font-size:15px;line-height:28px;color:#be0000}
+.letter a{background-color:#81aed4;display:inline-block;margin:0 2px 4px 1px;width:38px}
+.letter a.cur{ background-color:#278BE1}
+.letterList{border:2px solid #278BE1;background-color:#FFF;padding:6px; margin:0 10px}
+.letterList a{display:inline-block;padding:0 4px;white-space:nowrap}
+.newHot{border:1px solid #fabe1c;background-color:#fff8e5;padding:0 4px}
+.newHot em{padding:0 6px;border-radius:12px;margin-right:4px}
+.newHot .new em{background-color:#4eb3d3}
+.newHot .hot em{background-color:#f15b40}
+.newHot .new a{color:#229ec5}
+.newHot .hot a{color:#f15b40}
+/*辅助*/
+.w33p{width:33.3%!important}
+.w50p{width:50%!important}
+.w100p{width:100%!important}
+.p6{padding:6px}
+.nbg{background:none!important}
+.nbd{border:none!important}
+.nbgi{background-image:none!important;color:#1781B7; font-weight:bold}
+/*20130328测试表开服表改*/
+.channelTit ul.three li{width:33%}
+.channelTit ul.three li.hover{width:34%}

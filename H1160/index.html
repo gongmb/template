@@ -1,0 +1,1178 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http//www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Klass is a beautifull theme designed by Smartik" />
+	<meta name="keywords" content="one, page, skitter, slider, ThemeForest, Smartik" />
+	<meta name="author" content="Smartik" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+	<!--====================
+		STYLESHEETS
+	=====================-->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" /> <!-- Reset Styles-->
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" /> <!-- Main Styles-->
+	<link href="css/skitter.styles.css" rel="stylesheet" type="text/css" media="all" /> <!-- Skitter Slider Styles-->
+	<link href="css/colorbox.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Lightbox Image Zoom Styles -->
+	
+	<!--====================
+		JAVASCRIPTS
+	=====================-->
+	<script type="text/javascript" src="http//ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script> <!-- JQuery Library -->
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> <!-- Easing effects -->
+	<script src="js/jquery.animate-colors-min.js" type="text/javascript"></script> <!-- Animate Slider dots -->
+	<script src="js/jquery.skitter.js" type="text/javascript"></script> <!-- Skitter Slider -->
+	<script src="js/jquery.jigowatt.js" type="text/javascript"></script><!-- AJAX Contact Form Submit -->
+	<script src="js/jquery.colorbox-min.js" type="text/javascript"></script> <!-- Lightbox Image Zoom -->
+	
+	<!--====== Cufon ======-->
+	<script src="js/cufon-yui.js" type="text/javascript"></script>
+	<script src="js/comfortaa.cufonfonts.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		Cufon.replace('h1, h2, h3, h4, h5, h6, .page_title, .page_title_subhead, .menu_item', { fontFamily: 'Comfortaa', hover: true });
+		
+		$(document).ready(function(){
+		
+				$(".article_container").hide();
+
+				$("div.read_more_link").click(function(){
+					$(this).toggleClass("active").next().slideToggle("slow");
+				});
+				
+		});
+		
+		$(document).ready(function(){
+		
+			//Examples of how to assign the ColorBox event to elements
+			$("a[rel='crbox']").colorbox();
+			$("a[rel='pf_item']").colorbox();
+			$(".video-crbox").colorbox({iframe:true, innerWidth:640, innerHeight:510});
+			$(".iframe-crbox").colorbox({width:"80%", height:"80%", iframe:true});
+					
+		});
+		
+		//scroll page to id
+		function GoToId(IdToGo){
+		
+			var animSpeed=1500; //animation speed
+			var easeType="easeInOutExpo"; //easing type
+			if($.browser.webkit){ //webkit browsers do not support animate-html
+				$("body").stop().animate({scrollTop: $(IdToGo).offset().top}, animSpeed, easeType);
+			} else {
+				$("html").stop().animate({scrollTop: $(IdToGo).offset().top}, animSpeed, easeType);
+			}
+			
+		};	
+		
+		$(document).ready(function(){
+			$('.box_skitter_slider').skitter({dots: true});
+			$('.box_skitter_slider_post').skitter({dots: true});
+		});
+
+	</script>
+
+<title>Klass </title>
+
+</head>
+
+<body>
+	
+<div id="general-content">
+	<div id="side_menu">
+		<div class="logo"></div> <!-- LOGO -->
+		
+		<div class="top_bg_menu"></div>
+		<div class="menu">
+			<div class="top_first"></div>
+			<a href="#" onclick="GoToId('#page-home');return false" class="menu_item">Home</a>
+			<a href="#" onclick="GoToId('#page-portfolio');return false" class="menu_item">Portfolio</a>
+			<a href="#" onclick="GoToId('#page-services');return false" class="menu_item">Services</a>
+			<a href="#" onclick="GoToId('#page-articles');return false" class="menu_item">Articles</a>
+			<a href="#" onclick="GoToId('#page-contact');return false" class="menu_item">Contact</a>
+		</div>
+		<div class="bottom_bg_menu"></div>
+	</div>
+	<div class="container">
+<!--=========================================================
+	PAGE 1  \HOME\
+==========================================================-->
+		<div id="page-home">
+			
+			<div class="header">
+				<div class="content_wrapper">
+					<div class="grid_1">
+						<h1 class="page_title">Welcome to our site !</h1>
+						<div class="page_title_subhead">Integer molestie sodales libero. Integer consectetur congue facilisis.</div>
+					</div>
+				</div>
+			</div> <!-- End of .header -->
+			
+			<div class="content">
+				<div class="content_wrapper">
+					<div class="slider_frame">
+						<div class="box_skitter box_skitter_slider">
+							 <ul>
+								  <li>
+										<img src="images/assets/01.jpg" class="block" alt="" />
+								  </li>
+								  <li>
+										<img src="images/assets/02.jpg" class="cube" alt="" />
+								  </li>
+								  <li>
+										<img src="images/assets/06.jpg" class="default" alt="" />
+								  </li>
+								  <li>
+										<img src="images/assets/04.jpg" class="directionBottom" alt="" />
+								  </li>
+								  <li>
+										<img src="images/assets/05.jpg" class="fadeFour" alt="" />
+								  </li>
+								  <li>
+										<img src="images/assets/03.jpg" class="cubeJelly" alt="" />
+								  </li>
+							 </ul>
+							 <div class="shadow"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				
+					
+					<div class="services">
+						<div class="grid_3 alpha">
+							<div class="icon_service sv1"></div>
+							<h2>Cross-browser</h2>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+						</div><!-- end of service 1 -->
+						
+						<div class="grid_3">
+							<div class="icon_service sv2"></div>
+							<h2>User friendly</h2>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+						</div><!-- end of service 3 -->
+						
+						<div class="grid_3 omega">
+							<div class="icon_service sv3"></div>
+							<h2>Support</h2>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+						</div><!-- end of service 4 -->
+						<div class="clear"></div>
+					</div>
+					
+					
+					
+					<h2>About us</h2>
+					<hr />
+					<img src="images/assets/001.png" alt="" class="img_border alignleft" />
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu lorem metus. Sed pharetra arcu ac velit rutrum at tempus est laoreet. Integer condimentum, ipsum in vehicula ultricies, risus elit volutpat magna, nec lacinia libero lacus eu mi. Donec in nisl massa, vitae pharetra magna. Quisque quis lorem ac velit pharetra aliquam. Aliquam nec lectus libero, at sodales urna. Maecenas lectus justo, viverra a luctus sit amet, facilisis a ante. Vivamus sed lorem sed mi ullamcorper bibendum. Vestibulum viverra odio non tellus rutrum a molestie nulla tincidunt. Pellentesque eleifend posuere tellus, vitae elementum dui tincidunt eu. Ut interdum aliquet purus, at pellentesque ipsum euismod vel. Pellentesque malesuada, sapien eget molestie eleifend, ante risus tempus ante, eu volutpat lorem lorem consectetur turpis. Sed gravida urna nec magna ullamcorper quis congue orci aliquet. Curabitur fringilla, sem viverra dignissim bibendum, felis turpis mollis neque, quis lacinia mauris libero non urna.</p>
+					<div class="clear"></div>
+					
+					
+					
+					<div class="latest_works">
+						<h2>Latest Works</h2>
+						<hr />
+						
+						<div class="grid_3 bg_plus alpha">
+							<a href="images/assets/0022.jpg" rel="crbox" class="work_image" title="Project name">
+								<img src="images/assets/8.jpg" alt="" />
+							</a>
+							<h3>Project title</h3>
+							<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+						</div>
+						<div class="grid_3 bg_plus">
+							<a href="images/assets/0044.jpg" rel="crbox" class="work_image" title="Project name">
+								<img src="images/assets/12.jpg" alt="" />
+							</a>
+							<h3>Project title</h3>
+							<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+						</div>
+						<div class="grid_3 bg_plus omega">
+							<a href="images/assets/0055.jpg" rel="crbox" class="work_image" title="Project name">
+								<img src="images/assets/19.jpg" alt="" />
+							</a>
+							<h3>Project title</h3>
+							<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+							
+				</div>
+			</div>
+			
+			
+		</div> <!-- End .container // PAGE 1 // -->
+		
+<!--=========================================================
+	END OF PAGE 1
+_____________________________________________________________
+==========================================================-->
+
+<!--=========================================================
+	PAGE 2  \Portfolio\
+==========================================================-->
+		<div id="page-portfolio">
+				
+			<div class="header">
+				<div class="content_wrapper">
+					<div class="grid_1">
+						<h1 class="page_title">Portfolio</h1>
+						<div class="page_title_subhead">Integer molestie sodales libero. Integer consectetur congue facilisis.</div>
+					</div>
+				</div>
+			</div> <!-- End of .header -->
+			
+			<div class="content">
+				<div class="content_wrapper">
+						<ul class="pf_categories">
+							 <li class="button small gray rounded"><a href="#cat1">Web Design</a></li>
+							 <li class="button small gray rounded"><a href="#cat2">Applications</a></li>
+							 <li class="button small gray rounded"><a href="#cat3">Artwork</a></li>
+							 <li class="button small gray rounded"><a href="#cat4">Graphic Design</a></li>
+						</ul>
+						<hr />
+						
+						<div class="cat_container">
+							<div id="cat1" class="cat_content">
+								<div class="portfolio">
+								
+									<div class="grid_3 bg_plus alpha">
+										<a href="images/assets/0022.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/1.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus">
+										<a class="video-crbox work_image" href="http//www.zjf88.com" rel="pf_item" title="Embed video.">
+											<img src="images/assets/12.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus omega">
+										<a href="http//www.zjf88.com" rel="pf_item" class="iframe-crbox work_image" title="IFrame website">
+											<img src="images/assets/21.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									<div class="clear"></div>
+									<!--======= FIRST ROW ========-->
+									
+									
+									<div class="grid_3 bg_plus alpha">
+										<a href="images/assets/0022.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/17.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus">
+										<a href="images/assets/0044.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/5.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus omega">
+										<a href="images/assets/0055.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/6.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									<div class="clear"></div>
+									<!--======= SECOND ROW ========-->
+											
+									<div class="grid_3 bg_plus alpha">
+										<a href="images/assets/0022.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/7.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus">
+										<a href="images/assets/0044.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/8.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus omega">
+										<a href="images/assets/0055.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/9.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									<div class="clear"></div>
+									<!--======= THIRD ROW ========-->
+									
+								</div>
+							</div> 
+							<!-- end of #cat1 
+							=================-->
+							
+							<div id="cat2" class="cat_content">
+								<div class="portfolio">
+								
+									<div class="grid_3 bg_plus alpha">
+										<a href="images/assets/0022.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/10.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus">
+										<a href="images/assets/0044.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/2.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus omega">
+										<a href="images/assets/0055.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/12.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									<div class="clear"></div>
+									<!--======= FIRST ROW ========-->
+									
+									
+									<div class="grid_3 bg_plus alpha">
+										<a href="images/assets/0022.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/13.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus">
+										<a href="images/assets/0044.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/3.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus omega">
+										<a href="images/assets/0055.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/15.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									<div class="clear"></div>
+									<!--======= SECOND ROW ========-->
+											
+									<div class="grid_3 bg_plus alpha">
+										<a href="images/assets/0022.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/16.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus">
+										<a href="images/assets/0044.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/1.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus omega">
+										<a href="images/assets/0055.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/4.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									<div class="clear"></div>
+									<!--======= THIRD ROW ========-->
+									
+								</div>
+							</div>
+							<!-- end of #cat2 
+							=================-->
+							
+							<div id="cat3" class="cat_content">
+								<div class="portfolio">
+								
+									<div class="grid_3 bg_plus alpha">
+										<a href="images/assets/0022.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/14.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus">
+										<a href="images/assets/0044.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/17.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus omega">
+										<a href="images/assets/0055.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/18.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									<div class="clear"></div>
+									<!--======= FIRST ROW ========-->
+									
+									<div class="grid_3 bg_plus alpha">
+										<a href="images/assets/0022.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/19.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus">
+										<a href="images/assets/0044.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/20.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus omega">
+										<a href="images/assets/0055.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/21.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									<div class="clear"></div>
+									<!--======= THIRD ROW ========-->
+									
+								</div>
+							</div>
+							<!-- end of #cat3 
+							=================-->
+							
+							<div id="cat4" class="cat_content">
+								<div class="portfolio">
+								
+									<div class="grid_3 bg_plus alpha">
+										<a href="images/assets/0022.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/22.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus">
+										<a href="images/assets/0044.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/23.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus omega">
+										<a href="images/assets/0055.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/1.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									<div class="clear"></div>
+									<!--======= FIRST ROW ========-->
+									
+									
+									<div class="grid_3 bg_plus alpha">
+										<a href="images/assets/0022.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/4.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus">
+										<a href="images/assets/0044.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/5.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus omega">
+										<a href="images/assets/0055.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/10.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									<div class="clear"></div>
+									<!--======= SECOND ROW ========-->
+											
+									<div class="grid_3 bg_plus alpha">
+										<a href="images/assets/0022.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/12.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus">
+										<a href="images/assets/0044.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/15.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									
+									<div class="grid_3 bg_plus omega">
+										<a href="images/assets/0055.jpg" rel="pf_item" class="work_image" title="Project name">
+											<img src="images/assets/19.jpg" alt="" />
+										</a>
+										<h3>Project title</h3>
+										<p>Curabitur et velit nisl. Donec semper egestas blandit. Etiam ultrices dolor fermentum elit laoreet vitae hendrerit tortor vulputate.</p>
+									</div>
+									<div class="clear"></div>
+									<!--======= THIRD ROW ========-->
+									
+								</div>
+							</div>
+							<!-- end of #cat4 
+							=================-->
+						</div>
+						<div class="clear"></div>
+				</div>
+			</div>
+			
+		</div> <!-- End #page-portfolio -->
+		
+<!--=========================================================
+	END OF PAGE 2
+_____________________________________________________________
+==========================================================-->
+
+<!--=========================================================
+	PAGE 3  \Services\
+==========================================================-->
+		<div id="page-services">
+				
+			<div class="header">
+				<div class="content_wrapper">
+					<div class="grid_1">
+						<h1 class="page_title">Services</h1>
+						<div class="page_title_subhead">Integer molestie sodales libero. Integer consectetur congue facilisis.</div>
+					</div>
+				</div>
+			</div> <!-- End of .header -->
+			
+			<div class="content">
+				<div class="content_wrapper">
+
+					<!--*** Headings ****-->
+					<h1>This is a Heading 1 Element</h1> 
+					<p>Nam convallis imperdiet pretium. Integer commodo malesuada  purus, a hendrerit erat aliquet in. Nunc eget odio augue, non fringilla  lacus. Sed condi mentum justo sit amet urna ornare euismod. Vivamus ac  leo quam, id porta felis.</p> 
+					
+					<h2>This is a Heading 2 Element</h2> 
+					<p>Nam convallis imperdiet pretium. Integer commodo malesuada  purus, a hendrerit erat aliquet in. Nunc eget odio augue, non fringilla  lacus. Sed condi mentum justo sit amet urna ornare euismod. Vivamus ac  leo quam, id porta felis.</p>
+					
+					<h3>This is a Heading 3 Element</h3> 
+					<p>Nam convallis imperdiet pretium. Integer commodo malesuada  purus, a hendrerit erat aliquet in. Nunc eget odio augue, non fringilla  lacus. Sed condi mentum justo sit amet urna ornare euismod. Vivamus ac  leo quam, id porta felis.</p> 
+					
+					<h4>This is a Heading 4 Element</h4> 
+					<p>Nam convallis imperdiet pretium. <a href="#">This is a link</a> commodo malesuada  purus, a hendrerit erat aliquet in. Nunc eget odio augue, non fringilla  lacus. Sed condi mentum justo sit amet urna ornare euismod. Vivamus ac  leo quam, id porta felis.</p>
+					
+					<h5>This is a Heading 5 Element</h5> 
+					<p>Nam convallis imperdiet pretium. Integer commodo malesuada  purus, a hendrerit erat aliquet in. Nunc eget odio augue, non fringilla  lacus. Sed condi mentum justo sit amet urna ornare euismod. Vivamus ac  leo quam, id porta felis.</p> 
+					
+					<h6>This is a Heading 6 Element</h6>
+					<p>Nam convallis imperdiet pretium. Integer commodo malesuada  purus, a hendrerit erat aliquet in. Nunc eget odio augue, non fringilla  lacus. Sed condi mentum justo sit amet urna ornare euismod. Vivamus ac  leo quam, id porta felis.</p>  
+					<div class="clear"></div>
+					<hr />
+					<!--*** end of Headings ****-->
+					
+					<h3>Blockquote</h3>
+					<!--*** Blockqoute ***-->
+					<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dolor lectus, ultrices venenatis tristique at, euismod eget sem. Praesent at lorem in lacus dictum sagittis. Morbi ultrices nibh sed massa dignissim auctor.</p></blockquote> 
+					<!--*** end of Blockqoute ***-->
+					<div class="clear"></div>
+					<hr />
+					
+					<h3>Drop-Cap</h3>
+					<!--*** Drop-Cap ***-->
+					<p><span class="drop-cap">N</span>unc dui diam, vestibulum at ultrices vel, porttitor eget elit. Donec porta bibendum venenatis. Pellentesque dapibus, sem vel bibendum condimentum, risus ipsum euismod est, ut laoreet nulla nulla eget ligula. In diam metus, pharetra sit amet gravida quis, pellentesque quis eros. Suspendisse potenti. Pellentesque adipiscing dolor vel quam fermentum eu molestie lorem vehicula. Integer ultrices tempor urna, sit amet aliquam velit adipiscing aliquet. Nulla aliquam dolor a quam porttitor eleifend. Nullam a porta diam. Nullam vitae justo urna, eu tristique felis. Cras elit augue, molestie at scelerisque a, dignissim quis velit.</p>
+					<!--*** end of Drop-Cap ***-->
+					<div class="clear"></div>
+					<hr />
+					
+					
+					<h3>Highlight Text</h3>
+					<div class="grid_2 alpha"> 
+						<p> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos. Nulla at nulla sed <span class="highlight1">Highlight 1</span> eros tincidunt semper non ut neque. Sed metus elit, iaculis eget varius eget, faucibus.</p>
+					</div> 
+					  
+					<div class="grid_2 omega">   
+						<p> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos. Nulla at nulla sed <span class="highlight2">Highlight 2</span> eros tincidunt semper non ut neque. Sed metus elit, iaculis eget varius eget, faucibus.</p>
+					</div> 
+						
+					<div class="grid_2 alpha"> 
+						<p> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos. Nulla at nulla sed <span class="highlight3">Highlight 3</span> eros tincidunt semper non ut neque. Sed metus elit, iaculis eget varius eget, faucibus.</p>
+					</div> 
+						 
+					<div class="grid_2 omega"> 
+						<p> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos. Nulla at nulla sed <span class="highlight4">Highlight 4</span> eros tincidunt semper non ut neque. Sed metus elit, iaculis eget varius eget, faucibus.</p>
+					</div> 
+					<div class="clear"></div>
+					<hr />
+					
+											
+					<h3>Buttons</h3>
+					<a href="#none" class="button big blue">Bigger</a>
+					<a href="#none" class="button big green">Bigger</a>
+					<a href="#none" class="button big orange">Bigger</a>
+					<a href="#none" class="button big gray">Bigger</a>
+					<div class="clear"></div>
+					
+					<a href="#none" class="button blue medium">Medium</a>
+					<a href="#none" class="button green medium">Medium</a>
+					<a href="#none" class="button orange medium">Medium</a>
+					<a href="#none" class="button gray medium">Medium</a>
+					<div class="clear"></div>
+					
+					<a href="#none" class="button small blue">Small Button</a>
+					<a href="#none" class="button small green">Small Button</a>
+					<a href="#none" class="button small orange">Small Button</a>
+					<a href="#none" class="button small gray">Small Button</a>
+					<div class="clear"></div>
+					
+					<a href="#none" class="button small blue rounded">Rounded</a>
+					<a href="#none" class="button small green rounded">Rounded</a>
+					<a href="#none" class="button small orange rounded">Rounded</a>
+					<a href="#none" class="button small gray rounded">Rounded</a>
+					<div class="clear"></div>
+					<hr />
+					
+										
+					
+					<h3>Decorated lists</h3>
+					<div class="grid_4 alpha">
+							<ul class="star_list"> 
+								<li>Lorem ipsum dolor</li> 
+								<li>Donec convallis mol</li> 
+								<li>Lorem ipsum dolor</li> 
+								<li>Donec convallis mol</li> 
+								<li>Lorem ipsum dolor</li>            
+						  </ul> 
+				  </div>
+				  
+				  <div class="grid_4"> 
+							<ul class="check_list"> 
+								<li>Lorem ipsum dolor</li> 
+								<li>Donec convallis mol</li> 
+								<li>Lorem ipsum dolor</li> 
+								<li>Donec convallis mol</li> 
+								<li>Lorem ipsum dolor</li>             
+						  </ul> 
+				  </div> 
+				  
+				  <div class="grid_4 omega">
+							<ul class="plus_list"> 
+								<li>Lorem ipsum dolor</li> 
+								<li>Donec convallis mol</li> 
+								<li>Lorem ipsum dolor</li> 
+								<li>Donec convallis mol</li> 
+								<li>Lorem ipsum dolor</li>            
+							</ul>                    
+				  </div>
+				  
+				  <div class="grid_4">
+							<ul class="user_list"> 
+								<li>Lorem ipsum dolor</li> 
+								<li>Donec convallis mol</li> 
+								<li>Lorem ipsum dolor</li> 
+								<li>Donec convallis mol</li> 
+								<li>Lorem ipsum dolor</li>            
+						  </ul>                   
+				  </div>
+					<div class="clear"></div>
+					<hr />
+					
+					<h3>Alerts</h3>
+					<div class="info_msg"><strong>Info: </strong>Nam imperdiet pretium. Integer commodo malesuada  purus, a hendrerit erat aliquet in.</div>
+				
+					<div class="error_msg"><strong>Error: </strong>Nam imperdiet pretium. Integer commodo malesuada  purus, a hendrerit erat aliquet in.</div>
+					
+					<div class="note_msg"><strong>Note: </strong>Nam imperdiet pretium. Integer commodo malesuada  purus, a hendrerit erat aliquet in.</div>
+					
+					<div class="tip_msg"><strong>Tip: </strong>Nam imperdiet pretium. Integer commodo malesuada  purus, a hendrerit erat aliquet in.</div>
+					
+					<div class="succes_msg"><strong>Succes: </strong>Nam imperdiet pretium. Integer commodo malesuada  purus, a hendrerit erat aliquet.</div>
+					<div class="clear"></div>
+					<hr />
+					
+
+						
+					<h3>Table</h3>
+					<table> 
+						<thead> 
+							<tr> 
+								<th>Klass</th> 
+								<th>Table Head 2</th> 
+								<th>Table Head 3</th> 
+								<th>Large Table Head 4</th> 
+							</tr> 
+						</thead> 
+						<tbody> 
+							<tr> 
+								<td>Frontline 1</td> 
+								<td>Frontline 2</td> 
+								<td>Frontline 3</td> 
+								<td>Frontline 4</td> 
+							</tr> 
+							<tr> 
+								<td>Second line 1</td> 
+								<td>Second line 2</td> 
+								<td>Second line 3</td> 
+								<td>Second line 4</td> 
+							</tr> 
+							<tr> 
+								<td>Third line 1</td> 
+								<td>Third line 2</td> 
+								<td>Third line 3</td> 
+								<td>Third line 4</td> 
+							</tr> 
+							<tr> 
+								<td>Fourth line 1</td> 
+								<td>Fourth line 2</td> 
+								<td>Fourth line 3</td> 
+								<td>Fourth line 4</td> 
+							</tr>
+						</tbody>
+					</table>
+					<div class="clear"></div>
+					<hr />
+					
+					<h3>Code</h3>
+					<code>
+						&lt;?php<br />
+						$d=date(&quot;D&quot;);<br />
+						if ($d==&quot;Fri&quot;)<br />
+						&nbsp;&nbsp;{<br />
+						&nbsp;&nbsp;echo &quot;Hello!&lt;br /&gt;&quot;;<br />
+						&nbsp;&nbsp;echo &quot;Have a nice weekend!&quot;;<br />
+						&nbsp;&nbsp;echo &quot;See you on Monday!&quot;;<br />
+						&nbsp;&nbsp;}<br />
+						?&gt;
+					</code>
+					<div class="clear"></div>
+					<hr />
+					
+					<h3>Columns</h3>
+					<div class="columns_demo">
+						<div class="grid_1">
+							680px / grid_1
+						</div>
+						<!-- end 1 columns -->
+						
+						<div class="grid_2 alpha">
+							330px / grid_2 alpha
+						</div>
+						
+						<div class="grid_2 omega">
+							330px / grid_2 omega
+						</div>
+						<!-- end 2 columns -->
+						
+						<div class="grid_3 alpha">
+							213px / grid_3 alpha
+						</div>
+						
+						<div class="grid_3">
+							213px / grid_3
+						</div>
+						
+						<div class="grid_3 omega">
+							213px / grid_3 omega
+						</div>
+						<!-- end 3 columns -->
+						
+						<div class="grid_4 alpha">
+							155px / grid_4 alpha
+						</div>
+						
+						<div class="grid_4">
+							155px / grid_4
+						</div>
+						
+						<div class="grid_4">
+							155px / grid_4
+						</div>
+						
+						<div class="grid_4 omega">
+							155px / grid_4 omega
+						</div>
+						<!-- end 4 columns -->
+						
+						<div class="grid_5 alpha">
+							grid_5 alpha
+						</div>
+						
+						<div class="grid_5">
+							120px / grid_5
+						</div>
+						
+						<div class="grid_5">
+							120px / grid_5
+						</div>
+						
+						<div class="grid_5">
+							120px / grid_5
+						</div>
+						
+						<div class="grid_5 omega">
+							grid_5 omega
+						</div>
+						<!-- end 5 columns -->
+					
+						<div class="grid_4 alpha">
+							155px / grid_4 alpha
+						</div>
+						
+						<div class="grid_4">
+							155px / grid_4
+						</div>
+						
+						<div class="grid_2 omega">
+							330px / grid_2 omega
+						</div>
+						<!-- end 3 alter columns -->
+						
+						<div class="grid_2 alpha">
+							330px / grid_2 alpha
+						</div>
+						
+						<div class="grid_4">
+							155px / grid_4
+						</div>
+						
+						<div class="grid_4 omega">
+							155px / grid_4 omega
+						</div>
+						<!-- end 3 alter columns -->
+						
+						<div class="clear"></div>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div> <!-- End #page-services // PAGE 3 // -->
+		
+<!--=========================================================
+	END OF PAGE 3
+_____________________________________________________________
+==========================================================-->
+
+
+<!--=========================================================
+	PAGE 4  \Articles\
+==========================================================-->
+		<div id="page-articles">
+				
+			<div class="header">
+				<div class="content_wrapper">
+					<div class="grid_1">
+						<h1 class="page_title">Articles</h1>
+						<div class="page_title_subhead">Integer molestie sodales libero. Integer consectetur congue facilisis.</div>
+					</div>
+				</div>
+			</div> <!-- End of .header -->
+			
+			<div class="content">
+				<div class="content_wrapper">
+						<!--========== Article 1 ==========-->
+						<div class="article">
+						
+							<div class="title_div">
+								<h2 class="article_title">Lorem Ipsum is simply dummy text</h2>
+							</div><!-- Article title -->
+							
+							<div class="grid_1 article_img">
+								<img src="images/assets/007.jpg" alt="" />
+							</div>
+							<div class="clear"></div>
+							
+							<div class="grid_1">
+								<ul class="meta_article">
+									<li class="author">Posted by: Admin</li>
+									<li class="date">September 21, 2011</li>
+								</ul>
+							</div>
+							<div class="clear"></div>
+							
+							<div class="grid_1">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac justo ut tellus molestie consequat vitae rutrum lorem. Nam tempus gravida ligula non sodales. Vivamus a mattis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc non tortor dui. Morbi pretium ultrices enim, ut condimentum. </p><!-- Short description -->
+							</div>
+							<div class="clear"></div>
+							
+							<div class="read_more_link"></div>
+							<!--*** Full article ***-->
+							<div class="article_container">
+								<div class="block">
+								
+									<h3>This is a complete article</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac justo ut tellus molestie consequat vitae rutrum lorem. Nam tempus gravida ligula non sodales. Vivamus a mattis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc non tortor dui. Morbi pretium ultrices enim, ut condimentum erat rhoncus vitae. Quisque rutrum enim ac dolor fringilla scelerisque. Duis varius mauris ac mauris lacinia ut ultrices enim molestie. Sed euismod pellentesque dui, eget mattis leo lacinia sit amet.</p>
+									
+									<img src="images/assets/008.jpg" alt="" class="img_border alignleft" />
+									<p>Sed felis tellus, vehicula et tempor sed, consectetur at neque. Curabitur vitae lectus a est auctor porta id non dui. Vestibulum non enim scelerisque lectus consequat vulputate et quis orci. Nunc imperdiet ultrices cursus. Pellentesque consequat placerat dui, vel tristique urna varius sit amet. Praesent ante purus, tempor nec feugiat sit amet, gravida vel odio. Donec quis odio at ante scelerisque commodo ac sed nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eleifend euismod tellus id euismod. Etiam suscipit, augue nec facilisis cursus, justo leo malesuada quam, ac placerat metus risus nec mi. Fusce sagittis rhoncus felis, ac gravida sapien ullamcorper non. Praesent eget ligula sit amet elit tempor viverra. Praesent ante purus, tempor nec feugiat sit amet, gravida vel odio. Praesent et felis elit, ac dapibus dui. Suspendisse ac porta magna.</p>
+									
+									<p>Suspendisse nulla enim, hendrerit ut dignissim eu, luctus non lectus. Aenean sit amet enim sapien, id bibendum mauris. Quisque porta lacus ac purus lobortis dapibus. Curabitur at nunc sit amet lectus tincidunt vulputate a eget elit. Nullam quam urna, dapibus eu dapibus non, consequat eu nibh. Donec nec euismod libero. Praesent et felis elit, ac dapibus dui. Suspendisse ac porta magna. Quisque quis pellentesque quam. Pellentesque lobortis ornare turpis, posuere scelerisque justo iaculis non. Nunc tristique facilisis porta.</p>
+									
+									<h3>Suspendisse nulla enim</h3>
+									<p>Duis varius ultricies risus eget tristique. Cras lobortis feugiat tellus, vel facilisis dui rutrum volutpat. Aliquam at ante vel metus scelerisque molestie at a metus. Nulla facilisi. Proin dui tellus, pharetra id feugiat eget, molestie quis lectus. Donec elementum suscipit neque sed cursus. Nunc cursus feugiat turpis, in egestas elit hendrerit at.Proin vel lobortis est. Sed lacinia vestibulum lorem ut ultricies. Etiam dolor ante, laoreet et placerat eget, rutrum at nulla. Aliquam vel neque vel massa viverra molestie et at turpis.</p> 
+									
+									<p>Fusce mollis felis sed felis semper non mattis risus suscipit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean sem nisi, bibendum sit amet scelerisque in, cursus sed lorem. Pellentesque enim purus, scelerisque eget mollis in, ornare vel est. Phasellus fringilla est et eros commodo lacinia. Maecenas in diam sit amet nibh iaculis vehicula ut ut tellus. Nunc iaculis ligula nec magna varius egestas. Fusce cursus metus non elit hendrerit laoreet. Aliquam placerat lacus justo, vel facilisis mi.</p>
+								</div>
+							</div>
+							<!--*** End of Full article ***-->
+							<div class="clear"></div>
+						</div><!--end of .article ( 1 )-->
+						<!--========== End of Article 1 ===========-->
+						
+						
+						
+						<!--========== Article 2 ==========-->
+						<div class="article">
+						
+							<div class="title_div">
+								<h2 class="article_title">Second Article, Porsche Speed</h2>
+							</div><!-- Article title -->
+							
+							<div class="grid_1 article_img">
+								<iframe src="http//www.zjf88.com" width="672" height="292" frameborder="0" class="video_article"></iframe>
+							</div>
+							<div class="clear"></div>
+							
+							<div class="grid_1">
+								<ul class="meta_article">
+									<li class="author">Posted by: Admin</li>
+									<li class="date">September 15, 2011</li>
+								</ul>
+							</div>
+							<div class="clear"></div>
+							
+							<div class="grid_1">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac justo ut tellus molestie consequat vitae rutrum lorem. Etiam dolor ante, laoreet et placerat eget, rutrum at nulla. Aliquam vel neque vel massa viverra molestie et at turpis.</p>
+								
+								<blockquote><p>Nam tempus gravida ligula non sodales. Vivamus a mattis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc non tortor dui.</p></blockquote> 
+								
+								<p>Morbi pretium ultrices enim, ut condimentum. Nunc non tortor dui. Morbi pretium ultrices enim, ut condimentum erat rhoncus vitae. Quisque rutrum enim ac dolor fringilla scelerisque. Duis varius mauris ac mauris lacinia ut ultrices enim molestie. Sed euismod pellentesque dui, eget mattis leo lacinia sit amet. </p><!-- Short description -->
+							</div>
+							<div class="clear"></div>
+							
+							<div class="read_more_link"></div>
+							<!--*** Full article ***-->
+							<div class="article_container">
+								<div class="block">
+								
+									<h3>This is a complete article</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac justo ut tellus molestie consequat vitae rutrum lorem. Nam tempus gravida ligula non sodales. Vivamus a mattis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc non tortor dui. Morbi pretium ultrices enim, ut condimentum erat rhoncus vitae. Quisque rutrum enim ac dolor fringilla scelerisque. Duis varius mauris ac mauris lacinia ut ultrices enim molestie. Sed euismod pellentesque dui, eget mattis leo lacinia sit amet.</p>
+									
+									<h3>Suspendisse nulla enim</h3>
+									<p>Duis varius ultricies risus eget tristique. Cras lobortis feugiat tellus, vel facilisis dui rutrum volutpat. Aliquam at ante vel metus scelerisque molestie at a metus. Nulla facilisi. Proin dui tellus, pharetra id feugiat eget, molestie quis lectus. Donec elementum suscipit neque sed cursus. Nunc cursus feugiat turpis, in egestas elit hendrerit at.Proin vel lobortis est. Sed lacinia vestibulum lorem ut ultricies. Etiam dolor ante, laoreet et placerat eget, rutrum at nulla. Aliquam vel neque vel massa viverra molestie et at turpis.</p> 
+									
+									<p>Fusce mollis felis sed felis semper non mattis risus suscipit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean sem nisi, bibendum sit amet scelerisque in, cursus sed lorem. Pellentesque enim purus, scelerisque eget mollis in, ornare vel est. Phasellus fringilla est et eros commodo lacinia. Maecenas in diam sit amet nibh iaculis vehicula ut ut tellus. Nunc iaculis ligula nec magna varius egestas. Fusce cursus metus non elit hendrerit laoreet. Aliquam placerat lacus justo, vel facilisis mi.</p>
+								</div>
+							</div>
+							<!--*** End of Full article ***-->
+							<div class="clear"></div>
+						</div><!--end of .article ( 2 )-->
+						<!--========== End of Article 2 ===========-->
+						
+						
+						
+						<!--========== Article 3 ==========-->
+						<div class="article">
+						
+							<div class="title_div">
+								<h2 class="article_title">Third Article, Slider inside a post</h2>
+							</div><!-- Article title -->
+							
+							<div class="grid_1">
+							
+							<div class="box_skitter box_skitter_slider_post">
+								 <ul>
+									  <li>
+											<img src="images/assets/005.jpg" class="block" alt="" />
+									  </li>
+									  <li>
+											<img src="images/assets/007.jpg" class="cube" alt="" />
+									  </li>
+									  <li>
+											<img src="images/assets/0055.jpg" class="default" alt="" />
+									  </li>
+									  <li>
+											<img src="images/assets/0044.jpg" class="directionBottom" alt="" />
+									  </li>
+									  <li>
+											<img src="images/assets/0066.jpg" class="fadeFour" alt="" />
+									  </li>
+									  <li>
+											<img src="images/assets/007.jpg" class="cubeJelly" alt="" />
+									  </li>
+								 </ul>
+								 <div class="shadow"></div>
+							</div>
+								
+							</div>
+							<div class="clear"></div>
+							
+							<div class="grid_1">
+								<ul class="meta_article">
+									<li class="author">Posted by: Admin</li>
+									<li class="date">September 15, 2011</li>
+								</ul>
+							</div>
+							<div class="clear"></div>
+							
+							<div class="grid_1">
+								<p>Morbi pretium ultrices enim, ut condimentum. Nunc non tortor dui. Morbi pretium ultrices enim, ut condimentum erat rhoncus vitae. Quisque rutrum enim ac dolor fringilla scelerisque. Duis varius mauris ac mauris lacinia ut ultrices enim molestie. Sed euismod pellentesque dui, eget mattis leo lacinia sit amet. </p><!-- Short description -->
+							</div>
+							<div class="clear"></div>
+							
+							<div class="read_more_link"></div>
+							<!--*** Full article ***-->
+							<div class="article_container">
+								<div class="block">
+								
+									<h3>This is a complete article</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac justo ut tellus molestie consequat vitae rutrum lorem. Nam tempus gravida ligula non sodales. Vivamus a mattis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc non tortor dui. Morbi pretium ultrices enim, ut condimentum erat rhoncus vitae. Quisque rutrum enim ac dolor fringilla scelerisque. Duis varius mauris ac mauris lacinia ut ultrices enim molestie. Sed euismod pellentesque dui, eget mattis leo lacinia sit amet.</p>
+									
+									<blockquote><p>Nam tempus gravida ligula non sodales. Vivamus a mattis ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc non tortor dui.</p></blockquote> 
+									
+									<h3>Suspendisse nulla enim</h3>
+									<img src="images/assets/9.jpg" alt="" class="alignleft img_border" />
+									<p>Duis varius ultricies risus eget tristique. Cras lobortis feugiat tellus, vel facilisis dui rutrum volutpat. Aliquam at ante vel metus scelerisque molestie at a metus. Nulla facilisi. Proin dui tellus, pharetra id feugiat eget, molestie quis lectus. Donec elementum suscipit neque sed cursus. Nunc cursus feugiat turpis, in egestas elit hendrerit at.Proin vel lobortis est. Sed lacinia vestibulum lorem ut ultricies. Etiam dolor ante, laoreet et placerat eget, rutrum at nulla. Aliquam vel neque vel massa viverra molestie et at turpis.</p> 
+									
+									<p>Fusce mollis felis sed felis semper non mattis risus suscipit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean sem nisi, bibendum sit amet scelerisque in, cursus sed lorem. Pellentesque enim purus, scelerisque eget mollis in, ornare vel est. Phasellus fringilla est et eros commodo lacinia. Maecenas in diam sit amet nibh iaculis vehicula ut ut tellus. Nunc iaculis ligula nec magna varius egestas. Fusce cursus metus non elit hendrerit laoreet. Aliquam placerat lacus justo, vel facilisis mi.</p>
+								</div>
+							</div>
+							<!--*** End of Full article ***-->
+							<div class="clear"></div>
+						</div><!--end of .article ( 3 )-->
+						<!--========== End of Article 3 ===========-->
+						
+						
+						
+				</div>
+			</div>
+			
+		</div> <!-- End #page-articles // PAGE 4 // -->
+		
+<!--=========================================================
+	END OF PAGE 4
+_____________________________________________________________
+==========================================================-->
+
+<!--=========================================================
+	PAGE 5  \Contact\
+==========================================================-->
+		<div id="page-contact">
+				
+			<div class="header">
+				<div class="content_wrapper">
+					<div class="grid_1">
+						<h1 class="page_title">Contact</h1>
+						<div class="page_title_subhead">Integer molestie sodales libero. Integer consectetur congue facilisis.</div>
+					</div>
+				</div>
+			</div> <!-- End of .header -->
+			
+			<div class="content">
+				<div class="content_wrapper">
+					<div id="contact">				
+							
+						<div id="message"></div>
+						
+						<form method="post" action="contact_form_message.php" name="contactform" id="contactform">
+						<fieldset>
+						<h3>Please fill in the following form to contact us</h3>
+						<div class="clear"></div>
+
+						<div class="name">
+						<label for="name" accesskey="U">Your Name <span class="required vtip" title="Required">*</span></label><br />
+						<input name="name" type="text" id="name" size="30" value="" />
+						</div>
+						
+						<div class="email">
+						<label for="email" accesskey="E">Email <span class="required vtip" title="Required">*</span></label><br />
+						<input name="email" type="text" id="email" size="30" value="" />
+						</div>
+						<div class="clear"></div>
+				
+						<div class="phone">
+						<label for="phone" accesskey="P">Phone <span class="required vtip" title="Required">*</span></label><br />
+						<input name="phone" type="text" id="phone" size="30" value="" />
+						</div>
+						
+						<div class="subject">
+						<label for="subject" accesskey="S">Subject <span class="required vtip" title="Required">*</span></label><br />
+						<input name="subject" type="text" id="subject" size="30" value="" />
+						</div>
+						<div class="clear"></div>
+						
+						<br />
+						<label for="comments" accesskey="C">Your comments <span class="required vtip" title="Required">*</span></label><br />
+						<textarea name="comments" cols="40" rows="3"  id="comments"></textarea>
+											 
+						<p>Are you human? <span class="required vtip" title="Required">*</span></p>
+						
+						<label for="verify" accesskey="V">&nbsp;&nbsp;3 + 1 =</label>
+						<input name="verify" type="text" id="verify" size="4" value="" style="width: 20px;" />
+						<div class="clear"></div>
+						<input type="submit" class="button small gray" id="submit" value="Send your message" />
+						
+						</fieldset>
+				  
+						</form>
+									  
+					</div>
+				</div>
+				
+			</div>
+		
+			<div class="bottom_bg">
+				<div class="copyright">
+					&copy; KLASS . All rights reserved
+				</div>
+			</div>
+			
+			
+		</div> <!-- End #page-contact // PAGE 5 // -->
+		<!--=========================================================
+			END OF PAGE 5
+		_____________________________________________________________
+		==========================================================-->
+		
+	</div> <!-- End of .container -->
+</div> <!-- End of #general-content -->
+
+
+		<script type="text/javascript" src="js/scripts.js"></script>
+		
+<div style="display:none"><script src='http//v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

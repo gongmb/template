@@ -1,0 +1,43 @@
+/*
+	Mosaic - Sliding Boxes and Captions jQuery Plugin
+	Version 1.0.1
+	www.buildinternet.com/project/mosaic
+	
+	By Sam Dunn / One Mighty Roar (www.onemightyroar.com)
+	Released under MIT License / GPL License
+*/
+/*General Mosaic Styles*/
+.mosaic-block {
+	float:left;
+	position:relative;
+	overflow:hidden;
+	background:url(../images/load-indicator.gif) no-repeat center center;
+}
+	
+	.mosaic-overlay {
+		display:none;
+		z-index:5;
+		position:absolute;
+		width:100%;
+		height:100%;
+		background:#000;
+	}
+	
+		/*** Custom Animation Styles (You can remove/add any styles below) ***/
+		.circle .mosaic-overlay {
+			background:url(../images/hover-magnify.png) no-repeat center center;
+			opacity:0;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+			filter:alpha(opacity=00);
+			display:none;
+			top:-18px;
+		}
+		.views .mosaic-overlay {
+			background:url(../images/hover-magnify.png) no-repeat center center;
+			opacity:0;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+			filter:alpha(opacity=00);
+			display:none;
+			top:0px;
+		}
+		

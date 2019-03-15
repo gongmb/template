@@ -1,0 +1,136 @@
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+RESET & HTML ELEMENTS
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+blockquote, body, button, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, img, legend, li, ol, p, pre, td, th, ul {margin:0; padding:0; border:0; vertical-align:baseline;}
+address, blockquote, dl, fieldset, form, h1, h2, h3, h4, h5, h6, ol, p, table, ul {margin:15px 0;}
+body {padding:50px 0; background:url("../design/bg.png") 50% 0 repeat-y; font:0.8em/1.5 "arial", sans-serif;}
+h1 {font-size:200%;}
+h2 {font-size:160%;}
+h3 {font-size:140%;}
+h4, h5, h6 {font-size:120%;}
+form ul {list-style:none;}
+form li {display:block; padding-bottom:7px;}
+form li label {display:block; padding-bottom:3px;}
+input, select, textarea {font-size:100%; font-family:"arial",sans-serif;}
+table.table {border-collapse:collapse; border-spacing:0;}
+table.table th, table.table td {padding:7px 10px;}
+table.table th {font-weight:bold;}
+ul.ul {margin-left:20px; list-style:none;}
+ul.ul li {padding-left:15px; background:url("../design/ul.gif") 0 5px no-repeat;}
+ul.ul ul {margin:0 0 0 20px; list-style:none;}
+img.f-left {margin-right:15px;}
+img.f-right {margin-left:15px;}
+.inner_copyright{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+LAYOUT
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#main {position:relative; width:960px; margin:0 auto;}
+#header {position:relative; padding:0 20px 20px 20px;}
+#header #logo {margin:0; font-size:400%; line-height:1;}
+#header #logo a {text-decoration:none;}
+#header #logo span {font-weight:bold;}
+#header #slogan {position:absolute; top:25px; right:20px; margin:0; font-size:180%; line-height:1; font-weight:normal;}
+#nav {position:relative; height:43px; padding:17px 5px 0 5px; background:url("../design/nav.png") 0 0 no-repeat;}
+#nav ul {margin:0; list-style:none; font-size:120%;}
+#nav ul li {display:inline;}
+#nav ul li a {display:block; float:left; padding:2px 17px 2px 15px; background:url("../design/nav-separator.png") 100% 0 repeat-y; text-decoration:none;}
+#nav ul li a:hover {text-decoration:underline;}
+#nav ul li.last a {background:none;}
+#nav ul li.current a {font-weight:bold;}
+#nav #search {position:absolute; top:17px; right:20px; margin:0;}
+#nav #search #search-input {position:absolute; top:0; right:29px;}
+#nav #search #search-input input {padding:3px; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px;}
+#nav #search #search-submit {position:absolute; top:0; right:0;}
+#tray {padding:10px 20px; background:url("../design/tray.png") 0 0 repeat-x;}
+#tray p {margin:0;}
+#tray p.f-left {padding-top:3px;}
+#tray p.f-left span {margin:0 5px;}
+#tray p.f-right img {display:block; float:left; margin-left:5px;}
+#section {background:url("../design/section.png") 0 0 repeat-y;}
+#content {float:left; width:670px; text-align:justify;}
+#content .padding {padding:20px 20px 15px 20px;}
+#aside {float:right; width:290px; _margin-right:-10px; padding:20px 0;}
+#aside p {margin:0;}
+#aside .title {position:relative; right:-10px; width:295px; height:65px; margin:0; padding-left:5px; background:url("../design/title.png") 0 0 no-repeat; font-size:140%; font-weight:normal; line-height:45px;}
+#aside .padding {padding:0 15px 15px 15px;}
+#footer {padding:25px 20px 0 20px; background:url("../design/footer.png") 0 0 no-repeat;}
+#footer p {margin:0;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: HOMEPAGE
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#topstory {padding:15px 20px 20px 20px; background:url("../design/topstory.png") 0 0 repeat-x;}
+#topstory h1 {margin:0; font-size:240%;}
+#topstory h1 a {text-decoration:none;}
+#topstory p {margin:0;}
+#topstory .tag {position:relative; left:-40px; height:55px; overflow:hidden; margin-top:10px; padding-left:40px; background:url("../design/tag.png") 0 0 no-repeat; line-height:35px;}
+#topstory .tag a:hover {text-decoration:none;}
+#topstory .tag span {padding-left:25px;}
+#topstory .tag span a:hover {text-decoration:underline;}
+#topstory .tag span span {margin:0 5px; padding:0;}
+.articles {margin:-15px 0 15px 0; list-style:none;}
+.articles li {display:block; padding:15px 0;}
+.articles li .articles-img {float:left; width:200px;}
+.articles li .articles-img img {display:block;}
+.articles li .articles-desc {float:right; width:415px;}
+.articles li .articles-desc h2, p {margin:0;}
+.articles li .articles-desc h2 {margin:0; font-size:180%; line-height:1.2;}
+.articles li .articles-desc h2 a {text-decoration:none;}
+.articles li .articles-desc .articles-info {margin:13px 0;}
+.articles li .articles-desc .articles-info-inner {padding:5px 10px; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px;}
+.articles li .articles-desc .articles-info-inner span {margin:0 5px;}
+.pagination {font-size:110%;}
+.pagination a {padding:5px;}
+.pagination a.current {border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; text-decoration:none; font-weight:bold;}
+.ads {margin:0; list-style:none;}
+.ads li {display:block; float:left; margin-right:10px;}
+.ads li img {display:block; width:125px; height:125px;}
+.ads li.last {margin-right:0;}
+.menu {margin:0; list-style:none;}
+.menu li {display:inline;}
+.menu li a {display:block; padding:5px 0;}
+.menu li.current a {font-weight:bold; text-decoration:none;}
+.menu li.first a {padding-top:0;}
+.menu li.last a {padding-bottom:0; border-bottom:0 !important;}
+.sponsors {margin:0; list-style:none; font-size:85%;}
+.sponsors li {padding:10px 0;}
+.sponsors li a {font-size:115%;}
+.sponsors li.first {padding-top:0;}
+.sponsors li.last {padding-bottom:0; border-bottom:0 !important;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: SUBPAGE
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.main-title {padding:15px 20px 20px 20px; background:url("../design/topstory.png") 0 0 repeat-x;}
+.main-title h1 {margin:0; font-size:240%;}
+.gallery li {display:block; float:left; margin-right:10px;}
+.gallery li.last {margin:0;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+OTHERS
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.box {min-height:1px; _height:1%;}
+.box:after {display:block; visibility:hidden; clear:both; line-height:0; font-size:0; content:".";}
+.fix {float:none; clear:both; width:0; height:0; margin:0; padding:0; border:0; line-height:0; font-size:0;}
+.f-left {float:left !important;}
+.f-right {float:right !important;}
+.t-left {text-align:left !important;}
+.t-center {text-align:center !important;}
+.t-right {text-align:right !important;}
+.t-justify {text-align:justify !important;}
+.va-top {vertical-align:top !important;}
+.va-middle {vertical-align:middle !important;}
+.va-bottom {vertical-align:bottom !important;}
+.nom {margin:0 !important;}
+.nomt {margin-top:0 !important;}
+.nomb {margin-bottom:0 !important;}
+.hidden {position:absolute; left:-1000em; top:auto; width:1px; height:1px; overflow:hidden;}
+.noscreen {display:none;}
+.relative {position:relative;}
+.input-text {padding:5px;}
+.input-submit {padding:3px;}

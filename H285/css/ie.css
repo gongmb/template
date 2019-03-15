@@ -1,0 +1,34 @@
+
+
+
+.circle, .info, ul.list .count, blockquote img { behavior:url(js/PIE.htc); position:relative;}
+.info { behavior:url(js/PIE.htc); position:absolute;}
+
+
+.circle {
+	box-shadow: none;
+}
+
+
+
+.info {
+display: block;
+left: -100%;			
+background: #000;
+box-shadow: none;
+
+}
+.circle:hover .info {
+	left: 0;
+box-shadow: none;
+}
+
+.circle:hover .info{
+	display: block;
+}
+
+
+ul.logos  a:hover img, .socials a:hover{
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+
+}

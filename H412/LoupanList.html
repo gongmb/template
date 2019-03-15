@@ -1,0 +1,358 @@
+﻿
+
+<!DOCTYPE html> 
+<html lang="zh-CN">
+<head> 
+<title>仿新赣州房产网移动版手机wap房产网站模板楼盘列表页-3v3手机微信模板【http//www.zjf88.com/】</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=no,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<base target="_self" />
+<link rel="stylesheet" href="CSS/jquery.mobile-1.1.0.min.css" />
+<link rel="stylesheet" href="CSS/My.jquery.mobile.css" />
+<script src="JS/jquery-1.7.1.min.js"></script>
+<script src="JS/jquery.mobile-1.1.0.min.js"></script>
+<link rel="stylesheet" href="CSS/flexslider.css" type="text/css" media="screen" />
+<script src="js/jquery.flexslider-min.js"></script>
+<!-- Hook up the FlexSlider -->
+<script type="text/javascript">
+$(window).load(function() {
+$('.flexslider').flexslider();
+});	
+</script>
+
+<script language=JavaScript>
+function chkif_weixin()  
+{  
+if(typeof(WeixinJSBridge) =="undefined"){
+my_header.style.display='block'; 
+}
+}
+</script>
+
+</head> 
+<body onload="chkif_weixin()"> 
+
+<!-- ALLPAGE -->
+<div data-role="page" id="top">
+
+<!-- header -->
+<div data-role="header" data-position="inline" data-theme="x" id="my_header" style="display:none;">
+<a rel="external" href="index.asp" >首页</a>
+<h1 style="font-size:20px;margin:9px 0px 8px 0px !important;">老城区楼盘列表</h1>
+<a rel="external" href="SelectQUYU.asp" >按区域</a>
+</div> 
+<!-- /header -->
+
+
+
+<!-- SEARCH -->
+<div style="background-color:#efefef;text-align:center;">
+<div style="width:97%;padding-left:5px;padding-top:7px;height:44px;">
+<form name="sjsearch" id="sjsearch" action="/LoupanList.asp?act=search" method=post data-ajax="false"> 
+<input style="color:#999999;" type="search" name="keyword" id="searc-basic" value="请输入楼盘名称关键字" onMouseOver="this.focus()" onBlur="if (value ==''){value='请输入楼盘名称关键字'}"  onClick="if(this.value=='请输入楼盘名称关键字') this.value=''" />
+</form>
+</div>
+</div>
+<!-- /SEARCH -->
+
+
+
+
+<!-- content -->
+<div data-role="content">
+
+<div class="content-primary">
+
+<ul data-role="listview" data-inset="false" data-theme="c" data-dividertheme="c">
+
+
+
+<li><a rel="external" href="showhome_waploupan136.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20120116172310358944.jpg" class="lppic80x60" alt="嘉福·国际">
+<h3 style="margin:0px 0px 11px 0px;">嘉福·国际 <img src="images/dotzs.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+渡口路7号　　　　
+<span style="float:right">185 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan109.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20110702205901803533.jpg" class="lppic80x60" alt="春江花月">
+<h3 style="margin:0px 0px 11px 0px;">春江花月 <img src="images/dotzs.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+章江北大道与青年路西延伸段交汇处（棕榈岛水...
+<span style="float:right">72 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan157.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20130808094017309917.jpg" class="lppic80x60" alt="华城·山水人家">
+<h3 style="margin:0px 0px 11px 0px;">华城·山水人家 <img src="images/dotzs.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+赣南大道与站前大道（京九路）交汇处
+<span style="float:right">56 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan72.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20101118101534698504.jpg" class="lppic80x60" alt="国际时代广场">
+<h3 style="margin:0px 0px 11px 0px;">国际时代广场 <img src="images/dotzs.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+赣州市红旗大道94号（原冶机厂)
+<span style="float:right">49 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan147.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20120530211528454511.jpg" class="lppic80x60" alt="华谊城（桃子园）">
+<h3 style="margin:0px 0px 11px 0px;">华谊城（桃子园） <img src="images/dotzs.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+赣州市章贡区文明大道19号（原桃子园市场）
+<span style="float:right">30 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan134.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20120106131523952645.jpg" class="lppic80x60" alt="iMALL梦广场购物中心">
+<h3 style="margin:0px 0px 11px 0px;">iMALL梦广场购物中心 <img src="images/dotzs.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+位于赣州市河套老城区八一四大道与关刀坪路交...
+<span style="float:right">28 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan143.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20120510204447955241.jpg" class="lppic80x60" alt="旺达·国际数码港">
+<h3 style="margin:0px 0px 11px 0px;">旺达·国际数码港 <img src="images/dotzs.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+赣州市红旗大道与东桥路交汇处（原老粮食局）
+<span style="float:right">27 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan39.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20101118101231750868.jpg" class="lppic80x60" alt="滨江·东方胜境">
+<h3 style="margin:0px 0px 11px 0px;">滨江·东方胜境 <img src="images/dotzs.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+赣州市东桥路加油站旁　　　　
+<span style="float:right">27 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan667.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20131205151111243464.jpg" class="lppic80x60" alt="秀水华庭">
+<h3 style="margin:0px 0px 11px 0px;">秀水华庭 <img src="images/dotds.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+位于赣州老城区章江北大道与西桥路交汇处，国...
+<span style="float:right">24 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan10.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20101118101221765974.jpg" class="lppic80x60" alt="滨江·爱丁堡">
+<h3 style="margin:0px 0px 11px 0px;">滨江·爱丁堡 <img src="images/dotzs.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+赣州市章江北大道16附1号(蓝波湾旁)
+<span style="float:right">24 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan601.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20130906114223962670.jpg" class="lppic80x60" alt="华尔街铭府">
+<h3 style="margin:0px 0px 11px 0px;">华尔街铭府 <img src="images/dotzs.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+赣州市南河路中段（原汽压机厂）　　　　
+<span style="float:right">17 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan661.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20131108235837997730.jpg" class="lppic80x60" alt="青春驿站">
+<h3 style="margin:0px 0px 11px 0px;">青春驿站 <img src="images/dotds.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+官园里路（原质监局）　　　　
+<span style="float:right">16 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan97.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20101218144716653158.jpg" class="lppic80x60" alt="张家围17号花园">
+<h3 style="margin:0px 0px 11px 0px;">张家围17号花园 <img src="images/dotzs.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+赣州市章贡区张家围路17号　　　　
+<span style="float:right">13 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan4.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20101118103556247776.jpg" class="lppic80x60" alt="蔚蓝半岛">
+<h3 style="margin:0px 0px 11px 0px;">蔚蓝半岛 <img src="images/dotsw.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+赣州市章贡区章江北大道118号　　　　
+<span style="float:right">12 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan653.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20131105192636713679.jpg" class="lppic80x60" alt="万象国际广场">
+<h3 style="margin:0px 0px 11px 0px;">万象国际广场 <img src="images/dotds.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+位于老城区八一四大道(原肉联厂)
+<span style="float:right">10 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan660.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20131108234214300414.jpg" class="lppic80x60" alt="黄金大厦">
+<h3 style="margin:0px 0px 11px 0px;">黄金大厦 <img src="images/dotds.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+赣州市红旗大道　　　　
+<span style="float:right">8 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan50.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20101118102758572395.jpg" class="lppic80x60" alt="金樽花园二期">
+<h3 style="margin:0px 0px 11px 0px;">金樽花园二期 <img src="images/dotsw.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+赣州市杨公路1号　　　　
+<span style="float:right">7 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan13.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20101118103430465250.jpg" class="lppic80x60" alt="天华·御景苑">
+<h3 style="margin:0px 0px 11px 0px;">天华·御景苑 <img src="images/dotsw.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+章江北大道　　　　
+<span style="float:right">6 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan29.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20101118101255963741.jpg" class="lppic80x60" alt="步阳·金钻广场">
+<h3 style="margin:0px 0px 11px 0px;">步阳·金钻广场 <img src="images/dotsw.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+赣州市八一四大道与文明大道交界　　　　
+<span style="float:right">6 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan14.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20101118103223601330.jpg" class="lppic80x60" alt="南阳东昇三期">
+<h3 style="margin:0px 0px 11px 0px;">南阳东昇三期 <img src="images/dotsw.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+渡口路7号(原煤气公司厂区)　　　　
+<span style="float:right">5 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan38.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20101118102448158334.jpg" class="lppic80x60" alt="恒瑞·蓝湾美郡">
+<h3 style="margin:0px 0px 11px 0px;">恒瑞·蓝湾美郡 <img src="images/dotsw.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+赣州市黄屋坪张家围路　　　　
+<span style="float:right">5 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan11.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20101118101951301774.jpg" class="lppic80x60" alt="恒瑞·蓝波湾二期">
+<h3 style="margin:0px 0px 11px 0px;">恒瑞·蓝波湾二期 <img src="images/dotsw.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+章江北大道18号　　　　
+<span style="float:right">4 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan114.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20110515130122372924.jpg" class="lppic80x60" alt="地一大道">
+<h3 style="margin:0px 0px 11px 0px;">地一大道 <img src="images/dotsw.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+赣州市南门口、文清路　　　　
+<span style="float:right">2 周关注</span>
+</p>
+</a></li>
+
+
+<li><a rel="external" href="showhome_waploupan8.html">
+<img src="http//www.9ihome.com/allphoto/photo/small_20101118104133183767.jpg" class="lppic80x60" alt="星光华城">
+<h3 style="margin:0px 0px 11px 0px;">星光华城 <img src="images/dotsw.gif" width=22 height=13 border=0></h3>
+<p style="color:#8e8e8e;white-space:normal; width:100%;">地址：
+红旗大道（黄屋坪路口）　　　　
+<span style="float:right">2 周关注</span>
+</p>
+</a></li>
+
+
+</ul>
+</div>
+
+
+
+</div>
+<!-- /content -->
+
+
+
+
+
+<!-- footer -->
+<div data-role="footer" data-theme="a">
+<h4><a href="index.html">首页</a>  <a href="liebiao.html">列表演示图</a>  <a href="zixunzhengwen.html">资讯正文页</a>  <a href="loupanlist.html">楼盘列表页</a>  <a href="loupanzhengwen.html">楼盘正文页</a></h4>
+
+<div class="foot_nav" data-role="navbar">
+<ul>
+<li><a rel="external" href="../www.gz.jx.cn/gowxurl.asp@url=http_3A_2F_2Fm.9ihome.com_2FINDEX.ASP">首 页</a></li>
+<li><a rel="external" href="../www.gz.jx.cn/gowxurl.asp@url=@act=&keyword=&quyu=&page=1#top">顶 部</a></li>
+</ul>
+</div> 
+</div>
+
+
+<div style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https//" : " http//");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F07a6f745f5dfff546adfee3e08df29de' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https//" : " http//");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3d3ce349f41d84c570ccacc564886448' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+<!-- /footer -->
+
+</div>
+<!-- /ALLPAGE -->
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,181 @@
+﻿
+    	 <!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>收货信息</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<link rel="stylesheet" href="css/yotime.webapp.css">
+</head>
+<body>
+					
+					<input type="hidden" value="" id="user_usname"/>
+	<input type="hidden" value="" id="user_usphone"/>
+	<div id="menu">
+		<script src="js/iscroll.js"></script>
+	<script src="js/myScroll.js"></script>
+	
+		<header id="nheader" >
+	<h1 class="logo yt" style="margin:0px;"><a href="/yotime/wxapp/index.vm"><img src="images/head_yt.png" alt=""/></a></h1>
+		<div class="nr">
+		<ul class="navbar clearfix" id="nbl">
+			<li class="nnavitems">
+				<a href="/yotime/wxapp/my.vm"><i class="nicon_my"></i>我的悠享家</a>
+			</li>
+			<li class="nnavitems">
+				<a href="/yotime/wxapp/shopcar.vm"><i class="nicon_car"></i>购物车</a>
+				<span class="nnavbar_procount" id="carnum"> 1 </span>			</li>
+			<li class="nnavitems">
+				<a href="/yotime/wxapp/index.vm"><i class="nicon_shop"></i>商城</a>
+			</li>
+		</ul>
+	</div>
+</header><!-- /header -->
+	    <form action="/newOrder.do" method="post" name="orderForm" id="order_form"  >
+    	<input type="hidden" name="__method" value="AddOrder">
+    	<input type="hidden" name="shopId" id="shopId" value="5217" class="shop_id"/>
+		<input type="hidden" name="fromPage" value="product_address.vm?webFrom=weixing"/>
+		<input type="hidden" name="domain" id="domain" value="weixing">    	<input type="hidden" name="oldOrderId" id="oldOrderId" value=""/>
+		<input type="hidden" name="state" value="1"/>    	<input type="hidden" name="isDine"  id="isDine" value="-1"/>    	<input type="hidden" name="is_uuo" id="is_uuo" value="0"/>		<input type="hidden" name="take_way" id="take_way" value="0"/>		<input type="hidden" name="setted_time" class="setted_time" value="1" id="setted_time_radio"/>				<input type="hidden" name="address"  value=""/>
+    	<input type="hidden" name="areaid"  value=""/>
+    	<input type="hidden" name="lat"  id="lat" value=""/>
+    	<input type="hidden" name="lng" id="lng"  value=""/>
+							<input type="hidden" value="37401" name="productId" class="productId">
+    			<div id="content_x">
+			<div id="scroller">
+			<div class="adrsWrap">
+				<section class="btngroup clearfix addrstype">
+					<a href="javascript:void(0);" class="btn selected" take_way="0">送货上门</a>
+					<a href="javascript:void(0);" class="btn" take_way="1">门店自提</a>
+				</section>				
+				<section class="box_address show">
+					<div class="adrs_select">
+						<h2 class="adrs_title">收货人信息</h2>
+						<div class="ui_select gray">
+							<span class="ui_inner">
+								<span class="ui_inner_text">新增收货地址</span>
+								<span class="ui_inner_arrow"></span>
+							</span>	
+							<select name="memberId"  id="sh_addr" >
+								<option selected="selected" value="-1" >新增收货地址</option>
+															</select>
+						</div>
+					</div>
+					<div class="adrs_iptgroup sh_info">
+						<div class="adrs_iptgroup_items">
+							<span class="aii_left"><i class="icon_adrs_user"></i></span>
+							<input type="text" placeholder="收货人姓名"   name="contactName" value=""/>
+						</div>
+						<div class="adrs_iptgroup_items">
+							<span class="aii_left"><i class="icon_adrs_phone"></i></span>
+							<input type="text" placeholder="收货人联系手机"  name="contactNumber" value=""/>
+						</div>
+						<div class="adrs_iptgroup_items">
+							<span class="aii_left"><i class="icon_adrs_mark"></i></span>
+							<input type="text" placeholder="收货地址"   class="address" value="" />
+						</div>
+					</div>
+					    					<div class="adrs_yz">
+    							<input type="checkbox" id="sh_dh_isSame" />
+    							收货人与订货人信息一致
+    					</div>
+									</section>				
+				<section class="box_address" name="">
+					<h2 class="adrs_title">请选择自提点</h2>
+					<div class="adrs_iptgroup">
+    										<div class="adrs_iptgroup_items">
+							<label for="p_61">
+								<div class="adrs_mdzt_info"> 
+									<p>拱墅区古河巷稻香园南区11幢3单元悠享家店面</p>
+									<p class="tel">电话：4000-173-773</p>
+								</div>
+								<span class="pro_buybox_circle prds_circle">
+									<input type="radio" class="prds_radio zt_radio" value="61" name="psPlaceId" id="p_61" addr="杭州市拱墅区古河巷稻香园南区11幢3单元悠享家店面" lat="30.274089" lng="120.155069" >
+									<span class="innerCir"></span>
+								</span>
+							</label>
+						</div>
+    									</div>
+				</section>
+				
+				<h2 class="adrs_title">订货人信息</h2>
+				<div class="adrs_iptgroup dh_info">
+					<div class="adrs_iptgroup_items">
+						<span class="aii_left"><i class="icon_adrs_user"></i></span>
+						<input type="text" placeholder="订货人姓名" name="linkman" value="" />
+					</div>
+					<div class="adrs_iptgroup_items">
+						<span class="aii_left"><i class="icon_adrs_phone"></i></span>
+						<input type="text" placeholder="订货人联系手机" name="telephone" value=""/>
+					</div>
+				</div>
+
+				<h2 class="adrs_title">送达时间</h2>
+                <div class="adrs_iptgroup">
+                    <div class="adrs_iptgroup_items">
+                        <span class="aii_left"><i class="icon_adrs_timer"></i></span>
+                        <div class="adrs_select_datetime clearfix">
+                            <div class="ui_select gray adrs_select_date fl">
+                                <span class="ui_inner">
+                                    <span class="ui_inner_text">选择日期</span>
+                                    <span class="ui_inner_arrow"></span>
+                                </span>
+                                <select name="bookDate" id="bookDate"></select>
+                            </div><!-- end adrs_select_date -->
+                            <div class="ui_select gray adrs_select_time fl">
+                                <span class="ui_inner">
+                                    <span class="ui_inner_text">选择时间</span>
+                                    <span class="ui_inner_arrow"></span>
+                                </span>
+                                <select name="bookTime" id="bookTime"></select>
+                            </div><!-- end adrs_select_time -->
+                        </div><!-- end adrs_select_datetime -->
+                    </div>
+                </div><!-- end adrs_iptgroup -->
+
+				<h2 class="adrs_title">优惠码</h2>
+				<div class="adrs_iptgroup">
+					<div class="adrs_iptgroup_items use_yh">
+						<span class="aii_left"><i class="icon_adrs_bookmark"></i></span>
+						<input name="" id="yh_code" type="text" placeholder="输入优惠码"/>
+					</div>
+					<div class="cancel_yh" style="display:none;"><span>成功使用</span><input type="button" value="取消"/></div>
+				</div>
+
+                <h2 class="adrs_title">备注</h2>
+                <div class="adrs_iptgroup">
+                    <textarea rows="3" name="remarks"></textarea>
+                </div><!-- end adrs_iptgroup -->
+
+				<h2 class="adrs_title">付款方式</h2>
+				<div class="adrs_iptgroup">
+					
+					<div class="adrs_iptgroup_items">
+						<label for="test2">
+							<span class="aii_left2"><i class="icon_adrs_yw"></i></span>
+							<span class="aii_txt">货到付款</span>
+							<span class="pro_buybox_circle prds_circle">
+									<input type="radio" class="prds_radio zf_radio" name="payType" id="" value="0" checked >
+									<span class="innerCir"></span>
+							</span>
+						</label>
+					</div>
+					
+				</div>
+				<div class="ui_btn red post_order">
+					<a class="submitForm" href="javascript:void(0);">提交订单</a>
+					<a class="submitWait"  style="display:none;" href="javascript:void(0);">正在提交...</a>
+				</div>
+			</div>
+			</div>
+		</div><!-- /content -->
+	</form>
+	</div><!-- /page -->
+</body>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/verify.js"></script>
+<script src="js/swipe.js"></script>
+<script src="js/yotime_webapp_order.js?t=201307121.js"></script>
+<script src="js/yotime_bookdate.js"></script>
+<script src="js/yotime.webapp.js?t=201307121.js"></script>
+</html>

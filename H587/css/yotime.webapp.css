@@ -1,0 +1,1200 @@
+body {
+	margin: 0px; padding: 0px;
+}
+html {
+	margin: 0px; padding: 0px;
+}
+header {
+	margin: 0px; padding: 0px;
+}
+footer {
+	margin: 0px; padding: 0px;
+}
+section {
+	margin: 0px; padding: 0px;
+}
+div {
+	margin: 0px; padding: 0px;
+}
+span {
+	margin: 0px; padding: 0px;
+}
+i {
+	margin: 0px; padding: 0px;
+}
+p {
+	margin: 0px; padding: 0px;
+}
+h1 {
+	margin: 0px; padding: 0px;
+}
+h2 {
+	margin: 0px; padding: 0px;
+}
+h3 {
+	margin: 0px; padding: 0px;
+}
+ul {
+	margin: 0px; padding: 0px;
+}
+li {
+	margin: 0px; padding: 0px;
+}
+select {
+	margin: 0px; padding: 0px;
+}
+input {
+	margin: 0px; padding: 0px;
+}
+button {
+	margin: 0px; padding: 0px;
+}
+textarea {
+	margin: 0px; padding: 0px;
+}
+aside {
+	margin: 0px; padding: 0px;
+}
+article {
+	margin: 0px; padding: 0px;
+}
+h1 {
+	font-size: 100%;
+}
+h2 {
+	font-size: 100%;
+}
+h3 {
+	font-size: 100%;
+}
+body {
+	font-family: "Î¢ÈíÑÅºÚ"; -text-size-adjust: none;
+}
+ul {
+	list-style: none;
+}
+a {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+a:focus {
+	
+}
+img {
+	border: 0px currentColor; width: 100%;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.pt60#content {
+	padding-top: 60px;
+}
+.top110#content {
+	top: 110px;
+}
+.clearfix::after {
+	height: 0px; clear: both; font-size: 0px; display: block; visibility: hidden; content: " ";
+}
+.clearfix {
+	
+}
+.icon_loading {
+	margin: 6px 5px 0px 0px; width: 23px; vertical-align: -5px; display: inline-block;
+}
+.probox img {
+	vertical-align: top;
+}
+.rq_proimg img {
+	vertical-align: top;
+}
+.car_proimg img {
+	vertical-align: top;
+}
+.my_odlistImg img {
+	vertical-align: top;
+}
+.my_ImgList .img img {
+	vertical-align: top;
+}
+.prdt_img img {
+	vertical-align: top;
+}
+#header {
+	background: url("../images/barbg.gif") 0% 0% / auto 50%;
+}
+.selected.navitems {
+	background: url("../images/barbg.gif") 0% 0% / auto 50%;
+}
+[class^='icon_'] {
+	background: url("../images/sprite.png") no-repeat 0% 0% / 37px auto;
+}
+[class*=' icon_'] {
+	background: url("../images/sprite.png") no-repeat 0% 0% / 37px auto;
+}
+[class^='nicon_'] {
+	background: url("../images/sprite.png") no-repeat 0% 0% / 37px auto;
+}
+[class*=' nicon_'] {
+	background: url("../images/sprite.png") no-repeat 0% 0% / 37px auto;
+}
+#header {
+	border: currentColor; left: 0px; width: 100%; position: absolute; z-index: 1;
+}
+#footer {
+	border: currentColor; left: 0px; width: 100%; position: absolute; z-index: 1;
+}
+#header {
+	top: 0px; height: 50px;
+}
+.logo {
+	margin: 10px auto 0px; height: 30px;
+}
+.yt.logo {
+	width: 79px;
+}
+.shopcar.logo {
+	width: 72px;
+}
+.my.logo {
+	width: 121px;
+}
+.bind_suc.logo {
+	width: 100px;
+}
+.bind.logo {
+	width: 109px;
+}
+.orderlist.logo {
+	width: 97px;
+}
+.address.logo {
+	width: 97px;
+}
+.success.logo {
+	width: 97px;
+}
+.login.logo {
+	width: 49px;
+}
+.set.logo {
+	width: 49px;
+}
+.headerCtrl {
+	top: 10px; width: 70px; height: 30px; position: absolute; z-index: 11;
+}
+.pullleft.headerCtrl {
+	left: 10px;
+}
+.pullright.headerCtrl {
+	right: 10px;
+}
+#content {
+	left: 0px; top: 0px; width: 100%; bottom: 10px; position: absolute;
+}
+#content_n {
+	padding-bottom: 48px;
+}
+#content_x {
+	left: 0px; top: 60px; width: 100%; bottom: 0px; overflow: hidden; position: absolute;
+}
+#scroller {
+	padding: 0px; width: 100%; position: absolute; z-index: 1;
+}
+.idnexProGroup {
+	margin: 0px auto; width: 100%;
+}
+.shoptype_wrap {
+	background: rgb(255, 255, 255); left: 0px; top: 50px; width: 100%; position: absolute; z-index: 2;
+}
+.shoptype {
+	width: 255px;
+}
+.swipe {
+	margin: 0px auto 10px; overflow: hidden; visibility: hidden; position: relative; max-width: 640px;
+}
+.swipe-wrap {
+	overflow: hidden; position: relative;
+}
+.swipe-wrap > li {
+	width: 100%; float: left; position: relative;
+}
+.swipe-wrap > li > a {
+	display: block;
+}
+.swipe-circle {
+	left: 50%; width: 40%; height: 15px; bottom: 10px; margin-left: -24px; position: absolute;
+}
+.circle {
+	background: rgb(255, 198, 41); border-radius: 5px; width: 10px; height: 10px; font-size: 0px; margin-right: 5px; float: left; display: block; box-shadow: inset 0px 1px 0px #333;
+}
+.selected.circle {
+	background: rgb(254, 74, 74);
+}
+.prolist {
+	margin: 0px 0px 4.16% 6%; width: 25%; float: left;
+}
+.probox {
+	padding: 3%; border-radius: 5px; border: 1px solid rgb(234, 234, 234); display: block; box-shadow: 0px 0px 2px 2px #f3f3f3;
+}
+.rq_proimg {
+	padding: 3%; border-radius: 5px; border: 1px solid rgb(234, 234, 234); display: block; box-shadow: 0px 0px 2px 2px #f3f3f3;
+}
+.my_ImgList .img {
+	padding: 3%; border-radius: 5px; border: 1px solid rgb(234, 234, 234); display: block; box-shadow: 0px 0px 2px 2px #f3f3f3;
+}
+.rq_proimg {
+	padding: 5px; height: 110px;
+}
+.rq_progroup {
+	padding-top: 2px; border-top-color: rgb(239, 236, 218); border-top-width: 1px; border-top-style: solid;
+}
+.rq_prolist {
+	border-width: 1px 0px; border-style: solid; border-color: rgb(239, 236, 218); margin-bottom: 2px;
+}
+.rq_prolist > a {
+	padding: 5px; display: block; position: relative;
+}
+.rq_proimg {
+	width: 110px; float: left;
+}
+.rq_prointro {
+	padding-left: 140px;
+}
+.rq_prointro h2 {
+	color: rgb(255, 123, 41);
+}
+.rq_protxt {
+	height: 60px; line-height: 20px; overflow: hidden; padding-top: 5px; font-size: 14px;
+}
+.rq_price_size {
+	left: 145px; bottom: 5px; line-height: 20px; position: absolute;
+}
+.rq_size {
+	background: rgb(139, 119, 181); padding: 2px 5px; text-align: center; color: rgb(255, 255, 255); font-size: 12px;
+}
+.car_size {
+	background: rgb(139, 119, 181); border-radius: 12px; width: 23px; height: 23px; text-align: center; color: rgb(255, 255, 255); line-height: 23px; font-size: 12px; vertical-align: 2px; display: inline-block;
+}
+.rq_gt {
+	right: 10px; bottom: 5px; color: rgb(204, 204, 204); font-family: "arial"; font-weight: bold; position: absolute;
+}
+#pullUp {
+	border-width: 1px 0px; border-style: solid; border-color: rgb(229, 229, 229); text-align: center; line-height: 30px; margin-top: 10px; display: block; box-shadow: inset 0px -2px 2px #f5f5f5, inset 0px 2px 2px #f5f5f5;
+}
+.car_prolist {
+	border-bottom-color: rgb(239, 236, 218); border-bottom-width: 1px; border-bottom-style: solid; position: relative;
+}
+.car_proimg {
+	width: 110px; float: left;
+}
+.car_prointro {
+	padding: 10px 10px 0px 120px;
+}
+.car_title {
+	overflow: hidden;
+}
+.car_price {
+	color: rgb(255, 123, 41); font-size: 20px;
+}
+.carbtngroup {
+	right: 10px; bottom: 10px; position: absolute; z-index: 11;
+}
+.car_input {
+	border: 1px solid rgb(206, 202, 181);
+}
+.carbtn {
+	border: 1px solid rgb(206, 202, 181);
+}
+.car_input {
+	border-width: 1px 0px;
+}
+.carbtn {
+	padding: 0px 10px; height: 25px; line-height: 25px; font-weight: bold;
+}
+:first-child.carbtn {
+	border-radius: 5px 0px 0px 5px;
+}
+:last-child.carbtn {
+	border-radius: 0px 5px 5px 0px;
+}
+.car_input {
+	width: 30px; height: 25px;
+}
+.car_input input {
+	border: currentColor; width: 30px; height: 25px; text-align: center; line-height: 25px; font-size: 16px;
+}
+.car_delbtn {
+	background: rgb(255, 33, 81); padding: 0px 10px; border-radius: 8px; border: 1px solid rgb(182, 24, 58); right: 120px; bottom: 12px; color: rgb(255, 255, 255); display: none; position: absolute; box-shadow: inset 0px -2px 0px #b6183a;
+}
+.car_jz {
+	padding: 10px 0px; text-align: center;
+}
+.jz_helptxt {
+	color: rgb(255, 123, 41); font-size: 18px; font-weight: bold; margin-right: 10px;
+}
+.car_ept {
+	margin: 100px auto 10px; width: 170px;
+}
+.car_ept_txt {
+	text-align: center; color: rgb(119, 119, 119); font-size: 16px; font-weight: bold;
+}
+.my_account {
+	background: url("../images/mybg.jpg") no-repeat center; height: 95px; position: relative;
+}
+.my_yotime {
+	background: url("../images/my_yotime.png") no-repeat center / 76px auto; left: 40px; top: 10px; width: 76px; height: 76px; display: block; position: absolute;
+}
+.my_accountInfo {
+	left: 140px; top: 27px; color: rgb(255, 255, 255); font-size: 14px; font-weight: bold; position: absolute;
+}
+.my_accountitems {
+	padding-bottom: 8px;
+}
+.my_info {
+	border-width: 1px 0px; border-style: solid; border-color: rgb(229, 229, 229);
+}
+.my_infoitems {
+	padding: 15px 0px 10px; width: 33%; text-align: center; border-right-color: rgb(229, 229, 229); border-right-width: 1px; border-right-style: solid; float: left;
+}
+.my_infoitems > a {
+	display: block;
+}
+:last-child.my_infoitems {
+	border-right-color: currentColor; border-right-width: medium; border-right-style: none;
+}
+.my_infocount {
+	color: rgb(255, 123, 41); line-height: 40px; font-size: 24px; font-weight: bold;
+}
+.zero.my_infocount {
+	color: rgb(153, 153, 153);
+}
+.icon_people {
+	width: 17px; height: 12px; display: inline-block;
+}
+.icon_money {
+	width: 17px; height: 12px; display: inline-block;
+}
+.icon_people {
+	background-position: 0px -192px;
+}
+.icon_money {
+	background-position: 0px -204px;
+}
+.yt_contact {
+	margin: 20px auto 0px; padding: 5px 10px; border: 1px solid rgb(229, 229, 229); width: 90%; color: rgb(64, 64, 64); font-size: 12px;
+}
+.yt_contactTitle {
+	line-height: 24px; font-size: 14px;
+}
+.yt_contactitems {
+	border-top-color: rgb(229, 229, 229); border-top-width: 1px; border-top-style: dashed;
+}
+.yt_contactArticle {
+	width: 75%; line-height: 1.5em; padding-right: 1.5%; margin-top: 10px; border-right-color: rgb(229, 229, 229); border-right-width: 1px; border-right-style: solid;
+}
+.yt_contactpos {
+	margin: 7% auto 0px; width: 23%; text-align: center;
+}
+.icon_pos {
+	margin: 0px auto 5px; width: 14px; height: 18px; display: block;
+}
+.icon_smallshop {
+	background-position: 0px -18px; width: 10px; height: 10px; display: inline-block;
+}
+.my_order {
+	margin: 20px auto 0px; width: 90%;
+}
+.my_odlistItems {
+	padding: 10px; border-radius: 10px; border: 1px solid rgb(238, 238, 238); margin-bottom: 10px;
+}
+.my_odlistItems {
+	color: rgb(102, 102, 102); font-size: 12px;
+}
+.my_odlistItems a {
+	color: rgb(102, 102, 102); font-size: 12px;
+}
+.my_odlistPro {
+	width: 55%;
+}
+.my_odlistPro h2 {
+	color: rgb(255, 123, 41); font-size: 14px; margin-bottom: 10px;
+}
+.my_odlistPro span {
+	margin-left: 10px;
+}
+.my_odlistPro p {
+	line-height: 1.7em;
+}
+.my_odlistPro h2 {
+	overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+}
+.my_odlistPro p {
+	overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+}
+.my_odlistImg {
+	background: rgb(255, 255, 255); padding: 1%; border-radius: 5px; border: 1px solid rgb(233, 233, 233); width: 70px; margin-left: 3%; display: block; box-shadow: 2px 2px 2px #f0f0f0;
+}
+.my_odlistArrow {
+	width: 8%; height: 75px; text-align: center; line-height: 75px; display: block;
+}
+.my_odlistfooter {
+	padding-top: 7px; margin-top: 5px; border-top-color: rgb(229, 229, 229); border-top-width: 1px; border-top-style: solid;
+}
+.my_odlistPos {
+	margin-left: 5%;
+}
+.my_odlistState {
+	padding: 0px 4px; border-radius: 5px; color: rgb(255, 255, 255);
+}
+.st_ps.my_odlistState {
+	background: rgb(255, 123, 41);
+}
+.st_wc.my_odlistState {
+	background: rgb(85, 201, 44);
+}
+.icon_yen {
+	width: 12px; height: 12px; vertical-align: -1px; display: inline-block;
+}
+.icon_mark {
+	width: 12px; height: 12px; vertical-align: -1px; display: inline-block;
+}
+.icon_yen {
+	background-position: 0px -216px;
+}
+.icon_mark {
+	background-position: 0px -228px;
+}
+.my_odifWrap {
+	padding: 10px 0px;
+}
+.my_odifHeader {
+	margin: 10px auto 0px; width: 94%; color: rgb(64, 64, 64); font-size: 14px;
+}
+.my_odifCon {
+	margin: 10px auto 0px; width: 94%; color: rgb(64, 64, 64); font-size: 14px;
+}
+.my_odiBtnCD.red.ui_btn {
+	margin: 15px 0px; width: 20%;
+}
+.my_odifCon {
+	border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(238, 238, 238) rgb(238, 238, 238) currentColor; padding: 1.56%;
+}
+.my_odifCon h1 {
+	font-weight: normal;
+}
+.my_odifCon h2 {
+	font-weight: normal;
+}
+.my_odifConTitle {
+	padding-bottom: 5px; font-size: 14px; border-bottom-color: rgb(233, 233, 233); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+.my_odifPro {
+	padding-bottom: 15px; font-size: 12px; margin-top: 10px;
+}
+.my_odifProList {
+	margin-bottom: 5px;
+}
+.my_odifProList h2 {
+	float: left;
+}
+.my_odifProList span {
+	float: right;
+}
+.my_odif_hj {
+	color: rgb(255, 123, 41);
+}
+.my_odifImg {
+	border-width: medium 1px 1px; border-style: none solid solid; border-color: currentColor rgb(238, 238, 238) rgb(238, 238, 238); margin: 0px auto; padding: 10px 1.56% 0px; width: 94%; display: none;
+}
+.my_ImgList {
+	margin: 2.6%; width: 28%; float: left;
+}
+.my_ImgList > a {
+	display: block;
+}
+.my_odifImgCtrl {
+	margin: -20px auto 0px; width: 97.5%; height: 20px; text-align: center; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: solid; display: block; z-index: 999;
+}
+.my_odifImgCtrl > .icon_arrowDown {
+	margin-bottom: -9px;
+}
+.my_odifImgCtrl > .icon_arrowUp {
+	margin-bottom: -9px;
+}
+.icon_order {
+	width: 13px; height: 13px; vertical-align: -1px; display: inline-block;
+}
+.icon_goods {
+	width: 13px; height: 13px; vertical-align: -1px; display: inline-block;
+}
+.icon_order {
+	background-position: 0px -258px;
+}
+.icon_goods {
+	background-position: 0px -271px;
+}
+.icon_posBig {
+	background-position: 0px -284px; margin: 0px auto 5px; width: 13px; height: 19px; display: block;
+}
+.my_odifFooter {
+	padding-bottom: 20px;
+}
+.logintitle {
+	margin: 20px auto 0px; padding: 15px 0px 5px; width: 80%;
+}
+.loginBox {
+	margin: 20px auto 0px; padding: 15px 0px 5px; width: 80%;
+}
+.logintitle {
+	color: rgb(64, 64, 64); margin-bottom: -10px;
+}
+.loginBox {
+	border-radius: 7px; border: 1px solid rgb(238, 238, 238);
+}
+.loginitems {
+	background: rgb(255, 255, 255); margin: 0px auto 10px; border-radius: 20px; border: 1px solid rgb(221, 221, 221); width: 55.95%; height: 30px; line-height: 30px; padding-left: 10.71%; position: relative;
+}
+.loginIpt {
+	border: currentColor; width: 92%; line-height: 20px; font-size: 0.87em; vertical-align: 1px;
+}
+.icon_loginUser {
+	left: 7%; top: 10px; width: 8px; height: 8px; display: inline-block; position: absolute;
+}
+.icon_loginPsw {
+	left: 7%; top: 10px; width: 8px; height: 8px; display: inline-block; position: absolute;
+}
+.icon_phone {
+	left: 7%; top: 10px; width: 8px; height: 8px; display: inline-block; position: absolute;
+}
+.icon_code {
+	left: 7%; top: 10px; width: 8px; height: 8px; display: inline-block; position: absolute;
+}
+.icon_loginUser {
+	background-position: -19px -192px;
+}
+.icon_loginPsw {
+	background-position: -19px -203px;
+}
+.icon_phone {
+	background-position: -27px -192px;
+}
+.icon_code {
+	background-position: -27px -204px;
+}
+.loginbtn {
+	margin: 15px auto 30px; width: 74%;
+}
+.skipbtn {
+	margin: 15px auto 30px; width: 74%;
+}
+.skipbtn.ui_btn {
+	background: rgb(255, 255, 255); border-color: rgb(229, 229, 229); margin-top: 40px; box-shadow: inset 0px -2px 0px #ececec; text-shadow: none;
+}
+.skipbtn a {
+	color: rgb(102, 102, 102);
+}
+.loginDivider {
+	margin: 0px auto; width: 93%; text-align: center; color: rgb(153, 153, 153); font-size: 12px; border-top-color: rgb(229, 229, 229); border-top-width: 1px; border-top-style: solid;
+}
+.loginDivider > .txt {
+	background: rgb(255, 255, 255); margin: -7px auto 0px; width: 170px; display: block;
+}
+.thirdAccount {
+	text-align: center; padding-top: 25px;
+}
+.thirdAccount > a {
+	font-size: 12px; font-weight: bold; margin-right: 10%; display: inline-block;
+}
+.thirdAccount > a:last-child {
+	margin-right: 0px;
+}
+.icon_loginWB {
+	background: url("../images/login.png") no-repeat 0% 0% / 88px; margin: 0px auto 2px; width: 44px; height: 35px; display: block;
+}
+.icon_loginQQ {
+	background: url("../images/login.png") no-repeat 0% 0% / 88px; margin: 0px auto 2px; width: 44px; height: 35px; display: block;
+}
+.icon_loginQQ {
+	background-position: -44px 0px;
+}
+.pro_title {
+	margin: 10px auto; text-align: center; color: rgb(255, 123, 41); font-size: 18px; display: block;
+}
+.pro_img {
+	margin: 0px auto; width: 62.5%;
+}
+.pro_buybox {
+	border-width: 1px 0px; border-style: solid; border-color: rgb(238, 238, 238);
+}
+.pro_buyboxWrap {
+	border-width: 1px 0px; border-style: solid; border-color: rgb(238, 238, 238);
+}
+.pro_buybox {
+	margin: 15px auto; padding: 1px 0px; font-size: 14px;
+}
+.pro_buyboxWrap {
+	padding: 10px 0px;
+}
+.pro_buyboxWrap > .inner {
+	margin: 0px auto; width: 80%;
+}
+.pro_buybox_circle {
+	width: 10px; height: 10px; display: block;
+}
+.pro_buybox_circle > .innerCir {
+	width: 10px; height: 10px; display: block;
+}
+.pro_buybox_circle {
+	padding: 2px; border-radius: 12px; border: 1px solid rgb(238, 238, 238); margin-top: 7px; box-shadow: 1px 1px 1px #f2f2f2;
+}
+.pro_buybox_circle > .innerCir {
+	background: rgb(255, 198, 41); border-radius: 9px;
+}
+.pro_buybox_sizeprice {
+	margin: 7px 0px 0px 10px;
+}
+.icon_probuy {
+	background-position: -19px -216px; width: 18px; height: 14px; margin-right: 3px; vertical-align: -3px; display: inline-block;
+}
+.pro_buybox_btn {
+	width: 25%;
+}
+.pro_ctrlbox {
+	margin: 0px auto; width: 80%; text-align: center;
+}
+.pro_ctrlbox_items {
+	background: rgb(255, 123, 41); margin: 0px 3%; border-radius: 29px; width: 58px; height: 46px; text-align: center; color: rgb(255, 255, 255); line-height: 1.3em; padding-top: 12px; font-size: 14px; font-weight: bold; display: inline-block;
+}
+.share.pro_ctrlbox_items {
+	background: rgb(254, 74, 74);
+}
+.prdtbox {
+	margin: 0px auto; width: 90%;
+}
+.prdt_block {
+	margin: 15px auto 0px; padding: 3%; border-radius: 10px; border: 1px solid rgb(238, 238, 238); font-size: 14px;
+}
+.prdt_img {
+	width: 60px;
+}
+.prdt_txt {
+	margin-left: 3%;
+}
+.prdt_title {
+	color: rgb(255, 123, 41); font-size: 16px;
+}
+.prdt_txt > .pro_buybox_circle {
+	margin-top: 20px;
+}
+.prdt_txt > .pro_buybox_sizeprice {
+	margin-top: 20px;
+}
+.prdt_buybox_btn {
+	width: 22%; margin-top: 10px;
+}
+.code_resend {
+	padding: 10px 0px;
+}
+.code_resend .txthelp {
+	text-align: center;
+}
+.set_group {
+	margin: 15px auto 0px; border-radius: 10px; border: 1px solid rgb(229, 229, 229); width: 90%;
+}
+.set_list {
+	padding: 0px 10px; height: 46px; line-height: 46px; font-size: 16px; border-bottom-color: rgb(229, 229, 229); border-bottom-width: 1px; border-bottom-style: solid;
+}
+:last-child.set_list {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.set_list {
+	color: rgb(64, 64, 64); display: block;
+}
+.set_list > a {
+	color: rgb(64, 64, 64); display: block;
+}
+.set_list .fr {
+	font-size: 14px;
+}
+.logoutbtn.ui_btn {
+	background: rgb(255, 33, 81); margin: 15px auto 30px; border: 1px solid rgb(182, 24, 58); width: 85%; box-shadow: inset 0px -2px 0px #b6183a; text-shadow: none;
+}
+.logoutbtn > a {
+	color: rgb(255, 255, 255);
+}
+.icon_arrowR {
+	background-position: -19px -240px; width: 11px; height: 11px; margin-left: 5px; vertical-align: -3px; display: inline-block;
+}
+.onoff {
+	border-radius: 14px; width: 78px; height: 28px; overflow: hidden; margin-top: 10px; position: relative;
+}
+.onoff ::before {
+	font: 0px/0 arial; border-radius: 14px 14px 0px 0px; left: 3%; width: 94%; height: 6px; bottom: 6px; display: block; position: absolute; z-index: 10; content: "."; font-size-adjust: none; font-stretch: normal;
+}
+.onoff ::after {
+	font: 0px/0 arial; border-radius: 0px 0px 14px 14px; left: 3%; width: 94%; height: 6px; bottom: 0px; display: block; position: absolute; z-index: 10; content: "."; font-size-adjust: none; font-stretch: normal;
+}
+.onoff label {
+	border-radius: 14px; width: 78px; height: 28px; overflow: hidden; display: block;
+}
+.onoff input[type=checkbox] {
+	border: 0px currentColor; width: 100%; height: 100%; position: absolute; z-index: 2000; cursor: pointer; opacity: 0;
+}
+.onoff ul {
+	border-radius: 14px; width: 200px; height: 28px; overflow: hidden; -webkit-transition: .2s;
+}
+.onoff input[type=checkbox]:checked + ul {
+	margin-left: -52px;
+}
+.prds_buybtn {
+	margin: 15px auto 30px; width: 85%;
+}
+.prds_size {
+	width: 58%;
+}
+.prds_price {
+	width: 15%;
+}
+.prds_yh {
+	background: rgb(255, 123, 41); margin: 15px 0px 0px 2%; height: 16px; color: rgb(255, 255, 255); line-height: 16px; font-size: 14px;
+}
+.hide.prds_yh {
+	display: none;
+}
+.prds_label {
+	display: block; position: relative;
+}
+.prds_circle.pro_buybox_circle {
+	border-color: rgb(153, 153, 153);
+}
+.prds_circle {
+	top: 50%; right: 0px; margin-top: -8px; position: absolute;
+}
+.prds_circle > .innerCir {
+	background: rgb(255, 123, 41); display: none;
+}
+:checked.prds_radio + .innerCir {
+	display: block;
+}
+.prds_radio {
+	left: 0px; top: -1px; position: absolute; opacity: 0;
+}
+.adrsWrap {
+	margin: 0px auto; width: 90.62%;
+}
+.addrstype {
+	width: 175px;
+}
+.adrs_title {
+	margin: 10px 0px 5px; color: rgb(64, 64, 64);
+}
+.adrs_select {
+	margin-bottom: 10px;
+}
+.adrs_select_datetime {
+	left: 30px; top: -2px; width: 100%; position: absolute;
+}
+.adrs_select_datetime select {
+	height: 100%;
+}
+.adrs_select_datetime .ui_select {
+	border: currentColor;
+}
+.adrs_select_date .ui_inner {
+	border-right-color: rgb(229, 229, 229); border-right-width: 1px; border-right-style: solid;
+}
+.adrs_select_date .ui_inner_arrow {
+	right: 10px;
+}
+.adrs_select_time .ui_inner_arrow {
+	right: 5px;
+}
+.adrs_select_date.ui_select {
+	width: 50%;
+}
+.adrs_select_time.ui_select {
+	width: 35%;
+}
+.adrs_select_date {
+	border-right-color: rgb(229, 229, 229); border-right-width: 1px; border-right-style: solid;
+}
+.icon_adrs_user {
+	width: 18px; height: 20px; vertical-align: -4px; display: inline-block;
+}
+.icon_adrs_phone {
+	width: 18px; height: 20px; vertical-align: -4px; display: inline-block;
+}
+.icon_adrs_mark {
+	width: 18px; height: 20px; vertical-align: -4px; display: inline-block;
+}
+.icon_adrs_bookmark {
+	width: 18px; height: 20px; vertical-align: -4px; display: inline-block;
+}
+.icon_adrs_timer {
+	width: 18px; height: 20px; vertical-align: -4px; display: inline-block;
+}
+.icon_adrs_user {
+	background-position: -19px -258px;
+}
+.icon_adrs_phone {
+	background-position: -19px -277px;
+}
+.icon_adrs_mark {
+	background-position: -19px -297px;
+}
+.icon_adrs_bookmark {
+	background-position: -19px -317px;
+}
+.icon_adrs_timer {
+	background-position: 0px -435px;
+}
+.adrs_iptgroup {
+	border-radius: 5px; border: 1px solid rgb(229, 229, 229); overflow: hidden;
+}
+.adrs_iptgroup_items {
+	line-height: 35px; padding-right: 10px; font-size: 14px; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: solid; position: relative;
+}
+.adrs_mdzt_info {
+	padding: 2%; width: 85%; line-height: 16px;
+}
+.adrs_mdzt_info p {
+	color: rgb(64, 64, 64); overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+}
+.adrs_mdzt_info p.tel {
+	color: rgb(153, 153, 153);
+}
+.adrs_iptgroup textarea {
+	padding: 2%; border: currentColor; width: 95%; font-size: 14px;
+}
+:last-child.adrs_iptgroup_items {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.adrs_iptgroup_items input {
+	border: currentColor; width: 85%; font-size: 14px;
+}
+.adrs_iptgroup_items label {
+	display: block; position: relative;
+}
+.aii_left {
+	background: rgb(238, 238, 238); width: 30px; text-align: center; display: inline-block;
+}
+.aii_txt {
+	color: rgb(64, 64, 64); font-size: 14px;
+}
+.adrs_yz {
+	margin-top: 15px;
+}
+.checkbox {
+	top: 12px; width: 14px; height: 12px; right: 0px; position: absolute;
+}
+.checkbox > input[type='checkbox'] {
+	left: 0px; top: 0px; position: absolute; z-index: 99; opacity: 0;
+}
+.checkbox > input[type='checkbox']:checked ~ .innerckbox {
+	display: none;
+}
+.checkbox > input[type='checkbox']:checked ~ .innerckbox_selected {
+	display: block;
+}
+.innerckbox {
+	width: 14px; height: 12px;
+}
+.innerckbox_selected {
+	width: 14px; height: 12px;
+}
+.innerckbox {
+	background-position: 0px -339px; display: block;
+}
+.innerckbox_selected {
+	background-position: -14px -339px; display: none;
+}
+.icon_adrs_ye {
+	width: 33px; height: 21px; margin-left: 5px; vertical-align: -4px; display: inline-block;
+}
+.icon_adrs_yw {
+	width: 33px; height: 21px; margin-left: 5px; vertical-align: -4px; display: inline-block;
+}
+.icon_adrs_alipay1 {
+	width: 33px; height: 21px; margin-left: 5px; vertical-align: -4px; display: inline-block;
+}
+.icon_adrs_alipay2 {
+	width: 33px; height: 21px; margin-left: 5px; vertical-align: -4px; display: inline-block;
+}
+.icon_adrs_ye {
+	background-position: 0px -393px;
+}
+.icon_adrs_yw {
+	background-position: 0px -414px;
+}
+.icon_adrs_alipay1 {
+	background-position: 0px -351px;
+}
+.icon_adrs_alipay2 {
+	background-position: 0px -372px;
+}
+.box_address {
+	padding-bottom: 10px; display: none;
+}
+.show.box_address {
+	display: block;
+}
+.prfb_box {
+	margin: 15px auto 0px; border-radius: 10px; border: 1px solid rgb(238, 238, 238); font-size: 14px;
+}
+.prfb_list {
+	padding: 3%; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: solid;
+}
+:last-child.prfb_list {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.prfb_list_user {
+	margin-left: 5px;
+}
+.prfb_list_user {
+	color: rgb(153, 153, 153); line-height: 24px; display: block;
+}
+.prfb_list_date {
+	color: rgb(153, 153, 153); line-height: 24px; display: block;
+}
+.stars {
+	background: url("../images/stars.png") no-repeat; width: 72px; height: 20px; text-indent: -999em;
+}
+.stars1 {
+	background-position: 0px -97px;
+}
+.stars2 {
+	background-position: 0px -74px;
+}
+.stars3 {
+	background-position: 0px -50px;
+}
+.stars4 {
+	background-position: 0px -27px;
+}
+.stars5 {
+	background-position: 0px -3px;
+}
+.order_success {
+	margin: 20px auto 0px; width: 90px;
+}
+#footer {
+	background: rgb(238, 238, 238); height: 55px; bottom: 0px;
+}
+.navitems {
+	padding: 7px 0px 0px; width: 33.33%; height: 50px; text-align: center; float: left; position: relative;
+}
+.navitems > a {
+	display: block;
+}
+.arrowup {
+	border-width: 6px; border-style: solid; border-color: transparent transparent rgb(254, 77, 77); left: 50%; top: -12px; width: 0px; height: 0px; font-size: 0px; margin-left: -6px; display: none; position: absolute;
+}
+.navitems a {
+	color: rgb(153, 153, 153); font-size: 14px; font-weight: bold;
+}
+.icon_shop {
+	margin: 0px auto; width: 37px; height: 27px; display: block;
+}
+.icon_car {
+	margin: 0px auto; width: 37px; height: 27px; display: block;
+}
+.icon_my {
+	margin: 0px auto; width: 37px; height: 27px; display: block;
+}
+.icon_shop {
+	background-position: 0px -30px;
+}
+.icon_car {
+	background-position: 0px -57px;
+}
+.icon_my {
+	background-position: 0px -84px;
+}
+.selected.navitems a {
+	color: rgb(255, 255, 255); display: block;
+}
+.selected.navitems .arrowup {
+	display: block;
+}
+.selected.navitems .icon_shop {
+	background-position: 0px -111px;
+}
+.selected.navitems .icon_car {
+	background-position: 0px -138px;
+}
+.selected.navitems .icon_my {
+	background-position: 0px -165px;
+}
+.navbar_procount {
+	left: 50%; top: 12px; width: 16px; height: 8px; text-align: center; color: rgb(255, 255, 255); line-height: 8px; font-size: 10px; font-weight: bold; margin-left: -12px; display: block; position: absolute; z-index: 999;
+}
+.selected.navitems .navbar_procount {
+	color: rgb(255, 33, 81);
+}
+.ui_select {
+	background: rgb(255, 198, 41); padding: 5px 10px; border-radius: 8px; border: 1px solid rgb(184, 91, 33); color: rgb(0, 0, 0); position: relative; box-shadow: inset 0px -2px 0px #ff7b29; text-shadow: 1px 1px 0 #ffe08c;
+}
+.ui_btn {
+	background: rgb(255, 198, 41); padding: 5px 10px; border-radius: 8px; border: 1px solid rgb(184, 91, 33); color: rgb(0, 0, 0); position: relative; box-shadow: inset 0px -2px 0px #ff7b29; text-shadow: 1px 1px 0 #ffe08c;
+}
+.ui_inner {
+	display: block; position: relative;
+}
+.ui_inner_text {
+	text-align: center; overflow: hidden; font-weight: bold;
+}
+.ui_inner_arrow {
+	border-width: 5px; border-style: solid; border-color: rgb(0, 0, 0) transparent transparent; top: 50%; width: 0px; height: 0px; right: 0px; font-size: 0px; margin-top: -2px; position: absolute;
+}
+.ui_select select {
+	padding: 5px 10px 5px 5px; left: 1px; top: 1px; width: 99%; position: absolute; z-index: 111; opacity: 0.0001;
+}
+.gray.ui_select {
+	background: rgb(255, 255, 255); border-color: rgb(229, 229, 229); padding: 2px 5px; border-radius: 0px; color: rgb(117, 117, 117); font-size: 14px; font-weight: normal; box-shadow: none; text-shadow: none;
+}
+.gray.ui_select .ui_inner_arrow {
+	border-color: rgb(153, 153, 153) transparent transparent;
+}
+.btn {
+	border-width: 1px medium 1px 1px; border-style: solid none solid solid; border-color: rgb(206, 202, 181) currentColor rgb(206, 202, 181) rgb(206, 202, 181); padding: 5px 10px; text-align: center; float: left;
+}
+.btngroup :first-child.btn {
+	border-radius: 5px 0px 0px 5px;
+}
+.btngroup :last-child.btn {
+	border-radius: 0px 5px 5px 0px; border-right-color: rgb(206, 202, 181); border-right-width: 1px; border-right-style: solid;
+}
+.btngroup {
+	margin: 10px auto;
+}
+.btngroup a {
+	min-width: 60px;
+}
+.btngroup a.selected {
+	background: rgb(246, 206, 148); color: rgb(255, 255, 255); box-shadow: inset 0px -2px 1px #ecc68e, inset 0px 2px 1px #ecc68e, inset 2px 0px 1px #ecc68e, inset -2px 0px 1px #ecc68e;
+}
+.ui_btn {
+	padding: 5px 10px; text-align: center;
+}
+.red.ui_btn {
+	background: rgb(255, 33, 81); margin: 15px auto 30px; border: 1px solid rgb(182, 24, 58); box-shadow: inset 0px -2px 0px #b6183a; text-shadow: none;
+}
+.red.ui_btn a {
+	color: rgb(255, 255, 255);
+}
+.ui_btn a {
+	font-weight: bold; display: block;
+}
+.ui_btn_back {
+	background: url("../images/btnBack.png") no-repeat 0% 0% / 78px auto; width: 78px; height: 30px; line-height: 30px; padding-left: 1.7em; display: block;
+}
+.icon_arrowRight {
+	width: 18px; height: 18px; vertical-align: -4px; display: inline-block;
+}
+.icon_arrowUp {
+	width: 18px; height: 18px; vertical-align: -4px; display: inline-block;
+}
+.icon_arrowDown {
+	width: 18px; height: 18px; vertical-align: -4px; display: inline-block;
+}
+.icon_arrowRight {
+	background-position: 0px -240px;
+}
+.icon_arrowUp {
+	background-position: 0px -303.5px;
+}
+.icon_arrowDown {
+	background-position: 0px -321.5px;
+}
+#nheader {
+	background: url("../images/barbg.gif"); border: currentColor; left: 0px; top: 0px; width: 100%; height: 60px; position: absolute; z-index: 1;
+}
+#nheader h1 {
+	left: 15px; top: 7px; position: absolute;
+}
+#nheader h1 img {
+	width: 90%;
+}
+#nheader #city {
+	left: 15px; top: 33px; width: 70px; height: 26px; text-align: center; color: rgb(254, 249, 170); line-height: 25px; overflow: hidden; position: absolute;
+}
+.nui_select {
+	color: rgb(254, 249, 170); position: relative;
+}
+.nui_btn {
+	color: rgb(254, 249, 170); position: relative;
+}
+.nui_inner {
+	display: block; position: relative;
+}
+.nui_inner_text {
+	text-align: center; overflow: hidden; font-weight: bold;
+}
+.nui_inner_arrow {
+	border-width: 5px; border-style: solid; border-color: rgb(254, 249, 170) transparent transparent; top: 50%; width: 0px; height: 0px; right: 0px; font-size: 0px; margin-top: -2px; position: absolute;
+}
+.nui_select select {
+	padding: 0px 10px 5px 5px; left: 1px; top: 1px; width: 99%; position: absolute; z-index: 111; opacity: 0.0001;
+}
+.gray.nui_select {
+	background: rgb(255, 255, 255); border-color: rgb(229, 229, 229); padding: 2px 5px; border-radius: 0px; color: rgb(117, 117, 117); font-size: 14px; font-weight: normal; box-shadow: none; text-shadow: none;
+}
+.gray.nui_select .ui_inner_arrow {
+	border-color: rgb(153, 153, 153) transparent transparent;
+}
+.nr {
+	top: 0px; width: 70%; right: -1px; position: absolute;
+}
+.nnavitems {
+	padding: 7px 0px 0px; width: 33%; height: 60px; text-align: center; border-right-color: rgb(255, 255, 255); border-right-width: 1px; border-right-style: dotted; float: right; position: relative;
+}
+.nnavitems > a {
+	display: block;
+}
+.narrowup {
+	border-width: 6px; border-style: solid; border-color: transparent transparent rgb(254, 77, 77); left: 50%; top: -12px; width: 0px; height: 0px; font-size: 0px; margin-left: -6px; display: none; position: absolute;
+}
+.nnavitems a {
+	color: rgb(255, 255, 255); line-height: 25px; font-size: 14px; font-weight: bold;
+}
+.nicon_shop {
+	margin: 0px auto; width: 37px; height: 27px; display: block;
+}
+.nicon_car {
+	margin: 0px auto; width: 37px; height: 27px; display: block;
+}
+.nicon_my {
+	margin: 0px auto; width: 37px; height: 27px; display: block;
+}
+.nicon_shop {
+	background-position: 0px -111px;
+}
+.nicon_car {
+	background-position: 0px -138px;
+}
+.nicon_my {
+	background-position: 0px -165px;
+}
+.selected.nnavitems a {
+	color: rgb(254, 249, 170); display: block;
+}
+.selected.nnavitems .narrowup {
+	display: block;
+}
+.selected.nnavitems .nicon_shop {
+	background-position: 0px -455px;
+}
+.selected.nnavitems .nicon_car {
+	background-position: 0px -484px;
+}
+.selected.nnavitems .nicon_my {
+	background-position: 0px -513px;
+}
+.nnavbar_procount {
+	left: 50%; top: 12px; width: 16px; height: 8px; text-align: center; color: rgb(255, 255, 255); line-height: 8px; font-size: 10px; font-weight: bold; margin-left: -12px; display: block; position: absolute; z-index: 999;
+}
+.selected.navitems .navbar_procount {
+	color: rgb(254, 249, 170);
+}

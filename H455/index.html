@@ -1,0 +1,213 @@
+﻿<!DOCTYPE HTML><html><head><meta charset="UTF-8"><meta content="width=device-width,user-scalable=no,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" name="viewport"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="baidu-tc-cerfication" content="8d46de238debae52fb0e210d616e67b6" /><title>仿南都网3G触屏版手机wap新闻网站模板</title><link rel="apple-touch-icon-precomposed" href="../../img2.cache.oeeee.com/Public/Images/channel/mobile/weblogo.png"/><link href="Public/Css/channel/mobile.css" rel="stylesheet" type="text/css"><link href="Public/Css/channel/addHomeScreen.css" rel="stylesheet" type="text/css"><script type="text/javascript">(function(){
+	var res = GetRequest();
+	var par = res['index'];
+	if(par!='gfan'){
+		var ua=navigator.userAgent.toLowerCase();
+		var contains=function (a, b){
+			if(a.indexOf(b)!=-1){return true;}
+		};	
+		
+		var toIpadVertion = function(){
+			window.location.href = '../../ipad.nandu.com/';
+		}
+		
+	   if(contains(ua,"ipad"))
+	   {
+		     toIpadVertion();
+	   }
+	}
+})();
+function GetRequest() {
+   var url = location.search; //获取url中"?"符后的字串
+   var theRequest = new Object();
+   if (url.indexOf("?") != -1) {
+      var str = url.substr(1);
+      strs = str.split("&");
+      for(var i = 0; i < strs.length; i ++) {
+         theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+      }
+   }
+   return theRequest;
+}
+</script><script type="text/javascript">var addToHomeConfig = {
+returningVisitor: true,
+animationIn: 'bubble',
+animationOut: 'drop',
+lifespan:15000,
+expire:2,
+touchIcon:true
+};
+</script><script type="text/javascript" src="Public/Js/channel/addHomeScreen.js"></script></head><body class="homebody"><header id="header"><div class="top-home"><div class="logo"><a id="return" href="../../www.nandu.com/@from=index">&nbsp;</a></div><div class="nav-btn"><span href="javascript:void(0)" class="more"></span></div><a href="m.php@m=m&a=index&app=2&channel=index&xml=&listRows=32&speed=1" class="sel-btn">精简版</a><img class="login-stuts" src="../../pics.oeeee.com/nd_avatar/noavatar_small.gif" /><a href="javascript:;" class="sel-btn login-pop">登录</a></div><div id="nav" class="nd-nav"><ul class="first"><li class="menu1"><a href="m.php@m=m&speed=">首页</a></li><li class="menu2"><a href="m.php@m=m&a=index&app=2&channel=news&xml=1&speed=">新闻</a></li><li class="menu3"><a href="m.php@m=m&a=mweibo&channel=weibo&speed=">热评</a></li><li class="menu4"><a href="m.php@m=m&a=mlike&channel=like&speed=">热顶</a></li><li class="menu5"><a style="color:#D00000;" target="_blank" href="../../3g.weicai.com/nandu/default.htm">彩票</a></li><li class="menu6"><a href="m.php@m=m&channel=roll&a=mroll&speed=">滚动</a></li></ul><ul><li class="menu1"><a href="m.php@m=m&a=index&app=2&channel=politics&xml=1&speed=">时局</a></li><li class="menu2"><a href="m.php@m=m&a=index&app=2&channel=world&xml=1&speed=">国际</a></li><li class="menu3"><a href="m.php@m=m&a=index&app=2&channel=society&xml=1&speed=">社会</a></li><li class="menu4"><a href="m.php@m=m&a=index&app=2&channel=opinion&xml=1&speed=">评论</a></li><li class="menu5"><a href="m.php@m=m&a=index&app=2&channel=depth&xml=1&speed=">深度</a></li><li class="menu6"><a href="m.php@m=m&a=index&app=2&channel=media&xml=1&speed=">传媒</a></li></ul><ul><li class="menu1"><a href="m.php@m=m&a=index&app=2&channel=gd&xml=1&speed=">广东</a></li><li class="menu2"><a href="m.php@m=m&a=index&app=2&channel=ent&xml=1&speed=">娱乐</a></li><li class="menu3"><a href="m.php@m=m&a=index&app=2&channel=sports&xml=1&speed=">体育</a></li><li class="menu4"><a href="m.php@m=m&a=index&app=2&channel=ndgongyi&xml=1&speed=">公益</a></li><li class="menu5"><a href="m.php@m=m&a=index&app=2&channel=culture&xml=1&speed=">文化</a></li><li class="menu6"><a href="m.php@m=m&a=index&app=2&channel=tech&xml=1&speed=">科技</a></li></ul><ul><li class="menu1"><a href="m.php@m=m&a=index&app=2&channel=finance&xml=1&speed=">财经</a></li><li class="menu2"><a href="m.php@m=m&a=index&app=2&channel=auto&xml=1&speed=">汽车</a></li><li class="menu3"><a href="m.php@m=m&a=index&app=2&channel=travel&xml=1&speed=">旅游</a></li><li class="menu4"><a href="m.php@m=m&a=index&app=2&channel=house&xml=1&speed=">房产</a></li><li class="menu5"><a href="m.php@m=m&a=index&app=2&channel=life&xml=1&speed=">消费</a></li><li class="menu6"><a href="m.php@m=m&a=index&app=2&channel=photo&xml=1&speed=">图片</a></li></ul></div></header><div class="topbg"><div class="top-home"><div class="logo"><a id="return" href="../../www.nandu.com/@from=index"></a></div><a href="m.php@m=m&a=index&app=2&channel=index&xml=&listRows=32&speed=1" class="sel-btn">精简版</a><img class="login-stuts" src="../../pics.oeeee.com/nd_avatar/noavatar_small.gif" /><a href="javascript:;" class="sel-btn login-pop">登录</a></div></div><nav id="menu" class="nd-nav"><ul class="n-index"><li class="menu1"><a href="m.php@m=m&speed=">首页</a></li><li class="menu2"><a href="m.php@m=m&a=index&app=2&channel=news&xml=1&speed=">新闻</a></li><li class="menu3"><a href="m.php@m=m&a=mweibo&channel=weibo&speed=">热评</a></li><li class="menu4"><a href="m.php@m=m&a=mlike&channel=like&speed=">热顶</a></li><li class="menu5"><a style="color:#D00000;" target="_blank" href="../../3g.weicai.com/nandu/default.htm">彩票</a></li><li class="menu6"><a href="m.php@m=m&a=mroll&channel=roll&speed=">滚动</a></li></ul></nav><nav id="menu2" class="nd-nav"><ul class="first"><li class="menu1"><a href="m.php@m=m&speed=">首页</a></li><li class="menu2"><a href="m.php@m=m&a=index&app=2&channel=news&xml=1&speed=">新闻</a></li><li class="menu3"><a href="m.php@m=m&a=mweibo&channel=weibo&speed=">热评</a></li><li class="menu4"><a href="m.php@m=m&a=mlike&channel=like&speed=">热顶</a></li><li class="menu5"><a style="color:#D00000;" target="_blank" href="../../3g.weicai.com/nandu/default.htm">彩票</a></li><li class="menu6"><a href="m.php@m=m&channel=roll&a=mroll&speed=">滚动</a></li></ul><ul><li class="menu1"><a href="m.php@m=m&a=index&app=2&channel=politics&xml=1&speed=">时局</a></li><li class="menu2"><a href="m.php@m=m&a=index&app=2&channel=world&xml=1&speed=">国际</a></li><li class="menu3"><a href="m.php@m=m&a=index&app=2&channel=society&xml=1&speed=">社会</a></li><li class="menu4"><a href="m.php@m=m&a=index&app=2&channel=opinion&xml=1&speed=">评论</a></li><li class="menu5"><a href="m.php@m=m&a=index&app=2&channel=depth&xml=1&speed=">深度</a></li><li class="menu6"><a href="m.php@m=m&a=index&app=2&channel=media&xml=1&speed=">传媒</a></li></ul><ul><li class="menu1"><a href="m.php@m=m&a=index&app=2&channel=gd&xml=1&speed=">广东</a></li><li class="menu2"><a href="m.php@m=m&a=index&app=2&channel=ent&xml=1&speed=">娱乐</a></li><li class="menu3"><a href="m.php@m=m&a=index&app=2&channel=sports&xml=1&speed=">体育</a></li><li class="menu4"><a href="m.php@m=m&a=index&app=2&channel=ndgongyi&xml=1&speed=">公益</a></li><li class="menu5"><a href="m.php@m=m&a=index&app=2&channel=culture&xml=1&speed=">文化</a></li><li class="menu6"><a href="m.php@m=m&a=index&app=2&channel=tech&xml=1&speed=">科技</a></li></ul><ul><li class="menu1"><a href="m.php@m=m&a=index&app=2&channel=finance&xml=1&speed=">财经</a></li><li class="menu2"><a href="m.php@m=m&a=index&app=2&channel=auto&xml=1&speed=">汽车</a></li><li class="menu3"><a href="m.php@m=m&a=index&app=2&channel=travel&xml=1&speed=">旅游</a></li><li class="menu4"><a href="m.php@m=m&a=index&app=2&channel=house&xml=1&speed=">房产</a></li><li class="menu5"><a href="m.php@m=m&a=index&app=2&channel=life&xml=1&speed=">消费</a></li><li class="menu6"><a href="m.php@m=m&a=index&app=2&channel=photo&xml=1&speed=">图片</a></li></ul></nav><!--弹出层--><div id="lognlayer" style="display:none"><a class="pop-close" style="default.htm">X</a><div class="content"><div class="login-msg" style="display: none; "><p class="error">请输入您的账户名和密码</p></div><div class="r"><div class="iput dl"><input id="email" name="email" type="text" value=""><span class="ph-label" style="">邮箱</span></div><div class="iput pass"><input id="password" name="password" type="password" value=""><span class="ph-label" style="">密码</span></div><div class="subbut"><a class="but" href="javascript:void(0);" id="post_login">登录</a><a class="but" href="javascript:void(0);" id="sina_login">新浪微博登录</a><a class="but" href="javascript:void(0);" id="qq_login">QQ账号登录</a></div></div><div class="clear"></div></div></div><!--弹出层 END--><!--笼罩层--><div id="shade"></div><article class="page-loading"><div class="page-loading-logo"><div class="page-loading-anim"></div></div><div class="page-loading-txt">正在为您加载...</div></article><article class="art-list hidden"><section class="focus-tit"><h3 class="tit"><i></i><a href="zhengwen.htm">深圳原副市长住所内坠亡 家人称其患抑郁症</a></h3></section><section class="art-box"><div class="bd"><a href="zhengwen.htm" class="btn">传媒</a><a href="zhengwen.htm" class="box"><img src="http//img2.cache.oeeee.com/201402/19/53045b160d1cf.jpg" /><h2 likeid="800258" typeid="html"><span>【传媒观察室】韩美剧走红背后：字幕组的隐秘江湖</span></h2><p>视频网站和字幕组签的协议规定：一集韩剧字幕必须“三个小时出手”，这意味着制作字幕工作非常仓促。</p></a></div><div class="ft"><span class="fl">02-19 15:02</span><a href="javascript:void(0);" class="fr"><em></em><span></span></a></div></section><section class="art-tj2"><i></i><a href="zhengwen.htm"><img src="http//img2.cache.oeeee.com/201402/19/5303fe8028d70.jpg" width="90" height="60" />【广州两会】解读政府工作报告 36次提“改革”</a></section><section class="art-box"><div class="bd"><a href="zhengwen.htm" class="btn">评论</a><a href="zhengwen.htm" class="box"><img src="http//img1.cache.oeeee.com/201402/19/530456f260b3d.jpg" /><h2 likeid="797455" typeid="html"><span>人民日报刊文谈征地暴富：4旬光棍靠补偿娶上老婆</span></h2><p>因为修路征地，10多户家庭分别获得了二三十万的补偿款，仿佛一下抚平了前两年因征地引发的不快。</p></a></div><div class="ft"><span class="fl">02-19 06:52</span><a href="javascript:void(0);" class="fr"><em></em><span></span></a></div></section><section class="art-box"><div class="bd"><a href="m.php@m=m&a=index&app=2&channel=politics&xml=1" class="btn">时局</a><a href="m.php@s=_2Fm_2Fmshow_2Fctime_2F1392790531_2Ftype_2Fhtml_2Fid_2F800010_2Fmtype_2F1_2Fchannel_2Fpolitics" class="box"><img src="http//img1.cache.oeeee.com/201402/19/53044e5e29b7d.jpg" /><h2 likeid="800010" typeid="html"><span>官媒首次公布习近平漫画形象 图解主席时间去哪了</span></h2><p>“我个人的时间都去哪儿了？当然是都被工作占去了。”今年2月初，习近平接受俄罗斯媒体专访时说。</p></a></div><div class="ft"><span class="fl">02-19 14:15</span><a href="javascript:void(0);" class="fr"><em></em><span></span></a></div></section><section class="art-box"><div class="bd"><a href="m.php@m=m&a=index&app=2&channel=depth&xml=1" class="btn">深度</a><a href="m.php@s=_2Fm_2Fmshow_2Fctime_2F1392703342_2Ftype_2Fhtml_2Fid_2F795400_2Fmtype_2F1_2Fchannel_2Fdepth" class="box"><img src="http//img2.cache.oeeee.com/201402/19/530427f2523a2.jpg" /><h2 likeid="795400" typeid="html"><span>医生文革被诬强奸40年 “受害人”澄清仍无法平反</span></h2><p>医生发现女子17岁乳房还未发育，说了句“第二性征发育不全，要加强营养”，就被当成了强奸犯。</p></a></div><div class="ft"><span class="fl">02-18 14:02</span><a href="javascript:void(0);" class="fr"><em></em><span></span></a></div></section><section class="art-box"><div class="bd"><a href="m.php@m=m&a=index&app=2&channel=gz&xml=1" class="btn">广州</a><a href="m.php@s=_2Fm_2Fmshow_2Fctime_2F1392771800_2Ftype_2Fhtml_2Fid_2F798343_2Fmtype_2F1_2Fchannel_2Fgz" class="box"><img src="http//img2.cache.oeeee.com/201402/19/53042d6256e8c.jpg" /><h2 likeid="798343" typeid="html"><span>租客照顾病重房东7年 街坊猜测：看上她的房子</span></h2><p>房东陈姨说如果老彭愿意，会考虑结婚。老彭说，没想过结婚，等陈姨病好了就离开。</p></a></div><div class="ft"><span class="fl">02-19 09:03</span><a href="javascript:void(0);" class="fr"><em></em><span></span></a></div></section><section class="art-box"><div class="bd"><a href="m.php@m=m&a=index&app=2&channel=tech&xml=1" class="btn">科技</a><a href="m.php@s=_2Fm_2Fmshow_2Fctime_2F1392792180_2Ftype_2Fhtml_2Fid_2F800149_2Fmtype_2F1_2Fchannel_2Ftech" class="box"><img src="http//img1.cache.oeeee.com/201402/19/5304546d09f04.jpg" /><h2 likeid="800149" typeid="html"><span>北京交管局新规：司机每车每人限用一款叫车软件</span></h2><p>打车应用所存在的安全隐患也一直被诟病，出租车因抢单发生刮蹭、交通事故的报道也屡见不鲜。</p></a></div><div class="ft"><span class="fl">02-19 14:43</span><a href="javascript:void(0);" class="fr"><em></em><span></span></a></div></section><section class="art-box"><div class="bd"><a href="m.php@m=m&a=index&app=2&channel=society&xml=1" class="btn">社会</a><a href="m.php@s=_2Fm_2Fmshow_2Fctime_2F1392779513_2Ftype_2Fhtml_2Fid_2F799287_2Fmtype_2F1_2Fchannel_2Fsociety" class="box"><img src="201402/19/5304229865859.jpg" /><h2 likeid="799287" typeid="html"><span>广西警方被指非法雇佣临时工缉私 5人任务中丧命</span></h2><p>5人驾驶乘坐一辆无牌号的拼装轿车出任务时发生追尾，5人意外丧生。钦州公安对此表示否认。</p></a></div><div class="ft"><span class="fl">02-19 11:11</span><a href="javascript:void(0);" class="fr"><em></em><span></span></a></div></section></article><a href="mobile.php@m=mobile&a=index&app=2&channel=index&xml=http_3A_2F_2Fwww.nandu.com_2Findex.xml&listRows=8&page=2" class="pageLoading"></a><div class="column-loading" style=" display:none">点击加载更多</div><a href="../../p.oeeee.com/help/help2.html" class="btn-home-help"></a>﻿<div class="ad-bot-txt" id="botWordAd"><a class="txt-left" href="../../mtthome.3g.qq.com/sd/d@action=index&channel_id=20149" target="_blank" >手机QQ浏览器</a><a class="txt-right" href="../help/help.html" >南都网手机版帮助</a></div><div class="ad-bot"><!-- AdSame ShowCode: 南都网 / 手机南都网 / 手机南都网底部通栏 Begin --><script type="text/javascript" src="../../oeeee.adsame.com/s@z=oeeee&c=1263" ></script><!-- AdSame ShowCode: 南都网 / 手机南都网 / 手机南都网底部通栏 End --></div><footer id="footer"><span class="fot_box"><a href="javascript:history.back(-1);" class="goback"></a></span><div class="copyright">© 2007-2014 南都网手机版</div><span class="fot_box1"><a href="javascript:void(0);" class="gotop"></a></span><span class="fot_box1" style=" display:none"><a href="../help/help.html" class="question"></a></span></footer><!--全站GA统计代码--><!--ipt type="text/javascript">var _gaq = _gaq || [];
+var aurl=window.document.domain;
+if(aurl.indexOf('nandu.com')>0)
+{        
+	_gaq.push(['_setAccount', 'UA-33962305-2']);
+	_gaq.push(['_setDomainName', 'nandu.com']);
+	_gaq.push(['_trackPageview']);
+}
+if(aurl.indexOf('oeeee.com')>0)
+{
+	_gaq.push(['_setAccount', 'UA-33962305-2']);
+	_gaq.push(['_setDomainName', 'oeeee.com']);
+	_gaq.push(['_trackPageview']);
+}
+
+(function() {   
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https//ssl' : 'http//www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</scri--><!--全站GA统计代码 END--><!--全站百度统计代码--><script type="text/javascript">var _bdhmProtocol = (("https:" == document.location.protocol) ? " https//" : " http//");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ffee250fd2920e8bdd3dfa23ab4f8c67f' type='text/javascript'%3E%3C/script%3E"));
+</script><!--全站百度统计代码 END--><script src="Public/dwz/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="Public/Js/channel/mobile.js" type="text/javascript"></script><script src="Public/Js/Commin_url.js" type="text/javascript"></script><script type="text/javascript" src="Public/Js/channel/mobile_login.js"></script><script>$(function(){
+	var loaded = false,//loaded为假时不允许滚动下拉，防止无限下拉
+		page = 2,//初始加载屏
+		nextHref;
+	ding();	
+	$(".column-loading").bind("click", function(){ show();});
+	function show(){
+		if (page >=14) {
+			loaded = true;
+			$(".column-loading").unbind("click").show().html("木有了噢！<a href='m.php@m=m&channel=roll&a=mroll&speed=0'>更多进入全站滚动</a>").css({'background':'none','display':'block'});
+		}
+
+        
+		if (!loaded){
+
+
+			//获取下一页地址
+			nextHref = $("a.pageLoading").attr("href");
+			$(".column-loading").addClass('addloading').text('加载中...');
+			$.ajax({
+					type: "get",
+					url: nextHref,
+					//dataType:'xml',
+					beforeSend: function(){
+						loaded = true;
+					},
+					success: function(d){
+						//调用成功后屏数加1
+        /*               
+        $.getJSON("m.php@m=m&a=getmtuijian&page="+page, function(tuijian_data){
+            tuijian_titlelong = data.title,
+            tuijian_info = tuijian_data.info_substr,
+            tuijian_imageurl = tuijian_data.image,
+            tuijian_time = tuijian_data.ftime,
+            tuijian_link = tuijian_data.link,  
+            tuijian_type = tuijian_data.type,
+            
+            tuijian_html = '<section class="art-box">';
+            tuijian_html += '<div class="bd2">';
+            tuijian_html += '<a href="'+tuijian_link+'" class="box">';
+            if(tuijian_imageurl) tuijian_html += '<img alt="'+tuijian_titlelong+'" src="'+tuijian_imageurl+'" />';
+            tuijian_html += '<h2 ><span>'+tuijian_titlelong+'</span></h2>';
+            tuijian_html += '<p>'+tuijian_info+'</p>';
+            tuijian_html += '</a>';
+            tuijian_html += '</div>';
+            tuijian_html += '<div class="ft"><span class="fl">'+tuijian_time+'</span><a href="javascript:void(0);"><em></em><span></span></a></div>';
+            tuijian_html += '</section>';
+            
+        });
+    
+        alert(tuijian_html);
+         */               
+						page = page + 1;
+						$(d).find('item').each(function(){
+							var $item = $(this),
+								titlelong = $item.find('titlelong').text(),
+								info = $item.find('info').text().substring(0,47),
+								imageurl = $item.find('image').text(),
+								time = $item.find('ftime').text(),
+								channel = $item.find('channel').text(),
+								channelename = $item.find('channelename').text(),
+								fromg = $item.find('from').text(),
+                                link = $item.find('link').text(),
+                                sharelink = $item.find('sharelink').text(),
+								channellink = $item.find('channellink').text(),
+								id = $item.find('id').text(),
+								typeid = sharelink.split('/')[sharelink.split('/').length-3],
+                                
+                          html = ''; 
+                          if(fromg=="mtuijian"){
+                              if(imageurl!=''){
+                                  html='<section class="art-tj2"><i></i><a href="'+link+'"><img src="'+imageurl+'" width="90" height="60" />'+titlelong+'</a></section>';
+                              }else{
+                                  html='<section class="art-tj"><i></i><a href="'+link+'">'+titlelong+'</a></section>';
+                              }
+                              
+                          }else{
+                          
+                                
+								    html = '<section class="art-box">';
+							    if(imageurl!=''){
+								    html += '<div class="bd">';
+								    html += '<a href="m.php@m=m&a=index&app=2&channel='+channelename+'&xml=1" class="btn">'+channel+'</a>';
+								    html += '<a href="'+sharelink+'/mtype/1/channel/'+channelename+'" class="box">';
+								    html += '<img alt="'+titlelong+'" src="'+imageurl+'" />';
+								    html += '<h2 typeid="'+typeid+'" likeid="'+id+'"><span>'+titlelong+'</span></h2>';
+								    html += '<p>'+info+'...</p>';
+								    html += '</a>';
+								    html += '</div>';
+								    html += '<div class="ft"><span class="fl">'+time+'</span><a href="javascript:void(0);" class="fr"><em></em><span></span></a></div>';
+							    }else{
+								    html += '<div class="bd2">';
+								    html += '<a href="m.php@m=m&a=index&app=2&channel='+channelename+'&xml=1" class="btn">'+channel+'</a>';
+								    html += '<a href="'+sharelink+'/mtype/1/channel/'+channelename+'" class="box">';
+								    html += '<h2 typeid="'+typeid+'" likeid="'+id+'"><span>'+titlelong+'</span></h2>';
+								    html += '<p>'+info+'...</p>';
+								    html += '</a>';
+								    html += '</div>';
+								    html += '<div class="ft"><span class="fl">'+time+'</span><a href="javascript:void(0);" class="fr"><em></em><span></span></a></div>';
+							    }
+                                
+							    html += '</section>';
+                          }
+
+							$(".art-list").append($(html));
+							
+						});
+						$("a.pageLoading").attr("href",$("a.pageLoading").attr("href").split('page')[0]+'page='+page);
+					},
+					complete: function() {
+						loaded = false;
+						$(".column-loading").removeClass("addloading").text('点击加载更多');
+						ding();
+					}
+			});
+		}
+	}
+	function ding(){		
+		$(".art-box").each(function(e){
+		  var slikeid = $(".art-box").eq(e).find("h2").attr("likeid"),
+			  stypeid = $(".art-box").eq(e).find("h2").attr("typeid");
+		  Ajaxme('component.php@s=_2Flikenum_2Fgetlike_2Ftype_2F'+stypeid+'/id/'+slikeid,'get',null,10000,function(data){ $(".art-box").eq(e).find('.ft a.fr span').html(data); if(parseInt($(".art-box").eq(e).find('.ft a.fr span').html())==0){ $(".art-box").eq(e).find('.ft a.fr span').html('');}; }); 
+		});
+		
+		$(".art-box .ft a.fr").click(function() {
+			var index  =  $(".art-box .ft a.fr").index(this);
+			this.onfocus=function(){this.blur();};
+			var likeid = $(".art-box").eq(index).find("h2").attr("likeid"),
+				typeid = $(".art-box").eq(index).find("h2").attr("typeid");
+			
+			$("#likeRecTips").length == 0 && $("body").append("<div id='likeRecTips'><p>\u611F\u8C22\u60A8\u5BF9\u5357\u90FD\u7F51\u7684\u652F\u6301!</p></div>");
+			var c_top = parseInt(document.documentElement.clientHeight-50)/2,
+				c_left = parseInt($("body").width()-230)/2;
+				$("#likeRecTips").css({'left':c_left+'px','top':c_top+'px','display':'block'});
+			Ajaxme('component.php@s=_2Flikenum_2Fsetlike_2Ftype_2F'+typeid+'/id/'+likeid,'get',null,10000,function(data){ $(".art-box").eq(index).find('.ft a.fr span').html(data); });
+			var b;
+			b = setTimeout(function() {
+				$("#likeRecTips").fadeOut("normal");
+				clearTimeout(b);
+			},
+			1200);
+		});
+		
+	}
+});
+</script><script type="text/javascript">$(document).ready(function(){
+  	 //处理加载等待效果
+	 $(".page-loading").remove();
+	 $(".art-list").show();
+	 $(".column-loading").show();
+})
+</script><script type="text/javascript" src="Public/Js/unity.js"></script></body></html>

@@ -1,0 +1,11 @@
+body,ul,li,p,img,h1,h2,h3,h4,h5,h6,input,form,div,table,td,tr,dl,dt,dd{margin:0px;padding:0px}
+*{margin:0px;padding:0px}
+body{color:#797979;width:100%;min-width:480px;font-size:22px}
+img{border:none}
+i,em{ font-style:normal}
+ul{list-style:none}
+.hjh_clear{width:0px;height:0px;font-size:0px;overflow:hidden;clear:both}
+
+a:link,a:visited{color:#5b5b5b; text-decoration:none}
+a:hover{ text-decoration:none}
+.hjh_cor a:link,.hjh_cor a:visited{color:#fff}

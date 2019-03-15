@@ -1,0 +1,88 @@
+<html xmlns="http//www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="MobileOptimized" content="240">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/163css.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/163css.js"></script>
+<title>仿唐邦机电手机wap企业网站模板列表页-懒人模板【www.lanrenmb.com】</title>
+<style>.over2 a{background-color:#fadda5 !important; color:#000 !important; border-radius:15px !important; padding:5px 20px !important;}
+.over2 a:visited{background-color:#fadda5 !important; color:#000 !important; border-radius:15px !important; padding:5px 20px !important;}</style>
+</head>
+<body>
+<style>.overpr a{background:url(img/menuhover.jpg) repeat-x scroll 0 0 !important;}</style>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<div class="ylhead">
+   <a class="logo" href="/"><img src="img/logo.png"></a>
+   <div class="search">
+    <form name="formsearch" action="/plus/search.php"><input type="hidden" name="kwtype" value="0" autocomplete="off">
+     <input name="q" type="text" class="ser_input" id="search-keyword" value="侯爵麻将机" onclick="javascript:this.value='';" autocomplete="off">
+     <input name="" type="submit" class="ser_buton" value=" " autocomplete="off">
+     </form>
+     
+  </div>
+</div>
+<ul class="ylmenu">
+  <li class="ylmenu1 over"><a href="#"><span>首页</span></a></li>
+  <li class="ylmenu2 over1"><a href="#"><span>公司</span></a></li>
+  <li class="ylmenu3 over2"><a href="#"><span>产品</span></a></li>
+  <li class="ylmenu4 over3"><a href="#"><span>服务</span></a></li>
+</ul>
+
+<div class="clear"></div>
+<div class="box03" id="box2"><ul>
+                
+                <li class="over7"><a href="#" target="_self"><strong>翼动</strong></a></li>
+                
+                <li class="over15"><a href="#" target="_self"><strong>YH系列</strong></a></li>
+                
+                <li class="over4"><a href="#" target="_self"><strong>A系列</strong></a></li>
+                
+                <li class="over5"><a href="#" target="_self"><strong>B系列</strong></a></li>
+                
+                <li class="over11"><a href="#" target="_self"><strong>D系类</strong></a></li>
+                
+                <li class="over6"><a href="#" target="_self"><strong>S系列</strong></a></li>
+                
+                <li class="over12"><a href="#" target="_self"><strong>X系类</strong></a></li>
+                
+                <li class="over13"><a href="#" target="_self"><strong>遥控折叠</strong></a></li>
+                
+                <li class="over14"><a href="#" target="_self"><strong>高档藤木</strong></a></li>
+                
+              </ul></div>
+<div class="box04"><button class="btn01" onclick="openShutManager(this,'box2',false,'&lt;img src=img/images10.jpg /&gt;','&lt;img src=img/images11.jpg /&gt;')"><img src="img/images10.jpg"></button></div>
+<ul class="tjlist">
+<li><a href="#"><img class="img76" src="img/1-130G20K253-lp.jpg" alt="" width="76" height="76">唐邦S20<div class="jiantou"></div>
+            </a> </li><li><a href="#"><img class="img76" src="img/1-130G20K123-lp.jpg" alt="" width="76" height="76">唐邦YH2000<div class="jiantou"></div>
+            </a> </li><li><a href="#"><img class="img76" src="img/1-130G20K028-lp.jpg" alt="" width="76" height="76">唐邦YH3000<div class="jiantou"></div>
+            </a> </li><li><a href="#"><img class="img76" src="img/1-130G20JT4-lp.jpg" alt="" width="76" height="76">唐邦YH6000<div class="jiantou"></div>
+
+            </a> </li>
+          </ul>
+          <div class="pagelist">
+        <ul>
+          <li>首页</li>
+<li><a href="#">下一页</a></li>
+<li><a href="#">末页</a></li>
+
+        </ul>
+      </div>
+      <div class="clear"></div>
+﻿<table border="0" cellspacing="0" cellpadding="0" style="clear:both; width:100%;" class="foot">
+  <tbody><tr>
+    <td align="center"><a target="_blank" href="#"><img src="img/q1.gif"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="#"><img src="img/q2.gif"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="#"><img src="img/q3.gif"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="#"><img src="img/q4.gif"></a></td>
+  </tr>
+</tbody></table>
+<table border="0" cellspacing="0" cellpadding="0" style="width:100%; padding:0 5px; line-height:1.8em;">
+  <tbody><tr>
+    <td><a href="#" class="top">TOP</a><div align="center">(c)2008-2013 唐邦机电 All Rights Reserved <br>
+        苏ICP备13027906号-1</div></td>
+  </tr>
+</tbody></table>
+
+<CENTER>
+			温馨提示：本信息仅供提供演示方便链接，与原网站无关！ <a href="index.html">首页</a>  <a href="jianjie.html">简介演示图</a>  <a href="fuwu.html">服务演示图</a>  <a href="liebiao.html">列表演示图</a>  <a href="zhengwen.html">正文演示图</a>
+</center>
+
+</body></html>

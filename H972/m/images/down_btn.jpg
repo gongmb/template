@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>出错了 - 极游网m.ggg.cn</title>
+	<meta charset="UTF-8">
+	<!--[if IE 6]>
+    <script src="../../include/plugin/misc/dd_belatedpng.js"></script>
+    <script type="text/javascript">DD_belatedPNG.fix('.pngfix');</script>
+    <![endif]-->
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<style type="text/css">
+	*{ margin:0; padding:0;}
+	.clear{ clear: both; height:0;}
+	div,ul,li{ margin:0; padding:0; list-style-type: none;}
+	img{ border:none;}
+	a{ text-decoration: none;}
+	body{ margin:0; padding:0;width:100%;font-size:12px; font-family:"宋体"; color:#6A767F;}
+	.color_1{ color:#FF3300;}
+	
+	figure{ padding:0; margin:0;}
+	.m_header{ clear:both; margin-bottom:5px;}
+	.topper{ padding:0 1px;height:52px; background:url(top_bg.jpg) repeat-x;}
+	.mLogo{ width:97px; float:left;}
+	.search_box{ height: 39px; padding-top:6px;background: url(search_b_bg.jpg) repeat-x;}
+	.m_search{ width:290px; padding-left:10px;height:32px; background: url(search_bg.gif) no-repeat; border: none; margin:0 auto; line-height:32px;}
+	.input_search{ width:245px; float:left; background: none; border:none;font:14px "微软雅黑";height:30px; line-height: 30px; color:#999999;}
+	.btn_search{ width:30px; height:32px; float:right; border:none; background: none; cursor: pointer;}
+	
+	.mBottom{ height:auto; background:url(bottom_bg.gif) repeat-x; text-align: center;}
+	.mBottom .bNav{ height:28px; color:#fff;font-weight:bold;line-height: 28px; font-size: 13px;}
+	.mBottom .bNav em{ padding:0px 5px; line-height:28px;}
+	.mBottom .bNav a{ color:#fff;}
+	.mBottom .mCopyright{ padding-top:20px; color:#888888; line-height:18px;}
+	
+	
+	.downBtn{ width:120px; margin-top:8px; height:29px;background:url(down_btn.jpg) no-repeat 0px 0px;float:right;}
+	.downBtn a{ width:120px;height:29px; display:block; cursor: pointer;}
+	
+	.error_info {
+		padding:20px;
+	}
+	.error_inner {
+		width:220px;
+		margin:0 auto;
+		line-height:22px;
+	}
+	.error_inner h1 {
+		height:30px;
+		line-height:30px;
+		text-indent:3em;
+		margin-bottom:30px;
+		font-size:16px;
+		background:url(error-icons.png) 0 0 no-repeat;
+	}
+	.error_list li {
+		font-size:12px;
+		list-style:outside decimal;
+		padding-left:0px;
+	}
+	</style>
+</head>
+<body>
+<header class="m_header">
+  <div class="topper">
+    <h1 class="mLogo"> <img src="logo.jpg" title="极游游戏" alt="极游游戏" /> </h1>
+    <p class="downBtn"> <a href="../../client/default.htm"></a> </p>
+    <p class="clear"></p>
+  </div>
+    <form id="searchForm" method="post" action="/m/search.cgi">
+	    <div class="search_box">
+	        <p class="m_search">
+				<input id="searchInput" type="text" name="q" value="" class="input_search" autocapitalize="off" placeholder="请输入搜索内容" /> 
+			    <input id="searchButton" type="submit" class="btn_search" value="" />
+	        </p>
+	    </div>
+    </form>
+</header>
+<!--/header-->
+<article class="error_info">
+  <div class="error_inner">
+    <h1>访问出错了！</h1>
+    <ol class="error_list">
+      <li>您可以<strong><a href="javascript:history.go(-1);">返回上一页</a></strong>浏览正确页面；</li>
+      <li>您可以<strong><a href="../../default.htm">回到首页</a></strong>浏览其他页面；</li>
+      <li>如果您不能确认您输入的网址，请浏览<strong><a href="../../default.htm">极游网更多页面</a></strong>,来查看您所要访问的网址；</li>
+      <li>可以在网页顶部的搜索框输入您想要找的内容。</li>
+    </ol>
+  </div>
+</article>
+<!--/article-->
+<footer class="mBottom">
+  <p class="bNav"> <a href="../../client/default.htm">极游游戏</a> <em>|</em> <a href="../../coper/default.htm">热门应用</a> <em>|</em> <a href="../../../www.ggg.cn/default.htm">电脑版</a> </p>
+  <p class="mCopyright"> 上海善极计算机科技有限公司<br />
+    极游网 GGG.CN 沪ICP备11031088号-1<br />
+    Copyright &copy; 2011 GGG.CN, All Rights Reserved </p>
+</footer>
+<!--/footer-->
+</body>
+</html>

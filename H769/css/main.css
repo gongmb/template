@@ -1,0 +1,108 @@
+@charset "gb2312";
+/* CSS Document */
+
+*{ margin:0; padding:0}
+a:link, a:visited {text-decoration: none; } 
+a{ color:#333}
+a:hover{ text-decoration:underline}
+ul{ list-style-type:none}
+img{ border:0;}
+body{font-size:12px;background: url(../images/bg.jpg) repeat-x #e3effb;color:#666;line-height: 2em}
+.container{ width:1007px; margin:auto; background: url(../images/line.png) repeat-y; overflow:hidden}
+.left{ float:left}
+.right{ float:right}
+/*header*/
+#header{ height:29px; background:url(../images/bg-top.gif);}
+.f_left{ float:left; padding-left:5px;}
+.f_left,.f_right,.f_right a,.f_right a:hover,.sp h4 span a,#endnav ul li a{color:#fff}
+.f_right{ float:right; width:120px; margin-right:10px;} 
+.news a,.newsul li a,#sideR ul li a,.newsR ul li a{ color:#666}
+.news a:hover,.newsul li a:hover,#sideR ul li a:hover,.newsR ul li a:hover{ color: #000fff;}
+#banner img{display: block; margin:auto}
+/*主导航菜单*/
+#menu ul{margin-left: 10px;}
+#menu_out{ width:990px; padding-left:4px; margin:auto; background:url(../images/menu_left.gif) no-repeat left top; clear:both}
+#menu_in{ background:url(../images/menu_right.gif) no-repeat right top; padding-right:4px;}
+#menu{ background:url(../images/menu_bg.gif) repeat-x; height:73px;}
+.menu_line{ background:url(../images/menu_line.gif) no-repeat center top; width:8px;}
+.menu_line2{ background:url(../images/menu_line2.gif) no-repeat center top; width:15px;}
+#nav{ padding-left:10px;}
+#nav li{ float:left; height:35px;}
+#nav li a{ float:left; display:block; padding-left:6px; height:35px; background:url(../images/menu_on_left.gif) no-repeat left top; cursor:pointer;text-decoration:none;}
+#nav li a span{ float:left; padding:11px 14px 10px 10px; line-height:14px; background:url(../images/menu_on_right.gif) no-repeat right top; font-size:14px; font-weight:bold;color:#FFFFFF;text-decoration:none;}
+#nav li .nav_on{ background-position:left 100%;}/*鼠标经过时变换背景，方便JS获取样式*/
+#nav li .nav_on span{ background-position:right 100%; color:#333333; text-decoration:none; padding:14px 14px 7px 10px;}/*鼠标经过时变换背景，方便JS获取样式*/
+
+/*子栏目*/
+#menu_con{ text-align:left; padding-left:20px; clear:both;}
+#menu_con li{ float:left; height:22px; margin-top:8px;}
+#menu_con li a{ display:block; float:left; background:url(../images/menu_on_left2.gif) no-repeat left top; cursor:pointer; padding-left:3px;}
+#menu_con li a span{ float:left; padding:6px 10px 4px 10px; line-height:12px; background:url(../images/menu_on_right2.gif) no-repeat right top;}
+#menu_con li a:hover{ text-decoration:none; background:url(../images/menu_on_left2.gif) no-repeat left bottom;}
+#menu_con li a:hover span{ background:url(../images/menu_on_right2.gif) no-repeat right bottom;}
+.timer{ text-align:right;}/*子栏目时间*/
+/*Part One*/
+#part1{ width:990px; margin:auto; text-align:left; background:#FFF; overflow:hidden}
+#sideL{ width:291px; float:left; padding:10px 0 0 5px;}
+.sider{ height:220px}
+.intro{ background:url(../images/intro.jpg) no-repeat;}
+.intro p{ width:220px; padding:60px 0 0 10px; height:123px; color:#446420; line-height:16px;}
+#sideC{ background:url(../images/newsbg.png); width:434px; height:419px; float:left; margin-left:5px}
+#sideC ul{ padding:40px 10px 10px 20px; border-bottom:dashed #CCC 1px; width:88%; margin-left:10px;}
+#sideC ul P{ text-indent:2em;}
+#sideC h4{ text-align:center}
+#sideC h4 a{ color:#ff6600; font-size:14px;}
+.news{ margin:20px;list-style-type:none}
+.news li a{color: #777777;height:26px; line-height:26px}
+.news li span{float: right;text-align: right;}
+.news li a:hover{color: #f00; text-decoration:underline}
+#sideR{ background:url(../images/tz.png); width:246px; height:416px; float:left;}
+#sideR ul{ padding:60px 0 0 10px;list-style-type:none;}
+#sideR ul li { background:url(../images/li.jpg) no-repeat 8px 7px; padding-left:20px;}
+.sp h4{ color:#FFF; padding:4px 0 0 25px; font-size:14px}
+.sp h4 span{ font-size:10px; padding-left:120px;}
+.sps{ padding:6px 0 0 8px;}
+.ad{clear:both; text-align:center}
+.ad img{ width:980px; }
+/*中间新闻图片+列表*/
+.newsL{ float:left; width:732px; margin:0 0 0 4px;overflow: hidden}
+.newsL h4{ background:url(../images/ul.png) no-repeat; color:#FFF; padding:8px 0 0 30px; height:37px; font-size:14px;}
+.newsL h4 span{ float:right;padding-left:210px; font-size:12px}
+.newsL h4 span a{ color:#ff6600; }
+.newsL P img{ padding:10px 10px;}
+.newsP{ clear:both; padding:0 0 0 20px}
+.newsP img{ margin:0 6px 0 0; border:#CCC 1px solid; width:90px; padding:3px; height:80px}
+.newsul{list-style-type:none; padding:20px 0 0 10px; background:url(../images/pline.png) no-repeat 20px 4px}
+.newsul li{background:url(../images/li.jpg) no-repeat 8px 7px;  padding-left:20px;}
+.lef{ float:left; width:350px; margin:0 16px 0 0; }
+.newsul li a:hover{color: #f00; text-decoration:underline}
+.newsR{ float:right; width:250px; }
+.newsR h3{ font-size:12px; color:#FFF; background:url(../images/zsyz.jpg) no-repeat;height:31px; padding:5px 0 0 30px;}
+.newsR h4{ font-size:12px; text-align:center; color:#ff232c}
+.newsR p{ text-indent:2em; padding:0px 10px 10px 10px}
+.newsR ul{ border-top: #CCC 1px dashed; padding-left:10px; padding-right:10px; margin-right:10px;}
+.newsR ul li{ border-bottom:#CCC 1px dashed; list-style-type:none}
+.newsR ul li a:hover{color: #f00; text-decoration:underline}
+/*产品推荐*/
+#demo{ overflow:hidden; width:950px;}
+#demo img{ border:#CCC 1px solid; margin-left:10px;  height:140px; padding:3px}
+.tjl{ float:left; background:url(../images/bgtjcp.png); width:18px; height:238px;}
+.tjcp{ background: url(../images/bgtjcp2.png) repeat-x;height:238px; width:951px; float:left}
+.tjr{ float:left; background: url(../images/bgtjcp3.png); width:17px;height:238px;}
+.tjcp h3{ font-size:12px; }
+.tjcp h3 span a{ color:#F60; float:right; padding:20px 0 0 0}
+.tjcp h3 img{ padding:10px 0 0 20px;}
+/*友情链接*/
+#link{width:100%; }
+#link ul{ border-top:#4daa22 2px solid; margin:0px 10px;}
+#link h3{ color:#42921e; font-size:14px; padding-left:10px; line-height:40px}
+#link li{ display:inline; margin:0 10px 0 0; line-height:36px}
+/*底部导航*/
+#endnav{ background:url(../images/endnav.png); height:30px;text-align:center;}
+#endnav ul{ list-style-type:none; padding-top:2px;}
+#endnav ul li{ display: inline; line-height:25px; color:#FFF; padding:0px 10px; border-right:#FFF 1px solid}
+#endnav ul li a:hover{ color: #FF0}
+#footer{ text-align:center; line-height:28px;padding:20px 0px 0px 0px; color:#505962; width:100%; margin:auto}
+#footer a{ color:#039;}
+#footer a:hover{ color: #900;}
+.blank{ height:5px; overflow:hidden; width:100%; margin:auto; clear:both}

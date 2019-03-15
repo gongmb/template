@@ -1,0 +1,22 @@
+body{margin:0; padding:0 5px; font-size:12px; font-family:ËÎÌו,Arial; line-height:20px; color:#333333;}
+h1,h2,h3,h4,h5,h6,p,img{margin:0;padding:0; border:none;}
+a:link{color:#004499; text-decoration:none;}
+a:visited{color:#003399; text-decoration:none;}
+a:hover{color:#cc0000; text-decoration:underline;}
+a:active{color:#003399; text-decoration:none;}
+
+.lloogg{background:url(3glogobj.jpg) repeat-x bottom; height:51px; margin-bottom:5px;}
+.text{background:#cc3300;font-size:12px; font-weight:100; margin-top:10px; margin-bottom:8px; line-height:16px; height:16px;color:#ffffff;}
+.text a:link,.text a:visited{color:#ffffff;}
+.text a:hover,.text a:active{color:#ffff00;}
+.acss{text-decoration:none;}
+.dh01{background:#ebf5ff; padding-left:5px;}
+.dh02{padding-left:5px;}
+.danghang{float:right; font-size:12px;}
+.dangqian{background:#f1f1f1; border-top:solid 1px #ccc; border-top:solid 1px #ccc; padding:2px 5px;}
+.daleinav{padding-top:5px;}
+.dqksname{padding-top:8px;}
+.gbanquan{border-top:solid 1px #ccc; padding:8px; background:#f1f1f1; height:60px; text-align:center;}
+.doujidahd{font-size:14px;}
+.shijian{font-family:Arial, Helvetica, sans-serif; font-size:10px;}
+.new3g{padding:6px 0 7px 0;vertical-align:middle;}

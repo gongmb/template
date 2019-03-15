@@ -1,0 +1,23 @@
+﻿<DynamicWeb>
+
+<Sections id="menu">
+		<Menu btnName="HOME" p="15" f="" h="" css="home" bg="on" bgImg="dat/Images/BG/bg.swf"></Menu>
+		<Menu btnName="PORTFOLIO" p="25" f="Folio" h="" css="folio" bg="on" bgImg="dat/Images/BG/bg2.swf"></Menu>
+		<Menu btnName="VIDEOS" p="35" f="Videos" h="VIDEOS TITLE" css="video" bg="on" bgImg="dat/Images/BG/bg2.swf"></Menu>
+		<Menu btnName="HISTORY" p="45" f="History" h="HISTORY TITLE" css="history" bg="on" bgImg="dat/Images/BG/bg2.swf"></Menu>
+		<Menu btnName="CONTACT" p="55" f="Publication" h="" css="contact" bg="on" bgImg="dat/Images/BG/bg2.swf"></Menu>
+</Sections>
+
+<Sections id="logo">
+		<data><font color="#3B373B">Dream </font><font color="#D50042">Walk</font></data>
+</Sections>
+
+<Sections id="contact">
+		<data>Lorem Ipsum Dolor Sit Amet, Vonsectetur Adipisicing Elit.<br />  <br />  <br />Mr.x<br /><a href="mailto:Mr.x@g.ho.st">Mr.x@g.ho.st</a><br /><br /><br />Q:1300299393<br />oicq<br />China <br />Country</data>
+</Sections>
+
+<Sections id="copy">
+		<data>(C) 2011. ALL RIGHTS ARE RESERVED.</data>
+</Sections>
+
+</DynamicWeb>

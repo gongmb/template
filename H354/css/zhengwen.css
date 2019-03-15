@@ -1,0 +1,385 @@
+html{padding:0px;margin:0px auto;-webkit-text-size-adjust:none;}
+body{background:#FFF;padding:0px;margin:0px auto;font-size:15px;color:#333;font-family:Helvetica,Microsoft YaHei,Microsoft JhengHei;}
+a{color:#333;text-decoration:none;}
+a:visited{color:#333;}
+ol,ul,li,dl,dd,dt{padding:0;margin:0;list-style:none;}
+form,p{padding:0;margin:0;}
+i,em{font-style:normal;}
+textarea {resize:none}
+img{border:none;}
+.spanclass{display:none;}
+.body{max-width:640px;margin:0 auto;overflow:hidden;background:#f2f2f2;}
+
+/*����ͷ��*/
+.header-bg {height: 45px;position:relative;overflow:hidden;background:#144392;}
+.header-home{float:left;width:45px;height:45px;margin-right:5px;background:url(http//www1.pconline.com.cn/wap/2013/cms/img/bg-xA.png) no-repeat right 0;background-size:1px ;}
+.header-home::before{content:'';position:absolute;width:24px;height:24px;background:url(http//www1.pconline.com.cn/wap/2013/cms/img/bgA.png) no-repeat -64px -10px;background-size: 200px;margin:9px 0 0 12px;}
+.header-back{float:left;width:45px;height:45px;margin-right:5px;background:url(http//www1.pconline.com.cn/wap/2013/cms/img/bg-xA.png) no-repeat right 0;background-size:1px ;}
+.header-back::before{content:'';position:absolute;width:24px;height:24px;background:url(http//www1.pconline.com.cn/wap/2013/cms/img/bgA.png) no-repeat -114px -10px;background-size: 200px;margin:9px 0 0 12px;}
+.header-title{line-height:45px;font-size:15px;color:#fff;font-weight:bold;position:relative;overflow:hidden;margin-right:5px;}
+.header-title a {color:#fff;}
+.header-title a:visited{color:#fff;}
+.header-title-home {display:block;text-align:center;padding:0 45px 0 0;}
+.header-title-nav {display:block;white-space:nowrap;-webkit-transform: translate(00px, 0px) translateZ(0px);overflow-x:auto;overflow-y:hidden;}
+
+/*���۰�ť*/
+.header-post {float: right;font-size: 17px;color: #fff;line-height: 45px;height: 45px;position: relative;padding: 0 28px 0 30px;}
+.header-post::before{content:'';display:block;width:30px;height:30px;background: url(http//www1.pconline.com.cn/wap/2013/cms/img/bgA.png) no-repeat 5px -49px;background-color:#f60;background-size:200px;border-radius:3px;position:absolute;right:11px;top:8px;box-shadow:1px 1px 2px #777;}
+
+/*��Ŀ*/
+.menu{width:100%;height:45px;line-height:45px;overflow:hidden;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:flexbox;background:#144392;}
+.menu a{display:block;color:#fff;text-align:center;font-size:15px;background:url(http//www1.pconline.com.cn/wap/2013/cms/img/bg-xA.png) no-repeat right 0;background-size:1px;-moz-box-flex:1;-webkit-box-flex:1;-ms-flex:1;flex:1;}
+.menu a:visited{color:#fff;}
+
+/*������*/
+.search {border:1px solid #d5d5d5;background:#fff;-webkit-border-radius: 4px;border-radius: 4px;margin:10px 7px;position:relative;overflow:hidden;}
+.search span {display:block;}
+.search .txt {height: 32px;line-height:32px;}
+.search .txt .sortSelect{float:left;width:70px;height:32px;position:relative;}
+.search .txt .sortSelect::before{content:"";
+display:block;
+width:0;
+height:0;
+border-width:6px;
+overflow:hidden;
+border-color:#aaa transparent transparent;
+border-style:solid;
+position:absolute;left:52px;top:12px;
+}
+.search .txt select{width:70px;height:32px;-webkit-appearance:none;border:none;overflow:hidden;color:#aaa;font-size:15px;outline:none;background:transparent;position:absolute;}
+.search .txt .text {-webkit-appearance:none;float:left;width:60%;vertical-align:top;border:none;height:24px;line-height:24px;margin-top:4px;padding:0px;outline:none;font-size:15px;}
+.search .btn {position:absolute;right:0;top:0;}
+.search .sub {display:block;padding:0px;background:#f7f7f7 url(http//www1.pconline.com.cn/wap/2013/cms/img/bgA.png) no-repeat 0 -8px;background-size:200px;border:none;text-indent:-999px;overflow:hidden;width: 50px;height: 32px;border-left:1px solid #d5d5d5;-webkit-border-radius: 0 4px 4px 0;border-radius: 0 4px 4px 0;cursor:pointer;}
+
+/* ���� */
+.section {height: 44px;line-height:44px;background:#fff;overflow:hidden;}
+.section .mark {float:left;font-size:16px;color:#038;border-left:4px solid #1954ab;padding-left:10px;}
+.section .mark a {float:left;color:#038;margin-right:15px;}
+.section .mark a.cur {color:#038;position:relative;}
+.section .mark a.cur::after{display:block;content:"";width:0px;height:0px;border-width:10px;overflow:hidden;border-color:transparent transparent #f2f2f2;border-style:solid;position:absolute;bottom:0px;left:50%;margin-left:-10px;}
+.section .mark2 {float:left;font-size:16px;color:#777;border-left:4px solid #1954ab;padding-left:10px;}
+.section .mark2 a {float:left;color:#777;margin-right:20px;}
+.section .subMark {float:right;}
+.section .subMark a {margin-right:20px;color:#777;}
+
+/*�鿴����*/
+.btn-more{border:1px solid #d9d6d6;border-radius:3px;background:#f8f8f8;line-height:36px;margin:10px;text-align:center;cursor:pointer;}
+.btn-more a{display:block;height:36px;line-height:36px;color:#777;font-size: 14px;}
+.btn-more a:visited{color:#777;}
+
+
+/*���ض���*/
+.btn-top {display:none;}
+
+/*�����ײ�*/
+.footer {text-align:center;}
+.footer a {color:#777;}
+.footer a:visited{color:#777;}
+.footer p {margin:12px 0 0;}
+.footer .pTit-1 {color:#bebebe;font-size:14px;}
+.footer .pTit-1 a {margin:0 10px;color:#1f89e3;}
+.footer .pTit-1 a:visited{color:#1f89e3;}
+.footer .pTit-1 em {margin:0 10px;color:#777;}
+.footer .pTit-2>a {display:inline-block;background:#f5f5f5;border:1px solid #d5d5d5;padding:5px 10px;-webkit-border-radius: 2px;border-radius: 2px;margin:0 5px;font-size:14px;}
+.footer .pTit-2 .s1 {display:inline-block;background:#f5f5f5;border:1px solid #d5d5d5;padding:5px 10px;-webkit-border-radius: 2px;border-radius: 2px;margin:0 5px;font-size:14px;color:#777;}
+.footer .pTit-2 .s1 em{color:#1f89e3;cursor:pointer;}
+.footer .pTit-3 {color:#777;font-size:14px;}
+.footer .pTit-4{width:100%;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:flexbox;color:#333;font-size:13px;}
+.footer .pTit-4 span {display:block;-moz-box-flex:1;-webkit-box-flex:1;-ms-flex:1;flex:1;margin:0 1px 0 0;text-align:center;padding:0 0 4px;}
+.footer .pTit-4 .s-online {border-bottom:3px solid #2251a5;}
+.footer .pTit-4 .s-auto {border-bottom:3px solid #ff6702;}
+.footer .pTit-4 .s-games {border-bottom:3px solid #cc0202;}
+.footer .pTit-4 .s-lady {border-bottom:3px solid #e5187e;}
+.footer .pTit-4 .s-baby {border-bottom:3px solid #ffc119;}
+.footer .pTit-4 .s-house {border-bottom:3px solid #7b3708;}
+.footer em.icon-group-small {display:inline-block;vertical-align:middle;background:url(http//www1.pconline.com.cn/wap/2013/cms/img/bgA.png) no-repeat -82px -55px;background-size: 200px;width: 12px;height: 15px;margin-top:-3px;margin-left:5px;}
+
+/*+++++++++++�����ն�++++++++++*/
+.artWrap {margin:0 12px;}
+.artTitle {font-size:20px;font-weight:bold;color:#333;margin:15px auto 5px;}
+.artInfo {text-align:center;font-size:12px;padding-bottom:10px;border-bottom:1px solid #dedede;margin-bottom:10px;}
+.artInfo span {margin:0 2px;}
+.artInfo .sInfo-1 {color:#999;}
+.artInfo .sInfo-2 {color:#999;}
+.artInfo .sInfo-3 {color:#cd1111;}
+.artInfo .sInfo-4 {color:#1f89e3;font-weight:bold;font-size:18px;margin-left:8px;}
+.artInfo .sInfo-4 em {font-size:16px;}
+.artBody {line-height:1.6em;font-size:16px;color:#333;word-break:break-all;}
+.artBody p{margin-bottom:1.25em;}
+.artBody a{color:#1F89E3;}
+.artBody a.cmsLink{color:#1F89E3;border-bottom:1px dotted #1F89E3;}
+.artBody img {display:block;max-width:99%;margin:0 auto;}
+.artBody video{display:block;max-width:300px;margin:0 auto;}
+.artBody .vText{text-align:center;padding:10px 0;}
+
+/*����ȫ�ķ�ҳ����*/
+.pageNumber{height:35px;line-height:35px;padding:0 5px;background:#8c97cb;margin:10px 0;overflow:hidden;font-size:14px;}
+.pageNumber-num{float:left;width:24px;text-align:center;line-height:24px;height:24px;background:#fff;border-radius:12px;margin-top:5px;margin-right:5px;}
+.pageNumber-tit{float:left;color:#fff;}
+.pageNumber-top{display:none;}
+
+/*����table��ʽborder-collapse: collapse;*/
+.artBody table{width:100%;font-size:12px;margin-bottom:10px;border:none;}
+.artBody table tr{background:#fff;}
+.artBody table td{padding:2px;font-size:12px;word-break:break-all;text-align:center;white-space:normal!important;}
+.artBody table td.theader{background:#1F89E3;color:#fff;white-space:normal!important;}
+.artBody table td.theader p{color:#fff;}
+.artBody table td.theader a{color:#fff;}
+
+/*����ͼƬ*/
+.artBody .block{text-align: center;}
+.artBody .bigimg {display:block;max-width:99%;margin:0 auto;}
+.artBody .block .open{display:block;width:22px;height:22px;position:absolute;bottom:-8px;right:-8px;background:#236ed8;border:3px solid #fff;border-radius:15px;box-shadow:1px 1px 2px #777;}
+.artBody .block .open::before{content:"+";display:block;line-height:22px;text-align:center;font-size:24px;font-weight:bold;color:#fff;}
+.artBody .viewAllPic {text-align: center;margin-bottom: 10px;font-size: 17px;color: #1F89E3;}
+.artBody .viewAllPic a{display: inline-block;height:30px;line-height:30px;width:160px;background:#fff;border-radius:5px;border:1px solid #D4D5D6;color:#1F89E3;cursor:pointer;font-size:15px;font-weight:bold;}
+
+
+/*���·�ҳ*/
+.artNav {overflow:hidden;}
+.artNav-page {width:290px;height:42px;margin:5px auto;overflow:hidden;}
+.artNav-page .prev,.artNav-page .next {display:block;width: 72px;height: 40px;line-height:40px;text-align:center;font-size:14px;color:#1f89e3;border:1px solid #e0e0e1;-webkit-border-radius: 5px;border-radius: 5px;background-image:-webkit-linear-gradient(top,#fefefe 0%,#f8f8f8 50%,#f2f3f3 100%);background-image:linear-gradient(to bottom,#fefefe 0%,#f8f8f8 50%,#f2f3f3 100%);}
+.artNav-page .prev{float:left;}
+.artNav-page .next{float:right;}
+.artNav-page span.prev,.artNav-page span.next{color:#ccc;}
+
+.artNav .pageViewGuidedd{display:block;width:132px;height:42px;overflow:hidden;margin:0 auto;}
+.artNav .pageViewGuidedd a{display:block;width:130px;height:40px;line-height:40px;text-align:center;font-size:14px;color:#1f89e3;border:1px solid #e0e0e1;-webkit-border-radius: 5px;border-radius: 5px;background-image:-webkit-linear-gradient(top,#fefefe 0%,#f8f8f8 50%,#f2f3f3 100%);background-image:linear-gradient(to bottom,#fefefe 0%,#f8f8f8 50%,#f2f3f3 100%);}
+.artNav .pageViewGuidedd span{display:block;width:130px;height:40px;line-height:40px;text-align:center;font-size:14px;color:#ccc;border:1px solid #e0e0e1;-webkit-border-radius: 5px;border-radius: 5px;background-image:-webkit-linear-gradient(top,#fefefe 0%,#f8f8f8 50%,#f2f3f3 100%);background-image:linear-gradient(to bottom,#fefefe 0%,#f8f8f8 50%,#f2f3f3 100%);}
+
+.artNav-select {width: 290px;height:42px;margin:5px auto;}
+.artNav-select strong{display:none;}
+.artNav-select select {position:absolute;width: 290px;height:42px;z-index:100;opacity:0;}
+.artNav-select .fakeSelect {display:block;width: 260px;height:40px;line-height:40px;padding:0 18px 0 10px;border:1px solid #e0e0e1;-webkit-border-radius: 5px;border-radius: 5px;color:#333;background-image:-webkit-linear-gradient(top,#fefefe 0%,#f8f8f8 50%,#f2f3f3 100%);background-image:linear-gradient(to bottom,#fefefe 0%,#f8f8f8 50%,#f2f3f3 100%);position:relative;}
+.artNav-select .fakeSelect::before{content:'';display:block;width:0px;height:0;
+border-width:5px;
+overflow:hidden;
+border-color:#777 transparent transparent;
+border-style:solid;
+position:absolute;right:10px;top:15px;}
+
+.art .c-wrap .c-ctrl .btn{display:none !important;}
+
+/*����ģ��*/
+.shareBox{width:296px;margin:10px auto;overflow:hidden;}
+.shareBox .pTit{float:left;line-height:27px;color:#999;text-align:center;font-size:13px;}
+body #bdshare{float:right;line-height:15px;text-align:center !important;}
+body #bdshare a{display:inline-block;float:none;margin:0 1px;font-size:12px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAB4BAMAAAAAkc8fAAAAMFBMVEUAAAAPDw8iIiI0NDRHR0dtfordOBIjnuLRpXrm5ucOhLqBx+b////84V/+/v4PDw9JwPxFAAAAEHRSTlP///////////////////8A4CNdGQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAUJJREFUOMvt0bFKA0EQBuC8gqWPYW3rCwiCItouGzCxHDOHik2SE9Le5YxJJ2s2ouWhi6kFwc4zINsaEiGlgs25M3uCEN/A/MXy3TA7ezClPP8QnP1SnpdnnMixmnDe5tnNQs+m+xgx6yJsy4wohWjKbregEK2Ihslm0hYhTyg/rp1HMqHq3vrS8oMImasnjlytbqzs1H2DTMK2e4T46yd/8t/5CZxjR2U46DiAoPeUguewYyYF3wFqMbMWBymMicE1DmfYIaor7DlqYh97Ex0zB8EdqilR677WR+hpBrdj7Rkr0AWnqArCmdJKEb8052axt7/2BsbcvxoDtAuA1gggpSqAte5gHljbYDq4jBrMTIiKJeKutcI+K+q9sFnFbvprrmj9hMD1ypSoeESD131oty/ti+epwi1PVACocLG3OX4Dzy8S2oIFXHYAAAAASUVORK5CYII=) no-repeat;padding-left:22px;padding-top:6px;padding-bottom: 3px;font-family: '����',Arial;}
+body .bds_tsina{background-position: 0 5px!important;}
+body .bds_tqq{background-position: 0 -35px!important;}
+body .sjcl{background-position: 0 -75px!important;}
+
+/*++����ҳ���ؿͻ���++*/
+.artDownloadAPP{height:20px;line-height:20px;text-align:center;background:#C3C3C3;padding:8px 0;margin:20px 0;vertical-align:middle;}
+.artDownloadAPP::before{content:"";display:inline-block;width:20px;height:20px;background:url(http//www1.pconline.com.cn/wap/2013/cms/img/bgA.png) no-repeat -165px -15px;background-size:200px;vertical-align:middle;border-radius:3px;overflow:hidden;vertical-align:top;margin-right:5px;}
+.artDownloadAPP a{color:#fff;}
+.artDownloadAPP a:visited{color:#fff;}
+
+/*��������*/
+.comment {overflow:hidden;}
+.c-input {margin:0 12px;}
+.c-input .c-top {margin:10px 4px;font-size:14px;}
+.c-input .c-user {display:block;color:#333;}
+.c-input .c-user a {color:#1f89e3;}
+.c-input .c-face {float:right;position:relative;}
+.c-input .c-face-btn img {vertical-align:middle;width:20px;height:20px;margin:-2px 2px 0 0;}
+.c-input .c-face-list {position:absolute;width: 295px;height: 35px;line-height:35px;right:-4px;top:25px;background:#fff;border:1px solid #dcdcdc;-webkit-border-radius: 5px;border-radius: 5px;text-align:center;display:none;}
+.face-open .c-input .c-face-list {display:block;}
+.face-open .c-input .c-top {margin:10px 4px 50px;}
+.c-input .c-face-list::before {content:'';position:absolute;display:block;width: 12px;height: 6px;background:url(http//www1.pconline.com.cn/wap/2013/cms/img/bgA.png) no-repeat -55px -60px;background-size: 200px;right:19px;top:-5px;}
+.c-input .c-face-list img {width: 24px;height: 24px;display:inline-block;vertical-align:middle;margin:0 1px; border:1px solid #fff; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px;}
+.c-input .c-face-list img.hlight{border-color:#1F89E3;}
+.c-input .c-area {padding:5px;border:1px solid #d5d5d5;-webkit-border-radius: 5px;border-radius: 5px;background:#fff;}
+.c-input .c-area textarea {width: 100%;height: 90px;outline:none;padding:0px;border:none;font-size:15px;}
+.c-input .c-btn {position:relative;width: 240px;margin:15px auto;}
+.c-input .c-btn .c-submit {display:block;width: 240px;height: 35px;line-height:35px;text-align:center;background:#f76a0c;-webkit-border-radius: 18px;border-radius: 18px;border:none;font-size:17px;color:#fff;-webkit-appearance: none;font-family:Helvetica,Microsoft YaHei,Microsoft JhengHei;padding:0;}
+.c-input .c-btn::before {content:'';position:absolute;display:block;width:18px;height:18px;background:url(http//www1.pconline.com.cn/wap/2013/cms/img/bgA.png) no-repeat -4px -53px;background-size: 200px;left:82px;top:8px;}
+
+.c-input .c-check {display:none; margin:10px 0;}
+.c-input .c-check input {height: 30px;line-height:30px;width: 100px;padding:0 10px;border:1px solid #ddd;display:inline-block;vertical-align:middle;}
+.c-input .c-check img {height: 30px;display:inline-block;vertical-align:middle;margin:0 0 0 10px;}
+
+.c-list {overflow:hidden;}
+.c-wrap {border-bottom:1px solid #e3e3e3;padding:10px 0;}
+.c-wrap .c-th {font-size:12px;overflow:hidden;padding:0 12px;}
+.c-wrap .c-th .user {float:left;max-width:240px;color:#013388;}
+.c-wrap .c-th .count {float:right;color:#999;}
+.c-wrap .c-tb {clear:both;color:#333;line-height:23px;margin:5px 0;padding:0 12px; word-wrap:break-word; word-break:break-all;}
+.c-wrap .c-tb img{vertical-align:middle;}
+.c-wrap .c-tb > .c-body {}
+.c-wrap .c-tb .c-pmsg{font-size:12px; color:#78787A;}
+.c-wrap .c-ctrl {overflow:hidden;padding:0 12px;}
+.c-wrap .c-ctrl .date {float:left;font-size:12px;color:#999;}
+.c-wrap .c-ctrl .btn {float:right;}
+.c-wrap .c-ctrl .btn a {display:inline-block;min-width: 50px;padding:0 5px;height:30px;line-height:30px;text-align:center;color:#013388;border:1px solid #e0e0e1;background-image:-webkit-linear-gradient(top,#fdfdfd 0%,#f8f8f8 50%,#f2f3f3 100%);background-image:linear-gradient(to bottom,#fdfdfd 0%,#f8f8f8 50%,#f2f3f3 100%);-webkit-border-radius: 5px;border-radius: 5px;vertical-align:middle;margin-left:2px;}
+
+.c-wrap .c-tb .c-repeat {background:#fff;border:1px solid #669ACC;padding:2px;}
+.c-wrap .c-tb>.c-repeat {background:#fff;border:1px solid #669ACC;padding:2px;margin-bottom:5px;}
+.c-wrap .c-tb .c-repeat .c-th{padding:0px;}
+.c-wrap .c-tb .c-repeat .c-inner {padding:5px;;}
+.c-wrap .c-tb .c-repeat .c-in {border-bottom:1px solid #669ACC;}
+
+/*�鿴����*/
+.moreline{border:1px solid #d9d6d6;border-radius:3px;background:#f8f8f8;line-height:36px;margin:10px;text-align:center;cursor:pointer;}
+.moreline a{display:block;height:36px;line-height:36px;color:#777;font-size: 14px;}
+.moreline a:visited{color:#777;}
+
+
+/* �����б�ulTxtA */
+.ulTxtA{ overflow:hidden;}
+.ulTxtA li{ border-bottom:1px solid #d9d6d6;line-height:42px;}
+.ulTxtA li.noResult{padding:40px 0;border:none;text-align:center;color:#777;}
+.ulTxtA a{display:block;padding-left:15px;}
+
+/*++++++++++��½ע��++++++++++*/
+.ui-nav{width:100%;height:40px;margin-bottom:15px;line-height:40px;background:#dcdcdc;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:flexbox;overflow:hidden;}
+.ui-nav a {display:block;-moz-box-flex:1;-webkit-box-flex:1;-ms-flex:1;flex:1;text-align:center;color:#333;}
+.ui-nav a:visited{color:#333;}
+.ui-nav a.cur {background:#eee;color:#038;}
+.ui-nav a:visited.cur{color:#038;}
+
+.ui-inputInfoA li{height:35px;line-height:35px;padding:0 15px;overflow:hidden;}
+.ui-inputInfoA li span:first-child{float:left;width:20%;font-size:14px;}
+.ui-inputInfoA li span:last-child{float:left;width:75%;padding:0 5px;height:30px;line-height:30px;border:1px solid #d5d5d5;background:#fff;border-radius:4px;}
+.ui-inputInfoA input{-webkit-appearance:none;width:100%;padding:0px;outline: none;border:none;font-size:15px;}
+.ui-inputInfoA .warn{color:#c00;font-size:12px;height:15px;line-height:15px;margin:5px 0;vertical-align:top;display:none;}
+.ui-inputInfoA .warn::before{content:"";display:inline-block;height:15px;width:20px;background:url(http//www1.pconline.com.cn/wap/2013/cms/img/bgA.png) no-repeat -105px -55px;background-size:200px;}
+.ui-inputInfoA .identifying{display:none;}
+.ui-inputInfoA .identifying span:last-child{width:55px;margin-right:5px;}
+.ui-inputInfoA .identifying input{width:55px;}
+.ui-inputInfoA .identifying img{float:left;height:24px;margin-right:5px;margin-top:4px;overflow:hidden;}
+.ui-inputInfoA .identifying a{cursor:pointer;color:#777;line-height:30px;font-size:12px;}
+
+.btn-submit-wrap {padding:15px 0;text-align:center;}
+.btn-submit {display:inline-block;height: 35px;line-height:35px;text-align:center;font-size:17px;color:#fff;-webkit-border-radius: 17px;border-radius: 17px;background:#ff7214;padding:0 76px;border:none;font-family:Helvetica,Microsoft YaHei,Microsoft JhengHei;min-width:85px;}
+.ui-btn-a a {display:block;height: 40px;line-height:40px;color:#1f89e3;font-size:16px;text-align:center;}
+
+/* �������� */
+.ui-inputInfoB li{margin:5px 15px;}
+.ui-inputInfoB li span{display:block;border:1px solid #d5d5d5;background:#fff;border-radius:4px;padding:3px 5px;}
+.ui-inputInfoB textarea{width:100%;border:none;height:150px;outline: none;font-size:15px;padding:0px;}
+.ui-inputInfoB input{width:100%;border:none;outline: none;font-size:15px;padding:0px;}
+.ui-inputInfoB .warn{color:#c00;font-size:12px;height:15px;line-height:15px;margin:5px 0;vertical-align:top;display:none;}
+.ui-inputInfoB .warn::before{content:"";display:inline-block;height:15px;width:20px;background:url(http//www1.pconline.com.cn/wap/2013/cms/img/bgA.png) no-repeat -105px -55px;background-size:200px;}
+
+/*++�ƶ��ͻ���APP����++*/
+.appDl{overflow:hidden;position:relative;padding:15px 0;margin:0 15px;}
+.appDl.iphone{border-bottom:1px dotted #D5D5D5;}
+.appDl-pic{float:left;width:65px;height:65px;border-radius:5px;margin-right:10px;
+background: url(http//www1.pconline.com.cn/wap/2013/cms/img/appDl-bg.png) no-repeat;
+background-color: #757575;
+background-size:65px;
+}
+.appDl.android .appDl-pic{background: url(http//www1.pconline.com.cn/wap/2013/cms/img/appDl-bg.png) no-repeat 0 -65px;
+background-color: #83B023;
+background-size:65px;}
+.appDl-txt{overflow:hidden;zoom:1;}
+.appDl-txt p{line-height:20px;color:#777;font-size:13px;}
+.appDl-txt .appDl-txt-tit{margin-bottom:5px;color:#333;font-size:15px;}
+.appDl-install{display:block;color:#fff;background:#1F89E3;width:70px;height:28px;line-height:28px;text-align:center;border-radius:5px;border:1px solid #1765A8;position:absolute;right:0;top:15px;}
+.appDl-install.noUse{background:#CCCCCC;border:1px solid #BABABA;pointer-events:none}
+
+
+/***********
+# 2013-05-08 Ƶ��ҳ #
+************/
+
+/*Ӧ������*/
+/* Ӧ�ð�װģ�� */
+.appA li{overflow:hidden;padding:15px;position:relative;border-bottom:1px solid #d9d6d6;border-top:1px solid #fff;}
+.appA li.noResult{padding:40px 0;text-align:center;color:#777;border:none;}
+.appA li:first-child{border-top:none;}
+.appA .install{display:block;width:65px;height:28px;line-height:28px;font-size:16px;text-align:center;color:#fff;background:#1954AB;position:absolute;top:10px;right:15px;border-radius:5px;}
+.appA .pic{float:left;width:60px;height:60px;margin-right:10px;}
+.appA .pic img{display:block;width:60px;height:60px;border-radius:10px;}
+.appA .con{overflow:hidden;}
+.appA .con p{line-height:15px;height:15px;font-size:14px;overflow:hidden;color:#777;}
+.appA .con .pTit{margin-bottom:10px;font-size:16px;}
+.appA .con .pCate{margin-bottom:5px;}
+.appA .con .pScore{}
+.appA .con .pScore .star{display:inline-block;width:80px;height:15px;background:url(http//www1.pconline.com.cn/wap/2013/cms/img/bgA.png) no-repeat -120px -75px;background-size:200px;}
+.appA .con .pScore .star em{display:block;height:15px;background:url(http//www1.pconline.com.cn/wap/2013/cms/img/bgA.png) no-repeat -120px -90px;background-size:200px;}
+.appA .con .pScore .l{float:left;}
+.appA .con .pScore .r{float:right;margin-right:5px;}
+.appA .con .pScore .r em{color:#f60;}
+.appA .con .pTime{margin-bottom:5px;}
+.appA .con .pTime .r{float:right;margin-right:5px;font-size:12px;}
+.appA .con .pUpdate{margin-top:5px;}
+
+/*��ͼ����(����app)*/
+.ulPic{text-align:center;font-size:0px;margin:20px 0 0;border-bottom:1px solid #e3e3e3;}
+.ulPic li{display:inline-block;width:76px;padding:0 0 10px;overflow:hidden;vertical-align:middle;}
+.ulPic li img{display:block;width:60px;height:60px;margin:0 auto;border-radius:10px;}
+.ulPic li p{width:100%;height:25px;line-height:25px;font-size:14px;text-align:center;overflow:hidden;}
+
+/*�б�ҳ*/
+.dateTh {font-size:15px;color:#333;padding:0 15px;height: 40px;line-height:40px;background:#dcdcdc;}
+.dateTh2 {font-size:15px;color:#333;padding:0 0 0 40px;height: 40px;line-height:40px;background:#fff;position:relative;}
+.dateTh2::before {content:'';display:block;width: 20px;height: 20px;background:url(http//www1.pconline.com.cn/wap/2013/cms/img/bgA.png) no-repeat -127px -53px;background-size: 200px ;position:absolute;top:10px;left:10px;}
+
+/*�����б�A*/
+.extA {overflow:hidden;}
+.extA li {height:42px;line-height:42px;border-bottom:1px solid #e3e3e3;overflow:hidden;white-space:nowrap;}
+.extA a {padding-left:15px;height:42px;display:block;overflow:hidden;}
+.extA span {float:left;margin:0 15px;color:#777;}
+.extA span a {color:#777;}
+
+/*��������*/
+.headline {font-size: 18px;font-weight: bold;margin: 15px 15px 0;color: #c00;}
+.headline a {display: block;color: #c00;font-weight: bold;}
+
+/*�˵��б�*/
+.expA {width: 320px;margin:0 auto;overflow:hidden;}
+.expA li {float:left;}
+.expA a {display:block;width: 79px;background:#dcdcdc;margin:0 1px 1px 0;height:38px;line-height:38px;text-align:center;color:#333;font-size:14px;}
+
+.expC {overflow:hidden;width: 304px;margin:15px auto;}
+.expC li {float:left;margin:2px;}
+.expC a {display:block;width: 70px;height: 35px;background:#fff;border:1px solid #d3d3d3;line-height:35px;color:#333;text-align:center;font-size:14px;}
+.expC .current a {background:#1f89e3;border:1px solid #1f89e3;color:#fff;}
+
+.expD {overflow:hidden;margin:0 10px;}
+.expD a {display:block;height: 35px;line-height:35px;border-bottom:1px dotted #ccc;color:#038;padding:0 5px;}
+.expD li:last-child a {border:none;}
+
+
+
+
+/*+++++++++++++�ٿ�++++++++++++++++*/
+.swipeA {overflow:hidden;}
+.swipeA-wrap {overflow:hidden;visibility:hidden;position:relative;}
+.swipeA-content {overflow:hidden;position:relative;}
+.swipeA-content .content {float:left;width: 100%;position:relative;}
+/*ѡ������ʽ*/
+.b-selectB {overflow:hidden;}
+.b-selectB li {height: 43px;line-height:43px;position:relative;border-bottom:1px solid #DAD6D7;border-top:1px solid #fff;}
+.b-selectB li:first-child{border-top:none;}
+.b-selectB select {opacity:0;position:absolute;width: 100%;height: 100%;z-index:100}
+.b-selectB .mark {
+display:block;
+height: 43px;
+line-height:43px;
+padding-left:15px;
+color:#333;
+position:relative;
+}
+.b-selectB .mark::before {content:'';
+display:block;
+width:0;
+height:0;
+border-width:6px;
+overflow:hidden;
+border-color:#777777 transparent transparent transparent;
+border-style:solid;
+position:absolute;right:15px;top:18px;
+}
+.b-selectB .subMark{
+display: block;
+height: 43px;
+line-height: 43px;
+color: #777777;
+position:absolute;
+right:35px;
+top:0px;
+}
+

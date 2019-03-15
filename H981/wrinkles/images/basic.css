@@ -1,0 +1,155 @@
+/* reset */
+body{font:14px/25px "ËÎÌו",arial,sans-serif;color:#2c2c2c;}
+
+.phone {
+    border-radius: 2em 2em 2em 2em;
+    bottom:10%;
+    box-shadow: 0 0 0 3px #FFFFFF, 0 0 0 5px rgba(204, 204, 204, 0.5);
+    position: fixed;
+    right: 10px;
+    width: 40px;
+    z-index: 999;
+}
+.phone a {
+    display: block;
+    position: relative;
+}
+
+.mobile_tel {
+    background: url("lrs04.jpg") no-repeat scroll 0 0 transparent;
+    height: 148px;
+    padding: 15px 15px 10px;
+    position: relative;
+	width:305px;
+}
+.mobile_tel .fun {
+    height: 38px;
+    line-height: 38px;
+    padding: 18px 0 5px;
+    width: 100%;
+}
+.lwhite:link, .lwhite:visited {
+    color: #FFFFFF;
+    font-family: Microsoft YaHei;
+    text-decoration: none;
+}
+.onlinebuy {
+    background: none repeat scroll 0 0 #F1BA45;
+    box-shadow: 0 3px 3px #CCCCCC;
+    color: #FFFFFF;
+    float: left;
+    font-size: 18px;
+    height: 34px;
+    line-height: 34px;
+    margin: 0 15px;
+    text-align: center;
+    width: 120px;
+}
+.onlinetel {
+    background: none repeat scroll 0 0 #FF9FC3;
+    box-shadow: 0 3px 3px #CCCCCC;
+    color: #FFFFFF;
+    float: left;
+    font-size: 18px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    width: 120px;
+}
+.mobile_tel .rexian {
+    color: #FF5092;
+    font-family: Microsoft YaHei;
+    font-size: 25px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 62px;
+    position: relative;
+}
+.mobile_tel .rexian .clickme {
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: -4px;
+    width: 43px;
+}
+
+.mobile_tel .fukuan {
+    color: #169BC2;
+    font-family: Microsoft YaHei;
+    font-size: 18px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+}
+
+html,body,div,p,span,form,iframe,table,td,th,input,textarea,button,label,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;border:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%; }
+ul,ol,li,dl{list-style-type:none;}
+em,i,dfn,cite,strong,small{font-style:normal;} 
+fieldset,button,input,select,option{border:none;vertical-align:middle;font:12px/18px "ËÎÌו",arial,sans-serif;}
+.f12{ font-size:12px;} .f14{ font-size:14px;} .mt20{ margin-top:20px;} .mb15{ margin-bottom:15px;} .tc{ text-align:center;}
+img{ border:none;}
+
+/*color*/
+a:link,a:visited{color:#19810e;text-decoration:underline;}
+a:hover{color:#ff0000;text-decoration:none;}
+a:active{color:#1d7400;}
+.yellowf60{ color:#ff6000;}
+.yellowC198{ color:#19810E;}
+.fn_ext{color:#d10f48;}
+.gray12{color:#999;font-size:12px; text-decoration:line-through;}
+.gray{color:#666;font-size:13px;line-height:20px;}
+.order_btn{background:#d10f48;padding:2px;}
+.order_btn a{color:#FFF;}
+
+.clearfix:after{content: ".";display: block;height:0;font-size:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1;}
+
+.wraper{ width:320px; overflow:hidden; }
+.yrshouji_info{ margin-bottom:10px; padding:5px 0 5px 0; text-align:center; color:#241100; background:#fe9c01;}
+.yrshouji_info strong{ font-size:14px; text-decoration:underline;}
+
+
+.Mbox{ padding:10px 0; line-height:25px; color:#333; background:#fff;}
+.Mboxpic{ width:211px; height:116px; margin:0 auto 10px auto;}
+.Mboxpic img{ display:block; width:209px; height:114px; border:1px solid #2c6700;}
+
+/* Mboxbd */
+.Mboxbd{ padding:10px 0; background:#fff;}
+.Mboxbd p{  line-height:25px; text-indent:2em; color:#333;}
+
+/* Mboxdaiyan */
+.Mboxdaiyan{ padding:10px 10px; height:140px; line-height:25px; color:#333; background:url(shoujiP57_07.jpg) no-repeat right bottom;}
+.Mboxdaiyan p{ width:195px; line-height:25px; text-indent:2em;}
+
+/* mobile_anli */
+.mobile_anli{ padding:10px 15px 1px 30px; line-height:25px; font-size:14px;}
+.mobile_anli h2{ margin:5px 0; color:#ff6000;}
+.mobile_anli p.xin{ color:#19810E;}
+.mobile_anli p.info{ text-indent:2em; color:#333;}
+
+.shoujiyr{width:205px; overflow:hidden; height:126px; margin:0 auto 10px auto; position:relative; }
+.shoujiyr .left{ width:20px; height:126px; background:url(shoujiyr_left.gif) no-repeat center; cursor:pointer; position:absolute; left:10px; top:0;}
+.shoujiyr .right{width:20px; height:126px; background:url(shoujiyr_right.gif) no-repeat center; cursor:pointer; position:absolute; right:10px; top:0;}
+.ztmodbanner_adv{float:left; width:820; display:inline;}
+.ztmodbanner_adv li{float:left; width:205px; height:126px; margin-right:3px; display:inline; text-align:center;}
+.ztmodbanner_adv li a{ display:block; width:203px; height:124px; border:1px solid #d10f48;}
+
+.shoujiyr_mod{ margin-bottom:10px; padding:10px 0 0 10px; color:#333;}
+.shoujiyr_mod p{ margin-bottom:8px;}
+.shoujiyr_pl{ padding-left:50px;}
+.sjyrtext{ width:150px; height:20px; line-height:20px; padding-left:3px; border:1px solid #7b9b0b;}
+.shoujiyr_sel{ height:20px; line-height:20px; padding-left:3px; border:1px solid #7b9b0b;}
+.shoujiyr_ta{ width:160px; height:120px; line-height:20px; padding-left:3px; border:1px solid #7b9b0b;}
+.sjyrbutton1{ width:78px; height:25px; margin:8px 0 8px 0; border:none; background:url(yrshouji_10.jpg) no-repeat;}
+
+.Mboxbuy{ height:100px; padding:10px 5px; margin:0 15px; line-height:18px; color:#333; background:#F5FDB9; overflow:hidden;}
+.pinglun{color:#769702; border-bottom:1px dashed #d6e0b3; margin-top:5px; color:#000;}
+
+.copyright .cr{ width:320px; margin:0 auto; padding-bottom:5px; text-align:center;}
+.cr .cr_menu{ padding-top:12px; color:#959494;}
+.cr .cr_content{ padding-top:8px; line-height:20px; color:#4e4e4e;}
+
+/* mobile_title */
+.mobile_title{ background:#d10f48;}

@@ -1,0 +1,435 @@
+﻿
+    	 <!doctype html>
+<html lang="en">
+                                                                        
+<script>
+    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+    	WeixinJSBridge.call('hideToolbar');
+    });
+</script>
+<head>
+	<meta charset="UTF-8">
+	<title>悠享家</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="css/yotime.webapp.css?v=2">
+</head>
+<body>
+	<input type="hidden" id="curr_page" value="shop"/>
+	<div id="menu">
+						<header id="nheader" >
+	<h1 class="logo yt" style="margin:0px;"><a href="/yotime/wxapp/index.vm"><img src="images/head_yt.png" alt=""/></a></h1>
+		<div id="city">
+		<div class="nui_select">
+			<span class="nui_inner">
+				<span class="nui_inner_text">杭州</span>
+				<span class="nui_inner_arrow"></span>
+			</span>
+			<select id="cityname">
+									<option selected value="杭州市" citycode="4401">杭州</option>
+									<option  value="温州市" citycode="4403">温州</option>
+							</select>
+		</div>
+	</div>	
+	<!-- headerCtrl right end -->
+		<div class="nr">
+		<ul class="navbar clearfix" id="nbl">
+			<li class="nnavitems">
+				<a href="/yotime/wxapp/my.vm"><i class="nicon_my"></i>我的悠享家</a>
+			</li>
+			<li class="nnavitems">
+				<a href="/yotime/wxapp/shopcar.vm"><i class="nicon_car"></i>购物车</a>
+				<span class="nnavbar_procount" id="carnum"> 0 </span>			</li>
+			<li class="nnavitems">
+				<a href="/yotime/wxapp/index.vm"><i class="nicon_shop"></i>商城</a>
+			</li>
+		</ul>
+	</div>
+</header><!-- /header -->
+			<!-- shoptype_wrap end -->
+		<div id="content" class="top110" style="top:70px;">
+			<div id="scroller">
+				<input type="hidden" value="%2Fyotime%2Fwxapp%2Findex.vm" id="fromPage" />
+				<section id="mySwipe" class='swipe'>
+					<ul class='swipe-wrap'>
+						
+						                    						</ul>
+					<div class="swipe-circle clearfix">
+													<span class="circle"></span>
+													<span class="circle"></span>
+																	</div>
+				</section><!-- end swipe -->
+
+				<!-- <div style='text-align:center;padding-top:20px;'>
+				  <button onclick='mySwipe.prev()'>prev</button> 
+				  <button onclick='mySwipe.next()'>next</button>
+				</div> -->
+				<ul class="idnexProGroup clearfix" id="case-list">
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=37206" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2014/2/18/1392713500894.jpg!m"/>
+							</a>
+							<span class="pname">红丝绒心语...</span>
+							<span class="price">
+																	￥138.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=37401" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2014/3/4/1393925977171.jpg!m"/>
+							</a>
+							<span class="pname">马卡龙礼盒</span>
+							<span class="price">
+																	￥118.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=37409" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2014/2/20/1392879227863.jpg!m"/>
+							</a>
+							<span class="pname">推推乐礼盒</span>
+							<span class="price">
+																	￥199.0-199.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=31856" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2012/12/20/1355994073468.jpg!m"/>
+							</a>
+							<span class="pname">七色彩虹蛋...</span>
+							<span class="price">
+																	￥138.0-208.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=36931" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2013/12/14/1387003768249.jpg!m"/>
+							</a>
+							<span class="pname">彩虹卷</span>
+							<span class="price">
+																	￥58.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=33802" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2012/12/20/1355987482984.jpg!m"/>
+							</a>
+							<span class="pname">马卡龙彩虹...</span>
+							<span class="price">
+																	￥168.0-258.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=35657" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2013/8/1/1375342370327.png!m"/>
+							</a>
+							<span class="pname">什锦拼盘</span>
+							<span class="price">
+																	￥130.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=34377" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2013/3/29/1364548742734.png!m"/>
+							</a>
+							<span class="pname">招牌雪芝士</span>
+							<span class="price">
+																	￥108.0-188.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=27516" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2012/12/20/1355994576171.jpg!m"/>
+							</a>
+							<span class="pname">法式蛋壳烤...</span>
+							<span class="price">
+																	￥49.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=36031" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2013/10/15/1381826056258.jpg!m"/>
+							</a>
+							<span class="pname">奶油小方</span>
+							<span class="price">
+																	￥55.0-79.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=35803" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2013/8/23/1377255636000.jpg!m"/>
+							</a>
+							<span class="pname">蓝莓雪芝士</span>
+							<span class="price">
+																	￥118.0-198.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=35618" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2012/12/21/1356052307781.jpg!m"/>
+							</a>
+							<span class="pname">原味布蕾派</span>
+							<span class="price">
+																	￥75.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=31365" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2013/4/3/1364983611132.png!m"/>
+							</a>
+							<span class="pname">木糠蛋糕</span>
+							<span class="price">
+																	￥78.0-175.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=25319" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2012/12/21/1356052638031.jpg!m"/>
+							</a>
+							<span class="pname">开心九宫格...</span>
+							<span class="price">
+																	￥158.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=35623" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2013/6/26/1372226725336.jpg!m"/>
+							</a>
+							<span class="pname">缤纷布蕾派</span>
+							<span class="price">
+																	￥95.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=35389" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2013/6/22/1371911811695.jpg!m"/>
+							</a>
+							<span class="pname">致死榴莲</span>
+							<span class="price">
+																	￥158.0-278.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=25960" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2012/12/20/1355994707000.jpg!m"/>
+							</a>
+							<span class="pname">开心十二宫...</span>
+							<span class="price">
+																	￥208.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=35627" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2012/12/21/1356052241328.jpg!m"/>
+							</a>
+							<span class="pname">原味卡士达</span>
+							<span class="price">
+																	￥79.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=25320" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2012/12/20/1355994927312.jpg!m"/>
+							</a>
+							<span class="pname">黑森林</span>
+							<span class="price">
+																	￥78.0-138.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=35621" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2013/7/30/1375166861061.jpeg!m"/>
+							</a>
+							<span class="pname">黑樱桃布蕾...</span>
+							<span class="price">
+																	￥89.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=25322" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2012/12/20/1355994908703.jpg!m"/>
+							</a>
+							<span class="pname">提拉米苏</span>
+							<span class="price">
+																	￥98.0-168.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=25962" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2012/12/20/1355994639984.jpg!m"/>
+							</a>
+							<span class="pname">新芒果慕斯</span>
+							<span class="price">
+																	￥88.0-158.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=35655" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2013/5/28/1369720132316.jpg!m"/>
+							</a>
+							<span class="pname">双拼布蕾派</span>
+							<span class="price">
+																	￥92.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=25324" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2012/12/20/1355994878500.jpg!m"/>
+							</a>
+							<span class="pname">布朗尼</span>
+							<span class="price">
+																	￥98.0-98.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=35370" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2014/2/21/1392971090343.jpg!m"/>
+							</a>
+							<span class="pname">招牌甜品组...</span>
+							<span class="price">
+																	￥45.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=34191" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2013/3/21/1363837594395.jpg!m"/>
+							</a>
+							<span class="pname">叉盘2副</span>
+							<span class="price">
+																	￥1.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=36348" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2013/10/15/1381822027102.jpg!m"/>
+							</a>
+							<span class="pname">造型生日蜡...</span>
+							<span class="price">
+																	￥5.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=34376" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2013/3/27/1364367912052.jpg!m"/>
+							</a>
+							<span class="pname">生日贺卡</span>
+							<span class="price">
+																	￥2.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=35626" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2013/9/5/1378361866850.jpg!m"/>
+							</a>
+							<span class="pname">缤纷卡士达</span>
+							<span class="price">
+																	￥92.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=35644" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2013/8/16/1376647441341.jpg!m"/>
+							</a>
+							<span class="pname">可可提拉米...</span>
+							<span class="price">
+																	￥89.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=35628" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2013/9/5/1378360025381.jpg!m"/>
+							</a>
+							<span class="pname">巧克力黑樱...</span>
+							<span class="price">
+																	￥89.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=35620" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2013/8/30/1377832891871.jpg!m"/>
+							</a>
+							<span class="pname">法式蛋糕布...</span>
+							<span class="price">
+																	￥85.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=35615" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2013/8/30/1377848394496.jpg!m"/>
+							</a>
+							<span class="pname">巧克力布蕾...</span>
+							<span class="price">
+																	￥78.0
+															</span>
+						</li>
+						
+											<li class="prolist">
+																					<a href="/yotime/wxapp/product.vm?itemId=35638" class="probox">
+								<img src="http//product.b0.upaiyun.com/uploads/Product/2013/8/16/1376647461622.jpg!m"/>
+							</a>
+							<span class="pname">草莓提拉米...</span>
+							<span class="price">
+																	￥93.0
+															</span>
+						</li>
+						
+									</ul>
+			</div> <!-- end scroller -->
+		</div><!-- /content -->
+		
+	</div><!-- /page -->
+	<script src="js/iscroll.js"></script>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/swipe.js"></script>
+	<script src="js/yotime.webapp.js?v=1"></script>
+	<script>
+	//index.vm swipeimg
+	var elem = document.getElementById('mySwipe');
+	window.mySwipe = Swipe(elem, {
+		startSlide:0,
+		auto:2000,
+		continuous: true,
+		disableScroll: true,
+		stopPropagation: true,
+		callback:function(index, element) {
+			$(".swipe-circle > .circle:eq("+index+")").addClass("selected").siblings("span.circle").removeClass("selected");
+		}
+	});
+	
+	</script>
+	
+</body>
+</html>

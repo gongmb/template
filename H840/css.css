@@ -1,0 +1,188 @@
+
+*{margin:0; padding:0;}
+li{ list-style:none;}
+/*首先是对无序列表进行样式设置*/
+.slideshow ,.slideshow:after{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;;
+    z-index:-1;        
+}
+.slideshow:after{
+    content:'';
+    
+}
+/*将span的width和height占满整个视图，并将span里面的文字变为不可见，直接用transprant*/
+/*设置opacity:0;之后我们通过在动画中去改变这个值*/
+.slideshow li span{
+    width:100%; height:100%;
+    position:absolute;
+    top:0px; left:0px;
+    color:transparent;
+    background-size:cover;
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+    opacity:0;
+    z-index:0;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 18s linear infinite 0s;
+    -moz-animation: imageAnimation 18s linear infinite 0s;
+    -o-animation: imageAnimation 18s linear infinite 0s;
+    -ms-animation: imageAnimation 18s linear infinite 0s;
+    animation: imageAnimation 18s linear infinite 0s;
+}
+
+.slideshow li div { 
+    z-index: 1000;
+    position: absolute;
+    top: 30%;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #74BDEA;
+    -webkit-animation: titleAnimation 18s linear infinite 0s;
+    -moz-animation: titleAnimation 18s linear infinite 0s;
+    -o-animation: titleAnimation 18s linear infinite 0s;
+    -ms-animation: titleAnimation 18s linear infinite 0s;
+    animation: titleAnimation 18s linear infinite 0s;
+}
+.slideshow li div h3 { 
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+    padding: 0;
+    line-height: 200%; 
+}
+/*接下来将定义所有span的背景图片和动画的延迟，所以每一个滑动的图片和title出现在上一个出现之后的6秒*/
+.slideshow li:nth-child(1) span { 
+    background-image: url(weixin/111.jpg);
+}
+.slideshow li:nth-child(2) span { 
+    background-image: url(weixin/222.jpg);
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s; 
+}
+.slideshow li:nth-child(3) span { 
+    background-image: url(weixin/3.jpg);
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;  
+}
+.slideshow li:nth-child(2) div { 
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s; 
+}
+.slideshow li:nth-child(3) div { 
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s; 
+}
+/*设置图片动画关键帧*/
+@-webkit-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -webkit-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    50% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-moz-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -webkit-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    50% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-o-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -webkit-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    50% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-ms-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -webkit-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    50% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes imageAnimation { 
+   0% { opacity: 0;
+    -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -webkit-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    50% { opacity: 0 }
+    100% { opacity: 0 }
+}
+/*设置文字动画关键帧*/
+@-webkit-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    35% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-moz-keyframes titleAnimation { 
+     0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    35% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-o-keyframes titleAnimation { 
+     0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    35% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-ms-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    35% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes titleAnimation { 
+     0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    35% { opacity: 0 }
+    100% { opacity: 0 }
+}
+/*有些浏览器不支持animation的，我们将会简单的展示最后一张图片*/
+.no-cssanimation .slideshow li span{opacity:1;}
+/*设置不同分辨率时title的字体大小*/
+@media screen and (max-width: 1140px) { 
+    .cb-slideshow li div h3 { font-size: 140px }
+}
+@media screen and (max-width: 600px) { 
+    .cb-slideshow li div h3 { font-size: 80px }
+}
+
+
+
+
+
+

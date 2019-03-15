@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     <title>Photo Album</title>
+     <meta charset="utf-8">
+     <link rel="icon" href="images/favicon.ico">
+     <link rel="shortcut icon" href="images/favicon.ico" />
+     <link rel="stylesheet" href="css/style.css">
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.1.1.js"></script>
+     <script src="js/superfish.js"></script>
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+          <script src="js/jquery.opacityrollover.js"></script>
+
+<script src="js/jquery.galleriffic.js"></script>
+<script>
+$(window).load(function(){
+        if ($("#thumbs").length) {
+          $('div.content').css('display', 'block');
+          // Initially set opacity on thumbs and add
+          // additional styling for hover effect on thumbs
+          var onMouseOutOpacity = 1.0;
+          $('#thumbs ul.thumbs li').opacityrollover({
+            mouseOutOpacity:   onMouseOutOpacity,
+            mouseOverOpacity:  0.8,
+            fadeSpeed:         'fast',
+            exemptionSelector: '.selected'
+          });
+      
+        // Initialize Advanced Galleriffic Gallery
+        var gallery = $('#thumbs').galleriffic({
+          delay:                     2500,
+          numThumbs:                 12,
+          enableTopPager:            false,
+          enableBottomPager:         true,
+          maxPagesToShow:            1,
+          imageContainerSel:         '#slideshow',
+          controlsContainerSel:      '#controls',
+          captionContainerSel:       '#caption',
+          loadingContainerSel:       '#loading',
+          renderSSControls:          false,
+          renderNavControls:         false,
+          playLinkText:              'Play Slideshow',
+          pauseLinkText:             'Pause Slideshow',
+          prevLinkText:              '&lsaquo; Previous Photo',
+          nextLinkText:              'Next Photo &rsaquo;',
+          nextPageLinkText:          '',
+          prevPageLinkText:          '',
+          enableHistory:             false,
+          autoStart:                 false,
+          syncTransitions:           true,
+          defaultTransitionDuration: 0,
+          onSlideChange:             function(prevIndex, nextIndex) {
+          // 'this' refers to the gallery, which is an extension of $('#thumbs')
+          this.find('ul.thumbs').children()
+            .eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
+            .eq(nextIndex).fadeTo('fast', 0.8);
+          },
+          onPageTransitionOut:       function(callback) {
+            this.fadeTo('fast', 1.0, callback);
+          },
+          onPageTransitionIn:        function() {
+            this.fadeTo('fast', 1.0);
+          }
+        });
+        }
+      });
+    </script>
+     <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http//windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http//storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" media="screen" href="css/ie.css">
+
+    <![endif]-->
+     </head>
+     <body  class="page1">
+<!--==============================header=================================-->
+ <header> 
+  <div class="container_12">
+    <div class="grid_12"> 
+    <h1><a href="index.html"><img src="images/logo.png" alt="Sara  &amp;  Robert Personal Wedding Page"></a> </h1>
+         <div class="menu_block">
+           <nav  class="" >
+            <ul class="sf-menu">
+                   <li><a href="index.html">Home</a></li>
+                   <li class="with_ul"><a href="index-1.html">About Us </a>
+                     <ul>
+                         <li><a href="#"> Presentation</a></li>
+                         <li><a href="#">Calendar</a></li>
+                     </ul>
+                   </li>
+                   <li><a href="index-2.html">Weddings</a></li>
+                   <li class="current"><a href="index-3.html">Photo Album</a></li>
+                   <li><a href="index-4.html">Your Wishes</a></li>
+                   <li><a href="index-5.html">Contact Us</a></li>
+                 </ul>
+              </nav>
+           <div class="clear"></div>
+           </div>
+           <div class="clear"></div>
+      </div>
+    </div>
+</header>
+
+<!--=======content================================-->
+
+<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - June 24, 2013!</div>
+  <div class="container_12">
+    <div class="grid_12">
+      <h2>Photo Album</h2>
+        <div class="grid_12 omega alpha">
+                  <div id="gallery" class="content advanced_gallery">
+                    <div class="slideshow-container">
+                      <div id="loading" class="loader"></div>
+                      <div id="slideshow" class="slideshow simple"></div>
+                    </div>
+                    <div id="caption" class="caption-container"></div>
+                  </div>
+                </div>
+                <div class="grid_12 alpha omega">
+                  <div id="thumbs" class="navigation">
+                    <ul class="thumbs noscript">
+                      <li> <a class="thumb img_inner" href="images/big1.jpg"> <img src="images/thumb1.jpg" alt="" /></a>
+                        <div class="caption">
+                          <p class="col1 text1">01. Photo Name</p>
+                          <p>Quisque fringilla dolor suscipit tincertidunt luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbitrol hendrerit dolor dolo eutrol lobortis risusyot congue sed. Vestibulum hendrerit purus at dapibusyl varius. Lorem ipsum dolor sit amet consectetur adipiscingyot elityro il. Donec et aliquet odio. Morbi hendrerit dolor dolor eu lobortis risusyloti congue sed. </p>
+                          <p>Vestibulum hendrerit purus at dapibus varius risusyrolim mauris loyiti loiaculis dui vel rutrum lacus lacus eu felis.Nulla vitaete suscipit nislo rhoncus ultricies dolor. Duis quis lectustro risus. Nunc egestas egete quam non tincidunt.  Lorem ipsum dolor sit amet consectetur adipulo iscing elit. Curabitur egestas leo a interdum porta. </p>
+                          
+                          Morbi eu leo sagittis sollicitudin sem a consequat nulla. Proin lopitroli
+hedrerit sodales tempor. Quisque fringilla dolor suscipit tinciduntuloty luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbilo hendrerit dolor dolor, eu lobortis risus congue sed. Vestibulum jolitolir hedrerit purus at dapibus varius. Lorem ipsum dolor sit amet consetr
+ctetur adipiscing elit. Donec et aliquet odio. Nulla vitae suscipit nislolit rhoncus ultricies dolor. Duis quis lectus risus. Nunc egestas egetrero quam non tincidunt. Quisque fringilla, dolor suscipit tincidunt luctusilu risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbi hentino
+ndrerit dolor dolor eu lobortis risus congue sed. 
+                          
+                        </div>
+                      </li>
+                      <li class="last"> <a class="thumb img_inner" href="images/big2.jpg"> <img src="images/thumb2.jpg" alt="" /></a>
+                        <div class="caption">
+                                                    <p class="col1 text1">02. Photo Name</p>
+                          <p>Quisque fringilla dolor suscipit tincertidunt luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbitrol hendrerit dolor dolo eutrol lobortis risusyot congue sed. Vestibulum hendrerit purus at dapibusyl varius. Lorem ipsum dolor sit amet consectetur adipiscingyot elityro il. Donec et aliquet odio. Morbi hendrerit dolor dolor eu lobortis risusyloti congue sed. </p>
+                          <p>Vestibulum hendrerit purus at dapibus varius risusyrolim mauris loyiti loiaculis dui vel rutrum Curabitur egestas leo a interdum porta. </p>
+                          
+                          Morbi eu leo sagittis sollicitudin sem a consequat nulla. Proin lopitroli
+hedrerit sodales tempor. Quisque fringilla dolor suscipit tinciduntuloty luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbilo hendrerit dolor dolor, eu lobortis risus congue sed. Vestibulum jolitolir hedrerit purus at dapibus varius. Lorem ipsum dolor sit amet consetr
+ctetur adipiscing elit. Donec et aliquet odio. Nulla vitae suscipit nislolit rhoncus ultricies dolor. Duis quis lectus risus. Nunc egestas egetrero quam non tincidunt. Quisque fringilla, dolor suscipit tincidunt luctusilu risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbi hentino
+ndrerit dolor dolor eu lobortis risus congue sed. 
+                          
+                        </div>
+                      </li>
+                      <li> <a class="thumb img_inner" href="images/big3.jpg"> <img src="images/thumb3.jpg" alt="" /></a>
+                        <div class="caption">
+                                                   <p class="col1 text1">03. Photo Name</p>
+                          <p>Quisque fringilla dolor suscipit tincertidunt luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbitrol hendrerit dolor dolo eutrol lobortis risusyot congue sed. Vestibulum hendrerit purus at dapibusyl varius. Lorem ipsum dolor sit amet consectetur adipiscingyot elityro il. Donec et aliquet odio. Morbi hendrerit dolor dolor eu lobortis risusyloti congue sed. </p>
+                          <p>Vestibulum hendrerit purus at dapibus varius risusyrolim mauris loyiti loiaculis dui vel rutrum lacus lacus eu felis.Nulla vitaete suscipit nislo rhoncus ultricies dolor. Duis quis lectustro risus. Nunc egestas egete quam non tincidunt.  Lorem ipsum dolor sit amet consectetur adipulo iscing elit. Curabitur egestas leo a interdum porta. </p>
+                          
+                          
+                        </div>
+                      </li>
+                       <li> <a class="thumb img_inner" href="images/big4.jpg"> <img src="images/thumb4.jpg" alt="" /></a>
+                        <div class="caption">
+                                                   <p class="col1 text1">04. Photo Name</p>
+                          <p>Quisque fringilla dolor suscipit tincertidunt luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. </p>
+                          <p>Vestibulum hendrerit purus at dapibus varius risusyrolim mauris loyiti loiaculis dui vel rutrum lacus lacus eu felis.Nulla vitaete suscipit nislo rhoncus ultricies dolor. Duis quis lectustro risus. Nunc egestas egete quam non tincidunt.  Lorem ipsum dolor sit amet consectetur adipulo iscing elit. Curabitur egestas leo a interdum porta. </p>
+                          
+                          Morbi eu leo sagittis sollicitudin sem a consequat nulla. Proin lopitroli
+hedrerit sodales tempor. Quisque fringilla dolor suscipit tinciduntuloty luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbilo hendrerit dolor dolor, eu lobortis risus congue sed. Vestibulum jolitolir hedrerit purus at dapibus varius. Lorem ipsum dolor sit amet consetr
+ctetur adipiscing elit. Donec et aliquet odio. Nulla vitae suscipit nislolit rhoncus ultricies dolor. Duis quis lectus risus. Nunc egestas egetrero quam non tincidunt. Quisque fringilla, dolor suscipit tincidunt luctusilu risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbi hentino
+ndrerit dolor dolor eu lobortis risus congue sed. 
+                          
+                        </div>
+                      </li>
+                      <li> <a class="thumb img_inner" href="images/big5.jpg"> <img src="images/thumb5.jpg" alt="" /></a>
+                        <div class="caption">
+                                                    <p class="col1 text1">05. Photo Name</p>
+                          <p>Quisque fringilla dolor suscipit tincertidunt luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbitrol hendrerit dolor dolo eutrol lobortis risusyot congue sed. Vestibulum hendrerit purus at dapibusyl varius. Lorem ipsum dolor sit amet consectetur adipiscingyot elityro il. Donec et aliquet odio. Morbi hendrerit dolor dolor eu lobortis risusyloti congue sed. </p>
+                         
+                          
+                          Morbi eu leo sagittis sollicitudin sem a consequat nulla. Proin lopitroli
+hedrerit sodales tempor. Quisque fringilla dolor suscipit tinciduntuloty luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbilo hendrerit dolor dolor, eu lobortis risus congue sed. Vestibulum jolitolir hedrerit purus at dapibus varius. Lorem ipsum dolor sit amet consetr
+ctetur adipiscing elit. Donec et aliquet odio. Nulla vitae suscipit nislolit rhoncus ultricies dolor. Duis quis lectus risus. Nunc egestas egetrero quam non tincidunt. Quisque fringilla, dolor suscipit tincidunt luctusilu risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbi hentino
+ndrerit dolor dolor eu lobortis risus congue sed. 
+                          
+                        </div>
+                      </li>
+                      <li class="last"> <a class="thumb img_inner" href="images/big6.jpg"> <img src="images/thumb6.jpg" alt="" /></a>
+                        <div class="caption">
+                                                  <p class="col1 text1">06. Photo Name</p>
+                          <p>Quisque fringilla dolor suscipit tincertidunt luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbitrol hendrerit dolor dolo eutrol lobortis risusyot congue sed. Vestibulum hendrerit purus at dapibusyl varius. Lorem ipsum dolor sit amet consectetur adipiscingyot elityro il. Donec et aliquet odio. Morbi hendrerit dolor dolor eu lobortis risusyloti congue sed. </p>
+                          <p>Vestibulum hendrerit purus at dapibus varius risusyrolim mauris loyiti loiaculis dui vel rutrum lacus lacus eu felis.Nulla vitaete suscipit nislo rhoncus ultricies dolor. Duis quis lectustro risus. Nunc egestas egete quam non tincidunt.  Lorem ipsum dolor sit amet consectetur adipulo iscing elit. Curabitur egestas leo a interdum porta. </p>
+                          
+                          Morbi eu leo sagittis sollicitudin sem a consequat nulla. Proin lopitroli
+hedrerit sodales tempor. Quisque fringilla dolor suscipit tinciduntuloty luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbilo hendrerit dolor dolor, eu lobortis risus congue sed. Vestibulum jolitolir hedrerit purus at dapibus varius. Lorem ipsum dolor sit amet consetr
+                          
+                        </div>
+                      </li>
+                      <li> <a class="thumb img_inner" href="images/big7.jpg"> <img src="images/thumb7.jpg" alt="" /></a>
+                        <div class="caption">
+                                                   <p class="col1 text1">07. Photo Name</p>
+                          
+                          <p>Vestibulum hendrerit purus at dapibus varius risusyrolim mauris loyiti loiaculis dui vel rutrum lacus lacus eu felis.Nulla vitaete suscipit nislo rhoncus ultricies dolor. Duis quis lectustro risus. Nunc egestas egete quam non tincidunt.  Lorem ipsum dolor sit amet consectetur adipulo iscing elit. Curabitur egestas leo a interdum porta. </p>
+                          <p>Quisque fringilla dolor suscipit tincertidunt luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbitrol hendrerit dolor dolo eutrol lobortis risusyot congue sed. Vestibulum hendrerit purus at dapibusyl varius. Lorem ipsum dolor sit amet consectetur adipiscingyot elityro il. Donec et aliquet odio. Morbi hendrerit dolor dolor eu lobortis risusyloti congue sed. </p>
+                          
+                          Morbi eu leo sagittis sollicitudin sem a consequat nulla. Proin lopitroli
+hedrerit sodales tempor. Quisque fringilla dolor suscipit tinciduntuloty luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbilo hendrerit dolor dolor, eu lobortis risus congue sed. Vestibulum jolitolir hedrerit purus at dapibus varius. Lorem ipsum dolor sit amet consetr
+ctetur adipiscing elit. Donec et aliquet odio. Nulla vitae suscipit nislolit rhoncus ultricies dolor. Duis quis lectus risus. Nunc egestas egetrero quam non tincidunt. Quisque fringilla, dolor suscipit tincidunt luctusilu risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbi hentino
+ndrerit dolor dolor eu lobortis risus congue sed. 
+                          
+                        </div>
+                      </li>
+                      <li class="last"> <a class="thumb img_inner" href="images/big8.jpg"> <img src="images/thumb8.jpg" alt="" /></a>
+                        <div class="caption">
+                                                  
+                                                    <p class="col1 text1">08. Photo Name</p>
+                          <p>Quisque fringilla dolor suscipit tincertidunt luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbitrol hendrerit dolor dolo eutrol lobortis risusyot congue sed. Vestibulum hendrerit purus at dapibusyl varius. Lorem ipsum dolor sit amet consectetur adipiscingyot elityro il. Donec et aliquet odio. Morbi hendrerit dolor dolor eu lobortis risusyloti congue sed. </p>
+                          Morbi eu leo sagittis sollicitudin sem a consequat nulla. Proin lopitroli
+hedrerit sodales tempor. Quisque fringilla dolor suscipit tinciduntuloty luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbilo hendrerit dolor dolor, eu lobortis risus congue sed. Vestibulum jolitolir hedrerit purus at dapibus varius. Lorem ipsum dolor sit amet consetr
+ctetur adipiscing elit. Donec et aliquet odio. Nulla vitae suscipit nislolit rhoncus ultricies dolor. Duis quis lectus risus. Nunc egestas egetrero quam non tincidunt. Quisque fringilla, dolor suscipit tincidunt luctusilu risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbi hentino
+ndrerit dolor dolor eu lobortis risus congue sed. 
+                          <p>Vestibulum hendrerit purus at dapibus varius risusyrolim mauris loyiti loiaculis dui vel rutrum lacus lacus eu felis.Nulla vitaete suscipit nislo rhoncus ultricies dolor. Duis quis lectustro risus. Nunc egestas egete quam non tincidunt.  Lorem ipsum dolor sit amet consectetur adipulo iscing elit. Curabitur egestas leo a interdum porta. </p>
+                          
+                          
+                          
+                        </div>
+                      </li>
+                      <li> <a class="thumb img_inner" href="images/big9.jpg"> <img src="images/thumb9.jpg" alt="" /></a>
+                        <div class="caption">
+                                                    <p class="col1 text1">09. Photo Name</p>
+                         
+                          
+                          Morbi eu leo sagittis sollicitudin sem a consequat nulla. Proin lopitroli
+hedrerit sodales tempor. Quisque fringilla dolor suscipit tinciduntuloty luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbilo hendrerit dolor dolor, eu lobortis risus congue sed. Vestibulum jolitolir hedrerit purus at dapibus varius. Lorem ipsum dolor sit amet consetr
+ctetur adipiscing elit. Donec et aliquet odio. Nulla vitae suscipit nislolit rhoncus ultricies dolor. Duis quis lectus risus. Nunc egestas egetrero quam non tincidunt. Quisque fringilla, dolor suscipit tincidunt luctusilu risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbi hentino
+ndrerit dolor dolor eu lobortis risus congue sed. 
+                          
+                        </div>
+                      </li>
+                      <li class="last"> <a class="thumb img_inner" href="images/big10.jpg"> <img src="images/thumb10.jpg" alt="" /></a>
+                        <div class="caption">
+                                                   <p class="col1 text1">10. Photo Name</p>
+                          <p>Quisque fringilla dolor suscipit tincertidunt luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbitrol hendrerit dolor dolo eutrol lobortis risusyot congue sed. Vestibulum hendrerit purus at dapibusyl varius. Lorem ipsum dolor sit amet consectetur adipiscingyot elityro il. Donec et aliquet odio. Morbi hendrerit dolor dolor eu lobortis risusyloti congue sed. </p>
+                          
+                        </div>
+                      </li>
+                      <li> <a class="thumb img_inner" href="images/big11.jpg"> <img src="images/thumb11.jpg" alt="" /></a>
+                        <div class="caption">
+                                                   <p class="col1 text1">11. Photo Name</p>
+                          <p>Quisque fringilla dolor suscipit tincertidunt luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbitrol hendrerit dolor dolo eutrol lobortis risusyot congue sed. Vestibulum hendrerit purus at dapibusyl varius. Lorem ipsum dolor sit amet consectetur adipiscingyot elityro il. Donec et aliquet odio. Morbi hendrerit dolor dolor eu lobortis risusyloti congue sed. Vestibulum hendrerit purus at dapibus varius risusyrolim mauris loyiti loiaculis dui vel rutrum lacus lacus eu felis.Nulla vitaete suscipit nislo rhoncus ultricies dolor. Duis quis lectustro risus. Nunc egestas egete quam non tincidunt.  Lorem ipsum dolor sit amet consectetur adipulo iscing elit. Curabitur egestas leo a interdum porta. </p>
+                          
+                          
+                        </div>
+                      </li>
+                      <li class="last"> <a class="thumb img_inner" href="images/big12.jpg"> <img src="images/thumb12.jpg" alt="" /></a>
+                        <div class="caption">
+                                                   <p class="col1 text1">12. Photo Name</p>
+                          <p>Quisque fringilla dolor suscipit tincertidunt luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbitrol hendrerit dolor dolo eutrol lobortis risusyot congue sed. V Lorem ipsum dolor sit amet consectetur adipiscingyot elityro il. Donec et aliquet odio. Morbi hendrerit dolor dolor eu lobortis risusyloti congue sed. </p>
+                          <p>Vestibulum hendrerit purus at dapibus varius risusyrolim mauris loyiti loiaculis dui vel rutrum lacus lacus eu felis. Curabitur egestas leo a interdum porta. </p>
+                          
+                          Morbi eu leo sagittis sollicitudin sem a consequat nulla. Proin lopitroli
+hedrerit sodales tempor. Quisque fringilla dolor suscipit tinciduntuloty luctus risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbilo hendrerit dolor dolor, eu lobortis risus congue sed. Vestibulum jolitolir hedrerit purus at dapibus varius. Lorem ipsum dolor sit amet consetr
+ctetur adipiscing elit. Donec et aliquet odio. Nulla vitae suscipit nislolit rhoncus ultricies dolor. Duis quis lectus risus. Nunc egestas egetrero quam non tincidunt. Quisque fringilla, dolor suscipit tincidunt luctusilu risus mauris iaculis dui vel rutrum lacus lacus eu felis. Morbi hentino
+ndrerit dolor dolor eu lobortis risus congue sed. 
+                          
+                        </div>
+                      </li>
+                    </ul>
+                   
+                  </div>
+                </div>
+    </div>
+  </div>
+</div>
+<!--==============================footer=================================-->
+
+<footer>    
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="socials">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+      </div>
+     <p><a href="index.html" class="footer_logo"><img src="images/footer_logo.png"  alt=""></a>  &copy; Copyright &copy; 2013.Company name All rights reserved.<a target="_blank" href="http//www.zjf88.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+     
+    </div>
+    <div class="clear"></div>
+  </div>
+</footer>
+<div style="display:none"><script src='http//v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

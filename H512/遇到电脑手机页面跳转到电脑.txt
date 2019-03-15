@@ -1,0 +1,11 @@
+<noscript>&lt;meta http-equiv=""refresh"" content=""0;url= http//3g.exam8.com/3g.html""&gt;</noscript>
+<script language="javascript">
+function detectOS(){  
+    var isWin = (navigator.platform == "Win32") || (navigator.platform == "Windows");                                                                        
+    if(isWin) return true;
+	return false; 
+}
+if(detectOS()){
+	if(top==self)top.location=" http//3g.exam8.com/3g.html";
+}
+</script>

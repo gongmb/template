@@ -1,0 +1,40 @@
+
+/* ---------- BLUE STYLE ---------- */
+
+/* body top border */
+body{border-top:4px #69C1E7 solid}
+/* navigation */
+#menu ul li:first-child>a{border-top:2px solid #69C1E7}
+#menu ul li:first-child>a:after{border-bottom:6px solid #69C1E7}
+#menu ul ul li:first-child a:after{border-right:6px solid #69C1E7}
+#menu ul li:first-child a:hover:after{border-bottom-color:#69C1E7}
+#menu ul ul li:first-child a:hover:after{border-right-color:#69C1E7}
+/* font colors */
+.colored,a{color:#69C1E7}
+.slash-colored{color:#69C1E7}
+.descr a{color:#69C1E7}
+#menu li:hover>a{color:#69C1E7}
+*html #menu li a:hover{color:#69C1E7}
+.hrefnone a:hover{color:#69C1E7}
+.read-more a{color:#69C1E7}
+#themeFilterableNav li a:hover{color:#69C1E7}
+/* backgrounds */
+.colored_bg{background:#69C1E7}
+.prtHeadTitle{background:#69C1E7}
+#TopTrigger{background:#69C1E7;}
+.featbtn{background:#69C1E7}
+.featbtn2{background:#69C1E7}
+#themeFilterableNav li.active-tag{background:#69C1E7}
+/* image hover icons background */
+.view a.info{background-color:#69C1E7!important;}
+.view a.link{background-color:#69C1E7!important;}
+/* top toggle background */
+.top_line{background-color:#69C1E7}
+/* top navigation background */
+.menu-left-bg {background:url('./img/menu-left-bg-blue.png');height:69px;width:43px;float:right}	
+.menu-right-bg {background:url('./img/menu-right-bg-blue.png');height:69px;width:43px;float:right}	
+.menu-bg {background:url('./img/menu-bg-blue.png');height:69px;float:right;min-width:300px}	
+
+
+
+

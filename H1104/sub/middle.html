@@ -1,0 +1,38 @@
+
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <title>RFID定位系统</title>
+    
+</head>
+<body>
+    
+    <div>
+        <table width="12" style="height: 100%;background: url(images/side06.jpg) left top repeat-y;">
+            <tr>
+                <td width="12" rowspan="9" valign="middle">
+                    <a href="#">
+                        <img src="images/side04_off.jpg" onClick="show(this)" alt=""/></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
+
+<script language="javascript" type="text/javascript">
+	function show(obj)
+	{
+		if(window.parent.window.document.getElementById("childFrame").cols=="170,10,*")
+		{
+			window.parent.window.document.getElementById("childFrame").cols="0,10,*";
+			obj.src="../images/side04_on.jpg";
+		}
+		else
+		{
+			window.parent.window.document.getElementById("childFrame").cols="170,10,*";
+			obj.src ="../images/side04_off.jpg";
+		}
+	}
+</script>

@@ -1,0 +1,15 @@
+/* CSS Reset 
+/*-----------------------------------------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } :focus { outline: 0; } ins { text-decoration: none; } del { text-decoration: line-through; } table { border-collapse: collapse; border-spacing: 0; }
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } .clearfix { display: inline-block; } /* Hide from IE Mac \*/ .clearfix { display: block; } /* End hide from IE Mac */ .none { display: none; } /* End Clearfix */
+
+/* General Setup
+/*-----------------------------------------------------------------------------------*/
+body{font-family:Arial, Helvetica, sans-serif;padding:0;font-size:12px;margin:0 auto; background:url(preview-hand.jpg) no-repeat center top;}
+.preview_wrap{ width:1100px; height:1000px; margin:0px auto; position:relative;}
+.mobile_wrap{ padding:150px 0 0 316px;}
+.skins_nav{ position:absolute; z-index:999; left:745px; top:320px; width:400px;}
+.skins_nav a{ display:block; float:left; margin:5px;}
+.skins_nav h3{ display:block; float:left; clear:both; font-size:18px; padding:10px 0 5px 10px; color:#FFFFFF; margin:0px; font-weight:normal;}

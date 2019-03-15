@@ -1,0 +1,41 @@
+/*文章*/
+.latest{ background: #333333; height:40px; display: -webkit-box;}
+.latest span{ display: inline-block; border-right:1px solid #efedee; font-size:0.75em; color:#fff; width:40px; text-align: center; height:35px; padding-top: 5px; vertical-align: middle;}
+.latest a{  -webkit-box-flex:1; display: block; font-size: 1em;  height: 40px; line-height: 40px; color: #fff; padding-left:5px;vertical-align: middle;overflow: hidden;text-overflow: ellipsis;white-space: nowrap !important; }
+
+article h1{ font-size:1.375em; padding: 15px;}
+.art-info{ height: 24px; line-height: 24px; padding-left: 17px;font-size: 0.875em; overflow: hidden }
+.art-info span{ margin-right:8px; }
+
+.art-main { padding:10px; height: auto; background:#fff;line-height:1.5em; font-size:1em; -webkit-transition:all 1s 0 ease;}
+.art-main p{ margin:10px 0; line-height:1.5em; font-size:1em;}
+.art-main img{ margin:0 auto; width:100%; display:block;}
+
+.art-more{ padding:10px; display: -webkit-box;-webkit-box-orient: horizontal; }
+.art-more a{ display:block;  border-top-style:solid; border-top-width:2px; text-align:center; height:35px; line-height:35px; background:#fff;-webkit-box-flex:2;margin:0 10px; color:#333333;}
+.art-more .on{ color: #fff;}
+
+.gallery{ background: #fff; padding: 10px 10px 0 10px;}
+.gallerySlide{ background:url(../images/bg.jpg) repeat; border-left:1px solid #cccccc; border-right:1px solid #cccccc;border-top:1px solid #cccccc; overflow:hidden; }
+.gallerySlide ul li{ float:left;text-align:center; overflow:hidden; display:table;}
+.gallerySlide .slideItem { position:relative; display:table-cell; vertical-align:middle; }
+.gallerySlide .slideItem img{ max-width: 100%; max-height: 100%; vertical-align: middle; text-align: center;}
+
+.galleryPage{height:33px; line-height:33px;display: -webkit-box;-webkit-box-orient: horizontal; border-width: 2px; border-top-style:solid;}
+.galleryPage .prev,.galleryPage .next{ display:inline-block; width:100px; text-align:center; color:#fff;  background:#333;}
+.galleryPage p{ -webkit-box-flex: 1;text-align:center; } 
+
+
+.galleryInfo { padding:10px 10px 40px 10px; background:#fff; }
+.galleryInfo p{ font-size: 1em; line-height:1.5em; }
+
+.close-fullview { display: none;}
+.fullView { position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-color: #000; z-index: 30; top: -62px; overflow:hidden;}
+.fullView .art-info ,.fullView h1,.fullView .galleryPage .prev,.fullView .galleryPage .next { display: none; }
+.fullView .galleryPage { position: absolute; top: 0; width:100%; }
+.fullView .galleryInfo { display:none;}
+.fullView .gallery,.fullView .gallerySlide ul li { background-color: #000; }
+.fullView .gallerySlide { border: none; display: table-cell; vertical-align: middle; background-color: #000; background: none;}
+.fullView .galleryPage p { padding-left: 10px; text-align: left;}
+.fullView .gallery { display: table; height: 100%; table-layout: fixed; padding: 0;}
+.fullView .close-fullview { display:block; color: #333; text-align:center; font-size: 2em; width: 60px;  }

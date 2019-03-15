@@ -1,0 +1,23 @@
+HTML,BODY,DIV,SPAN,OBJECT,IFRAME,H1,H2,H3,H4,H5,H6,P,BLOCKQUOTE,PRE,A,ABBR,ACRONYM,ADDRESS,figcaption,CODE,DEL,DFN,EM,IMG,Q,DL,DT,DD,OL,UL,LI,FIELDSET,FORM,LEGEND,TABLE,tf,TR,TH{
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font-FAMILY: inherit; font-size: 100%; border-TOP: 0px; border-right: 0px; padding-TOP: 0px; -webkit-text-size-adjust: none
+}
+BODY {line-height: 18px; background-COLOR: #ffffff; margin: 0px; font-FAMILY: Arial; COLOR: #444444; font-size: 12px;}
+INPUT {font-FAMILY: Arial; font-size: 12px;}
+textarea {font-FAMILY: Arial; font-size: 12px;}
+IMG {border-bottom: 0px; border-left: 0px; vertical-align: bottom; border-TOP: 0px; border-right: 0px;}
+
+.clear {height: 0px; CLEAR: both; overflow: hidden}
+
+.px_box { width:100%; text-align:center; margin:auto; padding-bottom:10px; font-size: 14px}
+.px_left { width:100%; float:left;}
+.px_right {  float:left; text-align:left; padding:10px; width:90%;line-height:24px; font-size:13px; color:#444444; }
+.px_name {  float:left; text-align:center; padding:10px 0; width:100%;line-height:24px;}
+.px_neiye { padding:10px;width:92%; float:left; text-align:left; line-height:28px; font-size:14px; color:#444444; }
+.anniu { float:left; text-align:center;height: 34px; width:30px; line-height:24px;}
+.timu {width:45%; line-height:34px; float:left; text-align:left;}
+.tel {height: 34px; width:45%; line-height:32px; float:left; text-align:right; color:#990101;}
+.more {height: 34px; width:45%; line-height:28px; float:left; text-align:right; font-size:12px;}
+
+.px{ width:100%; float:left; text-align:center; margin:10px 0;}
+.px_tittle{ text-align:left;font-size:13px;border-bottom:1px #DDDDDD solid; border-top:1px #DDDDDD solid;background-color:#F3F3F3; line-height:35px;}
+.px_tittle1{text-align:left; font-size:13px; background-color:#FFFFFF; line-height:35px;}

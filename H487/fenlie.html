@@ -1,0 +1,347 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+        <meta name="apple-mobile-web-app-capable" content="no"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <meta name="application-name" content="当当网触屏版">
+                    <link rel="apple-touch-icon-precomposed" href="../images/touch-icon-iphone.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/touch-icon-ipad.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/touch-icon-iphone4.png" />
+                                    <title>仿当当网移动触屏版手机wap购物网站模板分类列表-小模板【http://www.xiaomoban.com/】</title>
+            <meta name="description" content="全球领先的综合性网上购物中心。超过100万种商品在线热销！图书、音像、母婴、美妆、家居、数码3C、服装、鞋包等几十大类，正品行货，低至2折，700多城市货到付款，（全场购物满29元免运费。当当网一贯秉承提升顾客体验的承诺，自助退换货便捷又放心）。" />
+            <meta name="keywords" content="当当网，当当，网上购物，网上商城，网上买书，购物中心，在线购物，图书，影视，音像，教育音像，CD， DVD，百货，母婴，家居，家纺，厨具，化妆品，美妆，个人护理用品，数码，电脑，笔记本，u盘，手机，mp3，mp4，数码相机，摄影，摄像，家电，软件，游戏，服装，鞋，礼品箱包，钟表首饰，玩具，运动健康用品" />
+                <meta name="author" content="m.dangdang.com" />
+        <meta name="version" content="ddtouch v1.2 20120319" />
+        <meta http-equiv="Cache-Control" content="must-revalidate,no-cache" />
+        <link rel="stylesheet" href="css/mobile_hd_v1.0.min.css" />
+        <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+                            <link rel="stylesheet" href="css/index_v1.2.min.css" />
+                            <!-- show client dl, only dd index-->
+                    <script type="text/javascript">
+			                var search = {
+                    init : function(){
+                        var h = $(".hd_comm"),
+                        s = $(".search_area"),
+                        icon = $(".top_nav li").first();
+                        icon.click(function(){
+                            h.hide();
+                            s.show();
+                            $("#top_search input").css({height : '31px'})
+                            $("#top_search input[type=submit]").css({
+                                height : '33px',
+                                backgroundPosition : '0 -76px',
+                                marginLeft : 0
+                            })
+                            $(".dd_hd").css({
+															padding : '5px 0',
+															zIndex : '9999',
+															position:'absolute',
+															height : 'auto',
+															width : '100%'
+														});
+                            $("#keyword").focus();
+                            search.windownbg();
+                            var html = document.documentElement;
+                            var size = window.innerHeight;
+                            html.style.height = (size + size) + "px";
+                            window.setTimeout(function() {
+                                if (window.pageYOffset == 0) {
+                                    window.scrollTo(0, 0);
+                                }
+                                html.style.height = (window.innerHeight) + "px";
+                            }, 0);
+                        })
+                    },
+                    windownbg : function(){
+                        var htmlStr = "<div id=\"windownbg\" style=\"height:"+$(document).height()+"px;filter:alpha(opacity=70);opacity:0.7;z-index: 999;background:#000;position:absolute;top:0;left:0;width:100%;display:none\"></div>";
+                        $("body").append(htmlStr);
+                        $("#windownbg").fadeIn();
+                        $("#windownbg").click(function(){
+                            $(".search_area").hide();
+                            $(".hd_comm").show();
+                            $("#top_search input,.dd_hd").attr('style','');
+                            $(this).remove();
+                        })
+                    }
+                }
+                $(function(){
+                    search.init();
+                })
+								var html = document.documentElement;
+				var size = window.innerHeight;
+				html.style.height = (size + size) + "px";
+				window.setTimeout(function() {
+					if (window.pageYOffset == 0) {
+						window.scrollTo(0, 0);
+					}
+					html.style.height = (window.innerHeight) + "px";
+				}, 0);
+            </script>
+    </head>
+    <body>
+                <div class="downloadbar hidden">
+            <ul>
+                <li><a href="topics.php@page_id=21&sid=f0ffa4124eb66c0c" class="btn1">当当购物</a></li>
+                <li><a href="topics.php@page_id=717&sid=f0ffa4124eb66c0c" class="btn2">当当读书</a></li>
+            </ul>
+            <a href="#" class="closebtn"></a>
+        </div>
+        <header class="dd_hd"  id="hometop">
+            <div class="hd_comm">
+                <div class="fl">
+                    <a href="index.php@sid=f0ffa4124eb66c0c"><span class="dd_logo"></span></a>
+                </div>
+                <div class="fr">
+                    <ul class="top_nav">
+                        <li><a href="#"><span class="dd_search">搜索</span></a></li>                         <li><a href="ddcategory.php@sid=f0ffa4124eb66c0c"><span class="dd_category">分类</span></a></li>
+                        <li><a href="cart.php@action=list_cart&sid=f0ffa4124eb66c0c"><span class="dd_cart">购物车</span></a></li>
+                        <li><a href="my.php@sid=f0ffa4124eb66c0c"><span class="dd_my">我的当当</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="search_area hidden">
+                <div class="search_field" id="top_search">
+                    <form method="get" action='search.php' target="_parent" id="search_form">
+                        <input type="text" name="keyword"  id="keyword" class="keyword2"/>
+                        <input type="hidden" value="all_search" name="action">
+                        <input type="hidden" value="0" name="cid">
+                        <input type="hidden" value="f0ffa4124eb66c0c" name="sid">
+                        <input type="submit" value="" />
+                    </form>
+					<div class="suggest"></div>
+                </div>
+            </div>
+        </header>
+
+<!-- nav begin -->
+<nav class="clearfix">
+	<div class="dd_nav">
+    	<ul>
+            
+                            <li class="ddn_index"><span><a href="index.php@ref=topics_1502&sid=f0ffa4124eb66c0c">首页</a></span></li>
+                <li class="ddn_category"><span class="nav_current">分类</span></li>
+                <li class="ddn_box"><span><a href="ddbox.php@ref=topics_1502&sid=f0ffa4124eb66c0c">百宝箱</a></span></li>
+            
+                    </ul>
+    </div>
+</nav>
+<!-- nav begin -->
+ 
+
+<section>
+    <div class="tab_index_catetory">
+        <ul>
+		            <a href="chanpinfenlei.html">
+                <li class="tab_cat_item">
+                    <h3>图书</h3>
+                    <span>青春|小说|文学</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=03&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>音乐</h3>
+                    <span>华语|欧美|日韩</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=05&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>影视</h3>
+                    <span>电影|电视剧|卡通</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4004866&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>孕婴服饰</h3>
+                    <span>产后瘦身|防辐射服|婴儿</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4001940&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>母婴用品</h3>
+                    <span>防尿|奶粉|喂养</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4004344&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>童装童鞋</h3>
+                    <span>宝宝鞋|亲子装</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4002061&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>玩具</h3>
+                    <span>益智|毛绒|遥控</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4002074&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>时尚美妆</h3>
+                    <span>面膜|防晒|沐浴</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4003900&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>家居家纺</h3>
+                    <span>床品|毛毯|收纳</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4003760&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>家具家装</h3>
+                    <span>时尚家饰|灯具|厨卫洁具</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4003844&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>服装</h3>
+                    <span>T恤|防晒衫|袜子</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4003872&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>鞋靴</h3>
+                    <span>凉鞋|帆布鞋|正装鞋</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4001829&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>箱包皮具</h3>
+                    <span>女包|钱包|旅行箱</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4007338&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>珠宝饰品</h3>
+                    <span>项链|钻石|黄金</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4006453&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>礼品乐器</h3>
+                    <span>鲜花|绿植|吉他</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4003639&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>手表眼镜</h3>
+                    <span>瑞士表|偏光镜</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4003728&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>运动户外</h3>
+                    <span>健身|野营|望远镜</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4005284&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>营养/保健/成人</h3>
+                    <span>按摩器|康复护理|成人</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4002145&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>食品</h3>
+                    <span>冲调|特产|休闲零食</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4006497&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>手机通讯</h3>
+                    <span>手机|电池|充电器|保护套</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4003819&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>电脑办公</h3>
+                    <span>笔记本|移动硬盘|路由器</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4003613&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>数码影音</h3>
+                    <span>相机|耳机|MP3/MP4</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4001001&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>家用电器</h3>
+                    <span>厨房电器|生活电器</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4007241&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>大家电</h3>
+                    <span>电视|洗衣机|冰箱</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4002429&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>汽车用品</h3>
+                    <span>导航|车饰|养护耗材</span>
+                </li>
+            </a>
+		            <a href="category.php@cid=4008388&sid=f0ffa4124eb66c0c&ref=topics_1502">
+                <li class="tab_cat_item">
+                    <h3>当当优品</h3>
+                    <span>自有品牌|鞋靴箱包|服装内衣</span>
+                </li>
+            </a>
+		        </ul>
+    </div>
+</section>
+
+<footer class="ft">
+    <div class="search_ft">
+        <form id="search_form" method="get" action='search.php' target="_parent" onsubmit="return submit_search();" >
+                        <input name="keyword" id="keyword" type="text" value="请输入商品名称" onkeydown="this.style.color='#404040'" onblur="if(this.value==''){this.value='请输入商品名称';this.style.color='#b6b7b9';}" onfocus="if(this.value!='请输入商品名称'){this.style.color='#404040';}else{this.value='';this.style.color='#404040'}"/>
+            <input type="submit" value="" />
+            <input type="hidden" value="all_search" name="action">
+            <input type="hidden" value="0" name="cid">
+            <input type="hidden" value="f0ffa4124eb66c0c" name="sid">
+                                       </form>
+    </div>
+<script type="text/javascript" >
+function submit_search(){
+    if($('#keyword').val()=="请输入商品名称"){
+    $('#keyword').val(null);
+    }
+    return true;
+}
+</script>
+<script type="text/javascript" src="js/suggest.js"></script>
+<script type="text/javascript">
+new Suggest({
+	operator : ".keyword2",
+	defaultVal : "",
+	hasFocus : false,
+	formEl : "#search_form"
+});
+</script>
+    <div class="ft_nav">
+        <p>
+            <span><a href="@sid=f0ffa4124eb66c0c&source=touch">精简版</a></span>
+            <span class="site_now"><a href="index.php@sid=f0ffa4124eb66c0c">触屏版</a></span>
+            <span><a href="mdd_redirect.php@url=http_253A_252F_252Fwww.dangdang.com_252F_253Fsource_253Dmobile">电脑版</a></span>
+        </p>
+        <p>
+            <span><a href="leavemsg.php@sid=f0ffa4124eb66c0c">提建议</a></span>
+            <span><a href="topics.php@page_id=14740&sid=f0ffa4124eb66c0c">客&nbsp;&nbsp;&nbsp;&nbsp;服</a></span>
+            <span><a href="topics.php@page_id=76&sid=f0ffa4124eb66c0c">帮&nbsp;&nbsp;&nbsp;&nbsp;助</a></span>
+        </p>
+    </div>
+    <div class="status_bar">
+                    <div class="fl"><a href="login.php@sid=f0ffa4124eb66c0c">登陆</a><a href="register.php@action=reg&registertype=1&sid=f0ffa4124eb66c0c" class="quit" style="margin-left: 20px;">注册</a></div>
+        <div class="fr"><a href="#hometop"><span class="goto_top">TOP</span></a></div>
+    </div>
+    
+</footer>
+
+<script type="text/javascript" src="js/global.min.js"></script>
+<script type="text/javascript" src="js/common.min.js"></script>
+<div class="suggest" id="footer_suggest"></div>
+</body>
+</html>

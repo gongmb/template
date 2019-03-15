@@ -1,0 +1,21 @@
+﻿<DynamicWeb>
+
+<Sections>
+
+				<data date="3/10/2011">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</data>
+				
+				<data date="4/11/2011">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</data>
+				
+				<data date="5/12/2011">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</data>
+				
+				<data date="6/1/2010">Adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</data>
+				
+				<data date="7/2/2010">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</data>	
+				
+				<data date="8/3/2010">Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</data>	
+				
+				<data date="9/4/2010">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</data>	
+		
+	</Sections>		
+
+</DynamicWeb>

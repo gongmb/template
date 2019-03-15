@@ -1,0 +1,270 @@
+
+
+/*
+------------------------------------------------------------------------
+	LOGIN BOX
+------------------------------------------------------------------------
+*/
+
+div#login-box{
+	width:280px;
+	margin: 0 auto;
+	position:relative;
+	height:180px;
+	padding:20px;
+	background:#eee;
+	border:10px solid #fff;
+	z-index:9999;
+	-moz-box-shadow:0px 0px 4px #222;
+	-webkit-box-shadow:0px 0px 4px #222;
+	box-shadow:0px 0px 4px #222;
+	display:none;
+	box-shadow: 0 45px 60px -50px #000000;
+	-moz-border-radius: 10px;
+}
+div#login-box h3{
+	float:left;
+	width:100%;
+	font-size:20px;
+	margin:0px 0 6px 0px;
+	color:#222;
+}
+div#login-box .input-1{
+	float:left;
+	width:274px;
+	height:34px;
+	padding:0px 0 0 4px;	
+	margin:0px 0 10px 0px;
+	background:#fff;
+	border:1px solid #ccc;
+	color:#222;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+	border-radius:5px;
+}
+div#login-box p{
+	float:left;
+	width:100%;
+	margin:0px 0 8px 0px;
+	color:#222;
+}
+div.login-submit{
+	width:100%;
+	height:34px;
+	float:left;
+	margin:0 0 0px 0px;
+	color:#222;
+}
+div.login-submit a,
+div.login-submit a:active,
+div.login-submit a:visited{
+	color:#222;
+	float:left;
+	margin:4px 0 0 0px;
+	text-decoration:underline;
+	font-weight:bold;
+}
+div.login-submit a:hover{
+	text-decoration:none;
+}
+div.login-submit #login-btn,
+div.login-submit #signup-btn{
+	width:80px;
+	height:34px;
+	float:right;
+	padding:0 0 2px 0;
+	cursor:pointer;
+	background:url(../images/80x34-btn.png) no-repeat;
+	color:#070f17;
+	border:none;
+}
+div.login-submit #login-btn:hover,
+div.login-submit #signup-btn:hover{
+	color:#fff;
+    background:url(../images/80x34-btn-hover.png) no-repeat;
+}
+div#login-box a#login-close{
+	width:28px;
+	height:28px;
+	position:absolute;
+	top:-5px;
+	right:-5px;
+	background:url(../images/close-btn.png) no-repeat;
+}
+div#overlay{
+	position:fixed;
+	left:0;
+	top:0;
+	display:none;
+	width:100%;
+	height:100%;
+	background:#000;
+}
+
+/*
+------------------------------------------------------------------------
+	LIVE VALIDATION
+------------------------------------------------------------------------
+*/
+
+/* 
+	BASIC
+*/
+form#contactform .LV_validation_message{
+    font-weight:bold;
+	float:right;
+	padding-right:130px;
+}
+form#contactform  .LV_valid {
+    color:#00CC00;
+}
+form#contactform span.LV_invalid {
+    display:none;
+} 
+form#contactform .LV_valid_field,
+form#contactform input.LV_valid_field:hover, 
+form#contactform input.LV_valid_field:active,
+form#contactform textarea.LV_valid_field:hover, 
+form#contactform textarea.LV_valid_field:active {
+}  
+form#contactform .LV_invalid_field, 
+form#contactform input.LV_invalid_field:hover, 
+form#contactform input.LV_invalid_field:active,
+form#contactform textarea.LV_invalid_field:hover, 
+form#contactform textarea.LV_invalid_field:active,
+form#contactform select.LV_invalid_field:active,
+form#contactform select.LV_invalid_field:hover  {
+     border:1px solid #ff8b8b;
+	 background:url(../images/form-error-bg.png) repeat;
+}
+
+/*
+	FOOTER
+*/
+
+form#footer-form .LV_validation_message{
+    font-weight:bold;
+	float:right;
+	padding-right:130px;
+}
+form#footer-form  .LV_valid {
+    color:#00CC00;
+}
+form#footer-form span.LV_invalid {
+    display:none;
+} 
+form#footer-form .LV_valid_field,
+form#footer-form input.LV_valid_field:hover, 
+form#footer-form input.LV_valid_field:active,
+form#footer-form textarea.LV_valid_field:hover, 
+form#footer-form textarea.LV_valid_field:active {
+}  
+form#footer-form .LV_invalid_field, 
+form#footer-form input.LV_invalid_field:hover, 
+form#footer-form input.LV_invalid_field:active,
+form#footer-form textarea.LV_invalid_field:hover, 
+form#footer-form textarea.LV_invalid_field:active,
+form#footer-form select.LV_invalid_field:active,
+form#footer-form select.LV_invalid_field:hover  {
+	 background:#666;
+}
+
+/*
+------------------------------------------------------------------------
+	MISC
+------------------------------------------------------------------------
+*/
+
+.spacer{
+	float:left;
+	width:100%;
+	height:10px;
+}
+.imgwrap{
+	float:left;
+	background:#fff;
+	border:1px solid #ccc;
+	padding:4px;
+	position:relative;
+	-moz-box-shadow:1px 1px 6px #ddd;
+	-webkit-box-shadow:1px 1px 6px #ddd;
+	box-shadow:1px 1px 6px #ddd;
+}
+.imgwrap-theme{
+	float:left;
+	background:#fff url(../images/loaders/24.gif) no-repeat center center;
+	border:1px solid #ccc;
+	padding:4px;
+	position:relative;
+	-moz-box-shadow:1px 1px 6px #ddd;
+	-webkit-box-shadow:1px 1px 6px #ddd;
+	box-shadow:1px 1px 6px #ddd;
+}
+span.lightbox-tip{
+	width:30px;
+	height:30px;
+	background:url(../images/enlarge.png) no-repeat;
+	z-index:1000;
+	color:#FFF;
+	position:absolute;
+	right:4px;
+	bottom:4px;
+	text-align:center;
+}
+div.gallery-box span.lightbox-tip{
+	bottom:40px;
+}
+.corners{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius:5px;
+}
+.shadow{
+	-moz-box-shadow:0px 0px 4px #ccc;
+	-webkit-box-shadow:0px 0px 4px #ccc;
+	box-shadow:0px 0px 4px #ccc;
+}
+span.shadow-240{
+	width:240px;
+	height:5px;
+	position:absolute;
+	bottom:-5px;
+	left:0;
+	background:url(../images/shadow/240.png) no-repeat;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+	display:none;		
+}
+span.shadow-300{
+	width:300px;
+	height:5px;
+	position:absolute;
+	bottom:-5px;
+	left:0;
+	background:url(../images/shadow/300.png) no-repeat;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+	display:none;		
+}
+span.shadow-450{
+	width:450px;
+	height:5px;
+	position:absolute;
+	bottom:-5px;
+	left:0;
+	background:url(../images/shadow/450.png) no-repeat;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+	display:none;		
+}
+span.shadow-620{
+	width:620px;
+	height:5px;
+	position:absolute;
+	bottom:-5px;
+	left:0;
+	background:url(../images/shadow/620.png) no-repeat;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+	display:none;		
+}

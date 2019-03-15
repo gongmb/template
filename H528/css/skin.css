@@ -1,0 +1,64 @@
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+RESET & HTML ELEMENTS
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+body {background-color:#0e7500; color:#000;}
+a {color:#0e7500;}
+a:hover, a:active, a:focus {color:#000;}
+h2, h3 {color:#0e7500;}
+table.table {border:1px solid #CCC;}
+table.table th, table.table td {border:1px solid #CCC;}
+table.table th {border-bottom:3px solid #0e7500; color:#0e7500;}
+table.table tr.even td {background-color:#EFEFEF;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+LAYOUT
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#header #logo, #header #logo a {color:#FFF;}
+#header #slogan {color:#FFF;}
+#nav ul li a {color:#000;}
+#nav #search #search-input input {background:#FFF; color:#555;}
+#tray {border-bottom:1px solid #FFF; background-color:#DADADA; color:#555;}
+#tray p a {color:#555;}
+#tray p a:hover {color:#222;}
+#tray p.f-left span {color:#999;}
+#section {background-color:#FFF;}
+#aside .title {color:#333; }
+#footer {color:#B9E6B4;}
+#footer a {color:#B9E6B4;}
+#footer a:hover {color:#FFF;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: HOMEPAGE
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#topstory {background-color:#505050; color:#FFF;}
+#topstory a {color:#FFF;}
+#topstory a:hover {color:#DDD;}
+#topstory .tag a:hover {color:#FFF;}
+#topstory .tag span {color:#AAA;}
+#topstory .tag span a {color:#AAA;}
+#topstory .tag span a:hover {color:#FFF;}
+#topstory .tag span span {color:#666;}
+.articles li {border-bottom:1px dotted #CCC;}
+.articles li .articles-desc .articles-info-inner {background:#EEE; color:#555;}
+.articles li .articles-desc .articles-info-inner span {color:#CCC;}
+.articles li .articles-desc .articles-info-inner a {color:#555;}
+.articles li .articles-desc .articles-info-inner a:hover {color:#333;}
+.pagination a.current {background:#0e7500; color:#FFF;}
+.menu li a {border-bottom:1px dotted #BBB;}
+.menu li.current a {color:#000;}
+.sponsors li {border-bottom:1px dotted #BBB; color:#555;}	
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+PAGE: SUBPAGE
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.main-title {background-color:#505050; color:#FFF;}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
+OTHERS
+-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.input-text {border:1px solid #CCC; border-right:1px solid #EEE; border-bottom:1px solid #EEE; color:#888;}

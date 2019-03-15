@@ -1,0 +1,12 @@
+/* Website template by freewebsitetemplates.com */
+
+#header ul li {
+	display: inline;
+}
+
+#header ul li a, 
+#header ul li a span,
+#header ul li a:hover,
+#header ul li a:hover span {
+	display: inline-block;
+}

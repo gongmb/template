@@ -1,0 +1,102 @@
+html{padding:0px;margin:0px auto;-webkit-text-size-adjust:none;}
+body{background:#FFF;padding:0px;margin:0px auto;font-size:15px;color:#333;font-family:Helvetica,Microsoft YaHei,Microsoft JhengHei;}
+a{color:#333;text-decoration:none;}
+a:visited{color:#333;}
+ol,ul,li,dl,dd,dt{padding:0;margin:0;list-style:none;}
+form,p{padding:0;margin:0;}
+i,em{font-style:normal;}
+textarea {resize:none}
+img{border:none;}
+.spanclass{display:none;}
+.body {max-width:640px;margin:0 auto;overflow:hidden;background:#f2f2f2;}
+/*搜索条*/
+.search {border:1px solid #d5d5d5;background:#fff;-webkit-border-radius: 4px;border-radius: 4px;margin:10px 7px;position:relative;overflow:hidden;}
+.search span {display:block;}
+.search .txt {height: 32px;line-height:32px;}
+.search .txt .sortSelect{float:left;width:70px;height:32px;position:relative;}
+.search .txt .sortSelect::before{content:"";
+display:block;
+width:0;
+height:0;
+border-width:6px;
+overflow:hidden;
+border-color:#aaa transparent transparent;
+border-style:solid;
+position:absolute;left:52px;top:12px;
+}
+.search .txt select{width:70px;height:32px;-webkit-appearance:none;border:none;overflow:hidden;color:#aaa;font-size:15px;outline:none;background:transparent;position:absolute;}
+.search .txt .text {float:left;width:60%;vertical-align:top;border:none;height:24px;line-height:24px;margin-top:4px;padding:0px;outline:none;font-size:15px;}
+.search .btn {position:absolute;right:0;top:0;}
+.search .sub {display:block;padding:0px;background:#f7f7f7 url(http//www1.pconline.com.cn/wap/2013/cms/img/index-bg.png) no-repeat;background-size:110px;border:none;text-indent:-999px;overflow:hidden;width:50px;height: 32px;border-left:1px solid #d5d5d5;-webkit-border-radius:0 4px 4px 0;border-radius:0 4px 4px 0;}
+/*大红标题*/
+.headline {font-size: 18px;font-weight: bold;margin: 15px 15px 0;color: #c00;}
+.headline a {display: block;color: #c00;font-weight: bold;}
+/*文字列表A*/
+.extA {overflow:hidden;}
+.extA li {height:42px;line-height:42px;border-bottom:1px solid #e3e3e3;overflow:hidden;white-space:nowrap;}
+.extA a {padding:0 15px;height:42px;display:block;overflow:hidden;}
+.extA span {float:left;margin:0 15px;color:#777;}
+.extA span a {color:#777;}
+/*查看更多*/
+.btn-more{border:1px solid #d9d6d6;border-radius:3px;background:#f8f8f8;line-height:36px;margin:10px;text-align:center;cursor:pointer;}
+.btn-more a{display:block;height:36px;line-height:36px;color:#777;font-size: 14px;}
+.btn-more a:visited{color:#777;}
+/*焦点图*/
+.slider-top {width: 320px;margin:10px auto;overflow:hidden;position:relative;}
+.slider-top-pic {position:relative;height: 185px;overflow:hidden;}
+.slider-top-pic li {position:relative;float:left;width: 100%;}
+.slider-top-pic li img{width:320px;}
+.slider-top-pic span {position:absolute;background-color:rgba(000,000,000,0.6);display:block;height: 28px;line-height:28px;width: 100%;overflow:hidden;text-align:center;color:#fff;margin:137px 0 0;}
+.slider-top-doc {overflow:hidden;position:absolute;top:5px;left:5px;width: 100%;opacity:0.5}
+.slider-top-doc i {float:left;height: 6px;width: 6px;background:#282828;border:1px solid #535353;border-radius: 3px;margin:0 4px 0 0;}
+.slider-top-doc .current {background:#f60;border:1px solid #0f0f0f;}
+.slider-top-wrap {overflow:hidden;position:relative;}
+/* 标题 */
+.swipeA {overflow:hidden;}
+.swipeA-wrap {overflow:hidden;position:relative;}
+.swipeA-content {overflow:hidden;position:relative;}
+.swipeA-content .content {float:left;width: 100%;position:relative;}
+.section {height: 44px;line-height:44px;background:#fff;overflow:hidden;}
+.section .mark {float:left;font-size:16px;color:#038;border-left:4px solid #1954ab;padding-left:10px;}
+.section .mark a {float:left;color:#038;margin-right:15px;}
+.section .mark a:visited{color:#038;}
+.section .mark a.cur {color:#038;position:relative;}
+.section .mark a.cur::after{display:block;content:"";width:0px;height:0px;border-width:10px;overflow:hidden;border-color:transparent transparent #f2f2f2;border-style:solid;position:absolute;bottom:0px;left:50%;margin-left:-10px;}
+.section .subMark {float:right;}
+.section .subMark a {margin:0 20px 0 0;color:#777;}
+.section .subMark a:visited{color:#777;}
+/*两图平列*/
+.expB {text-align:center;margin:15px 0;}
+.expB a {display:inline-block;width: 135px;margin:0 10px;font-size:13px;vertical-align: middle;background:#fff;}
+.expB img{display:block;max-width:100%;max-height:100px;margin:0 auto;}
+.expB span {display:block;height:36px;background:#fff;line-height:18px;padding: 3px;overflow:hidden;}
+/*四图并列*/
+.ulPic{text-align:center;font-size:0px;margin:20px 0 0;border-bottom:1px solid #e3e3e3;}
+.ulPic li{display:inline-block;width:76px;padding:0 0 10px;overflow:hidden;vertical-align:middle;}
+.ulPic li img{display:block;width:60px;height:60px;margin:0 auto;border-radius:10px;}
+.ulPic li p{width:100%;height:25px;line-height:25px;font-size:14px;text-align:center;overflow:hidden;}
+/*++收藏&添加到主屏幕++*/
+.collectTip{display:none;width:270px;height:90px;position:absolute;left:50%;margin-left:-140px;bottom:20px;background:RGBA(0,0,0,.7);border-radius:10px;z-index:999;}
+.collectTip::after{content:"";
+display:block;
+width:0;
+height:0;
+border-width:10px;
+overflow:hidden;
+border-color:RGBA(0,0,0,.7) transparent transparent;
+border-style:solid;
+position:absolute;bottom:-20px;left:125px;
+}
+.collectTipClose{display:block;width:24px;height:24px;color:#fff;font-weight:bold;text-align:center;line-height:24px;font-size:24px;background:#000;border-radius:15px;border:3px solid #fff;box-shadow:1px 1px 2px #444;
+cursor:pointer;position:absolute;top:-15px;right:-15px;}
+.collectTipLogo{width:60px;height:60px;background:url(http//www1.pconline.com.cn/wap/2013/cms/img/logo.png) no-repeat;background-size:60px;border-radius:5px;position:absolute;top:15px;left:15px;}
+.collectTipText{width:165px;color:#fff;line-height:20px;position:absolute;top:15px;left:90px;font-size:14px;}
+.collectTipText i{display:inline-block;width:30px;height:20px;background:url(http//www1.pconline.com.cn/wap/2013/cms/img/index-bg.png) no-repeat -65px 0px;background-size:110px;vertical-align:middle;margin-top:-2px;}
+/*切换简版*/
+.wLink{display:none;height:30px;line-height:30px;position:relative;color:#999999;background:#E7E7E7;padding-left:5px;font-size:14px;}
+.wLink a{color:#1F89E3;}
+.wLinkClose{display:block;color:#BBBBBB;width:20px;height:20px;line-height:20px;text-align:center;font-size:25px;border:1px solid #bbb;border-radius:2px;position:absolute;right:5px;top:4px;}
+/*切换电脑版*/
+.pcLink{display:none;height:30px;line-height:30px;position:relative;color:#999999;background:#E7E7E7;padding-left:5px;font-size:14px;}
+.pcLink a{color:#1F89E3;}
+.pcLinkClose{display:block;color:#BBBBBB;width:20px;height:20px;line-height:20px;text-align:center;font-size:25px;border:1px solid #bbb;border-radius:2px;position:absolute;right:5px;top:4px;}

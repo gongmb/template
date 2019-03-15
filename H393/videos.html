@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="author" content="FamousThemes" />
+<meta name="description" content="My Mobile Page Version 3 Template" />
+<meta name="keywords" content="mobile templates, mobile wordpress themes, mobile themes, my mobile page, premium css templates, premium wordpress themes" />
+<title>My Mobile Page V3</title>
+
+<!-- Main CSS file -->
+<link rel="stylesheet" href="style.css"  type="text/css" media="screen" />
+<!-- Google web font -->
+<link href="../../../fonts.googleapis.com/css-family=Open+Sans-300.css"  rel='stylesheet' type='text/css'>
+<!-- jQuery file -->
+<script src="js/jquery.min.js" ></script>
+<!-- FlexSlider -->
+<script src="js/jquery.flexslider.js" ></script>
+<!-- Main effects files -->
+<script src="js/effects.js" ></script>
+<!-- Flexible video -->
+<script src="js/jquery.fitvids.js" ></script>
+<!-- Hide Mobiles Browser Navigation Bar -->
+<script type="text/javascript">
+	window.addEventListener("load",function() {
+	// Set a timeout...
+	setTimeout(function(){
+	// Hide the address bar!
+	window.scrollTo(0, 1);
+	}, 0);
+	});
+</script>
+</head>
+<body id="page">
+
+	<div id="pagecontainer">
+    
+    	<div id="header" class="black_gradient">
+            <a href="index.html"  class="back_button black_button">Home</a>
+            <div class="page_title">Videos</div>
+            <a href="#" id="menu_open" class="black_button">Menu</a>
+            <a href="#" id="menu_close" class="black_button">Close</a>
+            <div class="clear"></div>
+        </div>
+        
+    	<div id="pages_nav">
+            <div class="icons_nav">
+                <div class="paginated"> <!--Remove this DIV if you want to remove the pagination-->
+                    <ul class="slides">
+                        <li>
+                            <a href="about.html"  class="icon"><img src="images/icons/icon_about.png"  alt="" title="" border="0" /><span>About</span></a>
+                            <a href="services.html"  class="icon"><img src="images/icons/icon_services.png"  alt="" title="" border="0" /><span>Services</span></a>
+                            <a href="blog.html"  class="icon"><img src="images/icons/icon_blog.png"  alt="" title="" border="0" /><span>Blog</span></a>
+                            <a href="portfolio.html"  class="icon"><img src="images/icons/icon_portfolio.png"  alt="" title="" border="0" /><span>Portfolio</span></a>
+                        </li>
+                        <li>
+                            <a href="photos.html"  class="icon"><img src="images/icons/icon_photos.png"  alt="" title="" border="0" /><span>Photos</span></a>
+                            <a href="videos.html"  class="icon"><img src="images/icons/icon_video.png"  alt="" title="" border="0" /><span>Videos</span></a>
+                            <a href="clients.html"  class="icon"><img src="images/icons/icon_clients.png"  alt="" title="" border="0" /><span>Clients</span></a>
+                            <a href="contact.html"  class="icon"><img src="images/icons/icon_contact.png"  alt="" title="" border="0" /><span>Contact</span></a>
+                        </li>
+                    </ul>
+                </div>  <!--Remove this DIV if you want to remove the pagination-->
+          </div>
+      </div>
+        
+        
+   	  <div class="content">
+        <h1>Flexible video</h1>
+        <span class="subtitle_descr">Consectetur adipisicing elit, sed do eiusmod tempor incididunt</span>
+        
+        <div class="videocontainer">
+        <iframe src="../../../player.vimeo.com/video/9009677-title=0&byline=0&portrait=0"  width="400" height="225" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+        </div>
+        <img src="images/shadow.jpg"  alt="" title="" border="0" class="shadow" />
+    	<p class="main_text">
+        Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        </p>
+        
+        <h2>Smaller flexible videos</h2>
+        <ul class="porfolio">
+        <li>
+        	<span>Video title</span>
+            <div class="videocontainer">
+            <iframe src="../../../player.vimeo.com/video/20174757-title=0&byline=0&portrait=0"  width="400" height="225" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+            </div>
+            <img src="images/shadow.jpg"  alt="" title="" border="0" class="shadow" />
+        </li>
+        <li class="right">
+        	<span>Video title</span>
+            <div class="videocontainer">
+            <iframe width="400" height="225" src="../../../www.youtube.com/embed/G_G8SdXktHg"  frameborder="0" allowfullscreen></iframe>
+            </div>
+            <img src="images/shadow.jpg"  alt="" title="" border="0" class="shadow" />
+        </ul>
+        
+    	<p class="main_text">
+        Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        </p>
+        
+        <div class="clear"></div> 
+		</div>
+        
+        
+    	<div id="footer" class="black_gradient">
+            <a href="index.html"  class="back_button black_button">Home</a>
+            <div class="page_title">My Mobile Page V3</div>
+            <a onClick="jQuery('html, body').animate( { scrollTop: 0 }, 'slow' );"  href="javascript:void(0);" id="top" class="black_button">Top</a>
+            <div class="clear"></div>
+        </div>
+        
+        
+</div>
+<script type="text/javascript">
+$(".videocontainer").fitVids();
+</script>
+</body>
+</html>

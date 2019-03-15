@@ -1,0 +1,342 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+        <meta name="apple-mobile-web-app-capable" content="no"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <meta name="application-name" content="当当网触屏版">
+                    <link rel="apple-touch-icon-precomposed" href="../images/touch-icon-iphone.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/touch-icon-ipad.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/touch-icon-iphone4.png" />
+                                    <title>仿当当网移动触屏版手机wap购物网站模板-小模板【http//www.xiaomoban.com】</title>
+            <meta name="description" content="全球领先的综合性网上购物中心。超过100万种商品在线热销！图书、音像、母婴、美妆、家居、数码3C、服装、鞋包等几十大类，正品行货，低至2折，700多城市货到付款，（全场购物满29元免运费。当当网一贯秉承提升顾客体验的承诺，自助退换货便捷又放心）。" />
+            <meta name="keywords" content="当当网，当当，网上购物，网上商城，网上买书，购物中心，在线购物，图书，影视，音像，教育音像，CD， DVD，百货，母婴，家居，家纺，厨具，化妆品，美妆，个人护理用品，数码，电脑，笔记本，u盘，手机，mp3，mp4，数码相机，摄影，摄像，家电，软件，游戏，服装，鞋，礼品箱包，钟表首饰，玩具，运动健康用品" />
+                <meta name="author" content="m.dangdang.com" />
+        <meta name="version" content="ddtouch v1.2 20120319" />
+        <meta http-equiv="Cache-Control" content="must-revalidate,no-cache" />
+        <link rel="stylesheet" href="css/mobile_hd_v1.0.min.css" />
+        <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+                            <link rel="stylesheet" href="css/index_hd_v2.0.css" />
+                            <!-- show client dl, only dd index-->
+                    <script type="text/javascript">
+							var html = document.documentElement;
+				var size = window.innerHeight;
+				html.style.height = (size + size) + "px";
+				window.setTimeout(function() {
+					if (window.pageYOffset == 0) {
+						window.scrollTo(0, 0);
+					}
+					html.style.height = (window.innerHeight) + "px";
+				}, 0);
+            </script>
+    </head>
+    <body>
+                <div class="downloadbar hidden">
+            <ul>
+                <li><a href="topics.php@page_id=21&sid=f0ffa4124eb66c0c&ref=index&p=A1" class="btn1">当当购物</a></li>
+                <li><a href="topics.php@page_id=717&sid=f0ffa4124eb66c0c&ref=index&p=A2" class="btn2">当当读书</a></li>
+            </ul>
+            <a href="#" class="closebtn"></a>
+        </div>
+        <header class="dd_hd"  id="hometop">
+            <div class="hd_comm">
+                <div class="fl">
+                    <a href="index.php@sid=f0ffa4124eb66c0c&ref=index&p=B1"><span class="dd_logo"></span></a>
+                </div>
+                <div class="fr">
+                    <ul class="top_nav">
+                                                <li><a href="fenlie.html"><span class="dd_category">分类</span></a></li>
+                        <li><a href="cart.php@action=list_cart&sid=f0ffa4124eb66c0c&ref=index&p=B4"><span class="dd_cart">购物车</span></a></li>
+                        <li><a href="my.php@sid=f0ffa4124eb66c0c&ref=index&p=B5"><span class="dd_my">我的当当</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="search_area hidden">
+                <div class="search_field" id="top_search">
+                    <form method="get" action='search.php' target="_parent" id="search_form">
+                        <input type="text" name="keyword"  id="keyword" class="keyword2"/>
+                        <input type="hidden" value="all_search" name="action">
+                        <input type="hidden" value="0" name="cid">
+                        <input type="hidden" value="f0ffa4124eb66c0c" name="sid">
+                        <input type="submit" value="" />
+                    </form>
+					<div class="suggest"></div>
+                </div>
+            </div>
+        </header>        <article>
+            <script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript">
+    var myScroll;
+    function loaded() {
+        myScroll = new iScroll('wrapper', {
+            snap: true,
+            momentum: false,
+            hScrollbar: false,
+            onScrollEnd: function () {
+			document.querySelector('#indicator > li.on').className = '';
+			document.querySelector('#indicator > li:nth-child(' + (this.currPageX+1) + ')').className = 'on';
+		}
+        });
+    }
+    document.addEventListener('DOMContentLoaded', loaded, false);
+    setInterval(function(){  
+        if(myScroll.currPageX==5){
+            myScroll.scrollToPage(0, 0);
+        }else{
+            myScroll.scrollToPage('next', 0);}
+    },5000);
+</script>
+<style type="text/css">
+    #scroller {
+        width:1920px;
+        height:100%;
+        float:left;
+    }
+    #wrapper {
+        width:320px;
+        height:125px;
+        float:left;
+    }
+</style>
+<section class="main_focus">
+    <div class="img_focus" id="wrapper">
+        <div id="scroller">
+            <ul id="thelist">
+                                    <li><a href="topics.php@page_id=31879&sid=f0ffa4124eb66c0c&ref=index&p=C1"><img width="320" height="125" src="http//img4.ddimg.cn/00068/jd/jiuyang_640X280_m.jpg"/></a></li>
+                                    <li><a href="topics.php@page_id=31871&sid=f0ffa4124eb66c0c&ref=index&p=C2"><img width="320" height="125" src="http//img4.ddimg.cn/00240/piczx/8411_0108_640x280_m.jpg"/></a></li>
+                                    <li><a href="topics.php@page_id=32017&sid=f0ffa4124eb66c0c&ref=index&p=C3"><img width="320" height="125" src="http//img4.ddimg.cn/00193/1234556/fz-nanzhuang-20140108-640X280_m.jpg"/></a></li>
+                                    <li><a href="topics.php@page_id=32091&sid=f0ffa4124eb66c0c&ref=index&p=C4"><img width="320" height="125" src="http//img4.ddimg.cn/00074/pic/640-240-13bd_m.jpg"/></a></li>
+                                    <li><a href="topics.php@page_id=31761&sid=f0ffa4124eb66c0c&ref=index&p=C5"><img width="320" height="125" src="http//img4.ddimg.cn/00283/youpin/nhj-608x230_m.jpg"/></a></li>
+                                    <li><a href="topics.php@page_id=31907&sid=f0ffa4124eb66c0c&ref=index&p=C6"><img width="320" height="125" src="http//img4.ddimg.cn/00087/huwei/ts-640x280_0107_m.jpg"/></a></li>
+                            </ul>
+        </div>
+        <div class="img_mornitor" style="left:115px;" >
+		<ol id="indicator">
+                    <li class="on">1</li>
+                    <li>2</li><li>3</li><li>4</li><li>5</li><li>6</li>		</ol>
+	</div>
+    </div>
+</section>
+		<section class="notice">
+		<div class="noticebar"><a href="topics.php@page_id=28290&sid=f0ffa4124eb66c0c&ref=index&p=O1">下载当当手机客户端即得5元现金券</a></div>
+	</section>
+	
+<section class="index_search">
+    <div class="search_field">
+        <form id="index_search_form" method="get" action='search.php' target="_parent" onsubmit="$('#keywords').val($('#input_keyword').val());" >
+            <input name="keyword" type="text" value="尾品汇" onkeydown="this.style.color='#404040'" onblur="if(this.value==''){this.value='尾品汇';this.style.color='#b6b7b9';}" onfocus="if(this.value!='尾品汇'){this.style.color='#404040';}else{this.value='';this.style.color='#404040'}" class="keyword"/>
+            <input type="submit" value="" />
+            <input type="hidden" value="all_search" name="action">
+            <input type="hidden" value="0" name="cid">
+            <input type="hidden" value="f0ffa4124eb66c0c" name="sid">
+                        <input type="hidden" value="index" name="ref">
+                                         <input type="hidden" value="D2" name="p">
+                   </form>
+    </div>
+</section>
+
+
+
+
+<p><nav class="category_nav"><p><a href="category.php@cid=01&p=E1&ref=topics_24067&sid=f0ffa4124eb66c0c">图书</a><a href="category.php@cid=4001940&p=E2&ref=topics_24067&sid=f0ffa4124eb66c0c">母婴</a><a href="category.php@cid=4004344&p=E3&ref=topics_24067&sid=f0ffa4124eb66c0c">童装</a><a href="category.php@cid=4002074&p=E4&ref=topics_24067&sid=f0ffa4124eb66c0c">美妆</a><a href="category.php@cid=4003900&p=E5&ref=topics_24067&sid=f0ffa4124eb66c0c">家居</a></p>
+<p><a href="category.php@cid=4003844&p=E6&ref=topics_24067&sid=f0ffa4124eb66c0c">服装</a><a href="category.php@cid=4003872&p=E7&ref=topics_24067&sid=f0ffa4124eb66c0c">鞋靴</a><a href="category.php@cid=4001829&p=E8&ref=topics_24067&sid=f0ffa4124eb66c0c">箱包</a><a href="category.php@cid=4003728&p=E9&ref=topics_24067&sid=f0ffa4124eb66c0c">运动</a><a href="ddcategory.php@p=E10&ref=topics_24067&sid=f0ffa4124eb66c0c">更多</a></p>
+</nav></p>
+
+
+    <section class="scroll_img">
+        <ul class="icon_nav">
+                            <li><a href="order.php@sid=f0ffa4124eb66c0c&ref=index&p=F1" class='dd_order'><span class="span_msg_dd_order"></span></a><span>我的订单</span></li>
+                            <li><a href="discount.php@sid=f0ffa4124eb66c0c&ref=index&p=F2" class='dd_preferential'><span class="span_msg_dd_preferential"></span></a><span>我的优惠</span></li>
+                            <li><a href="bagcs.php@sid=f0ffa4124eb66c0c&ref=index&p=F3" class='kdkh'><span class="span_msg_kdkh"></span></a><span>口袋客服</span></li>
+                            <li><a href="products_history.php@sid=f0ffa4124eb66c0c&ref=index&p=F4" class='llls'><span class="span_msg_llls"></span></a><span>浏览历史</span></li>
+            
+        </ul>
+    </section>
+    	<section class="link_area">
+			</section>
+<section class="commbox">
+    <h3><a href="topics.php@page_id=29906&sid=f0ffa4124eb66c0c&ref=index&p=H1"><span>今日闪价<em>挑战全网最底价</em></span></a></h3>
+    <ul class="pic_list">
+                <li>
+            <a href="topics.php@page_id=29906&sid=f0ffa4124eb66c0c&ref=index&p=H2">
+                <div class="single_box">
+                    <div class="pic_area">
+                        <img width="145" height="145" src="http//img4.ddimg.cn/00161/wapdd/290-140106-20689276.jpg" />
+                    </div>
+                    <div class="detail">
+                        <h4 style=" height:12px;line-height:12px; overflow:hidden;">欣怡幽香沐浴露</h4>
+                        <span class="red_style">￥39.90</span>
+                        <span class="org_style">7.1折</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+                <li>
+            <a href="topics.php@page_id=29906&sid=f0ffa4124eb66c0c&ref=index&p=H3">
+                <div class="single_box">
+                    <div class="pic_area">
+                        <img width="145" height="145" src="http//img4.ddimg.cn/00161/wapdd/290-140106-20689277.jpg" />
+                    </div>
+                    <div class="detail">
+                        <h4 style=" height:12px;line-height:12px; overflow:hidden;">恬静清香沐浴露</h4>
+                        <span class="red_style">￥53.00</span>
+                        <span class="org_style">9.5折</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+            </ul>
+    </section>
+<section class="commbox">
+        <ul class="text_list">
+                            <li><a href="product.php@pid=1129877612&sid=f0ffa4124eb66c0c&ref=index&p=H4"><span class="fl" style="width:70%; overflow:hidden;">桌面迷你小太阳取暖器2档调节</span><span class="fr red">￥29.00</span></a></li>
+                            <li><a href="product.php@pid=60056741&sid=f0ffa4124eb66c0c&ref=index&p=H5"><span class="fl" style="width:70%; overflow:hidden;">LOCK&LOCK乐扣 普通型套装8件套</span><span class="fr red">￥69.90</span></a></li>
+                    </ul>
+    </section>
+
+
+<section class="commbox">
+<h3 class="wph_title"><a href="outlets.php@sid=f0ffa4124eb66c0c&ref=index&p=I1"><span>尾品汇1-3折<em>名品清仓特卖</em></span></a></h3>
+	<div class="ad_picture" style="display:block;">
+                        <a href="outlets_products.php@shop_id=7752&active_id=973&brand_id=1&sid=f0ffa4124eb66c0c&ref=index&p=I2"><img src="http//img38.ddimg.cn/imgother/201401/02_0/20140102141129498.jpg" /></a>
+                          <a href="outlets_products.php@shop_id=8104&active_id=973&brand_id=1&sid=f0ffa4124eb66c0c&ref=index&p=I3"><img src="http//img33.ddimg.cn/imgother/201401/06_0/2014010609135733.jpg" /></a>
+                          <a href="outlets_products.php@shop_id=8309&active_id=973&brand_id=1&sid=f0ffa4124eb66c0c&ref=index&p=I4"><img src="http//img36.ddimg.cn/imgother/201401/02_0/20140102121710256.jpg" /></a>
+              	</div>
+</section><style>
+<!--
+.three_link{ overflow:hidden; margin:10px 0 10px 10px;}
+.three_link a{ float:left; width:30%; text-align:center; font-size:15px; height:30px; line-height:30px; background:#FFF; margin:0 10px 10px 0; color:#646464;}
+.three_link a:first-child{}
+-->
+</style>
+<div class="three_link">
+            <a href="outlets.php@sort=101&sid=f0ffa4124eb66c0c&ref=index&p=I5">男装</a>
+            <a href="outlets.php@sort=102&sid=f0ffa4124eb66c0c&ref=index&p=I6">女装</a>
+            <a href="outlets.php@sort=103&sid=f0ffa4124eb66c0c&ref=index&p=I7">鞋</a>
+            <a href="outlets.php@sort=105&sid=f0ffa4124eb66c0c&ref=index&p=I8">运动户外</a>
+            <a href="outlets.php@sort=106&sid=f0ffa4124eb66c0c&ref=index&p=I9">箱包礼品</a>
+    </div>    <div class="two_link">
+        <ul class="text_list">
+                            <li><a href="outlets_products.php@shop_id=5526&active_id=981&brand_id=2&sid=f0ffa4124eb66c0c&ref=index&p=I10"><span class="fl" style="width:70%; overflow:hidden;">笛莎童装 每个女孩都是公主</span><span class="fr orange">2.0折</span></a></li>
+                            <li><a href="outlets_products.php@shop_id=9507&active_id=979&brand_id=1&sid=f0ffa4124eb66c0c&ref=index&p=I11"><span class="fl" style="width:70%; overflow:hidden;">亚都净化专场 全国包邮49折封顶</span><span class="fr orange">3.0折</span></a></li>
+                    </ul>
+    </div>
+
+    <section class="scroll_img">
+        <ul class="icon_nav">
+                            <li><a href="recharge.php@sid=f0ffa4124eb66c0c&ref=index&p=K1" class='dd_recharge'><span class="span_msg_dd_recharge"></span></a><span>手机充值</span></li>
+                            <li><a href="benefits.php@sid=f0ffa4124eb66c0c&ref=index&p=K2" class='dd_ingot'><span class="span_msg_dd_ingot"></span></a><span>元宝福利社</span></li>
+                            <li><a href="topics.php@page_id=21&sid=f0ffa4124eb66c0c&ref=index&p=K3" class='ddkhd'><span class="span_msg_ddkhd"></span></a><span>当当客户端</span></li>
+                            <li><a href="topics.php@page_id=717&sid=f0ffa4124eb66c0c&ref=index&p=K4" class='dskhd'><span class="span_msg_dskhd"></span></a><span>读书客户端</span></li>
+            
+        </ul>
+    </section>
+    	<div class="one_link">
+		<ul>
+				</ul>
+	</div>
+        </article>
+    
+<div id="client_adv_cover" style="position:fixed; height:200%; width:100%; left:0; top:0; z-index:999; background:#fff; ">
+	<style>
+		.close_me {display:inline-block; width:18px; height:2px; background:#969696; font-size:0; line-height:0;vertical-align:middle;-webkit-transform: rotate(45deg);}
+        .close_me:after { content:'.'; display:block; width:18px; height:2px; background:#969696;-webkit-transform: rotate(-90deg);}
+	</style>
+	<div onclick="closeAdv();" style="padding:21px 13px 0 0;text-align: right"><b class="close_me"></b></div>
+	<div style="width: 320px;margin: 0 auto;border: 0px solid red">
+	    <img src="http//img4.ddimg.cn/00161/wapdd/540x500(2).jpg" width="270" height="250" style="margin: 0 auto;display: block;margin: 23px auto 0;">
+	    <a href="topics.php@page_id=25784&sid=f0ffa4124eb66c0c" style="display: block;width: 212px;height: 46px;background-color: #FF9600;margin: 0 auto;font-size: 20px;line-height: 46px;text-align: center;color: #fff;font-weight: bold;">下载当当客户端</a>
+	    <a onclick="closeAdv();" style="display: block;color:#FF9600;text-align:center;line-height:14px;margin: 15px auto;font-size: 14px;height:30px;">返回首页</a>
+	</div>
+</div>
+<script type="text/javascript">
+	var closeAdv = function() {
+		$('#client_adv_cover').remove();
+		var ms = 24*3600*1000; 
+		var date = new Date();
+		date.setTime(date.getTime() + ms); 
+		str = "MDD_clientadv=1; expires=" + date.toGMTString(); 
+		// console.log(str);
+		document.cookie = str;
+	}
+    
+	$(document).ready(function(){
+		if (0){
+			loadMsgCount();
+		}
+	})
+	function loadMsgCount(){
+		$.ajax({
+			url: "message.php@sid=f0ffa4124eb66c0c&action=get_cms_message_count",
+			type: "POST",
+			success: function(data){
+				data = jQuery.parseJSON(data);
+				if(data.errorCode == 0){
+					for(i = 0; i < data.msg_data.length; i++){
+						if (data.msg_data[i].unread_count > 0){
+							show_count = data.msg_data[i].unread_count;
+							if (data.msg_data[i].unread_count > 100){
+								show_count = "99+";
+							}
+							$(".span_msg_"+data.msg_data[i].link_url).html('<span class="bubble">'+show_count+'</span>');
+						}
+					}
+				}
+			}
+		});
+	}
+</script>
+ <footer class="ft">
+    <div class="search_ft">
+        <form id="search_form" method="get" action='search.php' target="_parent" onsubmit="return submit_search();" >
+                        <input name="keyword" id="keyword" type="text" value="请输入商品名称" onkeydown="this.style.color='#404040'" onblur="if(this.value==''){this.value='请输入商品名称';this.style.color='#b6b7b9';}" onfocus="if(this.value!='请输入商品名称'){this.style.color='#404040';}else{this.value='';this.style.color='#404040'}"/>
+            <input type="submit" value="" />
+            <input type="hidden" value="all_search" name="action">
+            <input type="hidden" value="0" name="cid">
+            <input type="hidden" value="f0ffa4124eb66c0c" name="sid">
+                            <input type="hidden" value="index" name="ref">
+                                    <input type="hidden" value="D3" name="p">
+                   </form>
+    </div>
+<script type="text/javascript" >
+function submit_search(){
+    if($('#keyword').val()=="请输入商品名称"){
+    $('#keyword').val(null);
+    }
+    return true;
+}
+</script>
+<script type="text/javascript" src="js/suggest.js"></script>
+<script type="text/javascript">
+new Suggest({
+	defaultVal : "尾品汇",
+	formEl : "#index_search_form",
+	hasFocus : true
+});
+</script>
+    <div class="ft_nav">
+        <p>
+            <span><a href="@sid=f0ffa4124eb66c0c&source=touch&ref=index&p=N1">精简版</a></span>
+            <span class="site_now"><a href="index.php@sid=f0ffa4124eb66c0c&ref=index&p=N2">触屏版</a></span>
+            <span><a href="mdd_redirect.php@url=http_253A_252F_252Fwww.dangdang.com_252F_253Fsource_253Dmobile&ref=index&p=N3">电脑版</a></span>
+        </p>
+        <p>
+            <span><a href="leavemsg.php@sid=f0ffa4124eb66c0c&ref=index&p=N4">提建议</a></span>
+            <span><a href="topics.php@page_id=14740&sid=f0ffa4124eb66c0c&ref=index&p=N5">客&nbsp;&nbsp;&nbsp;&nbsp;服</a></span>
+            <span><a href="topics.php@page_id=76&sid=f0ffa4124eb66c0c&ref=index&p=N6">帮&nbsp;&nbsp;&nbsp;&nbsp;助</a></span>
+        </p>
+    </div>
+    <div class="status_bar">
+                    <div class="fl"><a href="login.php@sid=f0ffa4124eb66c0c&ref=index&p=N7">登陆</a><a href="register.php@action=reg&registertype=1&sid=f0ffa4124eb66c0c&ref=index&p=N8" class="quit" style="margin-left: 20px;">注册</a></div>
+        <div class="fr"><a href="#hometop"><span class="goto_top">TOP</span></a></div>
+    </div>
+   
+</footer>
+
+<script type="text/javascript" src="js/global.min.js"></script>
+<script type="text/javascript" src="js/common.min.js"></script>
+<div class="suggest" id="footer_suggest"></div>
+</body>
+</html>

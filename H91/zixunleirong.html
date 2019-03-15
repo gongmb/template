@@ -1,0 +1,91 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>微商管家</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<!-- FlexSlider pieces -->
+<link rel="stylesheet" href="css/lanmu.css" type="text/css" media="screen">
+<script type="text/javascript" src="js/2.js"></script>
+<script src="js/1.js"></script>
+
+<!-- Includes for this demo -->
+<link rel="stylesheet" href="css/index.css" type="text/css" media="screen">
+
+<!-- Hook up the FlexSlider -->
+<script type="text/javascript">
+	$(window).load(function() {
+		$('.flexslider').flexslider();
+	});
+	
+	var flag=0;
+	function getNewsAll(){
+		if(flag==1) return;
+		flag=1;
+		$.ajax({
+			url:	"/touch/news.do?method=detailAll&newsid="+4045196,
+			dataType: "json",
+			success: function(data) {
+				$(".newsCon").html(data.news);
+				$(".more_1").hide();
+			}
+		});
+	}
+</script>
+<!--<script type="text/javascript" src="/touch/js/jq.js"></script>-->
+</head>
+
+<body>
+<div class="header">
+	<div class="houseName">资讯</div>
+	<div class="logo"><a href=""></a></div>
+	<div class="btn home"><a href="#"></a></div>
+	<div class="btn back"><a href="javascript:history.back()"></a></div>
+</div>
+<!-- 内容区 -->
+<div class="plr10">
+	<h1 class="news_title1">地板知识大放送	</h1>
+	<!-- <h2 class="news_title2"></h2> -->
+	<div class="newsInfo">来源：太平洋家居网 2013年10月10日 10:50 </div>
+	<div class="bor1"></div>
+	<div class="newsCon">&nbsp;&nbsp;&nbsp;&nbsp; 地板铺装效果清新自然，且脚感舒适，受到许多家庭的喜爱。但是如何选择、铺装和养护地板，大家都清楚么？如果不清楚，那就一起来看看小编为大家准备的地板知识大放送特辑…… 【本月关键词】秋装旺季，金九银十 正值秋季装修旺季，同时也是建材市场的“金九银十”促销旺季。准备装修的业主们，还不赶紧来补补课，以从容应对各种JS！<br><p style="text-align:center"> 
+<img src="images/aHR0cDovL2ltZzIwMTAuZmNjcy5jb20vbmV3cy9jb250ZW50LzIwMTMtMTAvMTAvMTM4MTM3MzI5OTY2My5qcGc=.jpg" border="0" width="100%"><br></p>&nbsp;&nbsp;&nbsp;&nbsp; 
+ 实木地板：实木地板是天然木材经烘干、加工后形成的地面装饰材料。它美观环保，铺设在地板上，呈现出天然原木纹理和色彩图案，让人感觉亲近自然、享受柔和而又富有亲和力的质感，同时由于它具有冬暖夏凉、触感好的特性使其成为卧室、客厅、书房等地面装修的理想材料。 <br>&nbsp;&nbsp;&nbsp;&nbsp; 
+ 实木复合地板：实木复合地板是从实木地板家族中衍生出来的木地板种类，它是将优质实木锯切刨切成表面板、蕊板和底板单片，三种单片依照纵向、横向、纵向三维排列方法，用胶水粘贴起来，在高温下压制成板。实木复合地板兼具强化地板的稳定性与实木地板的美观性，而且具有环保优势。<br>&nbsp;&nbsp;&nbsp;&nbsp; 
+ 强化地板：强化地板由耐磨层、装饰层、高密度基材层、平衡（防潮）层组成，具有耐磨性好，清洁养护容易等特点，安装方便快捷，最关键的是价格较实木等材质的地板便宜不少，因此它成为现代家庭地面地板的主流之选。<br>
+&nbsp;&nbsp;&nbsp;&nbsp; 
+ 竹地板：竹地板一般选用竹龄5年以上的毛竹为原料，经过断料、冲片、初刨上漆等二十多道工序制成。既有地板的舒适脚感，又能带给家一种回归自然、清新雅致的感觉。可分为径面竹地板、侧压和弦面竹地板、平压和重组竹地板三大类。<br>&nbsp;&nbsp;&nbsp;&nbsp; 
+ 软木地板：软木地板在地板建材中属于比较昂贵的产品，软木地板比一般的木地板更柔软和富有弹性，相比实木地板也更具环保性和隔音性，防潮性也更好。尤其适合老年人的房间装修。不过清洁打理较麻烦，会更容易存灰。<br>&nbsp;&nbsp;&nbsp;&nbsp; 
+ 地板辅料：地板铺装时需要用到譬如踢脚线、地板胶、地垫等辅材。地板辅料如果质量不达标，必将成为家庭中的环保隐患。家装环保需从细节做起，因此在地板铺装时，要选择环保的地板，更要选择环保的地板安装辅料。<br></div>
+	<div class="more_1" onclick="getNewsAll();" style="display: none; ">点击阅读全文</div>
+	<div class="bor1"></div>
+	<div class="plr10">
+		<div class="layerTip">　　律师声明：凡注明“来源：中国房产超市网”的所有文字图片等资料，版权均属中国房产超市网所有，转载须注明出处；资讯信息仅供参考，内容不代表中国房产超市网观点。</div>
+	</div>
+	<div class="bor1"></div>
+	<div class="related_news pt10 pb10">
+		<div class="t f16 fb wryh">相关新闻：</div>
+		<div class="list14">
+			<ul>
+				<li>·<a href="#">智能家居成楼盘重要卖点</a></li>
+				<li>·<a href="#">简便易行的必备居家装修风水学</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="footer1">
+	<div class="nav1"><a href="/">首页</a> &gt; <a href="#">资讯</a></div>
+<div class="nav2">
+		<div class="model">
+			<ul>
+				<li><a href="#">标准版</a></li>
+				<li><a href="#">触屏版</a></li>
+				<li><a href="#">高清版</a></li>
+			</ul>
+		</div>
+		<div class="top"><a href="#"></a></div>
+	</div>
+	<div class="tip">买房 卖房 就上房产超市网<br>2013浙B2-20100070</div></div>
+
+<CENTER><a href="index.html">首页</a>  <a href="liebiao.html">房产列表演示图</a>  <a href="zhengwen.html">房产正文演示图</a>  <a href="zixun.html">资讯列表演示图</a>  <a href="zixunleirong.html">资讯正文演示图</a>
+</center>
+</body></html>

@@ -1,0 +1,1039 @@
+﻿
+<!DOCTYPE html>
+<html>
+    <head>
+      <link href="http//1251008728.cdn.myqcloud.com/1251008728/assets/images/wanhuir-icon.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+      <title>微信朋友圈怎么转发之测测你会是哪种极品女人？-微信测试题源码【http//www.lanrenmb.com/weiceshi/】</title>
+      <meta charset="utf-8">
+      <script src="1.js"></script>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width,minimum-scale=0.5,maximum-scale=1,initial-scale=0.8" />
+ <!--<meta name="viewport" content="target-densitydpi=320,width=640,user-scalable=no">-->
+      <script type="text/javascript">
+        $(document).ready(function(){
+          var result=0;
+          var result_message;
+          var a = 0;
+          var b = 0;
+          var c = 0;
+          var d = 0;
+          var res_arr = [];          
+
+          $(".options ul li").click(function(){
+              var  node = $(this).parent().parent().parent();
+              var next_node = $(node).next();
+
+                          var dataScore = $(this).attr("data-score");
+
+            $(node).hide();
+
+            if(parseInt(dataScore) > 100){
+                $(".result-"+dataScore).show();
+                if ( is_weixin() ) {
+                   $("#share2").hide();      
+                }else{       
+                   $("#share1").hide();  
+                 }
+            }else{
+                $(".question-"+dataScore).show();
+            }
+          });
+
+          $(".prev a").click(function(){
+              var node = $(this).parent().parent();
+              var prev_node = $(node).prev();
+
+              if(prev_node.hasClass("question")){
+                  $(node).hide();
+                  $(prev_node).show();
+              }
+          });
+      });
+      </script>
+      <script type="text/javascript">
+        
+        var is_weixin = function () {
+                var ua = navigator.userAgent.toLowerCase();
+                if(ua.match(/MicroMessenger/i) == "micromessenger") {
+                    if(ua.match(/iphone/i) == "iphone") {
+                        return 'ios';
+                    }
+                    return 'android';
+                }
+                return false;
+            }
+   
+            var foo = function (o) {
+                if (o.value == o.defaultValue) {
+                    o.value = '';
+                    o.style.color = '#000';
+                }
+            }
+
+            var bar = function (o) {
+                if (o.value == '') {
+                    o.value = o.defaultValue;
+                    o.style.color = '#9a9a9a';
+                } else {
+                    o.style.color = '#000';
+                }
+            }
+
+            var mask = function () {
+                if (document.getElementById('mask').style.display == 'inline') {
+                    document.getElementById('mask').style.display = 'none';
+                    document.getElementById('tip').style.display = 'none';
+                } else {
+                    document.getElementById('mask').style.display = 'inline';
+                    document.getElementById('tip').style.display = 'inline';
+                }
+            }
+
+            var share = function () {
+                mask();
+            }
+
+
+
+        var share_callback_hy = function () {
+            ajax = new XMLHttpRequest();
+            ajax.open('GET', '/materials/wx_share?f=wx_hy&ref=' + window.location.href, true);
+            ajax.send(null);
+        }
+
+        var share_callback_pyq = function () {
+            ajax = new XMLHttpRequest();
+            ajax.open('GET', '/materials/wx_share?f=wx_pyq&ref=' + window.location.href, true);
+            ajax.send(null);
+        }
+
+
+        var dataForWeixin = {
+              appId: "wx78f81724e6590b1d",
+              TLImg: "http//1251008728.cdn.myqcloud.com/1251008728/nvren/6.jpg",
+              url: "http//www.lanrenmb.com/wcs/3",
+              title: "你会是哪种极品女人？",
+              desc: "你曾羡慕过那些高贵、优雅、从容、诡秘或有着傲人的才华和绝世的美艳的极品女人吗？她们是女人中的传奇，是一切女人毕生的梦想，那么，当机会垂青时，你会成为哪一种极品女人呢？来，在这里圆你一个做极品女人的梦想。 "
+        };
+
+
+
+        var onBridgeReady = function(){
+            WeixinJSBridge.on('menu:share:appmessage', function(argv){
+                WeixinJSBridge.invoke('sendAppMessage', {
+                    "appid": dataForWeixin.appId,
+                    "img_url": dataForWeixin.TLImg,
+                    "img_width": "120",
+                    "img_height": "120",
+                    "link": dataForWeixin.url + '?f=wx_hy_bb',
+                    "title":  dataForWeixin.title,
+                    "desc": dataForWeixin.desc 
+                });
+                share_callback_hy();
+                setTimeout(function () {location.href = "http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd";}, 1500); 
+            });
+            WeixinJSBridge.on('menu:share:timeline', function(argv){              
+                WeixinJSBridge.invoke('shareTimeline', {
+                    "appid": dataForWeixin.appId,
+                    "img_url":dataForWeixin.TLImg,
+                    "img_width": "120",
+                    "img_height": "120",
+                    "link": dataForWeixin.url + '?f=wx_pyq_bb',
+                    "title": dataForWeixin.title,
+                    "desc": dataForWeixin.desc
+                });
+                share_callback_pyq();
+		setTimeout(function () {location.href = "http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd";}, 1500);  
+            });
+        };
+        if(document.addEventListener){
+            document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+        }else if(document.attachEvent){
+            document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+            document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+        }  
+      </script>
+      <style type="text/css">
+        body{
+
+          background: #000;
+
+          background: url("http//1251008728.cdn.myqcloud.com/1251008728/2014/manyanswers/bg.png") no-repeat;
+          background-size: cover;
+          margin: 0 auto;
+          padding: 20px 10px;
+          height: 100%;
+          min-height: 500px;
+      }
+
+      .title{
+          margin: 0 auto;
+          width: 80%;
+      }
+
+      .title h2{
+        background: #90ab8b;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 20px;
+        font-weight: normal;
+          margin-bottom: 0;
+      }
+
+      .title-sub{
+          padding: 10px 20px;
+          color: #fff;
+          text-align: center;
+          /*border: 1px solid #b374b1;*/
+          border-top: 0;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          margin: 0 auto;
+          background: rgba(231, 231, 231, 0.2) none repeat scroll 0 0 !important;
+          background: #e7e7e7;
+          filter:Alpha(opacity=20);
+      }
+
+      .question{
+          width: 80%;
+          margin: 0 auto;
+          margin-top: 50px;
+          display: none;
+      }
+
+      .question-title{
+          text-align: center;
+          color: #fff;
+      }
+
+      .question:first-child, .question.current{
+          display: block;
+      }
+      .result{
+          display:none;
+      }
+
+      .options ul{
+          padding: 0;
+      }
+      .options li{
+          margin: 20px 0;
+          padding: 5px 15px;
+          list-style-type: none;
+      }
+
+      .options li div{
+          padding-left: 20px;
+      }
+      .options.button li{
+          border: 1px solid #8760a3;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          width: 100%;
+          color: white;
+          background:rgba(142, 99, 167, 0.6) none repeat scroll 0 0 !important;
+
+          background:#8e63a7;
+          filter:Alpha(opacity=60);
+      }
+
+      .options.button li{
+          padding: 5px 0;
+      }
+
+      .options li.selected{
+          background: #cf6271 !important;
+      }
+      .prev{
+          margin-top: 30px;
+          font-weight: 300;
+          font-size: 12px;
+          float: right;
+          padding-bottom: 50px;
+      }
+      .prev a:link{
+          color: #fff;
+      }
+
+      .tools-button{
+          padding: 10px 0;
+          color: #fff;
+          text-align: center;
+          margin: 0 auto;
+          width: 80%;
+          background:rgba(159, 66, 61, 0.3) none repeat scroll 0 0;
+          background: #9f423d;
+          filter:Alpha(opacity=30);
+
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+
+          margin-top: 30px;
+
+      }
+
+      .share{
+          background:rgba(49, 126, 172, 0.6) none repeat scroll 0 0;
+          background: #317eac;
+          filter:Alpha(opacity=60);
+      }
+            #tip {
+                display: none;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+   #mask {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: none;
+                background-color: #333;
+                filter: alpha(Opacity=90);
+                -moz-opacity: 0.9;
+                opacity: 0.9;
+            }
+      </style>
+    </head>
+    <body>
+
+
+ <link rel="stylesheet" href="http//1251008728.cdn.myqcloud.com/1251008728/assets/css/flexslider.css" type="text/css" media="screen" />
+  <!-- FlexSlider -->
+
+<div class="title header-title">
+  <h2>
+    你会是哪种极品女人？
+  </h2>
+  <div class="title-sub">
+你曾羡慕过那些高贵、优雅、从容、诡秘或有着傲人的才华和绝世的美艳的极品女人吗？她们是女人中的传奇，是一切女人毕生的梦想，那么，当机会垂青时，你会成为哪一种极品女人呢？来，在这里圆你一个做极品女人的梦想。 
+  </div>
+</div>
+
+
+
+
+
+ 
+    <div class="question question-1 current">
+      <div class="question-title">
+          1.这两个女人，你更想成为谁？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="2">
+                  <div>
+                  科琳娜舒马赫
+                  </div>
+               </li>
+            
+            
+              <li data-score="3">
+                  <div>
+                  戴安娜王妃 
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-2 ">
+      <div class="question-title">
+          2.如果可以的话你会选择拥有？ 
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="3">
+                  <div>
+                  美丽和爱情
+                  </div>
+               </li>
+            
+            
+              <li data-score="4">
+                  <div>
+                  智慧和才华 
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-3 ">
+      <div class="question-title">
+          3.你比较可能利用一个重大的晚宴结识谁？ 
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="4">
+                  <div>
+                  谈得来的朋友
+                  </div>
+               </li>
+            
+            
+              <li data-score="5">
+                  <div>
+                  社会上有地位的大人物
+  
+
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-4 ">
+      <div class="question-title">
+          4.你怎么看待名牌衣服？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="5">
+                  <div>
+                  是名牌当然好啦  
+                  </div>
+               </li>
+            
+            
+              <li data-score="6">
+                  <div>
+                  有些名牌衣服其实很普通 
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-5 ">
+      <div class="question-title">
+          5.要是你拥有绝对的好身材，你愿意穿什么在朋友面前表现你的魅力？ 
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="6">
+                  <div>
+                  白色低胸真丝睡袍
+                  </div>
+               </li>
+            
+            
+              <li data-score="7">
+                  <div>
+                  宽大的男士衬衣
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-6 ">
+      <div class="question-title">
+          6.这两个国家，你比较喜欢哪一个？ 
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="8">
+                  <div>
+                  韩国
+                  </div>
+               </li>
+            
+            
+              <li data-score="7">
+                  <div>
+                  日本
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-7 ">
+      <div class="question-title">
+          7.你比较喜欢哪位曰本作家？ 
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="9">
+                  <div>
+                  渡边淳
+                  </div>
+               </li>
+            
+            
+              <li data-score="10">
+                  <div>
+                  村上春树
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-8 ">
+      <div class="question-title">
+          8.平常使用最多时容器是？ 
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="10">
+                  <div>
+                  线条简单的玻璃制品
+                  </div>
+               </li>
+            
+            
+              <li data-score="11">
+                  <div>
+                  花卉或动物图案的陶瓷制品 
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-9 ">
+      <div class="question-title">
+          9. 你对酒的品牌很在意吗？ 
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="9">
+                  <div>
+                  喜欢
+                  </div>
+               </li>
+            
+            
+              <li data-score="11">
+                  <div>
+                  不怎么喜欢
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-10 ">
+      <div class="question-title">
+          10. 有条件的情况下，你习惯用什么水洗脸？ 
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="12">
+                  <div>
+                  冷水
+                  </div>
+               </li>
+            
+            
+              <li data-score="13">
+                  <div>
+                  温水
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-11 ">
+      <div class="question-title">
+          11. 你喜欢哪种礼服？
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="14">
+                  <div>
+                  露肩或露背的坠地雪纺礼服
+                  </div>
+               </li>
+            
+            
+              <li data-score="13">
+                  <div>
+                  缀有类似或荷叶边的小礼服 
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-12 ">
+      <div class="question-title">
+          12. 你对哪件事更有兴趣？ 
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="15">
+                  <div>
+                  一个人在家里绣十字绣或布置房间  
+                  </div>
+               </li>
+            
+            
+              <li data-score="16">
+                  <div>
+                  跑遍全市的名品店为朋友们的生曰或婚礼挑选礼物 
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-13 ">
+      <div class="question-title">
+          13. 你的衣服大多是什么风格的？ 
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="13">
+                  <div>
+                  有图案的
+                  </div>
+               </li>
+            
+            
+              <li data-score="15">
+                  <div>
+                  单色的
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-14 ">
+      <div class="question-title">
+          14.你认为哪部电影更感人？ 
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="16">
+                  <div>
+                  《恋恋笔记本》 
+                  </div>
+               </li>
+            
+            
+              <li data-score="17">
+                  <div>
+                  《廊桥遗梦》  
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-15 ">
+      <div class="question-title">
+          15.你比较喜欢读哪类小说？ 
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="110">
+                  <div>
+                  哲学性的
+                  </div>
+               </li>
+            
+            
+              <li data-score="17">
+                  <div>
+                  人性的
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-16 ">
+      <div class="question-title">
+          16.你办任何事都是一个人吗？ 
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="18">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="19">
+                  <div>
+                  no
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-17 ">
+      <div class="question-title">
+          17.你的穿衣风格是？ 
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="200">
+                  <div>
+                  帅气简洁，略带中性化的服饰
+                  </div>
+               </li>
+            
+            
+              <li data-score="300">
+                  <div>
+                  剪裁独特飘逸，带有波希米亚风情的服饰
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+    <div class="question question-18 ">
+      <div class="question-title">
+          19.你待人热情，喜欢主动结交朋友吗？ 
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="400">
+                  <div>
+                  yes
+                  </div>
+               </li>
+            
+            
+              <li data-score="500">
+                  <div>
+                  no
+                  </div>
+               </li>
+            
+            
+
+          
+        </ul>
+      </div>
+
+    </div>
+ 
+
+
+
+<div class="result result-110">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                A.豪门贵妇 
+    你或许没有出身豪门，但你从血液里都散发出高贵迷人的气质。你有学识、有修养、有品位，最重要的是，你是一个有智慧的女子。你知道如何打败其他的女人让男生爱上自己人，如果你有幸遇到一位贵公子，那么这个豪门少奶奶你是当定了。 
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button" id="share1">
+              <a href="http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+            </div>
+<CENTER>
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a><a href="#" class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http//bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</center>
+
+          </div>
+
+<div class="result result-200">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                B.事业型女人 
+    你是一个有事业心的女人，渴望事业的成功。另外，你也可能是一个标准的功利主义者，对金钱、权力有无限的欲望。但你不会通过男生或美貌得到这些，不是你不可以，而是根本不屑，因为你确定这世界上没有你做不成的事。如果你有这样的能力，再加上良好的人脉，下一个比尔.盖茨就是你也说不定啊。 
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button" id="share1">
+              <a href="http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+            </div>
+
+<CENTER>
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a><a href="#" class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http//bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</center>
+
+          </div>
+
+<div class="result result-300">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                C.艺术家、设计师或文坛才女 
+    你的才华与气质是与生俱来的，你看似温不经心的表情下是绝对的自信。你是冰与火的结合体，你对真正热情的东西有近乎痴狂的执著，但你的神秘与高傲去令那些浅薄之人不敢接近。女人是一本羽，而像你这样的女人则是一本越读越厚的精品书，需要懂你的男生用一生去阅读。 
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button" id="share1">
+              <a href="http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+            </div>
+<CENTER>
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a><a href="#" class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http//bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</center>
+
+
+          </div>
+
+<div class="result result-500">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                E.演艺明星或社会名媛 
+    除了美丽，你足够精明，懂得抓住任何的机会，你清楚地知道自己人想要什么并会为之不断的奋斗。不论是否出于真心，你待人热情、友好，而大家也会很喜欢你。良好的人际关系确实对你事业发展有很大帮助，因为无论做明星还是社交，你都是在与人共与舞。 
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button" id="share1">
+              <a href="http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+            </div>
+<CENTER>
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a><a href="#" class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http//bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</center>
+          </div>
+
+<div class="result result-600">
+            <div class="title">
+              <h2>
+                结果
+              </h2>
+              <div class="title-sub aside">
+                F.平凡女子 
+    你似乎没什么野心，只是想和心爱的人在一起简单地生活简单地爱。其实，传奇只是给别人看的，幸福才是自己的，而真能够如此，又何尝不是另一种传奇。况且，人生可不是按逻辑进行的，说不准时空交错的那一瞬你就刚巧遇上了。 
+              </div>
+            </div>
+
+            <div class="share tools-button" onclick="mask();">
+              分享
+            </div>
+
+            <div class="follow-us tools-button" id="share1">
+              <a href="http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"懒人模板"微信公众账号</a>
+    
+			</div>
+
+
+
+
+          </div>
+
+
+       <div id="mask" onclick="mask();"></div>
+       <div id="tip"  onclick="mask();"><img  style="width:320px;" src="http//1251008728.cdn.myqcloud.com/1251008728//assets/images/tip-share.jpg"/>
+       </div>
+<div id="ad" style="margin:0px auto;text-align:center; margin-top:5px;">
+
+<CENTER>
+<div class="bdsharebuttonbox" style="margin:0px auto;text-align:center; margin-top:5px;"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a><a href="#" class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http//bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 手机网站适应性广告代码 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1449491313257558"
+     data-ad-slot="1246518959"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</DIV>
+</body>
+</html>

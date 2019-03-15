@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http//www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+<html lang="zh-tw">
+<head>
+<meta charset="UTF-8">
+<title>仿今日購物行動版触屏版手机wap购物网站模板成为会员-懒人模板【http//www.lanrenmb.com/shenghuofuwu/gouwu/】</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/page.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<script src="js/jquery.js"></script>
+<script src="js/caroufred.js"></script>
+<script src="js/flexslider.js"></script>
+<script src="js/control2.js"></script>
+<script src="js/touchwipe.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/pro.js"></script>
+<script type="text/javascript">
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+</script>
+<script type="text/javascript">
+$('.list').bPopup();
+</script>
+<script type="text/javascript">
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    slideshowSpeed: 3000,
+    animationSpeed: 500,
+  });
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4021556-49', 'nownews.com');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+	<!--全站共用title-->
+	<div class="top_part_head">
+		<div style="text-align:center;"><div class="logo"><img src="img/logo.png"></div></div>
+		<ul>
+			<li class="home"><a href="default.htm">首頁</a></li>
+			<button id="my-button" class="list">POP IT UP</button>
+			<div id="element_to_pop_up" class="moreBox">
+				<a class="b-close">x</a>
+				<ul>
+					<li><a href="mobile_member.htm">加入會員</a></li>
+					<li><a href="howtobuy.htm">如何購買</a></li>
+					<li><a href="member.htm">會員問題</a></li>
+					<li><a href="order.htm">訂單問題</a></li>
+					<li><a href="joinus.htm">廠商合作</a></li>
+				</ul>
+			</div>
+		</ul>
+	</div>
+	<!--全站共用title-->
+
+	
+
+</header>
+<link href="css/mobile_css.css" rel="stylesheet" type="text/css">
+<style>
+#mobile_member .wrap{ background-color:#FFF; width:100%;}
+#mobile_member .mem_head_line{ background-image:url(images/mobile_member_headline.png); height:4px;background-repeat: repeat-x; }
+#mobile_member .mem_box{ margin: 0 auto; width:320px;}
+#mobile_member .mem_head{ background-image:url(images/mobile_member_header_s.png) ; width:320px; height:56px}
+#mobile_member .mem_content{ background-image:url(images/mobile_member_body_s.png); width:320px;}
+#mobile_member .mem_content input{ font-size:12px}
+#mobile_member .mem_footer{ background-image:url(images/mobile_member_footer_s.png); width:320px; height:29px; }
+#mobile_member .mem_table{ width:290px; margin: 0 auto;}
+#mobile_member input.ui-input-text, textarea.ui-input-text {
+	background-image:none;
+	padding:.4em;
+	margin:.5em 0;
+	line-height:1.4;
+	font-size:14px;
+	display:block;
+	width:90%;
+	outline:0
+}
+</style>
+
+<script type="text/javascript" src="js/jquery.jselect.min.js"></script>
+<script>
+function get_select_add()
+{
+	var nAdd_Master = $('#add1').val();
+
+	$('#user_zip').jselect({
+		loadUrl: 'ajax/ajax_address_2.php',
+		loadData: 'add1=' + parseInt(nAdd_Master),
+		loadDataType: 'json',
+		onComplete: function() { }
+	});
+}
+
+$(document).ready(function(){
+	$('#add1').change(function() { get_select_add(); });
+});
+</script>
+
+<div id="mobile_member" class="wrap">
+<div class="mem_head_line"></div>
+<div class="mem_box">
+<div class="mem_head">
+</div><!--mem_head end-->
+
+<form id="form1" name="form1" action="" method="post">
+<div class="mem_content">
+<div class="mem_table" style="">
+姓名
+<input type="text" name="user_name" maxlength="10" required="" validationmessage="必填!!" autocomplete="off" placeholder="請填寫正確姓名，避免活動獲獎失去資格" data-pattern-msg="請輸入至少兩個中文" class="ui-input-text ui-body-c ui-corner-all" value="">
+性別 <input type="radio" name="user_gender" value="1"  >男 <input type="radio" name="user_gender" value="0" checked="checked" >女<br><br>
+Email電子信箱:
+<input type="text" name="user_email" maxlength="50" required="" validationmessage="必填!!" autocomplete="off" placeholder="正確填寫，此為會員登入帳號" data-pattern-msg="" class="ui-input-text ui-body-c ui-corner-all" value="">
+手機:
+<input type="text" name="user_mobile" maxlength="10" required="" validationmessage="必填!!" autocomplete="off" placeholder="此為登入會員密碼" pattern="[0-9]{10}" data-pattern-msg="請輸入09開頭的十數位" class="ui-input-text ui-body-c ui-corner-all" value="">
+家用電話:<br>
+<input type="text" name="user_area" maxlength="3" required="" validationmessage="必填!!" autocomplete="off" placeholder="區碼" pattern="[0-9]{2,}" data-pattern-msg="請輸入市話區碼" class="ui-input-text ui-body-c ui-corner-all" style="width:40px; float:left" value="">&nbsp;<input type="text" name="user_phone" maxlength="15" required="" validationmessage="必填!!" autocomplete="off" placeholder="" pattern="[0-9\-#]{6,}" data-pattern-msg="" class="ui-input-text ui-body-c ui-corner-all" style="width:200px; float:left; margin-left:10px" value="">
+<div style="clear:both"></div>
+<div class="" style=" line-height:30px"> 聯繫地址 <br>
+                <select data-role="none" class="ui-input-text ui-body-c ui-corner-all" style="width: 138px; height: 30px; font-size: 16px;" name="add1" id="add1"><option selected value="0">請選擇</option><option value="1">臺北市</option><option value="2">基隆市</option><option value="3">新北市</option><option value="4">宜蘭縣</option><option value="5">新竹市</option><option value="6">新竹縣</option><option value="7">桃園縣</option><option value="8">苗栗縣</option><option value="9">臺中市</option><option value="10">彰化縣</option><option value="11">南投縣</option><option value="12">嘉義市</option><option value="13">嘉義縣</option><option value="14">雲林縣</option><option value="15">臺南市</option><option value="16">高雄市</option><option value="17">澎湖縣</option><option value="18">屏東縣</option><option value="19">台東縣</option><option value="20">花蓮縣</option><option value="21">金門縣</option><option value="22">連江縣</option><option value="23">海南諸島</option><option value="24">其它地區</option></select>
+                <select data-role="none" class="ui-input-text ui-body-c ui-corner-all" style="width: 138px; height: 30px; font-size: 16px;" name="user_zip" id="user_zip"><option selected value="0">請選擇</option></select>
+                <input type="text" class="ui-input-text ui-body-c ui-corner-all" name="user_address" required="" validationmessage="必填!!" autocomplete="off" placeholder="限台灣本島，不接受郵政信箱" value="">
+              </div>
+              <textarea style="width:280px; height:150px; color:#999; font-size:12px">
+【會員服務條款】
+請於加入今日傳媒股份有限公司（以下稱本公司）會員前，務必仔細閱讀會員服務條款、本公司之隱私權政策及會員服務說明。當您按下同意鍵時，表示您已經閱讀、瞭解並同意本公司會員服務條款、本公司之隱私權政策及本公司網站內所為之相關服務說明。
+
+服務範圍
+第一條	今日傳媒會員服務內容
+本公司會員將可以定期或不定期收到每日新聞、會員電子報、EDM、本公司最新產品行銷訊息、本公司關係企業及特約廠商行銷或產品/服務優惠訊息。本公司會員於NOWshopping今日購物網站消費可以參加今日購物「購物金贈送」活動，憑購物金可兌換站內商品。本公司會員將可以無償使用相關服務，惟本公司保留變更服務項目與內容之權利。
+
+隱私權保護
+第二條	個人資料蒐集目的與類別
+為提供您全方位的服務，於加入會員時，本公司將請您提供您的個人基本資料，包括姓名、性別、出生年月日、身分證字號（非本國籍人士使用中華民國居留證統一證號）、聯絡電話、手機號碼、電子郵件信箱、通訊地址、個人年收入、暱稱、教育程度、婚姻狀況、子女數、產業別、感興趣的訊息類別及希望接收的商品訊息、是否訂閱電子報、是否接受本服務通知會員活動、是否接受本服務通知新產品訊息、是否接受本服務通知關係企業及特約廠商之行銷、優惠訊息等相關資料。
+
+第三條	個人資料利用期間、地區、對象及方式
+1.	本公司將妥善保存您的個人資料，直到您向本公司申請退出會員並要求刪除您的個人資料為止。
+2.	關於您的個人資料，將使用於中華民國領域（包括臺灣地區及大陸地區）及本公司關係企業所登記設立之國家，並僅作為提供今日傳媒相關服務之用，除法律明文規定或為契約履行之緣故外，在未取得您的書面同意之情況下，本公司不會將您的個人資料作其他用途使用。
+3.	為了提供您本公司關係企業與特約廠商之行銷訊息或產品/服務優惠，本公司會將您的姓名、性別、出生年月日、身分證字號（非本國籍人士使用中華民國居留證統一證號）、聯絡電話、手機號碼、電子郵件信箱、通訊地址、個人年收入、暱稱、教育程度、婚姻狀況、子女數、產業別、感興趣的訊息類別及希望接收的商品訊息、是否訂閱電子報、是否接受本服務通知會員活動、是否接受本服務通知新產品訊息、是否接受本服務通知關係企業及特約廠商之行銷、優惠訊息等基本資料提供予本公司之關係企業利用。同時，為提供您完善的服務，本公司將會在必要範圍內提供您的個人資料予本公司之關係企業處理或利用。
+4.	本公司關係企業包括：中華聯合股份有限公司。
+
+第四條	個人資料之安全維護
+本公司將採取適當且必要的安全維護措施，以保護您個人資料的安全，任何未經授權之人皆不能存取您的個人資料。
+
+第五條	個人資料之查詢、閲覽、修改或刪除
+1.	您可以直接登入本公司網站，查詢、閲覽或修改您的個人資料；同時，您可以於本公司網站修改您的偏好設定，包括訂閱電子報、接受本服務通知會員活動或新產品的決定權及接收關係企業及特約廠商之行銷、優惠訊息。
+2.	您可以透過於本公司所屬網站、頻道各公開之會員中心、客服中心、相關電子郵件及公開登記之電話，要求查詢或請求閱覽您的個人資料或製給複製本、補充或更正；要求停止蒐集、處理或利用，或刪除您的個人資料，本公司將由專人竭誠為您服務。
+3.	如果您不願意再收到本公司之會員電子報、EDM、行銷訊息或優惠訊息，可以直接登入本公司網站-會員中心，修改資料處取消訂閱電子報或EDM。
+
+第六條	不提供個人資料或要求刪除之影響
+1.	若您不提供本服務條款第二條所定之個人基本資料，將無法成為本公司會員，而無法享有、使用本公司之一切服務。
+2.	若您所提供之個人資料有錯誤、不實或不完整之情事時，將可能會影響您可以取得的會員服務，例如電子郵件錯誤將導致您無法收到本公司會員電子報。
+3.	當您向本公司提出退出之申請並要求刪除您的個人資料，您所累積之購物金將自動取消，而不得再為轉讓、兌現或兌換商品。
+
+智慧財產權保護
+第七條	智慧財產權歸屬
+1.	本公司所使用之系統、程式及網站上所有內容，包括但不限於著作、圖片、檔案、資訊、資料、網站架構、網站畫面的安排、網頁設計、醫療保健圖文，均由本公司或其他權利人依法擁有其智慧財產權，包括但不限於商標權、專利權、著作權、營業秘密與專有技術等。任何人不得逕自使用、修改、重製、公開播送、公開傳輸、公開上映、公開演出、改作、散佈、發行、公開發表或進行還原工程、解編或反向組譯。
+2.	若您欲引用或轉載前述系統、程式或網站內容，必須依法取得本公司或其他權利人的事前書面同意。如有違反，您應對本公司負損害賠償責任（包括但不限於訴訟費用及律師費用等）。
+
+第八條	商標使用
+本公司及其關係企業或與本公司有特約合作關係之第三人為行銷宣傳本服務，就本服務相關之商品或服務名稱、圖樣等，依其註冊或使用之狀態，受商標法及公平交易法等之保護，未經本公司事前書面同意，不得以任何方式使用本公司所有商標。
+
+會員使用本公司服務應遵循事項
+第九條	未成年人使用本公司服務應注意事項
+若您為未滿二十歲之未成年人，除應符合上述規定外，應於法定代理人（或監護人）閱讀、瞭解並同意本服務條款之所有內容及其後修改變更後，方得開始或繼續使用本服務。當您開始或繼續使用本服務時，即視為您的法定代理人（或監護人）已閱讀、瞭解並同意接受本服務條款之所有內容及其後之修改變更。
+
+第十條	會員資料之提供
+1.	依本服務線上或實體註冊申請程序所提示之項目，登錄您本人正確、真實、最新及完整之個人資料，以確保各項獨享權益。若因您填寫資料錯誤且未及時更正、更新致生之任何糾紛，您知悉且同意本公司無須負責任何損害賠償之責任。
+2.	如登錄之資料嗣後有所變更時，應隨時依本公司規定於線上更新，以維持您個人資料之正確、真實、最新及完整；若因您未善盡善良管理人之義務而衍生之風險及損害，須由您自負所有損害賠償責任，會員不得要求本公司給予任何補償或賠償。
+3.	若您所提供之個人資料如有錯誤、填寫不實、不完整或原所登錄之資料已不符合真實現況而未更新、所提供之個人資料違反或破壞本公司服務宗旨或有任何誤導之虞者，本公司有權立即暫停或終止您的會員資格及各項會員服務。
+4.	如因您登錄不實資料或冒用他人名義以致於侵害他人之權利或違法時，應自負法律責任，如因此造成本公司損害，您應負賠償之責任。
+
+第十一條	會員帳號、密碼及安全
+1.	完成會員註冊程序後，會員應自行妥善保管帳號及密碼，不得洩漏予任何第三人，並於每次使用後確實登出，以防他人盜用。如發現或懷疑自己的帳號或密碼遭他人盜用，或有其他任何安全問題發生時，應立即通知本公司採取必要處置，惟此通知不得解釋為本公司對會員負有任何賠償或補償之責任或義務。
+2.	您同意您的帳號不會出借或轉讓他人使用，且您的帳號及使用權限於您無法擔負法律責任（包括但不限於監護宣告、死亡….等）時即立刻終止；如您將您的專屬權益讓與他人者，本公司得不經催告立即終止會員資格，並追究相關之法律責任。
+3.	您知悉且同意在每次連線完畢，均結束您的帳號使用（即登出會員）。
+4.	您知悉且同意在會員帳號開啟時，應注意任何使用FOX、P2P或其它共享軟體進行下載、傳輸、發送檔案的行為，若因您未盡善良管理人之責致使帳號資料、密碼外洩，本公司無須負擔任何責任，您同意自行承擔因此所生之風險及損害。
+
+第十二條	使用者的守法義務及承諾
+1.	您承諾絕不為任何非法目的或以任何非法方式使用本服務，並承諾遵守中華民國相關法規及一切使用但不限於網際網路、會員權益及義務條款之國際慣例。就您重製、上傳、張貼於至本公司網站，及或利用本公司網站進行公布、公開傳輸、公開播送之全部內容（以下合稱「會員內容」），該內容應包含但不限於文字、圖片或任何形式的檔案，您同意保證：該「會員內容」不會包含任何涉及誹謗、侮辱、攻擊、猥褻、不實、違反善良風俗之意涵或指涉，不會侵害他人著作權、商標權、專利權、營業秘密、肖像權、隱私權，未違反保密義務，不會包含電腦病毒及任何可能對電腦軟、硬體產生中斷、破壞或限制功能之程式碼，不會包含不法交易、虛假不實、引人犯罪、引人錯誤之訊息，不會包含其他本公司有正當理由認為屬不當行為之內容。
+2.	您同意您的帳號不會出借或轉讓他人使用，且您的帳號及使用權限於您無法擔負法律責任（包括但不限於監護宣告、死亡….等）時即立刻終止；如您將您的專屬權益讓與他人者，本公司得不經催告立即終止會員資格，並追究相關之法律責任。
+3.	您若係非中華民國國民之使用者，應同意遵守所屬國家或地域之法令。
+4.	您若係在中華民國領域外之使用者，應同意遵守所在地國家或地域之法令。
+5.	您同意並保證不得利用本服務從事侵害他人權益或違法之行為，且絕不使用本公司及其關係企業各項服務來傷害、侵犯或攻擊本公司及其關係企業之員工、顧問、廣告主以及相關合作廠商。
+6.	如您有違反本條第一項至第五項之情事時，本公司保留立即暫停或終止您的會員資格及使用各項服務之權利，您於本服務之使用被終止或暫停時，本公司對您或任何第三人均不負擔責任。
+7.	如您有違反上述第一項至第五項之情況，致使本公司及其關係企業或與本公司有特約合作關係之第三人發生損害或損失（包括但不限於因進行民事、刑事及行政程序所支出之訴訟費用及律師費）時，應負賠償及償還之責任。
+
+第十三條	系統、使用及一般措施
+1.	您同意本公司得就本服務訂定一般措施及限制，包括但不限於本服務將保留網站發言內容或其他上載內容之最長期間、本服務一個帳號當中可收發訊息的數量限制、本服務一個帳號當中可收發訊息的最大檔案、不得將帳號提供予不特定之多數人使用或分享檔案、圖片，本公司伺服器將為您分配的最大磁碟空間，以及一般特定期間內您使用本服務之次數上限（及每次使用時間之上限）。
+2.	若將本服務維持或傳送之任何訊息、通訊和內容刪除或未予儲存，您同意本公司毋須承擔任何責任。您亦同意，長時間未使用的帳號，本服務有權關閉。您也同意，本服務有權依其自行之考量，不論通知與否，隨時變更這些一般措施及限制。
+
+第十四條	服務暫停或終止
+1.	本公司保留於任何時點，不經通知隨時修改、暫停、變更、中斷或永久終止本服務之全部或一部之權利，對於會員因此所致之損害，本公司不負任何賠償或補償責任。
+2.	您同意本公司得依其判斷因任何理由，包括但不限於一定期間未使用、法院或政府機關命令、本服務無法繼續或服務內容實質變更、無法預期之技術或安全因素或問題、您所為詐欺或違法行為、未依約支付費用，或其他本公司主觀及客觀認為您已經違反本服務條款的明文規定及精神，而終止或限制您使用帳號（或其任何部分）或本服務之使用，並將本服務內任何「會員內容」加以移除並刪除。
+3.	您同意本公司亦得依其自行之考量，於通知或未通知之情形下，隨時終止或限制您使用本服務或其任何部分。您承認並同意前開終止或限制，本公司得立即關閉、刪除或限制存取您的帳號及您帳號中全部或一部相關資料及檔案，及停止本服務全部或一部之使用，也認同因您的帳號被終止或限制的同時，自動放棄各項未兌換完成或未經使用的活動贈送之內容。此外，您同意若本服務之使用被終止或限制時，本公司對您或任何第三人均不承擔責任。
+
+第十五條	其他交易行為
+本公司之合作廠商或個人可能透過本服務或經由本服務連結之其他網站提供商品服務或其他交易行為。您若因此與該等廠商或個人進行交易，各該買賣或其他合約均僅存在您與各該廠商或個人兩造之間。您應要求各該廠商或個人，就其商品、服務或其他交易標的物之品質、內容、運送、保證事項與瑕疵擔保責任等，事先詳細闡釋與說明。您因前述服務或其他交易行為所產生之爭執，應向各該廠商或個人尋求救濟或解決之道。本公司聲明絕不介入您與廠商或個人間的任何服務或其他交易行為，對於您所獲得的商品、服務或其他交易標的物亦不負任何擔保責任。
+
+第十六條	對本公司的建議
+若您透過建議、留言或回應網頁對於本公司提供任何意見、想法、建議、文件及/或提議（以下稱「建議」），您認知並同意以下事項：
+1.	您的建議並非特定機密或專有資訊。
+2.	本公司對前開建議並不負有任何明示或默示的保密義務。
+3.	本公司有權在全球為任何目的、以任何方式、在任何媒體上，使用或揭露（或選擇不使用或揭露）前開建議。
+4.	本公司可能已有與前述建議相似而正在考慮或發展中的想法或提案，您的建議將自動於本公司不對您負任何責任的情形下，成為本公司之財產。
+5.	您於任何情形下皆無權利對本公司主張任何形式的賠償或補償。
+
+第十七條	與其他網站連結
+本服務可能會提供連結至其他網站或網路資源的連結。您可能會因此連結至其他業者經營的網站，但不表示本公司與該等業者有任何關係。其他業者經營的網站均由各該業者自行負責，不屬本公司控制及負責範圍之內。本公司對任何檢索結果或外部連結，不擔保其合適性、可信賴性（安全性）、即時性、有效性、正確性及完整性。您也許會連結到一些不需要的網站，這是網際網路運作的可能結果，遇到此類情形時，本公司建議您不要瀏覽或儘速離開該等網站。您並同意本公司無須為您連結至非屬於本公司之網站所生之任何損害，負損害賠償之責任。
+
+會員通知暨服務修改
+第十八條	會員通知
+如依法或其他相關規定須為通知時，本公司得以包括但不限於：電話、電子郵件、一般信件、簡訊、多媒體簡訊、文字訊息、張貼於本服務網頁，或其他現在或未來合理之方式通知您，包括本服務條款之變更。但若您違反本服務條款，以未經授權的方式存取本服務，您將不會收到前述通知。當您經由授權的方式存取本服務，而同意本服務條款時，您即同意本公司所為之任何及所有給您的通知，都視為送達。
+
+第十九條	服務修改
+本公司有權於任何時間修改或變更本服務條款之內容，建議您隨時注意約定條款修改或變更，其相關公告將主動揭露於本公司網站中說明之。當您於任何修改或變更後繼續使用本服務，視為您已閱讀、瞭解並同意接受該等修改或變更。如果您不同意本服務條款的內容，或者您所屬的國家或地域排除本約定書內容之全部或一部時，您應立即停止使用本服務。
+
+第二十條	免責聲明
+1.	您明確了解並同意：本公司對本服務不提供任何明示或默示的擔保，包括但不限於權利完整、商業適售性、特定目的之適用性及未侵害他人權利。本服務乃依其「現狀」及「提供使用時」之基礎提供，您使用本服務時，須自行承擔相關風險。
+2.	本公司不保證以下事項：
+A.	本服務一定符合您的需求。
+B.	本服務不受干擾、及時提供、安全性、可靠性、正確性或完整性。
+C.	由本服務之使用而取得之結果為正確或可靠。
+D.	您經由本公司服務購買、兌換或取得之任何產品、服務、資訊或其他資料將符合您的期望及需求。
+E.	任何網站中之錯誤將被修正。
+3.	是否經由本服務之使用下載或取得任何資料應由您自行考量且自負風險，並拋棄因前開任何資料之下載而導致您電腦系統、網路存取、下載或播放設備之任何損壞或資料流失，對本公司提出任何請求或採取法律行動，您應自負完全責任。您自本公司或經由本服務取得之建議和資訊，無論其為書面或口頭，均不構成本服務之保證。
+
+第二十一條
+您明確知悉並同意本公司及其關係企業或與本公司有特約合作關係之第三人，無須為您任何直接、間接、附隨、特別、衍生、懲罰性的損害負責，包括但不限於因下述事由所生利潤、商譽、使用、資料之損害或其他無形損失（即令本公司曾被告知該等損害之可能性亦同）：
+1.	使用或無法使用本服務。
+2.	經由或透過本服務購買或取得之任何商品、資料、資訊或服務，或接收訊息或進行交易所產生之替代商品及服務之購買成本。
+3.	在本公司業已善盡善良管理人注意義務之情況下，他人未經授權存取或修改您的傳輸或資料。
+4.	任何第三人就本服務所為之聲明或行為，或任何其他與本服務有關者。
+
+第二十二條	其他事項
+關於您所登錄或留存之個人資料及其他特定資料，依《個人資料保護法》、《個人資料保護法施行細則》及本公司顧客資料保密措施受到保護。
+
+第二十三條
+基於中華民國法律之規定，本公司受司法機關或其他有權機關基於法定程序之提出要求時，為保障本公司之財產及權益，在緊急情況下為維護其他會員或第三人之人身安全及維護本公司網站系統之正常運作的安全考量，會員有任何違反本會員條款之情形及不法情事情況，本公司得保留追訴權，並得以在接收到檢警調機關合理懷疑有不法情事並提出明確法定程序正式函文時，您知悉且同意由本公司主動將您的個人資料一部或全部提供檢警調機關調查處理。如經查有明確違法事證經判決確定，其衍生之所有損害賠償費用您知悉且同意負擔所有損害賠償責任。
+
+第二十四條	特別規定
+本服務條款係就本公司網站及相關網站之各項服務所作之一般規定，如各該會員服務有特別規定時，則先依各該特別規定。
+
+第二十五條	條款之效力、準據法與管轄法院
+本服務條款任一條款無效者，不影響其他條款之效力，且條款之解釋與適用，以及與本服務條款有關的爭議，除法律另有規定者外，均應依照中華民國法律予以處理，並以臺灣臺北地方法院為第一審管轄法院。
+
+【隱私權政策】
+今日傳媒股份有限公司（下稱「本公司」）為了使您瞭解本公司對於個人資料的保護與尊重以及我們將如何利用您的個人資料，特別制定隱私權政策。
+
+一、個人資料之蒐集目的與類別
+1.	本公司基於執行行銷、提供消費者與客戶管理服務、提供廣告服務、提供資訊服務、提供網路購物及其他電子商務服務、提供售後服務、履行法定或特定合約義務、保護當事人權益等目的，將按個別服務性質於您註冊成為本公司會員、使用本公司服務或購買本公司網路銷售產品、使用本公司透過電話、網站、人員或其他方式所提供的服務、於本公司留言板留言、或加入本公司徵才活動，而取得您的個人資料；基於對當事人權益的尊重，本公司將不會以不合理或不合法的方式蒐集、取得您的個人資料。
+2.	為了提供您全方位的會員訊息及售後服務，我們將會依本公司網站個別服務內容，請您提供以下的個人資料，包括但不限於：
+基本資料：包括姓名、性別、出生年月日、身分證統一編號（非本國籍人士使用中華民國居留證統一證號）、電話、地址及電子郵件信箱等資料。（個人資料辨識）
+帳務資料：包括帳戶號碼或類似功能號碼、信用卡帳號、存款帳號、交易帳戶號碼及財務情況等資料。（金流及財務辨識）
+2.	當您使用公司留言板時，為了更進一步瞭解您的問題與需求，以及便於和您聯絡，我們將會請您提供您的個人基本資料，包括姓名、出生年月日、身分證統一編號（非本國籍人士使用中華民國居留證統一證號）、電話、地址及電子郵件信箱等。
+3.	當您使用本公司電話、網站、人員或其他方式所提供的服務，為了提供您全方位的服務、優惠資訊或行銷訊息，我們將會請您提供的您的基本個人資料，包括姓名、性別、出生年月日、身分證字號（非本國籍人士使用中華民國居留證統一證號）、聯絡電話、手機號碼、電子郵件信箱、通訊地址、個人年收入、暱稱、教育程度、婚姻狀況、子女數、產業別、曾接觸或購買的品牌商品、感興趣的訊息類別及希望接收的商品訊息、是否訂閱電子報、是否接受本服務通知會員活動、是否接受本服務通知新產品訊息、是否接受本服務通知關係企業及特約廠商之行銷、優惠訊息等。
+4.	當您加入本公司徵才活動時，為了瞭解您的背景、專業與和您聯絡，我們將會請您提供以下的個人資料，包括：
+A.	基本資料：包括姓名、出生年月日、身分證統一編號（非本國籍人士使用中華民國居留證統一證號）、電話、地址及電子郵件信箱等資料。
+B.	教育、技術或其他專業：包括學歷、資格或技術、專長等資料。
+C.	受僱情形：包括現行受僱情形、僱用經過、離職經過、工作經驗等資料。
+D.	其他個人資料。
+5.	此外，為提升服務品質，本公司網站會依照所提供服務之性質，自動記錄使用者的IP位址、以及在本公司網站內的瀏覽活動（例如，使用者所使用的軟硬體、所點選的網頁)等資料，但是這些資料僅供作流量分析和網路行為調查，以便於改善本公司網站的服務品質。上述資料均以去個人化方式進行資料總量分析，不會直接和特定個人相連繫。
+二、個人資料利用之期間、地區、對象及方式
+1.	我們將依照您提供個人資料予本公司之目的處理或利用您的個人資料，除非取得您的書面同意、依法律規定或為契約履行之緣故，本公司絕不會將您的個人資料作其他用途使用。
+2.	就您個人資料的利用期間，本公司將依照相關法令規定，以及您與本公司往來之契約或書面約定辦理。
+3.	您的個人資料將使用於中華民國領域內（包括臺灣地區及中國大陸地區）及本公司關係企業所登記設立之國家，或因業務需要，在符合本公司所定之資訊安全標準的情況下傳輸至其他國家，惟國際傳輸之作業，將會依照我國及接受國之法規規範辦理。
+4.	您的個人資料，本公司將依照個人資料保護法、個人資料保護法施行細則等一切相關法令規定，以及您與本公司往來之契約或書面約定辦理。除法律規定、委任第三人處理營業相關事務，或與您的往來契約或書面文件另有約定，而須揭露您的個人資料予第三人外，將不會向任何其他第三人揭露或供其使用。
+5.	公務機關因公共利益或法律規定，要求本公司公開特定個人資料時，本公司將視公務機關合法正式的程序，以及對本公司所有使用者安全之考量下，做可能必要的配合。
+
+三、個人資料之安全維護
+1.	本公司以Secure Sockets Layer（SSL）機制進行資料傳輸的加密，並已加裝防火牆防止不法入侵，避免您的個人資料遭到非法及一切未經授權的存取。本公司並應用加密方式儲存密碼，以確保您的密碼不會遭到非法竊取或外洩。
+2.	您的個人資料會被安全地保存在本公司的資料庫系統或管制區域中。同時，任何人均須在本公司訂定之資料授權管理規範下，進行資料之取得與使用，而不在授權範圍內之任何人，均不得亦無法取得資料。
+3.	對您提供之個人資料，本公司將依法定保存期限為妥當之保護，避免遺失或未經授權之使用、刪除、修改、再處理或公開。
+4.	本公司以符合法規規範之實體、電子、流程安全標準來處理您的個人資料。本公司並訓練員工，以適當的處理方式來處理您的個人資料。當本公司委由其他公司提供服務時，亦會要求該公司對因此所取得之個人資料予以保密、保護，並符合一切法規規範。
+
+四、當事人權利行使方式與申訴管道
+當您使用本公司網站所提供的服務，您可以透過本公司網站於登入後查詢、閱覽或修正您的個人資料。除此之外，您也可以於本公司所屬網站及頻道各公開之會員中心、客服中心及相關電子郵件及公開登記之電話，要求查詢或請求、閱覽您的個人資料或製給複製本、補充或更正、要求停止蒐集、處理或利用、或刪除您的個人資料，本公司將由專人竭誠為您服務。
+
+五、客戶拒絕提供個人資料之權益影響
+如果您不願意將您的個人資料予提供給本公司，且該資料欄位如屬必要欄位者，不提供您的個人資料將會影響到您使用本公司服務的完整性。
+
+六、官方網站之技術細節
+本網站使用"cookies"收集關於網頁流量及使用形態的資料，但cookies並不會截取您的姓名、電子郵件位址或類似的個人資料。
+
+七、其他注意事項
+請您注意，與本公司所屬網站連結的其它網站，也可能蒐集您的個人資料。對於您主動提供的個人資訊，這些連結網站有其個別的隱私權政策，除與本公司有委託關係者外，其資料處理措施不適用於本公司隱私權政策，本公司依法也無須負任何連帶責任。
+
+本隱私權政策自2013年1月1日起開始生效，惟為因應社會環境及法令的變遷與科技的進步，並為保護客戶隱私，本公司有權隨時修改本公告政策，並將儘速於更新後公告或通知。
+
+              </textarea>
+<div style=" font-size:14px; color:#666; line-height:30px"><input type="checkbox" name="check_clause" value="1" checked="checked" > 我已閱讀並同意接受會員條款</div>
+<input type="submit" value="確定參加"><input type="button" value="回首頁" onclick="javascript:location.href='default.htm';">
+
+</div><!--mem_table end-->
+</div><!--mem_box end-->
+</form>
+
+<div class="mem_footer">
+</div><!--mem_footer end-->
+</div><!--mem_box end-->
+</div><!--wrap end-->
+
+
+<!--全站共用footer-->
+<footer>
+	<div class="em_bottom">
+		<div class="sub"><a href="../shopping.nownews.com/default.htm" target="_blank" class="blue btn">&nbsp 電腦版&nbsp </a><span>&nbsp &nbsp <strong>｜</strong> &nbsp &nbsp </span><a href="default.htm" class="orange btn">&nbsp 手機版&nbsp </a></div><div class="sub2"><a href="mobile_member.php" target="_blank">加入會員</a><span>&nbsp ｜&nbsp </span><a href="order.php" target="_blank">訂單詢問</a><span>&nbsp ｜&nbsp </span><a href="member.php" target="_blank">會員權益</a><span>&nbsp ｜&nbsp </span><a href="joinus.php" target="_blank">廠商合作</a></div><div class="sub3">今日傳媒(股)公司版權所有<br />© 2013 NOWnews.com. All Rights Reserved.</div>
+	<div>
+	<div style="clear:both"></div>
+</footer>
+<!--全站共用footer-->
+
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"3yibi1aoZM00M2", domain:"nownews.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "../https@d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="../https@d5nxst8fruw4z.cloudfront.net/atrk.gif@account=3yibi1aoZM00M2" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->
+
+</body>
+</html>

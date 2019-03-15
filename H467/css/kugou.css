@@ -1,0 +1,57 @@
+/*通用样式 Start*/
+html,body,div,p,a,table,textarea,form,input,img,ul,li{margin:0;padding:0;}
+body{font-size:13px;margin:0 auto;color:#000;}
+table{border-collapse:collapse;}
+td{padding:0px;}
+img,a img{border:0;}
+li{list-style:none;text-indent:0;}
+a{color:blue;text-decoration:none;}
+.title_color{color:#303030;}
+.wrap{margin:0 auto;border:1px solid #c6c6c6;}
+.header{padding:3px 0px 2px 5px;}
+.header span{padding-left:15px;}
+.nav{padding:5px 0 5px 15px;background-color:#52bfea;font-size:14px;line-height:18px;}
+.nav a{margin:0 12px 0 0;color:#FFFFFF;}
+.search{padding:0px 0 0 10px; background:#f2f2f2;border-top:1px solid #cecece;border-bottom:1px solid #cecece;color:#4c4c4c;}
+.search_txt{width:108px;height:18px;padding-top:2px;}
+.search_kind{width:55px;height:18px;padding-top:2px;}
+.search_button{width:38px;height:19px;border:1px solid #7f9eba;background-color:#eaeaea;}
+.hot_search{padding-left:10px;padding-top:3px;}
+.hot_search .search_key{color:#777;font-size:12px;padding:0 3px;}
+.hot_search .search_key a{color:#777;}
+.ads{line-height:22px;padding:0 0 0 10px;}
+.ads a{color:blue;}
+.list_num{color:#cc1414;}
+.touxiang{padding:3px 10px;}
+.touxiang img{width:50px;height:50px;}
+.r_content{padding:3px 0px;}
+.r_content .title{color:#59277e;margin-top:10px;font-weight:bold;font-style:italic;text-decoration:underline;}
+.r_content .title a{color:#59277e;}
+.r_content img{margin-left:5px;}
+.r_content .description{color:#0370ab;line-height:16px;font-size:12px;}
+.channel_title{line-height:28px;height:28px;background-color:#52bfe8;color:#FFFFFF;font-size:14px;}
+.channel_title .title{padding:0px 0 0 5px;color:#FFFFFF;}
+.big_title{float:left;display:inline;color:#FFFFFF;}
+.big_title a{color:#FFFFFF;}
+.channel_title .small_title{float:right;padding-right:5px;display:inline;font-size:12px;padding-left:10px;}
+.channel_title .small_title a{color:#FFFFFF;}
+.c_line{margin-left:3px;margin-right:3px;}
+.channel_content{padding:3px 0;}
+.channel_content ul li{line-height:22px;height:22px; padding:0 0 0 10px;}
+.channel_content ul li a{color:blue;}
+.channel_content ul li a:visited{color:#83006f;text-decoration:none;}
+.channel_content ul li span{font-size:13px}
+.channel_content ul li .num{color:red}
+#mypage{padding:5px 0 5px 10px;}
+#mypage .count{padding:0 3px 5px 3px; font-size:14px;}
+#mypage .goindex_txt{width:35px;height:18px;padding-top:2px;}
+#mypage .goindex_btn{width:38px;height:19px;border:0px;background-color:#5dc3eb;color:#FFFFFF;}
+.back_index{padding:8px 0 0 5px;line-height:18px;color:#59c1ea;font-wight:bold;}
+.back_index a{color:#59c1ea;}
+.bottom_nav{padding:5px 0 5px 15px;line-height:18px;}
+.bottom_nav .title{padding-left:35px;line-height:18px;}
+.bottom_nav a{margin:0 15px 0 0;color: blue;}
+.footer{color:#303030;padding:5px 0;border-top:1px dashed #ccc;}
+.footer p{line-height:20px;text-align:center;}
+.footer a{color:#303030;}
+/*通用样式 End*/

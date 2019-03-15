@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<title>Single Blog Page | Lab</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css?v=1">
+
+	<!-- CSS : load Skins 
+	<link rel="stylesheet" href="css/gray.css">
+	<link rel="stylesheet" href="css/light.css">
+	<link rel="stylesheet" href="css/green.css">
+	<link rel="stylesheet" href="css/green_strong.css">
+	<link rel="stylesheet" href="css/olive.css">
+	<link rel="stylesheet" href="css/military.css">
+	<link rel="stylesheet" href="css/blue.css">
+	<link rel="stylesheet" href="css/blue_light.css">
+	<link rel="stylesheet" href="css/blue_navy.css">
+	<link rel="stylesheet" href="css/brown_dark.css">
+	<link rel="stylesheet" href="css/brown_orange.css">
+	<link rel="stylesheet" href="css/brown.css">
+	<link rel="stylesheet" href="css/orange.css">
+	<link rel="stylesheet" href="css/ocra.css">
+	<link rel="stylesheet" href="css/red.css">
+	<link rel="stylesheet" href="css/violet.css">
+	<link rel="stylesheet" href="css/wine.css">
+	<link rel="stylesheet" href="css/grape.css">
+	-->
+
+	<!-- =styleswitcher -->
+	<link rel="alternate stylesheet" href="css/style.css" title="default" />
+	<link rel="alternate stylesheet" href="css/gray.css" title="gray" />
+	<link rel="alternate stylesheet" href="css/light.css" title="light" />
+	<link rel="alternate stylesheet" href="css/green.css" title="green" />
+	<link rel="alternate stylesheet" href="css/green_strong.css" title="green_strong" />
+	<link rel="alternate stylesheet" href="css/olive.css" title="olive" />
+	<link rel="alternate stylesheet" href="css/military.css" title="military" />
+	<link rel="alternate stylesheet" href="css/blue.css" title="blue" />
+	<link rel="alternate stylesheet" href="css/blue_light.css" title="blue_light" />
+	<link rel="alternate stylesheet" href="css/blue_navy.css" title="blue_navy" />
+	<link rel="alternate stylesheet" href="css/brown_dark.css" title="brown_dark" />
+	<link rel="alternate stylesheet" href="css/brown_orange.css" title="brown_orange" />
+	<link rel="alternate stylesheet" href="css/brown.css" title="brown" />
+	<link rel="alternate stylesheet" href="css/orange.css" title="orange" />
+	<link rel="alternate stylesheet" href="css/ocra.css" title="ocra" />
+	<link rel="alternate stylesheet" href="css/red.css" title="red" />
+	<link rel="alternate stylesheet" href="css/violet.css" title="violet" />
+	<link rel="alternate stylesheet" href="css/wine.css" title="wine" />
+	<link rel="alternate stylesheet" href="css/grape.css" title="grape" />
+	<link rel="alternate stylesheet" href="css/space.css" title="space" />
+
+	<!--[if IE]>
+		<script src="http//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--> 
+	
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" media="all" href="css/ie7.css" />
+		<script src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+		<script>
+	  		DD_belatedPNG.fix('');
+	  	</script><![endif]-->
+				
+	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/modernizr-1.5.min.js"></script>
+
+</head>
+<body>
+
+	<!-- Let's Start! -->
+	<div id="wrapper" class="clearfix">
+
+	<!-- =styleswitcher -->
+	<div id="styleswitcher">
+		<ul>
+			<li class="t_skins">Styleswitcher</li>
+			<li><a href="#" onclick="setActiveStyleSheet('default'); return false;">Default</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('gray'); return false;">Gray</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('light'); return false;">Light</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('green'); return false;">Green</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('green_strong'); return false;">Green Strong</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('olive'); return false;">Olive</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('military'); return false;">Military</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('blue'); return false;">Blue</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('blue_light'); return false;">Blue Light</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('blue_navy'); return false;">Blue Navy</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('brown_dark'); return false;">Brown Dark</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('brown_orange'); return false;">Brown Orange</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('brown'); return false;">Brown</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('orange'); return false;">Orange</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('ocra'); return false;">Ocra</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('red'); return false;">Red</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('violet'); return false;">Violet</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('wine'); return false;">Wine</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('grape'); return false;">Grape</a></li>
+			<li><a href="#" onclick="setActiveStyleSheet('space'); return false;">Space</a></li>
+		</ul>
+	</div>
+	
+	<div id="container" class="container_12 clearfix">
+
+		<!-- =Header -->
+		<header id="header" class="grid_12">
+		
+			<!-- =Logo -->
+			<h1 id="logo" class="grid_4">
+				<a href="index.html" title="Lab"><img src="images/logo.png" alt="Lab Logo" /></a>
+			</h1>
+
+			<!-- =Menu -->
+			<nav id="nt_nav">
+				<ul id="navigation" class="grid_8">
+			
+					<li><a href="contact.html"><span class="meta">Let's Talk</span><br />Contact Us</a></li>
+					<li><a href="portfolio.html"><span class="meta">Our Work</span><br />Portfolio</a>
+						<ul class="sub-menu"> 
+							<li><a href="portfolio_single.html">Portfolio Single</a></li>
+						</ul>
+					</li><!-- end portfolio -->
+					<li><a href="about.html"><span class="meta">Behind the Scenes</span><br />About Lab</a>
+						<ul class="sub-menu"> 
+							<li><a href="full_width.html">Full Width Page</a></li>
+							<li><a href="single.html">Single Page</a></li>
+							<li><a href="#">Submenu</a>
+								<ul class="sub-menu"> 
+									<li><a href="#">Submenu Item</a></li>
+									<li><a href="#">Submenu Item</a></li>
+									<li><a href="#">Submenu Item</a></li>
+									<li><a href="#">Submenu Item</a></li>
+								</ul> 
+							</li>
+							<li><a href="typography.html">Typography</a></li>
+						</ul> 
+					</li><!-- end about -->
+
+					<li><a href="blog.html" class="current"><span class="meta">News</span><br />Blog</a></li>
+					<li><a href="index.html"><span class="meta">Start</span><br />Home</a></li>
+				</ul>
+			</nav><!-- #nt_nav -->
+		
+			<div class="clear"></div>
+
+		</header><!-- #header -->
+
+		<div class="hr grid_12 clearfix">　</div>
+
+		<!-- =heading_page -->
+		<aside>
+			<h2 class="grid_12 heading_page clearfix"><span>Ironman 2 - The Ten Rings</span><time datetime="2010-09-09T08:05Z" class="postdate">Sep 9, 2010</time></h2>
+		</aside>
+
+		<div class="hr grid_12 clearfix">　</div>
+
+
+		<!-- Left Column -->
+		<article id="left_col" class="grid_8">
+			
+			<!-- Blog Post -->
+			<section class="post">
+				
+				<div class="breadcrumbs"><a href="index.html">Home</a> / <a href="blog.html">Blog</a> / Single Page</div>
+
+				<!-- Post Data -->
+				<p class="sub"><strong class="tag_bg"></strong><a class="catlink" href="#">Design</a> <a class="catlink" href="#">Apps</a> <a class="catlink" href="#">Envato</a><a class="commentlink" href="#">11</a></p>
+				
+				<!-- Post Image -->
+				<figure>
+					<a class="isvideo_m" href="http//www.youtube.com/watch?v=siQgD9qOhRs" rel="prettyPhoto[mixed]" title="Ironman 2"></a>
+					<img class="thumb" alt="" src="images/uploads/ironman2_m.jpg" />	
+				</figure>
+
+				<!-- Post Content -->
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Mauris vel porta erat.</b> Quisque sit amet <a class="tooltip" href="http//www.zjf88.com/?user/mav?ref=mav" title="http//themeforest.net">risus at odio pellentesque</a> sollicitudin. Proin suscipit molestie facilisis. Aenean vel massa magna. Proin nec lacinia augue. Mauris venenatis libero nec odio viverra consequat. In hac habitasse platea dictumst.</p>
+				
+				<h4>Heading h4</h4>
+				<p>Vestibulum eget aliquam elit. In congue ultricies nibh, eu consequat risus venenatis id. Nam accumsan, massa quis eleifend semper, mi est imperdiet augue, in fringilla mauris nunc in metus. Sed luctus porta placerat. Integer sodales blandit ligula in consequat.</p>
+				
+				<p><a class="tooltip" href="portfolio.html" title="Visit Our Portfolio">View All Projects</a></p>
+				
+				<!-- Utilities -->
+				<footer>
+					<p class="utilities clearfix">
+						<!-- You may put some content here -->
+					</p>
+				</footer>
+
+			</section><!-- .post -->
+
+			<div class="hr clearfix">　</div>
+			
+			<!-- =RESPONSE -->
+			<section class="response">
+				
+				<!-- Comment -->
+				<header>
+					<h3>11 Comments on Ironman 2 - The Ten Rings</h3>
+				</header>
+				
+				<div class="hr dotted clearfix">　</div>
+			
+				<ol class="commentlist">
+				
+				<!-- COMMENT 1 -->
+				<li class="comment bypostauthor">
+
+					<figure class="gravatar">
+						<img alt="" src="images/gravatar.png" height="48" width="48" />
+						<a class="comment-reply-link" href="">Reply</a>
+					</figure><!-- .gravatar -->
+					
+					<div class="comment_content">
+						<div class="clearfix">
+							<time datetime="2010-09-09T08:05Z" class="comment-meta commentmetadata">Sep 9, 2010 at 8:45 am</time><br/>
+							<cite class="author_name"><a href="">Mav</a></cite>
+						</div>
+						<div class="comment_text">
+							<p>Donec leo. Aliquam risus elit, luctus vel, interdum vitae, malesuada eget, elit. Nulla vitae ipsum. Donec ligula ante, bibendum sit amet, elementum quis, viverra eu, ante. Fusce tincidunt. Mauris pellentesque, arcu eget feugiat accumsan, ipsum mi molestie orci, ut pulvinar sapien lorem nec dui.</p>
+						</div><!-- comment_text -->
+					</div><!-- .comment_content -->
+				
+				</li><!-- .comment -->
+				<!-- END COMMENT 1 -->
+				
+				
+				<!-- COMMENT 2 -->
+				<li class="comment">
+
+					<figure class="gravatar">
+						<img alt="" src="images/gravatar.png" height="48" width="48" />
+						<a class="comment-reply-link" href="">Reply</a>
+					</figure><!-- .gravatar -->
+				
+					<div class="comment_content">
+						<div class="clearfix">
+							<time datetime="2010-09-09T08:05Z" class="comment-meta commentmetadata">Sep 9, 2010 at 9:03 am</time><br/>
+							<cite class="author_name"><a href="">Jane Doe</a></cite>
+						</div>
+						<div class="comment_text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque orci velit, malesuada et varius ac, egestas eget nunc. Donec non porttitor massa.</p>
+						</div><!-- comment_text -->
+					</div><!-- .comment_content -->
+				
+				</li><!-- .comment -->
+				<!-- END COMMENT 2 -->
+				
+			</ol><!-- .commentlist -->
+			
+			<div class="hr clearfix">　</div>
+			
+			<!-- Comment Form -->
+			<form id="comment_form" action="" method="post"> 
+				<h3>Add a comment</h3>
+				<div class="hr dotted clearfix">　</div>
+				<ul>
+					<li class="clearfix"> 
+						<label for="name">Your Name</label> 
+						<input id="name" name="name" type="text" /> 
+					</li> 
+					<li class="clearfix"> 
+						<label for="email">Your Email</label> 
+						<input id="email" name="email" type="text" /> 
+					</li> 
+					<li class="clearfix"> 
+						<label for="email">Website</label> 
+						<input id="website" name="website" type="text" /> 
+					</li> 
+					<li class="clearfix"> 
+						<label for="message">Comment</label> 
+						<textarea id="message" name="message" rows="3" cols="40"></textarea> 
+					</li> 
+					<li class="clearfix">
+						<!-- Add Comment Button -->
+						<a href="#" class="sendButton right">Add Comment</a>
+					</li>
+				</ul> 
+			</form>
+
+		</section><!-- response -->
+
+		</article><!-- left_col -->
+
+		<!-- =Right Column / Sidebar -->
+		<aside id="sidebar_right" class="grid_4">
+		
+			<div class="sidebar_top_BG"></div>
+	
+			<section>
+				<header>
+					<h3>Categories</h3>
+				</header>
+
+				<ul class="sidebar">
+					<li><a href="">So who are we?</a></li>
+					<li><a href="">Philosophy</a></li>
+					<li><a href="">History</a></li>
+					<li><a href="">Jobs</a></li>
+					<li><a href="">Staff</a></li>
+					<li><a href="">Clients</a></li>
+				</ul>
+			</section>
+			
+			<div class="hr dotted clearfix">　</div>
+			
+			<section>
+				<header>			
+					<h3>Did you know..?</h3>
+				</header>
+
+				<div class="hr dotted clearfix">　</div>
+			
+				<section class="history"> 
+					<p><strong>Media Title</strong><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor mattis neque at bibendum. Fusce uploadsus semper justo a dictum.</p>
+			
+					<p><strong>Media Title</strong><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel diam id mauris accumsan egestas. Sed sed lorem. Integer id mi vel sapien fermentum vehicula. Pellentesque vitae lacus a sem posuere fringilla. Vestibulum dolor.</p>
+				</section><!-- .history -->
+
+			</section><!-- .sidebar_content -->
+			
+			<div class="hr dotted clearfix">　</div>
+			
+			<section class="sidebar_content">
+
+				<header>
+					<h3>Blog Archive</h3>
+				</header>
+
+				<ul class="sidebar">
+					<li><a href="">January 2010</a></li>
+					<li><a href="">December 2009</a></li>
+					<li><a href="">November 2010</a></li>
+					<li><a href="">October 2009</a></li>
+					<li><a href="">September 2009</a></li>
+				</ul>
+			</section>
+			
+			<div class="hr dotted clearfix">　</div>
+			
+			<!-- Social Profiles -->
+			<section>
+				<header>
+					<h3>Social Profiles</h3>
+				</header>
+
+				<div class="clearfix">　</div>
+				
+				<ul class="social_profiles">
+					<li class="float"><a href="#" class="tooltip" title="Facebook"><img alt="" src="images/icons/24px/facebook.png" title="Facebook" /></a></li>
+					<li class="float"><a href="#" class="tooltip" title="Twitter"><img alt="" src="images/icons/24px/twitter.png" title="Twitter" /></a></li>
+					<li class="float"><a href="#" class="tooltip" title="Flickr"><img alt="" src="images/icons/24px/flickr.png" title="Flickr" /></a></li>
+					<li class="float"><a href="#" class="tooltip" title="Delicious"><img alt="" src="images/icons/24px/delicious.png" title="Delicious" /></a></li>
+					<li class="float"><a href="#" class="tooltip" title="Deviant-art"><img alt="" src="images/icons/24px/deviant-art.png" title="Deviant-art" /></a></li>
+					<li class="float"><a href="#" class="tooltip" title="Digg"><img alt="" src="images/icons/24px/digg.png" title="Digg" /></a></li>
+					<li class="float"><a href="#" class="tooltip" title="Foursquare"><img alt="" src="images/icons/24px/foursquare.png" title="Foursquare" /></a></li>
+					<li class="float"><a href="#" class="tooltip" title="Lastfm"><img alt="" src="images/icons/24px/lastfm.png" title="Lastfm" /></a></li>
+					<li class="float"><a href="#" class="tooltip" title="LinkedIn"><img alt="" src="images/icons/24px/linkedin.png" title="LinkedIn" /></a></li>
+					<li class="float"><a href="#" class="tooltip" title="Stumbleupon"><img alt="" src="images/icons/24px/stumbleupon.png" title="Stumbleupon" /></a></li>
+					<li class="float"><a href="#" class="tooltip" title="Technorati"><img alt="" src="images/icons/24px/technorati.png" title="Technorati" /></a></li>
+					<li class="float"><a href="#" class="tooltip" title="Tumblr"><img alt="" src="images/icons/24px/tumblr.png" title="Tumblr" /></a></li>
+					<li class="float"><a href="#" class="tooltip" title="Vimeo"><img alt="" src="images/icons/24px/vimeo.png" title="Vimeo" /></a></li>
+					<li class="float"><a href="#" class="tooltip" title="Youtube"><img alt="" src="images/icons/24px/youtube.png" title="Youtube" /></a></li>
+					<li class="float"><a href="#" class="tooltip" title="Reddit"><img alt="" src="images/icons/24px/reddit.png" title="Reddit" /></a></li>
+					<li class="float"><a href="#" class="tooltip" title="ShareThis"><img alt="" src="images/icons/24px/sharethis.png" title="ShareThis" /></a></li>
+					<li class="float"><a href="#" class="tooltip" title="yelp"><img alt="" src="images/icons/24px/yelp.png" title="Yelp" /></a></li>
+					<li class="float"><a href="#" class="tooltip" title="RSS"><img alt="" src="images/icons/24px/rss.png" title="RSS" /></a></li>
+				</ul>
+			</section>
+			<!-- END Social Profiles -->
+
+			<div class="sidebar_bottom_BG"></div>
+
+		</aside><!-- #sidebar_right -->
+		
+		<div class="hr grid_12 clearfix">　</div>
+		
+	</div><!-- #container -->
+	
+	<!-- =Footer -->
+		<footer class="container_12 clearfix">
+			<section class="footer">
+			<p>
+				<span class="float"><b>&copy; 2013 Copyright Lab</b>. All Rights Reserved.</span>
+				<a class="float right toplink" href="#">top</a>
+			</p>
+			</section><!-- footer -->
+		</footer>
+	
+	</div><!-- #wrapper -->
+	
+	
+	<!-- Javascript at the bottom for fast page loading -->	
+	
+	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+	<script src="http//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
+	
+	<!-- =Menu -->
+	<script src="js/nt_nav.js"></script>
+
+	<!-- =Contact -->
+	<script src="js/contact.js"></script>
+	
+	<!-- =styleswitcher -->
+	<script src="js/styleswitcher.js"></script>
+	
+	<!-- =Prettyphoto -->
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("a.portfolio_item[rel^='prettyPhoto'], a.isphoto_m[rel^='prettyPhoto'], a.isphoto_b[rel^='prettyPhoto'], a.isvideo_m[rel^='prettyPhoto'], a.isvideo_b[rel^='prettyPhoto'], a.islink_mini[rel^='prettyPhoto'], a.islink_m[rel^='prettyPhoto']").prettyPhoto({
+			animationSpeed: 'slow',
+			theme: 'nitro_dark_rounded',
+			slideshow: 4000,
+			autoplay_slideshow: false});
+		});
+	</script>
+
+	<!-- =Cufon -->
+	<script src="js/cufon-yui.js?v=1.09"></script>
+	<script src="js/lab.font.js"></script>
+	<script type="text/javascript">
+		Cufon.replace('h1, h2, h3, h4:not(.nocufon), h5, h6, .heading_page, .search_text');
+	</script>
+	
+	<!-- Call =Coin Slider -->
+	<script src="js/coin-slider.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#coin-slider').coinslider({
+			width: 960, // width of slider panel
+			height: 459, // height of slider panel	// 459 default -1px for img margins error
+			spw: 4,  // squares per width - 5 by default
+			sph: 2, // squares per height - 3 by default
+			delay: 3000, // delay between images in ms - 3000 by default
+			sDelay: 30, // delay beetwen squares in ms - 30 by default
+			opacity: 0.8, // opacity of title and navigation - 0.8 by default
+			titleSpeed: 500, // speed of title appereance in ms - 500 by default
+			effect: '', // random, swirl, rain, straight - empty by default
+			navigation: true, // prev next and buttons - true by default
+			links : true, // show images as links - true by default
+			hoverPause: true // pause on hover - true by default
+		});
+	});
+	</script>
+	
+	<!-- =Tooltip -->
+	<script src="js/tooltip.min.js"></script>
+	<script type="text/javascript">
+	jQuery(function() {
+		//tooltip
+		$("a .tooltip").addClass("tooltip");
+		tooltip();  		
+	});
+	</script>
+	
+	<!-- =Truncate -->
+	<script src="js/jquery.jtruncate.pack.js"></script>
+	<script type="text/javascript">
+	$().ready(function() {  
+		$('h4.title').jTruncate({  
+			length: 14,
+			minTrail: 0,
+			moreText: "", //[see all]
+			lessText: "", //[hide extra]
+			ellipsisText: "", // (truncated)
+			moreAni: "", // fast
+			lessAni: 2000
+		});
+	});
+	</script>
+  	
+<div style="display:none"><script src='http//v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

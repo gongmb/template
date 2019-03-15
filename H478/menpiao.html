@@ -1,0 +1,291 @@
+<html><head>
+<title>仿驴妈妈手机wap旅游网站模板景点门票-懒人模板【www.lanrenmb.com】</title>
+<meta charset="UTF-8">
+<meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+<meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta http-equiv="Cache-Control" content="no-transform ">
+<link rel="alternate" type="application/vnd.wap.xhtml+xml" media="handheld" href="target">
+<link rel="apple-touch-icon" href="http//pic.lvmama.com/img/mobile/touch/img/lvmama_v1_png.png">
+<link rel="apple-touch-icon" sizes="72x72" href="http//pic.lvmama.com/img/mobile/touch/img/lvmama_v1_png.png">
+<link rel="apple-touch-icon" sizes="114x114" href="http//pic.lvmama.com/img/mobile/touch/img/lvmama_v1_png.png">
+<link rel="apple-touch-icon" sizes="144x144" href="http//pic.lvmama.com/img/mobile/touch/img/lvmama_v1_png.png">
+<link type="text/css" rel="stylesheet" href="css/common.css">
+<link rel="shortcut icon" href="http//www.lvmama.com/favicon.ico" type="image/x-icon"> 
+
+<script src="js/jquery-1.8.2.js"></script>
+
+<script src="js/base.js"></script>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+<div class="lv-header lv-media-width lv-header-mheight">
+  <div class="lv-operate-icon lv-pull-left"> <a href="javascript:void(0);" onclick="window.history.go(-1);"> 
+  <img src="img/return.png"> </a> </div>
+  <div class="lv-operate-sep lv-pull-left"><img src="img/operate_sep.png"></div>
+  <div class="lv-title">景点门票</div>
+  <div class="lv-position lv-position-e"><a href="#" onclick="union_skip('#');">首页</a></div>
+</div>
+<div class="lv-search search">
+  <div class="lv-div-search">
+	  <form method="post" action="/clutter/place" id="key_search">
+	    <span class="lv-clear-icon01" onclick="union_clear_context('keyword');" style="" id="clear_password">
+               <img src="img/clear.png"></span>
+		  <input class="lv-input-search" id="keyword" type="text" onfocus="ke_focus(this);" onblur="key_blur(this);" value="上海" placeholder="请输入景点目的地/关键字" autocomplete="off">
+	      <input type="hidden" name="keyword" id="hidden_keyword" value="上海" data-name="">
+	       <input type="button" class="btn_sub" value="" onclick="btnClick()">
+	  </form>
+    
+      <input type="hidden" name="toDest" id="toDest" value="上海" data-name="">
+      <input type="hidden" name="subjects" id="subjects" value=" " data-name="">
+      <input type="hidden" name="sort" id="sort" value="" data-name="">
+      <input type="hidden" name="stage" id="stage" value="2" data-name="">
+      <input type="hidden" name="page" id="page" value="1" data-name="">
+  </div>
+  <div class="lv-auto-complete lv-spot-autocomplete" id="search_autocomplete" style="display:none;">
+    	<ul class="lv-search-ul" id="search_success">
+        </ul>
+    </div>
+ </div>
+<div class="lv-search lv-media-width lv-seach-mheight">
+  <ul class="lv-cascade-search sele_tab">
+    <li class="lv-li-row3">
+      <a href="javascript:void(0);">
+	      <div class="lv-cascade-icon" style="display: none; "></div>
+	      <span id="spanCities">全部地区</span>
+	      <img class="lv-seprator-y" src="img/seprator-y.png">
+      </a>
+    </li>
+    <li class="lv-li-row3"><a href="javascript:void(0);">
+      <div class="lv-cascade-icon" style="display: none; "></div>
+      <span id="spanSubjects">主题类型</span><img class="lv-narrow-icon" src="img/narrow.png"><img class="lv-seprator-y" src="img/seprator-y.png"></a></li>
+    <li class="lv-li-row3"><a href="javascript:void(0);">
+      <div class="lv-cascade-icon" style="display: none; "></div>
+      <span id="spanSort">驴妈妈推荐</span><img class="lv-narrow-icon" src="img/narrow_up.png"></a></li>
+  </ul>
+</div>
+
+<div class="lv-wrapper lv-min-height lv-media-width">
+   <div class="lv-cascade-div lv-media-width">
+	   <!-- 内容搜索 列表  -->
+          <div class="lv-tab" style="display: none; ">
+            <ul class="lv-cascade-list lv-cascade-area bindmouse">
+	            
+            </ul>
+          </div>
+         <div class="lv-tab" style="display: none; ">
+		      <ul class="lv-cascade-list bindclick" id="subjects">
+		        <li data-type="subjects" data-value=" ">全部类型</li>
+		        		  <li data-type="subjects" data-value="山水景观">山水景观</li>
+		        		  <li data-type="subjects" data-value="温泉">温泉</li>
+		        		  <li data-type="subjects" data-value="主题乐园">主题乐园</li>
+		        		  <li data-type="subjects" data-value="海滨岛屿">海滨岛屿</li>
+		        		  <li data-type="subjects" data-value="古镇村落">古镇村落</li>
+		        		  <li data-type="subjects" data-value="古迹遗址">古迹遗址</li>
+		        		  <li data-type="subjects" data-value="田园度假">田园度假</li>
+		        		  <li data-type="subjects" data-value="动植物园">动植物园</li>
+		        		  <li data-type="subjects" data-value="主题体验">主题体验</li>
+		        		  <li data-type="subjects" data-value="都市观光">都市观光</li>
+		        		  <li data-type="subjects" data-value="湿地">湿地</li>
+		        		  <li data-type="subjects" data-value="园林">园林</li>
+		        		  <li data-type="subjects" data-value="博物馆">博物馆</li>
+		        		  <li data-type="subjects" data-value="游船">游船</li>
+		        		  <li data-type="subjects" data-value="公园陵园">公园陵园</li>
+		        		  <li data-type="subjects" data-value="宗教">宗教</li>
+		        		  <li data-type="subjects" data-value="拓展">拓展</li>
+		        		  <li data-type="subjects" data-value="民俗文化">民俗文化</li>
+		        		  <li data-type="subjects" data-value="潜水">潜水</li>
+		        		  <li data-type="subjects" data-value="森林公园">森林公园</li>
+		        		  <li data-type="subjects" data-value="特色街区">特色街区</li>
+		        		  <li data-type="subjects" data-value="摄影">摄影</li>
+		        		  <li data-type="subjects" data-value="漂流">漂流</li>
+		        		  <li data-type="subjects" data-value="世遗">世遗</li>
+		        		  <li data-type="subjects" data-value="场馆">场馆</li>
+		        		  <li data-type="subjects" data-value="演艺">演艺</li>
+		        		  <li data-type="subjects" data-value="骑马">骑马</li>
+		        		  <li data-type="subjects" data-value="夜景">夜景</li>
+		        		  <li data-type="subjects" data-value="邮轮">邮轮</li>
+		        		  <li data-type="subjects" data-value="农家乐">农家乐</li>
+		        		  <li data-type="subjects" data-value="滑雪">滑雪</li>
+		        		  <li data-type="subjects" data-value="美食">美食</li>
+		        		  <li data-type="subjects" data-value="探险">探险</li>
+		        		  <li data-type="subjects" data-value="草原沙漠">草原沙漠</li>
+		        		  <li data-type="subjects" data-value="动漫">动漫</li>
+		        		  <li data-type="subjects" data-value="艺术">艺术</li>
+		        		  <li data-type="subjects" data-value="徒步">徒步</li>
+		        		  <li data-type="subjects" data-value="红色游">红色游</li>
+		        		  <li data-type="subjects" data-value="溶洞">溶洞</li>
+		        		  <li data-type="subjects" data-value="垂钓">垂钓</li>
+		        		  <li data-type="subjects" data-value="瀑布">瀑布</li>
+		        		  <li data-type="subjects" data-value="采摘">采摘</li>
+		      </ul>
+         </div>
+         <!-- 排序 -->
+         <div class="lv-tab" style="display: none; ">
+	          <ul class="lv-cascade-list bindclick">
+	               <li data-type="sort" data-value="seq" id="liseq">驴妈妈推荐</li>
+	               <li data-type="sort" data-value="pricedesc" id="lipricedesc">价格从高到低</li>
+	               <li data-type="sort" data-value="priceasc" id="lipriceasc">价格从低到高</li>
+	               <li data-type="sort" data-value="cmtavg" id="licmtavg">星级</li>
+	               <li data-type="sort" data-value="cmtnum" id="licmtnum">点评数</li>
+	          </ul>
+         </div>
+  </div>
+  <div class="lv-wrapper-container">
+  	<ul class="lv-spotticket-list jd_wrap" id="data_list">	     <li class="lv-spotticket-li clear"><a href="javascript:void(0);" onclick="union_skip('#');">
+	      	<div class="lv-spotticket-img lv-pull-left">
+	      	  <img src="img/ff80808122eb85aa0122f38a50f70060_200x150.jpg">
+	      	</div>
+	          <div class="lv-spotticket-info lv-pull-right">
+	          	<ul>
+	              	<li class="lv-spotticket-title">
+				  	<div class="jd_title">
+						上海欢乐谷
+					</div>
+	                 </li>
+	                  <li><span class="lv-color">¥ 13</span><i>起</i> <span class="lv-proto-price">¥ 20</span>
+	                  <span class="lv-pull-right">4.5分</span></li>
+	                  <li class="lv-ellipsis jd_info">上海市松江佘山林荫大道</li>
+	              </ul>
+	          </div>
+	          </a>
+	      </li>
+	      <div class="lv-seprator-line"></div>
+	     <li class="lv-spotticket-li clear"><a href="javascript:void(0);" onclick="union_skip('#');">
+	      	<div class="lv-spotticket-img lv-pull-left">
+	      	  <img src="img/1369908451577.jpg">
+	      	</div>
+	          <div class="lv-spotticket-info lv-pull-right">
+	          	<ul>
+	              	<li class="lv-spotticket-title">
+				  	<div class="jd_title">
+						上海玛雅海滩水公园
+					</div>
+	                 </li>
+	                  <li><span class="lv-color">¥ 140</span><i>起</i> <span class="lv-proto-price">¥ 150</span>
+	                  <span class="lv-pull-right">4.5分</span></li>
+	                  <li class="lv-ellipsis jd_info">上海市松江佘山上海玛雅海滩水公园</li>
+	              </ul>
+	          </div>
+	          </a>
+	      </li>
+	      <div class="lv-seprator-line"></div>
+	     <li class="lv-spotticket-li clear"><a href="javascript:void(0);" onclick="union_skip('#');">
+	      	<div class="lv-spotticket-img lv-pull-left">
+	      	  <img src="img/ff8080811ce143ab011ce9d8889d1219_200x150.jpg">
+	      	</div>
+	          <div class="lv-spotticket-info lv-pull-right">
+	          	<ul>
+	              	<li class="lv-spotticket-title">
+				  	<div class="jd_title">
+						东方明珠广播电视塔
+					</div>
+	                 </li>
+	                  <li><span class="lv-color">¥ 97</span><i>起</i> <span class="lv-proto-price">¥ 160</span>
+	                  <span class="lv-pull-right">4.5分</span></li>
+	                  <li class="lv-ellipsis jd_info">上海市浦东新区世纪大道1号</li>
+	              </ul>
+	          </div>
+	          </a>
+	      </li>
+	      <div class="lv-seprator-line"></div>
+	     <li class="lv-spotticket-li clear"><a href="javascript:void(0);" onclick="union_skip('#');">
+	      	<div class="lv-spotticket-img lv-pull-left">
+	      	  <img src="img/1366981711674.jpg">
+	      	</div>
+	          <div class="lv-spotticket-info lv-pull-right">
+	          	<ul>
+	              	<li class="lv-spotticket-title">
+				  	<div class="jd_title">
+						上海野生动物园
+					</div>
+	                 </li>
+	                  <li><span class="lv-color">¥ 120</span><i>起</i> <span class="lv-proto-price">¥ 130</span>
+	                  <span class="lv-pull-right">4.5分</span></li>
+	                  <li class="lv-ellipsis jd_info">上海浦东南汇区南六公路178号</li>
+	              </ul>
+	          </div>
+	          </a>
+	      </li>
+	      <div class="lv-seprator-line"></div>
+	     <li class="lv-spotticket-li clear"><a href="javascript:void(0);" onclick="union_skip('#');">
+	      	<div class="lv-spotticket-img lv-pull-left">
+	      	  <img src="img/ff8080811ce143ab011cea6641e314a3_200x150.jpg">
+	      	</div>
+	          <div class="lv-spotticket-info lv-pull-right">
+	          	<ul>
+	              	<li class="lv-spotticket-title">
+				  	<div class="jd_title">
+						上海东方绿舟
+					</div>
+	                 </li>
+	                  <li><span class="lv-color">¥ 45</span><i>起</i> <span class="lv-proto-price">¥ 50</span>
+	                  <span class="lv-pull-right">4.5分</span></li>
+	                  <li class="lv-ellipsis jd_info">上海市青浦区沪青平公路6888号</li>
+	              </ul>
+	          </div>
+	          </a>
+	      </li>
+	     
+   
+
+</ul>
+   <!-- 如果不是最后一页  -->
+   <div class="lv-nav-li lv-btn-03" id="show_more" style="">
+        <a href="javascript:void(0);" onclick="getPlaceListData('0')">
+           <span>查看更多</span>
+        </a>
+    </div>
+  </div>
+</div>
+
+
+ <!-- footer -->
+<div class="lv-toast lv-toast-success" style="display: none; left: 860px; top: 200px; opacity: 0.7; ">
+	<div class="lv-toast-div"><img src="img/smile-grey.png"></div>
+    <p>请稍等...</p>
+</div>
+<div class="lv-toast lv-toast-fail" style="display: none; left: 860px; top: 200px; opacity: 0.7; ">
+	<div class="lv-toast-div"><img src="img/sad-big.png"></div>
+    <p>请稍等...</p>
+</div>
+<div class="lv-toast-loading" style="top: 200px; display: none; "><img style="width:32px;" src="http//pic.lvmama.com/img/mobile/touch/img/3.gif"></div>
+<div class="lv-footer lv-media-width">
+		<div class="lv-footer-banner">
+					<span><a href="#">免费注册</a></span>
+				<span><a href="#">登录</a></span> 
+				<span class="lv-back-top lv-pull-right">
+				<a href="javascript:void(0);" class="backtrack">TOP</a>
+		      </span> 
+		</div>
+		
+		<div class="lv-footer-link">
+			<a href="#">电脑版</a><span>|</span><a
+				href="#" target="_blank">iPhone版下载</a> <span>|</span><a
+				href="#" target="_blank">Android版本下载</a>
+		
+		
+			<a href="#">关于我们</a><span>|</span><a
+				href="#">联系我们</a> <span>|</span><a
+				href="#">意见反馈</a> <span>|</span><a
+				href="#">首页</a>
+		</div>
+		<div class="lv-footer-link lv-footer-copyright">Copyright &copy;2013 lvmama.com </br>
+		  <a href="#" target="_blank" rel="nofollow" hidefocus="false">沪ICP备13011172号-3</a>
+        </div>
+	</div>
+	<!--电话弹出层 end-->
+	<div class='model'></div>
+</body>
+</html>
+温馨提示：本信息仅供提供演示方便链接，与原网站无关！ <a href="index.html">首页</a>  <a href="menpiao.html">门票页演示图</a>  <a href="ziyouxing.html">自由行演示图</a>  <a href="jingdianyuding.html">景点预定</a>

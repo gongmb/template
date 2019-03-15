@@ -1,0 +1,77 @@
+/* reset */
+html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl, dt, dd, ol, ul, li,form, table, tr, th, td {margin: 0;padding: 0;border: 0;}
+h1,h2,h3,h4,h5,h6 { font-weight:normal;}
+img { border:0;}
+ol, ul { list-style: none; }
+i,b,em,strong { font-style:normal; text-decoration:none; font-weight: normal;}
+body { font-family:'Microsoft YaHei','simsun','Lucida Grande','Lucida Sans Unicode'; font-size:62.5%; color: #777;}
+a , a:visited { text-decoration:none; color:#565656;}
+a:hover { }
+.contioner { max-width:640px; margin:0 auto; min-height:100%; overflow:hidden; }
+.header img{width: 100%;}
+.nav{ height: 124px; background: #f9f9f9; padding-left: 4px;}
+.nav ul{padding-top: 28px;}
+.nav li{ float: left; text-align: center;  font-size: 32px; width: 14%;}
+.nav li span{display: block; font-size: 14px;}
+.nav li a{display: block; padding-bottom: 18px;}
+.nav li.on a{border-bottom: 5px solid #0b6aff; color: #0b6aff;}
+.main{padding: 16px 20px 0; overflow: hidden; margin: 0 auto;}
+.main dl{ padding: 20px 0; border-bottom: 1px solid #E5E5E5; width: 100%; overflow: hidden;}
+.main dl.no{border-bottom: none;}
+.main dt{float: left; width: 30%; padding-top: 6px; }
+.main dt img{width: 100%;}
+.main dd{float: right; width: 68%; padding-left: 2%;}
+.main dd h2{ height: 50px; line-height: 50px; overflow: hidden;  font-size: 32px; color: #0b6aff;}
+.main dd h2 a{color: #0b6aff;}
+.main dd time{ display: block; color: #ccc; font-size: 16px; height: 30px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.main dd p{height: 70px; overflow: hidden; text-overflow: ellipsis;  font-size: 20px; line-height: 35px; color: #666;}
+.page{width: 100%; overflow: hidden; padding: 20px 0; background: #e6e6e8;}
+.page-box {margin: 0 auto; max-width: 400px;}
+.page-box a {
+    background: #fcfcfc;border-radius: 3px;color: #0a69ff;float: left;font-size: 32px;height: 60px; line-height: 60px; margin-right: 60px;overflow: hidden;
+    text-align: center; padding: 0 30px; border-bottom: 1px solid #8d8d8d;
+}
+.page-box a.on { color: #c4c4c4;}
+.page-box a:nth-of-type(2){margin-right: 0;}
+.down{ padding: 20px 0; background: #eee; overflow: hidden; margin-top: 20px;}
+.down li{float: left; margin-left:2.5%; width: 30%; }
+.down li img{width: 100%;}
+.client{width: 100%;}
+.client img{width: 100%;}
+.footer{padding: 30px 0; background: #f8f8f8; border-top: 1px solid #E5E5E5; margin-top: 20px; text-align: center; font-size: 24px;}
+.footer p{ font-size: 30px; color: #242424;}
+.tit{border-bottom: 1px solid #E5E5E5; height: 100px; text-align: center; padding-top: 30px; font-size: 38px;}
+.tit dt{ width: 90%; margin: 0 auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: bold; color: #000;}
+.tit dd{ height: 30px; line-height: 30px; font-size: 16px;}
+.list-box{width: 100%; font-size: 16px; line-height: 22px; color: #000; }
+.list-box img{width: 100%;}
+.list-box p{text-indent: 2em; padding: 10px 0 20px;}
+
+
+@media screen and (max-width:500px) {
+	.nav{ height: 62px;}
+	.nav li{font-size: 18px;}
+	.nav li span{font-size: 10px;}
+	.nav li a{padding-bottom: 8px;}
+	.nav li.on a{border-bottom: 3px solid #0B6AFF;}
+	.nav ul{padding-top: 8px;}
+	.page-box {max-width: 200px;}
+	.page-box a {font-size: 16px;height: 30px; line-height: 30px; margin-right: 30px; padding: 0 15px;}
+	.list-box p{font-size: 16px; line-height: 24px; }
+}
+@media screen and (max-width:400px) {
+	.main{padding: 8px 10px 0;}
+	.main dl{ padding: 10px 0;}
+	.main dd h2{ height: 25px; line-height: 25px; font-size: 16px;}
+	.main dd time{font-size: 8px; height: 12px;}
+	.main dd p{height: 36px; font-size: 12px; line-height: 18px;}
+	.footer{padding: 20px 0; font-size: 12px; margin-top: 10px;}
+    .footer p{ font-size: 14px;}
+    .tit{height: 60px; padding-top:15px; font-size: 20px;}
+    .tit dd{ height: 24px; line-height: 24px; font-size: 12px; color: #ccc;}
+    .down{ padding: 10px 0; margin-top: 20px;}
+}
+@media screen and (min-width:400px) and (max-width:600px) {
+	.footer{padding: 20px 0; font-size: 14px;}
+    .footer p{ font-size: 18px;}
+}

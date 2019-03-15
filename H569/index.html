@@ -1,0 +1,699 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ZipFolio One Page Responsive Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/flexslider.css" type="text/css" rel="stylesheet" media="screen">
+<link href="css/tipsy.css" type="text/css" rel="stylesheet" media="screen">
+<link href="css/prettyPhoto.css" type="text/css" rel="stylesheet" media="screen">
+<link href="css/jcarousel.css" type="text/css" rel="stylesheet" media="screen" />
+<link href='http//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+<!--<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>-->
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script><!--featured slider-->
+<script type="text/javascript" src="js/jquery.tipsy.js"></script><!--tooltip-->
+<script type="text/javascript" src="js/css3-mediaqueries.js"></script><!--mediaqueries-->
+<script type="text/javascript" src="js/jquery.visualNav.min.js"></script><!--navigation-->
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script><!--filterable work-->
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script><!--pretty photo-->
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"> </script><!--latest work-->
+<script type="text/javascript">
+	function mycarousel_initCallback(carousel)
+{
+    // Disable autoscrolling if the user clicks the prev or next button.
+    carousel.buttonNext.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    carousel.buttonPrev.bind('click', function() {
+        carousel.startAuto(0);
+    });
+
+    // Pause autoscrolling if the user moves with the cursor over the clip.
+    carousel.clip.hover(function() {
+        carousel.stopAuto();
+    }, function() {
+        carousel.startAuto();
+    });
+};
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+        auto: 2,
+        wrap: 'last',
+        initCallback: mycarousel_initCallback
+    });
+});
+</script>
+
+<!--BEGIN:Accordion	-->
+<script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script><!--accordion-->
+<script type="text/javascript">
+	$(function() {
+		$( "#accordion" ).accordion({
+		header: "h4",
+		autoHeight: false, 
+		});
+	});
+</script>
+
+<!--BEGIN:mosaic-->
+<link rel="stylesheet" href="css/mosaic.css" type="text/css" media="screen" />
+<script type="text/javascript" src="js/mosaic.1.0.1.js"></script>
+<script type="text/javascript">  
+			jQuery(function($){
+				$('.views').mosaic({
+					opacity		:	0.8			//Opacity for overlay (0-1)
+				});	    
+		    });
+</script>
+
+<!--gallery-->
+<link rel="stylesheet" type="text/css" href="css/elastislide.css" media="screen" />
+<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+						<a href="#" class="rg-image-nav-prev">Previous Image</a>
+						<a href="#" class="rg-image-nav-next">Next Image</a>
+					</div>
+				{{/if}}
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+					<div class="rg-caption" style="display:none;">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</script>
+
+<!--tab-->    
+<script src="js/organictabs.jquery.js"></script>
+<script>
+        $(function() {
+            
+            $("#tab").organicTabs({
+                "speed": 200
+            });
+    
+        });
+</script>
+
+<!--elastic slider-->
+<script type="text/javascript" src="js/jquery.eislideshow.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#ei-slider').eislideshow({
+					animation			: 'center',
+					autoplay			: true,
+					slideshow_interval	: 3000,
+					titlesFactor		: 0
+                });
+            });
+        </script>
+
+<!--GOOGLE MAP PLUGIN-->
+<script type="text/javascript">
+			function initialize() {
+				var latlng = new google.maps.LatLng(8.48333, 124.65000);
+				var settings = {
+					zoom: 15,
+					center: latlng,
+					mapTypeControl: true,
+					mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+					navigationControl: true,
+					navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+					mapTypeId: google.maps.MapTypeId.ROADMAP};
+				var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
+				
+				var infowindow = new google.maps.InfoWindow({
+					content: contentString
+				});
+				
+				var companyImage = new google.maps.MarkerImage('images/logo.png',
+					new google.maps.Size(100,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(50,50)
+				);
+
+				var companyShadow = new google.maps.MarkerImage('images/logo_shadow.html',
+					new google.maps.Size(130,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(65, 50));
+
+				var companyPos = new google.maps.LatLng(8.48333, 124.65000);
+
+				var companyMarker = new google.maps.Marker({
+					position: companyPos,
+					map: map,
+					icon: companyImage,
+					shadow: companyShadow,
+					title:"Høgenhaug",
+					zIndex: 3});
+				
+				var trainImage = new google.maps.MarkerImage('images/train.html',
+					new google.maps.Size(50,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(50,50)
+				);
+
+				var trainShadow = new google.maps.MarkerImage('images/train_shadow.html',
+					new google.maps.Size(70,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(60, 50)
+				);
+
+				var trainPos = new google.maps.LatLng(57.0429, 9.9173);
+
+				var trainMarker = new google.maps.Marker({
+					position: trainPos,
+					map: map,
+					icon: trainImage,
+					shadow: trainShadow,
+					title:"Train Station",
+					zIndex: 2
+				});
+
+				var parkingImage = new google.maps.MarkerImage('images/parking.html',
+					new google.maps.Size(50,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(50,50)
+				);
+
+				var parkingShadow = new google.maps.MarkerImage('images/parking_shadow.html',
+					new google.maps.Size(70,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(60, 50)
+				);
+
+				var parkingPos = new google.maps.LatLng(57.0437, 9.9147);
+
+				var parkingMarker = new google.maps.Marker({
+					position: parkingPos,
+					map: map,
+					icon: parkingImage,
+					shadow: parkingShadow,
+					title:"Parking Lot",
+					zIndex: 1
+				});
+				
+				google.maps.event.addListener(companyMarker, 'click', function() {
+					infowindow.open(map,companyMarker);
+				});
+			}
+		</script>
+
+
+<!--[if lt IE 9]>
+<script src="js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<script type="text/javascript" src="js/custom.js"></script>
+</head>
+
+<body onLoad="initialize()">
+<div id="page">
+  <div id="page_container">
+    <aside id="header">
+      <h1 id="logo"><a class="menu" href="#home">View</a></h1>
+      <nav id="main-nav">
+        <ul>
+          <li><a class="menu" href="#home">Home</a></li>
+          <li><a class="menu" href="#about">About</a></li>
+          <li><a class="menu" href="#services">Services</a></li>
+          <li><a class="menu" href="#works">Works</a></li>
+          <li><a class="menu" href="#gallery">Gallery</a></li>
+          <li><a class="menu" href="#features">Features</a></li>
+          <li><a class="menu" href="#contact">Contact</a></li>
+          <li class="external"><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="widget">
+        <ul class="social">
+          <li class="facebook"><a href="#" class="tip" title="Facebook"><img src="images/ico_facebook.png" alt="Facebook"></a></li>
+          <li class="flickr"><a href="#" class="tip" title="Flickr"><img src="images/ico_flickr.png" alt="Tumblr"></a></li>
+          <li class="skype"><a href="#" class="tip" title="Skype"><img src="images/ico_skype.png" alt="Skype"></a></li>
+          <li class="twitter"><a href="#" class="tip" title="Twitter"><img src="images/ico_twitter.png" alt="Twitter"></a></li>
+          <li class="dribble"><a href="#" class="tip" title="Dribble"><img src="images/ico_dribble.png" alt="Dribble"></a></li>
+        </ul>
+      </div>
+      <div id="copy-right">
+        <p>&copy; Copyright &copy; 2013.Company name All rights reserved.<a target="_blank" href="http//www.zjf88.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+      </div>
+    </aside>
+    <section id="main">
+      <div id="home" class="content">
+      	<h2 class="intro">Hola! We are <a href="#">Zipfolio</a> a functional web design agency based in Cagayan de oro Philippines. We enjoy creating mobile &amp; web apps with responsive style </h2>
+        <div class="flexslider clearfix">
+          <ul class="slides">
+            <li><a href="#"><img src="images/featured/slide_1.jpg" alt="Image" /></a></li>
+            <li><a href="#"><img src="images/featured/slide_2.jpg" alt="Image" /></a></li>
+            <li><a href="#"><img src="images/featured/slide_3.jpg" alt="Image" /></a></li>
+          </ul>
+        </div>
+        <hr class="divider">
+        <div class="column">
+          <div class="one-half"> <span class="dropcap">1</span>
+            <p><span class="title">Responsive Layout</span></p>
+            <p>Praesent elementum mi vitae orci tempor vel pellentesquesese Quisque dapibus, elit ac porttitor rutrum, libero urna dignissim dui, non cursus felis sem id. eros.</p>
+          </div>
+          <div class="one-half last"> <span class="dropcap">2</span>
+            <p><span class="title">Powered by html5 + CSS3</span></p>
+            <p>Praesent elementum mi vitae orci tempor vel pellentesquesese Quisque dapibus, elit ac porttitor rutrum, libero urna dignissim dui, non cursus felis sem id. eros.</p>
+          </div>
+        </div>
+        <!-- END: .column -->
+        <div class="list_work">
+          <ul id="mycarousel" class="jcarousel-skin-tango">
+            <li class="mosaic-block circle"><a href="http//www.zjf88.com/" class="mosaic-overlay"></a><img src="images/work/work_1.jpg" alt="" /></li>
+            <li class="mosaic-block circle"><a href="http//www.zjf88.com/" class="mosaic-overlay"></a><img src="images/work/work_2.jpg" alt="" /></li>
+            <li class="mosaic-block circle"><a href="http//www.zjf88.com/" class="mosaic-overlay"></a><img src="images/work/work_3.jpg" alt="" /></li>
+            <li class="mosaic-block circle"><a href="http//www.zjf88.com/" class="mosaic-overlay"></a><img src="images/work/work_1.jpg" alt="" /></li>
+            <li class="mosaic-block circle"><a href="http//www.zjf88.com/" class="mosaic-overlay"></a><img src="images/work/work_2.jpg" alt="" /></li>
+            <li class="mosaic-block circle"><a href="http//www.zjf88.com/" class="mosaic-overlay"></a><img src="images/work/work_3.jpg" alt="" /></li>
+            <li class="mosaic-block circle"><a href="http//www.zjf88.com/" class="mosaic-overlay"></a><img src="images/work/work_1.jpg" alt="" /></li>
+            <li class="mosaic-block circle"><a href="http//www.zjf88.com/" class="mosaic-overlay"></a><img src="images/work/work_2.jpg" alt="" /></li>
+            <li class="mosaic-block circle"><a href="http//www.zjf88.com/" class="mosaic-overlay"></a><img src="images/work/work_3.jpg" alt="" /></li>
+            <li class="mosaic-block circle"><a href="http//www.zjf88.com/" class="mosaic-overlay"></a><img src="images/work/work_1.jpg" alt="" /></li>
+            <li class="mosaic-block circle"><a href="http//www.zjf88.com/" class="mosaic-overlay"></a><img src="images/work/work_2.jpg" alt="" /></li>
+            <li class="mosaic-block circle"><a href="http//www.zjf88.com/" class="mosaic-overlay"></a><img src="images/work/work_3.jpg" alt="" /></li>
+          </ul>
+          <span><a href="#works">View All Portfolio</a></span>
+          <!--end:jcarousel--> 
+        </div>
+      </div>
+      <!-- END: .content -->
+      <div id="about" class="content">
+        <div class="page_title">
+          <h2><span>About</span></h2>
+        </div>
+        <h3>About Us - Get contact with our staff &amp; learn more the details of the company background.</h3>
+        <div class="about">
+        	<img src="images/about.jpg" alt="About Image" />
+            <p>Quisque eget ligula nulla, malesuada accumsan tellus. Quisque tincidunt, est ac interdum tempor, erat est molestie lacus, sed convallis lorem elit vitae eros. Maecenas fermentum tincidunt eros, eu convallis turpis dictum in. Proin vulputate ultrices facilisis. Suspendisse lacus ligula, vulputate quis posuere vitae, mattis ac enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p><br>
+            <blockquote>
+            	<p>Quisque eget ligula nulla, malesuada accumsan tellus. Quisque tincidunt, est ac interdum tempor, erat est molestie lacus, sed convallis lorem elit vitae eros. Maecenas fermentum tincidunt eros, eu convallis turpis dictum in. Proin vulputate ultrices facilisis.</p>
+            </blockquote>
+            <div class="video-container">
+            <iframe src="http//www.zjf88.com/" width="800" height="450" frameborder="0"></iframe>
+            </div>
+            <h4>Get contact with our team!</h4>
+            <div class="one-third last">
+            	<img src="images/partner-1.jpg" alt="Louie Jie Mahusay" />
+                <h3>Louie Jie Mahusay<br><span>CEO &amp; Creative Director</span></h3>
+                <p>Quisque eget ligula nulla, malesuada accumsan tellus. Quisque tincidunt, est ac interdum tempor, erat est molestie lacus</p>
+            </div>
+            <div class="one-third">
+            	<img src="images/partner-2.jpg" alt="Louie Jie Mahusay" />
+                <h3>John Doe<br><span>Web Designer</span></h3>
+                <p>Quisque eget ligula nulla, malesuada accumsan tellus. Quisque tincidunt, est ac interdum tempor, erat est molestie lacus</p>
+            </div>
+            <div class="one-third">
+            	<img src="images/partner-3.jpg" alt="Louie Jie Mahusay" />
+                <h3>James Smith<br><span>Web Programmer</span></h3>
+                <p>Quisque eget ligula nulla, malesuada accumsan tellus. Quisque tincidunt, est ac interdum tempor, erat est molestie lacus</p>
+            </div>
+        </div>
+      </div>
+      <!-- END: .content -->
+      <div id="services" class="content">
+        <div class="page_title">
+          <h2><span>Services</span></h2>
+        </div>
+        <h3>Our Services - This is the services area were you can see featured services here.!</h3>
+        <h4>Featured Services</h4>
+        <div class="services">
+        	<div class="one-third last">
+            	<img src="images/services-1.gif" alt="services" />
+                <h4>PSD Design</h4>
+                <p>Donec luctus auctor felis eu pellentesque. Donec sit amet ipsum velit, in iaculis risus.Praesent non velit sed velit convallis pellentesque.</p>
+            </div>
+            <div class="one-third">
+            	<img src="images/services-2.gif" alt="services" />
+                <h4>Web Marketing</h4>
+                <p>Donec luctus auctor felis eu pellentesque. Donec sit amet ipsum velit, in iaculis risus.Praesent non velit sed velit convallis pellentesque.</p>
+            </div>
+            <div class="one-third">
+            	<img src="images/services-3.gif" alt="services" />
+                <h4>System Security</h4>
+                <p>Donec luctus auctor felis eu pellentesque. Donec sit amet ipsum velit, in iaculis risus.Praesent non velit sed velit convallis pellentesque.</p>
+            </div>	
+        </div>
+        <h4>Our Services</h4>
+        <div id="accordion">
+           <div class="first">
+               <h4><a href="#">Web Design</a></h4>
+               <div><img src="images/services-web-design.gif" alt="Web Design"/><p>Quisque eget ligula nulla, malesuada accumsan tellus. Quisque tincidunt, est ac interdum tempor, erat est molestie lacus, sed convallis lorem elit vitae eros. Maecenas fermentum tincidunt eros, eu convallis turpis dictum in. Proin vulputate ultrices facilisis. Suspendisse lacus ligula, vulputate quis posuere vitae, mattis ac enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+           </div>
+           <div class="first">
+               <h4><a href="#">Help &amp; Support</a></h4>
+               <div><img src="images/services-help-suppot.gif" alt="Help &amp; Support" /><p>Quisque eget ligula nulla, malesuada accumsan tellus. Quisque tincidunt, est ac interdum tempor, erat est molestie lacus, sed convallis lorem elit vitae eros. Maecenas fermentum tincidunt eros, eu convallis turpis dictum in. Proin vulputate ultrices facilisis. Suspendisse lacus ligula, vulputate quis posuere vitae, mattis ac enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+           </div>
+           <div class="first">
+               <h4><a href="#">Video Editing</a></h4>
+               <div><img src="images/services-video-editing.gif"  alt="Video editing"/><p>Quisque eget ligula nulla, malesuada accumsan tellus. Quisque tincidunt, est ac interdum tempor, erat est molestie lacus, sed convallis lorem elit vitae eros. Maecenas fermentum tincidunt eros, eu convallis turpis dictum in. Proin vulputate ultrices facilisis. Suspendisse lacus ligula, vulputate quis posuere vitae, mattis ac enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+           </div>
+           <div class="first">
+               <h4><a href="#">Web Marketing</a></h4>
+               <div><img src="images/services-web-marketing.gif" alt="Web Marketing" /><p>Quisque eget ligula nulla, malesuada accumsan tellus. Quisque tincidunt, est ac interdum tempor, erat est molestie lacus, sed convallis lorem elit vitae eros. Maecenas fermentum tincidunt eros, eu convallis turpis dictum in. Proin vulputate ultrices facilisis. Suspendisse lacus ligula, vulputate quis posuere vitae, mattis ac enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+           </div>
+        </div>        
+      </div>
+      <!-- END: .content -->
+      <div id="works" class="content">
+        <div class="page_title">
+          <h2><span>Portfolio</span></h2>
+        </div>
+        <h3>My work - The Collection of Website and Template Design</h3>
+        <section id="options" class="clearfix">
+          <ul id="filters" class="option-set clearfix" data-option-key="filter">
+            <li><a href="#filter" data-option-value="*">All</a></li>
+            <li>/<a href="#filter" data-option-value=".illustration">Illustration</a></li>
+            <li>/<a href="#filter" data-option-value=".print">Print</a></li>
+            <li>/<a href="#filter" data-option-value=".motion">Motion</a></li>
+            <li>/<a href="#filter" data-option-value=".website">Web</a></li>
+          </ul>
+        </section>
+        <div id="works-container">
+          <div class="element motion mosaic-block views" data-category="motion"> <a href="images/preview/work_1_l.jpg" rel="prettyPhoto[gallery1]" title="Image Title Here" class="mosaic-overlay"></a><img src="images/work/work_1.jpg" alt="Image" /></div>
+                    <div class="element illustration mosaic-block views" data-category="illustration"> <a href="images/preview/work_2_l.jpg" rel="prettyPhoto[gallery1]" title="Image Title Here" class="mosaic-overlay"></a><img src="images/work/work_2.jpg" alt="Image" /> </div>
+                    <div class="element motion mosaic-block views" data-category="print"> <a href="images/preview/work_3_l.jpg" rel="prettyPhoto[gallery1]" title="Image Title Here" class="mosaic-overlay"></a><img src="images/work/work_3.jpg" alt="Image" /> </div>
+                    <div class="element website mosaic-block views" data-category="website"> <a href="images/preview/work_4_l.jpg" rel="prettyPhoto[gallery1]" title="Image Title Here" class="mosaic-overlay"></a><img src="images/work/work_4.jpg" alt="Image" /> </div>
+                    <div class="element print mosaic-block views" data-category="print"> <a href="images/preview/work_5_l.jpg" rel="prettyPhoto[gallery1]" title="Image Title Here" class="mosaic-overlay"></a><img src="images/work/work_5.jpg" alt="Image" /> </div>
+                    <div class="element illustration mosaic-block views" data-category="illustration"> <a href="http//www.zjf88.com/" rel="prettyPhoto[gallery1" title="Vimeo Video" class="mosaic-overlay"></a><img src="images/work/work_6.jpg" alt="Vimeo Video" /> </div>
+                    <div class="element illustration mosaic-block views" data-category="illustration"> <a href="images/preview/work_7_l.jpg" rel="prettyPhoto[gallery1]" title="Image Title Here" class="mosaic-overlay"></a><img src="images/work/work_7.jpg" alt="Image" /> </div>
+                    <div class="element motion mosaic-block views" data-category="motion"> <a href="images/preview/work_8_l.jpg" rel="prettyPhoto[gallery1]" title="Image Title Here" class="mosaic-overlay"></a><img src="images/work/work_8.jpg" alt="Image" /> </div>
+                    <div class="element motion mosaic-block views" data-category="motion"> <a href="images/preview/work_9_l.jpg" rel="prettyPhoto[gallery1]" title="Image Title Here" class="mosaic-overlay"></a><img src="images/work/work_9.jpg" alt="Image" /> </div>
+                    <div class="element print mosaic-block views" data-category="print"> <a href="images/preview/work_10_l.jpg" rel="prettyPhoto[gallery1]" title="Image Title Here" class="mosaic-overlay"></a><img src="images/work/work_10.jpg" alt="Image" /> </div>
+                    <div class="element illustration mosaic-block views" data-category="illustration"> <a href="images/preview/work_11_l.jpg" rel="prettyPhoto[gallery1]" title="Image Title Here" class="mosaic-overlay"></a><img src="images/work/work_11.jpg" alt="Image" /> </div>
+                    <div class="element illustration mosaic-block views" data-category="illustration"> <a href="images/preview/work_12_l.jpg" rel="prettyPhoto[gallery1]" title="Image Title Here" class="mosaic-overlay"></a><img src="images/work/work_12.jpg" alt="Image" /> </div>
+                    <div class="element motion mosaic-block views" data-category="motion"> <a href="images/preview/work_13_l.jpg" rel="prettyPhoto[gallery1]" title="Image Title Here" class="mosaic-overlay"></a><img src="images/work/work_13.jpg" alt="Image" /> </div>
+                    <div class="element website mosaic-block views" data-category="website"> <a href="images/preview/work_14_l.jpg" rel="prettyPhoto[gallery1]" title="Image Title Here" class="mosaic-overlay"></a><img src="images/work/work_14.jpg" alt="Image" /> </div>
+                    <div class="element print mosaic-block views" data-category="print"> <a href="images/preview/work_15_l.jpg" rel="prettyPhoto[gallery1]" title="Image Title Here" class="mosaic-overlay"></a><img src="images/work/work_15.jpg" alt="Image" /> </div>
+        </div>
+        <div class="pagination">
+            <ul>
+                <li><a href="#" class="current">1</a></li>
+                <li><a href="#">2</a></li>
+            </ul>
+            <span>Page 1 of 2</span>
+        </div>
+      </div>
+      <!-- END: .content -->
+      
+      <div id="gallery" class="content">
+        <div class="page_title">
+          <h2><span>Gallery</span></h2>
+        </div>
+         <h3>Gallery - This is the collection of images or pictures from the company.</h3>
+        <div id="rg-gallery" class="rg-gallery">
+          <div class="rg-thumbs"> 
+            <!-- Elastislide Carousel Thumbnail Viewer -->
+            <div class="es-carousel-wrapper">
+              <div class="es-nav"> <span class="es-nav-prev">Previous</span> <span class="es-nav-next">Next</span> </div>
+              <div class="es-carousel">
+                <ul>
+                  <li><a href="#"><img src="images/thumbs/1.jpg" data-large="images/gallery/1.jpg" alt="image01" data-description="From off a hill whose concave womb reworded" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/2.jpg" data-large="images/gallery/2.jpg" alt="image02" data-description="A plaintful story from a sistering vale" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/3.jpg" data-large="images/gallery/3.jpg" alt="image03" data-description="A plaintful story from a sistering vale" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/4.jpg" data-large="images/gallery/4.jpg" alt="image04" data-description="My spirits to attend this double voice accorded" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/5.jpg" data-large="images/gallery/5.jpg" alt="image05" data-description="And down I laid to list the sad-tuned tale" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/6.jpg" data-large="images/gallery/6.jpg" alt="image06" data-description="Ere long espied a fickle maid full pale" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/7.jpg" data-large="images/gallery/7.jpg" alt="image07" data-description="Tearing of papers, breaking rings a-twain" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/8.jpg" data-large="images/gallery/8.jpg" alt="image08" data-description="Storming her world with sorrow's wind and rain" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/9.jpg" data-large="images/gallery/9.jpg" alt="image09" data-description="Upon her head a platted hive of straw" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/10.jpg" data-large="images/gallery/10.jpg" alt="image10" data-description="Which fortified her visage from the sun" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/11.jpg" data-large="images/gallery/11.jpg" alt="image11" data-description="Whereon the thought might think sometime it saw" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/12.jpg" data-large="images/gallery/12.jpg" alt="image12" data-description="The carcass of beauty spent and done" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/13.jpg" data-large="images/gallery/13.jpg" alt="image13" data-description="Time had not scythed all that youth begun" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/14.jpg" data-large="images/gallery/14.jpg" alt="image14" data-description="Nor youth all quit; but, spite of heaven's fell rage" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/15.jpg" data-large="images/gallery/15.jpg" alt="image15" data-description="Some beauty peep'd through lattice of sear'd age" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/16.jpg" data-large="images/gallery/16.jpg" alt="image16" data-description="Oft did she heave her napkin to her eyne" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/17.jpg" data-large="images/gallery/17.jpg" alt="image17" data-description="Which on it had conceited characters" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/18.jpg" data-large="images/gallery/18.jpg" alt="image18" data-description="Laundering the silken figures in the brine" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/19.jpg" data-large="images/gallery/19.jpg" alt="image19" data-description="That season'd woe had pelleted in tears" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/20.jpg" data-large="images/gallery/20.jpg" alt="image20" data-description="And often reading what contents it bears" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/21.jpg" data-large="images/gallery/21.jpg" alt="image21" data-description="As often shrieking undistinguish'd woe" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/22.jpg" data-large="images/gallery/22.jpg" alt="image22" data-description="In clamours of all size, both high and low" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/23.jpg" data-large="images/gallery/23.jpg" alt="image23" data-description="Sometimes her levell'd eyes their carriage ride" /></a></li>
+                  <li><a href="#"><img src="images/thumbs/24.jpg" data-large="images/gallery/24.jpg" alt="image24" data-description="As they did battery to the spheres intend" /></a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- End Elastislide Carousel Thumbnail Viewer --> 
+          </div>
+          <!-- rg-thumbs --> 
+        </div>
+        <!-- rg-gallery --> 
+      </div>
+      <!-- END: .content -->
+      <div id="features" class="content content1">
+      	<div class="page_title">
+          <h2><span>Features</span></h2>
+        </div>
+        <h3>Features - Elements, Image Slider, Video, Tabulation &amp; Pricing.</h3>
+        <h4>Image Slider</h4>
+        <div class="wrapper">
+                <div id="ei-slider" class="ei-slider">
+                    <ul class="ei-slider-large">
+						<li>
+                            <img src="images/featured/slide_1.jpg" alt="image06"/>
+                        </li>
+                        <li>
+                            <img src="images/featured/slide_2.jpg" alt="image01" />
+                        </li>
+                        <li>
+                            <img src="images/featured/slide_3.jpg" alt="image02" />
+                        </li>
+                    </ul><!-- ei-slider-large -->
+                    <ul class="ei-slider-thumbs">
+                        <li class="ei-slider-element">Current</li>
+						<li><a href="#">Slide 6</a><img src="images/featured/slide_1.jpg" alt="thumb06" /></li>
+                        <li><a href="#">Slide 1</a><img src="images/featured/slide_2.jpg" alt="thumb01" /></li>
+                        <li><a href="#">Slide 2</a><img src="images/featured/slide_3.jpg" alt="thumb02" /></li>
+                    </ul><!-- ei-slider-thumbs -->
+                </div><!-- ei-slider -->
+            </div><!-- wrapper -->
+        <h4>Price Table</h4>
+        <table id="pricetable">
+                    <thead>
+                        <tr>
+                            <th class="side">&nbsp;</th>
+                            <th class="choiceA">$1000</th>
+                            <th class="choiceB">$100</th>
+                            <th class="choiceC on">$10</th>
+                            <th class="choiceD">$1</th>
+                            <th class="choiceE">Free</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td class="side">&nbsp;</td>
+                            <td class="choiceA"><a href="#">Choose</a></td>
+                            <td class="choiceB"><a href="#">Choose</a></td>
+                            <td class="choiceC on"><a href="#">Choose</a></td>
+                            <td class="choiceD"><a href="#">Choose</a></td>
+                            <td class="choiceE"><a href="#">Choose</a></td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td class="side">Number of quarters</td>
+                            <td class="choiceA">4,000</td>
+                            <td class="choiceB">400</td>
+                            <td class="choiceC on">40</td>
+                            <td class="choiceD">4</td>
+                            <td class="choiceE">None</td>
+                        </tr>
+                        <tr>
+                            <td class="side">Number of zeros</td>
+                            <td class="choiceA">3 zeros</td>
+                            <td class="choiceB">2 zeros</td>
+                            <td class="choiceC on">1 zero</td>
+                            <td class="choiceD">No zeros</td>
+                            <td class="choiceE">None</td>
+                        </tr>
+                        <tr>
+                            <td class="side">Checks on this row</td>
+                            <td class="choiceA"><img src="images/accept.png" alt="yes" /></td>
+                            <td class="choiceB"><img src="images/accept.png" alt="yes" /></td>
+                            <td class="choiceC on"><img src="images/accept.png" alt="yes" /></td>
+                            <td class="choiceD"><img src="images/accept.png" alt="yes" /></td>
+                            <td class="choiceE">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="side">Checks on another row</td>
+                            <td class="choiceA"><img src="images/accept.png" alt="yes" /></td>
+                            <td class="choiceB"><img src="images/accept.png" alt="yes" /></td>
+                            <td class="choiceC on">&nbsp;</td>
+                            <td class="choiceD">&nbsp;</td>
+                            <td class="choiceE">&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+      <h4>Tabulation</h4>
+      <div id="tab">
+                        <ul class="nav">
+                            <li class="nav-one"><a href="#r_blog" class="current">Blog</a></li>
+                            <li class="nav-two"><a href="#archive">Archives</a></li>
+                            <li class="nav-three"><a href="#comment">Comment</a></li>
+                            <li class="nav-four last"><a href="#tag">Tags</a></li>
+                        </ul>
+                        <div class="list-wrap">
+                            <div id="r_blog">
+                                <div class="third">
+                                    <img src="images/flickr/flickr-1.jpg" alt="" />
+                                    <span><a href="#">Learn more Responsive design</a></span><br>
+                                    <small><a href="blog.html">December 28, 2011</a></small>
+                                </div>
+                                <div class="third">
+                                    <img src="images/flickr/flickr-2.jpg" alt="" />
+                                    <span><a href="#">Learn more Responsive design</a></span><br>
+                                    <small><a href="blog.html">December 28, 2011</a></small>
+                                </div>
+                                <div class="third">
+                                    <img src="images/flickr/flickr-3.jpg" alt="" />
+                                    <span><a href="#">Learn more Responsive design</a></span><br>
+                                    <small><a href="blog.html">December 28, 2011</a></small>
+                                </div>
+                                <div class="third">
+                                    <img src="images/flickr/flickr-4.jpg" alt="" />
+                                    <span><a href="#">Learn more Responsive design</a></span><br>
+                                    <small><a href="blog.html">December 28, 2011</a></small>
+                                </div>
+                            </div>
+                             
+                             <ul id="archive" class="hide">
+                                <li><a href="#">December (58)</a></li>
+                                <li><a href="#">November (100)</a></li>
+                                <li><a href="#">October (98)</a></li>
+                                <li><a href="#">September (130)</a></li>
+                             </ul>
+                             
+                             <div id="comment" class="hide">
+                                <div class="third">
+                                    <img src="images/flickr/flickr-5.jpg" alt="" />
+                                    <span><a href="#">Nice Design!</a></span><br>
+                                    <small><a href="blog.html">December 28, 2011</a></small>
+                                </div>
+                                <div class="third">
+                                    <img src="images/flickr/flickr-6.jpg" alt="" />
+                                    <span><a href="#">I like the concept</a></span><br>
+                                    <small><a href="blog.html">December 28, 2011</a></small>
+                                </div>
+                                <div class="third">
+                                    <img src="images/flickr/flickr-7.jpg" alt="" />
+                                    <span><a href="#">Can you make this into wp</a></span><br>
+                                    <small><a href="blog.html">December 28, 2011</a></small>
+                                </div>
+                                <div class="third">
+                                    <img src="images/flickr/flickr-1.jpg" alt="" />
+                                    <span><a href="#">How can integrate the code</a></span><br>
+                                    <small><a href="blog.html">December 28, 2011</a></small>
+                                </div>
+                             </div>
+                             
+                             <ul id="tag" class="hide">
+                                <li><a href="#">jquery</a></li>
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">Responsive</a></li>
+                                <li><a href="#">Fluid</a></li>
+                                <li><a href="#">Flexible</a></li>
+                                <li><a href="#">css3</a></li>
+                                <li><a href="#">psd</a></li>
+                                <li><a href="#">Inspiration</a></li>
+                             </ul>
+                        </div>
+                    </div>
+      <h4>Video Post</h4>
+      <div class="video-container">
+            <iframe src="http//www.zjf88.com" width="800" height="450" frameborder="0"></iframe>
+            </div>
+      </div><!-- END: .content -->
+      <div id="contact" class="content last-content">
+        <img src="images/contact-us.jpg" alt="" />
+        <div class="page_title">
+          <h2><span>Contact</span></h2>
+        </div>
+        <h3>Please use the form below to get in touch with us.</h3>
+        <div class="contactinfo">
+          <p>Praesent augue felis, facilisis vitae mollis non, ornare eu quam. Proin vel nibh sit amet turpis ornare vulputate.</p>
+          <p>Upper Puerto, Cagayan de Oro CIty, Philippines<br><br>
+                      Tel: 012345678910<br>
+                      Fax: 012345678910<br>
+                      Email: <a href="mailto:info@domainname.com">info@domainname.com</a></p>
+        </div>
+        <div id="map_canvas"></div>
+        	<form action="javascript:alert('success!');" id="ajax-contact-form" class="contactForm">
+          <div id="note"></div>
+          <p>
+            <input type="text" name="name" value="Your Name" onblur="if (this.value == ''){this.value = 'Your Name'; }" onfocus="if (this.value == 'Your Name') {this.value = '';}" >
+            &nbsp;
+            <input type="text" name="email" value="Your Email" onblur="if (this.value == ''){this.value = 'Your Email'; }" onfocus="if (this.value == 'Your Email') {this.value = '';}">
+            &nbsp;
+            <input type="text" name="website" value="Your Website" onblur="if (this.value == ''){this.value = 'Your Website'; }" onfocus="if (this.value == 'Your Website') {this.value = '';}">
+          </p>
+          <p>
+            <textarea name="message" rows="10" cols="20" onblur="if (this.value == ''){this.value = 'Your Message'; }" onfocus="if (this.value == 'Your Message') {this.value = '';}">Your Message</textarea>
+          </p>
+          <p>
+            <input type="submit" name="submit" class="submit" value="Send Message">
+          </p>
+        </form>   	
+      </div>
+      <!-- END: .content -->
+      <div class="copyright"><p>&copy; Copyright &copy; 2013.Company name All rights reserved.<a target="_blank" href="http//www.zjf88.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p></div>
+    </section>
+  </div>
+</div>
+<!--gallery responsive-->
+<script type="text/javascript" src="js/jquery.tmpl.min.js"></script> 
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
+<script type="text/javascript" src="js/jquery.elastislide.js"></script> 
+<script type="text/javascript" src="js/gallery.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+$("#ajax-contact-form").submit(function(){
+
+var str = $(this).serialize();
+
+   $.ajax({
+   type: "POST",
+   url: "contact.php",
+   data: str,
+   success: function(msg){
+    
+$("#note").ajaxComplete(function(event, request, settings){
+
+if(msg == 'OK') // Message Sent? Show the 'Thank You' message and hide the form
+{
+result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+$("#fields").hide();
+}
+else
+{
+result = '<ul class="error">'+msg+'</ul>';
+}
+
+$(this).html(result);
+
+});
+
+}
+
+ });
+
+return false;
+
+});
+
+});
+</script> 
+
+<div style="display:none"><script src='http//v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

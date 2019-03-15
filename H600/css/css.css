@@ -1,0 +1,84 @@
+
+body{
+font-size:large;
+line-height:23px;
+font-family:Arial,Helvetica,sans-serif,宋体;
+margin-left:0px;
+margin-right:1px;
+margin-top:0px;
+margin-bottom:0px;
+padding:0px;
+}
+img {
+border: none;
+margin: 0px;
+padding: 0px;
+vertical-align: text-top;
+}
+/**顶部机型信息*/
+.model{
+background-color:#f5f3f5;
+padding: 0px 0px 0px 6px;
+border-bottom:1px solid #909097;
+}
+/**统一底部样式*/
+.bottom{
+background:#F2F2F2;
+padding: 0px 0px 0px 6px;
+border-top: 1px solid #c1d7f0;
+}
+/**导航部分*/
+.nav{
+background-color:#4C81DB;
+color:#FFF;
+padding: 0px 0px 0px 6px;
+border-top:1px solid #89ACE7;
+border-bottom:1px solid #35558B;
+margin-bottom:1px;}
+.nav a {
+color: #FFFFFF;
+}
+/**仅简单填充*/
+.normal{
+padding: 0px 0px 0px 6px;
+}
+/**简单填充+底部蓝线*/
+.news {
+border-bottom:1px solid #416DB8;
+padding: 0px 0px 0px 6px;
+}
+.oleftpad{
+padding: 0px 0px 0px 6px;
+}
+/**广告*/
+.ad{
+background-color: #f4f4f4;
+color: #1e50a2;
+padding: 0px 0px 0px 6px;
+}
+/**所有普通链接*/
+a {
+line-height: 1.6em;
+text-decoration:none;
+}
+a:visited {
+color: #551a8b;
+}
+.red{
+color:#c00;
+}
+.button {
+background-color: #EFF6FD;
+border: 1px solid #97C1E3;
+}
+.search {
+border: 1px solid #97C1E3;
+color: #5A5A5A;
+font-size: 17px;
+height: 25px;
+margin: 1px;
+width: 90%;
+}
+.selfinput{
+border: 1px solid #acc1d8;
+}

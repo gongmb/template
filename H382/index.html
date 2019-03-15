@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+<title>仿婴尔乐奶粉孕婴店微官网html5网站模板-懒人模板【www.lanrenmb.com】</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta http-equiv="Pragma" content="no-cache" />
+<link rel="icon" href="" type="image/x-icon" />
+<link rel="shortcut icon" href="" type="image/x-icon" />
+<link rel="apple-touch-icon" href="../upload/wapconfig/2013091617335318.png" />
+<link rel="stylesheet" type="text/css" href="templates/default/css_style/icons.css" />
+<link rel="stylesheet" type="text/css" href="templates/default/css_style/jq.ui.css" title="default" />
+<script type="text/javascript" charset="utf-8" src="templates/default/js/jq.mobi.js"></script>
+<script type="text/javascript" charset="utf-8" src="templates/default/js/ax.mobi.js"></script>
+<script type="text/javascript" charset="utf-8" src="templates/default/js/plugins/jq.web.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="templates/default/js/plugins/jq.swipe.ax.js"></script>
+<script type="text/javascript" charset="utf-8" src="templates/default/js/ui/jq.ui.min.js"></script>
+<script type="text/javascript">
+      /* This function runs once the page is loaded, but appMobi is not yet active */
+      var webRoot="./";
+      //$.ui.autoLaunch=false;
+      $.ui.openLinksNewTab=false;
+      $.ui.resetScrollers=false;
+      var init = function(){
+      $.ui.backButtonText="Back";
+      window.setTimeout(function(){$.ui.launch();},1500);
+      //$.ui.removeFooterMenu(); This would remove the bottom nav menu
+      };
+      document.addEventListener("DOMContentLoaded",init,false);
+      $.ui.ready(function(){
+
+      //$.ui.enableDragMenu();
+      });
+
+      /* This code is used to run as soon as appMobi activates */
+      var onDeviceReady=function(){
+      AppMobi.device.setRotateOrientation("portrait");
+      AppMobi.device.setAutoRotate(false);
+      webRoot=AppMobi.webRoot+"kitchensink/";
+      //hide splash screen
+      AppMobi.device.hideSplashScreen();
+      $.ui.blockPageScroll(); //block the page from scrolling at the header/footer
+
+      };
+      document.addEventListener("appMobi.device.ready",onDeviceReady,false);
+    </script>
+</head>
+<body>
+<div id="jQUi">
+<div id="splashscreen" class="ui-loader">
+<img src="upload/wapconfig/2013091617335318.png" />
+</div>
+<div id="header">
+<a href="#index" class="home"> 首页 </a>
+</div>
+<div id="content">
+<div id="index" class="panel" title="首页">
+<header>
+<img src="upload/wapconfig/2013091617335318.png" alt="logo" class="logo" />
+</header>
+<div class="menuvice">
+<a href="xinwen.html" class="news" data-persist-ajax="true" title="新闻中心">新闻测试</a>
+<a href="tupianliebiao.html" class="products" data-persist-ajax="true" title="产品中心">产品测试</a>
+<a href="ilists.asp@menuid=7&msv=1" class="gbook" data-persist-ajax="true" title="在线预约">在线预约</a>
+<a href="ilists.asp@menuid=11&msv=1" class="sitemap" data-persist-ajax="true" title="网站地图">网站地图</a>
+</div>
+<div class="sitead">
+<div id="sitead_indexdots" class="dots">
+</div>
+<div id="sitead_index">
+<a>
+<img src="upload/wapconfig/2013091615341489.jpg" alt="让宝宝快乐成长" />
+<div class="title">让宝宝快乐成长</div>
+</a>
+<a>
+<img src="upload/wapconfig/2013091615424669.jpg" alt="给宝宝最好的安全呵护" />
+<div class="title">给宝宝最好的安全呵护</div>
+</a>
+</div>
+<script>
+            var sitead;
+            function sitead_carouselindex() {
+            sitead=$("#sitead_index").carousel({
+            pagingDiv: "sitead_indexdots",
+            pagingCssName: "sitead_paging",
+            pagingCssNameSelected: "sitead_paging_selected",
+            preventDefaults:false
+            });
+            }
+            
+                window.setTimeout(function () {
+                sitead_carouselindex();
+                }, 200)
+              </script>
+</div>
+<div class="listbox">
+<div class="title">推荐新闻<a href="lists.asp@msv=1&menuid=3" title="推荐新闻" data-persist-ajax="true"> 更多 </a>
+</div>
+<div class="list news">
+<div class="nl">
+</div>
+</div>
+</div>
+<div class="listbox">
+<div class="title">推荐产品<a href="lists.asp@msv=1&menuid=2" title="推荐产品" data-persist-ajax="true"> 更多 </a>
+</div>
+<div class="list products">
+<div class="waterfall">
+<a href="views.asp@msv=1&menuid=2&sortid=0_7&id=39&lanid=1" title="推荐产品" data-persist-ajax="true">
+<div class="img" style="background-image: url(upload/products/2013091614582387.jpg);">
+<img src="upload/products/2013091614582387.jpg" />
+</div>
+<span>中亲天使婴儿理发器</span>
+</a>
+<a href="views.asp@msv=1&menuid=2&sortid=0_13&id=25&lanid=1" title="推荐产品" data-persist-ajax="true">
+<div class="img" style="background-image: url(upload/products/2013091614494775.jpg);">
+<img src="upload/products/2013091614494775.jpg" />
+</div>
+<span>完达山世纪贝贝盒装1段婴幼儿配方奶粉</span>
+</a>
+<a href="views.asp@msv=1&menuid=2&sortid=0_15&id=16&lanid=1" title="推荐产品" data-persist-ajax="true">
+<div class="img" style="background-image: url(upload/products/2013091614432996.jpg);">
+<img src="upload/products/2013091614432996.jpg" />
+</div>
+<span>味滋肴鳕鱼甘油DHA软胶囊</span>
+</a>
+<a href="views.asp@msv=1&menuid=2&sortid=0_15&id=15&lanid=1" title="推荐产品" data-persist-ajax="true">
+<div class="img" style="background-image: url(upload/products/2013091614430782.jpg);">
+<img src="upload/products/2013091614430782.jpg" />
+</div>
+<span>味滋肴乳酸锌软胶囊</span>
+</a>
+<a href="views.asp@msv=1&menuid=2&sortid=0_15&id=14&lanid=1" title="推荐产品" data-persist-ajax="true">
+<div class="img" style="background-image: url(upload/products/2013091614424071.jpg);">
+<img src="upload/products/2013091614424071.jpg" />
+</div>
+<span>味滋肴乳钙宝软胶囊</span>
+</a>
+<a href="views.asp@msv=1&menuid=2&sortid=0_15&id=13&lanid=1" title="推荐产品" data-persist-ajax="true">
+<div class="img" style="background-image: url(upload/products/2013091614421281.jpg);">
+<img src="upload/products/2013091614421281.jpg" />
+</div>
+<span>味滋肴清清宝_金银花</span>
+</a>
+<a href="views.asp@msv=1&menuid=2&sortid=0_15&id=12&lanid=1" title="推荐产品" data-persist-ajax="true">
+<div class="img" style="background-image: url(upload/products/2013091614415137.jpg);">
+<img src="upload/products/2013091614415137.jpg" />
+</div>
+<span>味滋肴金胚牙听装1段营养米粉</span>
+</a>
+<a href="views.asp@msv=1&menuid=2&sortid=0_15&id=11&lanid=1" title="推荐产品" data-persist-ajax="true">
+<div class="img" style="background-image: url(upload/products/2013091614412998.jpg);">
+<img src="upload/products/2013091614412998.jpg" />
+</div>
+<span>恩济堂红枣浓浆</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="navbar" style="margin: 0;float:left;">
+<a href="javascript:;" id="menubadge" onclick="jq.ui.toggleSideMenu()" class="menuButton"> 导航 </a>
+<a href="ilists.asp@menuid=3&msv=1" class="news" data-persist-ajax="true" title="新闻中心">新闻中心</a>
+<a href="ilists.asp@menuid=2&msv=1" class="products" data-persist-ajax="true" title="产品中心">产品中心</a>
+<a href="tel_3A15856441422" class="phone"> 电话 </a>
+<a href="views.asp@xsltfile=ajax_xslt_2Fpage_contactus.xslt&lanid=1" class="contactus" title=" 联系 " data-persist-ajax="true"> 联系 </a>
+</div>
+<nav>
+<div class="title">
+<span> 推荐 </span>
+</div>
+<ul>
+<li>
+<a href="ilists.asp@menuid=3&msv=1" class="news" title="新闻中心" data-persist-ajax="true">新闻中心</a>
+</li>
+<li>
+<a href="ilists.asp@menuid=2&msv=1" class="products" title="产品中心" data-persist-ajax="true">产品中心</a>
+</li>
+<li>
+<a href="ilists.asp@menuid=7&msv=1" class="gbook" title="在线预约" data-persist-ajax="true">在线预约</a>
+</li>
+<li>
+<a href="ilists.asp@menuid=11&msv=1" class="sitemap" title="网站地图" data-persist-ajax="true">网站地图</a>
+</li>
+</ul>
+<div class="title">
+<span> 导航 </span>
+</div>
+<ul>
+<li>
+<a href="ilists.asp@menuid=8&msv=1" class="alinks" title="友情链接" data-persist-ajax="true">友情链接</a>
+</li>
+</ul>
+<div class="title">
+<span> 版本切换 </span>
+</div>
+<ul class="msv">
+<li>
+<a href="../cn/default.htm" class="pc" target="_blank"> 桌面版 </a>
+</li>
+<li>
+<a href="@msv=0&lanid=1" class="msv" target="_blank"> 简版 </a>
+</li>
+<li>
+<a class="selected touch"> 触屏版 </a>
+</li>
+</ul>
+</nav>
+</div>
+</body>
+</html>

@@ -1,0 +1,546 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+        <meta name="apple-mobile-web-app-capable" content="no"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <meta name="application-name" content="当当网触屏版">
+                    <link rel="apple-touch-icon-precomposed" href="../images/touch-icon-iphone.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/touch-icon-ipad.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/touch-icon-iphone4.png" />
+                                    <title>仿当当网移动触屏版手机wap购物网站模板产品列表-小模板【http//www.xiaomoban.com】</title>
+            <meta name="description" content="全球领先的综合性网上购物中心。超过100万种商品在线热销！图书、音像、母婴、美妆、家居、数码3C、服装、鞋包等几十大类，正品行货，低至2折，700多城市货到付款，（全场购物满29元免运费。当当网一贯秉承提升顾客体验的承诺，自助退换货便捷又放心）。" />
+            <meta name="keywords" content="当当网，当当，网上购物，网上商城，网上买书，购物中心，在线购物，图书，影视，音像，教育音像，CD， DVD，百货，母婴，家居，家纺，厨具，化妆品，美妆，个人护理用品，数码，电脑，笔记本，u盘，手机，mp3，mp4，数码相机，摄影，摄像，家电，软件，游戏，服装，鞋，礼品箱包，钟表首饰，玩具，运动健康用品" />
+                <meta name="author" content="m.dangdang.com" />
+        <meta name="version" content="ddtouch v1.2 20120319" />
+        <meta http-equiv="Cache-Control" content="must-revalidate,no-cache" />
+        <link rel="stylesheet" href="css/mobile_hd_v1.0.min.css" />
+        <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+                            <link rel="stylesheet" href="css/categories.css" />
+                            <!-- show client dl, only dd index-->
+                    <script type="text/javascript">
+			                var search = {
+                    init : function(){
+                        var h = $(".hd_comm"),
+                        s = $(".search_area"),
+                        icon = $(".top_nav li").first();
+                        icon.click(function(){
+                            h.hide();
+                            s.show();
+                            $("#top_search input").css({height : '31px'})
+                            $("#top_search input[type=submit]").css({
+                                height : '33px',
+                                backgroundPosition : '0 -76px',
+                                marginLeft : 0
+                            })
+                            $(".dd_hd").css({
+															padding : '5px 0',
+															zIndex : '9999',
+															position:'absolute',
+															height : 'auto',
+															width : '100%'
+														});
+                            $("#keyword").focus();
+                            search.windownbg();
+                            var html = document.documentElement;
+                            var size = window.innerHeight;
+                            html.style.height = (size + size) + "px";
+                            window.setTimeout(function() {
+                                if (window.pageYOffset == 0) {
+                                    window.scrollTo(0, 0);
+                                }
+                                html.style.height = (window.innerHeight) + "px";
+                            }, 0);
+                        })
+                    },
+                    windownbg : function(){
+                        var htmlStr = "<div id=\"windownbg\" style=\"height:"+$(document).height()+"px;filter:alpha(opacity=70);opacity:0.7;z-index: 999;background:#000;position:absolute;top:0;left:0;width:100%;display:none\"></div>";
+                        $("body").append(htmlStr);
+                        $("#windownbg").fadeIn();
+                        $("#windownbg").click(function(){
+                            $(".search_area").hide();
+                            $(".hd_comm").show();
+                            $("#top_search input,.dd_hd").attr('style','');
+                            $(this).remove();
+                        })
+                    }
+                }
+                $(function(){
+                    search.init();
+                })
+								var html = document.documentElement;
+				var size = window.innerHeight;
+				html.style.height = (size + size) + "px";
+				window.setTimeout(function() {
+					if (window.pageYOffset == 0) {
+						window.scrollTo(0, 0);
+					}
+					html.style.height = (window.innerHeight) + "px";
+				}, 0);
+            </script>
+    </head>
+    <body>
+                <div class="downloadbar hidden">
+            <ul>
+                <li><a href="topics.php@page_id=21&sid=f0ffa4124eb66c0c" class="btn1">当当购物</a></li>
+                <li><a href="topics.php@page_id=717&sid=f0ffa4124eb66c0c" class="btn2">当当读书</a></li>
+            </ul>
+            <a href="#" class="closebtn"></a>
+        </div>
+        <header class="dd_hd"  id="hometop">
+            <div class="hd_comm">
+                <div class="fl">
+                    <a href="index.php@sid=f0ffa4124eb66c0c"><span class="dd_logo"></span></a>
+                </div>
+                <div class="fr">
+                    <ul class="top_nav">
+                        <li><a href="#"><span class="dd_search">搜索</span></a></li>                         <li><a href="ddcategory.php@sid=f0ffa4124eb66c0c"><span class="dd_category">分类</span></a></li>
+                        <li><a href="cart.php@action=list_cart&sid=f0ffa4124eb66c0c"><span class="dd_cart">购物车</span></a></li>
+                        <li><a href="my.php@sid=f0ffa4124eb66c0c"><span class="dd_my">我的当当</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="search_area hidden">
+                <div class="search_field" id="top_search">
+                    <form method="get" action='search.php' target="_parent" id="search_form">
+                        <input type="text" name="keyword"  id="keyword" class="keyword2"/>
+                        <input type="hidden" value="all_search" name="action">
+                        <input type="hidden" value="0" name="cid">
+                        <input type="hidden" value="f0ffa4124eb66c0c" name="sid">
+                        <input type="submit" value="" />
+                    </form>
+					<div class="suggest"></div>
+                </div>
+            </div>
+        </header>
+<style type="text/css">
+.breadcrumb img{ margin-top:0}
+.breadcrumb span{ margin-top:0}
+</style>
+<!--导航-->
+<!-- 搜索 -->
+
+<!-- 分类 -->
+        <div class="breadcrumb">
+            <p><a href="ddcategory.php@sid=f0ffa4124eb66c0c">全部分类</a>
+                <img src="images/jiantou.png" /><a href="category.php@action=list_category&cid=01.00.00.00.00.00&sid=f0ffa4124eb66c0c"> 图书</a> 
+                <!--img src="images/jiantou.png" />
+                <span id="current_cat"">图书</span-->
+
+                <span style='display:none;' id="s_count">3045115</span>
+            </p>
+        </div>
+        <!-- 路径导航 -->
+<article  class="layout_nav_path" style="display: block;">
+    <!--header>
+        <div class="title"><a class="lnk_path_back"><img alt="返回" src="images/btn_esc1.png"></a><span>导航</span></div>
+    </header-->
+    <section class="filter_nav">
+        <div class="top">
+            <a href="#" class="lnk_path_esc"></a><span>导航</span>
+        </div> 
+        <!--ul>
+                <li><a href="#"><span class="icon"></span>1.首页</a></li>
+                <li><a href="#"><span class="icon"></span>2.3C数码配件市场</a></li>
+                <li><a href="#"><span class="icon"></span>3.首页</a></li>
+                <li><a href="#"><span class="icon"></span>4.首页</a></li>
+        </ul-->
+
+        <ul>
+                            <li><a href="index.php@sid=f0ffa4124eb66c0c"> 首页</a></li><li><a href="category.php@action=list_category&cid=01.00.00.00.00.00&sid=f0ffa4124eb66c0c"> 图书</a></li>
+                    </ul>
+    </section>
+
+</article>
+
+<script type="text/javascript">
+    $('.layout_nav_path').hide();
+    $(function(){
+        $('#btn_show_all_path').click(function(){
+            showLayoutNavPath();
+        });
+        $('.lnk_path_esc').click(function(){
+            hideLayoutNavPath();
+        });
+    });
+
+    function showLayoutNavPath(){
+                    $('.breadcrumb').hide();
+                    $('.cat_result').hide();
+                    $('.line_search').hide();
+                    $('footer.footer').hide();
+                    $('.cat_only').hide();
+                    $('.cat_filter').hide();
+                    $('header').hide();
+                $('.layout_nav_path').show();
+            }
+
+            function hideLayoutNavPath(){
+                    $('.breadcrumb').show();
+                    $('.cat_result').show();
+                    $('.line_search').show();
+                    $('footer.footer').show();
+                    $('.cat_only').show();
+                    $('header').show();
+                $('.layout_nav_path').hide();
+            }
+</script>
+
+        
+<!-- 单品 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="cat_result"><header><!--分类筛选-->
+<style type="text/css">
+.cat,.select{width:90px; height:35px; line-height:35px; background:#dadada; color:#5f5f5f; text-align:center; padding-bottom:0;}
+</style>
+<p class="layout_catfilter">
+    <span class="lbl_sleft"><a id="lnk_categories" class="cat">分类</a></span>
+        <span class="lbl_sright"><a id="lnk_filter" class="select">筛选</a></span>
+</p>
+
+<!-- 排序规则 -->
+<div class="rank">
+                <a class="now">销量<span class="jt"></span></a>
+    
+            <a href="category.php@cid=01&sid=f0ffa4124eb66c0c&ref=topics_1502&action=list_category&page_size=10&sort_type=default_0&lowp=0&00D3BCF3D5">评分</span></a>
+    
+            <a href="category.php@cid=01&sid=f0ffa4124eb66c0c&ref=topics_1502&action=list_category&page_size=10&sort_type=default_0&lowp=0&01D35A63CC">价格</span></a>
+                <a href="category.php@cid=01&sid=f0ffa4124eb66c0c&ref=topics_1502&action=list_category&page_size=10&sort_type=default_0&lowp=0&0BCEE2F368">时间</span></a>
+    </div> 
+</header><!-- 列表展示 -->
+<style type="text/css">
+.buy{ background:#ff8c00; color:#fff; text-align:center; font-size:11px; padding:2px 5px; margin-left:10px;}
+</style>
+<section>
+    <ul>
+                <li>
+            <div class="pic">
+                <a href="product.html">
+                    <img src="http//img38.ddimg.cn/35/10/23274638-1_m.jpg" alt="追风筝的人（快乐大本营高圆圆感动推荐，奥巴马送给女儿的新年礼物。全球两千万读者口耳相传，最想与友人分享的终身五星小说。为你，千千万万遍！）"  />
+                </a>
+            </div>
+            <div class="detail_wrapper cat_detail_right">
+                <div class="detail">
+                    <div>
+                        <p class="name"> <a href="product.html">追风筝的人（快乐大本营高圆圆感动推荐，奥巴马送给女儿的新年礼物。全球两千万读者口耳相传，最想与友人分享的终身五星小说。为你，千千万万遍！）</a></p>
+                        <p class="d_price">当当价：<span>&yen;22.80</span></p>
+                        <p class="comment">顾客评分
+                        <img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png">
+                            <span>(50369)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </li>
+                <li>
+            <div class="pic">
+                <a href="product.html">
+                    <img src="http//img32.ddimg.cn/34/15/23353342-1_m.jpg" alt="从你的全世界路过：让所有人心动的故事(懂事之前读《小时代》，情动以后读张嘉佳， 1500000 次转发，超4亿次阅读，5个故事正在变成电影，每1分钟，都有人在故事里看到自己。张嘉佳，献给你的心动故事)"  />
+                </a>
+            </div>
+            <div class="detail_wrapper cat_detail_right">
+                <div class="detail">
+                    <div>
+                        <p class="name"> <a href="product.php@pid=23353342&sid=f0ffa4124eb66c0c&recoref=category">从你的全世界路过：让所有人心动的故事(懂事之前读《小时代》，情动以后读张嘉佳， 1500000 次转发，超4亿次阅读，5个故事正在变成电影，每1分钟，都有人在故事里看到自己。张嘉佳，献给你的心动故事)</a></p>
+                        <p class="d_price">当当价：<span>&yen;24.40</span></p>
+                        <p class="comment">顾客评分
+                        <img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png">
+                            <span>(24915)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </li>
+                <li>
+            <div class="pic">
+                <a href="product.php@pid=22788959&sid=f0ffa4124eb66c0c&recoref=category">
+                    <img src="http//img39.ddimg.cn/50/30/22788959-1_m.jpg" alt="偷影子的人(一部令整个法国为之动容的温情疗愈小说，法国年度畅销冠军，吴佩慈、SHE落泪推荐！附赠浪漫告白卡——“青春初吻”纪念明信片）"  />
+                </a>
+            </div>
+            <div class="detail_wrapper cat_detail_right">
+                <div class="detail">
+                    <div>
+                        <p class="name"> <a href="product.php@pid=22788959&sid=f0ffa4124eb66c0c&recoref=category">偷影子的人(一部令整个法国为之动容的温情疗愈小说，法国年度畅销冠军，吴佩慈、SHE落泪推荐！附赠浪漫告白卡——“青春初吻”纪念明信片）</a></p>
+                        <p class="d_price">当当价：<span>&yen;17.90</span></p>
+                        <p class="comment">顾客评分
+                        <img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png">
+                            <span>(186942)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </li>
+                <li>
+            <div class="pic">
+                <a href="product.php@pid=20689512&sid=f0ffa4124eb66c0c&recoref=category">
+                    <img src="http//img32.ddimg.cn/96/0/20689512-1_m.jpg" alt="目送：龙应台"  />
+                </a>
+            </div>
+            <div class="detail_wrapper cat_detail_right">
+                <div class="detail">
+                    <div>
+                        <p class="name"> <a href="product.php@pid=20689512&sid=f0ffa4124eb66c0c&recoref=category">目送：龙应台</a></p>
+                        <p class="d_price">当当价：<span>&yen;19.50</span></p>
+                        <p class="comment">顾客评分
+                        <img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png">
+                            <span>(157969)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </li>
+                <li>
+            <div class="pic">
+                <a href="product.php@pid=20767715&sid=f0ffa4124eb66c0c&recoref=category">
+                    <img src="http//img35.ddimg.cn/89/22/20767715-1_m.jpg" alt="天才在左疯子在右：国内第一本精神病人访谈手记（高圆圆倾情推荐）"  />
+                </a>
+            </div>
+            <div class="detail_wrapper cat_detail_right">
+                <div class="detail">
+                    <div>
+                        <p class="name"> <a href="product.php@pid=20767715&sid=f0ffa4124eb66c0c&recoref=category">天才在左疯子在右：国内第一本精神病人访谈手记（高圆圆倾情推荐）</a></p>
+                        <p class="d_price">当当价：<span>&yen;14.90</span></p>
+                        <p class="comment">顾客评分
+                        <img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png">
+                            <span>(55423)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </li>
+                <li>
+            <div class="pic">
+                <a href="product.php@pid=22924035&sid=f0ffa4124eb66c0c&recoref=category">
+                    <img src="http//img35.ddimg.cn/90/19/22924035-1_m.jpg" alt="看见(央视知名记者、主持人柴静：十年个人成长的告白，中国社会变迁的备忘)"  />
+                </a>
+            </div>
+            <div class="detail_wrapper cat_detail_right">
+                <div class="detail">
+                    <div>
+                        <p class="name"> <a href="product.php@pid=22924035&sid=f0ffa4124eb66c0c&recoref=category">看见(央视知名记者、主持人柴静：十年个人成长的告白，中国社会变迁的备忘)</a></p>
+                        <p class="d_price">当当价：<span>&yen;30.50</span></p>
+                        <p class="comment">顾客评分
+                        <img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png">
+                            <span>(346421)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </li>
+                <li>
+            <div class="pic">
+                <a href="product.php@pid=21005473&sid=f0ffa4124eb66c0c&recoref=category">
+                    <img src="http//img33.ddimg.cn/49/18/21005473-1_m.jpg" alt="神奇校车·图画书版（全11册）——美国Scholastic学子出版社金牌畅销系列，备受小科学迷热爱推崇的科普童书！新奇迷人的科学引导方式，充满想象与快乐的阅读之旅！（蒲公英童书馆出品）"  />
+                </a>
+            </div>
+            <div class="detail_wrapper cat_detail_right">
+                <div class="detail">
+                    <div>
+                        <p class="name"> <a href="product.php@pid=21005473&sid=f0ffa4124eb66c0c&recoref=category">神奇校车·图画书版（全11册）——美国Scholastic学子出版社金牌畅销系列，备受小科学迷热爱推崇的科普童书！新奇迷人的科学引导方式，充满想象与快乐的阅读之旅！（蒲公英童书馆出品）</a></p>
+                        <p class="d_price">当当价：<span>&yen;84.50</span></p>
+                        <p class="comment">顾客评分
+                        <img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png">
+                            <span>(188174)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </li>
+                <li>
+            <div class="pic">
+                <a href="product.php@pid=22518209&sid=f0ffa4124eb66c0c&recoref=category">
+                    <img src="http//img39.ddimg.cn/65/9/22518209-1_m.jpg" alt="和朋友一起想办法(全八册，一套培养孩子"想办法，解决问题"的图画书，小故事中包含大智慧)"  />
+                </a>
+            </div>
+            <div class="detail_wrapper cat_detail_right">
+                <div class="detail">
+                    <div>
+                        <p class="name"> <a href="product.php@pid=22518209&sid=f0ffa4124eb66c0c&recoref=category">和朋友一起想办法(全八册，一套培养孩子"想办法，解决问题"的图画书，小故事中包含大智慧)</a></p>
+                        <p class="d_price">当当价：<span>&yen;37.80</span></p>
+                        <p class="comment">顾客评分
+                        <img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png">
+                            <span>(125171)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </li>
+                <li>
+            <div class="pic">
+                <a href="product.php@pid=23371905&sid=f0ffa4124eb66c0c&recoref=category">
+                    <img src="http//img35.ddimg.cn/84/4/23371905-1_m.jpg" alt="冀连梅谈:中国人应该这样用药"  />
+                </a>
+            </div>
+            <div class="detail_wrapper cat_detail_right">
+                <div class="detail">
+                    <div>
+                        <p class="name"> <a href="product.php@pid=23371905&sid=f0ffa4124eb66c0c&recoref=category">冀连梅谈:中国人应该这样用药</a></p>
+                        <p class="d_price">当当价：<span>&yen;22.80</span></p>
+                        <p class="comment">顾客评分
+                        <img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png">
+                            <span>(5526)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </li>
+                <li>
+            <div class="pic">
+                <a href="product.php@pid=22854283&sid=f0ffa4124eb66c0c&recoref=category">
+                    <img src="http//img33.ddimg.cn/34/12/22854283-1_m.jpg" alt="大清相国（王岐山多次推荐，北京高层及全国公务员热读用书！不到20天，已爆订20万册！）"  />
+                </a>
+            </div>
+            <div class="detail_wrapper cat_detail_right">
+                <div class="detail">
+                    <div>
+                        <p class="name"> <a href="product.php@pid=22854283&sid=f0ffa4124eb66c0c&recoref=category">大清相国（王岐山多次推荐，北京高层及全国公务员热读用书！不到20天，已爆订20万册！）</a></p>
+                        <p class="d_price">当当价：<span>&yen;28.50</span></p>
+                        <p class="comment">顾客评分
+                        <img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png"><img src="images/star_full.png">
+                            <span>(1625)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </li>
+            </ul>
+</section>
+
+<!-- 翻页 -->
+<style type="text/css">
+article.cat_result footer a{ height:30px;}
+article.result footer {line-height: 27px;}
+article.result footer a{ height:30px;}
+footer{ padding: 30px 0 5px; }
+.prev,.next{ float:left; width:80px; height:30px; line-height:30px; background:#dadada; color:#5f5f5f}
+.next{ float:right;}
+.disable{ background:#dadada; color:#b4b4b4;}
+</style>
+<footer>
+        <!--<a href="/touch/category.php?cid=01&sort_type=default_0&page=2" class="next"><img src="images/btn_next.png" alt="下一页" /></a>-->
+    <a href="category.php@cid=01&sid=f0ffa4124eb66c0c&ref=topics_1502&action=list_category&page_size=10&sort_type=default_0&lowp=0&05DF9CE275" class="next">下一页</a>
+    
+        <a class="prev disable" style="cursor:default;">上一页</a>
+    
+    <span>1/304512</span>
+
+
+
+</footer>
+
+</article>
+<!-- 选择分类 begin -->
+<article class="categories">
+    <header>
+        <div class="title"><a class="lnk_back"><img src="images/btn_esc1.png" alt="返回" /></a><span>分类选择</span></div>
+    </header>
+	<ul>
+	</ul>
+	<footer><a class="lnk_back"><img src="images/btn_esc2.png" alt="返回" /></a></footer>
+</article>
+
+<!-- filter begin -->
+<div class="cat_filter">
+    <!--<header>
+        <div class="title">
+            <span class="lbl_fleft"><a id="btn_filter"><img src="images/btn_esc1.png" alt="返回" /></a></span>
+            <span class="lbl_ftxt">筛选</span>
+            <span class="lbl_fright"><a class="btn_title_complete"><img alt="完成" src="images/btn_complete2.png"></a></span>
+        </div>
+    </header>-->
+    <div class="cat_title">
+        <span class="lbl_fleft"><a id="btn_filter"><img src="images/btn_esc1.png" alt="返回" /></a></span>
+        <span class="lbl_ftxt">筛选</span>
+        <span class="lbl_fright"><a class="btn_title_complete"><img alt="完成" src="images/btn_complete2.png"></a></span>
+    </div>
+    <article class="cat_select">
+        <header><p class="cats_memo">当前的筛选商品一共有<span id="filter_p_num" name="num"></span>件。</p></header>
+        <section>
+        </section>
+        <footer><input type="submit" class="complete1" id="complete" name="complete" value=""></footer>
+    </article>
+</div>
+<!-- filter end -->
+
+<!-- 选择分类 end -->
+
+<!--section class="line_search">
+<form id="search_form" method="get" action='search.php' target="_parent" onsubmit="$('#keywords').val($('#input_keyword').val());" >
+</form>
+</section-->
+
+<footer class="ft">
+    <div class="search_ft">
+        <form id="search_form" method="get" action='search.php' target="_parent" onsubmit="return submit_search();" >
+                        <input name="keyword" id="keyword" type="text" value="请输入商品名称" onkeydown="this.style.color='#404040'" onblur="if(this.value==''){this.value='请输入商品名称';this.style.color='#b6b7b9';}" onfocus="if(this.value!='请输入商品名称'){this.style.color='#404040';}else{this.value='';this.style.color='#404040'}"/>
+            <input type="submit" value="" />
+            <input type="hidden" value="all_search" name="action">
+            <input type="hidden" value="0" name="cid">
+            <input type="hidden" value="f0ffa4124eb66c0c" name="sid">
+                                       </form>
+    </div>
+<script type="text/javascript" >
+function submit_search(){
+    if($('#keyword').val()=="请输入商品名称"){
+    $('#keyword').val(null);
+    }
+    return true;
+}
+</script>
+<script type="text/javascript" src="js/suggest.js"></script>
+<script type="text/javascript">
+new Suggest({
+	operator : ".keyword2",
+	defaultVal : "",
+	hasFocus : false,
+	formEl : "#search_form"
+});
+</script>
+    <div class="ft_nav">
+        <p>
+            <span><a href="@sid=f0ffa4124eb66c0c&source=touch">精简版</a></span>
+            <span class="site_now"><a href="index.php@sid=f0ffa4124eb66c0c">触屏版</a></span>
+            <span><a href="mdd_redirect.php@url=http_253A_252F_252Fwww.dangdang.com_252F_253Fsource_253Dmobile">电脑版</a></span>
+        </p>
+        <p>
+            <span><a href="leavemsg.php@sid=f0ffa4124eb66c0c">提建议</a></span>
+            <span><a href="topics.php@page_id=14740&sid=f0ffa4124eb66c0c">客&nbsp;&nbsp;&nbsp;&nbsp;服</a></span>
+            <span><a href="topics.php@page_id=76&sid=f0ffa4124eb66c0c">帮&nbsp;&nbsp;&nbsp;&nbsp;助</a></span>
+        </p>
+    </div>
+    <div class="status_bar">
+                    <div class="fl"><a href="login.php@sid=f0ffa4124eb66c0c">登陆</a><a href="register.php@action=reg&registertype=1&sid=f0ffa4124eb66c0c" class="quit" style="margin-left: 20px;">注册</a></div>
+        <div class="fr"><a href="#hometop"><span class="goto_top">TOP</span></a></div>
+    </div>
+     
+</footer>
+
+<script type="text/javascript" src="js/global.min.js"></script>
+<script type="text/javascript" src="js/common.min.js"></script>
+<div class="suggest" id="footer_suggest"></div>
+</body>
+</html>
+<script src="js/category.js"></script>
+

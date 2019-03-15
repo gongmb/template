@@ -1,0 +1,238 @@
+/*--涓诲鑸�--*/
+.jy-nav{background:url(../img/nav-bg.jpg) repeat-x;height:29px;padding-top:7px;padding-left:6px;}
+.jy-nav li{float:left;margin-right:2px;position:relative;}
+.jy-nav li .num{position:absolute;padding:4px 3px;border-radius:8px;top:0px;left:28px;font-size:9px;color:white;
+	/*
+	background:-moz-linear-gradient(top,#6ada5f,#1dab15);
+	background:-webkit-linear-gradient(top,#6ada5f,#1dab15);
+	background:-o-linear-gradient(top,#6ada5f,#1dab15);
+	background:linear-gradient(top,#6ada5f,#1dab15);
+	*/
+	background:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/nav-bg-add3.jpg) repeat-x;
+}
+.jy-nav li a{display:block;color:white;height:20px;padding:8px 6px 0px;font-size:14px;}
+.jy-nav li.current a{color:#f22840;border:1px solid white;border-bottom:none;
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+	/*
+	background:-moz-linear-gradient(top,#fedde1,#fff,#fff);
+	background:-webkit-linear-gradient(top,#fedde1,#fff,#fff);
+	background:-webkit-gradient(linear,top,from(#fedde1),to(#fff));
+	background:-o-linear-gradient(top,#fedde1,#fff,#fff);
+	background:linear-gradient(top,#fedde1,#fff,#fff);
+	*/
+	background:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/nav-bg-add.jpg) repeat-x;
+}
+
+/*--鍥惧儚婊戝姩--*/
+.jy-tab-img{position:relative;}
+.jy-tab-img .slidesjs-pagination{overflow:hidden;position:absolute;right:0px;bottom:0px;height:7px;padding-top:1px;z-index:2;width:100%;text-align:right;
+	background:-moz-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1));
+    background:-webkit-gradient(linear,0 50%,100% 50%,from(rgba(255,255,255,0)),to(rgba(255,255,255,1)));
+    background:-webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1));
+    background:-o-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1));
+}
+.jy-tab-img .slidesjs-pagination li{display:inline-block;height:16px;width:6px;margin-right:10px;
+
+}
+.jy-tab-img .slidesjs-pagination li a{display:block;height:6px;width:6px;background-color:#cdcbc3;text-indent:-999em;border-radius:100%;background-color:#E1DFDF;text-align:left;}
+.jy-tab-img .slidesjs-pagination li a.active{background-color:#8CC20A;}
+.slidesjs-stop{display:none;}
+.slidesjs-play{display:none;}
+.jy-tab-img .slidesjs-container{z-index:1;}
+
+/*--蹇€熷鑸�--*/
+.jy-r-nav{}
+.jy-r-nav .slidesjs-container .w-nav{padding-left:25px;}
+.jy-r-nav .slidesjs-container .w-nav div{float:left;margin-right:10px;}
+.jy-r-nav .slidesjs-container .w-nav div a{display:block;width:58px;height:18px;padding-top:30px;border-style:solid;border-width:1px;border-radius:3px;text-align:center;background-repeat:no-repeat;background-position:center 7px;font-size:12px;}
+.jy-r-nav .slidesjs-container .w-nav div a.a1{border-color:#f6c1c7;color:#ed7583;background-color:#fdecee;}
+.jy-r-nav .slidesjs-container .w-nav div a.a2{border-color:#afdfed;color:#5ab3cc;background-color:#e6f4f8;}
+.jy-r-nav .slidesjs-container .w-nav div a.a3{border-color:#d8e692;color:#96b306;background-color:#f3f8dc;}
+.jy-r-nav .slidesjs-container .w-nav div a.a4{border-color:#f2da70;color:#cfaa02;background-color:#fff9dc;}
+.jy-r-nav .slidesjs-container .w-nav div.b1 a{background-image:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/r-nav-b1.png);}
+.jy-r-nav .slidesjs-container .w-nav div.b2 a{background-image:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/r-nav-b2.png);}
+.jy-r-nav .slidesjs-container .w-nav div.b3 a{background-image:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/r-nav-b3.png);}
+.jy-r-nav .slidesjs-container .w-nav div.b4 a{background-image:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/r-nav-b4.png);}
+.jy-r-nav .slidesjs-container .w-nav div.b5 a{background-image:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/r-nav-b5.png);}
+.jy-r-nav .slidesjs-container .w-nav div.b6 a{background-image:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/r-nav-b6.png);}
+.jy-r-nav .slidesjs-container .w-nav div.b7 a{background-image:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/r-nav-b7.png);}
+.jy-r-nav .slidesjs-container .w-nav div.b8 a{background-image:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/r-nav-b8.png);}
+.jy-r-nav .slidesjs-container .w-nav div.b9 a{background-image:url(http//images1c.jyimg.com/w4/wap./i/m/2013/04/r-nav-b9.png);}
+.jy-r-nav .slidesjs-container .w-nav div.b10 a{background-image:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/r-nav-b10.png);}
+.jy-r-nav .slidesjs-container .w-nav div.b11 a{background-image:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/r-nav-b13.png);}
+.jy-r-nav .slidesjs-container .w-nav div.b12 a{background-image:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/r-nav-b12.png);}
+
+
+.slidesjs-navigation i{display:block;width:20px;height:20px;border-radius:10px;position:absolute;top:25px;}
+.slidesjs-previous i{left:10px;background:#dedede url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/prev.png) no-repeat 6px 5px;}
+.slidesjs-next i{right:10px;background:#dedede url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/next.png) no-repeat 6px 5px;}
+
+.jy-r-nav .slidesjs-pagination{padding-top:10px;overflow:hidden;padding-left:142px;}
+.jy-r-nav .slidesjs-pagination li{float:left;margin-right:8px;}
+.jy-r-nav .slidesjs-pagination li a{display:block;width:6px;height:6px;border-radius:3px;background-color:#e1dfdf;text-indent:-999px;}
+.jy-r-nav .slidesjs-pagination li a.active{background-color:#8cc20a;}
+
+/*--鐖辩涔嬬--*/
+.jy-cu-ar{}
+.jy-cu-ar img{margin:0 auto;}
+
+/*--浠婃棩缂樺垎--*/
+.jy-h2{font-size:14px;height:26px;line-height:26px;border-radius:5px;color:white;padding-left:4%;font-weight:normal;}
+.hea1{background-color:#f89faa;}
+
+/*--蹇冪數鎰熷簲--*/
+.bgc1{background-color:#fdecee;}
+.tx_g{padding:5px;width:42px;height:80px;}
+.box_g{width:24px;height:24px;left:50%;margin-left:-12px;bottom:15px;}
+.cir_g1{background:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/xd-bg.png) no-repeat;}
+
+/*--鍗拌薄--*/
+.hea2{background-color:#82c8dc;}
+.imp{padding:15px 10px 0px 10px;}
+.imp a{float:left;padding:3px 5px;height:18px;line-height:18px;text-align:center;font-size:14px;border-style:solid;border-width:1px;margin-right:5px;margin-bottom:15px;}
+.b-c-1{background-color:#fbd9dd;border-color:#f4ccd1;color:#c16873;}
+.b-c-2{background-color:#daf1f7;border-color:#bcdee8;color:#5da1b5;}
+.b-c-3{background-color:#e7f0b9;border-color:#dce6a8;color:#929f52;}
+.b-c-4{background-color:#fff4c4;border-color:#f2e29e;color:#bd9b05;}
+.bgc2{background-color:#e6f4f8;}
+.cir_g2{background:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/xd-bg1.png) no-repeat;}
+.jy-imp-o{height:90px;width:288px;overflow:hidden;}
+.jy-imp{width:999em;}
+.jy-imp dl{float:left;width:288px;}
+
+
+/*--閫熼厤鏄熷骇--*/
+.jy-ind{}
+.jy-ind li{position:relative;margin-bottom:10px;}
+.jy-ind li:last-child{margin-bottom:0;}
+.jy-ind li span{border-style:solid;border-width:1px;line-height:32px;}
+.jy-ind li span.fir{width:26%;padding-left:2%;}
+.jy-ind li span.sec{width:54%;padding-left:16%;background-color:white;}
+.jy-ind li.fir span{border-color:#f4ccd1;}
+.jy-ind li.fir span.fir{background-color:#fdecee;}
+.jy-ind li.sec span{border-color:#bcdee8;}
+.jy-ind li.sec span.fir{background-color:#e6f4f8;}
+.jy-ind li.thi span{border-color:#f2e29e; white-space:nowrap;overflow:hidden;}
+.jy-ind li.thi span.fir{background-color:#fff9dc;}
+.arr{width:11px;height:14px;top:10px;left:25%;}
+.jy-ind li.fir .arr{background:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/xd-bg2.png) no-repeat;}
+.jy-ind li.sec .arr{background:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/xd-bg3.png) no-repeat;}
+.jy-ind li.thi .arr{background:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/xd-bg4.png) no-repeat;}
+.jy-btn{border-style:solid;border-width:1px;padding:3px 6px 3px 15px;top:6px;left:31%;border-radius:12px;}
+.jy-up{
+	   border-color:#f0cd32;
+	   /*
+	   background:-moz-linear-gradient(top,#fff2b7,#ffe055);
+	   background:-webkit-linear-gradient(top,#fff2b7,#ffe055);
+	   background:-o-linear-gradient(top,#fff2b7,#ffe055);
+	   background:linear-gradient(top,#fff2b7,#ffe055);
+	   */
+	   background:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/nav-bg-add1.jpg) repeat-x;
+}
+.jy-down{
+	   border-color:#c3da50;
+	   /*
+	   background:-webkit-linear-gradient(top,#e6efb7,#c5db55);
+	   background:-webkit-gradient(linear,top,from(#e6efb7),to(#c5db55));
+	   background:-moz-linear-gradient(top,#e6efb7,#c5db55);
+	   background:-o-linear-gradient(top,#e6efb7,#c5db55);
+	   background:linear-gradient(top,#e6efb7,#c5db55);
+	   */
+	   background:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/nav-bg-add2.jpg) repeat-x;
+}
+.btn-a{width:8px;height:9px;top:4px;left:7px;}
+.a-up{background:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/xd-bg5-320.png) no-repeat;}
+.a-down{background:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/xd-bg6-320.png) no-repeat;}
+
+/*--蹇€熸悳绱�--*/
+.hea3{background-color:#b3d01f;}
+.qu-sea{height:110px;}
+.invert:before{
+	content:attr(title);position:absolute;z-index:1;
+	top:14px;left:0px;
+	width:100%;height:14px;
+	-webkit-transform:scaleY(-1);
+	-moz-transform:scaleY(-1);
+	-o-transform:scaleY(-1);
+	transform:scaleY(-1);
+	white-space:nowrap;	
+}
+.invert:after{  
+    content:'';  
+    position:absolute;z-index:2; 
+    top:14px;left:0;  
+    height:14px;width:100%;  
+    background:-moz-linear-gradient(top,rgba(255,255,255,0.8),rgba(255,255,255,1));
+	background:-o-linear-gradient(top,rgba(255,255,255,0.8),rgba(255,255,255,1));
+    background:-webkit-gradient(linear, center top, center bottom, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,1)));
+	background:linear-gradient(top,rgba(255,255,255,0.8),rgba(255,255,255,1));
+	white-space:nowrap;
+}
+.tx1{top:10px;left:10px;}
+.tx2{top:3px;left:100px;}
+.tx3{top:3px;left:170px;}
+.tx4{top:3px;right:10px;}
+.tx5{top:32px;left:60px;}
+.tx6{top:32px;left:135px;}
+.tx7{top:30px;right:38px;}
+.tx8{top:60px;left:20px;}
+.tx9{top:50px;left:110px;}
+.tx10{top:55px;right:32px;}
+.tx11{top:70px;left:160px;}
+.tx12{top:85px;right:177px;}
+
+/*--浠婂ぉ閫熼厤--*/
+.bgc3{background-color:#e4e4e4;width:50px;height:20px;overflow:hidden;}
+.ever-w{width:308px;height:90px;overflow:hidden;}
+.ever{height:80px;width:288px;margin:10px 10px 0px 10px;}
+.ever li{height:80px;width:288px;}
+.ever li:last-child{margin-right:0px;}
+.ever li div{width:50px;height:80px;margin-right:9px;
+
+	/*
+	-webkit-transition: all 1.5s ease-in-out 0s;
+	-moz-transition: all 1.5s ease-in-out 0s;
+	transition: all 1.5s ease-in-out 0s;
+	/*visibility:hidden;*/
+}
+.ever li div img{display:block;}
+.ever li div:last-child{margin-right:0px;}
+.ever li div.upper {
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    background: -moz-linear-gradient(-45deg, #463, #8a7 50%, #463 100%);  
+    background: -webkit-gradient(linear, 0 0, 100% 100%, from(#463), color-stop(50%, #8a7), color-stop(100%, #463)); 
+}
+.ever li div.lower {
+    background: -moz-linear-gradient(-45deg, #642, #864 50%, #642 100%);  
+    background: -webkit-gradient(linear, 0 0, 100% 100%, from(#642), color-stop(50%, #a86), color-stop(100%, #642));
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;/*鎶栧姩*/
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+.ever li.turn div.lower{
+	-moz-transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+}
+.ever li.turn div.upper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+
+
+/*--璋佺湅杩囨垜--*/
+.w{width:200px;}
+
+
+
+/*-杩斿洖椤堕儴-*/
+.jy-top{display:block;width:32px;height:28px;background:url(http//images1c.jyimg.com/w4/wap/i/m/2013/04/top.png) no-repeat;position:fixed;right:0px;bottom:20%;margin-top:-21px;z-index:99;}
+
+/*--椤堕儴鏂囧瓧--*/
+.jy-sy-top{background:url(../img/notice.jpg) no-repeat 14px 8px;padding-left:40px;}

@@ -1,0 +1,824 @@
+﻿
+<!DOCTYPE html>
+<html>
+    <head>
+      <link href="http//1251008728.cdn.myqcloud.com/1251008728/assets/images/wanhuir-icon.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
+      <title>史上最准：乐嘉老师色彩性格测试</title>
+      <meta charset="utf-8">
+      <script src="1.js"></script>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width,minimum-scale=0.5,maximum-scale=1,initial-scale=0.8" />
+ <!--<meta name="viewport" content="target-densitydpi=320,width=640,user-scalable=no">-->
+      <script type="text/javascript">
+        $(document).ready(function(){
+          var result=0;
+          var result_message;
+          var a = 0;
+          var b = 0;
+          var c = 0;
+          var d = 0;
+          var res_arr = [];          
+
+          $(".options ul li").click(function(){
+              var  node = $(this).parent().parent().parent();
+              var next_node = $(node).next();
+
+              $(this).parent().find("li").removeClass("selected");
+              $(this).addClass("selected");
+
+              if(next_node.hasClass("question")){
+                  $(node).hide();
+                  $(next_node).show();
+              }else{
+$(node).hide();
+                  $.each($("li.selected"), function(index, value){
+                      var score = parseInt($(value).attr("data-score"));
+                      switch(score){
+                          case 1:
+                              a = a + 1;
+                              break;
+                          case 2:
+                              b = b + 1;
+                              break;
+                          case 3:
+                              c = c + 1;
+                              break;
+                          case 4:
+                              d = d + 1;
+                              break;
+                      }
+                  });
+
+                res_arr = [a, b, c, d]; 
+                var i = Math.max.apply(null, res_arr);
+                var color;
+                 if(i == res_arr[0]){
+                     color = "红色";
+                  }else if(i == res_arr[1]){
+                     color = "蓝色";
+                  }else if(i == res_arr[2]){
+                    color = "黄色";
+                  }else{
+                    color = "绿色";
+                  }
+
+
+                  result_message = "你的性格色彩为 "+color+". 想知道该色彩性格的特征，关注【懒人模板】公众号，查看答案。";
+                  $(".aside").append(result_message);
+                  $(".header-title").hide();
+                  $(".result").show();
+              }
+          });
+
+          $(".prev a").click(function(){
+              var node = $(this).parent().parent();
+              var prev_node = $(node).prev();
+
+              if(prev_node.hasClass("question")){
+                  $(node).hide();
+                  $(prev_node).show();
+              }
+          });
+      });
+      </script>
+      <script type="text/javascript">
+        
+        var is_weixin = function () {
+                var ua = navigator.userAgent.toLowerCase();
+                if(ua.match(/MicroMessenger/i) == "micromessenger") {
+                    if(ua.match(/iphone/i) == "iphone") {
+                        return 'ios';
+                    }
+                    return 'android';
+                }
+                return false;
+            }
+
+            var foo = function (o) {
+                if (o.value == o.defaultValue) {
+                    o.value = '';
+                    o.style.color = '#000';
+                }
+            }
+
+            var bar = function (o) {
+                if (o.value == '') {
+                    o.value = o.defaultValue;
+                    o.style.color = '#9a9a9a';
+                } else {
+                    o.style.color = '#000';
+                }
+            }
+
+            var mask = function () {
+                if (document.getElementById('mask').style.display == 'inline') {
+                    document.getElementById('mask').style.display = 'none';
+                    document.getElementById('tip').style.display = 'none';
+                } else {
+                    document.getElementById('mask').style.display = 'inline';
+                    document.getElementById('tip').style.display = 'inline';
+                }
+            }
+
+            var share = function () {
+                mask();
+            }
+
+
+
+        var share_callback_hy = function () {
+            ajax = new XMLHttpRequest();
+            ajax.open('GET', '/materials/wx_share?f=wx_hy&ref=' + window.location.href, true);
+            ajax.send(null);
+        }
+
+        var share_callback_pyq = function () {
+            ajax = new XMLHttpRequest();
+            ajax.open('GET', '/materials/wx_share?f=wx_pyq&ref=' + window.location.href, true);
+            ajax.send(null);
+        }
+
+
+        var dataForWeixin = {
+              appId: "wx78f81724e6590b1d",
+              TLImg: "http//1251008728.cdn.myqcloud.com/1251008728/lejia/lj1.jpg",
+              url: "http//www.lanrenmb.com/wcs/11",
+              title: "史上最准：乐嘉老师色彩性格测试",
+              desc: "性格也有色彩吗，乐嘉老师的回答是yes，快来探知！（10题）"
+        };
+
+
+
+        var onBridgeReady = function(){
+            WeixinJSBridge.on('menu:share:appmessage', function(argv){
+                WeixinJSBridge.invoke('sendAppMessage', {
+                    "appid": dataForWeixin.appId,
+                    "img_url": dataForWeixin.TLImg,
+                    "img_width": "120",
+                    "img_height": "120",
+                    "link": dataForWeixin.url + '?f=wx_hy_bb',
+                    "title":  dataForWeixin.title,
+                    "desc": dataForWeixin.desc 
+                });
+                share_callback_hy();
+                setTimeout(function () {location.href = "http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd";}, 1500); 
+            });
+            WeixinJSBridge.on('menu:share:timeline', function(argv){              
+                WeixinJSBridge.invoke('shareTimeline', {
+                    "appid": dataForWeixin.appId,
+                    "img_url":dataForWeixin.TLImg,
+                    "img_width": "120",
+                    "img_height": "120",
+                    "link": dataForWeixin.url + '?f=wx_pyq_bb',
+                    "title": dataForWeixin.title,
+                    "desc": dataForWeixin.desc
+                });
+                share_callback_pyq();
+		setTimeout(function () {location.href = "http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd";}, 1500);  
+            });
+        };
+        if(document.addEventListener){
+            document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+        }else if(document.attachEvent){
+            document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+            document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+        }  
+      </script>
+      <style type="text/css">
+        body{
+
+          background: #000;
+
+          background: url("http//1251008728.cdn.myqcloud.com/1251008728/2014/manyanswers/bg.png") no-repeat;
+          background-size: cover;
+          margin: 0 auto;
+          padding: 20px 10px;
+          height: 100%;
+          min-height: 500px;
+      }
+
+      .title{
+          margin: 0 auto;
+          width: 80%;
+      }
+
+      .title h2{
+        background: #90ab8b;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 20px;
+        font-weight: normal;
+          margin-bottom: 0;
+      }
+
+      .title-sub{
+          padding: 10px 20px;
+          color: #fff;
+          text-align: center;
+          /*border: 1px solid #b374b1;*/
+          border-top: 0;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          margin: 0 auto;
+          background: rgba(231, 231, 231, 0.2) none repeat scroll 0 0 !important;
+          background: #e7e7e7;
+          filter:Alpha(opacity=20);
+      }
+
+      .question{
+          width: 80%;
+          margin: 0 auto;
+          margin-top: 50px;
+          display: none;
+      }
+
+      .question-title{
+          text-align: center;
+          color: #fff;
+      }
+
+      .question:first-child, .question.current{
+          display: block;
+      }
+      .result{
+          display:none;
+      }
+
+      .options ul{
+          padding: 0;
+      }
+      .options li{
+          margin: 20px 0;
+          padding: 5px 15px;
+          list-style-type: none;
+      }
+
+      .options li div{
+          padding-left: 20px;
+      }
+      .options.button li{
+          border: 1px solid #8760a3;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          width: 100%;
+          color: white;
+          background:rgba(142, 99, 167, 0.6) none repeat scroll 0 0 !important;
+
+          background:#8e63a7;
+          filter:Alpha(opacity=60);
+      }
+
+      .options.button li{
+          padding: 5px 0;
+      }
+
+      .options li.selected{
+          background: #cf6271 !important;
+      }
+      .prev{
+          margin-top: 30px;
+          font-weight: 300;
+          font-size: 12px;
+          float: right;
+          padding-bottom: 50px;
+      }
+      .prev a:link{
+          color: #fff;
+      }
+
+      .tools-button{
+          padding: 10px 0;
+          color: #fff;
+          text-align: center;
+          margin: 0 auto;
+          width: 80%;
+          background:rgba(159, 66, 61, 0.3) none repeat scroll 0 0;
+          background: #9f423d;
+          filter:Alpha(opacity=30);
+
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+
+          margin-top: 30px;
+
+      }
+
+      .share{
+          background:rgba(49, 126, 172, 0.6) none repeat scroll 0 0;
+          background: #317eac;
+          filter:Alpha(opacity=60);
+      }
+            #tip {
+                display: none;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+   #mask {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: none;
+                background-color: #333;
+                filter: alpha(Opacity=90);
+                -moz-opacity: 0.9;
+                opacity: 0.9;
+            }
+      </style>
+    </head>
+    <body>
+
+
+
+<div class="title header-title">
+  <h2>
+    史上最准：乐嘉老师色彩性格测试
+  </h2>
+  <div class="title-sub">
+性格也有色彩吗，乐嘉老师的回答是yes，快来探知！（10题）
+  </div>
+</div>
+
+
+
+
+ 
+    <div class="question current">
+      <div class="question-title">
+          1、 关于人生观，我的内心其实是：
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="1">
+                  <div>
+                  A、希望能有各种各样的人生体验，所以想法极其多样化。
+                  </div>
+               </li>
+            
+              <li data-score="2">
+                  <div>
+                  B、在合理的基础上，谨慎确定目标，一旦确定会坚定不移地去做。
+                  </div>
+               </li>
+            
+              <li data-score="3">
+                  <div>
+                  C、更加在乎取得一切有可能的成就。
+                  </div>
+               </li>
+            
+              <li data-score="4">
+                  <div>
+                  D、毫不喜欢风险，喜欢享受稳定或现状。
+                  </div>
+               </li>
+            
+          
+        </ul>
+      </div>
+
+      <div class="prev">
+        <a href="javascript:void(0)">返回上一题</a>
+      </div>
+    </div>
+ 
+    <div class="question ">
+      <div class="question-title">
+          2、如果爬山旅游，大多数状况下，在下山回来的路线我最可能：
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="1">
+                  <div>
+                  A、好玩有趣，所以宁愿新路线回巢。
+                  </div>
+               </li>
+            
+              <li data-score="2">
+                  <div>
+                  B、安全稳妥，所以宁愿原路线返回。
+                  </div>
+               </li>
+            
+              <li data-score="3">
+                  <div>
+                  C、挑战困难，所以宁愿新路线回巢。
+                  </div>
+               </li>
+            
+              <li data-score="4">
+                  <div>
+                  D、方便省心，所以宁愿原路线返回。
+                  </div>
+               </li>
+            
+          
+        </ul>
+      </div>
+
+      <div class="prev">
+        <a href="javascript:void(0)">返回上一题</a>
+      </div>
+    </div>
+ 
+    <div class="question ">
+      <div class="question-title">
+          3、 说话时，我更看重：
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="1">
+                  <div>
+                  A、感觉效果。有时可能会略显得夸张。
+                  </div>
+               </li>
+            
+              <li data-score="2">
+                  <div>
+                  B、描述精确。有时可能略过冗长。
+                  </div>
+               </li>
+            
+              <li data-score="3">
+                  <div>
+                  C、达成结果。有时可能过于直接让别人不高兴。
+                  </div>
+               </li>
+            
+              <li data-score="4">
+                  <div>
+                  D、人际感受。有时可能会不愿讲真话。
+                  </div>
+               </li>
+            
+          
+        </ul>
+      </div>
+
+      <div class="prev">
+        <a href="javascript:void(0)">返回上一题</a>
+      </div>
+    </div>
+ 
+    <div class="question ">
+      <div class="question-title">
+          4、 在大多数时候，我的内心更想要：
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="1">
+                  <div>
+                  A、刺激。经常冒出新点子，想做就做，喜欢与众不同。
+                  </div>
+               </li>
+            
+              <li data-score="2">
+                  <div>
+                  B、安全。头脑冷静，不易冲动。
+                  </div>
+               </li>
+            
+              <li data-score="3">
+                  <div>
+                  C、挑战。生命中竞赛随处可见，有强烈的“赢”的欲望。
+                  </div>
+               </li>
+            
+              <li data-score="4">
+                  <div>
+                  D、稳定。满足自己所拥有的，很少羡慕别人。
+                  </div>
+               </li>
+            
+          
+        </ul>
+      </div>
+
+      <div class="prev">
+        <a href="javascript:void(0)">返回上一题</a>
+      </div>
+    </div>
+ 
+    <div class="question ">
+      <div class="question-title">
+          5、 我认为自己在情感上的基本特点是：
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="1">
+                  <div>
+                  A、情绪多变，经常波动。
+                  </div>
+               </li>
+            
+              <li data-score="2">
+                  <div>
+                  B、外表自我抑制强，但内心感情起伏大，一旦挫伤难以平复。
+                  </div>
+               </li>
+            
+              <li data-score="3">
+                  <div>
+                  C、感情不拖泥带水，只是一旦不稳定，容易发怒。
+                  </div>
+               </li>
+            
+              <li data-score="4">
+                  <div>
+                  D、天性情绪四平八稳。
+                  </div>
+               </li>
+            
+          
+        </ul>
+      </div>
+
+      <div class="prev">
+        <a href="javascript:void(0)">返回上一题</a>
+      </div>
+    </div>
+ 
+    <div class="question ">
+      <div class="question-title">
+          6、 我认为自己除了工作外，在控制欲上面，我：
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="1">
+                  <div>
+                  A、没有控制欲，只有感染带动他人的欲望，但自控能力不算强。
+                  </div>
+               </li>
+            
+              <li data-score="2">
+                  <div>
+                  B、用规则来保持我对自己的控制和对他人的要求。
+                  </div>
+               </li>
+            
+              <li data-score="3">
+                  <div>
+                  C、内心是有控制欲和希望别人服从我的。
+                  </div>
+               </li>
+            
+              <li data-score="4">
+                  <div>
+                  D、没兴趣影响别人，也不愿别人来控制我。
+                  </div>
+               </li>
+            
+          
+        </ul>
+      </div>
+
+      <div class="prev">
+        <a href="javascript:void(0)">返回上一题</a>
+      </div>
+    </div>
+ 
+    <div class="question ">
+      <div class="question-title">
+          7、 当与情人交往时，我最希望对方：
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="1">
+                  <div>
+                  A、经常赞美我，让我享受开心、被关怀且又有一定自由。
+                  </div>
+               </li>
+            
+              <li data-score="2">
+                  <div>
+                  B、可随时默契到我内心所想，对我的需求极其敏丄感。
+                  </div>
+               </li>
+            
+              <li data-score="3">
+                  <div>
+                  C、得到对方的认可，我是正确的并且我对其是有价值的。
+                  </div>
+               </li>
+            
+              <li data-score="4">
+                  <div>
+                  D、尊重并且相处静谧的。
+                  </div>
+               </li>
+            
+          
+        </ul>
+      </div>
+
+      <div class="prev">
+        <a href="javascript:void(0)">返回上一题</a>
+      </div>
+    </div>
+ 
+    <div class="question ">
+      <div class="question-title">
+          8、 在人际交往时，我：
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="1">
+                  <div>
+                  A、本质上还是认为与人交往比长时间独处是有乐趣的。
+                  </div>
+               </li>
+            
+              <li data-score="2">
+                  <div>
+                  B、非常审慎缓慢地进入，常会被人认为容易有距离感。
+                  </div>
+               </li>
+            
+              <li data-score="3">
+                  <div>
+                  C、希望在人际关系中占据主导地位。
+                  </div>
+               </li>
+            
+              <li data-score="4">
+                  <div>
+                  D、顺其自然，不温不火，相对被动。
+                  </div>
+               </li>
+            
+          
+        </ul>
+      </div>
+
+      <div class="prev">
+        <a href="javascript:void(0)">返回上一题</a>
+      </div>
+    </div>
+ 
+    <div class="question ">
+      <div class="question-title">
+          9. 我做事情，经常：
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="1">
+                  <div>
+                  A、缺少长性，不喜欢长期做相同无变化的事情。
+                  </div>
+               </li>
+            
+              <li data-score="2">
+                  <div>
+                  B、缺少果断，期待最好的结果但总能先看到事情的不利面。
+                  </div>
+               </li>
+            
+              <li data-score="3">
+                  <div>
+                  C、缺少耐性，有时行事过于草率。
+                  </div>
+               </li>
+            
+              <li data-score="4">
+                  <div>
+                  D、缺少紧迫，行动迟缓，难下决心。
+                  </div>
+               </li>
+            
+          
+        </ul>
+      </div>
+
+      <div class="prev">
+        <a href="javascript:void(0)">返回上一题</a>
+      </div>
+    </div>
+ 
+    <div class="question ">
+      <div class="question-title">
+          10、 通常我完成任务的方式是：
+      </div>
+      <div class="options button">
+        <ul>
+          
+          
+          
+            
+              <li data-score="1">
+                  <div>
+                  A、常赶在最后期限前完成，是临时抱佛脚的高手。
+                  </div>
+               </li>
+            
+              <li data-score="2">
+                  <div>
+                  B、自己有严格规定的程序，精确地做，不要麻烦别人。
+                  </div>
+               </li>
+            
+              <li data-score="3">
+                  <div>
+                  C、先做，快速做。
+                  </div>
+               </li>
+            
+              <li data-score="4">
+                  <div>
+                  D、使用传统的方法按部就班，需要时从他人处得到帮忙。
+                  </div>
+               </li>
+            
+          
+        </ul>
+      </div>
+
+      <div class="prev">
+        <a href="javascript:void(0)">返回上一题</a>
+      </div>
+    </div>
+ 
+
+
+<div class="result">
+    <div class="title">
+      <h2>
+        结果
+      </h2>
+      <div class="title-sub aside">
+
+      </div>
+    </div>
+
+    <div class="share tools-button" onclick="mask();">
+      分享
+    </div>
+
+    <div class="follow-us tools-button">
+      <a href="http//mp.weixin.qq.com/s?__biz=MjM5NjA0MTI0OQ==&mid=200068987&idx=1&sn=1de5daeaae94c66a3c46a13e20e8011e#rd">关注"上街吧"微信公众账号</a>
+    </div>
+	<CENTER>
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a><a href="#" class="bds_kaixin001" data-cmd="kaixin001" title="分享到开心网"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin","sqq","mshare","kaixin001","copy"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http//bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</center>
+</div>
+
+
+       <div id="mask" onclick="mask();"></div>
+       <div id="tip"  onclick="mask();"><img  style="width:320px;" src="http//www.lanrenmb.com/wap/126/img/guide.png"/>
+       </div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 手机网站适应性广告代码 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1449491313257558"
+     data-ad-slot="1246518959"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</html>

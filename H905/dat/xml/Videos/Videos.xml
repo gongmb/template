@@ -1,0 +1,22 @@
+﻿<DynamicWeb>
+
+<Sections>
+		<data titlex="TOMB RAIDER" img="dat/Images/Videos/img.jpg" video="dat/Videos/movie001.flv" widthx="600" heightx="300"></data>	
+		<data titlex="SPIDER MAN3" img="dat/Images/Videos/img2.jpg" video="dat/Videos/movie001.flv" widthx="550" heightx="300"></data>	
+		<data titlex="TRANSFORMER" img="dat/Images/Videos/img3.jpg" video="dat/Videos/movie001.flv" widthx="550" heightx="400"></data>	
+		<data titlex="MISSION IMPOSSIBLE III" img="dat/Images/Videos/img4.jpg" video="dat/Videos/movie001.flv" widthx="400" heightx="500"></data>	
+		<data titlex="SUPER MAN" img="dat/Images/Videos/img5.jpg" video="dat/Videos/movie001.flv" widthx="400" heightx="500"></data>	
+		<data titlex="THE SIMPSON" img="dat/Images/Videos/img3.jpg" video="dat/Videos/movie001.flv" widthx="400" heightx="500"></data>	
+		<data titlex="Loren Ipsum" img="dat/Images/Videos/img4.jpg" video="dat/Videos/movie001.flv" widthx="400" heightx="500"></data>	
+		<data titlex="Loren Ipsum" img="dat/Images/Videos/img2.jpg" video="dat/Videos/movie001.flv" widthx="400" heightx="500"></data>	
+		<data titlex="Loren Ipsum" img="dat/Images/Videos/img5.jpg" video="dat/Videos/movie001.flv" widthx="400" heightx="500"></data>	
+		<data titlex="Loren Ipsum" img="dat/Images/Videos/img3.jpg" video="dat/Videos/movie001.flv" widthx="400" heightx="500"></data>	
+		<data titlex="Loren Ipsum" img="dat/Images/Videos/img.jpg" video="dat/Videos/movie001.flv" widthx="400" heightx="500"></data>	
+		<data titlex="Loren Ipsum" img="dat/Images/Videos/img4.jpg" video="dat/Videos/movie001.flv" widthx="400" heightx="500"></data>	
+		
+
+
+</Sections>
+
+
+</DynamicWeb>

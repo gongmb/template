@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http//www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="target-densitydpi=medium-dpi,width=device-width,initial-scale=1" name="viewport" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>相忘江湖</title>
+
+<link type="text/css" href="css/app.css" rel="stylesheet"/>  
+
+<script type="text/javascript" src="js/jQuery.js" ></script>
+<script type="text/javascript" src="js/swipe.js" ></script>
+<script type="text/javascript" src="js/zepto.js" ></script>
+<!--图片轮播所用 -->    
+
+</head>
+<body>
+
+<div class="header"><span>相忘江湖</span></div>
+
+<div id="channel">
+   
+	<div class="body">
+	
+		<!--幻灯片管理-->
+		<div style="-webkit-transform:translate3d(0,0,0);">
+			<div id="banner_box" class="box_swipe">
+				<ul>
+					<li><a href="http//www.zjf88.com/"><img src="img/banner/0.jpg" alt="1" style="width:100%;" /></a></li>
+					<li><a href="http//www.zjf88.com/"><img src="img/banner/1.jpg" alt="2" style="width:100%;" /></a></li>
+					<li><a href="http//www.zjf88.com/"><img src="img/banner/2.jpg" alt="3" style="width:100%;" /></a></li>
+					<li><a href="http//www.zjf88.com/"><img src="img/banner/3.jpg" alt="4" style="width:100%;" /></a></li>
+					<li><a href="http//www.zjf88.com/"><img src="img/banner/4.jpg" alt="5" style="width:100%;" /></a></li>
+				</ul>
+				<ol>
+					<li class="on"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+		$(function(){
+			new Swipe(document.getElementById('banner_box'), {
+				speed:500,
+				auto:3000,
+				callback: function(){
+					var lis = $(this.element).next("ol").children();
+					lis.removeClass("on").eq(this.index).addClass("on");
+				}
+			});
+		});
+		</script>
+	
+	
+		<div class="subNav">
+			<a href="http//www.zjf88.com/"><img src="img/1.png" width="60" /><p>江湖</p></a>
+			<a href="http//www.zjf88.com/"><img src="img/2.png" width="60" /><p>江湖</p></a>
+			<a href="http//www.zjf88.com/"><img src="img/3.png" width="60" /><p>江湖</p></a>
+			<a href="http//www.zjf88.com/"><img src="img/4.png" width="60" /><p>江湖</p></a>
+			<a href="http//www.zjf88.com/"><img src="img/5.png" width="60" /><p>江湖</p></a>
+			<a href="http//www.zjf88.com/"><img src="img/6.png" width="60" /><p>江湖</p></a>
+			<a href="http//www.zjf88.com/"><img src="img/7.png" width="60" /><p>江湖</p></a>
+			<a href="http//www.zjf88.com/"><img src="img/8.png" width="60" /><p>江湖</p></a>
+			<a href="http//www.zjf88.com/"><img src="img/9.png" width="60" /><p>江湖</p></a>
+			<a href="http//www.zjf88.com/"><img src="img/10.png" width="60" /><p>江湖</p></a>
+			<a href="http//www.zjf88.com/"><img src="img/11.png" width="60" /><p>江湖</p></a>
+			<a href="http//www.zjf88.com/"><img src="img/12.png" width="60" /><p>江湖</p></a>
+			<a href="http//www.zjf88.com/"><img src="img/13.png" width="60" /><p>江湖</p></a>
+			<a href="http//www.zjf88.com/"><img src="img/14.png" width="60" /><p>江湖</p></a>
+			<div class="c"></div>
+		</div> 
+	
+		<div class="footer" style="text-align:center; margin:20px">       
+			<a href="http//www.zjf88.com/"><img src="img/logo.gif" width="32" /></a> 
+			<div style="line-height:32px;color:#000000">共享于江湖©相忘于江湖</div>   
+		</div>
+	
+	</div>
+	
+</div>
+
+
+</body>
+</html>

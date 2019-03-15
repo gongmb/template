@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no"/>
+<title>智能点菜</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function change() {
+  var value = document.getElementById('range').value ;
+  document.getElementById('value').innerHTML = value;
+}
+</script>
+</head>
+<body style="padding:0 0 50px;">
+   <div class="box people"><p>就餐人数 <strong id="value">4</strong> 人</p><p><input id="range" onChange="change()" value="4" type="range" min="1" max="20"></p></div>
+   <div class="box znxc">
+      <ul>
+       <li><a href="javascript:void(0);"><img src="images/cai.jpg" width="160" height="120"></a><span>x1</span>
+      <h1>特色牛肉</h1>
+      <h2>&yen;49.00/份</h2>
+    </li>
+    <li><a href="javascript:void(0);"><img src="images/cai.jpg" width="160" height="120"></a><span>x1</span>
+      <h1>特色牛肉</h1>
+      <h2>&yen;49.00/份</h2>
+    </li>
+    <li><a href="javascript:void(0);"><img src="images/cai.jpg" width="160" height="120"></a><span>x1</span>
+      <h1>特色牛肉</h1>
+      <h2>&yen;49.00/份</h2>
+    </li>
+    <li><a href="javascript:void(0);"><img src="images/cai.jpg" width="160" height="120"></a><span>x1</span>
+      <h1>特色牛肉</h1>
+      <h2>&yen;49.00/份</h2>
+    </li>
+    <li><a href="javascript:void(0);"><img src="images/cai.jpg" width="160" height="120"></a><span>x1</span>
+      <h1>特色牛肉</h1>
+      <h2>&yen;49.00/份</h2>
+    </li>
+      </ul>
+      <p>总计：<strong>&yen;148.00</strong> / 6 个菜</p>
+      <div class="caozuo"><span id="item"><a href="#" id="jiaru">加入菜单</a></span><span id="item"><a href="#" id="huan">换一桌</a></span></div>
+   </div>
+<footer>
+  <ul>
+    <li><a href="#" id="zxdz">在线订座</a></li>
+    <li class="current"><a href="#" id="zxdc">在线点餐</a></li>
+    <li><a href="#" id="ddan">我的订单</a></li>
+    <li><a href="#" id="hyzx">会员中心</a></li>
+    <li>
+      <div class="gwc"><span>99</span></div>
+    </li>
+  </ul>
+</footer>
+</body>
+</html>

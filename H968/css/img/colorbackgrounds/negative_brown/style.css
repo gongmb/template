@@ -1,0 +1,185 @@
+
+   
+/* =============================================================================
+   User modular styles
+   ========================================================================== */
+
+/* XXXXXXXXXXXX  Accents Color  XXXXXXXXXXXXXX */
+
+.no-js #footerwrap ul li a:hover{
+color:#fafafa;
+}
+::-moz-selection {
+background:#AB1A1A;
+}
+::selection {
+background:#AB1A1A;
+}
+p a,blockquote,a.superbutton:hover,a.superbutton.selected,.no-js #footerwrap ul li a:hover,.gs_12 .thedash,.gs_11 .thedash,.gs_10 .thedash,.gs_9 .thedash,.gs_8 .thedash,.gs_7 .thedash,.gs_6 .thedash{
+border-color:#AB1A1A;
+}
+#menus li.current a,#menus li a:hover,#menus > li.current-hover > a,#menus li ul{
+border-left-color:#AB1A1A;
+}
+#menus li ul li a:hover,.sloganbox > h2 a:hover,.sloganbox > h3 a:hover,.pagination .current,.pagination a:hover,.no-js form.subscribe-form input[type="submit"]:hover{
+border-bottom-color:#AB1A1A;
+}
+ul.sidebar .widget_search input[type="text"]:focus,form.subscribe-form input[type="text"]:focus,.no-js form.subscribe-form input[type="text"]:hover{
+border-bottom:1px solid #AB1A1A !important;
+}
+#menus li ul li.current-hover > a{
+border-color:#AB1A1A !important;
+}
+a:hover,h1 strong,h2 strong,h3 strong,h4 strong,h5 strong,h6 strong,h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,.dropcapcolor,.sloganbox > h2 a,.sloganbox > h3 a,p.postinfo a:hover,.twitbox ul.tweet_list li a:hover,.twitbox ul.tweet_list li span.tweet_time a:hover,#HAL p,.pdesc a:hover,.portfolioitemwrap .pinfohead a:hover,.copyrights a:hover,#footerwrap .bottommenus li a:hover{
+color:#AB1A1A;
+}
+.dropcapspot,a.superbutton:hover,a.superbutton.selected,#ev_portfolio_type01 #portf2items > div a + a:hover h5,#main .contactform input[type="button"]{
+background-color:#AB1A1A;
+}
+#HAL .insides{
+background:#AB1A1A;
+box-shadow:0 0 20px #AB1A1A;
+}
+a.superbutton{
+color:#fafafa;
+}
+#main .contactform input[type="text"]:focus,#main .contactform textarea:focus{
+border-color:#b8babf !important;
+border-bottom-color:#AB1A1A !important;
+}
+#main .contactform input[type="button"]{
+border-color:#AB1A1A;
+color:#ffffff;
+}
+#main .contactform input[type="button"]:hover{
+border-bottom-color:#AB1A1A;
+}
+
+/* XXXXXXXXXXXX  Contrast Color  XXXXXXXXXXXXXX */
+
+p.postinfo,.superpostbox p.postinfo,.twitbox p.loading,.twitbox ul.tweet_list li,ul.sidebar .widgettitle,ul.sidebar .widget_search input[type="text"]{
+color:#D9D9D9;
+}
+body,a.superbutton,.fancybox h2 > span,#main .contactform input[type="button"]:hover,#header,#menus li ul,#menus li ul li ul,#menus li ul li.hassubmenu > a,#menus.fixed li ul li.hassubmenu > a,#collage li a h5,.textboxleft h5 span,.fancybox h2 span,.fancybox h2>span,#portf2items a h5,#portf2items div.ds_zoomer_pic,#portf2items div.ds_zoomer_vid,#portf2items div.ds_zoomer_more,#footerwrap,form.subscribe-form input[type="text"],#footer ul.icons li a:hover{
+background-color:#D9D9D9;
+}
+#main .contactform input[type="button"]:hover{
+border-color:#D9D9D9;
+}
+a.superbutton:hover,a.superbutton.selected,#main .contactform input[type="button"],#slider,#collage{
+border-bottom-color:#D9D9D9;
+}
+a.superbutton{
+border-top-color:#D9D9D9;
+}
+
+/* Slightly lighter Contrast Color 1 */
+form.subscribe-form input[type="submit"],.copyrights,#menus li ul li a:hover,#footerwrap ul li a:hover,.gs_12 .thedash, .gs_11 .thedash,.gs_10 .thedash,.gs_9 .thedash,.gs_8 .thedash,.gs_7 .thedash,.gs_6 .thedash{
+background-color:#CCCCCC;
+}
+#menus li ul li.current-hover > a{
+background-color:#CCCCCC !important;
+}
+
+/* Slightly lighter Contrast Color 2 */
+#menus li ul li:first-child,.copyrights{
+border-top-color:#BFBFBF;
+}
+#menus li ul li a,#footerwrap ul li a,#footerwrap .widgettitle{
+border-bottom-color:#BFBFBF;
+}
+#footerwrap .bottommenus li{
+border-left-color:#BFBFBF;
+}
+form.subscribe-form input[type="text"],form.subscribe-form input[type="submit"]{
+border-color:#BFBFBF;
+}
+#menus li ul li.hassubmenu > a{
+background-image:url("./utility_sprite.png");
+}
+
+/* Slightly darker Contrast Color */
+.copyrights{
+box-shadow:0px -2px #E5E5E5;
+}
+form.subscribe-form input[type="text"]:focus,.no-js form.subscribe-form input[type="text"]:hover{
+background:#E5E5E5 !important;
+}
+form.subscribe-form input[type="submit"]{
+text-shadow:1px 1px #E5E5E5;
+}
+
+/* Text Contrast Color 1 */
+#menus li a > span:first-child,#footerwrap .widgettitle,#footerwrap strong,#footerwrap p,#collage li a h5,#footerwrap ul li,.textboxleft h5 span,.fancybox h2 span{
+color:#0c0c0c;
+}
+form.subscribe-form input[type="text"]:focus,.no-js form.subscribe-form input[type="text"]:hover{
+color:#0c0c0c !important;
+}
+#menus li a{
+border-left-color:#0c0c0c;
+}
+
+/* Text Contrast Color 2 */
+#menus li ul li a,#footerwrap ul li a,.copyrights a,form.subscribe-form input[type="text"],form.subscribe-form input[type="submit"]{
+color:#191919;
+}
+
+/* Text Contrast Color 3 */
+#menus li a > span,#footerwrap small{
+color:#292929;
+}
+
+
+/* XXXXXXXXXXXX  Main block Color  XXXXXXXXXXXXXX */
+
+/* Main Color #FDFDFD */
+#mainwrap,#dstable td.even,ul.sidebar li ul li a,ul.sidebar .widget_search input[type="submit"],.postwrap > h2, .textboxright > h2,#header + #entertainerwrap.slider,#header.supermenu + #entertainerwrap.slider{
+background-color:#544532;
+background-image:url("./utility_sprite.png");
+}
+/* Main Color - Lighter #F7F7F7 */
+ul.sidebar li ul li a:hover,#dstable td.odd,#main .ds_tabber,#main div.toggler,#main pre,#main code,ul.tabber li:hover,ul.tabber li.selected, ul.sidebar li ul li.current_page_item a,.pagination a:hover{
+background-color:#473B2B;
+}
+#main .ds_tabber,ul.tabber li{
+box-shadow: 0 0px 2px #473B2B inset;
+}
+/* Main Color - Darker #D0D3D9 */
+.sloganbox,#main hr,#main div.toggler,#main .ds_tabber,#main pre,img.border_magic,iframe.border_magic,#main .contactform input[type="text"],#main .contactform textarea,div.border_magic,ul.tabber li,ul.tabber li:hover,ul.tabber li.selected,#main code,.pagination span, .pagination a,.postwrap,p.postinfo,.textboxright,.textboxleft h5+h5,.fancybox h2 + h2,.hr,ul.sidebar li ul li a,ul.sidebar .widget_search input[type="text"],ul.sidebar li ul,ul.sidebar .widget_search input[type="submit"]{
+border-color:#5E4E3A;
+}
+#main div.toggler{
+box-shadow: 0 1px 3px #5E4E3A inset;
+}
+ul.tabber li,#dstable th.tablecol, #dstable td.tableid{
+background-color:#5E4E3A;
+}
+/* Main Color - Darker 2 #b8babf */
+#dstable th.tablecol, #dstable td.tableid, #dstable td.even, #dstable td.odd,#dstable td.first,#dstable td.last{
+border-color:#705D46;
+}
+#main .contactform input[type="text"]:focus, #main .contactform textarea:focus {
+border-color: #705D46 #705D46 #AB1A1A !important;
+}
+
+/* Text Main Color 1 #0c0c0c */
+#main .sloganbox > h2,#main .sloganbox > h3,#main .sloganbox > h2 a,#main .sloganbox > h3 a,.pagination .current{
+color:#ffffff;
+}
+/* Text Main Color 2 #43484C */
+.fancybox h2 + h2,#main pre,#main code,#main a,#main h1,#main h2,#main h3,#main h4,#main h5,#main h6,#main ul.sidebar p strong{
+color:#fdfdfd;
+}
+#main a:hover,#main .sloganbox > h2 a:hover,#main .sloganbox > h3 a:hover{
+color:#AB1A1A; /* preserve onhover color (accents color) */
+}
+/* Text Main Color 3 #747880 */
+#main p,.postwrap > h2 span,#main .pagination a:hover,#main ul.tabber li a:hover,.pagination span, .pagination a, .textboxright > h2 span,#main h1 span, #main h2 span, #main h3 span, #main h4 span, #main h5 span, #main h6 span,body #main, #main button, #main input, #main select, #main textarea{
+color:#fafafa;
+}
+
+/* =============================================================================
+   ///User modular styles
+   ========================================================================== */
+   

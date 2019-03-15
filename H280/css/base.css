@@ -1,0 +1,265 @@
+body,ul,li,h1,h2,h3,img{
+	margin: 0px;
+	padding: 0px;
+	list-style:none;
+	border:none;
+}
+
+
+
+body {
+	padding: 0px;
+	margin: auto;
+	font-family: "黑体", "仿宋", Arial, "Arial Unicode MS", System;
+	background-color: #FFF;
+	font-size: 14px;
+	text-align: left;
+	}
+#head ul li a {
+	color: #999;
+	text-decoration: none;
+	font-size: 13px;
+}
+#head ul li a:hover {
+	color: #0066ff;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+	
+#head {
+	height: 80px;
+	width: 100%;
+	background-image: url(../pic/jb1.png);
+	background-position: bottom;
+	background-repeat: repeat-x;
+	margin: auto;
+}
+#footer #ftnr {
+	margin: auto;
+	height: auto;
+	width: 950px;
+}
+
+#zhuti {
+	height: 435px;
+	width: 100%;
+	background-image: url(../pic/zt1.png);
+	background-repeat: no-repeat;
+	margin: auto;
+}
+
+#head img {
+	float: left;
+	height: 40px;
+	width: 160px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	text-align: left;
+}
+#head ul {
+	float: left;
+	height: 25px;
+	width: 600px;
+	margin-top: 40px;
+	margin-left: 50px;
+	text-align: center;
+}
+#zhuti #wenzi {
+	height: 300px;
+	width: 500px;
+	padding-top: 150px;
+	padding-left: 420px;
+}
+#neirong {
+	margin: auto;
+	height: auto;
+	width: 950px;
+}
+
+#zhuti #wenzi p {
+	color: #999;
+}
+#wzgx {
+	clear: left;
+	padding-top: 30px;
+}
+#wzgx img {
+
+}
+
+
+#head ul li {
+	float: left;
+	height: 25px;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	list-style-type: none;
+}
+#head ul li ul{
+	display: none;
+	position: absolute;
+	left: 50px;
+	bottom: 26px;
+	height: 25px;
+	width: 300px;
+	margin-top: -20px;
+	margin-left: -90px;
+   }
+#head ul li ul li {
+	padding-top: 5px;
+	height: 25px;
+	width: 90px;
+}
+
+#head ul li .aaa {
+	text-decoration: none;
+	color: #999;
+	font-size: 12px;
+}
+
+#head ul li .aaa:hover {
+	text-decoration: none;
+	color: #0066ff;
+	font-size: 14px;
+}
+
+
+#head ul li:hover ul {
+	display: block;
+	height: 25px;
+	width: 300px;
+	position: relative;
+}
+
+
+.aaa:hover {
+	font-size: 16px;
+	display: block;
+	text-decoration: none;
+	height: 25px;
+	width: 90px;
+}
+
+
+#wzgx ul {
+	float: left;
+	width: 400px;
+	padding-right: 75px;
+	padding-top: 30px;
+}
+#footer {
+	float: left;
+	height: 80px;
+	width: 100%;
+	background-image: url(../pic/jb3.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	margin-top: 20px;
+}
+#head #tbnr {
+	margin: auto;
+	width: 950px;
+}
+
+/*作品展示*/ 
+#wzgx ul li {
+	color: #666;
+	list-style-type: none;
+	padding-top: 3px;
+}
+#footer ul li {
+	float: left;
+	list-style-type: none;
+	padding-top: 20px;
+}
+#footer #bq {
+	padding-top: 30px;
+	float: right;
+}
+#footer ul li a {
+	text-decoration: none;
+	color: #999;
+	padding-right: 10px;
+}
+#footer ul li a:hover {
+	padding-right: 10px;
+	text-decoration: none;
+	color: #0066ff;
+}
+#wzgx ul li span {
+	padding-right: 10px;
+}
+
+.box li{
+	width:200px;
+	height:120px;
+	margin-right:25px;
+	float:left;
+	overflow:hidden;
+	position:relative;
+	border: 4px solid #eee;
+	margin-bottom: 20px;
+}
+#neirong .box {
+	margin: auto;
+	width: 950px;
+	padding-top: 30px;
+}
+
+.toll_img{
+	width:200px;
+	height:120px;
+}
+.toll_info{
+	height:120px;
+	background:#EEE;
+	vertical-align:middle;
+	display:table-cell;
+	width: 200px;
+}
+.box li p{ padding:10px; font:normal 13px/24px '微软雅黑'; cursor:pointer;}
+.box li a{ color:#666; text-decoration:none; position:absolute; top:0; left:0;}
+
+
+/*ie6检测*/ 
+#ie6-warning{
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background:#d6d6d6;
+	font-size:12px;
+	height: 100px;
+}
+#ie6-warning p{
+	width:950px;
+	margin:0 auto;}
+#zuopin {
+	margin: auto;
+	width: 950px;
+}
+#head #tbnr a img {
+	float: left;
+	height: 32px;
+	width: 32px;
+	padding-left: 20px;
+	margin-top: 12px;
+}
+#contact p {
+	left: 660px;
+	top: 160px;
+	padding-top: 160px;
+	padding-left: 660px;
+	color: #666;
+}
+#contact {
+	background-image: url(../pic/map.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 410px;
+	width: 950px;
+	margin: auto;
+}

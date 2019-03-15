@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http//www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>RFID定位系统</title>
+<link rel="stylesheet" type="text/css" href="../css/index.css" />
+<style type="text/css">
+p span{ font-size:14px; font-weight:bold; line-height:40px;}
+</style>
+</head>
+<body class="bodybg01" style="background:#fff;">
+<div id="content">
+  <table width="100%" class="a01">
+    <tr>
+      <td width="8%" style="text-align:right;">当前位置：</td>
+      <td>首页</td>
+    </tr>
+  </table>
+  <table width="100%" >
+    <tr>
+      <td style=" padding: 20px 0 0 100px;"><img src="../images/zhuye1.jpg" alt="" /></td>
+
+    </tr>
+  </table>
+  <div class="shdlo">
+    <p style="margin-left:50px; padding:20px 0 20px 0;"><span>设备管理</span><br />
+      与JCR设备名称对应并关联更多的属性定义，如：安装位，管理的区域及其它参数定义。<br />
+      通过JCR连通的返回值判断是否通讯正常，可以以图标方式显示正常与非正常的关系。<br />
+      读卡设备与功能可能是一对多的关系，可定义为进、出、报警等特殊功能，常规读取并统计的功能均要有<br />
+      将一或多个读卡设备编成一组进行统一管理，可以会遇会同一设备分属不同的编组。编组可自定义创建：如1F的设备、盘点的设备等。<br />
+      <span>标签管理</span><br />
+      对象管理中均要有添、删、改、查、模糊、批量等功能（含图或照片信息），支持导入导出功能。<br />
+      标签：需有‘卡面编号、射频ID、频段说明<br />
+      关联指与已添加成功的卡号与管理对象进行对应（至少应有管理对象的名称及编号），同时还可去除关联属性。<br />
+      标签管理是指在设计时需考虑批量发卡、换卡、补卡、注销卡、查询卡状态（挂失、正常使用、停用）等功能。可参考门禁发卡管理功能。<br />
+      <span>人员管理</span><br />
+      可以对人员信息进行管理、添、删、改、查<br />
+      <span>物品管理</span>
+	  可以对物品信息进行管理、添、删、改、查<br />
+      <span>车辆管理</span>
+	  可以对车辆信息进行管理、添、删、改、查<br />
+      <span>地图管理</span><br />
+      地图分层管理，JPG地图导入相应目录<br />
+      如：绿地领海-5号楼-15层（地图导入）<br />
+      地图位置及地图的增、删、改等管理<br />
+      读写设备放入地图对应的安装位，最好能标覆盖范围（也可在地图上直接做好）<br />
+      <span>查询统计</span><br />
+      设置统计的时间段；设置查询与统计的对象及设备。<br />
+      在可设置的当前时间段内统计各区域内的对象及数量。<br />
+      对某对象在各区域内滞留时间的统计。<br />
+      通过设备条件查询输出各监控对象的进出时间及滞留时间。可以列表方式显示就近及历史记录。<br />
+      通过输入某对象属性，如姓名、名称等条件查询输出各设备监控点的进出时间及跟踪路径。<br />
+      <span>系统设置</span><br />
+      可进行相关软联动的设置，如发现警报时可启动某语音（声音）文件或其它POP窗口提示。<br />
+      将标签与读卡器关联，当读到非关联的射频ID时启动警报，显示警报信息。另外一项：当读到与标签关联的射频ID时，警报输出（该选项适合重点对象的提示<br />
+      可设置开启警报的时间段，启用或关闭。<br />
+      短信警报指定通知，可指定群发功能；<br />
+      利用控制板协议控制干触点输出开关及带一定延时的开与关或常开、常闭等。（不在本次系统研发范围）<br />
+    </p>
+    <table width="100%" class="qx" style="border-top: 1px solid #DBDBDB;">
+      <tr>
+        <td width="4%" style="text-align:center;">&nbsp;</td>
+        <td width="3%">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+
+  </div>
+</div>
+</body>
+</html>

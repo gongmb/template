@@ -1,0 +1,232 @@
+﻿<DynamicWeb>
+
+<Sections>
+
+	<data>
+		<date>Songs Name</date>
+		<title>Artist Name</title>
+		<img>dat/Images/Music/img.jpg</img>
+		<info>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore <a href="http//www.demo.com" target="_blank">http//www.demo.com</a> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a href="http//www.demo.com" target="_blank">http//www.demo.com</a><br /> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia  <a href="http//www.demo.com" target="_blank">http//www.demo.com</a> voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.  <a href="http//www.demo.com" target="_blank">http//www.demo.com</a> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?END</info>
+		<BigImg>dat/Images/Music/Bimg.jpg</BigImg>	
+		<Song>dat/Music/music.mp3</Song>
+	</data>
+	
+		<data>
+		<date>You Dont Know</date>
+		<title>Eminem</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>	
+	<Song>dat/Music/music.mp3</Song>		
+	</data>
+	
+	
+	<data>
+		<date>Escape</date>
+		<title>Enrique Iglesis</title>
+		<img>dat/Images/Music/img.jpg</img>
+		<info>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore <a href="http//www.demo.com" target="_blank">http//www.demo.com</a> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a href="http//www.demo.com" target="_blank">http//www.demo.com</a><br /> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia  <a href="http//www.demo.com" target="_blank">http//www.demo.com</a> voluptas sit aspernatur</info>
+	<BigImg>dat/Images/Music/Bimg.jpg</BigImg>	
+	<Song>dat/Music/music.mp3</Song>		
+	</data>
+	
+	<data>
+		<date>Little Bit</date>
+		<title>50 Cent</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>		
+	<Song>dat/Music/music.mp3</Song>	
+	</data>
+	
+	<data>
+		<date>Hard Core</date>
+		<title>Move Your Body</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>		
+	<Song>dat/Music/music.mp3</Song>	
+	</data>
+	
+		
+	<data>
+		<date>JOJO</date>
+		<title>Too Little Too late</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>		
+	<Song>dat/Music/music.mp3</Song>	
+	</data>
+	
+		
+	<data>
+		<date>Johny Gaddar</date>
+		<title>Move Shaddy</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>		
+	<Song>dat/Music/music.mp3</Song>	
+	</data>
+	
+		
+	<data>
+		<date>Just A Little Bit</date>
+		<title>50 Cent</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>		
+	<Song>dat/Music/music.mp3</Song>	
+	</data>
+	
+		
+	<data>
+		<date>Like This</date>
+		<title>DEEPAK</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>		
+	<Song>dat/Music/music.mp3</Song>	
+	</data>
+	
+		
+	<data>
+		<date>Gun Roses</date>
+		<title>Witny Houstan</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>		
+	<Song>dat/Music/music.mp3</Song>	
+	</data>
+	
+		
+	<data>
+		<date>Piyar May</date>
+		<title>Roxen</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>		
+	<Song>dat/Music/music.mp3</Song>	
+	</data>
+	
+		
+	<data>
+		<date>Deep Love</date>
+		<title>50 Cent</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>		
+	<Song>dat/Music/music.mp3</Song>	
+	</data>
+	
+		
+			<data>
+		<date>You Dont Know</date>
+		<title>Eminem</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>	
+	<Song>dat/Music/music.mp3</Song>		
+	</data>
+	
+	
+	<data>
+		<date>Escape</date>
+		<title>Enrique Iglesis</title>
+		<img>dat/Images/Music/img.jpg</img>
+		<info>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore <a href="http//www.demo.com" target="_blank">http//www.demo.com</a> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a href="http//www.demo.com" target="_blank">http//www.demo.com</a><br /> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia  <a href="http//www.demo.com" target="_blank">http//www.demo.com</a> voluptas sit aspernatur</info>
+	<BigImg>dat/Images/Music/Bimg.jpg</BigImg>	
+	<Song>dat/Music/music.mp3</Song>		
+	</data>
+	
+	<data>
+		<date>Little Bit</date>
+		<title>50 Cent</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>		
+	<Song>dat/Music/music.mp3</Song>	
+	</data>
+	
+	<data>
+		<date>Hard Core</date>
+		<title>Move Your Body</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>		
+	<Song>dat/Music/music.mp3</Song>	
+	</data>
+	
+		
+	<data>
+		<date>JOJO</date>
+		<title>Too Little Too late</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>		
+	<Song>dat/Music/music.mp3</Song>	
+	</data>
+	
+		
+	<data>
+		<date>Johny Gaddar</date>
+		<title>Move Shaddy</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>		
+	<Song>dat/Music/music.mp3</Song>	
+	</data>
+	
+		
+	<data>
+		<date>Just A Little Bit</date>
+		<title>50 Cent</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>		
+	<Song>dat/Music/music.mp3</Song>	
+	</data>
+	
+		
+	<data>
+		<date>Like This</date>
+		<title>DEEPAK</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>		
+	<Song>dat/Music/music.mp3</Song>	
+	</data>
+	
+		
+	<data>
+		<date>Gun Roses</date>
+		<title>Witny Houstan</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>		
+	<Song>dat/Music/music.mp3</Song>	
+	</data>
+	
+		
+	<data>
+		<date>Piyar May</date>
+		<title>Roxen</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>		
+	<Song>dat/Music/music.mp3</Song>	
+	</data>
+	
+		
+	<data>
+		<date>Deep Love</date>
+		<title>50 Cent</title>
+		<img>dat/Images/Music/img2.jpg</img>
+		<info>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="http//www.demo.com" target="_blank">http//www.demo.com</a>   loremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</info>
+	<BigImg>dat/Images/Music/Bimg2.jpg</BigImg>		
+	<Song>dat/Music/music.mp3</Song>	
+	</data>
+	
+</Sections>
+
+
+</DynamicWeb>

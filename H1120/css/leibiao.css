@@ -1,0 +1,51 @@
+@charset "utf-8";html, body{margin:0;height:100%;font-size:16px;font-family:Arial}
+ul,li,dl,dt,dd,p,form,em,span{margin:0;list-style:none;color:#000;font-style:normal}
+
+a{text-decoration:none;color:#333}
+a:hover{color:#f00;text-decoration:none}
+body, font{line-height:18px;color:#333}
+select, input{padding:0;margin:0;color:#666}
+.srk{ margin:10px 6px 10px 8px; width:200px; height:30px}
+#btnSubmit{ height:30px; width:50px}
+.direct{padding:0 5px 0 5px}
+#scr{color:#999;height:26px;background:url(/iphone/img/titlebg.gif) repeat-x;padding:3px 0 0 5px}
+.footer{background:#FFE7D7;text-align:center;margin-top:2px;line-height:30px}
+.footinfo{background:#fff;text-align:center;padding:8px 0;color:#999}
+.footinfo a{color:#999}
+.mc{text-align:right;padding-bottom:3px}
+.btm{height:22px;background:#A40000 url(/iphone/img/btm.gif) repeat-x;padding:10px}
+.btm span{float:left;color:#fff}
+.btm a{color:#fff;float:right}
+.box{ border-bottom:1px solid #ccc}
+.box a{color:#2962B9;height:91px;overflow:hidden;background:#fff;width:auto;display:block;line-height:28px;padding:4px 8px 0 0}
+.box a.bgc{background-color:#f2f2f2}
+.box a img{float:left;padding:2px;border:1px solid #ccc;margin:6px 10px 0 6px;height:70px;width:54px}
+.box a span{font-size:18px;font-weight:bold;color:#298cda;text-decoration:none;padding:10px 0}
+.box a i{color:#000;font-style:normal;text-decoration:none;padding-left:3px}
+.box a em{color:#888}
+
+.npage{width:94%;height:48px;background:#f0f0f0;overflow:hidden;-moz-border-radius: 5px;-khtml-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;margin:10px auto;border:1px solid #cecece}
+.npage div{width:13%;float:left;margin-left:1px}
+.npage div.np_4{width:18%;line-height:48px;text-align:center;font-size:18px}
+.npage div a{display:block;width:25px;height:46px;background:url(/iphone/img/npage.gif) no-repeat;margin:auto}
+.npage div.np_1 a{background-position:0 12px}
+.npage div.np_2 a{background-position:0 -26px}
+.npage div.np_3 a{background-position:0 -63px}
+.npage div.np_5 a{background-position:0 -106px}
+.npage div.np_6 a{background-position:0 -150px}
+.npage div.np_7 a{background-position:0 -195px}
+
+.tsk{margin:auto;width:94%;height:46px;margin-left:3%;position:absolute;margin-top:-50px;display:none}
+.tishi{width:100%;height:46px;position:relative;overflow:hidden}
+.tscon{width:100%;height:46px;position:absolute;z-index:2000;background:#333;opacity:0.7;overflow:hidden;-moz-border-radius: 5px;-khtml-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px}
+.tstext{width:100%;height:46px;line-height:50px;position:absolute;z-index:2100;color:#fff;font-size:16px;text-align:center}
+.block{display:block}
+.none{display:none}
+.nav{color:#fff;background:#A40000;color:#cd3d3d;height:22px; line-height:22px; padding:4px 0 2px 0}
+.nav a{color:#fff;word-break:keep-all;display:block; width:16%; text-align:center; float:left}
+.nav a:hover{color:#fff}
+a.nextp{display:block;width:100%; line-height:30px; padding:5px 0; text-align:center; color:#2C6A9D; background-color:#D7DFE5; margin:auto;font-size:16px; border-bottom:1px solid #C0C9D0;background: -webkit-gradient(linear, left top, left bottom, from(#E9F0F5), to(#CDD8E0)); border-top:1px solid #fff}
+a.nextp:visited{color:#2C6A9D;}
+.footer{ height:34px; margin-top:1px}
+.fll{ float:left; margin-left:10px; color:#c00}
+.frl{ float:right; margin-right:10px; font-size:14px; color:#333; font-weight:bold}

@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+.sift{background-color:#E4EFF8;height:40px;line-height:40px;font-size:15px;color:#135B9A;overflow:hidden;padding:0 30px;position:relative}
+#prev,#next{display:block;width:30px;height:40px;position:absolute}
+#prev{left:0}
+#next{right:0}
+.prevArr,.nextArr{width:0;height:0;border:10px solid;line-height:0; display:block; margin-top:10px}
+.prevArr{border-color:#E4EFF8 #278BE1 #E4EFF8 #E4EFF8}
+.nextArr{border-color:#E4EFF8 #E4EFF8 #E4EFF8 #278BE1;margin-left:10px}
+.siftNav{height:34px;width:100%}
+.siftNav ul{line-height:28px;display:block;width:200%;height:34px}
+.siftNav ul.two{width:100%}
+.siftNav li{width:16.6%;height:28px;margin-top:6px;text-align:center;float:left}
+.siftNav ul.two li{width:50%}
+.siftNav li a,.siftNav li span.cur{padding:0 10px;line-height:28px;display:inline-block;border-radius:4px}
+.siftNav ul.two li a{padding:0 35px}
+.siftNav li span.cur{background-color:#6AABD4;color:#FFF}
+.appNormalList,.appList{width:100%;overflow:hidden}
+.appNormalList{width:100%}
+.appNormalList ul li,.appList ul li{height:80px;border-bottom:1px solid #DEDEDE;line-height:32px; background:url(../images/common/bg.png) 100% -413px no-repeat}
+.appNormalList ul li a,.appInfo a{display:block;position:relative;padding:8px 6px 8px 76px;height:64px;color:#333}
+.appNormalList ul li a.hL{padding-right:120px; line-height:24px}
+.appNormalList ul li a img,.appInfo a img{position:absolute;top:8px;left:8px;border-radius:10px;width:64px;height:64px}
+.appNormalList ul li a span{display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.appNormalList a .lxName{line-height:24px;height:24px;font-size:18px}
+.appNormalList a .text,.appNormalList a .textTit{position:absolute;color:#FF6600;text-align:right;font-size:13px}
+.appNormalList a .text{right:10px;top:30px}
+.appNormalList a .text strong{font-size:20px}
+.appNormalList a .textTit{top:8px;right:10px;width:70px;}
+.appNormalList a .eg{font-size:13px;color:#7B7B7B}
+.appList ul li{background:none;line-height:22px}
+.appInfo{width:80%}
+.appInfo a strong,.appNormalList ul li a span strong{font-size:16px}
+.appInfo a span{color:#666666;font-size:12px;height:20px;line-height:20px}
+.appInfo a em{margin-right:6px}
+.appInfo a #tag{position:absolute;top:8px;left:8px;width:64px;height:64px;display:block;z-index:9999}
+.no1,.no2,.no3{background:url(../images/common/tag.png) no-repeat}
+.no1{background-position:0 0}
+.no2{background-position:0 -64px}
+.no3{background-position:0 -128px}
+.appNormalList ul li a span.gameIntro{height:40px;line-height:20px;white-space:normal;overflow:hidden;color:#666666;font-size:12px;}
+.grade,.size{color:#FF6600;font-weight:bold;font-size:13px}
+.size{color:#49B00B}
+.btnArea{float:right;width:20%;height:36px;padding-top:22px;font-size:12px;color:#666;text-align:right}
+a.dlBtn,a.inGame,a.install,.noDl{width:90%;display:block;height:32px;color:#FFF;line-height:32px;font-size:13px;overflow:hidden;white-space:nowrap;background-color:#F26E2E; margin-bottom:6px}
+a.inGame{background-color:#5FB71E}
+a.install{background-color:#42A2C0}
+.noDl{ background-color:#CCCCCC;color:#666666; text-align:center; border-radius:4px}
+.current{background-color:#E4EFF8;line-height:40px;padding:0 6px;font-size:16px;color:#135B9A}
+a.reset{float:right;background:url(../images/common/back.png) center right no-repeat;width:20px;height:30px;margin:5px 0 0 0;border-left:1px solid #BDDBF4;padding-left:15px;overflow:hidden; text-indent:-9999em}
+.appNormalList ul.two li,.appNormalList ul.three li{width:50%;float:left;font-size:15px;background:url(../images/common/mallborder.gif) right top repeat-y;position:relative}
+.appNormalList ul.three li{width:33.3%}
+.appNormalList ul.two li:nth-child(2n),.appNormalList ul.three li:nth-child(3n){background:none}
+.appNormalList ul.two li span{font-weight:bold}
+.appNormalList ul.two li span:nth-child(2n-1){font-size:12px; font-weight:normal}
+.appNormalList ul.three li{height:104px;}
+.appNormalList ul.three li a{padding:6px 6px 0;height:98px;text-align:center}
+.appNormalList ul.three li a img{position:static}
+.rankTit{background-color:#FB6A4A;border:solid #D35053;border-width:1px 0;color:#CC0000;height:32px;text-align:center; font-size:15px;width:100%}
+.rankTit li{width:33%;float:left}
+.rankTit li a{color:#FFFFFF;display:block}
+.rankTit li span,.rankTit h2{background-color:#FFF;display:inline-block;border-radius:6px;line-height:28px;padding:0 6px;margin-top:2px; font-weight:bold}
+.rankTit li span{color:#CC0000;}
+.rankTit h2{float:left; margin-left:10px}
+.rT2{background-color:#59AC2C;border:solid #57924C;border-width:1px 0;}
+.rT3{background-color:#4EB3D3;border:solid #72A1BE;border-width:1px 0;}
+.rT4{background-color:#63C0B0;border:solid #52B988;border-width:1px 0;color:#52B988}
+.rT5{background-color:#6496A6;border:solid #527D91;border-width:1px 0;color:#527D91}
+.rT2 li span{color:#57924C}
+.rT3,.rT3 li span{color:#3D9AB8}
+.cTop{background-color:#F2761B;display:inline-block!important;padding:0 8px;color:#FFF;font-size:14px!important;line-height:24px;border-radius:6px}
+/*详情及下载*/
+.gameInfo{padding:10px 10px 6px 10px;line-height:22px;border-bottom:1px solid #DEDEDE;font-size:13px}
+.gameInfo .lineTop{position:relative;padding:0 80px 6px 70px;min-height:64px;border-bottom:1px solid #DEDEDE}
+.gameInfo .lineTop .btn{width:80px;position:absolute;top:-4px;right:-10px;line-height:32px}
+.gameInfo strong{font-size:15px}
+.gameInfo .lineTop img{position:absolute;top:0;left:0;width:64px;height:64px;border-radius:12px}
+.gameInfo .lineBtm{border-top:1px solid #FFF;line-height:20px}
+.showImg{background:url(../images/common/imgbg.gif) repeat-x;height:360px;padding-top:10px;border-bottom:1px solid #DEDEDE}
+#showImg{height:320px;width:320px;margin:0 auto;overflow:hidden;position:relative}
+#showImg ul{position:relative;width:100%;height:320px;overflow:hidden}
+#showImg ul li{text-align:center;height:320px;width:320px;float:left;line-height:320px;display:table-cell;vertical-align:middle}
+#showImg ul li img{max-width:320px;max-height:320px;min-width:240px;min-height:240px}
+#showImg #scroller{float:none}
+.imgPositon{width:320px;height:16px;margin:14px auto 0;line-height:16px;text-align:center}
+.imgPositon span{display:inline-block;width:10px;height:10px;text-indent:-9999em; margin:0 3px;border-radius:10px; background-color:#858585; overflow:hidden}
+.imgPositon span.now{background-color:#4F9FE4}
+.imgPage{width:320px;text-align:center;height:24px;color:#0066ff;margin:0 auto;line-height:24px;margin-top:8px}
+.imgPage a{color:#0066FF;line-height:24px;display:inline-block}
+.imgPage a.prev{background:url(../images/common/prev.png) no-repeat left center;background-size:16px;padding-left:16px}
+.imgPage a.next{background:url(../images/common/next.png) no-repeat right center;background-size:16px;padding-right:16px}
+.imgPage span{padding:0 10px}
+.rating{height:32px;line-height:30px;padding:10px 100px 10px 80px;position:relative;border-bottom:1px solid #DEDEDE;border-top:1px solid #FFF}
+.rating span{position:absolute;left:10px;top:10px}
+.ratingInput{border:1px solid #92B7D7;height:30px;border-radius:6px; padding:0 10px;background-color:#FFF;position:relative; z-index:99}
+.ratingInput span.arrDrop{position:absolute;right:4px;left:auto;top:12px;display:block; height:0;width:0;border:7px solid;border-color:#0066FF transparent transparent transparent}
+.ratingInput select{width:80%;height:32px;border:none;background:none;opacity:0;font-size:15px; position:absolute;z-index:1}
+#ratingList{position:absolute;top:32px;left:0;width:100%;border:1px solid #92B7D7;background-color:#fff;display:none;z-index:2}
+#ratingList li{padding:0 10px;border-bottom:1px solid #E6F1FB;line-height:28px}
+#ratingList li a{display:block}
+#ratingList li.even{background-color:#F2F9FF}
+.submitRate,.submitRated{width:80px;height:32px;position:absolute;right:10px;top:10px;color:#FFF;background-color:#ED8000;font-size:13px;border:0;border-radius:6px}
+.submitRated{background-color:#BEBEBE}
+.enterBox{border-top:1px solid #FFF; line-height:32px;text-align:center;}
+.enterBox a,.enterBox span{display:inline-block;width:30%;margin:6px 2px;background-color:#5FB71E;color:#FFF;border-radius:6px; font-size:15px}
+.enterBox span{background-color:#999999}
+.pushLine,.pushLine2{line-height:32px;clear:both;height:32px; margin:0 10px 8px; text-align:center}
+.pushLine a,.pushLine2 a{display:block;float:left; overflow:hidden; white-space:nowrap; text-overflow:ellipsis}
+.pushLine a.a1,.pushLine2 span{width:16%; background-color:#FF9000;color:#FFF}
+.pushLine a.a2,.pushLine2 a{width:80%;text-align:left;padding:0 2%;background-color:#FFF2BE;color:#000000}
+.pushLine a span,.pushLine2 a{color:#FF6600}
+.pushLine2 span{display:block; float:left}
+a.dlGlq{width:100%;display:inline-block;float:none;border:1px solid #51A1E6;background-color:#E6F3FF;color:#2279C3;font-size:15px;border-radius:6px;line-height:32px;text-align:center}
+.dlInfo{line-height:20px;position:relative;font-size:13px; border-top:3px solid #278BE1}
+.bt{border-top:1px solid #DEDEDE}
+.dlInfo dt{color:#003E93;background-color:#F7F7F7;font:bold 15px/28px normal;border-bottom:1px solid #F2F2F2;padding:0 10px}
+.dlInfo dd{padding:2px 6px}
+.dlInfo dd a{display:inline-block;line-height:32px;font-size:14px;background-color:#F26E2E;color:#FFF;text-align:center;width:48%;margin:6px 1%;border-radius:6px;}
+.dlInfo dd a.onLine{background-color:#42A2C0}
+.comment{background-color:#FFFFFF; border-top:1px solid #DEDEDE}
+.comment h4{display:block; background-color:#F0F0F0;border-top:1px solid #FFF; border-bottom:1px solid #DEDEDE;padding:0 10px;line-height:36px;position:relative}
+.comment h4 span{position:absolute;width:24px;height:24px;right:10px;top:6px;display:block;background:url(../images/common/open.gif) no-repeat; background-size:24px; text-indent:-9999em; overflow:hidden}
+.comment h4 span.close{background:url(../images/common/close.gif) no-repeat; background-size:24px}
+.comment ul{line-height:24px}
+.comment li{padding:0 10px 6px;border-top:1px solid #FFF;border-bottom:1px solid #DEDEDE}
+.comment li .time{float:right;color:#999999}
+.post{border-top:1px solid #AAC5DC; background-color:#EEF7FF;height:60px}
+.post .msInput{background: url(../images/common/comment.png) 4px 4px no-repeat #FFF!important;background-size:24px!important; padding-left:30px;}
+.searchTips{line-height:26px;background-color:#FFF8E5;border: 1px solid #FABE1C;padding: 0 6px; margin:6px;color:#BE0000;border-radius:4px}
+/*广告位*/
+.push{border-top:1px dashed #a6a6a6;padding:5px 6px;line-height:32px;clear:both}
+.push ul li{float:left;border:none;height:32px;margin:3px 0}
+.push ul li.three{width:33.3%}
+.push ul li.four{width:25%}
+.push ul li a{background-color:#51a1e6;background-image:none!important;margin:0 4px;padding:0;line-height:32px;color:#FFF;font-size:15px}
+.push ul li a.simple{color:#333333;background-color:#fcfcfc; margin-bottom:6px}
+.mainSearch p{ line-height:30px}
+.mainSearch p em{padding:0 6px;border-radius:12px;margin:0 4px 0 10px;background-color:#f15b40;color:#FFF}
+.mainSearch p a{margin:0 4px}
+.noDate{padding:10px 0;text-align:center; border-top:1px solid #DEDEDE}
+/*报错*/
+.wrong{padding:10px}
+.wrong h2{display:block;line-height:32px; background-color:#FFF3C9;color:#A30800;margin:0 0 10px}
+.wrong tr{line-height:40px}
+.wrong th{text-align:right;width:30%;}
+.wrong th em{color:#BE0000;margin-right:2px}
+.wrong td select{padding:5px}
+.wrong td input{width:90%;height:26px;line-height:26px}
+.wrong td input.sbt{width:100px;background-color:#42A2C0;color:#FFF;border:0;height:32px;border-radius:4px;margin-right:16px}
+/*辅助*/
+.indent{padding-left:10px}
+.pd6{padding:6px 0 6px 10px}
+.mt24{margin-top:24px}
+/*20130328测试表开服表改*/
+.channelTit li.newData a{position:relative;}
+.channelTit li.newData span{position:absolute;top:1px;height:15px;padding:0 6px 0 5px;line-height:15px;color:#fff;font-size:12px;background-color:#f26e2e;border-radius:3px;}
+.appListTop{height:30px;padding:2px 0 0 13px;color:#333;line-height:30px;font-size:15px;border-bottom:1px solid #DEDEDE;background-color:#e4eff8}
+.appListTop span{color:#f60}
+.appInfo a em.dateTimes{font-size:13px;color:#333}
+a.dlBtn2{background-color:#4bb00c}
+.appInfo em.grade{font-weight:normal}
+.appInfo .gift,.appInfo .get{width:45px;height:45px;display:block; position:absolute;top:8px; left:8px; z-index:998}
+.appInfo .gift{background:url(../images/gift.png) no-repeat}
+.appInfo .get{background:url(../images/get.png) no-repeat}

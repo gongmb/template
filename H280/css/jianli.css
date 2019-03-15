@@ -1,0 +1,59 @@
+@charset "utf-8";
+body {
+	margin: auto;
+	color: #999;
+}
+#jl #xsck iframe {
+	height: 510px;
+	width: 680px;
+	float: left;
+}
+#jl #xsck #cd {
+	float: left;
+	width: 200px;
+	padding-left: 40px;
+	padding-top: 25px;
+}
+
+#s1tx img {
+	margin: auto;
+	padding-left: 200px;
+}
+#jl #xsck #cd a img {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+#jl #xsck #cd #xm {
+	padding-top: 15px;
+}
+
+#s1tx {
+	margin: auto;
+	width: 680px;
+}
+
+#s1nr {
+	width: 680px;
+}
+#s1nr ul {
+	float: left;
+	width: 300px;
+	list-style-type: none;
+}
+#zhuti {
+	font-family: "黑体", "仿宋", Arial, "Arial Unicode MS", System;
+	font-size: 14px;
+	width: 680px;
+}
+
+#jl{
+	width:950px;
+	height: 544px;
+	margin:auto;
+	background-image: url(../pic/jlbj.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	}

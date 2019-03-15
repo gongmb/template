@@ -1,0 +1,96 @@
+BODY {
+	PADDING: 0px; MARGIN: 0px; FONT-SIZE: 12px; LINE-HEIGHT: 1.4em; color: #333333; text-decoration: none;
+}
+
+#frameOuter {
+	MARGIN: 0px 0px 0px 1px
+}
+
+#container {
+	border: #E2A9B6 1px solid; 
+}
+
+#header {
+	CLEAR: both; PADDING: 0px;  MARGIN: 0px; }
+
+.headerlogo {
+    FLOAT: left; padding-top: 1px;}
+
+.headernav {
+    FLOAT: left; text-align: center; }
+
+#nav {
+    CLEAR: both; padding-right: 0px; border-top: #EF3D7A 1px solid; padding-left: 0px; padding-bottom: 1px; margin: 
+	5px 0px 5px 0px;color: #ffffff; padding-top: 1px; border-bottom: #EF3D7A 1px solid; height: 42px;  }
+
+.nav2 {
+    height: 42px; background-color: #EF3D7A; text-align: left; }
+
+.nav3 {
+     padding-top: 3px; padding-bottom: 1px;  padding-left:5px;}
+
+.nav3 a {
+     color:#ffffff;}
+
+.nav3 a:hover {
+     color:#ffffff;}
+	 
+.title {
+     CLEAR: both; margin:0; background-color:#F8E0E2;font-size:12px;font-weight:bold;color:#ED0A6E;line-height:22px;padding-left:10px;height:22px;border-top-width: 1px;border-bottom-width: 1px;border-top-style: solid;border-bottom-style: dashed;
+border-top-color: #E2A9B6;border-bottom-color: #E2A9B6;}
+
+.box {
+	CLEAR: both; PADDING-LEFT: 10px; PADDING-top: 5px; PADDING-bottom: 5px; MARGIN: 0px; }
+
+.list {
+    CLEAR: both; }
+	
+.listn {
+    FLOAT: left; }
+	
+.line {margin:0; border-top:1px dashed #E2A9B6; height:1px; margin:5px 0px;}
+
+
+p {
+    margin: 0px;}
+
+#und { 
+    color:#ffffff;background-color:#EE5C88;text-align:center; line-height:22px;}
+	
+#und a{ 
+    color:#ffffff;}
+	
+#footer { 
+    CLEAR: both; margin-bottom:10px;}
+
+/*×ÖÌå*/
+a {
+     color: #333333; text-decoration: none; }
+
+a:hover {
+     color: #ED0A6E; text-decoration: none; }
+
+a:active {
+     color: #ED0A6E; text-decoration: none; }
+	 
+.pink {
+     color: #ED0A6E; text-decoration: none; } 
+
+.newstitle {
+	text-align:center;  margin:0px; 
+}
+.newssource {
+    text-align:center;  margin:0px; color: #666666;}
+.content {
+	margin:0px; text-align:left;
+}
+.newsline {
+    margin:0; border-top:1px solid #E2A9B6; height:1px; margin:5px 0px;}
+	 
+/*±íµ¥*/
+#NewForm{CLEAR: both; MARGIN: 0px;PADDING-LEFT: 10px; PADDING-top: 5px; PADDING-bottom: 5px; }
+.FormChoice {}
+.FormMember {}
+.FormJz {}
+#btn{text-align:center;}
+#btn .FormBut {color: #ED0A6E; padding:1px;border: 1px solid #ED0A6E; width:40px;height:20px;text-align:center;background-color:#F8E0E2}
